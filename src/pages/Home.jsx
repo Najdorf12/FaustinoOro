@@ -6,9 +6,9 @@ const Home = () => {
           className="w-[95%] rounded-[20px] h-[95%] relative bg-center bg-fixed bg-cover bg-no-repeat z-50 flex justify-end items-center "
           id="home"
         >
-          <article className="flex flex-col justify-center items-center gap-3 text-center  mt-60 sm:px-6 md:mr-12 2xl:mr-32">
-            <h1 className="font-title text-6xl leading-[3.5rem] font-bold text-gray-200 md:text-7xl 2xl:text-8xl">FAUSTINO ORO</h1>
-            <p className=" font-title text-2xl text-stone-400  md:text-3xl 2xl:text-4xl">LOREM IMPSUM</p>
+          <article className="flex flex-col justify-center items-center gap-3 text-center  mt-60 sm:px-6 md:mr-12 2xl:mr-24 2xl:mt-96">
+            <h1 className="font-title2 text-6xl leading-[3.5rem] font-bold text-gray-200 md:text-7xl 2xl:text-[7.5rem]">FAUSTINO ORO</h1>
+            <p className=" font-title2 text-2xl text-stone-400  md:text-3xl 2xl:text-4xl">LOREM IMPSUM</p>
           </article>
 
           {/* BORDER BUTTONS */}

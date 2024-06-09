@@ -17,6 +17,8 @@ export default {
       fontFamily: {
         title: ["Ubuntu", "sans-serif"],
         text: ["Oxygen", "sans-serif"],
+        cursive: ["Great Vibes", "sans-serif"],
+        title2: ["Cinzel Decorative", "serif"],
       },
     },
   },
