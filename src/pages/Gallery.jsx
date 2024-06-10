@@ -24,9 +24,10 @@ const Gallery = () => {
         id="four_section"
         className="w-full h-screen bg-zinc-900 overflow-hidden px-1 sm:px-4 md:px-6"
       >
-        <div className="grid grid-cols-5 grid-rows-4 gap-1  h-screen opacity-80  sm:max-w-[700px]  md:gap-2 lg:gap-4 lg:h-[90%] lg:max-w-[800px] xl:max-w-[850px]  2xl:max-w-[55%] 2xl:ml-10 ">
+        <div className="grid grid-cols-5 grid-rows-4 gap-1  h-screen opacity-70  sm:max-w-[700px]  md:gap-2 lg:gap-4 lg:h-[90%] lg:max-w-[800px] xl:max-w-[850px]  2xl:max-w-[55%] 2xl:ml-10 ">
           <div className="col-span-3  row-span-3 ">
             <img
+              loading="lazy"
               className="w-full h-full rounded-lg object-cover"
               src={imgFausti4}
               alt=""
@@ -34,6 +35,7 @@ const Gallery = () => {
           </div>
           <div className="col-span-2 row-span-2 col-start-4">
             <img
+              loading="lazy"
               className="w-full h-full rounded-lg object-cover"
               src={imgFausti2}
               alt=""
@@ -41,6 +43,7 @@ const Gallery = () => {
           </div>
           <div className="col-span-2 row-span-2 col-start-4 row-start-3">
             <img
+              loading="lazy"
               className="w-full h-full rounded-lg object-cover "
               src={imgFausti9}
               alt=""
@@ -53,6 +56,7 @@ const Gallery = () => {
           </div>
           <div className="col-span-2 row-start-5">
             <img
+              loading="lazy"
               className="w-full h-full rounded-lg object-cover "
               src={imgFausti6}
               alt=""
@@ -60,6 +64,7 @@ const Gallery = () => {
           </div>
           <div className="col-span-3 col-start-3 row-start-5 ">
             <img
+              loading="lazy"
               className="w-full h-full rounded-lg object-cover"
               src={imgFausti3}
               alt=""

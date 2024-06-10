@@ -33,7 +33,7 @@ export const Knight = (props) => {
       },
     };
 
-    //Rotation 
+    //Rotation
     gui
       .add(debugRotation.rotation, "x")
       .min(-30)
@@ -61,7 +61,7 @@ export const Knight = (props) => {
         knight.current.rotation.z = debugRotation.rotation.z;
       })
       .name("Rotation Z");
-    // Position 
+    // Position
     gui
       .add(debugPosition.position, "x")
       .min(-30)
@@ -112,9 +112,7 @@ export const Knight = (props) => {
       },
     })
       .to(knight.current?.rotation, {
-        x: 0,
         y: 0.51,
-        z: 0,
         ease: "power1.out",
         scrollTrigger: {
           trigger: "#second_section",
@@ -138,9 +136,7 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.rotation, {
-        x: 0,
         y: -1.1,
-        z: 0,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#third_section",
@@ -155,7 +151,7 @@ export const Knight = (props) => {
         x: -11.155,
         y: 0.3,
         z: 16.2,
-        ease:"back.out",
+        ease: "back.out",
         scrollTrigger: {
           trigger: "#four_section",
           start: "top bottom",
@@ -165,10 +161,8 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.rotation, {
-        x: 0,
         y: -1.665,
-        z: 0,
-        ease:"back.out",
+        ease: "back.out",
         scrollTrigger: {
           trigger: "#four_section",
           start: "top bottom",
@@ -180,8 +174,8 @@ export const Knight = (props) => {
       .to(knight.current?.position, {
         x: 4.565,
         y: 0.4,
-        z:-3,
-        ease:"power1.inOut",
+        z: -3,
+        ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#five_section",
           start: "top bottom",
@@ -191,10 +185,8 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.rotation, {
-        x: 0,
         y: -0.005,
-        z: 0,
-        ease:"power1.inOut",
+        ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#five_section",
           start: "top bottom",
@@ -203,24 +195,35 @@ export const Knight = (props) => {
           immediateRender: false,
         },
       })
-      /* .to(knight.current?.position, {
-        x: 26.94,
-        y:-1.550,
-        z:-4.7,
-        ease:"power1.inOut",
+      .to(knight.current?.position, {
+        x: -13.67,
+        y: -0.7,
+        z: 22.9,
+        ease: "power1.inOut",
         scrollTrigger: {
-          trigger: "#contact_section",
+          trigger: "#six_section",
           start: "top bottom",
           end: "top top",
           scrub: true,
           immediateRender: false,
         },
-      }) */
+      })
+      .to(knight.current?.rotation, {
+        y: -1.175,
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: "#six_section",
+          start: "top bottom",
+          end: "top top",
+          scrub: true,
+          immediateRender: false,
+        },
+      })
       .to(knight.current?.position, {
-        x: -4.155,
-        y: -.8,
-        z: 21.5,
-        ease:"power1.inOut",
+        x: 28.505,
+        y: -1.15,
+        z: -5.2,
+        ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#contact_section",
           start: "top bottom",
@@ -230,10 +233,8 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.rotation, {
-        x: 0,
-        y: -1.795,
-        z: 0,
-        ease:"power1.inOut",
+        y: -0.005,
+        ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#contact_section",
           start: "top bottom",
@@ -243,10 +244,10 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.position, {
-        x: -6.155,
-        y: -.9,
-        z: 21.5,
-        ease:"power1.inOut",
+        x: 27.,
+        y: -1.5,
+        z: -4.95,
+        ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#contact2_section",
           start: "top bottom",
@@ -256,10 +257,8 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.rotation, {
-        x: 0,
-        y: -1.895,
-        z: 0,
-        ease:"power1.inOut",
+        y: 0.005,
+        ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#contact2_section",
           start: "top bottom",
@@ -267,9 +266,7 @@ export const Knight = (props) => {
           scrub: true,
           immediateRender: false,
         },
-      })
-      ; 
-
+      });
   }, []);
 
   return (
@@ -284,7 +281,7 @@ export const Knight = (props) => {
             geometry={nodes.pasted__knight_blinn1_0.geometry}
             material={materials.blinn1}
           >
-            <meshStandardMaterial color={"#57534e"} wireframe/>
+            <meshStandardMaterial color={"#57534e"} wireframe />
           </mesh>
         </Float>
       </group>
