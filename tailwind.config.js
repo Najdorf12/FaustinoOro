@@ -16,9 +16,11 @@ export default {
     extend: {
       fontFamily: {
         title: ["Ubuntu", "sans-serif"],
-        text: ["Oxygen", "sans-serif"],
-        cursive: ["Great Vibes", "sans-serif"],
         title2: ["Cinzel Decorative", "serif"],
+        title3: ["Zen Dots", "sans-serif"],
+        text: ["Oxygen", "sans-serif"],
+        text2: ["Kanit", "sans-serif"],
+        cursive: ["Great Vibes", "sans-serif"],
       },
     },
   },

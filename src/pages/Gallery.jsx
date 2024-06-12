@@ -13,9 +13,12 @@ const Gallery = () => {
         id="third_section"
         className="w-full h-screen bg-zinc-900  font-title text-white z-50"
       >
-        <article className="pt-2 px-3 flex flex-col gap-3 z-50 sm:max-w-[500px] lg:max-w-[670px]  lg:ml-16 xl:ml-32 2xl:max-w-[1100px]">
-          <h3 className="text-5xl md:text-6xl z-50 font-medium lg:text-6xl 2xl:text-8xl">
-            LOREM IPSUM DOLOR SIT AMET CONSECT ADIPSICING ELIT.
+        <article className="pt-2 px-3 flex flex-col gap-3 z-50 sm:max-w-[500px] lg:max-w-[670px]  lg:ml-16 xl:ml-32 2xl:max-w-[900px]">
+          <h3 className="font-title font-bold text-5xl md:text-6xl z-50 lg:text-6xl 2xl:text-[6.2rem] ">
+            LOREM IPSUM DOLOR SIT AMET CONSECT <span /* style={{
+              WebkitTextFillColor: "transparent",
+              WebkitTextStroke: "1px ",
+            }}  */className="text-rose-800"> DOLOR SIT AMET. </span> 
           </h3>
         </article>
       </section>
@@ -24,7 +27,7 @@ const Gallery = () => {
         id="four_section"
         className="w-full h-screen bg-zinc-900 overflow-hidden px-1 sm:px-4 md:px-6"
       >
-        <div className="z-10 grid grid-cols-5 grid-rows-4 gap-1  h-screen  sm:max-w-[700px]  md:gap-2 lg:gap-4 lg:h-[90%] lg:max-w-[700px] xl:max-w-[750px]  2xl:max-w-[55%] 2xl:ml-10 ">
+        <div className="z-10 grid grid-cols-5 grid-rows-4 gap-1  h-screen  sm:max-w-[700px]  md:gap-2 lg:gap-4 lg:h-[100%] lg:max-w-[700px] xl:max-w-[750px]  2xl:max-w-[55%] xl:ml-12  2xl:ml-10 ">
           <div className="relative col-span-3  row-span-3 ">
             <img
               loading="lazy"
@@ -50,7 +53,7 @@ const Gallery = () => {
             />
           </div>
           <div className="col-span-3 row-start-4  flex justify-center items-center">
-            <p className="font-title2 pl-2 sm:pl-4 text-5xl font-semibold 2xl:text-6xl text-stone-700">
+            <p className="font-title3  pl-2 sm:pl-4 text-4xl font-semibold  2xl:text-6xl text-stone-700">
               LOREM IMPSUM
             </p>
           </div>
@@ -65,7 +68,7 @@ const Gallery = () => {
           <div className="col-span-3 col-start-3 row-start-5 ">
             <img
               loading="lazy"
-              className="w-full h-full rounded-lg object-cover opacity-70"
+              className="w-full h-full rounded-lg object-cover opacity-70 z-10"
               src={imgFausti3}
               alt=""
             />

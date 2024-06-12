@@ -6,10 +6,13 @@ const Stats = () => {
         className="w-full h-screen bg-zinc-900 flex justify-center items-center px-2 sm:px-4 text-white"
       >
         <article className="z-50 flex flex-col justify-center items-center gap-3 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%]">
-          <h6 className="font-title text-5xl font-bold md:text-6xl lg:text-[10dvh]">
+          <h6 style={{
+              WebkitTextFillColor: "transparent",
+              WebkitTextStroke: "1px white",
+            }} className="font-title text-5xl  bg-clip-text text-transparent bg-gradient-to-b from-stone-900 to-stone-600 font-bold md:text-6xl lg:text-[10dvh]">
             LOREM IMPSUM
           </h6>
-          <p className="font-text text-gray-300 text-base md:text-lg lg:text-xl">
+          <p className="font-text text-white text-base md:text-lg lg:text-xl">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo
             impedit sit aliquam laborum incidunt consectetur dicta temporibus
             libero, illum provident nobis, veniam sed! Voluptatem nulla rerum
@@ -20,15 +23,15 @@ const Stats = () => {
       </section>
       <section
         id="six_section"
-        className="w-full h-screen font-semibold flex flex-col justify-between items-center text-white py-10  bg-zinc-900 text-4xl sm:text-5xl brave xl:text-6xl 2xl:text-8xl 2xl:leading-[5rem] sm:py-12 xl:py-8 2xl:py-24"
+        className="overflow-hidden relative w-full font-title3 h-screen font-semibold flex flex-col justify-between items-center text-white py-10  bg-zinc-900 text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl 2xl:leading-[4rem] z-10"
       >
-        <article className="self-start pl-[5%]">
+        <article className="absolute top-0 left-0 mt-6 ml-3 z-0 lg:mt-10 xl:ml-[3%] 2xl:mt-16 ">
           <h6>LOREM IMPSUM </h6>
-          <h6 className="text-stone-700 ">LOREM IMPSUM </h6>
+          <h6 className="text-rose-800 ">LOREM IMPSUM </h6>
         </article>
-        <article className="self-end pr-[4.5%]">
-          <h6 className="text-stone-700">LOREM IMPSUM</h6>
-          <h6>LOREM IMPSUM </h6>
+        <article className="absolute bottom-0 right-0 sm:right-14 flex flex-col items-end justify-end   z-10 mb-6 md:right-3 lg:mb-10 2xl:mb-16 xl:mr-[3%]">
+          <h6 className="text-rose-800  w-[55%] md:w-full">LOREM IMPSUM</h6>
+          <h6 className="w-[55%] md:w-full">LOREM IMPSUM </h6>
         </article>
       </section>
     </>
