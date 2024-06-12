@@ -14,7 +14,7 @@ const Gallery = () => {
         className="w-full h-screen bg-zinc-900  font-title text-white z-50"
       >
         <article className="pt-2 px-3 flex flex-col gap-3 z-50 sm:max-w-[500px] lg:max-w-[670px]  lg:ml-16 xl:ml-32 2xl:max-w-[1100px]">
-          <h3 className="text-5xl z-50 font-medium lg:text-6xl 2xl:text-8xl">
+          <h3 className="text-5xl md:text-6xl z-50 font-medium lg:text-6xl 2xl:text-8xl">
             LOREM IPSUM DOLOR SIT AMET CONSECT ADIPSICING ELIT.
           </h3>
         </article>
@@ -24,11 +24,11 @@ const Gallery = () => {
         id="four_section"
         className="w-full h-screen bg-zinc-900 overflow-hidden px-1 sm:px-4 md:px-6"
       >
-        <div className="grid grid-cols-5 grid-rows-4 gap-1  h-screen opacity-70  sm:max-w-[700px]  md:gap-2 lg:gap-4 lg:h-[90%] lg:max-w-[800px] xl:max-w-[850px]  2xl:max-w-[55%] 2xl:ml-10 ">
-          <div className="col-span-3  row-span-3 ">
+        <div className="z-10 grid grid-cols-5 grid-rows-4 gap-1  h-screen  sm:max-w-[700px]  md:gap-2 lg:gap-4 lg:h-[90%] lg:max-w-[700px] xl:max-w-[750px]  2xl:max-w-[55%] 2xl:ml-10 ">
+          <div className="relative col-span-3  row-span-3 ">
             <img
               loading="lazy"
-              className="w-full h-full rounded-lg object-cover"
+              className="w-full h-full rounded-lg object-cover opacity-70 "
               src={imgFausti4}
               alt=""
             />
@@ -36,7 +36,7 @@ const Gallery = () => {
           <div className="col-span-2 row-span-2 col-start-4">
             <img
               loading="lazy"
-              className="w-full h-full rounded-lg object-cover"
+              className="w-full h-full rounded-lg object-cover opacity-70"
               src={imgFausti2}
               alt=""
             />
@@ -44,7 +44,7 @@ const Gallery = () => {
           <div className="col-span-2 row-span-2 col-start-4 row-start-3">
             <img
               loading="lazy"
-              className="w-full h-full rounded-lg object-cover "
+              className="w-full h-full rounded-lg object-cover opacity-70"
               src={imgFausti9}
               alt=""
             />
@@ -57,7 +57,7 @@ const Gallery = () => {
           <div className="col-span-2 row-start-5">
             <img
               loading="lazy"
-              className="w-full h-full rounded-lg object-cover "
+              className="w-full h-full rounded-lg object-cover opacity-70"
               src={imgFausti6}
               alt=""
             />
@@ -65,7 +65,7 @@ const Gallery = () => {
           <div className="col-span-3 col-start-3 row-start-5 ">
             <img
               loading="lazy"
-              className="w-full h-full rounded-lg object-cover"
+              className="w-full h-full rounded-lg object-cover opacity-70"
               src={imgFausti3}
               alt=""
             />
