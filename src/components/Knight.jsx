@@ -3,9 +3,8 @@ import { useGLTF } from "@react-three/drei";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { GUI } from "dat.gui";
-import { Float, useTexture, Plane } from "@react-three/drei";
-import { TextureLoader } from "three/src/loaders/TextureLoader";
-import { useLoader } from "@react-three/fiber";
+import { Float} from "@react-three/drei";
+
 
 gsap.registerPlugin(ScrollTrigger);
 

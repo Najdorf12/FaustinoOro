@@ -6,19 +6,45 @@ import imgFausti7 from "../assets/img16.jpg";
 import imgFausti8 from "../assets/img18.jpg";
 import imgFausti9 from "../assets/img17.jpg";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLayoutEffect } from "react";
+gsap.registerPlugin(ScrollTrigger);
+
 const Gallery = () => {
+  const tl = gsap.timeline();
+  useLayoutEffect(() => {
+    new ScrollTrigger({});
+    tl.to("#text-area-hover", {
+      width: "100%",
+      scrollTrigger: {
+        trigger: "#third_section",
+        start: "-50% 1%",
+        end: "10% 30%",
+        markers: true,
+        scrub: 1,
+      },
+    });
+  }, []);
+
   return (
     <>
       <section
         id="third_section"
-        className="w-full h-screen bg-zinc-900  font-title text-white z-50"
+        className="pt-5 pl-2 w-full h-screen bg-zinc-900  font-title relative flex items-start overflow-hidden "
       >
-        <article className="pt-2 px-3 flex flex-col gap-3 z-50 sm:max-w-[500px] lg:max-w-[670px]  lg:ml-16 xl:ml-32 2xl:max-w-[900px]">
-          <h3 className="font-title font-bold text-5xl md:text-6xl z-50 lg:text-6xl 2xl:text-[6.2rem] ">
-            LOREM IPSUM DOLOR SIT AMET CONSECT <span /* style={{
-              WebkitTextFillColor: "transparent",
-              WebkitTextStroke: "1px ",
-            }}  */className="text-rose-800"> DOLOR SIT AMET. </span> 
+        <article className="realtive sm:max-w-[500px]  lg:max-w-[670px]  lg:ml-16 xl:ml-32  ">
+          <h3
+            id="text-area-hover"
+            className="absolute font-bold text-[13dvw] leading-[3.5rem] md:leading-[5.5rem] lg:text-[10vw] lg:leading[6.5rem]   xl:left-32 text-white w-[10%]  overflow-hidden whitespace-nowrap  bg-red-500 "
+          >
+            LOREM IPSUM <br className="2xl:hidden"/> DOLOR <br className="lg:hidden"/> SIT <br className="2xl:hidden" />
+            AMET DOLOR <br />
+            SIT
+            <span className="text-amber-600">
+              {" "}
+              DOLOR <br className="2xl:hidden"/> SIT AMET.
+            </span>
           </h3>
         </article>
       </section>
@@ -27,7 +53,7 @@ const Gallery = () => {
         id="four_section"
         className="w-full h-screen bg-zinc-900 overflow-hidden px-1 sm:px-4 md:px-6"
       >
-        <div className="z-10 grid grid-cols-5 grid-rows-4 gap-1  h-screen  sm:max-w-[700px]  md:gap-2 lg:gap-4 lg:h-[100%] lg:max-w-[700px] xl:max-w-[750px]  2xl:max-w-[55%] xl:ml-12  2xl:ml-10 ">
+        <div className="z-10 grid grid-cols-5 grid-rows-4 gap-1  h-screen  sm:max-w-[700px]  md:gap-2 lg:gap-4 lg:h-[100%] lg:max-w-[700px] xl:max-w-[750px] 2xl:h-[90%] 2xl:max-w-[55%] xl:ml-12  2xl:ml-10 ">
           <div className="relative col-span-3  row-span-3 ">
             <img
               loading="lazy"
@@ -79,3 +105,17 @@ const Gallery = () => {
   );
 };
 export default Gallery;
+/* style={{
+              WebkitTextFillColor: "transparent",
+              WebkitTextStroke: "1px ",
+            }}  */
+/*     <article className="relative pt-2 px-3 flex flex-col gap-3 z-50 sm:max-w-[500px] lg:max-w-[670px]  lg:ml-16 xl:ml-32 2xl:max-w-[900px]">
+              <h3 className="absolute font-title font-bold text-5xl md:text-6xl z-50 lg:text-6xl 2xl:text-[6.2rem] text-rose-600">
+                LOREM IPSUM DOLOR SIT AMET CONSECT{" "}
+                <span className="text-amber-600"> DOLOR SIT AMET.</span>
+              </h3>
+              <h3 className="absolute mt-1 font-title font-bold text-5xl md:text-6xl z-50 lg:text-6xl 2xl:text-[6.2rem] ">
+                LOREM IPSUM DOLOR SIT AMET CONSECT{" "}
+                <span className="text-teal-800"> DOLOR SIT AMET.</span>
+              </h3>
+            </article> */
