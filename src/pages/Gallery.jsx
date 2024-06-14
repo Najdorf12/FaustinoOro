@@ -30,7 +30,7 @@ const Gallery = () => {
       opacity: 0.2,
       scrollTrigger: {
         trigger: ".split",
-        start: "-10% 80%",
+        start: "30% 100%",
         end: "10% 20%",
         scrub: 1,
       },

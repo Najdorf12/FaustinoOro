@@ -5,7 +5,6 @@ import { useEffect, useLayoutEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const Stats = () => {
-
   const tl = gsap.timeline();
 
   useEffect(() => {}, []);
@@ -19,12 +18,12 @@ const Stats = () => {
       yPercent: 60,
       stagger: 0.2,
       ease: "back.out",
-      duration: 2,
+      duration: 1,
       opacity: 0,
       scrollTrigger: {
         trigger: "#split",
-        start: "50% 80%",
-        end: "10% 20%",
+        start: "50% 100%",
+        end: "-30% 20%",
         scrub: 1,
       },
     });
@@ -36,9 +35,13 @@ const Stats = () => {
         className="w-full h-screen bg-zinc-900 flex justify-center items-center px-2 sm:px-4 text-white"
       >
         <article className="z-50 flex flex-col justify-center items-center gap-3 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%]">
-          <h6 id="split" style={{  
+          <h6
+            id="split"
+            style={{
               WebkitTextStroke: "2px #d97706",
-            }} className="font-title text-5xl  text-amber-700  font-bold md:text-6xl lg:text-[10dvh]">
+            }}
+            className="font-title text-5xl  text-transparent font-bold md:text-6xl lg:text-[10dvh]"
+          >
             LOREM IMPSUM
           </h6>
           <p className="font-text text-white text-base md:text-lg lg:text-xl">
