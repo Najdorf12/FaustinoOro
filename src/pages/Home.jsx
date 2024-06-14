@@ -33,8 +33,8 @@ const Home = () => {
            </button>
           </span>
          
-          <span className="bg-[#e8e8e8] absolute -bottom-1 -left-1 pl-1 pt-[2px] w-[200px] h-[75px]  border-[6px] border-[#e8e8e8]  rounded-tr-[20px] rounded-bl-[20px] md:w-[250px] md:h-[70px] lg:w-[300px] 2xl:w-[400px] 2xl:h-[80px]">
-            <p className="text-2xl font-title3 font-medium leading-5">LOREM IMSPSUM DOLOR SIT </p>
+          <span className="bg-[#e8e8e8] absolute -bottom-1 -left-1 pl-1 pt-[2px] w-[200px] h-[75px]  border-[6px] border-[#e8e8e8]  rounded-tr-[20px] rounded-bl-[20px] md:w-[250px] md:h-[70px] lg:w-[330px] 2xl:w-[400px] 2xl:h-[80px]">
+            <p className=" text-2xl font-title3 font-medium leading-5 xl:text-[1.7rem] xl:leading-6">LOREM IMSPSUM DOLOR SIT </p>
           </span>
         </div>
       </section>

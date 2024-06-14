@@ -6,22 +6,32 @@ import imgFausti7 from "../assets/img16.jpg";
 import imgFausti8 from "../assets/img18.jpg";
 import imgFausti9 from "../assets/img17.jpg";
 
+import SplitType from "split-type";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useLayoutEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const Gallery = () => {
   const tl = gsap.timeline();
+
+  useEffect(() => {}, []);
+
   useLayoutEffect(() => {
     new ScrollTrigger({});
-    tl.to("#text-area-hover", {
-      width: "100%",
+    const text = new SplitType(".split", { type: "chars" });
+    const chars = text?.chars;
+    console.log(chars);
+    tl.from(chars, {
+      yPercent: 60,
+      stagger: 0.2,
+      ease: "back.out",
+      duration: 2,
+      opacity: 0.2,
       scrollTrigger: {
-        trigger: "#third_section",
-        start: "-50% 1%",
-        end: "10% 30%",
-        markers: true,
+        trigger: ".split",
+        start: "-10% 80%",
+        end: "10% 20%",
         scrub: 1,
       },
     });
@@ -33,18 +43,17 @@ const Gallery = () => {
         id="third_section"
         className="pt-5 pl-2 w-full h-screen bg-zinc-900  font-title relative flex items-start overflow-hidden "
       >
-        <article className="realtive sm:max-w-[500px]  lg:max-w-[670px]  lg:ml-16 xl:ml-32  ">
-          <h3
-            id="text-area-hover"
-            className="absolute font-bold text-[13dvw] leading-[3.5rem] md:leading-[5.5rem] lg:text-[10vw] lg:leading[6.5rem]   xl:left-32 text-white w-[10%]  overflow-hidden whitespace-nowrap  bg-red-500 "
-          >
-            LOREM IPSUM <br className="2xl:hidden"/> DOLOR <br className="lg:hidden"/> SIT <br className="2xl:hidden" />
-            AMET DOLOR <br />
-            SIT
-            <span className="text-amber-600">
-              {" "}
-              DOLOR <br className="2xl:hidden"/> SIT AMET.
-            </span>
+        <article className="relative pt-2 px-3   gap-3 z-50 sm:max-w-[500px] lg:max-w-[700px]   lg:ml-16 xl:ml-32 2xl:max-w-[950px]">
+          <h3 className="split mt-1 font-title text-white font-bold text-5xl md:text-6xl z-50 lg:text-7xl xl:text-[5rem] 2xl:text-[6.2rem] ">
+            SOME RANDOM TEXT LOREM IMPSUM
+            <div
+              style={{
+                WebkitTextStroke: "2px #d97706",
+              }}
+              className="text-amber-700"
+            >
+              DOLOR SIT AMET.
+            </div>
           </h3>
         </article>
       </section>
@@ -118,4 +127,17 @@ export default Gallery;
                 LOREM IPSUM DOLOR SIT AMET CONSECT{" "}
                 <span className="text-teal-800"> DOLOR SIT AMET.</span>
               </h3>
-            </article> */
+            </article> 
+            
+               <h3
+            id="text-area-hover"
+            className="absolute font-bold text-[13dvw] leading-[3.5rem] md:leading-[5.5rem] lg:text-[10vw] lg:leading[6.5rem]   xl:left-32 text-white w-[10%]  overflow-hidden whitespace-nowrap  bg-red-500 "
+          >
+            LOREM IPSUM <br className="2xl:hidden"/> DOLOR <br className="lg:hidden"/> SIT <br className="2xl:hidden" />
+            AMET DOLOR <br />
+            SIT
+            <span className="text-amber-600">
+              {" "}
+              DOLOR <br className="2xl:hidden"/> SIT AMET.
+            </span>
+          </h3>*/

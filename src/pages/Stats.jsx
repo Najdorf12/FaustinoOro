@@ -1,4 +1,34 @@
+import SplitType from "split-type";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useLayoutEffect } from "react";
+gsap.registerPlugin(ScrollTrigger);
+
 const Stats = () => {
+
+  const tl = gsap.timeline();
+
+  useEffect(() => {}, []);
+
+  useLayoutEffect(() => {
+    new ScrollTrigger({});
+    const text = new SplitType("#split", { type: "chars" });
+    const chars = text?.chars;
+    console.log(chars);
+    tl.from(chars, {
+      yPercent: 60,
+      stagger: 0.2,
+      ease: "back.out",
+      duration: 2,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: "#split",
+        start: "50% 80%",
+        end: "10% 20%",
+        scrub: 1,
+      },
+    });
+  }, []);
   return (
     <>
       <section
@@ -6,10 +36,9 @@ const Stats = () => {
         className="w-full h-screen bg-zinc-900 flex justify-center items-center px-2 sm:px-4 text-white"
       >
         <article className="z-50 flex flex-col justify-center items-center gap-3 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%]">
-          <h6 style={{
-              WebkitTextFillColor: "transparent",
-              WebkitTextStroke: "1px white",
-            }} className="font-title text-5xl  bg-clip-text text-transparent bg-gradient-to-b from-stone-900 to-stone-600 font-bold md:text-6xl lg:text-[10dvh]">
+          <h6 id="split" style={{  
+              WebkitTextStroke: "2px #d97706",
+            }} className="font-title text-5xl  text-amber-700  font-bold md:text-6xl lg:text-[10dvh]">
             LOREM IMPSUM
           </h6>
           <p className="font-text text-white text-base md:text-lg lg:text-xl">
