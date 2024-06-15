@@ -98,7 +98,7 @@ export const Knight = (props) => {
   useLayoutEffect(() => {
     new ScrollTrigger({});
     tl.to(knight.current?.position, {
-      x: 4.2,
+      x: 1,
       y: 1.57,
       z: -9.85,
       ease: "power1.out",

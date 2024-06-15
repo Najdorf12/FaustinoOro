@@ -34,17 +34,17 @@ const Stats = () => {
         id="five_section"
         className="w-full h-screen bg-zinc-900 flex justify-center items-center px-2 sm:px-4 text-white"
       >
-        <article className="z-50 flex flex-col justify-center items-center gap-3 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%]">
+        <article className="z-50 flex flex-col justify-center items-center gap-3 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%] 2xl:gap-10">
           <h6
             id="split"
-            style={{
+            /* style={{
               WebkitTextStroke: "2px #d97706",
-            }}
-            className="font-title text-5xl  text-transparent font-bold md:text-6xl lg:text-[10dvh]"
+            }} */
+            className="font-text2 text-5xl  text-white font-bold md:text-6xl lg:text-[10dvh]"
           >
             LOREM IMPSUM
           </h6>
-          <p className="font-text text-white text-base md:text-lg lg:text-xl">
+          <p className="font-text2 text-gray-200 text-base md:text-lg lg:text-xl">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo
             impedit sit aliquam laborum incidunt consectetur dicta temporibus
             libero, illum provident nobis, veniam sed! Voluptatem nulla rerum
@@ -53,11 +53,12 @@ const Stats = () => {
           </p>
         </article>
       </section>
+     
       <section
         id="six_section"
         className="overflow-hidden relative w-full font-title3 h-screen font-semibold flex flex-col justify-between items-center text-white py-10  bg-zinc-900 text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl 2xl:leading-[4rem] z-10"
       >
-        <article className="absolute top-0 left-0 mt-6 ml-3 z-0 lg:mt-10 xl:ml-[3%] 2xl:mt-16 ">
+        <article className="absolute top-0 left-0 max-w-[30%] md:max-w-[50%] mt-6 ml-3 z-0 lg:mt-10 xl:ml-[3%] 2xl:mt-16 ">
           <h6>LOREM IMPSUM </h6>
           <h6 className="text-rose-800 ">LOREM IMPSUM </h6>
         </article>
