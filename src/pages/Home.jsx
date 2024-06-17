@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <section className=" w-full h-screen bg-[#e8e8e8] flex justify-center items-center z-50 ">
         <div
-          className="w-[100%] rounded-[20px] h-[100%] relative bg-center bg-fixed bg-cover bg-no-repeat z-50 flex justify-end items-center "
+          className="w-[100%] rounded-b-[20px] h-[100%] relative bg-center bg-fixed bg-cover bg-no-repeat z-50 flex justify-end items-center "
           id="home"
         >
           <article className="flex flex-col justify-center items-center gap-3 text-center mt-[100%] sm:px-6 md:mt-[70%] lg:mt-[50%] xl:mt-[27%] xl:mr-[2%]">

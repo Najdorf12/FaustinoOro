@@ -2,6 +2,7 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+   
     screens: {
       sm: "420px",
 
@@ -14,6 +15,9 @@ export default {
       "2xl": "1536px",
     },
     extend: {
+      colors:{
+        wheat:"rgb(245 222 179)"
+      },
       fontFamily: {
         title: ["Ubuntu", "sans-serif"],
         title2: ["Cinzel Decorative", "serif"],

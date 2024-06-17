@@ -14,7 +14,7 @@ export const Knight = (props) => {
   const tl = gsap.timeline();
 
   /* DEBUG MODEL3D */
-  /* useLayoutEffect(() => {
+ /*   useLayoutEffect(() => {
     const gui = new GUI({ width: 400 });
 
     const debugRotation = {
@@ -92,15 +92,15 @@ export const Knight = (props) => {
     return () => {
       gui.destroy();
     };
-  }, []); */
+  }, []);  */
 
   /* ANIMATIONS */
   useLayoutEffect(() => {
     new ScrollTrigger({});
     tl.to(knight.current?.position, {
-      x: 1,
-      y: 1.57,
-      z: -9.85,
+      x: 3,
+      y: 1,
+      z: -3,
       ease: "power1.out",
       scrollTrigger: {
         trigger: "#second_section",
@@ -111,7 +111,7 @@ export const Knight = (props) => {
       },
     })
       .to(knight.current?.rotation, {
-        y: 0.51,
+        y: .3,
         ease: "power1.out",
         scrollTrigger: {
           trigger: "#second_section",

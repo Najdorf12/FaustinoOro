@@ -16,8 +16,7 @@ const Experience = () => {
         position={[1.2, 20, 0]}
         angle={2}
         penumbra={1}
-        castShadow
-        intensity={10}
+        intensity={6}
       />
       <Environment background={false} preset={"warehouse"} />
       <PerspectiveCamera makeDefault position={[21, 3, 2]} />
