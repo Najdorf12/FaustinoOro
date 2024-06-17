@@ -16,7 +16,7 @@ function App() {
   return (
     <ReactLenis root>
       <main className="relative w-full min-h-screen ">
-        <div className="w-full h-screen fixed z-50 lg:block">
+        <div className="w-full h-screen fixed z-30 lg:block">
           <Canvas>
             <Experience />
           </Canvas>

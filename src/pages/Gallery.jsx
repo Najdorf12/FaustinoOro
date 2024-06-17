@@ -32,18 +32,36 @@ const Gallery = () => {
         end: "10% 20%",
         scrub: 1,
       },
-    }).to("#img-fausti", {
-      y: "-200px",
-      stagger: 0.6,
-      duration: 3,
-      opacity: 0.9,
-      scrollTrigger: {
-        trigger: "#four_section",
-        start: "top bottom",
-        end: "top top",
-        scrub: 1,
-      },
-    });
+    })
+      .to("#img-fausti", {
+        y: "-100px",
+        stagger: 0.6,
+        duration: 2,
+        opacity: 0.9,
+        rotateZ: -10,
+        rotateY: 2,
+        scrollTrigger: {
+          trigger: "#four_section",
+          start: "30% bottom",
+          end: "50% 60%",
+          scrub: 1,
+        },
+      })
+      .to("#img-fausti2", {
+        y: "-100px",
+
+        stagger: 0.6,
+        duration: 2,
+        opacity: 0.9,
+        rotateZ: -10,
+        rotateY: 2,
+        scrollTrigger: {
+          trigger: "#second_gallery",
+          start: "30% bottom",
+          end: "50% 60%",
+          scrub: 1,
+        },
+      });
   }, []);
 
   return (
@@ -74,7 +92,7 @@ const Gallery = () => {
         <div className="flex justify-center overflow-y-visible items-center gap-2 lg:gap-4 w-full h-[75%] max-h-screen md:w-[80%] lg:w-[70%] xl:w-[55%]">
           <div
             id="imgs-container"
-            className="flex flex-col gap-2 lg:gap-4 w-[40%] h-full"
+            className="flex flex-col gap-2 lg:gap-4 w-[40%] h-full "
           >
             <figure className="w-full h-[60%]">
               <img
@@ -88,7 +106,7 @@ const Gallery = () => {
               <img
                 id="img-fausti"
                 /* src={imgFausti7} */
-                className="w-full bg-white h-full object-cover opacity-0 rounded-md"
+                className="w-full bg-gray-200 h-full object-cover opacity-0 rounded-md"
                 alt=""
               />
             </figure>
@@ -96,15 +114,15 @@ const Gallery = () => {
 
           <div
             id="imgs-container"
-            className="flex flex-col gap-2 lg:gap-4 h-full w-[60%]"
+            className="flex flex-col gap-2 lg:gap-4 h-full w-[50%] "
           >
             <figure className="w-full h-[49%]">
-             <img
+              <img
                 id="img-fausti"
-               /*  src={imgFausti4} */
-                className="w-full border border-white h-full object-cover opacity-0 rounded-md"
+                /*  src={imgFausti4} */
+                className="w-full border border-stone-500  h-full object-cover opacity-0 rounded-md"
                 alt=""
-              /> 
+              />
             </figure>
             <figure className=" w-full h-[49%]">
               <img
@@ -116,27 +134,56 @@ const Gallery = () => {
             </figure>
           </div>
         </div>
+      </section>
+      {/* SECOND GALLERY */}
+      <section
+        id="second_gallery"
+        className="w-full h-screen bg-zinc-900 overflow-y-visible relative px-2 md:pl-6 xl:pl-[4%]"
+      >
+        <div className="flex justify-center overflow-y-visible items-center gap-2 lg:gap-4 w-full h-[75%] max-h-screen md:w-[80%] lg:w-[70%] xl:w-[55%]">
+          <div
+            id="imgs-container"
+            className="flex flex-col gap-2 lg:gap-4 w-[40%] h-full "
+          >
+            <figure className="w-full h-[60%]">
+              <img
+                id="img-fausti2"
+                src={imgFausti2}
+                className="w-full h-full object-cover opacity-0 rounded-md"
+                alt=""
+              />
+            </figure>
+            <figure className="w-full h-[40%] ">
+              <img
+                id="img-fausti2"
+                /* src={imgFausti7} */
+                className="w-full bg-gray-200 h-full object-cover opacity-0 rounded-md"
+                alt=""
+              />
+            </figure>
+          </div>
 
-        <div
-          id="imgs-container"
-          className="flex gap-2 mt-2 w-full h-[20%]  lg:mt-4 lg:gap-4 md:w-[80%] lg:w-[70%] xl:w-[55%]"
-        >
-          <figure className="w-[60%] h-full">
-            <img
-              id="img-fausti"
-              src={imgFausti9}
-              className="w-full h-full object-cover opacity-0 rounded-md"
-              alt=""
-            />
-          </figure>
-          <figure className="w-[40%] h-full">
-             <img
-              id="img-fausti"
-              /* src={imgFausti4} */
-              className="w-full border border-white  h-full object-cover opacity-0 rounded-md"
-              alt=""
-            /> 
-          </figure>
+          <div
+            id="imgs-container"
+            className="flex flex-col gap-2 lg:gap-4 h-full w-[50%] "
+          >
+            <figure className="w-full h-[49%]">
+              <img
+                id="img-fausti2"
+                /*  src={imgFausti4} */
+                className="w-full border border-stone-500  h-full object-cover opacity-0 rounded-md"
+                alt=""
+              />
+            </figure>
+            <figure className=" w-full h-[49%]">
+              <img
+                id="img-fausti2"
+                src={imgFausti6}
+                className="w-full h-full object-cover opacity-0 rounded-md"
+                alt=""
+              />
+            </figure>
+          </div>
         </div>
       </section>
     </>

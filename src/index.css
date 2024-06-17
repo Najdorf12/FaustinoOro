@@ -11,7 +11,7 @@
 @tailwind utilities;
 
 #home {
-  z-index: 20;
+  z-index: 50;
   background: linear-gradient(
       330deg,
       rgb(5, 7, 11, 0.95) 33%,
