@@ -60,9 +60,8 @@ const Stats = () => {
             alias quibusdam.
           </p>
         </article>
-        <div className="w-[30%] absolute h-[50px] bg-stone-600 top-0 left-0 mb-[5%]"></div>
-        <div className="w-[30%] absolute h-[1px] bg-amber-600 bottom-0 right-0 mb-[5%]"></div>
-        <div className="w-[30%] absolute h-[1px] bg-amber-600 bottom-0 left-0 mb-[5%]"></div>
+        <div className="w-[40%] absolute h-[1px] bg-white top-0 left-0 mb-[5%]"></div>
+        <div className="w-[40%] absolute h-[1px] bg-amber-600 bottom-0 right-0 mb-[5%]"></div>
       </section>
 
       <section
@@ -70,12 +69,12 @@ const Stats = () => {
         className="overflow-hidden relative w-full font-title3 h-screen font-semibold flex flex-col justify-between items-center text-white py-10  bg-zinc-900 text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl 2xl:leading-[4rem] z-10"
       >
         <article className="absolute top-0 left-0 max-w-[30%] md:max-w-[50%] mt-6 ml-3 z-0 lg:mt-10 xl:ml-[3%] 2xl:mt-16 ">
-          <h6>LOREM IMPSUM </h6>
-          <h6 className="text-rose-800 ">LOREM IMPSUM </h6>
+          <h6 className="text-amber-600">LOREM IMPSUM </h6>
+          <h6 className="text-stone-600 ">LOREM IMPSUM </h6>
         </article>
         <article className="absolute bottom-0 right-0 sm:right-14 flex flex-col items-end justify-end   z-10 mb-6 md:right-3 lg:mb-10 2xl:mb-16 xl:mr-[3%]">
-          <h6 className="text-rose-800  w-[55%] md:w-full">LOREM IMPSUM</h6>
-          <h6 className="w-[55%] md:w-full">LOREM IMPSUM </h6>
+          <h6 className="text-amber-600  w-[55%] md:w-full">LOREM IMPSUM</h6>
+          <h6 className="w-[55%] md:w-full text-stone-600">LOREM IMPSUM </h6>
         </article>
       </section>
 
@@ -85,20 +84,28 @@ const Stats = () => {
       >
         <article className="w-full h-1/2 md:w-1/2 md:h-full bg-white text-white text-2xl font-text2 rounded-sm  flex flex-wrap justify-center items-center gap-2">
           {" "}
-          <div className="card w-[150px] h-[200px] bg-red-700 flex justify-center items-center gap-3">
+          <div className="card w-[150px] h-[200px] flex items-center gap-2 pt-4 px-2">
+            <svg
+              height="48"
+              viewBox="0 0 48 48"
+              width="48"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="white" 
+            >
+              <path d="M0 0h48v48h-48z" fill="none" />
+              <path d="M30 2h-12v4h12v-4zm-8 26h4v-12h-4v12zm16.05-13.23l2.85-2.85c-.86-1.03-1.8-1.97-2.83-2.83l-2.85 2.85c-3.07-2.46-6.98-3.94-11.23-3.94-9.95 0-17.99 8.06-17.99 18s8.04 18 17.99 18 18.01-8.06 18.01-18c0-4.25-1.48-8.15-3.95-11.23zm-14.05 25.23c-7.73 0-14-6.27-14-14s6.27-14 14-14 14 6.27 14 14-6.27 14-14 14z" />
+            </svg>
             <h6>Lorem</h6>
-            <p className="text-center text-base px-2 text-gray-300">Some random text.</p>
-            <button className="text-center mt-4 text-black text-base px-6 py-1 rounded-md bg-amber-600">Button</button>
+            <p className="text-center text-base px-2 leading-4 text-gray-300">
+              Some random text lorem.
+            </p>
+            <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-amber-600">
+              Button
+            </button>
           </div>
-          <div className="card w-[150px] h-[200px] bg-red-700">
-            
-          </div>
-          <div className="card w-[150px] h-[200px] bg-red-700">
-            
-          </div>
-          <div className="card w-[150px] h-[200px] bg-red-700">
-            
-            </div>
+          <div className="card w-[150px] h-[200px] bg-red-700"></div>
+          <div className="card w-[150px] h-[200px] bg-red-700"></div>
+          <div className="card w-[150px] h-[200px] bg-red-700"></div>
         </article>
         <article className="w-full h-1/2 md:w-1/2 md:h-full bg-zinc-900 "></article>
         <div className="w-[30%] absolute h-[1px] bg-amber-600 top-0 left-0 mb-[5%]"></div>
