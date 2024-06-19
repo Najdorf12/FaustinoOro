@@ -3,8 +3,7 @@ import { useGLTF } from "@react-three/drei";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { GUI } from "dat.gui";
-import { Float} from "@react-three/drei";
-
+import { Float } from "@react-three/drei";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,7 +13,7 @@ export const Knight = (props) => {
   const tl = gsap.timeline();
 
   /* DEBUG MODEL3D */
- /*   useLayoutEffect(() => {
+  /*   useLayoutEffect(() => {
     const gui = new GUI({ width: 400 });
 
     const debugRotation = {
@@ -98,9 +97,9 @@ export const Knight = (props) => {
   useLayoutEffect(() => {
     new ScrollTrigger({});
     tl.to(knight.current?.position, {
-      x: 3,
+      x: -1,
       y: 1,
-      z: -3,
+      z: -7,
       ease: "power1.out",
       scrollTrigger: {
         trigger: "#second_section",
@@ -111,7 +110,7 @@ export const Knight = (props) => {
       },
     })
       .to(knight.current?.rotation, {
-        y: .3,
+        y: 0.5,
         ease: "power1.out",
         scrollTrigger: {
           trigger: "#second_section",
@@ -219,6 +218,30 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.position, {
+        x: 4.565,
+        y: 0.4,
+        z: -4,
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: "#seven_section",
+          start: "top bottom",
+          end: "top top",
+          scrub: true,
+          immediateRender: false,
+        },
+      })
+      .to(knight.current?.rotation, {
+        y: -0.005,
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: "#seven_section",
+          start: "top bottom",
+          end: "top top",
+          scrub: true,
+          immediateRender: false,
+        },
+      })
+      .to(knight.current?.position, {
         x: 28.505,
         y: -1.15,
         z: -5.2,
@@ -243,7 +266,7 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.position, {
-        x: 27.,
+        x: 27,
         y: -1.5,
         z: -4.95,
         ease: "power1.inOut",

@@ -19,10 +19,13 @@ const Home = () => {
           </article>
 
           {/* BORDER BUTTONS */}
-          <span className="absolute mt-1 mr-2 top-0 right-0 flex justify-center items-center gap-3  font-text2 text-black py-1 md:mr-4 lg:mt-3 lg:mr-6 lg:gap-5 2xl:gap-10 2xl:mr-12 2xl:mt-4">
-            {/* <button className="bg-a00  w-[50px] px-2 py-2 rounded-md 2xl:w-[55px]">
-              <img className="w-full " src={logo} alt="" />
-            </button> */}
+          <span className="absolute mt-1  top-0 right-0 left-0 flex justify-center items-center gap-3  font-text2 text-black py-1  lg:mt-3 lg:justify-end lg:pr-[3%] 2xl:pr-[4%]  2xl:gap-10 2xl:mt-5">
+            <ul className="flex gap-10 sm:gap-14 md:text-lg 2xl:text-xl 2xl:gap-12 text-gray-300">
+              <li>Tournaments</li>
+              <li>Games</li>
+              <li>Contact</li>
+            </ul>
+            
           </span>
 
           <span className="bg-[#e8e8e8] absolute -bottom-1 -left-1 pl-1 pt-[2px] w-[200px] h-[75px]  border-[6px] border-[#e8e8e8]  rounded-tr-[20px] rounded-bl-[20px] md:w-[250px] md:h-[70px] lg:w-[330px] 2xl:w-[400px] 2xl:h-[80px]">

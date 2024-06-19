@@ -7,8 +7,6 @@ gsap.registerPlugin(ScrollTrigger);
 const Stats = () => {
   const tl = gsap.timeline();
 
-  useEffect(() => {}, []);
-
   useLayoutEffect(() => {
     new ScrollTrigger({});
     const text = new SplitType("#split", { type: "chars" });
@@ -26,25 +24,35 @@ const Stats = () => {
         end: "-30% 20%",
         scrub: 1,
       },
+    }).to("#text-reveal2", {
+      opacity: 1,
+      duration: 2,
+      delay: 2,
+      scrollTrigger: {
+        trigger: "#text-reveal2",
+        start: "160% bottom",
+        end: "10% 50%",
+        scrub: 1,
+      },
     });
   }, []);
   return (
     <>
       <section
         id="five_section"
-        className="w-full h-screen bg-zinc-900 flex justify-center items-center px-2 sm:px-4 text-white"
+        className="relative w-full h-screen bg-zinc-900 flex justify-center items-center px-2 sm:px-4 text-white"
       >
-        <article className="z-50 flex flex-col justify-center items-center gap-3 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%] 2xl:gap-10">
+        <article className="relative z-50 flex flex-col justify-center items-center gap-3 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%] 2xl:gap-10">
           <h6
             id="split"
-            /* style={{
-              WebkitTextStroke: "2px #d97706",
-            }} */
             className="font-text2 text-5xl  text-white font-bold md:text-6xl lg:text-[10dvh]"
           >
             LOREM IMPSUM
           </h6>
-          <p className="font-text2 text-gray-200 text-base md:text-lg lg:text-xl">
+          <p
+            id="text-reveal2"
+            className="font-text2 text-gray-200 text-base md:text-lg lg:text-xl opacity-0  "
+          >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo
             impedit sit aliquam laborum incidunt consectetur dicta temporibus
             libero, illum provident nobis, veniam sed! Voluptatem nulla rerum
@@ -52,8 +60,11 @@ const Stats = () => {
             alias quibusdam.
           </p>
         </article>
+        <div className="w-[30%] absolute h-[50px] bg-stone-600 top-0 left-0 mb-[5%]"></div>
+        <div className="w-[30%] absolute h-[1px] bg-amber-600 bottom-0 right-0 mb-[5%]"></div>
+        <div className="w-[30%] absolute h-[1px] bg-amber-600 bottom-0 left-0 mb-[5%]"></div>
       </section>
-     
+
       <section
         id="six_section"
         className="overflow-hidden relative w-full font-title3 h-screen font-semibold flex flex-col justify-between items-center text-white py-10  bg-zinc-900 text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl 2xl:leading-[4rem] z-10"
@@ -66,6 +77,31 @@ const Stats = () => {
           <h6 className="text-rose-800  w-[55%] md:w-full">LOREM IMPSUM</h6>
           <h6 className="w-[55%] md:w-full">LOREM IMPSUM </h6>
         </article>
+      </section>
+
+      <section
+        id="seven_section"
+        className="bg-zinc-800 w-full h-screen relative flex-col md:flex-row overflow-hidden"
+      >
+        <article className="w-full h-1/2 md:w-1/2 md:h-full bg-white text-white text-2xl font-text2 rounded-sm  flex flex-wrap justify-center items-center gap-2">
+          {" "}
+          <div className="card w-[150px] h-[200px] bg-red-700 flex justify-center items-center gap-3">
+            <h6>Lorem</h6>
+            <p className="text-center text-base px-2 text-gray-300">Some random text.</p>
+            <button className="text-center mt-4 text-black text-base px-6 py-1 rounded-md bg-amber-600">Button</button>
+          </div>
+          <div className="card w-[150px] h-[200px] bg-red-700">
+            
+          </div>
+          <div className="card w-[150px] h-[200px] bg-red-700">
+            
+          </div>
+          <div className="card w-[150px] h-[200px] bg-red-700">
+            
+            </div>
+        </article>
+        <article className="w-full h-1/2 md:w-1/2 md:h-full bg-zinc-900 "></article>
+        <div className="w-[30%] absolute h-[1px] bg-amber-600 top-0 left-0 mb-[5%]"></div>
       </section>
     </>
   );

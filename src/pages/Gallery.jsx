@@ -49,7 +49,6 @@ const Gallery = () => {
       })
       .to("#img-fausti2", {
         y: "-100px",
-
         stagger: 0.6,
         duration: 2,
         opacity: 0.9,
