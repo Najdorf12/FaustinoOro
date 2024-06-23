@@ -75,7 +75,7 @@ const Stats = () => {
           <h6 className="text-amber-600">LOREM IMPSUM </h6>
           <h6 className="text-stone-600 ">LOREM IMPSUM </h6>
         </article>
-        <article className="absolute bottom-0 right-0 sm:right-14 flex flex-col items-end justify-end   z-10 mb-6 md:right-3 lg:mb-10 2xl:mb-16 xl:mr-[3%]">
+        <article className="absolute bottom-0 right-0  flex flex-col items-end justify-end   z-10 mb-6 sm:mr-[30px] md:mr-0 md:max-w-[350px] xl:max-w-[50%]  lg:mb-10 2xl:mb-16 xl:mr-[3%]">
           <h6 className="text-amber-600  w-[55%] md:w-full">LOREM IMPSUM</h6>
           <h6 className="w-[55%] md:w-full text-stone-600">LOREM IMPSUM </h6>
         </article>
@@ -83,81 +83,113 @@ const Stats = () => {
 
       <section
         id="seven_section"
-        className="bg-zinc-800 w-full h-screen relative flex-col md:flex-row overflow-hidden"
+        className="bg-zinc-600  w-full h-screen overflow-hidden lg:flex lg:flex-row z-50"
       >
-        <article className="w-full h-1/2 md:w-1/2 md:h-full bg-white text-white text-2xl font-text2 rounded-sm  flex flex-wrap justify-center items-center gap-2">
-          {" "}
-          <div className="card w-[150px] h-[200px] flex items-center gap-2 pt-4 px-2">
-            <img className="w-[50px]" src={bullet} alt="" />
-            <h6>Lorem</h6>
-            <p className="text-center text-base px-2 leading-4 text-gray-300">
-              Some random text lorem.
-            </p>
-            <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-amber-600">
-              Button
-            </button>
+        <div className="bg-gray-300 h-screen w-full lg:w-1/2 ">
+          <div className="w-full h-[58%] bg-gray-300 flex justify-center items-center gap-x-4 flex-wrap font-text2 px-1 lg:gap-x-1 xl:gap-x-3 xl:h-[40%] 2xl:h-[35%] 2xl:gap-x-10">
+            <div className="card w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 ">
+              <img className="w-[50px]" src={bullet} alt="" />
+              <h6 className="text-2xl text-white">Lorem</h6>
+              <p className="text-center text-base px-2 leading-4 text-gray-400">
+                Some random text lorem.
+              </p>
+              <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-amber-600">
+                Button
+              </button>
+            </div>
+            <div className="card w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2">
+              <svg
+                height="48"
+                viewBox="0 0 48 48"
+                width="48"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="white"
+              >
+                <path d="M0 0h48v48h-48z" fill="none" />
+                <path d="M30 2h-12v4h12v-4zm-8 26h4v-12h-4v12zm16.05-13.23l2.85-2.85c-.86-1.03-1.8-1.97-2.83-2.83l-2.85 2.85c-3.07-2.46-6.98-3.94-11.23-3.94-9.95 0-17.99 8.06-17.99 18s8.04 18 17.99 18 18.01-8.06 18.01-18c0-4.25-1.48-8.15-3.95-11.23zm-14.05 25.23c-7.73 0-14-6.27-14-14s6.27-14 14-14 14 6.27 14 14-6.27 14-14 14z" />
+              </svg>
+              <h6 className="text-2xl text-white">Lorem</h6>
+              <p className="text-center text-base px-2 leading-4 text-gray-400">
+                Some random text lorem.
+              </p>
+              <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-amber-600">
+                Button
+              </button>
+            </div>
+            <div className="card w-[150px] min-h-[200px] flex items-center gap-2 pt-[10px] px-2">
+              <img className="w-[55px]" src={flash} alt="" />
+              <h6 className="text-2xl text-white">Lorem</h6>
+              <p className="text-center text-base px-2 leading-4 text-gray-400">
+                Some random text lorem.
+              </p>
+              <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-amber-600">
+                Button
+              </button>
+            </div>
+            <div className="card w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50 ">
+              <img className="w-[46px]" src={classicalchess} alt="" />
+              <h6 className="mt-[4px] text-2xl text-white">Lorem</h6>
+              <p className="text-center text-base px-2 leading-4 text-gray-400">
+                Some random text lorem.
+              </p>
+              <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-amber-600">
+                Button
+              </button>
+            </div>
           </div>
-          <div className="card w-[150px] h-[200px] flex items-center gap-2 pt-4 px-2">
-            <svg
-              height="48"
-              viewBox="0 0 48 48"
-              width="48"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="white"
-            >
-              <path d="M0 0h48v48h-48z" fill="none" />
-              <path d="M30 2h-12v4h12v-4zm-8 26h4v-12h-4v12zm16.05-13.23l2.85-2.85c-.86-1.03-1.8-1.97-2.83-2.83l-2.85 2.85c-3.07-2.46-6.98-3.94-11.23-3.94-9.95 0-17.99 8.06-17.99 18s8.04 18 17.99 18 18.01-8.06 18.01-18c0-4.25-1.48-8.15-3.95-11.23zm-14.05 25.23c-7.73 0-14-6.27-14-14s6.27-14 14-14 14 6.27 14 14-6.27 14-14 14z" />
-            </svg>
-            <h6>Lorem</h6>
-            <p className="text-center text-base px-2 leading-4 text-gray-300">
-              Some random text lorem.
-            </p>
-            <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-amber-600">
-              Button
-            </button>
+          <div className="w-full h-[42%] bg-zinc-900 xl:h-[60%] xl:pl-[7%] 2xl:h-[65%]">
+            <ul className="text-gray-300  text-md font-text2 flex flex-col justify-center items-center pt-[4%] gap-1 px-6 xl:max-w-[55%] 2xl:text-lg">
+              <li className="flex  items-center gap-2 bg-zinc-800 w-full py-[1px]">
+                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
+                Lorem impsum dolor sit.{" "}
+              </li>
+              <li className="flex  items-center gap-2  w-full">
+                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
+                Lorem impsum dolor sit.{" "}
+              </li>
+              <li className="flex  items-center gap-2 bg-zinc-800 w-full py-[1px]">
+                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
+                Lorem impsum dolor sit.{" "}
+              </li>
+              <li className="flex  items-center gap-2  w-full">
+                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
+                Lorem impsum dolor sit.{" "}
+              </li>
+              <li className="flex  items-center gap-2 bg-zinc-800 w-full py-[1px]">
+                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
+                Lorem impsum dolor sit.{" "}
+              </li>
+              <li className="flex  items-center gap-2  w-full">
+                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
+                Lorem impsum dolor sit.{" "}
+              </li>
+              <li className="flex  items-center gap-2 bg-zinc-800 w-full py-[1px]">
+                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
+                Lorem impsum dolor sit.{" "}
+              </li>
+              <li className="flex  items-center gap-2  w-full">
+                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
+                Lorem impsum dolor sit.{" "}
+              </li>
+            </ul>
           </div>
-          <div className="card w-[150px] h-[200px] flex items-center gap-2 pt-[10px] px-2">
-          <img className="w-[55px]" src={flash} alt="" />
-            <h6>Lorem</h6>
-            <p className="text-center text-base px-2 leading-4 text-gray-300">
-              Some random text lorem.
+        </div>
+
+        <div className="hidden bg-zinc-900 lg:flex lg:flex-col lg:w-1/2 lg:h-screen relative ">
+          <div className="w-full bg-zinc-900 lg:h-[40%] 2xl:h-[35%] "></div>
+          <div className="w-full bg-gray-300 lg:h-[60%] 2xl:h-[65%] flex flex-col items-center justify-center gap-6 2xl:gap-8">
+            <p className="text-3xl 2xl:text-4xl font-title text-stone-700  font-bold w-[80%]  "> 
+            EL AJEDREZ ES ALGO MÁS QUE UN JUEGO. ES UNA DIVERSIÓN INTELECTUAL QUE TIENE ALGO DE ARTE Y MUCHO DE CIENCIA. ES ADEMAS, UN MEDIO DE ACERCAMIENTO SOCIAL E INTELECTUAL.
             </p>
-            <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-amber-600">
-              Button
-            </button>
+            
+            <legend className="w-[80%] xl:text-2xl 2xl:text-3xl font-title text-gray-500 flex flex-col items-end xl:gap-3 2xl:gap-6">
+            <div className="w-full bg-white h-[1px] "></div>
+               José Raúl Capablanca
+              </legend>
           </div>
-          <div className="card w-[150px] h-[200px] flex items-center gap-2 pt-4 px-2">
-          <img className="w-[46px]" src={classicalchess} alt="" />
-            <h6 className="mt-[4px]">Lorem</h6>
-            <p className="text-center text-base px-2 leading-4 text-gray-300">
-              Some random text lorem.
-            </p>
-            <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-amber-600">
-              Button
-            </button>
-          </div>
-        </article>
-        <article className="w-full h-1/2 md:w-1/2 md:h-full bg-zinc-900 "></article>
-        <div className="w-[30%] absolute h-[1px] bg-amber-600 top-0 left-0 mb-[5%]"></div>
+        </div>
       </section>
     </>
   );
 };
 export default Stats;
-{
-  /* 
-     <section
-      id="five_section"
-      className="w-full h-screen bg-zinc-700 z-10 text-4xl sm:text-5xl  xl:text-6xl 2xl:text-8xl 2xl:leading-[5rem] font-semibold flex flex-col justify-between items-center text-white py-4 sm:py-6 xl:py-8 2xl:py-20"
-    >
-     <article className="z-50 md:self-start md:pl-[5%]">
-        <h6>LOREM IMPSUM </h6>
-        <h6 className="text-stone-700">LOREM IMPSUM </h6>
-      </article>
-      <article className="md:self-end md:pr-[4.5%]">
-        <h6 className="text-stone-700">LOREM IMPSUM</h6>
-        <h6>LOREM IMPSUM </h6>
-      </article> 
-    </section>
-      */
-}

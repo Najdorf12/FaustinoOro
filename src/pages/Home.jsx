@@ -1,7 +1,18 @@
-import logo from "/logo.png";
-import iconTarget from "/iconTarget.png";
+import icon1 from "../assets/icons/icon1.png";
+import icon2 from "../assets/icons/icon2.png";
+import icon3 from "../assets/icons/icon3.png";
+import icon4 from "../assets/icons/icon4.png";
+import gsap from "gsap";
+import { useLayoutEffect,useRef } from "react";
 
 const Home = () => {
+  const iconsList= useRef();
+  
+  useLayoutEffect(() => {
+   
+  
+  }, []);
+
   return (
     <>
       <section className=" w-full h-screen bg-[#e8e8e8] flex justify-center items-center z-50 ">
@@ -20,19 +31,26 @@ const Home = () => {
 
           {/* BORDER BUTTONS */}
           <span className="absolute mt-1  top-0 right-0 left-0 flex justify-center items-center gap-3  font-text2 text-black py-1  lg:mt-3 lg:justify-end lg:pr-[3%] 2xl:pr-[4%]  2xl:gap-10 2xl:mt-5">
-            <ul className="flex gap-10 sm:gap-14 md:text-lg 2xl:text-xl 2xl:gap-12 text-gray-300">
-              <li>Tournaments</li>
-              <li>Games</li>
-              <li>Contact</li>
+            <ul className="flex gap-10 sm:gap-14 md:text-lg 2xl:text-lg 2xl:gap-8 text-gray-400">
+              <li className="border border-gray-500 px-3 rounded-xl py-[2.5px] ">
+                Tournaments
+              </li>
+              <li className="border border-gray-500 px-3 rounded-xl py-[2.5px]">
+                Games
+              </li>
+              <li className="border border-gray-500 px-3 rounded-xl py-[2.5px]">
+                Contact
+              </li>
             </ul>
-            
           </span>
 
-          <span className="bg-[#e8e8e8] absolute -bottom-1 -left-1 pl-1 pt-[2px] w-[200px] h-[75px]  border-[6px] border-[#e8e8e8]  rounded-tr-[20px] rounded-bl-[20px] md:w-[250px] md:h-[70px] lg:w-[330px] 2xl:w-[400px] 2xl:h-[80px]">
-            <p className=" text-2xl font-title3 font-medium leading-5 xl:text-[1.7rem] xl:leading-6">
-              LOREM IMSPSUM DOLOR SIT{" "}
-            </p>
-          </span>
+          <div ref={iconsList} className="bg-gray-300 absolute -bottom-1 -left-1  pt-[1px] w-[200px] h-[65px]  border-[3px] border-[#e8e8e8]  rounded-tr-[20px] rounded-bl-[20px] md:w-[250px]   flex justify-center items-center 2xl:justify-start">
+           
+            <figure className="icon ">
+              <img className="w-[50px]" src={icon1} alt="" />
+            </figure>
+            <p className=" text-lg font-medium font-text2 text-gray-600 2xl:text-xl">LOREM IMPSUM</p>
+          </div>
         </div>
       </section>
     </>
