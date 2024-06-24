@@ -133,7 +133,7 @@ const Gallery = () => {
         </div>
       </section>
       {/* SECOND GALLERY */}
-      <section
+      {/* <section
         id="second_gallery"
         className="w-full h-screen bg-zinc-900 overflow-y-visible relative px-2 md:pl-6 xl:pl-[4%]"
       >
@@ -180,7 +180,7 @@ const Gallery = () => {
             </figure>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

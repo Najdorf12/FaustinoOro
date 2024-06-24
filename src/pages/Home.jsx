@@ -31,15 +31,15 @@ const Home = () => {
 
           {/* BORDER BUTTONS */}
           <span className="absolute mt-1  top-0 right-0 left-0 flex justify-center items-center gap-3  font-text2 text-black py-1  lg:mt-3 lg:justify-end lg:pr-[3%] 2xl:pr-[4%]  2xl:gap-10 2xl:mt-5">
-            <ul className="flex gap-10 sm:gap-14 md:text-lg 2xl:text-lg 2xl:gap-8 text-gray-400">
-              <li className="border border-gray-500 px-3 rounded-xl py-[2.5px] ">
-                Tournaments
+            <ul className="flex gap-10 sm:gap-14 md:text-lg 2xl:text-lg 2xl:gap-10 text-gray-400">
+              <li className="border border-gray-500 px-3 rounded-xl py-[2.5px]  xl:px-7 ">
+                Torneos
               </li>
-              <li className="border border-gray-500 px-3 rounded-xl py-[2.5px]">
-                Games
+              <li className="border border-gray-500 px-3 rounded-xl py-[2.5px] xl:px-7 ">
+                Partidas
               </li>
-              <li className="border border-gray-500 px-3 rounded-xl py-[2.5px]">
-                Contact
+              <li className="border border-gray-500 px-3 rounded-xl py-[2.5px] xl:px-7 ">
+                Contacto
               </li>
             </ul>
           </span>

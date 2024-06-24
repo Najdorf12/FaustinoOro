@@ -66,21 +66,21 @@ const Stats = () => {
         <div className="w-[40%] absolute h-[1px] bg-white top-0 left-0 mb-[5%]"></div>
         <div className="w-[40%] absolute h-[1px] bg-amber-600 bottom-0 right-0 mb-[5%]"></div>
       </section>
-
+     
       <section
         id="six_section"
         className="overflow-hidden relative w-full font-title3 h-screen font-semibold flex flex-col justify-between items-center text-white py-10  bg-zinc-900 text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl 2xl:leading-[4rem] z-10"
       >
-        <article className="absolute top-0 left-0 max-w-[30%] md:max-w-[50%] mt-6 ml-3 z-0 lg:mt-10 xl:ml-[3%] 2xl:mt-16 ">
+        <article className="absolute top-0 left-0 max-w-[30%] md:max-w-[50%] mt-6 ml-3 z-0 lg:mt-4 xl:ml-[3%] 2xl:mt-16 ">
           <h6 className="text-amber-600">LOREM IMPSUM </h6>
           <h6 className="text-stone-600 ">LOREM IMPSUM </h6>
         </article>
-        <article className="absolute bottom-0 right-0  flex flex-col items-end justify-end   z-10 mb-6 sm:mr-[30px] md:mr-0 md:max-w-[350px] xl:max-w-[50%]  lg:mb-10 2xl:mb-16 xl:mr-[3%]">
+        <article className="absolute bottom-0 right-0  flex flex-col items-end justify-end   z-10 mb-6 sm:mr-[30px] md:mr-0 md:max-w-[350px] xl:max-w-[50%]  lg:mb-4 2xl:mb-16 xl:mr-[3%]">
           <h6 className="text-amber-600  w-[55%] md:w-full">LOREM IMPSUM</h6>
           <h6 className="w-[55%] md:w-full text-stone-600">LOREM IMPSUM </h6>
         </article>
       </section>
-
+      <div className="w-full h-[10dvh]"></div>
       <section
         id="seven_section"
         className="bg-zinc-600  w-full h-screen overflow-hidden lg:flex lg:flex-row z-50"
@@ -178,14 +178,16 @@ const Stats = () => {
         <div className="hidden bg-zinc-900 lg:flex lg:flex-col lg:w-1/2 lg:h-screen relative ">
           <div className="w-full bg-zinc-900 lg:h-[40%] 2xl:h-[35%] "></div>
           <div className="w-full bg-gray-300 lg:h-[60%] 2xl:h-[65%] flex flex-col items-center justify-center gap-6 2xl:gap-8">
-            <p className="text-3xl 2xl:text-4xl font-title text-stone-700  font-bold w-[80%]  "> 
-            EL AJEDREZ ES ALGO MÁS QUE UN JUEGO. ES UNA DIVERSIÓN INTELECTUAL QUE TIENE ALGO DE ARTE Y MUCHO DE CIENCIA. ES ADEMAS, UN MEDIO DE ACERCAMIENTO SOCIAL E INTELECTUAL.
+            <p className="text-3xl 2xl:text-4xl font-title text-stone-700  font-bold w-[80%]  ">
+              EL AJEDREZ ES ALGO MÁS QUE UN JUEGO. ES UNA DIVERSIÓN INTELECTUAL
+              QUE TIENE ALGO DE ARTE Y MUCHO DE CIENCIA. ES ADEMAS, UN MEDIO DE
+              ACERCAMIENTO SOCIAL E INTELECTUAL.
             </p>
-            
-            <legend className="w-[80%] xl:text-2xl 2xl:text-3xl font-title text-gray-500 flex flex-col items-end xl:gap-3 2xl:gap-6">
-            <div className="w-full bg-white h-[1px] "></div>
-               José Raúl Capablanca
-              </legend>
+
+            <legend className="w-[80%] xl:text-2xl 2xl:text-3xl font-title text-stone-500 flex flex-col items-end xl:gap-3 2xl:gap-6">
+              <div className="w-full bg-white h-[1px] "></div>
+              José Raúl Capablanca
+            </legend>
           </div>
         </div>
       </section>
