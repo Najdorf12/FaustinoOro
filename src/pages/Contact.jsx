@@ -16,6 +16,7 @@ const Contact = () => {
       </section>
       <section id="contact2_section" className="w-full h-screen bg-gray-300">
         <h6 className="text-red-500 text-3xl">Contact</h6>
+        
       </section>
     </>
   );
