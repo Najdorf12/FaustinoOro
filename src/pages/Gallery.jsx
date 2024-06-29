@@ -70,7 +70,7 @@ const Gallery = () => {
         className="pt-5 pl-2 w-full h-screen bg-zinc-900  font-title relative flex items-start overflow-hidden "
       >
         <article className="relative pt-2 px-3  gap-3 z-40 sm:max-w-[500px] lg:max-w-[700px]   lg:ml-16 xl:ml-32 2xl:mt-24 2xl:max-w-[950px]">
-          <h3 className="split mt-1 font-title text-white font-bold text-5xl md:text-6xl z-50 lg:text-7xl xl:text-[5rem] 2xl:text-[6.2rem] ">
+          <h3 className="split mt-1 font-title text-white font-bold text-7xl md:text-6xl z-50 lg:text-7xl xl:text-[4.7rem]  2xl:text-[6.2rem] ">
             SOME RANDOM TEXT LOREM IMPSUM
             <div
               style={{
@@ -124,7 +124,7 @@ const Gallery = () => {
             <figure className=" w-full h-[49%]">
               <img
                 id="img-fausti"
-                src={imgFausti6}
+                src={imgFausti4}
                 className="w-full h-full object-cover opacity-0 rounded-md"
                 alt=""
               />
