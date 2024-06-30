@@ -45,7 +45,7 @@ const Stats = () => {
         id="five_section"
         className="relative w-full h-screen bg-zinc-900 flex justify-center items-center px-2 sm:px-4 text-white"
       >
-        <article className="relative z-50 flex flex-col justify-center items-center gap-3 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%] xl:gap-8 2xl:gap-10">
+        <article className="relative z-50 flex flex-col justify-center items-center gap-8 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%] xl:gap-8 2xl:gap-10">
           <h6
             id="split"
             className="font-text2 text-5xl  text-white font-bold md:text-6xl lg:text-[10dvh]"

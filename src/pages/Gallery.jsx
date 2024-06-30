@@ -132,55 +132,7 @@ const Gallery = () => {
           </div>
         </div>
       </section>
-      {/* SECOND GALLERY */}
-      {/* <section
-        id="second_gallery"
-        className="w-full h-screen bg-zinc-900 overflow-y-visible relative px-2 md:pl-6 xl:pl-[4%]"
-      >
-        <div className="flex justify-center overflow-y-visible items-center gap-2 lg:gap-4 w-full h-[75%] max-h-screen md:w-[80%] lg:w-[70%] xl:w-[55%]">
-          <div
-            id="imgs-container"
-            className="flex flex-col gap-2 lg:gap-4 w-[40%] h-full "
-          >
-            <figure className="w-full h-[60%]">
-              <img
-                id="img-fausti2"
-                src={imgFausti2}
-                className="w-full h-full object-cover opacity-0 rounded-md"
-                alt=""
-              />
-            </figure>
-            <figure className="w-full h-[40%] ">
-              <img
-                id="img-fausti2"
-                className="w-full bg-gray-200 h-full object-cover opacity-0 rounded-md"
-                alt=""
-              />
-            </figure>
-          </div>
-
-          <div
-            id="imgs-container"
-            className="flex flex-col gap-2 lg:gap-4 h-full w-[50%] "
-          >
-            <figure className="w-full h-[49%]">
-              <img
-                id="img-fausti2"
-                className="w-full border border-stone-500  h-full object-cover opacity-0 rounded-md"
-                alt=""
-              />
-            </figure>
-            <figure className=" w-full h-[49%]">
-              <img
-                id="img-fausti2"
-                src={imgFausti6}
-                className="w-full h-full object-cover opacity-0 rounded-md"
-                alt=""
-              />
-            </figure>
-          </div>
-        </div>
-      </section> */}
+     
     </>
   );
 };
