@@ -100,7 +100,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="w-full h-screen bg-gray-300 flex flex-col gap-3">
+      <section className="w-full h-screen bg-gray-300 flex flex-col gap-3 pt-[6%]">
         <article className="pl-[5%] md:pl-[3%] lg:pl-[6%]">
           <h3 className="font-title text-4xl text-stone-700  font-semibold 2xl:text-6xl">
             Lorem Impsum
@@ -128,10 +128,10 @@ const Contact = () => {
             </li>
           </ul>
         </footer>
-        <span className="flex justify-center items-center w-[80%] place-self-center  h-[1.5px] bg-white absolute bottom-14 lg:bottom-[18px] 2xl:bottom-[32px] left-0 right-0"></span>
+        <span className="flex justify-center items-center w-[50%] 2xl:w-[30%] place-self-center  h-[1.5px] bg-white absolute bottom-14 lg:bottom-[18px] 2xl:bottom-[32px] left-0 right-0"></span>
         <div className="flex justify-center items-center gap-2 font-text2 text-sm 2xl:text-base text-gray-500 absolute bottom-0 xl:-bottom-1 2xl:bottom-0 left-0 right-0">
           <i className="bx bx-copyright text-xl"></i>
-          <span>Faustino Oro Official Website</span>
+          <span>Faustino Oro {/* official website */}</span>
         </div>
       </section>
     </>
