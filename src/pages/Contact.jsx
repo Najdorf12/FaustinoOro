@@ -39,7 +39,7 @@ const Contact = () => {
 
       <section
         id="contact_section"
-        className="w-full h-screen bg-gray-300  pl-[5%] flex flex-col gap-16 2xl:gap-40 overflow-y-visible"
+        className="w-full h-[70dvh] xl:h-screen bg-gray-300  pl-[5%] flex flex-col gap-16 2xl:gap-40 overflow-y-visible"
       >
         <h6 className="relative text-[5rem] md:text-[5.5rem] text-stone-600 font-title font-semibold 2xl:text-[9rem] ">
           LOREM
@@ -57,11 +57,11 @@ const Contact = () => {
 
       <section
         id="contact2_section"
-        className="w-full h-screen bg-gray-300 pl-[5%]  md:pl-[3%] relative"
+        className="relative w-full h-[80dvh] bg-gray-300 pl-[5%] sm:pl-[8%]  lg:pl-[10%] xl:pl-[12%] 2xl:pl-[15%] "
       >
-        <article className="flex flex-col md:flex-row   justify-start gap-8  font-title text-[.8rem] font-medium  text-gray-700 pr-[3%] lg:gap-20 2xl:gap-40 2xl:text-[1rem]">
-          <div className="flex flex-col gap-2 lg:gap-3  relative ">
-            <div className="w-[2px] h-full absolute bg-white"></div>
+        <article className="z-50 flex flex-col md:flex-row justify-start gap-8  font-text2 text-[1rem] font-normal  text-stone-700 pr-[3%] lg:gap-20 xl:text-[1.2rem]  2xl:text-[1.2rem] ">
+          <div className="flex flex-col gap-2 lg:gap-3  relative z-50 mt-5 lg:mt-10 xl:mt-16 2xl:mt-4">
+            {/*    <div className="w-[2px] h-full absolute bg-white "></div> */}
 
             {palmares.map((tournament, i) => (
               <>
@@ -77,14 +77,14 @@ const Contact = () => {
               </>
             ))}
           </div>
-          <div className="flex flex-col gap-2 lg:gap-3 relative">
-            <div className="w-[2px] h-full absolute bg-white"></div>
+          <div className="flex flex-col gap-2 lg:gap-3 relative  mt-5 lg:mt-10 xl:mt-16 z-50 2xl:mt-4">
+            {/* <div className="w-[2px] h-full absolute bg-white"></div> */}
 
             {palmares.map((tournament, i) => (
               <>
                 <div
                   key={i}
-                  className="flex items-center justify-start gap-2 pl-4 lg:pl-6 2xl:pl-8"
+                  className="flex items-center justify-start gap-2 pl-4 lg:pl-6 2xl:pl-8 z-50"
                 >
                   <figure className="max-w-6 2xl:max-w-8">
                     <img src={icon} alt="" className="w-full" />
@@ -94,13 +94,11 @@ const Contact = () => {
               </>
             ))}
           </div>
-        </article>
-        <div className="">
           <Boxes />
-        </div>
+        </article>
       </section>
 
-      <section className="w-full h-screen bg-gray-300 flex flex-col gap-3 pt-[6%]">
+      <section className="w-full h-auto bg-gray-700 flex flex-col gap-3 pt-[6%]">
         <article className="pl-[5%] md:pl-[3%] lg:pl-[6%]">
           <h3 className="font-title text-4xl text-stone-700  font-semibold 2xl:text-6xl">
             Lorem Impsum

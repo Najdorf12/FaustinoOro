@@ -69,7 +69,37 @@
   box-shadow: inset 0 0 0 3px #fff;
   transform: translate3d(0, 0, 2em);
 }
-
+/* Boxes-contact*/
+.box-white{
+  width:60px;
+  height:60px;
+  background-color: #ffffff;
+}
+.box-black{
+  width:60px;
+  height:60px;
+  background-color: transparent;
+}
+@media(min-width:666px){
+  .box-white{
+    width:80px;
+    height:80px;
+  }
+  .box-black{
+    width:80px;
+    height:80px;
+  }
+}
+@media(min-width:1200px){
+  .box-white{
+    width:100px;
+    height:100px;
+  }
+  .box-black{
+    width:100px;
+    height:100px;
+  }
+}
 /* CARD */
 .card {
   height: 40%;

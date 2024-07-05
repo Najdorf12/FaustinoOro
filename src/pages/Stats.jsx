@@ -43,7 +43,7 @@ const Stats = () => {
     <>
       <section
         id="five_section"
-        className="relative w-full h-screen bg-zinc-900 flex justify-center items-center px-2 sm:px-4 text-white"
+        className="relative w-full h-screen bg-zinc-900 flex justify-center items-center px-2 sm:px-4 text-white "
       >
         <article className="relative z-50 flex flex-col justify-center items-center gap-8 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%] xl:gap-8 2xl:gap-10">
           <h6
@@ -83,9 +83,9 @@ const Stats = () => {
       <div className="w-full h-[10dvh]"></div>
       <section
         id="seven_section"
-        className="bg-zinc-600  w-full h-screen overflow-hidden lg:flex lg:flex-row z-50"
+        className="bg-zinc-600  w-full h-screen overflow-hidden lg:flex lg:flex-row z-[150]"
       >
-        <div className="bg-gray-300 h-screen w-full  lg:w-1/2 ">
+        <div className="bg-gray-300 h-screen w-full  lg:w-1/2  z-[150] xl:z-20">
           <div className="w-full h-[58%] bg-gray-300 flex justify-center items-center gap-x-4 flex-wrap font-text2 px-1 lg:gap-x-1 xl:gap-x-3 xl:h-[40%] 2xl:h-[35%] 2xl:gap-x-10">
             <div className="card w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50">
               <img className="w-[50px]" src={bullet} alt="" />
@@ -189,8 +189,8 @@ const Stats = () => {
           </div>
         </div>
 
-        <div className="hidden bg-zinc-900 lg:flex lg:flex-col lg:w-1/2 lg:h-screen relative ">
-          <div className="w-full bg-zinc-900 lg:h-[40%] 2xl:h-[35%] "></div>
+        <div className="hidden bg-zinc-900 lg:flex lg:flex-col lg:w-1/2 lg:h-screen relative z-[150] xl:z-20">
+          <div className="w-full bg-zinc-900 lg:h-[40%] 2xl:h-[35%] z-[150] xl:z-20"></div>
           <div className="w-full bg-gray-300 lg:h-[60%] 2xl:h-[65%] flex flex-col items-center justify-center gap-6 2xl:gap-8">
             <p className="text-2xl 2xl:text-4xl font-title text-white  font-bold w-[80%]">
               EL AJEDREZ ES ALGO MÁS QUE UN JUEGO. ES UNA DIVERSIÓN INTELECTUAL
