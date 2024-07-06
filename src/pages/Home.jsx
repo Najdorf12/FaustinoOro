@@ -1,13 +1,8 @@
-import icon1 from "../assets/icons/icon1.png";
-import icon2 from "../assets/icons/icon2.png";
-import icon3 from "../assets/icons/icon3.png";
-import icon4 from "../assets/icons/icon4.png";
-import gsap from "gsap";
+import { Link } from "react-router-dom";
 import { useLayoutEffect, useRef } from "react";
 
 const Home = () => {
   const iconsList = useRef();
-
   useLayoutEffect(() => {}, []);
 
   return (
@@ -32,9 +27,11 @@ const Home = () => {
               <li className="border border-gray-500 px-3 rounded-xl py-[2.5px]  xl:px-7 ">
                 Torneos
               </li>
-              <li className="border border-gray-500 px-3 rounded-xl py-[2.5px] xl:px-7 ">
-                Partidas
-              </li>
+              <Link to="/games">
+                <li className="border border-gray-500 px-3 rounded-xl py-[2.5px] xl:px-7 ">
+                  Partidas
+                </li>
+              </Link>
               <li className="border border-gray-500 px-3 rounded-xl py-[2.5px] xl:px-7 ">
                 Contacto
               </li>
@@ -59,7 +56,7 @@ const Home = () => {
             </div>
           </div>
           */}
-        </div> 
+        </div>
       </section>
     </>
   );

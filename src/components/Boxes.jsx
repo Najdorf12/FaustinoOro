@@ -1,7 +1,7 @@
 const Boxes = () => {
   return (
     <>
-      <section className="absolute flex h-full w-full left-0 z-10  xl:-top-20 2xl:-top-5">
+      <section className="absolute flex h-full w-full left-0 z-10  xl:-top-28 2xl:-top-5">
         <div className="box-container">
           <div className="box-white"></div>
           <div className="box-black"></div>

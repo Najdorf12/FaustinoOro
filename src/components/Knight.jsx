@@ -242,9 +242,9 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.position, {
-        x: -4,
-        y: -.5,
-        z: 22,
+        x: -1.3,
+        y: -.7,
+        z: 23,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#contact_section",
@@ -255,7 +255,7 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.rotation, {
-        y: -1.86,
+        y: -1.74,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#contact_section",
@@ -266,9 +266,9 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.position, {
-        x: -2.5,
-        y: -.4,
-        z: 22,
+        x: -1.5,
+        y: -.7,
+        z: 23,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#contact2_section",
@@ -279,7 +279,7 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.rotation, {
-        y: -1.75,
+        y: -1.74,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#contact2_section",

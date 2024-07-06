@@ -69,35 +69,74 @@
   box-shadow: inset 0 0 0 3px #fff;
   transform: translate3d(0, 0, 2em);
 }
+/* CHESSBOARD */
+.chessboard-wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Boxes-contact*/
-.box-white{
-  width:60px;
-  height:60px;
+.box-white {
+  width: 60px;
+  height: 60px;
   background-color: #ffffff;
 }
-.box-black{
-  width:60px;
-  height:60px;
+.box-black {
+  width: 60px;
+  height: 60px;
   background-color: transparent;
 }
-@media(min-width:666px){
-  .box-white{
-    width:80px;
-    height:80px;
+#glass-box {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  clip-path: polygon(
+    30px 0%,
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%,
+    0% 30px
+  );
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media (min-width: 666px) {
+  .box-white {
+    width: 80px;
+    height: 80px;
   }
-  .box-black{
-    width:80px;
-    height:80px;
+  .box-black {
+    width: 80px;
+    height: 80px;
+  }
+  #glass-box {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+
+    clip-path: polygon(
+      30px 0%,
+      100% 0,
+      100% calc(100% - 30px),
+      calc(100% - 30px) 100%,
+      0 100%,
+      0% 30px
+    );
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
   }
 }
-@media(min-width:1200px){
-  .box-white{
-    width:100px;
-    height:100px;
+@media (min-width: 1200px) {
+  .box-white {
+    width: 100px;
+    height: 100px;
   }
-  .box-black{
-    width:100px;
-    height:100px;
+  .box-black {
+    width: 100px;
+    height: 100px;
   }
 }
 /* CARD */
@@ -131,8 +170,8 @@
 /* CONTACTFORM */
 .form-container {
   background: linear-gradient(#ffffff, #b4b1b1) padding-box,
-    linear-gradient(145deg, transparent 35%, #b88425, #ebc036) border-box;
-  border: 2px solid transparent;
+    linear-gradient(145deg, transparent 35%, #b17720,#ac7510) border-box;
+  border: 4px solid transparent;
   padding: 32px 24px;
   font-size: 14px;
   color: white;
@@ -234,12 +273,12 @@
   background-color: #fff;
   border-color: #fff;
 }
-@media(min-width:1300px){
+@media (min-width: 1300px) {
   .form-container .form-group label {
     font-size: 12px;
   }
 }
-@media(min-width:1500px){
+@media (min-width: 1500px) {
   .form-container .form-group label {
     font-size: 14px;
   }

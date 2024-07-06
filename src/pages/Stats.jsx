@@ -126,7 +126,7 @@ const Stats = () => {
                 Button
               </button>
             </div>
-            <div className="card w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50 ">
+            <div className="card w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-[150] ">
               <img className="w-[46px]" src={classicalchess} alt="" />
               <h6 className="mt-[4px] text-2xl text-white">Lorem</h6>
               <p className="text-center text-base px-2 leading-4 text-gray-400">

@@ -59,9 +59,8 @@ const Contact = () => {
         id="contact2_section"
         className="relative w-full h-[80dvh] bg-gray-300 pl-[5%] sm:pl-[8%]  lg:pl-[10%] xl:pl-[12%] 2xl:pl-[15%] "
       >
-        <article className="z-50 flex flex-col md:flex-row justify-start gap-8  font-text2 text-[1rem] font-normal  text-stone-700 pr-[3%] lg:gap-20 xl:text-[1.2rem]  2xl:text-[1.2rem] ">
-          <div className="flex flex-col gap-2 lg:gap-3  relative z-50 mt-5 lg:mt-10 xl:mt-16 2xl:mt-4">
-            {/*    <div className="w-[2px] h-full absolute bg-white "></div> */}
+        <article className="z-50  flex flex-col md:flex-row justify-start gap-0  font-text2 text-[1rem] font-normal  text-stone-700 pr-[3%] md:gap-3 lg:gap-20 xl:text-[1.1rem]   ">
+          <div id="glass-box" className="flex flex-col gap-2 pt-4 pb-4 pr-4 max-w-max lg:gap-3  relative z-50 mt-2 sm:pr-8 sm:pl-4 lg:pl-0 2xl:pt-5 2xl:pr-10 2xl:pb-5 lg:mt-10 xl:mt-16 2xl:mt-4 ">
 
             {palmares.map((tournament, i) => (
               <>
@@ -77,8 +76,7 @@ const Contact = () => {
               </>
             ))}
           </div>
-          <div className="flex flex-col gap-2 lg:gap-3 relative  mt-5 lg:mt-10 xl:mt-16 z-50 2xl:mt-4">
-            {/* <div className="w-[2px] h-full absolute bg-white"></div> */}
+          <div id="glass-box" className="flex flex-col gap-2 max-w-max lg:gap-3 relative z-50  mt-2 pt-4 pb-4 pr-4 sm:pr-8 sm:pl-4 lg:pl-0 lg:mt-10 xl:mt-16  2xl:mt-4  2xl:pt-5 2xl:pr-10 2xl:pb-5">
 
             {palmares.map((tournament, i) => (
               <>
@@ -86,7 +84,7 @@ const Contact = () => {
                   key={i}
                   className="flex items-center justify-start gap-2 pl-4 lg:pl-6 2xl:pl-8 z-50"
                 >
-                  <figure className="max-w-6 2xl:max-w-8">
+                  <figure className="max-w-6 2xl:max-w-8 ">
                     <img src={icon} alt="" className="w-full" />
                   </figure>
                   <p>{tournament.tournament}</p>
@@ -98,19 +96,20 @@ const Contact = () => {
         </article>
       </section>
 
-      <section className="w-full h-auto bg-gray-700 flex flex-col gap-3 pt-[6%]">
+      <section className="w-full h-auto bg-zinc-900 flex flex-col gap-3 pt-[6%] md:pt-[4%]">
         <article className="pl-[5%] md:pl-[3%] lg:pl-[6%]">
-          <h3 className="font-title text-4xl text-stone-700  font-semibold 2xl:text-6xl">
-            Lorem Impsum
+          <h3 className="font-title text-5xl text-white  font-semibold lg:text-6xl 2xl:text-8xl">
+            CONTACT
           </h3>
-          <p className="text-gray-500 font-text2 text-lg leading-5 mt-6 lg:mt-3 2xl:mt-8 pr-3 xl:text-xl 2xl:text-2xl">
+          <div className="w-[30%] h-[2px] bg-amber-600 mt-3 lg:mt-4 2xl:mt-4"></div>
+          <p className="text-stone-400 font-text2 text-lg leading-5 mt-6 lg:mt-6 pr-3 xl:text-xl 2xl:text-2xl">
             Open to new opportunities and collaborations. Let`s talk.
           </p>
           <ContactForm />
         </article>
 
-        <footer className="w-full mt-6 lg:mt-1 2xl:mt-10">
-          <ul className="flex gap-8 justify-center items-center sm:pl-[20%] lg:pl-[10%]  sm:justify-start text-stone-600 text-4xl 2xl:text-5xl 2xl:pl-[7.3%] 2xl:gap-12">
+        <footer className="w-full mt-6 lg:mt-1 xl:mt-8 2xl:mt-10">
+          <ul className="flex gap-8 justify-center items-center sm:pl-[20%] md:pl-[12%] lg:pl-[10%] xl:pl-[11%]  sm:justify-start text-stone-500 text-4xl 2xl:text-5xl 2xl:pl-[8%] 2xl:gap-12">
             <li>
               <i className="bx bxl-youtube"></i>
             </li>
@@ -126,8 +125,8 @@ const Contact = () => {
             </li>
           </ul>
         </footer>
-        <span className="flex justify-center items-center w-[50%] 2xl:w-[30%] place-self-center  h-[1.5px] bg-white absolute bottom-14 lg:bottom-[18px] 2xl:bottom-[32px] left-0 right-0"></span>
-        <div className="flex justify-center items-center gap-2 font-text2 text-sm 2xl:text-base text-gray-500 absolute bottom-0 xl:-bottom-1 2xl:bottom-0 left-0 right-0">
+        <span className="flex justify-center items-center w-[50%] 2xl:w-[30%] place-self-center  h-[1.5px] mt-8 bg-stone-700 md:mt-16 z-50 "></span>
+        <div className="flex justify-center items-center gap-2 mb-2 font-text2 text-sm 2xl:text-base text-amber-600 z-50 ">
           <i className="bx bx-copyright text-xl"></i>
           <span>Faustino Oro {/* official website */}</span>
         </div>
