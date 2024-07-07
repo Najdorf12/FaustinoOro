@@ -17,68 +17,52 @@ const Gallery = () => {
 
   useLayoutEffect(() => {
     new ScrollTrigger({});
-    const text = new SplitType(".split", { type: "chars" });
-    const chars = text?.chars;
 
-    tl.from(chars, {
-      yPercent: 60,
-      stagger: 0.4,
-      ease: "back.out",
-      duration: 5,
-      opacity: 0,
+    tl.to("#img-fausti", {
+      y: "-100px",
+      stagger: 0.6,
+      duration: 2,
+      opacity: 0.9,
+      rotateZ: -10,
+      rotateY: 2,
       scrollTrigger: {
-        trigger: ".split",
-        start: "30% 100%",
-        end: "10% 20%",
+        trigger: "#four_section",
+        start: "30% bottom",
+        end: "50% 60%",
         scrub: 1,
       },
-    })
-      .to("#img-fausti", {
-        y: "-100px",
-        stagger: 0.6,
-        duration: 2,
-        opacity: 0.9,
-        rotateZ: -10,
-        rotateY: 2,
-        scrollTrigger: {
-          trigger: "#four_section",
-          start: "30% bottom",
-          end: "50% 60%",
-          scrub: 1,
-        },
-      })
-      .to("#img-fausti2", {
-        y: "-100px",
-        stagger: 0.6,
-        duration: 2,
-        opacity: 0.9,
-        rotateZ: -10,
-        rotateY: 2,
-        scrollTrigger: {
-          trigger: "#second_gallery",
-          start: "30% bottom",
-          end: "50% 60%",
-          scrub: 1,
-        },
-      });
+    }).to("#img-fausti2", {
+      y: "-100px",
+      stagger: 0.6,
+      duration: 2,
+      opacity: 0.9,
+      rotateZ: -10,
+      rotateY: 2,
+      scrollTrigger: {
+        trigger: "#second_gallery",
+        start: "30% bottom",
+        end: "50% 60%",
+        scrub: 1,
+      },
+    });
   }, []);
 
   return (
     <>
       <section
         id="third_section"
-        className="pt-5 pl-2 w-full h-screen bg-zinc-900  font-title relative flex items-start overflow-hidden "
+        className="pt-5 pl-1 w-full h-[70dvh] md:h-screen bg-zinc-900  font-title relative flex items-start overflow-hidden "
       >
-        <article className="relative pt-2 px-3  gap-3 z-40 sm:max-w-[500px] lg:max-w-[700px]   lg:ml-16 xl:ml-32 2xl:mt-24 2xl:max-w-[950px]">
-          <h3 className="split mt-1 font-title text-white font-bold text-7xl md:text-6xl z-50 lg:text-7xl xl:text-[4.7rem]  2xl:text-[6.2rem] ">
-            SOME RANDOM TEXT LOREM IMPSUM
+        <article className="relative pt-2 px-2 gap-3 z-40 sm:max-w-[500px] md:max-w-[65%]  md:ml-[3%] lg:ml-[5%] xl:max-w-[50%] 2xl:ml-[7%] 2xl:max-w-[800px] 2xl:mt-24  ">
+          <h3 className="split mt-1 font-title text-white font-bold text-5xl sm:text-6xl  md:text-[5rem] xl:text-[5.3rem] 2xl:text-[6.5rem] z-50 ">
+          EL AJEDREZ ES UN JUEGO. JUEGA PARA
             <div
               style={{
                 WebkitTextStroke: "2px #d97706",
               }}
-              className="text-amber-700"
+              className="text-amber-700 "
             >
-              DOLOR SIT AMET.
+               NO DEJAR DE SER NIÑO.
             </div>
           </h3>
         </article>
@@ -132,7 +116,6 @@ const Gallery = () => {
           </div>
         </div>
       </section>
-     
     </>
   );
 };

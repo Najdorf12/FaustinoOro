@@ -27,17 +27,51 @@ const Stats = () => {
         end: "-30% 20%",
         scrub: 1,
       },
-    }).to("#text-reveal2", {
-      opacity: 1,
-      duration: 2,
-      delay: 2,
-      scrollTrigger: {
-        trigger: "#text-reveal2",
-        start: "160% bottom",
-        end: "10% 50%",
-        scrub: 1,
-      },
-    });
+    })
+      .to("#text-reveal2", {
+        opacity: 1,
+        duration: 2,
+        delay: 2,
+        scrollTrigger: {
+          trigger: "#text-reveal2",
+          start: "160% bottom",
+          end: "10% 50%",
+          scrub: 1,
+        },
+      })
+      .to("#line-stats", {
+        opacity: 1,
+        width: "50%",
+        duration: 2,
+        scrollTrigger: {
+          trigger: "#five_section",
+          start: "50% bottom",
+          end: "top top",
+          scrub: true,
+        },
+      })
+      .to("#line-stats2", {
+        opacity: 1,
+        delay: 0.7,
+        width: "50%",
+        duration: 2,
+        scrollTrigger: {
+          trigger: "#five_section",
+          start: "50% bottom",
+          end: "60% 20%",
+          scrub: true,
+        },
+      })
+      .to("#title-stats", {
+        stagger: 0.5,
+        scrollTrigger: {
+          trigger: "#six-section",
+          start: "50% bottom",
+          end: "60% 20%",
+          scrub: true,
+        },
+      })
+      
   }, []);
   return (
     <>
@@ -63,17 +97,27 @@ const Stats = () => {
             alias quibusdam.
           </p>
         </article>
-        <div className="w-[40%] absolute h-[1px] bg-white top-0 left-0 mb-[5%]"></div>
-        <div className="w-[40%] absolute h-[1px] bg-amber-600 bottom-0 right-0 mb-[5%]"></div>
+        <div
+          id="line-stats"
+          className="w-[0%] absolute h-[1px] bg-white top-0 left-0 mb-[5%]"
+        ></div>
+        <div
+          id="line-stats2"
+          className="w-[0%] absolute h-[1px] bg-amber-600 bottom-0 right-0 mb-[5%]"
+        ></div>
       </section>
 
       <section
         id="six_section"
         className="overflow-hidden relative w-full font-title3 h-screen font-semibold flex flex-col justify-between items-center text-white py-10  bg-zinc-900 text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl 2xl:leading-[4rem] z-10"
       >
-        <article className="absolute top-0 left-0 max-w-[30%] md:max-w-[50%] mt-6 ml-3 z-0 lg:mt-4 xl:ml-[3%] 2xl:mt-16 ">
-          <h6 className="text-amber-600">LOREM IMPSUM </h6>
-          <h6 className="text-stone-600 ">LOREM IMPSUM </h6>
+        <article className="absolute top-0 left-0 max-w-[100%] md:max-w-[50%] mt-6 ml-3 z-0 lg:mt-4 xl:ml-[3%] 2xl:mt-16 overflow-visible ">
+          <h6 id="title-stats" className="text-amber-600">
+            LOREM IMPSUM{" "}
+          </h6>
+          <h6 id="title-stats" className="text-stone-600">
+            LOREM IMPSUM{" "}
+          </h6>
         </article>
         <article className="absolute bottom-0 right-0  flex flex-col items-end justify-end   z-10 mb-6 sm:mr-[30px] md:mr-0 md:max-w-[350px] xl:max-w-[50%]  lg:mb-4 2xl:mb-16 xl:mr-[3%]">
           <h6 className="text-amber-600  w-[55%] md:w-full">LOREM IMPSUM</h6>
@@ -139,9 +183,12 @@ const Stats = () => {
           </div>
           <div
             id="stats-container"
-            className="relative w-full h-[42%] bg-zinc-900 xl:h-[60%] xl:pl-[7%] 2xl:h-[65%] overflow-y-scroll pt-[7%] lg:overflow-y-hidden lg:pt-[3%]"
+            className="relative w-full h-[42%] bg-zinc-900 xl:h-[60%] xl:pl-[7%] 2xl:h-[65%] overflow-y-scroll pt-[5%] lg:overflow-y-hidden lg:pt-[3%]"
           >
-            <p className="text-3xl font-semibold text-title pl-4 text-white flex items-center   w-full"><img className="max-w-10 2xl:max-w-12" src={flash} alt="" />Blitz</p>
+            <p className="text-3xl font-semibold text-title pl-4 text-white flex items-center   w-full">
+              <img className="max-w-10 2xl:max-w-12" src={flash} alt="" />
+              Blitz
+            </p>
             <ul className="mt-[4%] text-gray-300 z-50  text-md font-text2 flex flex-col justify-center items-center lg:mt-[4%] gap-1 px-4 xl:max-w-[55%] 2xl:text-lg ">
               <li className="flex  items-center gap-2 bg-zinc-800 w-full py-[1px] z-50">
                 <i class="bx bx-chevron-right text-3xl text-amber-600"></i>

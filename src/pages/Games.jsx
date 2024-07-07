@@ -122,17 +122,17 @@ const Games = () => {
   return (
     <>
       {" "}
-      <main className="relative overflow-hidden bg-zinc-900 w-full pb-10 lg:min-h-screen  pt-10 flex flex-col items-center lg:flex-row  lg:gap-20 xl:gap-16">
+      <main className="relative overflow-hidden bg-zinc-900 w-full pb-10 lg:min-h-screen pt-10 flex flex-col items-center lg:flex-row lg:gap-8  ">
         <div className="w-full lg:w-[50%] flex flex-col items-center">
-          <h6 className="self-start font-title ml-4 text-6xl text-white  font-semibold lg:text-8xl lg:ml-6  2xl:text-8xl">
+          <h6 className="self-start  font-title ml-4 text-6xl md:text-7xl text-white  font-semibold  lg:ml-6 2xl:ml-[5%] 2xl:text-8xl">
             GAMES
           </h6>
           <div className="self-start w-[80%] h-[2px] bg-amber-600 mt-3 lg:mt-4 2xl:mt-4"></div>
-          <p className="text-xl font-title text-stone-500 font-base mt-10 ">
+          <p className="text-xl font-title text-stone-500 font-base mt-10 z-50">
             Faustino Oro vs Hikaru Nakamura
           </p>
           <section className="chessboard-wrapper  max-w-[400px] 2xl:max-w-[500px] mt-6">
-            <div id="chessboard-container" className="">
+            <div id="chessboard-container" className="z-50">
               <Chessboard
                 id="CustomStyledBoard"
                 position={game.fen()}
@@ -160,8 +160,8 @@ const Games = () => {
           </section>
         </div>
 
-        <section className="flex flex-col  mt-8 xl:mt-20">
-          <ul className="text-lg font-title text-stone-500 font-semibold flex flex-col gap-1 2xl:text-xl 2xl:gap-2">
+        <section  className="flex flex-col  mt-8 xl:mt-20 2xl:mt-24  z-50">
+          <ul  className="z-50 text-lg font-title text-stone-400 font-semibold flex flex-col gap-1 2xl:text-[1.3rem] 2xl:gap-4 ">
             <li className="text-white relative flex items-center justify-center">
               {" "}
               <i class="bx bx-right-arrow-alt absolute -left-8 text-amber-600 text-3xl 2xl:text-5xl 2xl:-left-14"></i>{" "}
@@ -178,13 +178,7 @@ const Games = () => {
             <li>Faustino Oro vs Lorem Impsum</li>
           </ul>
         </section>
-        <Link to="/">
-          <button className="text-stone-500 mt-10 text-2xl font-text2 font-base flex gap-2 items-center  py-1 px-8 rounded-xl border-stone-600 border-[1px] lg:absolute lg:bottom-5 lg:right-20 ">
-            {" "}
-            <i class="bx bx-home-alt-2"></i> Home
-          </button>
-        </Link>
-        {/* <div className="absolute  w-[300px] h-[300px] top-0 right-0"></div> */}
+      
       </main>
     </>
   );

@@ -10,16 +10,37 @@ const About = () => {
     new ScrollTrigger({});
     tl.to("#about-text", {
       opacity: 1,
-      y: "20px",
       duration: 2,
-      stagger: 0.4,
+      stagger: 0.7,
       scrollTrigger: {
         trigger: "#second_section",
-        start: "25% bottom",
+        start: "50% bottom",
         end: "top top",
-        scrub: 1,
+        scrub: true,
       },
-    });
+    })
+      .to("#line-about", {
+        opacity: 1,
+        width: "100%",
+        duration: 2,
+        scrollTrigger: {
+          trigger: "#second_section",
+          start: "50% bottom",
+          end: "top top",
+          scrub: true,
+        },
+      })
+      .to("#p-about", {
+        opacity: 1,
+        x: "-10%",
+        duration: 2,
+        scrollTrigger: {
+          trigger: "#p-about",
+          start: "top bottom",
+          end: "-60% 30%",
+          scrub: true,
+        },
+      });
   }, []);
   return (
     <>
@@ -41,36 +62,40 @@ const About = () => {
             ERASING NATIVE APIS LIKE INTERSECTION OBSERVER, CSS STICKY Y NOERS.
           </h3>
           <div
-            id="about-text"
-            className="w-[200px] h-[2px] bg-stone-500 rounded-md my-2"
+            id="line-about"
+            className="w-[0%] h-[2px]  bg-amber-700 rounded-md my-2"
           ></div>
           <p
-            id="about-text"
-            className="relative mt-2 text-lg font-text2 2xl:text-[1.5rem]  text-gray-600"
+            id="p-about"
+            className="relative mt-2 ml-[10%] opacity-0 text-lg font-text2 2xl:text-[1.5rem]  text-gray-600"
           >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut culpa
             consectetur ullam hic porro nobis exercitationem quam alias
             voluptatem quasi expedita magni. Atque obcaecati aliquid praesentium
             blanditiis, corporis necessitatibus deserunt.
           </p>
-        
+
           <div className="flex gap-8">
             <div
-              id="about-text"
-              class="scene font-title4 font-medium xl:mt-6"
+              id="btn-about"
+              className="scene font-title4  font-medium xl:mt-6"
             >
-              <div class="cube">
-                <span class="side top bg-wheat text-stone-800">button</span>
-                <span class="side front bg-stone-600 text-white">button</span>
+              <div className="cube">
+                <span className="side top bg-wheat text-stone-800">button</span>
+                <span className="side front bg-stone-600 text-white">
+                  button
+                </span>
               </div>
             </div>
             <div
-              id="about-text"
-              class="scene font-title4 font-medium xl:mt-6"
+              id="btn-about"
+              className="scene font-title4 font-medium xl:mt-6"
             >
-              <div class="cube">
-                <span class="side top bg-wheat text-white">button 2</span>
-                <span class="side front bg--500 text-stone-800">button 2</span>
+              <div className="cube">
+                <span className="side top bg-wheat text-white">button 2</span>
+                <span className="side front bg--500 text-stone-800">
+                  button 2
+                </span>
               </div>
             </div>
           </div>
