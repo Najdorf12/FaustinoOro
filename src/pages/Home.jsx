@@ -10,7 +10,7 @@ const Home = () => {
           id="home"
         >
           <article className="flex flex-col justify-center items-center gap-3 text-center mt-[130%] sm:px-6 md:mt-[70%] lg:mt-[50%] xl:mt-[27%] xl:mr-[2%]">
-            <h1 className="font-text2 text-6xl leading-[3.5rem] font-bold text-gray-200 md:text-7xl xl:text-[7rem] 2xl:text-[9rem] bg-clip-text text-transparent bg-gradient-to-b from-stone-500 to-white z-50">
+            <h1 className="font-text2 text-7xl leading-[3.5rem] font-bold text-gray-200 md:text-7xl xl:text-[7rem] 2xl:text-[9rem] bg-clip-text text-transparent bg-gradient-to-b from-stone-500 to-white z-50">
               FAUSTINO ORO
             </h1>
             <p className=" font-text2 font-semibold text-2xl text-stone-600  md:text-3xl xl:text-4xl xl:-mt-3">

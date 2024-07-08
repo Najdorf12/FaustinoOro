@@ -53,12 +53,13 @@ const Contact = () => {
   return (
     <>
       <div className="w-full h-[10dvh] lg:h-[20dvh] bg-gray-300 lg:bg-zinc-900 z-50 relative"></div>
-
       <section
         id="contact_section"
-        className="w-full relative h-[70dvh] xl:h-screen bg-gray-300 z-50 pl-[5%] flex flex-col gap-16 2xl:gap-40 overflow-y-visible"
+        className="w-full relative h-[70dvh] xl:h-screen bg-gray-300 pl-[5%] flex flex-col gap-16 2xl:gap-40 overflow-y-visible"
       >
-        <h6 className="relative bg-teal-600 text-[5rem] md:text-[5.5rem] text-stone-600 font-title font-semibold 2xl:text-[9rem] z-50">
+  <div className="w-full bg-red-900 absolute z-50 h-full"></div>
+
+        <h6 className="relative  text-[5rem] md:text-[5.5rem] text-stone-600 font-title font-semibold 2xl:text-[9rem] z-50">
           LOREM
           <div
             id="line-contact"
@@ -66,7 +67,7 @@ const Contact = () => {
           ></div>
         </h6>
 
-        <p className=" max-w-[500px]   pr-16 lg:pr-0 text-sm  md:text-base text-gray-700 2xl:text-lg font-title xl:mt-8 2xl:mt-2 z-50 bg-red-500">
+        <p className=" max-w-[500px]   pr-16 lg:pr-0 text-sm  md:text-base text-gray-700 2xl:text-lg font-title xl:mt-8 2xl:mt-2 z-50 ">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
           cumque a cupiditate earum obcaecati est, eum ducimus incidunt officia
           sequi voluptas nemo repellendus et nulla facere recusandae labore
