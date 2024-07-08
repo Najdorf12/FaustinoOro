@@ -72,7 +72,7 @@ const Gallery = () => {
 
       <section
         id="four_section"
-        className="w-full h-screen bg-zinc-900  overflow-y-visible relative px-2 md:pl-6 xl:pl-[4%]"
+        className="w-full h-screen z-50 overflow-y-visible relative px-2 md:pl-6 xl:pl-[4%]"
       >
         <div className="flex justify-center overflow-y-visible items-center gap-2 lg:gap-4 w-full h-[75%] max-h-screen md:w-[80%] lg:w-[70%] xl:w-[55%]">
           <div
@@ -98,7 +98,7 @@ const Gallery = () => {
 
           <div
             id="imgs-container"
-            className="flex flex-col gap-2 lg:gap-4 h-full w-[50%] x-50"
+            className="flex flex-col gap-2 lg:gap-4 h-full w-[50%] z-50"
           >
             <figure className="w-full h-[49%]">
               <img
