@@ -109,7 +109,7 @@ const Stats = () => {
         id="six_section"
         className="overflow-hidden relative w-full font-title3 h-screen font-semibold flex flex-col justify-between items-center text-white py-10  bg-zinc-900 text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl 2xl:leading-[4rem] z-10"
       >
-        <div className="w-full h-screen bg-red-500 z-[500] absolute"></div>
+        <section className="w-full h-screen bg-red-900 z-50 absolute"></section>
         <article className="absolute top-0 left-0 max-w-[100%] md:max-w-[50%] mt-6 ml-3 z-50 lg:mt-4 xl:ml-[3%] 2xl:mt-16 overflow-visible ">
           <h6 id="title-stats" className="text-amber-600">
             LOREM IMPSUM{" "}
