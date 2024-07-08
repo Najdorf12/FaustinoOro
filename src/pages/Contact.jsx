@@ -84,7 +84,7 @@ const Contact = () => {
 
       <section
         id="box-container"
-        className="w-full h-auto bg-zinc-900 flex pl-[120px]"
+        className="w-full h-auto z-50 flex pl-[120px]"
       >
         <div className="self-end z-50 ">
           <div
