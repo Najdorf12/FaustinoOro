@@ -19,8 +19,8 @@ const Home = () => {
           </article>
 
           {/* BORDER BUTTONS */}
-          <span className="absolute mt-2  top-0 right-0 left-0 flex justify-center items-center gap-3  font-text2 text-black py-1  lg:mt-3 lg:justify-end lg:pr-[3%] 2xl:pr-[4%]  2xl:gap-10 2xl:mt-5">
-            <ul className="flex gap-3 sm:gap-14 text-lg  2xl:text-2xl 2xl:gap-10 text-gray-400">
+          <span className="absolute mt-2  top-0 right-0 left-0 flex justify-center items-center gap-3  font-text2 text-black py-1  lg:mt-3 lg:justify-end lg:pr-[3%] 2xl:pr-[4%]   2xl:mt-5">
+            <ul className="flex gap-3 sm:gap-14 text-lg  2xl:text-2xl 2xl:gap-16 text-gray-400">
               <li className="border border-gray-500 px-5 rounded-xl py-[2.5px]  xl:px-7 2xl:py-[2.7px] 2xl:px-10 cursor-pointer">
                 Torneos
               </li>
