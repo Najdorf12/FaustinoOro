@@ -53,10 +53,10 @@ const Gallery = () => {
     <>
       <section
         id="third_section"
-        className="pt-5 pl-1 w-full h-[70dvh] md:h-screen bg-zinc-900  font-title relative flex items-start overflow-hidden "
+        className="pt-5 pl-[] w-full h-[70dvh] md:h-screen  font-title relative flex items-start overflow-hidden "
       >
-        <article className="relative pt-2 px-2 gap-3 z-40 sm:max-w-[500px] md:max-w-[65%]  md:ml-[3%] lg:ml-[5%] xl:max-w-[50%] 2xl:ml-[7%] 2xl:max-w-[800px] 2xl:mt-24  ">
-          <h3 className="split mt-1 font-title text-white font-bold text-5xl sm:text-6xl  md:text-[5rem] xl:text-[5.3rem] 2xl:text-[7rem] z-50 ">
+        <article className="h-full relative pt-2  gap-3 z-40 sm:max-w-[500px] md:max-w-[65%]  md:ml-[3%] lg:ml-[5%] xl:max-w-[50%] 2xl:ml-[7%] 2xl:max-w-[800px] 2xl:mt-24  ">
+          <h3 className="split mt-1 font-title text-white font-bold text-[3.60rem] leading-[3.8rem] sm:text-6xl  md:text-[5rem] xl:text-[5.3rem] 2xl:text-[7rem] z-50 ">
           EL AJEDREZ ES UN JUEGO. JUEGA PARA
             <div
               style={{
@@ -77,7 +77,7 @@ const Gallery = () => {
         <div className="flex justify-center overflow-y-visible items-center gap-2 lg:gap-4 w-full h-[75%] max-h-screen md:w-[80%] lg:w-[70%] xl:w-[55%]">
           <div
             id="imgs-container"
-            className="flex flex-col gap-2 lg:gap-4 w-[40%] h-full "
+            className="flex flex-col gap-2 lg:gap-4 w-[40%] h-full z-50 "
           >
             <figure className="w-full h-[60%]">
               <img
@@ -98,7 +98,7 @@ const Gallery = () => {
 
           <div
             id="imgs-container"
-            className="flex flex-col gap-2 lg:gap-4 h-full w-[50%] "
+            className="flex flex-col gap-2 lg:gap-4 h-full w-[50%] x-50"
           >
             <figure className="w-full h-[49%]">
               <img
@@ -122,7 +122,4 @@ const Gallery = () => {
   );
 };
 export default Gallery;
-/* style={{
-              WebkitTextFillColor: "transparent",
-              WebkitTextStroke: "1px ",
-            }}  */
+
