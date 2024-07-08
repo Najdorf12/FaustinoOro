@@ -14,7 +14,6 @@ const Stats = () => {
     new ScrollTrigger({});
     const text = new SplitType("#split", { type: "chars" });
     const chars = text?.chars;
-    console.log(chars);
     tl.from(chars, {
       yPercent: 60,
       stagger: 0.2,

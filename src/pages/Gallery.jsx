@@ -16,6 +16,8 @@ const Gallery = () => {
   const tl = gsap.timeline();
 
   useLayoutEffect(() => {
+  
+
     new ScrollTrigger({});
 
     tl.to("#img-fausti", {
@@ -54,7 +56,7 @@ const Gallery = () => {
         className="pt-5 pl-1 w-full h-[70dvh] md:h-screen bg-zinc-900  font-title relative flex items-start overflow-hidden "
       >
         <article className="relative pt-2 px-2 gap-3 z-40 sm:max-w-[500px] md:max-w-[65%]  md:ml-[3%] lg:ml-[5%] xl:max-w-[50%] 2xl:ml-[7%] 2xl:max-w-[800px] 2xl:mt-24  ">
-          <h3 className="split mt-1 font-title text-white font-bold text-5xl sm:text-6xl  md:text-[5rem] xl:text-[5.3rem] 2xl:text-[6.5rem] z-50 ">
+          <h3 className="split mt-1 font-title text-white font-bold text-5xl sm:text-6xl  md:text-[5rem] xl:text-[5.3rem] 2xl:text-[7rem] z-50 ">
           EL AJEDREZ ES UN JUEGO. JUEGA PARA
             <div
               style={{

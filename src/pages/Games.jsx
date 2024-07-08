@@ -122,7 +122,7 @@ const Games = () => {
   return (
     <>
       {" "}
-      <main className="relative overflow-hidden bg-zinc-900 w-full pb-10 lg:min-h-screen pt-10 flex flex-col items-center lg:flex-row lg:gap-8  ">
+      <main className="relative overflow-hidden bg-zinc-900 w-full pb-10 min-h-screen pt-10 flex flex-col items-center lg:flex-row lg:gap-8  ">
         <div className="w-full lg:w-[50%] flex flex-col items-center">
           <h6 className="self-start  font-title ml-4 text-6xl md:text-7xl text-white  font-semibold  lg:ml-6 2xl:ml-[5%] 2xl:text-8xl">
             GAMES
@@ -132,7 +132,7 @@ const Games = () => {
             Faustino Oro vs Hikaru Nakamura
           </p>
           <section className="chessboard-wrapper  max-w-[400px] 2xl:max-w-[500px] mt-6">
-            <div id="chessboard-container" className="z-50">
+            <div id="chessboard-container" className="z-50 w-full">
               <Chessboard
                 id="CustomStyledBoard"
                 position={game.fen()}
@@ -160,7 +160,7 @@ const Games = () => {
           </section>
         </div>
 
-        <section  className="flex flex-col  mt-8 xl:mt-20 2xl:mt-24  z-50">
+        <section  className="flex flex-col  mt-12 xl:mt-20 2xl:mt-24  z-50">
           <ul  className="z-50 text-lg font-title text-stone-400 font-semibold flex flex-col gap-1 2xl:text-[1.3rem] 2xl:gap-4 ">
             <li className="text-white relative flex items-center justify-center">
               {" "}
