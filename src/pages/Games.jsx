@@ -136,7 +136,7 @@ const Games = () => {
               <Chessboard
                 id="CustomStyledBoard"
                 position={game.fen()}
-                draggable={false}
+                arePiecesDraggable={false}
                 animationDuration={200}
                 customDarkSquareStyle={{ backgroundColor: "rgb(51, 50, 50)" }}
                 customLightSquareStyle={{ backgroundColor: "#ca870c" }}
