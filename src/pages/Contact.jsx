@@ -52,12 +52,14 @@ const Contact = () => {
 
   return (
     <>
-      <div className="w-full h-[10dvh] lg:h-[20dvh] bg-gray-300 lg:bg-zinc-900 z-50 relative"></div>
+      <div className="w-full h-[10dvh] lg:h-[20dvh] bg-gray-300 lg:bg-zinc-900  relative">
+        <div className="absolute h-full w-full  z-50"></div>
+      </div>
       <section
         id="contact_section"
         className="w-full relative h-[70dvh] xl:h-screen bg-gray-300 pl-[5%] flex flex-col gap-16 2xl:gap-40 overflow-y-visible"
       >
-  <div className="w-full bg-red-900 absolute z-50 h-full"></div>
+        <div className="w-full absolute z-50 h-full"></div>
 
         <h6 className="relative  text-[5rem] md:text-[5.5rem] text-stone-600 font-title font-semibold 2xl:text-[9rem] z-50">
           LOREM
