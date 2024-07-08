@@ -56,17 +56,17 @@ const Contact = () => {
 
       <section
         id="contact_section"
-        className="w-full h-[70dvh] xl:h-screen bg-gray-300  pl-[5%] flex flex-col gap-16 2xl:gap-40 overflow-y-visible"
+        className="w-full h-[70dvh] xl:h-screen bg-gray-300 z-50 pl-[5%] flex flex-col gap-16 2xl:gap-40 overflow-y-visible"
       >
-        <h6 className="relative text-[5rem] md:text-[5.5rem] text-stone-600 font-title font-semibold 2xl:text-[9rem] ">
+        <h6 className="relative bg-teal-600 text-[5rem] md:text-[5.5rem] text-stone-600 font-title font-semibold 2xl:text-[9rem] z-50">
           LOREM
           <div
             id="line-contact"
-            className="w-[0%] h-[1.5px] absolute bottom-0 bg-white "
+            className="w-[0%] h-[1.5px] absolute bottom-0 bg-white z-50"
           ></div>
         </h6>
 
-        <p className=" max-w-[500px]   pr-16 lg:pr-0 text-sm  md:text-base text-gray-700 2xl:text-lg font-title xl:mt-8 2xl:mt-2">
+        <p className=" max-w-[500px]   pr-16 lg:pr-0 text-sm  md:text-base text-gray-700 2xl:text-lg font-title xl:mt-8 2xl:mt-2 z-50 bg-red-500">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
           cumque a cupiditate earum obcaecati est, eum ducimus incidunt officia
           sequi voluptas nemo repellendus et nulla facere recusandae labore
@@ -121,7 +121,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="w-full h-auto  bg-zinc-900 flex flex-col  gap-3 pt-[6%] xl:pt-[3%]">
+      <section className="w-full h-auto  bg-zinc-900 flex flex-col  gap-3 pt-12 xl:pt-[3%]">
         <article className="z-50 flex flex-col items-center  xl:w-[50%]">
           <h3 className="self-center  font-title text-5xl text-white  font-semibold  lg:text-6xl  2xl:text-7xl px-12 py-3 border-[1px]  border-amber-600 rounded-xl z-50">
             CONTACT
