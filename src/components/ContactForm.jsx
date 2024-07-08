@@ -1,7 +1,7 @@
 const ContactForm = () => {
   return (
     <>
-      <div className="form-container  w-[95%] max-w-[400px] mt-8  2xl:max-w-[450px] 2xl:mt-12 z-50  z-50">
+      <div className="form-container  w-[95%] max-w-[400px] mt-8 2xl:max-w-[450px] 2xl:mt-12  z-50">
         <form className="form text-[#8f8c8c] z-50">
           <div className="form-group">
             <label for="Nombre">Nombre</label>

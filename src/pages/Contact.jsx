@@ -13,10 +13,10 @@ const Contact = () => {
 
   useLayoutEffect(() => {
     const screen = window.screen.width;
-    console.log(screen);
+
     new ScrollTrigger({});
     tl.to("#line-contact", {
-      width: "60%",
+      width: screen > 1200 ? "60%" : "90%",
       duration: 2,
       scrollTrigger: {
         trigger: "#contact_section",
@@ -24,33 +24,35 @@ const Contact = () => {
         end: "top top",
         scrub: true,
       },
-    }).to("#line-games", {
-      width: "80%",
-      duration: 2,
-      scrollTrigger: {
-        trigger: "#contact2_section",
-        start: "20% bottom",
-        end: "top top",
-        scrub: true,
-      },
-    }).to("#box-black", {
-      x: "-120px",
-      rotate: "180deg",
-      duration: 4,
-      stagger: 1,
-      ease: "power1",
-      scrollTrigger: {
-        trigger: "#box-black",
-        start: screen > 1500 ? "100% bottom" : "330% bottom",
-        end: screen > 1500 ? "top 10%" : "330% top",
-        scrub: true,
-      },
-    });
+    })
+      .to("#line-games", {
+        width: "80%",
+        duration: 2,
+        scrollTrigger: {
+          trigger: "#contact2_section",
+          start: "20% bottom",
+          end: "top top",
+          scrub: true,
+        },
+      })
+      .to("#box-black", {
+        x: "-120px",
+        rotate: "180deg",
+        duration: 4,
+        stagger: 1,
+        ease: "power1",
+        scrollTrigger: {
+          trigger: "#box-black",
+          start: screen > 1500 ? "100% bottom" : "330% bottom",
+          end: screen > 1500 ? "top 10%" : "330% top",
+          scrub: true,
+        },
+      });
   }, []);
 
   return (
     <>
-      <div className="w-full h-[10dvh] lg:h-[20dvh] bg-gray-300 lg:bg-zinc-900"></div>
+      <div className="w-full h-[10dvh] lg:h-[20dvh] bg-gray-300 lg:bg-zinc-900 z-50"></div>
 
       <section
         id="contact_section"
@@ -58,7 +60,10 @@ const Contact = () => {
       >
         <h6 className="relative text-[5rem] md:text-[5.5rem] text-stone-600 font-title font-semibold 2xl:text-[9rem] ">
           LOREM
-          <div id="line-contact" className="w-[0%] h-[1.5px] absolute bottom-0 bg-white "></div>
+          <div
+            id="line-contact"
+            className="w-[0%] h-[1.5px] absolute bottom-0 bg-white "
+          ></div>
         </h6>
 
         <p className=" max-w-[500px]   pr-16 lg:pr-0 text-sm  md:text-base text-gray-700 2xl:text-lg font-title xl:mt-8 2xl:mt-2">
@@ -116,13 +121,13 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="w-full h-auto bg-zinc-900 flex flex-col  gap-3 pt-[6%]">
+      <section className="w-full h-auto  bg-zinc-900 flex flex-col  gap-3 pt-[6%] xl:pt-[3%]">
         <article className="z-50 flex flex-col items-center  xl:w-[50%]">
-          <h3 className="self-center  font-title text-5xl text-white  font-semibold  lg:text-6xl  2xl:text-7xl px-12 py-3 border-[1px]  border-amber-600 rounded-xl">
+          <h3 className="self-center  font-title text-5xl text-white  font-semibold  lg:text-6xl  2xl:text-7xl px-12 py-3 border-[1px]  border-amber-600 rounded-xl z-50">
             CONTACT
           </h3>
           {/* <div className="self-center w-[60%] md:w-[45%] xl:w-[60%] 2xl:w-[45%]  h-[2px] bg-amber-600 mt-4 lg:mt-5 2xl:mt-6"></div> */}
-          <p className="text-stone-400 text-center  max-w-[400px] font-text2 text-xl leading-5 mt-6  lg:mt-6 2xl:mt-8 xl:text-xl 2xl:max-w-[500px] 2xl:text-2xl">
+          <p className="text-stone-400 text-center  max-w-[400px] font-text2 text-xl leading-5 mt-6  lg:mt-6 xl:mt-5 2xl:mt-8 xl:text-xl 2xl:max-w-[500px] 2xl:text-2xl z-50">
             Open to new opportunities and collaborations. Let`s talk.
           </p>
           <ContactForm />
