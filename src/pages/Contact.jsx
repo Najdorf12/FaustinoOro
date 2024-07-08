@@ -26,7 +26,7 @@ const Contact = () => {
       },
     })
       .to("#line-games", {
-        width: "80%",
+        width: "90%",
         duration: 2,
         scrollTrigger: {
           trigger: "#contact2_section",
