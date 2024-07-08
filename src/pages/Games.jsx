@@ -127,7 +127,7 @@ const Games = () => {
           <h6 className="self-start  font-title ml-4 text-6xl md:text-7xl text-white  font-semibold  lg:ml-6 2xl:ml-[5%] 2xl:text-8xl">
             GAMES
           </h6>
-          <div className="self-start w-[80%] h-[2px] bg-amber-600 mt-3 lg:mt-4 2xl:mt-4"></div>
+          <div id="line-games" className="self-start w-[0%] h-[2px] bg-amber-600 mt-3 lg:mt-4 2xl:mt-4"></div>
           <p className="text-xl font-title text-stone-500 font-base mt-10 z-50">
             Faustino Oro vs Hikaru Nakamura
           </p>

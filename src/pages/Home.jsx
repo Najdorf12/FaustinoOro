@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
-import { useLayoutEffect, useRef } from "react";
 
 const Home = () => {
-  const iconsList = useRef();
-  useLayoutEffect(() => {}, []);
 
   return (
     <>
@@ -12,7 +9,7 @@ const Home = () => {
           className="w-[100%] h-[100%] relative bg-center bg-fixed bg-cover bg-no-repeat z-50 flex justify-end items-center "
           id="home"
         >
-          <article className="flex flex-col justify-center items-center gap-3 text-center mt-[100%] sm:px-6 md:mt-[70%] lg:mt-[50%] xl:mt-[27%] xl:mr-[2%]">
+          <article className="flex flex-col justify-center items-center gap-3 text-center mt-[130%] sm:px-6 md:mt-[70%] lg:mt-[50%] xl:mt-[27%] xl:mr-[2%]">
             <h1 className="font-text2 text-6xl leading-[3.5rem] font-bold text-gray-200 md:text-7xl xl:text-[7rem] 2xl:text-[9rem] bg-clip-text text-transparent bg-gradient-to-b from-stone-500 to-white z-50">
               FAUSTINO ORO
             </h1>
@@ -22,40 +19,21 @@ const Home = () => {
           </article>
 
           {/* BORDER BUTTONS */}
-          <span className="absolute mt-1  top-0 right-0 left-0 flex justify-center items-center gap-3  font-text2 text-black py-1  lg:mt-3 lg:justify-end lg:pr-[3%] 2xl:pr-[4%]  2xl:gap-10 2xl:mt-5">
-            <ul className="flex gap-10 sm:gap-14 md:text-lg 2xl:text-lg 2xl:gap-10 text-gray-400">
-              <li className="border border-gray-500 px-3 rounded-xl py-[2.5px]  xl:px-7 ">
+          <span className="absolute mt-2  top-0 right-0 left-0 flex justify-center items-center gap-3  font-text2 text-black py-1  lg:mt-3 lg:justify-end lg:pr-[3%] 2xl:pr-[4%]  2xl:gap-10 2xl:mt-5">
+            <ul className="flex gap-3 sm:gap-14 text-lg  2xl:text-2xl 2xl:gap-10 text-gray-400">
+              <li className="border border-gray-500 px-5 rounded-xl py-[2.5px]  xl:px-7 2xl:py-[2.7px] 2xl:px-10 cursor-pointer">
                 Torneos
               </li>
               <Link to="/games">
-                <li className="border border-gray-500 px-3 rounded-xl py-[2.5px] xl:px-7 ">
+                <li className="border border-gray-500 px-6 rounded-xl py-[2.5px] xl:px-7  2xl:py-[2.7px] 2xl:px-10">
                   Partidas
                 </li>
               </Link>
-              <li className="border border-gray-500 px-3 rounded-xl py-[2.5px] xl:px-7 ">
+              <li className="border border-gray-500 px-6 rounded-xl py-[2.5px] xl:px-7 2xl:py-[2.7px] 2xl:px-10">
                 Contacto
               </li>
             </ul>
           </span>
-
-          {/* <div
-            ref={iconsList}
-            className="absolute bg-gray-300 bottom-0 left-0  pt-[1px] w-[100px] h-[77px]     md:w-[150px] rounded-bl-[20px]  rounded-tr-[20px]  flex justify-center items-center 2xl:justify-start"
-          >
-            
-            <div className="banter-loader">
-              <div className="banter-loader__box bg-white"></div>
-              <div className="banter-loader__box bg-gray-500"></div>
-              <div className="banter-loader__box bg-white"></div>
-              <div className="banter-loader__box bg-gray-500"></div>
-              <div className="banter-loader__box bg-white"></div>
-              <div className="banter-loader__box bg-gray-500"></div>
-              <div className="banter-loader__box bg-white"></div>
-              <div className="banter-loader__box bg-gray-500"></div>
-              <div className="banter-loader__box bg-white"></div>
-            </div>
-          </div>
-          */}
         </div>
       </section>
     </>

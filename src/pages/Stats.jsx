@@ -39,7 +39,6 @@ const Stats = () => {
         },
       })
       .to("#line-stats", {
-        opacity: 1,
         width: "50%",
         duration: 2,
         scrollTrigger: {
@@ -52,7 +51,7 @@ const Stats = () => {
       .to("#line-stats2", {
         opacity: 1,
         delay: 0.7,
-        width: "50%",
+        width: "45%",
         duration: 2,
         scrollTrigger: {
           trigger: "#five_section",
