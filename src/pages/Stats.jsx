@@ -108,7 +108,7 @@ const Stats = () => {
         id="six_section"
         className="overflow-hidden relative w-full font-title3 h-screen font-semibold flex flex-col justify-between items-center text-white py-10   text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl 2xl:leading-[4rem] z-50"
       >
-        <article className="absolute top-0 left-0 max-w-[100%] md:max-w-[50%] mt-6 ml-3 z-50 lg:mt-4 xl:ml-[3%] 2xl:mt-16 overflow-visible ">
+        <article className="absolute top-0 left-0 max-w-[60%] md:max-w-[50%] mt-6 ml-3 z-50 lg:mt-4 xl:ml-[3%] 2xl:mt-16 overflow-visible ">
           <h6 id="title-stats" className="text-amber-600">
             LOREM IMPSUM{" "}
           </h6>
@@ -126,8 +126,8 @@ const Stats = () => {
         id="seven_section"
         className=" w-full h-screen overflow-hidden lg:flex lg:flex-row z-50"
       >
-        <div className="bg-gray-300 h-screen w-full  lg:w-1/2 z-50">
-          <div className="absolute h-full w-full  z-50"></div>
+        <div className="bg-gray-300 h-screen w-full  lg:w-1/2">
+          <div className="absolute h-full w-full z-50"></div>
 
           <div className="w-full h-[58%] bg-gray-300 flex justify-center items-center gap-x-4 flex-wrap font-text2 px-1 lg:gap-x-1 xl:gap-x-3 xl:h-[40%] 2xl:h-[35%] 2xl:gap-x-10">
             <div className="card w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50">
