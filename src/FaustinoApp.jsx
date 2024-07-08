@@ -16,7 +16,7 @@ function FaustinoApp() {
   return (
     <ReactLenis root>
       <main className="relative w-full min-h-screen overflow-hidden bg-zinc-900">
-        <div className="w-full h-screen fixed z-30 overflow-hidden block">
+        <div className="w-full h-screen fixed z-30 overflow-hidden lg:block">
           <Canvas>
             <Experience />
           </Canvas>
