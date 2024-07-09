@@ -101,7 +101,7 @@ const About = () => {
           <div className="flex gap-8">
             <div
               id="btn-about"
-              className="scene opacity-0 font-title4 mt-[140px] font-medium xl:mt-6"
+              className="scene opacity-0 font-title4 mt-[16px] font-medium xl:mt-6"
             >
               <div className="cube">
                 <span className="side top bg-wheat text-stone-800">button</span>
@@ -112,7 +112,7 @@ const About = () => {
             </div>
             <div
               id="btn-about"
-              className="scene opacity-0 font-title4 mt-[140px]  font-medium xl:mt-6"
+              className="scene opacity-0 font-title4 mt-[16px]  font-medium xl:mt-6"
             >
               <div className="cube">
                 <span className="side top bg-wheat text-white">button 2</span>
