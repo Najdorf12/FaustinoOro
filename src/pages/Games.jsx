@@ -137,7 +137,7 @@ const Games = () => {
                 id="CustomStyledBoard"
                 position={game.fen()}
                 arePiecesDraggable={false}
-                animationDuration={200}
+                animationDuration={150}
                 customDarkSquareStyle={{ backgroundColor: "rgb(51, 50, 50)" }}
                 customLightSquareStyle={{ backgroundColor: "#ca870c" }}
               />
