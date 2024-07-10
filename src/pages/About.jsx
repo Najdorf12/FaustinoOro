@@ -7,6 +7,7 @@ const About = () => {
   const tl = gsap.timeline();
 
   useLayoutEffect(() => {
+    const hScreen = window.screen.height;
     new ScrollTrigger({});
     tl.to("#about-text", {
       opacity: 1,
@@ -65,13 +66,13 @@ const About = () => {
         },
       })
       .to("#box-about", {
-        y: "-250%",
+        y: "-308%",
         rotate:"120deg",
         stagger: 0.06,
         scrollTrigger: {
           trigger: "#box-about",
           start: "-100% bottom",
-          end: "top 60%",
+          end: "top 80%",
           scrub: true,
         },
       });
@@ -136,7 +137,7 @@ const About = () => {
         </article>
         <section
           id="box-container-about"
-          className="w-full h-auto z-20 flex absolute left-0 bottom-0"
+          className="w-full h-auto z-20 flex absolute left-0 bottom-[-40%]"
         >
           <div className="self-end z-20 ">
             <div
