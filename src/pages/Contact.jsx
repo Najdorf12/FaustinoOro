@@ -154,7 +154,7 @@ const Contact = () => {
           </ul>
         </footer>
         <span className="flex justify-center items-center w-[50%] xl:w-[25%] place-self-center  h-[1.5px] mt-8 bg-stone-700 md:mt-12 z-50 "></span>
-        <div className="flex justify-center items-center gap-2 mb-2 font-title text-sm 2xl:text-base text-amber-600 z-50 xl:mb-1 xl:-mt-3">
+        <div className="flex justify-center items-center gap-2 mb-1 font-title text-sm 2xl:text-base text-amber-600 z-50 xl:mb-1 -mt-2 xl:-mt-3">
           <i className="bx bx-copyright text-xl"></i>
           <span>Faustino Oro {/* official website */}</span>
         </div>

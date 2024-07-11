@@ -65,17 +65,18 @@ const About = () => {
           scrub: true,
         },
       })
-      .to("#box-about", {
-        y: "-308%",
-        rotate:"120deg",
+       .to("#box-about", {
+        y:"-263px",
+        rotate: "120deg",
         stagger: 0.06,
         scrollTrigger: {
           trigger: "#box-about",
-          start: "-100% bottom",
-          end: "top 80%",
+          start: "-200% bottom",
+          end: "top top",
           scrub: true,
+          markers: true,
         },
-      });
+      }); 
   }, []);
   return (
     <>
@@ -137,42 +138,58 @@ const About = () => {
         </article>
         <section
           id="box-container-about"
-          className="w-full h-auto z-20 flex absolute left-0 bottom-[-40%]"
+          className="w-full h-auto z-20 flex absolute left-0 bottom-[-240px] "
         >
           <div className="self-end z-20 ">
             <div
               id="box-about"
-              className="w-[120px] h-[120px] border-[1px] border-white "
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
             ></div>
-            <div id="box-about" className="w-[120px] h-[120px] bg-white"></div>
+            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-white"></div>
             <div
               id="box-about"
-              className="w-[120px] h-[120px] border-white border-[1px]"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-white border-[1px]"
             ></div>
-            <div id="box-about" className="w-[120px] h-[120px] bg-white"></div>
-          </div>
-          <div className="self-end z-50 ">
+            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-white"></div>
             <div
               id="box-about"
-              className="w-[120px] h-[120px] border-[1px] border-white "
-            ></div>
-            <div id="box-about" className="w-[120px] h-[120px] bg-white"></div>
-            <div
-              id="box-about"
-              className="w-[120px] h-[120px] border-white border-[1px]"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-white border-[1px]"
             ></div>
           </div>
           <div className="self-end z-50 ">
             <div
               id="box-about"
-              className="w-[120px] h-[120px] border-[1px] border-white "
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
             ></div>
-            <div id="box-about" className="w-[120px] h-[120px] bg-white"></div>
+            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-white"></div>
+            <div
+              id="box-about"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-white border-[1px]"
+            ></div>
+            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-white"></div>
           </div>
           <div className="self-end z-50 ">
             <div
               id="box-about"
-              className="w-[120px] h-[120px] border-[1px] border-white "
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
+            ></div>
+            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-white"></div>
+            <div
+              id="box-about"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
+            ></div>
+          </div>
+          <div className="self-end z-50 ">
+            <div
+              id="box-about"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
+            ></div>
+            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-white"></div>
+          </div>
+          <div className="self-end z-50 ">
+            <div
+              id="box-about"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
             ></div>
           </div>
         </section>
