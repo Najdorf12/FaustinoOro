@@ -71,8 +71,8 @@ const About = () => {
         stagger: 0.06,
         scrollTrigger: {
           trigger: "#box-about",
-          start: "-200% bottom",
-          end: "top top",
+          start: "-190% bottom",
+          end: "50% 40%",
           scrub: true,
           markers: true,
         },
