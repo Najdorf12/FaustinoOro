@@ -74,7 +74,6 @@ const About = () => {
           start: screen > 1400 ? "-100% bottom" : "-190% bottom",
           end: screen > 1400 ? "40% 50%":"50% 40%",
           scrub: true,
-          markers: true,
         },
       }); 
   }, []);
@@ -93,7 +92,7 @@ const About = () => {
           </h5>
           <h3
             id="about-text2"
-            className="text-black  text-3xl 2xl:text-5xl opacity-0 relative"
+            className="text-white  text-3xl 2xl:text-5xl opacity-0 relative"
           >
             ERASING NATIVE APIS LIKE INTERSECTION OBSERVER, CSS STICKY Y NOERS.
           </h3>
@@ -103,7 +102,7 @@ const About = () => {
           ></div>
           <p
             id="p-about"
-            className="relative  mt-[60px] opacity-0 text-lg font-text2 2xl:text-[1.5rem]  text-gray-600"
+            className="relative  mt-[60px] opacity-0 text-lg font-text2 2xl:text-[1.5rem]  text-stone-600"
           >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut culpa
             consectetur ullam hic porro nobis exercitationem quam alias
@@ -114,18 +113,18 @@ const About = () => {
           <div className="flex gap-8">
             <div
               id="btn-about"
-              className="scene opacity-0 font-title4 mt-[16px] font-medium xl:mt-6"
+              className="scene opacity-0 font-title4 mt-[21px] font-medium xl:mt-6"
             >
               <div className="cube">
                 <span className="side top bg-wheat text-stone-800">button</span>
-                <span className="side front bg-stone-600 text-white">
+                <span className="side front bg-stone-700 text-white">
                   button
                 </span>
               </div>
             </div>
             <div
               id="btn-about"
-              className="scene opacity-0 font-title4 mt-[16px]  font-medium xl:mt-6"
+              className="scene opacity-0 font-title4 mt-[21px]  font-medium xl:mt-6"
             >
               <div className="cube">
                 <span className="side top bg-wheat text-white">button 2</span>
@@ -145,7 +144,7 @@ const About = () => {
               id="box-about"
               className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
             ></div>
-            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-white"></div>
+            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150] bg-white"></div>
             <div
               id="box-about"
               className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-white border-[1px]"
