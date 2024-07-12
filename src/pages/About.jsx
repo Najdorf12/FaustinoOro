@@ -94,7 +94,7 @@ const About = () => {
             id="about-text2"
             className="text-white  text-4xl  2xl:text-5xl opacity-0 relative"
           >
-            ERASING NATIVE APIS LIKE INTERS OBSERVER, CSS STICKY Y NOERS.
+            ERASING NATIVE APIS LIKE INTERS OBSERV, CSS STICKY Y NOERS.
           </h3>
           <div
             id="line-about"
