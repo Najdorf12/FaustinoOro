@@ -7,7 +7,7 @@ const About = () => {
   const tl = gsap.timeline();
 
   useLayoutEffect(() => {
-    const hScreen = window.screen.height;
+    const screen = window.screen.width;
     new ScrollTrigger({});
     tl.to("#about-text", {
       opacity: 1,
@@ -66,13 +66,13 @@ const About = () => {
         },
       })
        .to("#box-about", {
-        y:"-263px",
+        y:"-300px",
         rotate: "120deg",
         stagger: 0.06,
         scrollTrigger: {
           trigger: "#box-about",
-          start: "-190% bottom",
-          end: "50% 40%",
+          start: screen > 1400 ? "-100% bottom" : "-190% bottom",
+          end: screen > 1400 ? "40% 50%":"50% 40%",
           scrub: true,
           markers: true,
         },
