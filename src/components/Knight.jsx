@@ -98,9 +98,9 @@ export const Knight = (props) => {
     const screen = window.screen.width;
     new ScrollTrigger({});
     tl.to(knight.current?.position, {
-      x: screen > 1000 ? 4.5 : 4.5,
-      y: screen > 1000 ? 1.6 : -2,
-      z: screen > 1000 ? -2.7 : -2.7,
+      x: screen > 1000 ? 4.5 : -16,
+      y: screen > 1000 ? 1.6 : -3,
+      z: screen > 1000 ? -2.7 : 18,
       ease: "power1.out",
       scrollTrigger: {
         trigger: "#second_section",
@@ -111,7 +111,7 @@ export const Knight = (props) => {
       },
     })
       .to(knight.current?.rotation, {
-        y: screen > 1000 ? 0.21 : 0.1,
+        y: screen > 1000 ? 0.21 : -1.3,
         ease: "power1.out",
         scrollTrigger: {
           trigger: "#second_section",
