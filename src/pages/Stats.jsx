@@ -182,13 +182,13 @@ const Stats = () => {
           </div>
           <div
             id="stats-container"
-            className="relative w-full h-[42%] bg-zinc-900 xl:h-[60%] xl:pl-[7%] 2xl:h-[65%] overflow-y-scroll pt-[4%] lg:overflow-y-hidden lg:pt-[3%] z-50"
+            className="relative w-full h-[42%] bg-zinc-900 xl:h-[60%] xl:pl-[7%] 2xl:h-[65%] overflow-y-scroll pt-[4%] lg:overflow-y-hidden lg:pt-[3%] z-50 lg:z-10"
           >
             <p className="text-3xl font-semibold text-title pl-4 text-white flex items-center 2xl:text-4xl  w-full">
               <img className="max-w-10 2xl:max-w-12" src={flash} alt="" />
               Blitz
             </p>
-            <ul className="mt-[4%] text-gray-300 z-50  text-md font-text2 flex flex-col justify-center items-center lg:mt-[4%] gap-1 px-4 xl:max-w-[55%] 2xl:text-lg ">
+            <ul className="mt-[4%] text-gray-300 z-50 text-md font-text2 flex flex-col justify-center items-center lg:mt-[4%] gap-1 px-4 xl:max-w-[55%] 2xl:text-lg ">
               <li className="flex  items-center gap-2 bg-zinc-800 w-full py-[1px] z-50">
                 <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
                 Lorem impsum dolor sit.{" "}

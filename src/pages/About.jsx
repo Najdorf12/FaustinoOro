@@ -14,7 +14,7 @@ const About = () => {
       duration: 2,
       scrollTrigger: {
         trigger: "#second_section",
-        start: "35% bottom",
+        start: "40% bottom",
         end: "top top",
         scrub: true,
       },
@@ -24,7 +24,7 @@ const About = () => {
         delay: 0.6,
         scrollTrigger: {
           trigger: "#second_section",
-          start: "50% bottom",
+          start: "55% bottom",
           end: "top top",
           scrub: true,
         },
@@ -112,23 +112,23 @@ const About = () => {
           <div className="flex gap-8">
             <div
               id="btn-about"
-              className="scene opacity-0 font-title4 mt-[21px] font-medium xl:mt-5 2xl:mt-6"
+              className="scene opacity-0 font-text2 mt-[21px] font-medium xl:mt-5 2xl:mt-6"
             >
               <div className="cube">
-                <span className="side top bg- text-stone-800">button</span>
+                <span className="side top bg- text-stone-800">PARTIDAS</span>
                 <span className="side front bg-stone-700 text-white">
-                  button
+                  PARTIDAS
                 </span>
               </div>
             </div>
             <div
               id="btn-about"
-              className="scene opacity-0 font-title4 mt-[21px]  font-medium xl:mt-5 2xl:mt-6"
+              className="scene opacity-0 font-text2 mt-[21px] font-medium xl:mt-5 2xl:mt-6"
             >
               <div className="cube">
-                <span className="side top bg-stone-700 text-white">button 2</span>
-                <span className="side front bg--500 text-stone-800">
-                  button 2
+                <span className="side top bg-stone-700 text-white">CONTACTO</span>
+                <span className="side front  text-white font-medium">
+                  CONTACTO
                 </span>
               </div>
             </div>
