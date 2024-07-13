@@ -53,7 +53,7 @@ const Gallery = () => {
     <>
       <section
         id="third_section"
-        className="pt-5 pl-[] w-full h-[70dvh] md:h-screen  font-title relative flex items-start overflow-hidden "
+        className="pt-5 pl-[] w-full h-[80dvh] md:h-screen  font-title relative flex items-start overflow-hidden "
       >
         <article className="h-full relative pt-2 sm:px-2  gap-3 z-40 sm:max-w-[500px] md:max-w-[65%]  md:ml-[3%] lg:ml-[7%] xl:pt-6 xl:max-w-[50%] 2xl:ml-[9%] 2xl:max-w-[800px] 2xl:mt-24  ">
           <h3 className="split mt-1 font-title text-white font-bold text-[3.60rem] leading-[1] sm:text-[3.8rem]  md:text-[5rem]  xl:text-[12dvh] z-50 ">

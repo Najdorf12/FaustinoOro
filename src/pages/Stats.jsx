@@ -85,7 +85,7 @@ const Stats = () => {
           </h6>
           <p
             id="text-reveal2"
-            className="font-text2 text-gray-200 text-base md:text-lg xl:px-6 opacity-0  "
+            className="font-text2 px-3  text-gray-200 text-base md:text-lg xl:px-8 opacity-0  "
           >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo
             impedit sit aliquam laborum incidunt consectetur dicta temporibus
@@ -129,7 +129,7 @@ const Stats = () => {
         <div className="bg-gray-300 h-screen w-full  lg:w-1/2">
           <div className="absolute h-full w-full z-50"></div>
 
-          <div className="w-full h-[58%] bg-gray-300 flex justify-center items-center gap-x-4 flex-wrap font-text2 px-1 lg:gap-x-1 xl:gap-x-3 xl:h-[40%] 2xl:h-[35%] 2xl:gap-x-10">
+          <div className="w-full h-[50%] bg-gray-300 flex justify-center items-center gap-x-7 flex-wrap font-text2 px-1 lg:gap-x-1 xl:gap-x-3 xl:h-[40%] 2xl:h-[35%] 2xl:gap-x-10">
             <div className="card w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50">
               <img className="w-[50px]" src={bullet} alt="" />
               <h6 className="text-2xl text-white">Lorem</h6>
@@ -182,7 +182,7 @@ const Stats = () => {
           </div>
           <div
             id="stats-container"
-            className="relative w-full h-[42%] bg-zinc-900 xl:h-[60%] xl:pl-[7%] 2xl:h-[65%] overflow-y-scroll pt-[4%] lg:overflow-y-hidden lg:pt-[3%] z-50 lg:z-10"
+            className="relative w-full h-[50%] bg-zinc-900 xl:h-[60%] xl:pl-[7%] 2xl:h-[65%] overflow-y-scroll pt-[4%] lg:overflow-y-hidden lg:pt-[3%] z-50 lg:z-10"
           >
             <p className="text-3xl font-semibold text-title pl-4 text-white flex items-center 2xl:text-4xl  w-full">
               <img className="max-w-10 2xl:max-w-12" src={flash} alt="" />

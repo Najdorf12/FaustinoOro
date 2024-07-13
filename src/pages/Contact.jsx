@@ -52,7 +52,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="w-full h-[10dvh] lg:h-[20dvh] bg-gray-300 lg:bg-zinc-900  relative">
+      <div className="w-full z-50 h-[10dvh] lg:h-[20dvh] bg-gray-300 lg:bg-zinc-900  relative">
         <div className="absolute h-full w-full  z-50"></div>
       </div>
       <section
