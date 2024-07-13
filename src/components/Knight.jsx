@@ -95,11 +95,12 @@ export const Knight = (props) => {
 
   /* ANIMATIONS */
   useLayoutEffect(() => {
+    const screen = window.screen.width;
     new ScrollTrigger({});
     tl.to(knight.current?.position, {
-      x: 4.5,
-      y: 1.6,
-      z: -2.7,
+      x: screen > 1000 ? 4.5 : 4.5,
+      y: screen > 1000 ? 1.6 : -2,
+      z: screen > 1000 ? -2.7 : -2.7,
       ease: "power1.out",
       scrollTrigger: {
         trigger: "#second_section",
@@ -110,7 +111,7 @@ export const Knight = (props) => {
       },
     })
       .to(knight.current?.rotation, {
-        y: 0.21,
+        y: screen > 1000 ? 0.21 : 0.1,
         ease: "power1.out",
         scrollTrigger: {
           trigger: "#second_section",
