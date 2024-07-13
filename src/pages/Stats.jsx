@@ -182,7 +182,7 @@ const Stats = () => {
           </div>
           <div
             id="stats-container"
-            className="relative w-full h-[42%] bg-zinc-900 xl:h-[60%] xl:pl-[7%] 2xl:h-[65%] overflow-y-scroll pt-[4%] lg:overflow-y-hidden lg:pt-[3%]"
+            className="relative w-full h-[42%] bg-zinc-900 xl:h-[60%] xl:pl-[7%] 2xl:h-[65%] overflow-y-scroll pt-[4%] lg:overflow-y-hidden lg:pt-[3%] z-50"
           >
             <p className="text-3xl font-semibold text-title pl-4 text-white flex items-center 2xl:text-4xl  w-full">
               <img className="max-w-10 2xl:max-w-12" src={flash} alt="" />
