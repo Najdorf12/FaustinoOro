@@ -109,13 +109,13 @@ const About = () => {
             blanditiis, corporis necessitatibus deserunt.
           </p>
 
-          <div className="flex gap-8">
+          <div className="flex gap-8 xl:gap-10 2xl:gap-12">
             <div
               id="btn-about"
               className="scene opacity-0 font-text2 mt-[21px] font-medium xl:mt-5 2xl:mt-6"
             >
               <div className="cube">
-                <span className="side top bg- text-stone-800">PARTIDAS</span>
+                <span className="side top bg- text-white">PARTIDAS</span>
                 <span className="side front bg-stone-700 text-white">
                   PARTIDAS
                 </span>
