@@ -12,17 +12,16 @@ const About = () => {
     tl.to("#about-text", {
       opacity: 1,
       duration: 2,
-      stagger: 0.7,
       scrollTrigger: {
         trigger: "#second_section",
-        start: "50% bottom",
+        start: "35% bottom",
         end: "top top",
         scrub: true,
       },
     })
       .to("#about-text2", {
         opacity: 1,
-        delay: 0.5,
+        delay: 0.6,
         scrollTrigger: {
           trigger: "#second_section",
           start: "50% bottom",
@@ -92,7 +91,7 @@ const About = () => {
           </h5>
           <h3
             id="about-text2"
-            className="text-white  text-4xl  2xl:text-5xl opacity-0 relative"
+            className="text-white  text-4xl 2xl:pr-2  2xl:text-5xl opacity-0 relative"
           >
             ERASING NATIVE APIS LIKE INTERS OBSERV, CSS STICKY Y NOERS.
           </h3>
@@ -102,7 +101,7 @@ const About = () => {
           ></div>
           <p
             id="p-about"
-            className="relative  mt-[60px] opacity-0 text-lg font-text2 2xl:text-[1.5rem]  text-stone-600"
+            className="relative  mt-[60px] opacity-0 text-lg font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.5rem]  text-stone-600"
           >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut culpa
             consectetur ullam hic porro nobis exercitationem quam alias
@@ -113,10 +112,10 @@ const About = () => {
           <div className="flex gap-8">
             <div
               id="btn-about"
-              className="scene opacity-0 font-title4 mt-[21px] font-medium xl:mt-6"
+              className="scene opacity-0 font-title4 mt-[21px] font-medium xl:mt-5 2xl:mt-6"
             >
               <div className="cube">
-                <span className="side top bg-wheat text-stone-800">button</span>
+                <span className="side top bg- text-stone-800">button</span>
                 <span className="side front bg-stone-700 text-white">
                   button
                 </span>
@@ -124,10 +123,10 @@ const About = () => {
             </div>
             <div
               id="btn-about"
-              className="scene opacity-0 font-title4 mt-[21px]  font-medium xl:mt-6"
+              className="scene opacity-0 font-title4 mt-[21px]  font-medium xl:mt-5 2xl:mt-6"
             >
               <div className="cube">
-                <span className="side top bg-wheat text-white">button 2</span>
+                <span className="side top bg-stone-700 text-white">button 2</span>
                 <span className="side front bg--500 text-stone-800">
                   button 2
                 </span>

@@ -91,15 +91,15 @@ export const Knight = (props) => {
     return () => {
       gui.destroy();
     };
-  }, []);  */
+  }, []);  
 
   /* ANIMATIONS */
   useLayoutEffect(() => {
     new ScrollTrigger({});
     tl.to(knight.current?.position, {
-      x: -1,
-      y: 1,
-      z: -7,
+      x: 4.5,
+      y: 1.6,
+      z: -2.7,
       ease: "power1.out",
       scrollTrigger: {
         trigger: "#second_section",
@@ -110,7 +110,7 @@ export const Knight = (props) => {
       },
     })
       .to(knight.current?.rotation, {
-        y: 0.5,
+        y: 0.21,
         ease: "power1.out",
         scrollTrigger: {
           trigger: "#second_section",
