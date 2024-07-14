@@ -122,9 +122,9 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.position, {
-        x: screen > 1000 ? -5.155 : -10,
+        x: screen > 1000 ? -5.155 : -7,
         y: screen > 1000 ? 2 : -0.6,
-        z: screen > 1000 ? 10.2 : 10,
+        z: screen > 1000 ? 10.2 : 13,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#third_section",
@@ -195,9 +195,9 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.position, {
-        x: -13.67,
-        y: -0.7,
-        z: 22.9,
+        x: screen > 1000 ? -13.67 : -13.67,
+        y: screen > 1000 ? -0.7 : -0.7,
+        z: screen > 1000 ? 22.9 : 19.5,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#six_section",
@@ -208,7 +208,7 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.rotation, {
-        y: -1.175,
+        y: screen > 1000 ? -1.175 : -1.175 ,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#six_section",

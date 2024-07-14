@@ -11,9 +11,13 @@ const Stats = () => {
   const tl = gsap.timeline();
 
   useLayoutEffect(() => {
+    const screenStats = window.screen.width;
+
     new ScrollTrigger({});
+
     const text = new SplitType("#split", { type: "chars" });
     const chars = text?.chars;
+
     tl.from(chars, {
       yPercent: 60,
       stagger: 0.2,
@@ -39,11 +43,11 @@ const Stats = () => {
         },
       })
       .to("#line-stats", {
-        width: "50%",
+        width:  "50%" ,
         duration: 2,
         scrollTrigger: {
           trigger: "#five_section",
-          start: "50% bottom",
+          start: screenStats > 700 ? "50% bottom" : "30% bottom",
           end: "top top",
           scrub: true,
         },
@@ -51,11 +55,11 @@ const Stats = () => {
       .to("#line-stats2", {
         opacity: 1,
         delay: 0.7,
-        width: "45%",
+        width: screenStats > 700 ? "45%" : "55%",
         duration: 2,
         scrollTrigger: {
           trigger: "#five_section",
-          start: "50% bottom",
+          start: screenStats > 700 ? "60% bottom" :"70% bottom",
           end: "60% 20%",
           scrub: true,
         },
@@ -74,7 +78,7 @@ const Stats = () => {
     <>
       <section
         id="five_section"
-        className="relative w-full h-screen z-50 flex justify-center items-center px-2 sm:px-4 text-white "
+        className="relative w-full h-[90dvh] md:h-screen z-50 flex justify-center items-center px-2 sm:px-4 text-white "
       >
         <article className="relative z-50 flex flex-col justify-center items-center gap-8 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%] xl:gap-8 2xl:gap-10">
           <h6
@@ -100,7 +104,7 @@ const Stats = () => {
         ></div>
         <div
           id="line-stats2"
-          className="w-[0%] absolute h-[1px] bg-amber-600 bottom-0 right-0 mb-[5%]"
+          className="w-[0%] absolute z-0 h-[1px] bg-amber-600 bottom-0 right-0 mb-[5%]"
         ></div>
       </section>
 
@@ -129,7 +133,7 @@ const Stats = () => {
         <div className="bg-gray-300 h-screen w-full  lg:w-1/2">
           <div className="absolute h-full w-full z-50"></div>
 
-          <div className="w-full h-[50%] bg-gray-300 flex justify-center items-center gap-x-7 flex-wrap font-text2 px-1 lg:gap-x-1 xl:gap-x-3 xl:h-[40%] 2xl:h-[35%] 2xl:gap-x-10">
+          <div className="w-full h-[53.5%] bg-gray-300 py-3 flex justify-center items-center gap-x-7 flex-wrap font-text2 px-1 lg:gap-x-1 xl:gap-x-3 xl:h-[40%] 2xl:h-[35%] 2xl:gap-x-10">
             <div className="card w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50">
               <img className="w-[50px]" src={bullet} alt="" />
               <h6 className="text-2xl text-white">Lorem</h6>
@@ -182,7 +186,7 @@ const Stats = () => {
           </div>
           <div
             id="stats-container"
-            className="relative w-full h-[50%] bg-zinc-900 xl:h-[60%] xl:pl-[7%] 2xl:h-[65%] overflow-y-scroll pt-[4%] lg:overflow-y-hidden lg:pt-[3%] z-50 lg:z-10"
+            className="relative w-full h-[46.5%] bg-zinc-900 xl:h-[60%] xl:pl-[7%] 2xl:h-[65%] overflow-y-scroll pt-[4%] lg:overflow-y-hidden lg:pt-[3%] z-50 lg:z-10"
           >
             <p className="text-3xl font-semibold text-title pl-4 text-white flex items-center 2xl:text-4xl  w-full">
               <img className="max-w-10 2xl:max-w-12" src={flash} alt="" />

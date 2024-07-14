@@ -47,8 +47,8 @@ const About = () => {
         duration: 2,
         scrollTrigger: {
           trigger: "#p-about",
-          start: "top bottom",
-          end: "-60% 30%",
+          start: "120% bottom",
+          end: "-70% 40%",
           scrub: true,
         },
       })
@@ -70,8 +70,8 @@ const About = () => {
         stagger: 0.06,
         scrollTrigger: {
           trigger: "#box-about",
-          start: screen > 1400 ? "-100% bottom" : "-190% bottom",
-          end: screen > 1400 ? "40% 50%":"50% 40%",
+          start: screen > 1200 ? "-120% bottom" : "-190% bottom",
+          end: screen > 1200 ? "40% 50%":"50% 60%",
           scrub: true,
         },
       }); 
