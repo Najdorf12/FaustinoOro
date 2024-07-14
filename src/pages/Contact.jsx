@@ -57,7 +57,7 @@ const Contact = () => {
       </div>
       <section
         id="contact_section"
-        className="w-full relative h-[70dvh] xl:h-screen bg-gray-300 pl-[5%] flex flex-col gap-16 2xl:gap-40 overflow-y-visible"
+        className="w-full relative h-[70dvh] xl:h-screen bg-gray-400 pl-[5%] flex flex-col gap-16 2xl:gap-40 overflow-y-visible"
       >
         <div className="w-full absolute z-50 h-full"></div>
 
@@ -78,7 +78,7 @@ const Contact = () => {
         </p>
       </section>
 
-      <section id="contact2_section" className="">
+      <section className="">
         <Games />
       </section>
 
@@ -124,7 +124,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="w-full h-auto  bg-zinc-900 flex flex-col  gap-3 pt-12 xl:pt-[3%]">
+      <section id="contact_section2" className="w-full h-auto  bg-zinc-900 flex flex-col  gap-3 pt-12 xl:pt-[3%]">
         <article className="z-50 flex flex-col items-center  xl:w-[50%]">
           <h3 className="self-center  font-title text-5xl text-white  font-semibold  lg:text-6xl  2xl:text-7xl px-12 py-3 border-[1px]  border-amber-600 rounded-xl z-50">
             CONTACT

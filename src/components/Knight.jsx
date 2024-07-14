@@ -243,31 +243,33 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.position, {
-        x: screen > 1000 ? -1.3 : -11.67,
-        y: screen > 1000 ? -0.7 : -0.7,
-        z: screen > 100 ? 23 : 16.5,
+        x: screen > 1000 ? -1.3 : -5,
+        y: screen > 1000 ? -0.7 : -4,
+        z: screen > 1000 ? 23 : 14,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#contact_section",
           start: "top bottom",
-          end: "top top",
+          end: screen > 1000 ? "top top" : "-50% top",
           scrub: true,
           immediateRender: false,
+          markers:true
         },
       })
 
       .to(knight.current?.rotation, {
-        y: screen > 1000 ? -1.74 : -1.2,
+        y: screen > 1000 ? -1.74 : -1,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#contact_section",
           start: "top bottom",
-          end: "top top",
+          end: screen > 1000 ? "top top" : "-50% top",
           scrub: true,
           immediateRender: false,
+          markers:true
         },
       })
-      .to(knight.current?.position, {
+     /* .to(knight.current?.position, {
         x: -1.5,
         y: -0.7,
         z: 23,
@@ -280,7 +282,7 @@ export const Knight = (props) => {
           immediateRender: false,
         },
       })
-      .to(knight.current?.rotation, {
+       .to(knight.current?.rotation, {
         y: -1.74,
         ease: "power1.inOut",
         scrollTrigger: {
@@ -314,7 +316,7 @@ export const Knight = (props) => {
           scrub: true,
           immediateRender: false,
         },
-      });
+      }) */;
   }, []);
 
   return (
@@ -338,6 +340,7 @@ export const Knight = (props) => {
 };
 
 useGLTF.preload("/scene.gltf");
-/* x: 4.565,
-y: 0.4,
-z: -4, */
+/*contact_SECTION  
+   x: screen > 1000 ? -1.3 : -13,
+        y: screen > 1000 ? -0.7 : -4,
+        z: screen > 1000 ? 23 : 14,*/
