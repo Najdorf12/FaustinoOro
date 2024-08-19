@@ -9,7 +9,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+#3f4864 blue 
+#80101A red
+*/
+@layer base {
+  @font-face {
+    font-family: 'Super Larky';
+    font-style: normal;
+    font-display: swap;
+    src: url(/font/SuperLarky.ttf) format('woff2');
+  }
+}
 
+#title-name{
+  font-family: "Super Larky";
+}
 #home {
   z-index: 50;
   background: linear-gradient(

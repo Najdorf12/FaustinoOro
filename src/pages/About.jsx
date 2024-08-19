@@ -80,6 +80,7 @@ const About = () => {
     <>
       <section
         id="second_section"
+        style={{backgroundImage: "linear-gradient(to right top, #ffffff, #f5f5f5, #ebebeb, #e2e2e2, #d8d8d8, #c9c6ce, #bcb3c2, #b1a0b5, #a87e9a, #a25a76, #96364a, #80101a)" }} 
         className="w-full h-screen bg-gray-300 flex lg:justify-end font-title overflow-hidden relative"
       >
         <article className="relative pt-24 lg:pt-0 px-3 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[4%] 2xl:mr-[12%] 2xl:mt-[6%]  2xl:max-w-[650px] ">
@@ -97,7 +98,7 @@ const About = () => {
           </h3>
           <div
             id="line-about"
-            className="w-[0%] h-[2px]  bg-amber-700 rounded-md my-2"
+            className="w-[0%] h-[2px]  bg-[#3f4864] rounded-md my-2"
           ></div>
           <p
             id="p-about"
@@ -115,9 +116,9 @@ const About = () => {
               className="scene opacity-0 font-text2 mt-[21px] font-medium xl:mt-5 2xl:mt-6"
             >
               <div className="cube">
-                <span className="side top bg- text-white">PARTIDAS</span>
-                <span className="side front bg-stone-700 text-white">
-                  PARTIDAS
+                <span className="side top bg- text-white">HISTORIA</span>
+                <span className="side front bg-[#3f4864] text-white">
+                  HISTORIA
                 </span>
               </div>
             </div>
@@ -126,9 +127,9 @@ const About = () => {
               className="scene opacity-0 font-text2 mt-[21px] font-medium xl:mt-5 2xl:mt-6"
             >
               <div className="cube">
-                <span className="side top bg-stone-700 text-white">CONTACTO</span>
+                <span className="side top bg-[#3f4864] text-white">LOGROS</span>
                 <span className="side front  text-white font-medium">
-                  CONTACTO
+                  LOGROS
                 </span>
               </div>
             </div>
@@ -143,12 +144,12 @@ const About = () => {
               id="box-about"
               className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
             ></div>
-            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150] bg-white"></div>
+            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150] bg-[#3f4864]"></div>
             <div
               id="box-about"
               className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-white border-[1px]"
             ></div>
-            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-white"></div>
+            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-[#3f4864]"></div>
             <div
               id="box-about"
               className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-white border-[1px]"
@@ -159,19 +160,19 @@ const About = () => {
               id="box-about"
               className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
             ></div>
-            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-white"></div>
+            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-[#3f4864]"></div>
             <div
               id="box-about"
               className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-white border-[1px]"
             ></div>
-            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-white"></div>
+            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-[#3f4864]"></div>
           </div>
           <div className="self-end z-50 ">
             <div
               id="box-about"
               className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
             ></div>
-            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-white"></div>
+            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-[#3f4864]"></div>
             <div
               id="box-about"
               className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
@@ -182,7 +183,7 @@ const About = () => {
               id="box-about"
               className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
             ></div>
-            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-white"></div>
+            <div id="box-about" className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-[#3f4864]"></div>
           </div>
           <div className="self-end z-50 ">
             <div

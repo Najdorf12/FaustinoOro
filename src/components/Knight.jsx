@@ -253,7 +253,6 @@ export const Knight = (props) => {
           end: screen > 1000 ? "top top" : "-50% top",
           scrub: true,
           immediateRender: false,
-          markers:true
         },
       })
 
@@ -266,7 +265,6 @@ export const Knight = (props) => {
           end: screen > 1000 ? "top top" : "-50% top",
           scrub: true,
           immediateRender: false,
-          markers:true
         },
       })
      /* .to(knight.current?.position, {
