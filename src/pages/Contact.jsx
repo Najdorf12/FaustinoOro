@@ -126,7 +126,7 @@ const Contact = () => {
 
       <section id="contact_section2" className="w-full h-auto  bg-zinc-900 flex flex-col  gap-3 pt-12 xl:pt-[3%]">
         <article className="z-50 flex flex-col items-center  xl:w-[50%]">
-          <h3 className="self-center  font-title text-5xl text-white  font-semibold  lg:text-6xl  2xl:text-7xl px-12 py-3 border-[1px]  border-[#3f4864] rounded-xl z-50">
+          <h3 className="self-center  font-title text-5xl text-white  font-semibold  lg:text-6xl  2xl:text-7xl px-12 py-3 border-[1px]  border-amber-600 rounded-xl z-50">
             CONTACT
           </h3>
           {/* <div className="self-center w-[60%] md:w-[45%] xl:w-[60%] 2xl:w-[45%]  h-[2px] bg-amber-600 mt-4 lg:mt-5 2xl:mt-6"></div> */}
