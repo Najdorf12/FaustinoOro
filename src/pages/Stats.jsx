@@ -78,12 +78,13 @@ const Stats = () => {
     <>
       <section
         id="five_section"
-        className="relative w-full h-[90dvh] md:h-screen z-50 flex justify-center items-center px-2 sm:px-4 text-white "
+        className="relative w-full h-[90dvh] md:h-screen z-50 lg:z-10 flex justify-center items-center px-2 sm:px-4 text-white bg-[#212121]"
+      style={{background: "linear-gradient(to right, #000000, #434343)" }}
       >
         <article className="relative z-50 flex flex-col justify-center items-center gap-8 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%] xl:gap-8 2xl:gap-10">
           <h6
             id="split"
-            className="font-text2 text-5xl  text-[#3d56a3] font-bold md:text-6xl lg:text-[10dvh]"
+            className="font-text2 text-5xl  text-stone-700 font-bold md:text-6xl lg:text-[10dvh]"
           >
             LOREM IMPSUM
           </h6>
