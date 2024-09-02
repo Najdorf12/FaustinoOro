@@ -1,10 +1,11 @@
-import axios from "../api/axios";
+import axios from "../../api/axios";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
-import { getNews } from "../api/handlers";
-import logo from "../assets/logo.png"
-import CardAdminNew from "../components/CardAdminNew";
+import { getNews } from "../../api/handlers";
+import logo from "../../assets/logo.png"
+import CardAdminNew from "./CardAdminNew";
+import TournamentsForm from "./TournamentsForm";
 
 const AdminPage = () => {
   const {
@@ -175,7 +176,7 @@ const AdminPage = () => {
     alert("NOTICIA CREADA EXITOSAMENTE");
   };
   return (
-    <section className="relative w-full bg-[#212121] min-h-[140vh] flex flex-col items-center  pb-10">
+    <section className="relative w-full bg-[#212121] min-h-[140vh] flex flex-col items-center  pb-10 overflow-hidden">
       <div className="font-text text-base  relative flex justify-between items-center w-full  mt-2 px-3 xl:mt-3 xl:px-12 2xl:text-lg">
         <picture className="w-12 h-12 flex items-center justify-center rounded-full bg-white border-[1px] border-gray-500 2xl:w-14 2xl:h-14 ">
           <img className="w-10 h-10"  src={logo}  alt="logo" />
@@ -352,7 +353,10 @@ const AdminPage = () => {
               </div>
             ))}
         </section>
-
+          
+        <section className="">
+          <TournamentsForm />
+        </section>
         <div className="absolute bottom-2">{/*  <Footer /> */}</div>
       </section>
     </section>

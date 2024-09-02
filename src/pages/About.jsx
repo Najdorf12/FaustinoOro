@@ -80,7 +80,7 @@ const About = () => {
     <>
       <section
         id="second_section"
-        style={{backgroundImage: "linear-gradient(to right top, #ffffff, #f5f5f5, #ebebeb, #e2e2e2, #d8d8d8, #c9c6ce, #bcb3c2, #b1a0b5, #a87e9a, #a25a76, #96364a, #80101a)" }} 
+        /* style={{backgroundImage: "linear-gradient(to right top, #ffffff, #f5f5f5, #ebebeb, #e2e2e2, #d8d8d8, #c9c6ce, #bcb3c2, #b1a0b5, #a87e9a, #a25a76, #96364a, #80101a)" }}  */
         className="w-full h-screen bg-gray-300 flex lg:justify-end font-title overflow-hidden relative"
       >
         <article className="relative pt-24 lg:pt-0 px-3 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[4%] 2xl:mr-[12%] 2xl:mt-[6%]  2xl:max-w-[650px] ">

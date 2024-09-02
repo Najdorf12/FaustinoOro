@@ -1,4 +1,4 @@
-import imgFausti from "../assets/fausti2.jpg";
+import imgFausti from "../../assets/fausti2.jpg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -30,7 +30,7 @@ const CardAdminNew = ({ notice, selectNotice, deleteNotice }) => {
           {title.toUpperCase()}
         </p>
 
-        <span className="mt-2 px-2 font-text font-semibold text-base text-[#ad648f] tracking-wide rounded-lg flex justify-start items-center">
+        <span className="mt-2 px-2 font-text font-semibold text-base text-[#af2b48] tracking-wide rounded-lg flex justify-start items-center">
           {category.toUpperCase()}
         </span>
 
@@ -43,7 +43,7 @@ const CardAdminNew = ({ notice, selectNotice, deleteNotice }) => {
           {content.length > 100 && (
             <span
               onClick={toggleExpand}
-              className="cursor-pointer text-[#ad648f] ml-1 hover:underline"
+              className="cursor-pointer text-[#922c42] ml-1 hover:underline"
             >
               {isExpanded ? "Ver menos" : "Ver más"}
             </span>
@@ -51,7 +51,7 @@ const CardAdminNew = ({ notice, selectNotice, deleteNotice }) => {
         </p>
 
         <div className="w-full mt-4 mb-1">
-          <section className="flex justify-evenly items-center text-[#ad648f] mr-2">
+          <section className="flex justify-evenly items-center text-[#af2b48] mr-2">
             <div className="flex items-center gap-2 text-[1rem]">
               <i
                 onClick={() => selectNotice(notice, _id)}

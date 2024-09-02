@@ -83,7 +83,7 @@ const Stats = () => {
         <article className="relative z-50 flex flex-col justify-center items-center gap-8 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%] xl:gap-8 2xl:gap-10">
           <h6
             id="split"
-            className="font-text2 text-5xl  text-[#3f4864] font-bold md:text-6xl lg:text-[10dvh]"
+            className="font-text2 text-5xl  text-[#3d56a3] font-bold md:text-6xl lg:text-[10dvh]"
           >
             LOREM IMPSUM
           </h6>
@@ -113,16 +113,16 @@ const Stats = () => {
         className="overflow-hidden relative w-full font-title3 h-screen font-semibold flex flex-col justify-between items-center text-white py-10   text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl 2xl:leading-[4rem] z-50"
       >
         <article className="absolute top-0 left-0 max-w-[60%] md:max-w-[50%] mt-6 ml-3 z-50 lg:mt-4 xl:ml-[3%] 2xl:mt-16 overflow-visible ">
-          <h6 id="title-stats" className="text-[#80101a]">
+         {/*  <h6 id="title-stats" className="text-[#80101a]">
             LOREM IMPSUM{" "}
           </h6>
           <h6 id="title-stats" className="text-stone-100">
             LOREM IMPSUM{" "}
-          </h6>
+          </h6> */}
         </article>
         <article className="absolute bottom-0 right-0  flex flex-col items-end justify-end   z-50 mb-6 sm:mr-[30px] md:mr-0 md:max-w-[350px] xl:max-w-[50%]  lg:mb-4 2xl:mb-16 xl:mr-[3%]">
-          <h6 className="text-[#80101a]  w-[55%] md:w-full">LOREM IMPSUM</h6>
-          <h6 className="w-[55%] md:w-full text-stone-100">LOREM IMPSUM </h6>
+         {/*  <h6 className="text-[#80101a]  w-[55%] md:w-full">LOREM IMPSUM</h6>
+          <h6 className="w-[55%] md:w-full text-stone-100">LOREM IMPSUM </h6> */}
         </article>
       </section>
       <div className="w-full h-[10dvh] z-50"></div>

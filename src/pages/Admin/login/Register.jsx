@@ -1,7 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
-import axios from "../../api/axios";
+import axios from "../../../api/axios";
+import logo from "../../../assets/logo.png";
 
 const Register = () => {
   const {
@@ -42,6 +43,18 @@ const Register = () => {
       }}
       className=" h-screen w-full flex flex-col px-4 gap-14 items-center xl:px-10 2xl:gap-20 2xl:px-12"
     >
+      <nav className="font-text text-base  relative flex justify-between items-center w-full  mt-2 px-3 xl:mt-3 xl:px-12 2xl:text-lg">
+          <picture className="w-12 h-12 flex items-center justify-center rounded-full bg-white border-[1px] border-gray-500 2xl:w-14 2xl:h-14 ">
+            <img className="w-10 h-10" src={logo} alt="logo" />
+          </picture>
+          <div className="flex gap-6 xl:gap-8 2xl:gap-12">
+            <Link to={"/"}>
+              <button className="text-gray-50 border-l-2 pl-2 py-1 hover:scale-105 hover:text-white duration-500 ">
+                Home
+              </button>
+            </Link>
+          </div>
+        </nav>
       <div
         style={{
           backgroundImage:
