@@ -51,7 +51,7 @@ const Gallery = () => {
     <>
       <section
         id="third_section"
-       /*  style={{backgroundImage: "linear-gradient(to right bottom, #050505, #121212, #1b1a1b, #242223, #2e2a2b, #392c2e, #442e30, #4f3030, #5c2b2c, #692527, #751d21, #80101a)" }}  */
+        style={{backgroundImage: "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)" }}
         className="pt-5 bg-gray-300  w-full h-[80dvh] md:h-screen  font-title relative flex items-start overflow-hidden  2xl:pt-0 2xl:justify-start"
       >
         <article className="h-full relative pt-2 pl-3 sm:px-2  gap-3 z-40 sm:max-w-[600px] md:max-w-[85%]  md:ml-[3%] lg:ml-[7%] xl:pt-6 xl:max-w-[60%] 2xl:pt-0 2xl:ml-[9%] 2xl:max-w-[1100px] 2xl:mt-12  ">

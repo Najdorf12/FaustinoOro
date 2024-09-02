@@ -19,7 +19,7 @@ export default {
       },
       fontFamily: {
         title: ["Ubuntu", "sans-serif"],
-        title2: ["Cinzel Decorative", "serif"],
+        title2: ["Inter", "serif"],
         title3: ["Zen Dots", "sans-serif"],
         title4: ["Syncopate", "sans-serif"],
         text: ["Oxygen", "sans-serif"],
