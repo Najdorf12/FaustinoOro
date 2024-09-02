@@ -16,15 +16,15 @@ const Home = () => {
     <>
       <section className=" w-full h-screen bg-[#e8e8e8] flex justify-center items-center z-50 ">
         <div
-          className="w-[100%] h-[100%] relative bg-center bg-fixed bg-cover bg-no-repeat z-50 flex  justify-center"
+          className="w-[100%] h-screen relative bg-center bg-fixed bg-cover bg-no-repeat z-50 flex  justify-center"
           id="home"
         >
           <article className="w-[95%] flex justify-center items-end pb-[20%] xl:justify-center xl:pb-[5%] xl:">
             <h1
               id="title-name"
-              className="font-text2 tracking-wider text-center  text-[3rem] leading-[4.2rem] font-bold text-gray-200 z-50 flex justify-center items-start md:items-center gap-3 px-3 py-3  bg-clip-text text-transparent bg-gradient-to-br from-[#ADA996] via-[#F2F2F2] to-[#DBDBDB]  md:text-[4.5rem] xl:min-h-[200px] xl:gap-8 2xl:gap-12 xl:text-[6rem] 2xl:text-[7.5rem]"
+              className="font-text2 tracking-wider text-center  text-[3rem] leading-[4.2rem] font-bold text-gray-200 z-50 flex  justify-center items-start md:items-center gap-3 px-3 py-3  bg-clip-text text-transparent bg-gradient-to-br from-[#ADA996] via-[#F2F2F2] to-[#DBDBDB]  md:text-[4.5rem] xl:min-h-[200px] xl:gap-8 2xl:gap-12 xl:text-[6rem] 2xl:text-[7.5rem]"
             >
-              <span className="flex justify-center items-center text-[3.5rem] px-1 bg-[#7c2c2c] text-white font-title2 font-semibold rounded-lg tracking-wide md:text-[4.5rem] xl:text-[8rem] xl:h-[110px] xl:-mt-3 2xl:text-[9rem] 2xl:h-[150px]">
+              <span className="flex justify-center items-center text-[3.9rem] h-[65px] px-1 bg-[#7c2c2c] text-white font-title2 font-semibold rounded-lg tracking-wide md:text-[4.5rem] xl:text-[8rem] xl:px-2  xl:h-[120px] xl:-mt-3 2xl:text-[9rem] 2xl:h-[150px]">
                 IM
               </span>{" "}
               FAUSTINO ORO
