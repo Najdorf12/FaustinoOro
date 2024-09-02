@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
 import { getNews } from "../../api/handlers";
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo.png";
 import CardAdminNew from "./CardAdminNew";
 import TournamentsForm from "./TournamentsForm";
 
@@ -17,6 +17,8 @@ const AdminPage = () => {
 
   const [user, setUser] = useState({});
   const [allNotices, setAllNotices] = useState([]);
+  const [allTournaments, setAllTournaments] = useState([]);
+
   const [noticeSelected, setNoticeSelected] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -26,7 +28,7 @@ const AdminPage = () => {
 
   const navigate = useNavigate();
 
-  useEffect(() => { 
+  useEffect(() => {
     verifyAuth();
   }, []);
 
@@ -34,7 +36,7 @@ const AdminPage = () => {
     const fetchNews = async () => {
       try {
         const newsData = await getNews();
-        console.log("News Data:", newsData);
+        /* console.log("News Data:", newsData); */
         setAllNotices(newsData);
       } catch (error) {
         console.error("Failed to fetch news:", error);
@@ -177,22 +179,22 @@ const AdminPage = () => {
   };
   return (
     <section className="relative w-full bg-[#212121] min-h-[140vh] flex flex-col items-center  pb-10 overflow-hidden">
-      <div className="font-text text-base  relative flex justify-between items-center w-full  mt-2 px-3 xl:mt-3 xl:px-12 2xl:text-lg">
-        <picture className="w-12 h-12 flex items-center justify-center rounded-full bg-white border-[1px] border-gray-500 2xl:w-14 2xl:h-14 ">
-          <img className="w-10 h-10"  src={logo}  alt="logo" />
+      <nav className="font-text2 text-xl  relative flex justify-between items-center w-full  mt-2 px-5 xl:mt-3 xl:px-16 xl:text-2xl  2xl:px-20 ">
+        <picture className="w-16 h-16 flex items-center justify-center rounded-full  2xl:w-20 2xl:h-20 ">
+          <img className="rounded-full" src={logo} alt="logo" />
         </picture>
-        <ul className="flex gap-6 xl:gap-8 2xl:gap-12">
-          <li className="text-gray-50 border-l-2 pl-2 py-1 hover:scale-105 hover:text-white duration-500 ">
+        <ul className="flex gap-6 xl:gap-10 2xl:gap-12">
+          <li className="text-gray-50 border-l-2 pl-2 xl:pl-3 py-1 hover:scale-105 hover:text-white duration-500 ">
             <Link to={"/"}>Home </Link>
           </li>
           <li
             onClick={() => logout()}
-            className="text-gray-400 border-l-2 pl-2 py-1 border-gray-400 cursor-pointer  hover:scale-105 hover:text-white duration-500"
+            className="text-gray-400 border-l-2 pl-2 xl:pl-3 py-1 border-gray-400 cursor-pointer  hover:scale-105 hover:text-white duration-500"
           >
-            Cerrar Sesión
+            Logout
           </li>
         </ul>
-      </div>
+      </nav>
 
       <section className="mt-12 w-full flex flex-col items-center px-4  ">
         <section
@@ -200,19 +202,19 @@ const AdminPage = () => {
             backgroundImage:
               "linear-gradient(to right top, #242427, #2b2a30, #33303a, #3c3542, #463b4b, #554255, #65495e, #765066, #905a6f, #aa6575, #c37278, #da8078)",
           }}
-          className="max-w-md w-full  rounded-xl shadow-2xl shadow-black overflow-hidden py-8 px-4 space-y-8 xl:max-w-[700px]"
+          className="w-full rounded-xl shadow-2xl shadow-black overflow-hidden py-8 px-4 space-y-8 md:w-[550px] xl:w-[700px]"
         >
           <h2 className="text-center font-title text-6xl font-extrabold text-white xl:text-7xl 2xl:text-8xl">
             NEWS FORM
           </h2>
           <p className="text-center text-gray-200 font-text text-base xl:text-lg 2xl:text-xl">
-            Create your new
+            Create your notice
           </p>
           <form onSubmit={handleSubmit(submit)} className="space-y-6">
             <div className="flex flex-col gap-8 xl:flex xl:flex-row ">
-            <div className="relative font-text xl:w-1/2">
+              <div className="relative font-text xl:w-1/2">
                 <input
-                 autoComplete="off"
+                  autoComplete="off"
                   placeholder="Joe Doe"
                   className="peer h-10 w-full border-b-2 border-gray-300 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-white"
                   name="title"
@@ -229,7 +231,7 @@ const AdminPage = () => {
               </div>
               <div className="relative font-text xl:w-1/2">
                 <input
-                 autoComplete="off"
+                  autoComplete="off"
                   placeholder="category"
                   className="peer h-10 w-full border-b-2 border-gray-300 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-white"
                   name="category"
@@ -243,13 +245,12 @@ const AdminPage = () => {
                   Category
                 </label>
               </div>
-              
             </div>
 
             <div className="flex flex-col gap-6 xl:flex xl:flex-row  ">
-            <div className="relative font-text xl:w-1/2">
+              <div className="relative font-text xl:w-1/2">
                 <input
-                 autoComplete="off"
+                  autoComplete="off"
                   placeholder="john@example.com"
                   className="peer h-10 w-full border-b-2 border-gray-300 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-white "
                   name="description"
@@ -265,41 +266,42 @@ const AdminPage = () => {
                 </label>
               </div>
               <div className="relative font-text flex gap-6 items-center">
-              <p className="text-gray-400">Is Active?</p>
-              <label className="container-checkbox">
-                <input
-                 autoComplete="off" type="checkbox" {...register("isActive")} />
-                <svg viewBox="0 0 64 64" height="2em" width="2em">
-                  <path
-                    d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16"
-                    pathLength="575.0541381835938"
-                    className="path"
-                  ></path>
-                </svg>
-              </label>
-            </div>
-              
+                <p className="text-gray-400">Is Active?</p>
+                <label className="container-checkbox">
+                  <input
+                    autoComplete="off"
+                    type="checkbox"
+                    {...register("isActive")}
+                  />
+                  <svg viewBox="0 0 64 64" height="2em" width="2em">
+                    <path
+                      d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16"
+                      pathLength="575.0541381835938"
+                      className="path"
+                    ></path>
+                  </svg>
+                </label>
+              </div>
             </div>
 
             <div className="relative font-text text-gray-400  flex gap-2 flex-col justify-center items-center">
-              <p className="self-start text-base">Content
-              </p>              <textarea
-                  placeholder=""
-                  className=" text-white bg-transparent border-[2px]  w-full xl:text-base rounded-lg p-2"
-                  name="content"
-                  id="content"
-                  {...register("content")}
-                  rows="5"
-                  cols="30"
-                />
-              </div>
-           
+              <p className="self-start text-base">Content</p>{" "}
+              <textarea
+                placeholder=""
+                className=" text-white bg-transparent border-[2px]  w-full xl:text-base rounded-lg p-2"
+                name="content"
+                id="content"
+                {...register("content")}
+                rows="5"
+                cols="30"
+              />
+            </div>
+
             <div className="flex flex-col items-center gap-5 ">
               <label className="font-light text-gray-400 text-xl">
                 Imágenes
               </label>
               <input
-               
                 type="file"
                 name="image"
                 accept=".jpg, .png, .jpeg"
@@ -353,7 +355,7 @@ const AdminPage = () => {
               </div>
             ))}
         </section>
-          
+
         <section className="">
           <TournamentsForm />
         </section>

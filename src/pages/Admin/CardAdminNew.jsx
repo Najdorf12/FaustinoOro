@@ -43,7 +43,7 @@ const CardAdminNew = ({ notice, selectNotice, deleteNotice }) => {
           {content.length > 100 && (
             <span
               onClick={toggleExpand}
-              className="cursor-pointer text-[#922c42] ml-1 hover:underline"
+              className="cursor-pointer text-[#af2b48] ml-1 hover:underline"
             >
               {isExpanded ? "Ver menos" : "Ver más"}
             </span>

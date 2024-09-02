@@ -1,9 +1,8 @@
 import axios from "../../api/axios";
-import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
-import { getNews } from "../../api/handlers";
-import logo from "../../assets/logo.png";
+import { getTournaments } from "../../api/handlers";
+import CardTournament from "./CardTournament";
 
 const TournamentsForm = () => {
   const {
@@ -13,43 +12,35 @@ const TournamentsForm = () => {
     formState: { errors },
   } = useForm();
 
-  /* const [user, setUser] = useState({}); */
-  const [allNotices, setAllNotices] = useState([]);
-  const [noticeSelected, setNoticeSelected] = useState(null);
-  /*   const [isLoading, setIsLoading] = useState(false); */
+  const [allTournaments, setAllTournaments] = useState([]);
+  const [tournamentSelected, setTournamentSelected] = useState(null);
 
-  /*  const [image, setImage] = useState({}); */
   const [images, setImages] = useState([]);
   const [loadingImage, setLoadingImage] = useState(false);
 
-  const navigate = useNavigate();
-
   useEffect(() => {
-    /*  verifyAuth(); */
+    const fetchTournaments = async () => {
+      try {
+        const tournamentsData = await getTournaments();
+        console.log("Tournaments Data:", tournamentsData);
+        setAllTournaments(tournamentsData);
+      } catch (error) {
+        console.error("Failed to fetch tournaments:", error);
+      }
+    };
+
+    fetchTournaments();
   }, []);
 
   useEffect(() => {
-    /*     const fetchNews = async () => {
-          try {
-            const newsData = await getNews();
-            console.log("News Data:", newsData);
-            setAllNotices(newsData);
-          } catch (error) {
-            console.error("Failed to fetch news:", error);
-          }
-        };
-    
-        fetchNews(); */
-  }, []);
-
-  useEffect(() => {
-    if (noticeSelected !== null) {
+    if (tournamentSelected !== null) {
       reset({
-        _id: noticeSelected._id,
-        description: noticeSelected.description,
-        title: noticeSelected.title,
-        content: noticeSelected.content,
-        category: noticeSelected.category,
+        _id: tournamentSelected._id,
+        description: tournamentSelected.description,
+        title: tournamentSelected.title,
+        content: tournamentSelected.content,
+        location: tournamentSelected.location,
+        time: tournamentSelected.time,
         isActive: false,
       });
     } else {
@@ -58,60 +49,39 @@ const TournamentsForm = () => {
         description: "",
         title: "",
         content: "",
+        location: "",
+        time: "",
         isActive: false,
-        category: "",
       });
     }
-  }, [noticeSelected]);
+  }, [tournamentSelected]);
 
-  /*   const logout = () => {
-        axios
-          .post("/auth/logout")
-          .then((res) => {
-            navigate("/login");
-          })
-          .catch((error) => console.error(error));
-      }; */
-  /*  const verifyAuth = async () => {
-        try {
-          const res = await axios
-            .get("/auth/verify")
-            .then((res) => {
-              setUser(res.data);
-            })
-            .catch((error) => {
-              if (error) {
-                navigate("/login");
-              }
-            });
-        } catch (error) {
-          console.error(error);
-        }
-      }; */
-  const selectNotice = (notice, _id) => {
-    setNoticeSelected(notice);
+  const selectTournament = (tournament, _id) => {
+    setTournamentSelected(tournament);
   };
 
-  const deleteNotice = (id) => {
+  const deleteTournament = (id) => {
     axios
-      .delete(`/news/${id}`)
+      .delete(`/tournaments/${id}`)
       .then(() => {
         // Filtrar la EVA eliminada del estado actual
-        setAllNotices((prevEvas) => prevEvas.filter((eva) => eva._id !== id));
+        setAllTournaments((prevTour) =>
+          prevTour.filter((tour) => tour._id !== id)
+        );
       })
       .catch((error) => console.error(error));
   };
 
-  const editNotice = (notice, id) => {
+  const editTournament = (tournament, id) => {
     axios
-      .put(`/news/${notice._id}`, notice)
+      .put(`/tournaments/${tournament._id}`, tournament)
       .then((res) => {
-        const updatedNotice = res.data;
-        const updatedNotices = allNotices.map((item) =>
-          item._id === updatedNotice._id ? updatedNotice : item
+        const updatedTournament = res.data;
+        const updatedTournaments = allTournaments.map((item) =>
+          item._id === updatedTournament._id ? updatedTournament : item
         );
-        setAllNotices(updatedNotices);
-        setNoticeSelected(null);
+        setAllTournaments(updatedTournaments);
+        setTournamentSelected(null);
       })
       .catch((error) => console.error(error));
   };
@@ -151,40 +121,41 @@ const TournamentsForm = () => {
   }
 
   const submit = (data) => {
-    if (noticeSelected !== null) {
-      editNotice(data);
+    if (tournamentSelected !== null) {
+      editTournament(data);
     } else {
-      const newNotice = {
+      const newTournament = {
         title: data.title,
         description: data.description,
         content: data.content,
-        category: data.category,
+        location: data.location,
+        time: data.time,
         isActive: data.isActive,
         images: images,
       };
       axios
-        .post("/news", newNotice)
+        .post("/tournaments", newTournament)
         .then((res) => {
           // Utiliza la respuesta del backend para obtener la nueva EVA con el _id asignado
-          const createdNotice = res.data;
-          setAllNotices([...allNotices, createdNotice]); // Agrega la EVA con su _id al estado
+          const createdTournament = res.data;
+          setAllTournaments([...allTournaments, createdTournament]); // Agrega la EVA con su _id al estado
         })
         .catch((error) => console.error(error));
     }
-    alert("NOTICIA CREADA EXITOSAMENTE");
+    alert("TORNEO CREADO EXITOSAMENTE");
   };
 
   return (
-    <>
-      <section className="mt-12  w-full flex flex-col items-center">
+    <div className="w-screen min-h-screen  flex flex-col justify-center items-center xl:flex-row xl:justify-evenly xl:items-start">
+      <section className="mt-12 w-full px-3 sm:px-4 flex flex-col items-center  xl:w-auto">
         <section
           style={{
             backgroundImage:
               "linear-gradient(to right top, #242427, #2b2a30, #33303a, #3c3542, #463b4b, #554255, #65495e, #765066, #905a6f, #aa6575, #c37278, #da8078)",
           }}
-          className="max-w-md w-full  rounded-xl shadow-2xl shadow-black overflow-hidden py-8 px-4 space-y-8 xl:max-w-[700px]"
+          className="w-full rounded-xl shadow-2xl shadow-black overflow-hidden py-8 px-4 space-y-8 md:w-[550px] xl:w-[600px]"
         >
-          <h2 className="text-center font-title text-6xl font-extrabold text-white xl:text-7xl 2xl:text-8xl">
+          <h2 className="text-center font-title text-6xl font-extrabold text-white  xl:text-7xl 2xl:text-8xl">
             TORNEOS
           </h2>
           <p className="text-center text-gray-200 font-text text-base xl:text-lg 2xl:text-xl">
@@ -301,7 +272,7 @@ const TournamentsForm = () => {
                 name="image"
                 accept=".jpg, .png, .jpeg"
                 onChange={(e) => handleImage(e)}
-                className=" rounded-lg flex-1  appearance-none w-full  max-w-[400px] py-2 px-4 border border-gray-400 text-white placeholder-white text-sm focus:outline-none focus:border-transparent"
+                className=" rounded-lg flex-1  appearance-none w-[90%] max-w-[400px] py-2 px-4 border border-gray-400 text-white placeholder-white text-sm focus:outline-none focus:border-transparent"
               />
               {loadingImage ? (
                 <h3>Cargando imagen...</h3>
@@ -329,7 +300,7 @@ const TournamentsForm = () => {
             </div>
             <div className="flex items-center justify-center ">
               <button
-                className="w-full font-text  py-2 px-4 border-[1px] border-slate-100 hover:bg-gray-300 rounded-md shadow-lg text-white font-semibold transition duration-200 hover:text-gray-500 xl:w-[70%] xl:self-center "
+                className="w-full font-text  py-2 px-2 border-[1px] border-slate-100 hover:bg-gray-300 rounded-md shadow-lg text-white font-semibold transition duration-200 hover:text-gray-500 xl:w-[85%] xl:self-center "
                 type="submit"
               >
                 Submit
@@ -338,7 +309,17 @@ const TournamentsForm = () => {
           </form>
         </section>
       </section>
-    </>
+      <section className=" mt-8 flex flex-col justify-center items-center">
+        {allTournaments?.map((tournament) => (
+          <CardTournament
+            key={tournament._id}
+            tournament={tournament}
+            selectTournament={selectTournament}
+            deleteTournament={deleteTournament}
+          />
+        ))}
+      </section>
+    </div>
   );
 };
 
