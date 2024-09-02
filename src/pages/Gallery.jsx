@@ -71,8 +71,8 @@ const Gallery = () => {
 
       <section
         id="four_section"
-        style={{background: "linear-gradient(to right, #000000, #434343)" }}
-        className="w-full bg-gray-300 h-[90dvh] lg:h-screen z-50 2xl:z-10 overflow-y-visible relative px-2 md:pl-6 xl:pl-[4%]"
+        style={{backgroundImage: "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)" }}  
+        className="w-full bg-gray-300 h-[90dvh] lg:h-screen z-50 2xl:z-10 overflow-y-visible relative px-2 md:pl-6 xl:pl-[4%] "
       >
         <div className="flex justify-center overflow-y-visible items-center gap-2 lg:gap-4 w-full h-[75%] max-h-screen md:w-[80%] lg:w-[70%] xl:w-[55%] ">
           <div

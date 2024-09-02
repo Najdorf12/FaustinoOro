@@ -78,19 +78,19 @@ const Stats = () => {
     <>
       <section
         id="five_section"
-        className="relative w-full h-[90dvh] md:h-screen z-50 lg:z-10 flex justify-center items-center px-2 sm:px-4 text-white bg-[#212121]"
-      style={{background: "linear-gradient(to right, #000000, #434343)" }}
+        className="relative w-full h-[90dvh] md:h-screen z-10 lg:z-10 flex justify-center items-center px-2 sm:px-4 text-white bg-[#212121] pattern"
+      /* style={{background: "linear-gradient(to right, #000000, #434343)" }} */
       >
-        <article className="relative z-50 flex flex-col justify-center items-center gap-8 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%] xl:gap-8 2xl:gap-10">
+        <article className="relative z-[200] flex flex-col justify-center items-center gap-8 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%] xl:gap-8 2xl:gap-10">
           <h6
             id="split"
-            className="font-text2 text-5xl  text-stone-700 font-bold md:text-6xl lg:text-[10dvh]"
+            className="font-text2 text-5xl z-[200]  text-stone-400 font-bold md:text-6xl lg:text-[10dvh]"
           >
             LOREM IMPSUM
           </h6>
           <p
             id="text-reveal2"
-            className="font-text2 px-3  text-gray-200 text-base md:text-lg xl:px-8 opacity-0  "
+            className="font-text2 px-3 z-50 text-white5 text-base md:text-lg xl:px-8 opacity-0  "
           >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo
             impedit sit aliquam laborum incidunt consectetur dicta temporibus
@@ -111,7 +111,7 @@ const Stats = () => {
 
       <section
         id="six_section"
-        className="overflow-hidden relative w-full font-title3 h-screen font-semibold flex flex-col justify-between items-center text-white py-10   text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl 2xl:leading-[4rem] z-50"
+        className="overflow-hidden relative w-full font-title3 h-screen font-semibold flex flex-col justify-between items-center text-white py-10   text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl 2xl:leading-[4rem] z-5 "
       >
         <article className="absolute top-0 left-0 max-w-[60%] md:max-w-[50%] mt-6 ml-3 z-50 lg:mt-4 xl:ml-[3%] 2xl:mt-16 overflow-visible ">
          {/*  <h6 id="title-stats" className="text-[#80101a]">
