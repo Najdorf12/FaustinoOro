@@ -71,18 +71,18 @@ const Home = () => {
               </section>
             ) : (
               <ul className="flex   gap-3 sm:gap-14 xl:gap-10 text-lg 2xl:text-2xl 2xl:gap-16 text-gray-200">
-                <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-5 py-[2.5px] xl:px-7 2xl:py-[2.7px] 2xl:px-6 cursor-pointer flex justify-center items-center">
+                <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-5 py-[2.5px] xl:px-7 2xl:py-[2.7px] 2xl:px-6 cursor-pointer flex justify-center items-center hover:scale-110 hover:border-red-600 duration-500">
                   Torneos
                 </li>
                 <Link to="/games">
-                  <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[2.5px] 2xl:py-[2.7px] 2xl:px-6 flex justify-center items-center">
+                  <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[2.5px] 2xl:py-[2.7px] 2xl:px-6 flex justify-center items-center hover:scale-110 hover:border-red-600 duration-500">
                     Partidas
                   </li>
                 </Link>
-                <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[2.5px] 2xl:py-[2.7px] 2xl:px-6 flex justify-center items-center">
+                <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[2.5px] 2xl:py-[2.7px] 2xl:px-6 flex justify-center items-center hover:scale-110 hover:border-red-600 duration-500">
                   Cursos
                 </li>
-                <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[2.5px] 2xl:py-[2.7px] 2xl:px-6 flex justify-center items-center">
+                <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[2.5px] 2xl:py-[2.7px] 2xl:px-6 flex justify-center items-center hover:scale-110 hover:border-red-600 duration-500">
                   Contacto
                 </li>
               </ul>

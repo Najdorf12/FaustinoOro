@@ -43,7 +43,7 @@ const Stats = () => {
         },
       })
       .to("#line-stats", {
-        width:  "50%" ,
+        width: "50%",
         duration: 2,
         scrollTrigger: {
           trigger: "#five_section",
@@ -59,7 +59,7 @@ const Stats = () => {
         duration: 2,
         scrollTrigger: {
           trigger: "#five_section",
-          start: screenStats > 700 ? "60% bottom" :"70% bottom",
+          start: screenStats > 700 ? "60% bottom" : "70% bottom",
           end: "60% 20%",
           scrub: true,
         },
@@ -79,7 +79,7 @@ const Stats = () => {
       <section
         id="five_section"
         className="relative w-full h-[90dvh] md:h-screen z-10 lg:z-10 flex justify-center items-center px-2 sm:px-4 text-white bg-[#212121] pattern"
-      /* style={{background: "linear-gradient(to right, #000000, #434343)" }} */
+        /* style={{background: "linear-gradient(to right, #000000, #434343)" }} */
       >
         <article className="relative z-[200] flex flex-col justify-center items-center gap-8 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%] xl:gap-8 2xl:gap-10">
           <h6
@@ -114,7 +114,7 @@ const Stats = () => {
         className="overflow-hidden relative w-full font-title3 h-screen font-semibold flex flex-col justify-between items-center text-white py-10   text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl 2xl:leading-[4rem] z-5 "
       >
         <article className="absolute top-0 left-0 max-w-[60%] md:max-w-[50%] mt-6 ml-3 z-50 lg:mt-4 xl:ml-[3%] 2xl:mt-16 overflow-visible ">
-         {/*  <h6 id="title-stats" className="text-[#80101a]">
+          {/*  <h6 id="title-stats" className="text-[#80101a]">
             LOREM IMPSUM{" "}
           </h6>
           <h6 id="title-stats" className="text-stone-100">
@@ -122,7 +122,7 @@ const Stats = () => {
           </h6> */}
         </article>
         <article className="absolute bottom-0 right-0  flex flex-col items-end justify-end   z-50 mb-6 sm:mr-[30px] md:mr-0 md:max-w-[350px] xl:max-w-[50%]  lg:mb-4 2xl:mb-16 xl:mr-[3%]">
-         {/*  <h6 className="text-[#80101a]  w-[55%] md:w-full">LOREM IMPSUM</h6>
+          {/*  <h6 className="text-[#80101a]  w-[55%] md:w-full">LOREM IMPSUM</h6>
           <h6 className="w-[55%] md:w-full text-stone-100">LOREM IMPSUM </h6> */}
         </article>
       </section>
