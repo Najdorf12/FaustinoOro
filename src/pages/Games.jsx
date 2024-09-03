@@ -122,12 +122,12 @@ const Games = () => {
   return (
     <>
       {" "}
-      <main id="games" className="relative overflow-hidden z-50 w-full pb-10 min-h-screen pt-10 flex flex-col items-center lg:flex-row lg:gap-8  ">
+      <main id="games" className="relative overflow-hidden z-50 w-full pb-10 min-h-screen pt-10 flex flex-col items-center lg:flex-row lg:gap-8 ">
         <div className="w-full lg:w-[50%] flex flex-col items-center">
           <h6 className="self-start  font-title ml-4 text-6xl md:text-7xl text-white  font-semibold  lg:ml-6 2xl:ml-[5%] 2xl:text-8xl">
             GAMES
           </h6>
-          <div id="line-games" className="self-start w-[0%] h-[2px] bg-amber-600 mt-3 lg:mt-4 2xl:mt-4"></div>
+          <div id="line-games" className="self-start w-[0%] h-[2px] bg-[#947153] mt-3 lg:mt-4 2xl:mt-4"></div>
           <p className="text-xl font-title text-stone-500 font-base mt-10 z-50">
             Faustino Oro vs Hikaru Nakamura
           </p>
@@ -138,23 +138,23 @@ const Games = () => {
                 position={game.fen()}
                 arePiecesDraggable={false}
                 animationDuration={150}
-                customDarkSquareStyle={{ backgroundColor: "rgb(51, 50, 50)" }}
-                customLightSquareStyle={{ backgroundColor: "#ca870c" }}
+                customDarkSquareStyle={{ backgroundColor: "#8e1d22" }}
+                customLightSquareStyle={{ backgroundColor: "#947153" }}
               />
-              <div className=" flex justify-center items-center mt-2 gap-8 text-stone-400 relative">
+              <div className=" flex items-center mt-2 gap-8 justify-evenly text-stone-500 relative">
                 <button className="text-7xl" onClick={handleMovePrev}>
                   <i className="bx bx-chevrons-left"></i>
-                  <p className="text-lg font-semibold -mt-2 text-stone-500">
+                  <p className="text-lg font-semibold -mt-2 text-[#947153]">
                     Prev
                   </p>
                 </button>
                 <button className="text-7xl" onClick={handleMoveNext}>
                   <i className="bx bx-chevrons-right "></i>
-                  <p className="text-lg font-semibold -mt-2 text-stone-500">
+                  <p className="text-lg font-semibold -mt-2 text-[#947153]">
                     Next
                   </p>
                 </button>
-                <div className="absolute -bottom-2 w-full h-[1.5px] bg-stone-600 self-center mt-2 max-w-[400px] 2xl:max-w-[500px] 2xl:-bottom-3"></div>
+                <div className="absolute -bottom-2 w-full h-[1.5px] bg-[#947153] self-center mt-2 max-w-[400px] 2xl:max-w-[500px] 2xl:-bottom-3"></div>
               </div>
             </div>
           </section>
@@ -164,7 +164,7 @@ const Games = () => {
           <ul  className="z-50 text-lg font-title text-stone-400 font-semibold flex flex-col gap-1 2xl:text-[1.3rem] 2xl:gap-4 ">
             <li className="text-white relative flex items-center justify-center">
               {" "}
-              <i class="bx bx-right-arrow-alt absolute -left-8 text-amber-600 text-3xl 2xl:text-5xl 2xl:-left-14"></i>{" "}
+              <i class="bx bx-right-arrow-alt absolute -left-8 text-[#947153] text-3xl 2xl:text-5xl 2xl:-left-14"></i>{" "}
               Faustino Oro vs Hikaru Nakamura
             </li>
             <li>Faustino Oro vs Lorem Impsum</li>

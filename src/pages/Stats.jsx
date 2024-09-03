@@ -78,7 +78,7 @@ const Stats = () => {
     <>
       <section
         id="five_section"
-        className="relative w-full h-[90dvh] md:h-screen z-10 lg:z-10 flex justify-center items-center px-2 sm:px-4 text-white bg-[#212121] pattern"
+        className="relative w-full h-[90dvh] md:h-screen z-10 lg:z-10 flex justify-center items-center px-2 sm:px-4 text-white"
         /* style={{background: "linear-gradient(to right, #000000, #434343)" }} */
       >
         <article className="relative z-[200] flex flex-col justify-center items-center gap-8 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%] xl:gap-8 2xl:gap-10">
