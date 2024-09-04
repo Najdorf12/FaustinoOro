@@ -201,7 +201,7 @@
 }
 /* CONTACTFORM */
 .form-container {
-  border: 1px solid #757474;
+  border: 1px solid #947153;
   padding: 32px 24px;
   font-size: 14px;
   color: white;
@@ -242,7 +242,7 @@
   border-radius: 8px;
   color: #fff;
   background-color: transparent;
-  border: 1px solid #414141;
+  border: 1px solid #947153;
 }
 
 .form-container .form-group textarea {
@@ -252,7 +252,7 @@
   resize: none;
   color: #fff;
   height: 96px;
-  border: 1px solid #414141;
+  border: 1px solid #947153;
   background-color: transparent;
 }
 
@@ -275,7 +275,7 @@
   align-self: flex-start;
   font-weight: 600;
   width: 40%;
-  border: 1px solid #ebebeb;
+  border: 1px solid #947153;
   padding: 11px 14px;
   font-size: 16px;
   gap: 8px;

@@ -32,7 +32,7 @@ const Home = () => {
           </article>
 
           {/* BORDER BUTTONS */}
-          <span className="absolute mt-2 top-0 right-0 left-0 flex justify-end mr-4 items-center gap-3 font-text2 text-black py-1 lg:mt-3 lg:justify-end lg:pr-[3%] 2xl:pr-[4%] 2xl:mt-5">
+          <span className="absolute mt-2 top-0 right-0 left-0 flex justify-end mr-4 items-center gap-3 font-text2 text-black py-1 lg:mt-3 lg:justify-end lg:pr-[2%]  2xl:mt-5">
             {windowWidth < 900 ? (
               <section className="flex flex-col items-end gap-3">
                 <input
@@ -54,12 +54,17 @@ const Home = () => {
                   <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-5 py-[2.5px] cursor-pointer flex items-center justify-center">
                     Torneos
                   </li>
-                  <Link to="/games">
+                  <Link /* to="/games" */>
                     <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[2.5px] flex items-center justify-center">
                       Partidas
                     </li>
                   </Link>
-                  <Link to="/games">
+                  <Link /* to="/games" */>
+                    <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[2.5px] flex items-center justify-center">
+                      Noticias
+                    </li>
+                  </Link>
+                  <Link /* to="/games" */>
                     <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[2.5px] flex items-center justify-center">
                       Cursos
                     </li>
@@ -70,18 +75,22 @@ const Home = () => {
                 </ul>
               </section>
             ) : (
-              <ul className="flex   gap-3 sm:gap-14 xl:gap-10 text-lg 2xl:text-2xl 2xl:gap-16 text-gray-200">
+              <ul className="flex  gap-3 sm:gap-14 xl:gap-9 text-lg 2xl:text-2xl 2xl:gap-10 text-gray-200">
                 <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-5 py-[2.5px] xl:px-7 2xl:py-[2.7px] 2xl:px-6 cursor-pointer flex justify-center items-center hover:scale-110 hover:border-red-600 duration-500">
                   Torneos
                 </li>
-                <Link to="/games">
+                <Link /* to="/games" */>
                   <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[2.5px] 2xl:py-[2.7px] 2xl:px-6 flex justify-center items-center hover:scale-110 hover:border-red-600 duration-500">
                     Partidas
                   </li>
                 </Link>
                 <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[2.5px] 2xl:py-[2.7px] 2xl:px-6 flex justify-center items-center hover:scale-110 hover:border-red-600 duration-500">
+                  Noticias
+                </li>
+                <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[2.5px] 2xl:py-[2.7px] 2xl:px-6 flex justify-center items-center hover:scale-110 hover:border-red-600 duration-500">
                   Cursos
                 </li>
+
                 <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[2.5px] 2xl:py-[2.7px] 2xl:px-6 flex justify-center items-center hover:scale-110 hover:border-red-600 duration-500">
                   Contacto
                 </li>

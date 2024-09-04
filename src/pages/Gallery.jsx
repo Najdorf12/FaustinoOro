@@ -13,7 +13,7 @@ import { useLayoutEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const Gallery = () => {
-  const tl = gsap.timeline();
+  /*  const tl = gsap.timeline();
 
   useLayoutEffect(() => {
     new ScrollTrigger({});
@@ -45,36 +45,35 @@ const Gallery = () => {
         scrub: 1,
       },
     });
-  }, []);
+  }, []); */
 
   return (
     <>
       <section
         id="third_section"
-        style={{backgroundImage: "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)" }}
-        className="pt-5 bg-gray-300  w-full h-[80dvh] md:h-screen  font-title relative flex items-start overflow-hidden  2xl:pt-0 2xl:justify-start"
+        /*  style={{backgroundImage: "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)" }} */
+
+        className="pt-5 w-full h-[90vh] md:h-screen  font-title relative flex items-start overflow-hidden  2xl:pt-0 2xl:justify-start"
       >
         <article className="h-full relative pt-2 pl-3 sm:px-2  gap-3 z-40 sm:max-w-[600px] md:max-w-[85%]  md:ml-[3%] lg:ml-[7%] xl:pt-6 xl:max-w-[60%] 2xl:pt-0 2xl:ml-[9%] 2xl:max-w-[1100px] 2xl:mt-12  ">
-          <h3 className="split mt-1 font-title text-white font-bold text-[3.50rem] leading-[1] sm:text-[3.6rem]  md:text-[5rem]  xl:text-[13dvh] z-50 ">
-            EL ÉXITO OCURRE CUANDO <br className="lg:hidden" /> TUS SUEÑOS
-            <div
-              style={{
-                WebkitTextStroke: "2px #80101a",
-              }}
-              className="text-[#80101a] "
-            >
-              SON MAS GRANDES QUE TUS EXCUSAS
-            </div>
+          <h3 className="mt-1 font-title text-white font-bold text-[3.50rem] leading-[1] sm:text-[3.6rem]  md:text-[5rem]  xl:text-[13dvh] z-50 ">
+            EL ÉXITO OCURRE CUANDO{" "}
+            <span className="text-darkred">TUS SUEÑOS SON MAS GRANDES </span>{" "}
+            QUE TUS EXCUSAS.
           </h3>
         </article>
       </section>
 
       <section
-        id="four_section"
-        style={{backgroundImage: "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)" }}  
-        className="w-full bg-gray-300 h-[90dvh] lg:h-screen z-50 2xl:z-10 overflow-y-visible relative px-2 md:pl-6 xl:pl-[4%] "
+        id="four_section" /* 
+        style={{backgroundImage: "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)" }}   */
+        style={{
+          backgroundImage:
+            "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)",
+        }}
+        className="w-full bg-gray-300 h-[90dvh] lg:h-screen z-50 md:z-10 overflow-y-visible relative px-2 md:pl-6 xl:pl-[4%] "
       >
-        <div className="flex justify-center overflow-y-visible items-center gap-2 lg:gap-4 w-full h-[75%] max-h-screen md:w-[80%] lg:w-[70%] xl:w-[55%] ">
+        {/*   <div className="flex justify-center overflow-y-visible items-center gap-2 lg:gap-4 w-full h-[75%] max-h-screen md:w-[80%] lg:w-[70%] xl:w-[55%] ">
           <div
             id="imgs-container"
             className="flex flex-col gap-2 lg:gap-4 w-[50%] h-full z-50 "
@@ -116,7 +115,7 @@ const Gallery = () => {
               />
             </figure>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

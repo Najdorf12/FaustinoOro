@@ -15,7 +15,13 @@ export default {
     },
     extend: {
       colors:{
-        wheat:"rgb(245 222 179)"
+        redfausti:"#80101A",
+        bluefausti:"#3f4864",
+        brown: "#340307",
+        lightbrown: "#947153",
+        wheat: "#ffd19d",
+        red2:"#c40817",
+        darkred: "#8e1d22"
       },
       fontFamily: {
         title: ["Ubuntu", "sans-serif"],
