@@ -88,7 +88,7 @@ const About = () => {
         }}
         className="w-full h-screen bg-gray-300 flex lg:justify-end font-title overflow-hidden relative"
       >
-        <article className="relative  pt-24 lg:pt-0 px-3 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[4%] 2xl:mr-[12%] 2xl:mt-[6%]  2xl:max-w-[650px] text-balance">
+        <article className="relative  pt-24 lg:pt-0 px-3 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[4%] xl:mt-[7%] 2xl:mr-[12%]   2xl:max-w-[650px] text-balance ">
           <h5
             id="about-text"
             className="text-xl font-title4 text-stone-600 2xl:text-4xl font-medium opacity-0 "

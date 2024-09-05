@@ -54,10 +54,10 @@ const Gallery = () => {
         id="third_section"
         /*  style={{backgroundImage: "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)" }} */
 
-        className="pt-16 w-full h-[85vh] md:h-screen  font-title relative flex items-start overflow-hidden  2xl:pt-0 2xl:justify-start"
+        className="pt-16 w-full h-[85vh] md:h-screen  font-title relative flex items-start overflow-hidden xl:pt-6  2xl:pt-0 2xl:justify-start"
       >
-        <article className="h-full relative pt-2 pl-3 sm:px-2  gap-3 z-40 sm:max-w-[600px] md:max-w-[85%] sm:pl-6  md:ml-[3%] lg:ml-[7%] xl:pt-6 xl:max-w-[60%] 2xl:pt-0 2xl:ml-[9%] 2xl:max-w-[1100px] 2xl:mt-20  ">
-          <h3 className="mt-1 font-title text-balance  max-w-[380px] text-white font-bold text-[7vh] leading-[1] z-50 lg:text-[12vh] lg:max-w-[800px] 2xl:max-w-[950px]">
+        <article className="h-full relative pt-2 pl-3 sm:px-2  gap-3 z-40 sm:max-w-[600px] md:max-w-[85%] sm:pl-6  md:ml-[3%] lg:ml-[7%] xl:max-w-[60%] 2xl:pt-0 2xl:ml-[9%] 2xl:max-w-[1100px] 2xl:mt-20  text-balance">
+          <h3 className="mt-1 font-title text-balance  max-w-[380px] text-white font-bold text-[7vh] leading-[1] z-50 lg:text-[12vh] lg:max-w-[780px]  2xl:max-w-[950px]">
             EL ÉXITO OCURRE CUANDO {/* <br className="hidden lg:flex" /> */}
             <span className="text-darkred">
               TUS SUEÑOS SON MAS GRANDES{" "}
