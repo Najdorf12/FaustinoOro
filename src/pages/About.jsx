@@ -31,7 +31,7 @@ const About = () => {
       })
       .to("#line-about", {
         opacity: 1,
-        width: "100%",
+        width: "95%",
         duration: 2,
         scrollTrigger: {
           trigger: "#second_section",
@@ -97,7 +97,7 @@ const About = () => {
           </h5>
           <h3
             id="about-text2"
-            className="text-white font-medium   text-2xl 2xl:pr-2  2xl:text-4xl  opacity-0 relative"
+            className="text-white font-medium   text-2xl 2xl:pr-2  2xl:text-4xl  opacity-0 relative lg:max-w-[95%]"
           >
             {"Soy Faustino Oro. Nací en Buenos Aires, Argentina, el 14 de octubre de 2013".toUpperCase()}
           </h3>
@@ -112,12 +112,12 @@ const About = () => {
              En plena pandemia, el 30 de mayo de 2020 aprendí a mover las piezas y, desde entonces, el ajedrez ha sido mucho más que un simple juego para mí: es un desafío constante que me motiva a seguir mejorando. Autodidacta y persistente, he crecido con cada partida y cada lección, con la firme convicción de llegar a lo más alto.
           </p>
 
-          <div id="btn-about_box" className="flex -mt-[30px] ml-[60px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 2xl:gap-12 2xl:text-xl opacity-0">
-            <button className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[130px] ">
+          <div id="btn-about_box" className="flex -mt-[30px] ml-[60px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 xl:text-base 2xl:gap-12 2xl:text-xl opacity-0">
+            <button className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[130px] xl:gap-3 ">
               HISTORIA
               <i class='bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl'></i>
             </button>
-            <button className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[130px]">
+            <button className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[130px] xl:gap-3 ">
               LOGROS
               <i class='bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl'></i>
             </button>
