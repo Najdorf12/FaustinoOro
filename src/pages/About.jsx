@@ -91,7 +91,7 @@ const About = () => {
         <article className="relative  pt-24 lg:pt-0 px-3 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[4%] xl:mt-[7%] 2xl:mr-[12%]   2xl:max-w-[650px] text-balance ">
           <h5
             id="about-text"
-            className="text-xl font-title4 text-stone-600 2xl:text-4xl font-medium opacity-0 "
+            className="text-xl font-title4 text-stone-600 2xl:text-3xl font-medium opacity-0 "
           >
             Sobre Mi
           </h5>
@@ -107,7 +107,7 @@ const About = () => {
           ></div>
           <p
             id="p-about"
-            className="relative w-[90%] mt-[60px] opacity-0 text-base  font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.5rem]  text-stone-900 lg:text-stone-500"
+            className="relative w-[90%] mt-[60px] opacity-0 text-base  font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.3rem]  text-stone-900 lg:text-stone-500"
           >
              En plena pandemia, el 30 de mayo de 2020 aprendí a mover las piezas y, desde entonces, el ajedrez ha sido mucho más que un simple juego para mí: es un desafío constante que me motiva a seguir mejorando. Autodidacta y persistente, he crecido con cada partida y cada lección, con la firme convicción de llegar a lo más alto.
           </p>
