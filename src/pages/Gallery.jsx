@@ -5,6 +5,7 @@ import imgFausti6 from "../assets/img6.jpg";
 import imgFausti7 from "../assets/img16.jpg";
 import imgFausti8 from "../assets/img18.jpg";
 import imgFausti9 from "../assets/img17.jpg";
+import imgFausti20 from "../assets/fausti20.jpeg"
 
 import SplitType from "split-type";
 import gsap from "gsap";
@@ -80,7 +81,7 @@ const Gallery = () => {
             <picture className=" ">
               <img
                 className="w-full h-full rounded-3xl object-cover border-[2px] border-lightbrown"
-                src={imgFausti2}
+                src={imgFausti3}
                 alt=""
               />
             </picture>
@@ -89,7 +90,7 @@ const Gallery = () => {
             <picture className="">
               <img
                 className="w-full h-full rounded-3xl object-cover border-[2px] border-lightbrown"
-                src={imgFausti2}
+                src={imgFausti9}
                 alt=""
               />
             </picture>
@@ -97,8 +98,8 @@ const Gallery = () => {
           <div className="col-span-2 row-span-6 col-start-5 ">
             <picture className="">
               <img
-                className="w-full h-full rounded-3xl object-cover border-[2px] border-lightbrown"
-                src={imgFausti2}
+                className="w-full h-full rounded-3xl object-cover border-[2px] border-lightbrown "
+                src={imgFausti4}
                 alt=""
               />
             </picture>
@@ -116,7 +117,7 @@ const Gallery = () => {
             <picture className="">
               <img
                 className="w-full h-full rounded-3xl object-cover border-[2px] border-lightbrown"
-                src={imgFausti2}
+                src={imgFausti6}
                 alt=""
               />
             </picture>
