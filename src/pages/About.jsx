@@ -90,13 +90,13 @@ const About = () => {
         <article className="relative pt-24 lg:pt-0 px-3 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[4%] 2xl:mr-[12%] 2xl:mt-[6%]  2xl:max-w-[650px] text-balance">
           <h5
             id="about-text"
-            className="text-xl font-title4 text-white 2xl:text-4xl font-medium opacity-0 "
+            className="text-xl font-title4 text-stone-600 2xl:text-4xl font-medium opacity-0 "
           >
             Sobre Mi
           </h5>
           <h3
             id="about-text2"
-            className="text-stone-700 lg:text-white  text-2xl 2xl:pr-2  2xl:text-4xl  opacity-0 relative"
+            className="text-white  text-2xl 2xl:pr-2  2xl:text-4xl  opacity-0 relative"
           >
             {"Soy Faustino Oro. Nací en Buenos Aires, Argentina, el 14 de octubre de 2013".toUpperCase()}
           </h3>
