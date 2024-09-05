@@ -109,7 +109,7 @@ const About = () => {
             id="p-about"
             className="relative w-[90%] mt-[60px] opacity-0 text-base  font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.5rem]  text-stone-900 lg:text-stone-500"
           >
-             El 30 de mayo de 2020 aprendí a mover las piezas por primera vez, y desde entonces, el ajedrez ha sido mucho más que un simple juego para mí: es un desafío constante que me motiva a seguir mejorando. Autodidacta y persistente, he crecido con cada partida y cada lección, con la firme convicción de llegar a lo más alto.
+             En plena pandemia, el 30 de mayo de 2020 aprendí a mover las piezas y, desde entonces, el ajedrez ha sido mucho más que un simple juego para mí: es un desafío constante que me motiva a seguir mejorando. Autodidacta y persistente, he crecido con cada partida y cada lección, con la firme convicción de llegar a lo más alto.
           </p>
 
           <div id="btn-about_box" className="flex -mt-[30px] ml-[60px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 2xl:gap-12 2xl:text-xl opacity-0">
