@@ -58,7 +58,9 @@ const Gallery = () => {
         <article className="h-full relative pt-2 pl-3 sm:px-2  gap-3 z-40 sm:max-w-[600px] md:max-w-[85%] sm:pl-6  md:ml-[3%] lg:ml-[7%] xl:pt-6 xl:max-w-[60%] 2xl:pt-0 2xl:ml-[9%] 2xl:max-w-[1100px] 2xl:mt-20  ">
           <h3 className="mt-1 font-title text-balance  max-w-[380px] text-white font-bold text-[7vh] leading-[1] z-50 lg:text-[12vh] lg:max-w-[800px] 2xl:max-w-[950px]">
             EL ÉXITO OCURRE CUANDO {/* <br className="hidden lg:flex" /> */}
-            <span className="text-darkred">TUS SUEÑOS SON MAS GRANDES </span>{" "}
+            <span className="text-darkred">
+              TUS SUEÑOS SON MAS GRANDES{" "}
+            </span>{" "}
             QUE TUS EXCUSAS.
           </h3>
         </article>
@@ -73,49 +75,13 @@ const Gallery = () => {
         }}
         className="w-full bg-gray-300 h-[90dvh] lg:h-screen z-50 md:z-10 overflow-y-visible relative px-2 md:pl-6 xl:pl-[4%] "
       >
-        {/*   <div className="flex justify-center overflow-y-visible items-center gap-2 lg:gap-4 w-full h-[75%] max-h-screen md:w-[80%] lg:w-[70%] xl:w-[55%] ">
-          <div
-            id="imgs-container"
-            className="flex flex-col gap-2 lg:gap-4 w-[50%] h-full z-50 "
-          >
-            <figure className="w-full h-[60%]">
-              <img
-                id="img-fausti"
-                src={imgFausti2}
-                className="w-full h-full object-cover opacity-0 rounded-md"
-                alt=""
-              />
-            </figure>
-            <figure className="w-full h-[50%]">
-              <img
-                id="img-fausti"
-                className="w-full bg-gray-200 h-full object-cover opacity-0 rounded-md"
-                alt=""
-              />
-            </figure>
-          </div>
-
-          <div
-            id="imgs-container"
-            className="flex flex-col gap-2 lg:gap-4 h-full w-[50%] z-50"
-          >
-            <figure className="w-full h-[49%]">
-              <img
-                id="img-fausti"
-                className="w-full border border-stone-500  h-full object-cover opacity-0 rounded-md"
-                alt=""
-              />
-            </figure>
-            <figure className=" w-full h-[49%]">
-              <img
-                id="img-fausti"
-                src={imgFausti4}
-                className="w-full h-full object-cover opacity-0 rounded-md"
-                alt=""
-              />
-            </figure>
-          </div>
-        </div> */}
+        <div className="grid grid-cols-6 grid-rows-8 gap-1 w-full h-[80%]">
+          <div className="col-span-2 row-span-3 bg-teal-700 rounded-3xl">1</div>
+          <div className="col-span-2 row-span-3 col-start-3 bg-rose-700 rounded-3xl">2</div>
+          <div className="col-span-2 row-span-6 col-start-5 bg-red-700 rounded-3xl">3</div>
+          <div className="col-span-4 row-span-3 row-start-4 bg-purple-700 rounded-3xl">4</div>
+          <div className="col-span-6 row-span-2 row-start-7 bg-indigo-700 rounded-3xl">5</div>
+        </div>
       </section>
     </>
   );

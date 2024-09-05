@@ -96,13 +96,13 @@ const About = () => {
           </h5>
           <h3
             id="about-text2"
-            className="text-stone-700  text-4xl 2xl:pr-2  2xl:text-4xl  opacity-0 relative"
+            className="text-stone-700 lg:text-white  text-4xl 2xl:pr-2  2xl:text-4xl  opacity-0 relative"
           >
             {"Soy Faustino Oro. Nací en Buenos Aires, Argentina, el 14 de octubre de 2013".toUpperCase()}
           </h3>
           <div
             id="line-about"
-            className="w-[0%] h-[2px]  bg-lightbrown rounded-md my-2"
+            className="w-[0%] h-[2px]  bg-bluefausti rounded-md my-2"
           ></div>
           <p
             id="p-about"
