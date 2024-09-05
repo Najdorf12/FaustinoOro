@@ -52,19 +52,30 @@ const About = () => {
           scrub: true,
         },
       })
-      /* .to("#btn-about", {
+      .to("#btn-about_box", {
         opacity: 1,
-        y: "-60px",
+        x: "-60px",
         duration: 2,
         stagger: 0.5,
         scrollTrigger: {
-          trigger: "#btn-about",
+          trigger: "#btn-about_box",
           start: "top bottom",
           end: "top 70%",
           scrub: true,
+          
         },
-      }) */
-     
+      })
+      .to("#box-about", {
+        y: "-300px",
+        rotate: "120deg",
+        stagger: 0.06,
+        scrollTrigger: {
+          trigger: "#box-about",
+          start: screen > 1200 ? "-120% bottom" : "-190% bottom",
+          end: screen > 1200 ? "40% 50%" : "50% 60%",
+          scrub: true,
+        },
+      });
   }, []);
   return (
     <>
@@ -80,7 +91,7 @@ const About = () => {
         <article className="relative pt-24 lg:pt-0 px-3 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[4%] 2xl:mr-[12%] 2xl:mt-[6%]  2xl:max-w-[650px] text-balance">
           <h5
             id="about-text"
-            className="text-xl font-title4 text-stone-700 2xl:text-4xl font-medium opacity-0 "
+            className="text-xl font-title4 text-stone-600 2xl:text-4xl font-medium opacity-0 "
           >
             Sobre Mi
           </h5>
@@ -96,13 +107,13 @@ const About = () => {
           ></div>
           <p
             id="p-about"
-            className="relative  mt-[60px] opacity-0 text-lg font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.5rem]  text-stone-700 lg:text-stone-500"
+            className="relative  mt-[60px] opacity-0 text-lg font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.5rem]  text-stone-900 lg:text-stone-500"
           >
              El 30 de mayo de 2020 aprendí a mover las piezas por primera vez, y desde entonces, el ajedrez ha sido mucho más que un simple juego para mí: es un desafío constante que me motiva a seguir mejorando. Autodidacta y persistente, he crecido con cada partida y cada lección, con la firme convicción de llegar a lo más alto.
           </p>
 
-          <div className="flex  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 2xl:gap-12 2xl:text-xl">
-            <button className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[130px]">
+          <div id="btn-about_box" className="flex -mt-[30px] ml-[60px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 2xl:gap-12 2xl:text-xl opacity-0">
+            <button className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[130px] ">
               HISTORIA
               <i class='bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl'></i>
             </button>
