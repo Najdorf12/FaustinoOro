@@ -114,7 +114,7 @@ const Gallery = () => {
             </picture>
           </div>
           <div className="col-span-6 row-span-2 row-start-7">
-            <picture className="">
+            <picture className=" ">
               <img
                 className="w-full h-full rounded-3xl object-cover border-[2px] border-lightbrown"
                 src={imgFausti6}

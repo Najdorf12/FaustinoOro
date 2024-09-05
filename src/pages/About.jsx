@@ -90,13 +90,13 @@ const About = () => {
         <article className="relative pt-24 lg:pt-0 px-3 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[4%] 2xl:mr-[12%] 2xl:mt-[6%]  2xl:max-w-[650px] text-balance">
           <h5
             id="about-text"
-            className="text-xl font-title4 text-stone-700 2xl:text-3xl opacity-0 "
+            className="text-xl font-title4 text-white 2xl:text-4xl font-medium opacity-0 "
           >
             Sobre Mi
           </h5>
           <h3
             id="about-text2"
-            className="text-stone-700 lg:text-white  text-4xl 2xl:pr-2  2xl:text-4xl  opacity-0 relative"
+            className="text-stone-700 lg:text-white  text-2xl 2xl:pr-2  2xl:text-4xl  opacity-0 relative"
           >
             {"Soy Faustino Oro. Nací en Buenos Aires, Argentina, el 14 de octubre de 2013".toUpperCase()}
           </h3>
@@ -112,13 +112,13 @@ const About = () => {
           </p>
 
           <div className="flex  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 2xl:gap-12 2xl:text-xl">
-            <button className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-6 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[130px]">
+            <button className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[130px]">
               HISTORIA
-              <i class='bx bx-arrow-back text-white rotate-[145deg] text-2xl 2xl:text-3xl'></i>
+              <i class='bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl'></i>
             </button>
             <button className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[130px]">
               LOGROS
-              <i class='bx bx-arrow-back rotate-[145deg] text-2xl 2xl:text-3xl text-white'></i>
+              <i class='bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl'></i>
             </button>
           </div>
         </article>
@@ -133,7 +133,7 @@ const About = () => {
             ></div>
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150] bg-[#3f4864] opacity-90 md:opacity-1"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150] bg-[#3f4864] opacity-80 md:opacity-1"
             ></div>
             <div
               id="box-about"
@@ -141,7 +141,7 @@ const About = () => {
             ></div>
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-[#3f4864] opacity-90 md:opacity-1"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-[#3f4864] opacity-80 md:opacity-1"
             ></div>
             <div
               id="box-about"
@@ -155,7 +155,7 @@ const About = () => {
             ></div>
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-[#3f4864] opacity-90 md:opacity-1"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-[#3f4864] opacity-80 md:opacity-1"
             ></div>
             <div
               id="box-about"
@@ -163,7 +163,7 @@ const About = () => {
             ></div>
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-[#3f4864] opacity-90 md:opacity-1"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-[#3f4864] opacity-80 md:opacity-1"
             ></div>
           </div>
           <div className="self-end z-50 ">
@@ -173,7 +173,7 @@ const About = () => {
             ></div>
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-[#3f4864] opacity-90 md:opacity-1"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-[#3f4864] opacity-80 md:opacity-1"
             ></div>
             <div
               id="box-about"
@@ -187,7 +187,7 @@ const About = () => {
             ></div>
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-[#3f4864] opacity-90 md:opacity-1"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-[#3f4864] opacity-80 md:opacity-1"
             ></div>
           </div>
           <div className="self-end z-50 ">
