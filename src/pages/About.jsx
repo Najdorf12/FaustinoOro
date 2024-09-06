@@ -159,7 +159,7 @@ const About = () => {
               HISTORIA
             </h3>
            
-            <p className="relative w-[86%] mt-6 max-h-[350px] overflow-y-scroll text-base font-text2 2xl:mt-7 2xl:text-[1.3rem] text-stone-900 lg:text-stone-500">
+            <p id="about-history" className="relative  w-[96%] mt-6 max-h-[350px] pr-3 overflow-y-scroll text-base font-text2 2xl:mt-7 2xl:text-[1.3rem] text-stone-900 lg:text-stone-500">
               Mi primer torneo de ajedrez clásico fue el "8vo IRT Alejandro
               Judewicz" en Mar del Plata, Buenos Aires, Argentina, en septiembre
               de 2021. En este torneo ingresé por primera vez al ranking ELO
@@ -256,7 +256,7 @@ const About = () => {
         }}
         className="w-full h-screen bg-gray-300 flex lg:justify-end font-title overflow-hidden relative"
       >
-        <article className="relative  pt-24 lg:pt-0 px-3 sm:pl-[6%] lg:pl-0 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[4%] 2xl:mt-[6%]  2xl:mr-[12%]   2xl:max-w-[650px] text-balance ">
+        <article className="relative  pt-24 lg:pt-0 px-3 pl-[4%] sm:pl-[6%] lg:pl-0 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[4%] 2xl:mt-[6%]  2xl:mr-[12%]   2xl:max-w-[650px] text-balance ">
           <h5
             id="about-text"
             className="text-xl font-title4 text-stone-600 2xl:text-3xl font-medium opacity-0 "
