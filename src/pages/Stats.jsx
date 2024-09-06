@@ -105,7 +105,7 @@ const Stats = () => {
         ></div>
         <div
           id="line-stats2"
-          className="w-[0%] absolute z-0 h-[1px] bg-[#3f4864] bottom-0 right-0 mb-[5%]"
+          className="w-[0%] absolute z-0 h-[1px] bg-lightbrown bottom-0 right-0 mb-[5%]"
         ></div>
       </section>
 
@@ -127,6 +127,7 @@ const Stats = () => {
         </article>
       </section>
       <div className="w-full h-[10dvh] z-50"></div>
+      
       <section
         id="seven_section"
         className=" w-full h-screen overflow-hidden lg:flex lg:flex-row z-50"
@@ -141,7 +142,7 @@ const Stats = () => {
               <p className="text-center text-base px-2 leading-4 text-gray-400">
                 Some random text lorem.
               </p>
-              <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-amber-600">
+              <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-lightbrown">
                 Button
               </button>
             </div>
@@ -160,7 +161,7 @@ const Stats = () => {
               <p className="text-center text-base px-2 leading-4 text-gray-400">
                 Some random text lorem.
               </p>
-              <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-amber-600">
+              <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-lightbrown">
                 Button
               </button>
             </div>
@@ -170,7 +171,7 @@ const Stats = () => {
               <p className="text-center text-base px-2 leading-4 text-gray-400">
                 Some random text lorem.
               </p>
-              <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-amber-600">
+              <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-lightbrown">
                 Button
               </button>
             </div>
@@ -180,7 +181,7 @@ const Stats = () => {
               <p className="text-center text-base px-2 leading-4 text-gray-400">
                 Some random text lorem.
               </p>
-              <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-amber-600">
+              <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-lightbrown">
                 Button
               </button>
             </div>
@@ -188,56 +189,7 @@ const Stats = () => {
           <div
             id="stats-container"
             className="relative w-full h-[46.5%] bg-zinc-900 xl:h-[60%] xl:pl-[7%] 2xl:h-[65%] overflow-y-scroll pt-[4%] lg:overflow-y-hidden lg:pt-[3%] z-50 lg:z-10"
-          >
-            <p className="text-3xl font-semibold text-title pl-4 text-white flex items-center 2xl:text-4xl  w-full">
-              <img className="max-w-10 2xl:max-w-12" src={flash} alt="" />
-              Blitz
-            </p>
-            <ul className="mt-[4%] text-gray-300 z-50 text-md font-text2 flex flex-col justify-center items-center lg:mt-[4%] gap-1 px-4 xl:max-w-[55%] 2xl:text-lg ">
-              <li className="flex  items-center gap-2 bg-zinc-800 w-full py-[1px] z-50">
-                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
-                Lorem impsum dolor sit.{" "}
-              </li>
-
-              <li className="flex  items-center gap-2  w-full z-50">
-                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
-                Lorem impsum dolor sit.{" "}
-              </li>
-              <li className="flex  items-center gap-2 bg-zinc-800 w-full py-[1px] z-50">
-                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
-                Lorem impsum dolor sit.{" "}
-              </li>
-
-              <li className="flex  items-center gap-2  w-full z-50">
-                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
-                Lorem impsum dolor sit.{" "}
-              </li>
-              <li className="flex  items-center gap-2 bg-zinc-800 w-full py-[1px] z-50">
-                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
-                Lorem impsum dolor sit.{" "}
-              </li>
-              <li className="flex  items-center gap-2  w-full z-50">
-                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
-                Lorem impsum dolor sit.{" "}
-              </li>
-              <li className="flex  items-center gap-2 bg-zinc-800 w-full py-[1px] z-50">
-                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
-                Lorem impsum dolor sit.{" "}
-              </li>
-              <li className="flex  items-center gap-2  w-full z-50">
-                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
-                Lorem impsum dolor sit.{" "}
-              </li>
-              <li className="flex  items-center gap-2 bg-zinc-800 w-full py-[1px] z-50">
-                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
-                Lorem impsum dolor sit.{" "}
-              </li>
-              <li className="flex  items-center gap-2  w-full z-50">
-                <i class="bx bx-chevron-right text-3xl text-amber-600"></i>
-                Lorem impsum dolor sit.{" "}
-              </li>
-            </ul>
-          </div>
+          ></div>
         </div>
 
         <div className="hidden bg-zinc-900 lg:flex lg:flex-col lg:w-1/2 lg:h-screen relative  xl:z-20">

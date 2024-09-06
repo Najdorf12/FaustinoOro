@@ -2,12 +2,8 @@ import imgFausti2 from "../assets/fausti2.jpg";
 import imgFausti3 from "../assets/fausti3.jpg";
 import imgFausti4 from "../assets/fausti4.jpg";
 import imgFausti6 from "../assets/img6.jpg";
-import imgFausti7 from "../assets/img16.jpg";
-import imgFausti8 from "../assets/img18.jpg";
 import imgFausti9 from "../assets/img17.jpg";
-import imgFausti20 from "../assets/fausti20.jpeg"
 
-import SplitType from "split-type";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect } from "react";
@@ -68,19 +64,19 @@ const Gallery = () => {
       </section>
 
       <section
-        id="four_section" 
-        /* style={{backgroundImage: "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)" }}  */  
-       /*  style={{
+        id="four_section"
+        /* style={{backgroundImage: "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)" }}  */
+        /*  style={{
           backgroundImage:
             "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)",
         }} */
-        className="w-full flex justify-center items-center   h-[90dvh] lg:justify-start lg:pl-[5%] lg:h-screen z-50 md:z-10 overflow-y-visible relative px-1"
+        className="w-full flex justify-center items-start  h-[90dvh] lg:justify-start lg:pl-[5%] lg:h-screen z-50 md:z-10 overflow-y-visible relative px-1 "
       >
         <div className="grid grid-cols-6 grid-rows-8 gap-1 w-full h-[90%] lg:gap-2 lg:max-w-[70%]">
           <div className="col-span-2 row-span-3 ">
             <picture className=" ">
               <img
-                className="w-full h-full rounded-3xl object-cover border-[2px] border-lightbrown"
+                className="w-full h-full rounded-3xl  object-cover border-[2px] border-lightbrown"
                 src={imgFausti3}
                 alt=""
               />
