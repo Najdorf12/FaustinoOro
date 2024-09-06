@@ -7,6 +7,15 @@ const About = () => {
   const [activeSection, setActiveSection] = useState("sobreMi");
   const tl = gsap.timeline();
 
+  const palmares = [
+    "Campeón Argentino Sub-8 (Diciembre 2021)",
+    "Campeón Panamericano Sub-10 (Junio 2022)",
+    "Número uno del Mundo en cada una de sus categorías Sub-8, Sub-10 y actualmente Sub-12",
+    "Récord del Maestro Fide más joven de la historia por superar los 2300 puntos (Abril 2023)",
+    "Récord al obtener la Primera Norma de Maestro Internacional (Septiembre 2023)",
+    "Récord del Maestro Internacional más joven de la historia (Junio 2024)",
+  ];
+
   useLayoutEffect(() => {
     const screen = window.screen.width;
     new ScrollTrigger({});
@@ -79,6 +88,7 @@ const About = () => {
   }, []);
   const handleSectionChange = (section) => {
     // Animación para ocultar el contenido actual
+
     gsap.to("#content-section", {
       opacity: 0,
       y: 50,
@@ -86,7 +96,12 @@ const About = () => {
       onComplete: () => {
         setActiveSection(section); // Cambia el contenido después de la animación de salida
         // Animación para mostrar el nuevo contenido
-        gsap.to("#content-section", { opacity: 1, y: 0, duration: 0.5 });
+        gsap.to("#content-section", {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
+          stagger: 1,
+        });
       },
     });
   };
@@ -107,7 +122,7 @@ const About = () => {
           ></div>
           <p
             id="p-about"
-            className="relative w-[90%] mt-[80px] opacity-0 text-base  font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.3rem]  text-stone-900 lg:text-stone-500"
+            className="relative w-[86%] mt-[80px] opacity-0 text-base  font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.3rem]  text-stone-900 lg:text-stone-500"
           >
             En plena pandemia, el 30 de mayo de 2020 aprendí a mover las piezas
             y, desde entonces, el ajedrez ha sido mucho más que un simple juego
@@ -117,18 +132,18 @@ const About = () => {
           </p>
           <div
             id="btn-about_box"
-            className="flex -inset-1 -mt-[30px] ml-[60px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 xl:text-base xl:gap-8 2xl:gap-12 2xl:text-xl opacity-0 bg-purple-600"
+            className="flex -inset-1 -mt-[30px] ml-[60px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 xl:text-base xl:gap-8 2xl:gap-12 2xl:text-xl opacity-0 "
           >
             <button
               onClick={() => handleSectionChange("Historia")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[130px] xl:gap-3 "
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-3 hover:scale-110 duration-500 min-w-[170px] xl:gap-3 "
             >
               HISTORIA
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
             </button>
             <button
               onClick={() => handleSectionChange("Logros")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[130px] xl:gap-3 "
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-3 hover:scale-110 duration-500 min-w-[170px] xl:gap-3 "
             >
               LOGROS
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
@@ -139,21 +154,42 @@ const About = () => {
     } else if (activeSection === "Historia") {
       return (
         <>
-          <div className="bg-red-500">
-            <h3 className="text-white font-medium text-2xl xl:text-3xl 2xl:pr-2 2xl:text-4xl">
-              HISTORIA DE FAUSTINO ORO
+          <div className="">
+            <h3 className="text-white font-medium text-5xl  2xl:pr-2 ">
+              HISTORIA
             </h3>
-            <p className="relative w-[90%] text-base font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.3rem] text-stone-900 lg:text-stone-500">
-              Faustino comenzó a jugar ajedrez durante la pandemia y rápidamente
-              se convirtió en un prodigio del deporte...
+            <p className="relative w-[86%] mt-6 max-h-[350px] overflow-y-scroll text-base font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.3rem] text-stone-900 lg:text-stone-500">
+              Mi primer torneo de ajedrez clásico fue el "8vo IRT Alejandro
+              Judewicz" en Mar del Plata, Buenos Aires, Argentina, en septiembre
+              de 2021. En este torneo ingresé por primera vez al ranking ELO
+              FIDE con 1922 puntos, lo que me consagró como el N° 1 mundial en
+              mi categoría, posición que he mantenido desde entonces. En 2021,
+              me consagré Campeón Argentino Sub-8, y en 2022, Campeón
+              Panamericano Sub-10 en Montevideo, Uruguay, lo que me otorgó mi
+              primer título de Candidato a Maestro (CM). En abril de 2023,
+              jugando un ITT de Jóvenes Talentos en el Club de Villa Martelli,
+              Buenos Aires, Argentina, alcancé un ELO FIDE de 2300,
+              convirtiéndome en el Maestro FIDE (FM) más joven de la historia
+              por puntos. Desde entonces, me llaman el "Pibe de Oro" o el "Messi
+              del Ajedrez". En septiembre de 2023, jugando un ITT en Comodoro
+              Rivadavia, Chubut, Argentina, obtuve mi primera norma de Maestro
+              Internacional (IM), marcando otro récord de precocidad.
+              Finalmente, en 2024, obtuve las dos normas restantes para el
+              título de Maestro Internacional en el "Campeonato Continental
+              Absoluto de las Américas" en Medellín (mayo de 2024) y en el
+              "Torneo Cerrado de IM" en el Club de Barcelona (junio de 2024).
+              Esto, sumado a haber superado los 2400 de ELO FIDE, hizo que me
+              convirtiera en el Maestro Internacional más joven de la historia
+              hasta el momento. Mi meta es convertirme en Gran Maestro y llegar
+              a ser Campeón Mundial, formando parte de la élite del ajedrez.
             </p>
           </div>
           <div
-            id="btn-about_box"
-            className="flex -inset-1 mt-[30px] ml-[60px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 xl:text-base xl:gap-8 2xl:gap-12 2xl:text-xl opacity-0 bg-purple-600"
+            id=""
+            className="flex -inset-1 mt-[40px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 xl:text-base xl:gap-8 2xl:gap-12 2xl:text-xl opacity-0 "
           >
             <button
-              onClick={() => handleSectionChange("Historia")}
+              onClick={() => handleSectionChange("sobreMi")}
               className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[170px] xl:gap-3"
             >
               SOBRE MI
@@ -172,18 +208,21 @@ const About = () => {
     } else if (activeSection === "Logros") {
       return (
         <>
-          <div className="bg-teal-500">
-            <h3 className="text-white font-medium text-2xl xl:text-3xl 2xl:pr-2 2xl:text-4xl">
-              LOGROS DE FAUSTINO
+          <div className="">
+            <h3 className="text-white font-medium text-5xl 2xl:pr-2 ">
+              LOGROS
             </h3>
-            <p className="relative w-[90%]  text-base font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.3rem] text-stone-900 lg:text-stone-500">
-              Faustino ha obtenido numerosos títulos en competiciones nacionales
-              e internacionales, destacándose por su talento único...
-            </p>
+            <ul className="relative w-full mt-6  flex flex-col gap-2 font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.3rem] text-stone-900 lg:text-stone-500">
+              {palmares.map((item, i) => (
+                <li key={i} className="flex items-center gap-3">
+                 <i class='bx bx-cross self-start text-xl'></i> {item}
+                </li>
+              ))}
+            </ul>
           </div>
           <div
-            id="btn-about_box"
-            className="flex -inset-1 mt-[30px] ml-[60px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 xl:text-base xl:gap-8 2xl:gap-12 2xl:text-xl opacity-0 "
+            id=""
+            className="flex -inset-1 mt-[30px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 xl:text-base xl:gap-8 2xl:gap-12 2xl:text-xl opacity-0 "
           >
             <button
               onClick={() => handleSectionChange("Historia")}
@@ -193,7 +232,7 @@ const About = () => {
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
             </button>
             <button
-              onClick={() => handleSectionChange("Logros")}
+              onClick={() => handleSectionChange("sobreMi")}
               className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[170px] xl:gap-3 "
             >
               SOBRE MI
