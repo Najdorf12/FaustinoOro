@@ -86,7 +86,7 @@ const Stats = () => {
             id="split"
             className="font-text2 text-5xl z-[200]  text-stone-400 font-bold md:text-6xl lg:text-[10dvh]"
           >
-            LOREM IMPSUM
+            EL PIBE DE ORO
           </h6>
           <p
             id="text-reveal2"
@@ -111,9 +111,10 @@ const Stats = () => {
 
       <section
         id="six_section"
-        className="overflow-hidden relative w-full font-title3 h-screen font-semibold flex flex-col justify-between items-center text-white py-10   text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl 2xl:leading-[4rem] z-5 "
+        className="overflow-hidden relative w-full font-title h-screen font-semibold flex flex-col justify-between items-center text-white py-10  text-5xl sm:text-6xl md:text-6xl xl:text-8xl 2xl:text-9xl 2xl:leading-[4rem] z-5 "
       >
-        <article className="absolute top-0 left-0 max-w-[60%] md:max-w-[50%] mt-6 ml-3 z-50 lg:mt-4 xl:ml-[3%] 2xl:mt-16 overflow-visible ">
+        <article className="absolute top-10 left-0 max-w-[60%] md:max-w-[50%] mt-6 ml-3 z-50 lg:mt-4 xl:ml-[3%] 2xl:mt-16 overflow-visible ">
+          TORNEOS
           {/*  <h6 id="title-stats" className="text-[#80101a]">
             LOREM IMPSUM{" "}
           </h6>
