@@ -41,7 +41,7 @@ const About = () => {
       })
       .to("#line-about", {
         opacity: 1,
-        width: "95%",
+        width:  screen > 700 ? "90%" : "85%",
         duration: 2,
         scrollTrigger: {
           trigger: "#second_section",
@@ -112,17 +112,17 @@ const About = () => {
         <>
           <h3
             id="about-text2"
-            className="text-white font-medium   text-2xl xl:text-3xl 2xl:pr-2  2xl:text-4xl  opacity-0 relative lg:max-w-[95%]"
+            className="text-white font-medium   text-[1.65rem] leading-[1.9rem] xl:text-3xl 2xl:pr-2  2xl:text-4xl  opacity-0 relative w-[90%] "
           >
             {"Soy Faustino Oro. Nací en Buenos Aires, Argentina, el 14 de octubre de 2013".toUpperCase()}
           </h3>
           <div
             id="line-about"
-            className="w-[0%] h-[2px]  bg-bluefausti rounded-md my-2"
+            className="w-[0%] h-[2px]  bg-bluefausti rounded-md mt-4"
           ></div>
           <p
             id="p-about"
-            className="relative w-[86%] mt-[80px] opacity-0 text-base  font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.3rem]  text-stone-900 lg:text-stone-500"
+            className="relative w-[86%] mt-[85px] opacity-0 text-base  font-text2  2xl:mt-[80px] 2xl:text-[1.3rem]  text-stone-900 lg:text-stone-500"
           >
             En plena pandemia, el 30 de mayo de 2020 aprendí a mover las piezas
             y, desde entonces, el ajedrez ha sido mucho más que un simple juego
@@ -132,7 +132,7 @@ const About = () => {
           </p>
           <div
             id="btn-about_box"
-            className="flex -inset-1 -mt-[30px] ml-[60px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 xl:text-base xl:gap-8 2xl:gap-12 2xl:text-xl opacity-0 "
+            className="flex -inset-1 -mt-[20px] ml-[60px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 xl:text-base xl:gap-8 2xl:gap-12 2xl:text-xl opacity-0 "
           >
             <button
               onClick={() => handleSectionChange("Historia")}
@@ -158,6 +158,10 @@ const About = () => {
             <h3 className="text-white font-medium text-5xl  2xl:pr-2 ">
               HISTORIA
             </h3>
+            <div
+            id="line-about"
+            className="w-[0%] h-[2px]  bg-bluefausti rounded-md my-2"
+          ></div>
             <p className="relative w-[86%] mt-6 max-h-[350px] overflow-y-scroll text-base font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.3rem] text-stone-900 lg:text-stone-500">
               Mi primer torneo de ajedrez clásico fue el "8vo IRT Alejandro
               Judewicz" en Mar del Plata, Buenos Aires, Argentina, en septiembre
@@ -215,7 +219,7 @@ const About = () => {
             <ul className="relative w-full mt-6  flex flex-col gap-2 font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.3rem] text-stone-900 lg:text-stone-500">
               {palmares.map((item, i) => (
                 <li key={i} className="flex items-center gap-3">
-                 <i class='bx bx-cross self-start text-xl'></i> {item}
+                 <i class='bx bx-chevron-right self-start text-xl'></i> {item}
                 </li>
               ))}
             </ul>
@@ -255,7 +259,7 @@ const About = () => {
         }}
         className="w-full h-screen bg-gray-300 flex lg:justify-end font-title overflow-hidden relative"
       >
-        <article className="relative  pt-24 lg:pt-0 px-3 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[4%] xl:mt-[7%] 2xl:mr-[12%]   2xl:max-w-[650px] text-balance ">
+        <article className="relative  pt-24 lg:pt-0 px-3 sm:pl-[6%] lg:pl-0 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[4%] xl:mt-[7%] 2xl:mr-[12%]   2xl:max-w-[650px] text-balance ">
           <h5
             id="about-text"
             className="text-xl font-title4 text-stone-600 2xl:text-3xl font-medium opacity-0 "
