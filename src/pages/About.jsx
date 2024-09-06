@@ -92,14 +92,14 @@ const About = () => {
     gsap.to("#content-section", {
       opacity: 0,
       y: 50,
-      duration: 0.5,
+      duration: 0.7,
       onComplete: () => {
         setActiveSection(section); // Cambia el contenido después de la animación de salida
         // Animación para mostrar el nuevo contenido
         gsap.to("#content-section", {
           opacity: 1,
           y: 0,
-          duration: 0.5,
+          duration: 0.7,
           stagger: 1,
         });
       },
@@ -213,9 +213,9 @@ const About = () => {
             <h3 className="text-white font-medium text-5xl 2xl:pr-2 2xl:text-6xl ">
               LOGROS
             </h3>
-            <ul className="relative w-full mt-6  flex flex-col gap-2 font-text2 xl:mt-[24px]  2xl:text-[1.3rem] text-stone-900 lg:text-stone-500">
+            <ul className="relative w-full mt-6  flex flex-col gap-2 font-text2 xl:mt-[24px]  2xl:text-[1.3rem] text-stone-500  text-balance">
               {palmares.map((item, i) => (
-                <li key={i} className="flex items-center gap-3">
+                <li id="palmares" key={i} className="flex items-center gap-2 lg:gap-3 py-1 px-[2px] lg:pl-2  rounded-2xl  max-w-[90%] xl:max-w-[80%]">
                  <i class='bx bx-chevron-right self-start text-xl'></i> {item}
                 </li>
               ))}
@@ -223,7 +223,7 @@ const About = () => {
           </div>
           <div
             id=""
-            className="flex -inset-1 mt-[30px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 xl:text-base xl:gap-8 2xl:gap-12 2xl:text-xl opacity-0 "
+            className="flex -inset-1 mt-[35px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 xl:text-base xl:gap-8 2xl:gap-12 2xl:text-xl opacity-0 "
           >
             <button
               onClick={() => handleSectionChange("Historia")}
