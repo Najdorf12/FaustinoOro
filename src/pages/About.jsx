@@ -41,7 +41,7 @@ const About = () => {
       })
       .to("#line-about", {
         opacity: 1,
-        width:  screen > 700 ? "90%" : "85%",
+        width:  screen > 700 ? "95%" : "85%",
         duration: 2,
         scrollTrigger: {
           trigger: "#second_section",
@@ -112,7 +112,7 @@ const About = () => {
         <>
           <h3
             id="about-text2"
-            className="text-white font-medium   text-[1.65rem] leading-[1.9rem] xl:text-3xl 2xl:pr-2  2xl:text-4xl  opacity-0 relative w-[90%] "
+            className="text-white w-[90%] font-medium   text-[1.65rem] leading-[1.9rem] xl:w-[95%] xl:text-4xl  2xl:pr-2  2xl:text-4xl  opacity-0 relative  "
           >
             {"Soy Faustino Oro. Nací en Buenos Aires, Argentina, el 14 de octubre de 2013".toUpperCase()}
           </h3>
@@ -122,7 +122,7 @@ const About = () => {
           ></div>
           <p
             id="p-about"
-            className="relative w-[86%] mt-[85px] opacity-0 text-base  font-text2  2xl:mt-[80px] 2xl:text-[1.3rem]  text-stone-900 lg:text-stone-500"
+            className="relative w-[86%] mt-[85px] opacity-0 text-base  font-text2 xl:text-lg xl:w-[90%] 2xl:mt-[80px] 2xl:text-[1.3rem]  text-stone-900 lg:text-stone-500"
           >
             En plena pandemia, el 30 de mayo de 2020 aprendí a mover las piezas
             y, desde entonces, el ajedrez ha sido mucho más que un simple juego
@@ -136,14 +136,14 @@ const About = () => {
           >
             <button
               onClick={() => handleSectionChange("Historia")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-3 hover:scale-110 duration-500 min-w-[170px] xl:gap-3 "
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-3 hover:border-stone-400 duration-500 min-w-[170px] xl:gap-3 "
             >
               HISTORIA
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
             </button>
             <button
               onClick={() => handleSectionChange("Logros")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-3 hover:scale-110 duration-500 min-w-[170px] xl:gap-3 "
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-3 hover:border-stone-400 duration-500 min-w-[170px] xl:gap-3 "
             >
               LOGROS
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
@@ -191,14 +191,14 @@ const About = () => {
           >
             <button
               onClick={() => handleSectionChange("sobreMi")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[170px] xl:gap-3"
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:border-stone-400 duration-500 min-w-[170px] xl:gap-3"
             >
               SOBRE MI
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
             </button>
             <button
               onClick={() => handleSectionChange("Logros")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[170px] xl:gap-3 "
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:border-stone-400 duration-500 min-w-[170px] xl:gap-3 "
             >
               LOGROS
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
@@ -227,14 +227,14 @@ const About = () => {
           >
             <button
               onClick={() => handleSectionChange("Historia")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[170px] xl:gap-3 "
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:border-stone-400 duration-500 min-w-[170px] xl:gap-3 "
             >
               HISTORIA
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
             </button>
             <button
               onClick={() => handleSectionChange("sobreMi")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[170px] xl:gap-3 "
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:border-stone-500 duration-500 min-w-[170px] xl:gap-3 "
             >
               SOBRE MI
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
@@ -256,7 +256,7 @@ const About = () => {
         }}
         className="w-full h-screen bg-gray-300 flex lg:justify-end font-title overflow-hidden relative"
       >
-        <article className="relative  pt-24 lg:pt-0 px-3 pl-[4%] sm:pl-[6%] lg:pl-0 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[4%] 2xl:mt-[6%]  2xl:mr-[12%]   2xl:max-w-[650px] text-balance ">
+        <article className="relative  pt-24 lg:pt-0 px-3 pl-[4%] sm:pl-[6%] lg:pl-0 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[6%]   2xl:mr-[12%]   2xl:max-w-[650px] text-balance ">
           <h5
             id="about-text"
             className="text-xl font-title4 text-stone-600 2xl:text-3xl font-medium opacity-0 "
