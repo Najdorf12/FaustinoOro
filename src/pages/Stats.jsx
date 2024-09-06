@@ -136,17 +136,17 @@ const Stats = () => {
           <div className="absolute h-full w-full z-50"></div>
 
           <div className="w-full h-[53.5%] bg-gray-300 py-3 flex justify-center items-center gap-x-7 flex-wrap font-text2 px-1 lg:gap-x-1 xl:gap-x-3 xl:h-[40%] 2xl:h-[35%] 2xl:gap-x-10">
-            <div className="card w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50">
+            <div className="card bg-stone-600 w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50">
               <img className="w-[50px]" src={bullet} alt="" />
               <h6 className="text-2xl text-white">Lorem</h6>
               <p className="text-center text-base px-2 leading-4 text-gray-400">
                 Some random text lorem.
               </p>
-              <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-lightbrown">
+              <button className="text-center  py-[1.5px] px-4 mt-2 text-white text-base rounded-md bg-lightbrown">
                 Button
               </button>
             </div>
-            <div className="card w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50">
+            <div className="card bg-stone-600 w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50">
               <svg
                 height="48"
                 viewBox="0 0 48 48"
@@ -161,27 +161,27 @@ const Stats = () => {
               <p className="text-center text-base px-2 leading-4 text-gray-400">
                 Some random text lorem.
               </p>
-              <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-lightbrown">
+              <button className="text-center  py-[1.5px] px-4 mt-2 text-white text-base rounded-md bg-lightbrown">
                 Button
               </button>
             </div>
-            <div className="card w-[150px] min-h-[200px] flex items-center gap-2 pt-[10px] z-50 px-2">
+            <div className="card bg-stone-600 w-[150px] min-h-[200px] flex items-center gap-2 pt-[10px] z-50 px-2">
               <img className="w-[55px]" src={flash} alt="" />
               <h6 className="text-2xl text-white">Lorem</h6>
               <p className="text-center text-base px-2 leading-4 text-gray-400">
                 Some random text lorem.
               </p>
-              <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-lightbrown">
+              <button className="text-center  py-[1.5px] px-4 mt-2 text-white text-base rounded-md bg-lightbrown">
                 Button
               </button>
             </div>
-            <div className="card w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50 ">
+            <div className="card bg-stone-600 w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50 ">
               <img className="w-[46px]" src={classicalchess} alt="" />
               <h6 className="mt-[4px] text-2xl text-white">Lorem</h6>
               <p className="text-center text-base px-2 leading-4 text-gray-400">
                 Some random text lorem.
               </p>
-              <button className="text-center  py-[1.5px] px-4 mt-2 text-black text-base rounded-md bg-lightbrown">
+              <button className="text-center  py-[1.5px] px-4 mt-2 text-white text-base rounded-md bg-lightbrown">
                 Button
               </button>
             </div>
@@ -198,12 +198,12 @@ const Stats = () => {
             <p className="text-2xl 2xl:text-4xl font-title text-white  font-bold w-[80%]">
               EL AJEDREZ ES ALGO MÁS QUE UN JUEGO. ES UNA DIVERSIÓN INTELECTUAL
               QUE TIENE ALGO DE ARTE Y MUCHO DE CIENCIA.
-              <span className="text-[#80101a] ml-2">
+              <span className="text-bluefausti ml-2">
                 ES ADEMAS, UN MEDIO DE ACERCAMIENTO SOCIAL E INTELECTUAL.
               </span>
             </p>
 
-            <legend className="w-[80%] xl:text-xl 2xl:text-3xl font-title2 text-stone-500 flex flex-col items-end xl:gap-3 2xl:gap-6">
+            <legend className="w-[80%] xl:text-xl 2xl:text-3xl font-title2 text-white0 flex flex-col items-end xl:gap-3 2xl:gap-6">
               <div className="w-full bg-white h-[1px] "></div>
               José Raúl Capablanca
             </legend>

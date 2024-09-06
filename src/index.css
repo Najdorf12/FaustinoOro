@@ -173,7 +173,6 @@
 /* CARD */
 .card {
   height: 40%;
-  background: #171717;
   clip-path: polygon(
     30px 0%,
     100% 0,

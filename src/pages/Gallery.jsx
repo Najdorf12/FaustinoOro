@@ -70,7 +70,7 @@ const Gallery = () => {
           backgroundImage:
             "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)",
         }} */
-        className="w-full flex justify-center items-start  h-[90dvh] lg:justify-start lg:pl-[5%] lg:h-screen z-50 md:z-10 overflow-y-visible relative px-1 "
+        className="w-full flex justify-center items-start   h-[90dvh] lg:pt-12 lg:justify-start lg:pl-[5%] lg:h-screen z-50 md:z-10 overflow-y-visible relative px-1 "
       >
         <div className="grid grid-cols-6 grid-rows-8 gap-1 w-full h-[90%] lg:gap-2 lg:max-w-[70%]">
           <div className="col-span-2 row-span-3 ">
