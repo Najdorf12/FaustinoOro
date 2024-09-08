@@ -18,93 +18,103 @@ const About = () => {
 
   useLayoutEffect(() => {
     const screen = window.screen.width;
-    new ScrollTrigger({});
-    tl.to("#about-text", {
-      opacity: 1,
-      duration: 2,
-      scrollTrigger: {
-        trigger: "#second_section",
-        start: "40% bottom",
-        end: "top top",
-        scrub: true,
-      },
-    })
-      .to("#about-text2", {
+    const ctx = gsap.context(() => {
+      tl.to("#about-text", {
         opacity: 1,
-        delay: 0.6,
+        duration: 2,
         scrollTrigger: {
           trigger: "#second_section",
-          start: "55% bottom",
+          start: "40% bottom",
           end: "top top",
           scrub: true,
         },
       })
-      .to("#line-about", {
-        opacity: 1,
-        width:  screen > 700 ? "95%" : "85%",
-        duration: 2,
-        scrollTrigger: {
-          trigger: "#second_section",
-          start: "50% bottom",
-          end: "top top",
-          scrub: true,
-        },
-      })
-      .to("#p-about", {
-        delay: 2,
-        opacity: 1,
-        y: "-60px",
-        duration: 2,
-        scrollTrigger: {
-          trigger: "#p-about",
-          start: "120% bottom",
-          end: "-70% 40%",
-          scrub: true,
-        },
-      })
-      .to("#btn-about_box", {
-        opacity: 1,
-        x: "-60px",
-        duration: 2,
-        stagger: 0.5,
-        scrollTrigger: {
-          trigger: "#btn-about_box",
-          start: "top bottom",
-          end: "top 70%",
-          scrub: true,
-        },
-      })
-      .to("#box-about", {
-        y: "-300px",
-        rotate: "120deg",
-        stagger: 0.06,
-        scrollTrigger: {
-          trigger: "#box-about",
-          start: screen > 1200 ? "-120% bottom" : "-190% bottom",
-          end: screen > 1200 ? "40% 50%" : "50% 60%",
-          scrub: true,
-        },
-      });
-  }, []);
-  const handleSectionChange = (section) => {
-    // Animación para ocultar el contenido actual
+        .to("#about-text2", {
+          opacity: 1,
+          delay: 0.6,
+          scrollTrigger: {
+            trigger: "#second_section",
+            start: "55% bottom",
+            end: "top top",
+            scrub: true,
+          },
+        })
+        .to("#line-about", {
+          opacity: 1,
+          width: screen > 700 ? "95%" : "85%",
+          duration: 2,
+          scrollTrigger: {
+            trigger: "#second_section",
+            start: "50% bottom",
+            end: "top top",
+            scrub: true,
+          },
+        })
+        .to("#p-about", {
+          delay: 2,
+          opacity: 1,
+          y: "-60px",
+          duration: 2,
+          scrollTrigger: {
+            trigger: "#p-about",
+            start: "120% bottom",
+            end: "-70% 40%",
+            scrub: true,
+          },
+        })
+        .to("#btn-about_box", {
+          opacity: 1,
+          x: "-60px",
+          duration: 2,
+          stagger: 0.5,
+          scrollTrigger: {
+            trigger: "#btn-about_box",
+            start: "top bottom",
+            end: "top 70%",
+            scrub: true,
+          },
+        })
+        .to("#box-about", {
+          y: "-300px",
+          rotate: "120deg",
+          stagger: 0.06,
+          scrollTrigger: {
+            trigger: "#box-about",
+            start: screen > 1200 ? "-120% bottom" : "-190% bottom",
+            end: screen > 1200 ? "40% 50%" : "50% 60%",
+            scrub: true,
+          },
+        });
+    });
 
+    return () => ctx.revert(); // Limpiar animaciones al desmontar el componente
+  }, []);
+
+  const handleSectionChange = (section) => {
     gsap.to("#content-section", {
       opacity: 0,
       y: 50,
       duration: 0.7,
       onComplete: () => {
-        setActiveSection(section); // Cambia el contenido después de la animación de salida
+        setActiveSection(section);
         // Animación para mostrar el nuevo contenido
         gsap.to("#content-section", {
           opacity: 1,
           y: 0,
           duration: 0.7,
-          stagger: 1,
         });
+
+        // Si volvemos a "sobreMi", asegurar que la opacidad sea 1
+        if (section === "sobreMi") {
+          gsap.to("#about-text2, #line-about, #p-about, #btn-about_box", {
+            opacity: 1,
+            duration: 0.7,
+          });
+        }
       },
     });
   };
+    
 
   const renderContent = () => {
     if (activeSection === "sobreMi") {
@@ -159,7 +169,7 @@ const About = () => {
               HISTORIA
             </h3>
            
-            <p id="about-history" className="relative  w-[96%] mt-6 max-h-[350px] pr-3 overflow-y-scroll text-base font-text2 2xl:mt-7 2xl:text-[1.3rem] text-stone-900 lg:text-stone-500">
+            <p id="about-history" className="relative  w-[96%] mt-6 max-h-[350px] pr-3 overflow-y-scroll text-base font-text2 2xl:mt-7 2xl:text-[1.3rem] text-stone-900 lg:text-stone-500 pt-1 pb-2 rounded-lg">
               Mi primer torneo de ajedrez clásico fue el "8vo IRT Alejandro
               Judewicz" en Mar del Plata, Buenos Aires, Argentina, en septiembre
               de 2021. En este torneo ingresé por primera vez al ranking ELO
@@ -190,7 +200,7 @@ const About = () => {
             className="flex -inset-1 mt-[40px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-500 xl:text-base xl:gap-8 2xl:gap-12 2xl:text-xl opacity-0 "
           >
             <button
-              onClick={() => handleSectionChange("sobreMi")}
+              onClick={() => handleSectionChange("sobreMi2")}
               className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:border-stone-400 duration-500 min-w-[170px] xl:gap-3"
             >
               SOBRE MI
@@ -233,7 +243,7 @@ const About = () => {
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
             </button>
             <button
-              onClick={() => handleSectionChange("sobreMi")}
+              onClick={() => handleSectionChange("sobreMi2")}
               className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:border-stone-500 duration-500 min-w-[170px] xl:gap-3 "
             >
               SOBRE MI
@@ -242,7 +252,51 @@ const About = () => {
           </div>
         </>
       );
-    }
+    } else if (activeSection === "sobreMi2") {
+      return (
+        <>
+          <h3
+            id="sobreMi2-title"
+            className="text-white w-full font-medium   text-[1.65rem] leading-[1.9rem] xl:w-[95%] xl:text-4xl  2xl:pr-2  2xl:text-4xl  relative 2xl:mt-2  "
+          >
+            {"Soy Faustino Oro. Nací en Buenos Aires, Argentina, el 14 de octubre de 2013".toUpperCase()}
+          </h3>
+          <div
+            id="line-about"
+            className="w-[0%] h-[2px]  bg-bluefausti rounded-md mt-4"
+          ></div>
+          <p
+            id="sobreMi2-text"
+            className="relative w-[99%] mt-[30px]  text-base  font-text2 xl:text-lg xl:w-[90%]  2xl:text-[1.3rem]  text-stone-900 lg:text-stone-500"
+          >
+            En plena pandemia, el 30 de mayo de 2020 aprendí a mover las piezas
+            y, desde entonces, el ajedrez ha sido mucho más que un simple juego
+            para mí: es un desafío constante que me motiva a seguir mejorando.
+            Autodidacta y persistente, he crecido con cada partida y cada
+            lección, con la firme convicción de llegar a lo más alto.
+          </p>
+          <div
+            id="btn-about_box2"
+            className="flex -inset-1 mt-[30px]   items-center gap-6 font-title2 text-lg font-semibold text-stone-500 xl:text-base xl:gap-8 2xl:gap-12 2xl:text-xl  "
+          >
+            <button
+              onClick={() => handleSectionChange("Historia")}
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-3 hover:border-stone-400 duration-500 min-w-[170px] xl:gap-3 "
+            >
+              HISTORIA
+              <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
+            </button>
+            <button
+              onClick={() => handleSectionChange("Logros")}
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-3 hover:border-stone-400 duration-500 min-w-[170px] xl:gap-3 "
+            >
+              LOGROS
+              <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
+            </button>
+          </div>
+        </>
+      );
+    } 
   };
 
   return (
