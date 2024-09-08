@@ -1,6 +1,7 @@
 import SplitType from "split-type";
 import bullet from "../assets/bullet.png";
 import flash from "../assets/flash.png";
+import imgTorneo from "../assets/img-torneo.jpg";
 import classicalchess from "../assets/classicalchess.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -84,13 +85,13 @@ const Stats = () => {
         <article className="relative z-[200] flex flex-col justify-center items-center gap-8 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%] xl:gap-8 2xl:gap-10">
           <h6
             id="split"
-            className="font-text2 text-5xl z-[200]  text-lightbrown font-bold md:text-6xl lg:text-[10dvh]"
+            className="font-text2 text-5xl z-[200]  font-bold md:text-6xl lg:text-[10dvh]"
           >
             EL PIBE DE ORO
           </h6>
           <p
             id="text-reveal2"
-            className="font-text2 px-3 z-50 text-white5 text-base md:text-lg xl:px-8 opacity-0  "
+            className="font-text2 px-3 z-50 text-stone-600 text-base md:text-lg xl:px-8 opacity-0  "
           >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo
             impedit sit aliquam laborum incidunt consectetur dicta temporibus
@@ -101,7 +102,7 @@ const Stats = () => {
         </article>
         <div
           id="line-stats"
-          className="w-[0%] absolute h-[1px] bg-white top-0 left-0 mb-[5%]"
+          className="w-[0%] absolute h-[1px] bg-gray-300 top-0 left-0 mb-[5%]"
         ></div>
         <div
           id="line-stats2"
@@ -111,34 +112,108 @@ const Stats = () => {
 
       <section
         id="six_section"
-        className="overflow-hidden relative bg-white w-fulL h-screen z-5 pt-10 pl-3"
+        className="overflow-hidden relative bg-gray-300 w-fulL h-screen z-5 pt-10 px-3"
       >
-        <article className="flex flex-col">
-          <h6 className="text-5xl font-title font-semibold text-bluefausti">TORNEOS</h6>
+        <article className="flex flex-col gap-12 ">
+          <h6 className="text-5xl font-title font-semibold text-bluefausti">
+            TORNEOS
+          </h6>
+          <ul className=" flex flex-col gap-5 z-50">
+            <li id="tournament" className="flex rounded-xl pr-2 max-w-[450px] min-h-[90px] max-h-[95px]">
+              <picture className="w-[30%]  max-w-[200px]">
+                <img className="rounded-xl w-full h-full object-cover" src={imgTorneo} alt="" />
+              </picture>
+              <div className="pt-1 pb-1 pl-3 font-text2 flex flex-col justify-between">
+                <h6 className="text-xl text-white leading-5">
+                  LOREM IMPSUM DOLOR SIT AMET
+                </h6>
+                <div className="flex justify-between place-items-center pr-3">
+                  <p className="text-xl font-medium text-stone-600">MADRID</p>
+                  <p className="font-title3 text-bluefausti">11/12/2024</p>
+                </div>
+              </div>
+            </li>
+            <li id="tournament" className="flex rounded-xl pr-2 max-w-[450px] min-h-[90px] max-h-[95px]">
+              <picture className="w-[30%]  max-w-[200px]">
+                <img className="rounded-xl w-full h-full object-cover" src={imgTorneo} alt="" />
+              </picture>
+              <div className="pt-1 pb-1 pl-3 font-text2 flex flex-col justify-between">
+                <h6 className="text-xl text-white leading-5">
+                  LOREM IMPSUM DOLOR SIT AMET
+                </h6>
+                <div className="flex justify-between place-items-center pr-3">
+                  <p className="text-xl font-medium text-stone-600">MADRID</p>
+                  <p className="font-title3 text-bluefausti">11/12/2024</p>
+                </div>
+              </div>
+            </li>
+            <li id="tournament" className="flex rounded-xl pr-2 max-w-[450px] min-h-[90px] max-h-[95px]">
+              <picture className="w-[30%]  max-w-[200px]">
+                <img className="rounded-xl w-full h-full object-cover" src={imgTorneo} alt="" />
+              </picture>
+              <div className="pt-1 pb-1 pl-3 font-text2 flex flex-col justify-between">
+                <h6 className="text-xl text-white leading-5">
+                  LOREM IMPSUM DOLOR SIT AMET
+                </h6>
+                <div className="flex justify-between place-items-center pr-3">
+                  <p className="text-xl font-medium text-stone-600">MADRID</p>
+                  <p className="font-title3 text-bluefausti">11/12/2024</p>
+                </div>
+              </div>
+            </li>
+            <li id="tournament" className="flex rounded-xl pr-2 max-w-[450px] min-h-[90px] max-h-[95px]">
+              <picture className="w-[30%]  max-w-[200px]">
+                <img className="rounded-xl w-full h-full object-cover" src={imgTorneo} alt="" />
+              </picture>
+              <div className="pt-1 pb-1 pl-3 font-text2 flex flex-col justify-between">
+                <h6 className="text-xl text-white leading-5">
+                  LOREM IMPSUM DOLOR SIT AMET
+                </h6>
+                <div className="flex justify-between place-items-center pr-3">
+                  <p className="text-xl font-medium text-stone-600">MADRID</p>
+                  <p className="font-title3 text-bluefausti">11/12/2024</p>
+                </div>
+              </div>
+            </li>
+            <li id="tournament" className="flex rounded-xl pr-2 max-w-[450px] min-h-[90px] max-h-[95px]">
+              <picture className="w-[30%]  max-w-[200px]">
+                <img className="rounded-xl w-full h-full object-cover" src={imgTorneo} alt="" />
+              </picture>
+              <div className="pt-1 pb-1 pl-3 font-text2 flex flex-col justify-between">
+                <h6 className="text-xl text-white leading-5">
+                  LOREM IMPSUM DOLOR SIT AMET
+                </h6>
+                <div className="flex justify-between place-items-center pr-3">
+                  <p className="text-xl font-medium text-stone-600">MADRID</p>
+                  <p className="font-title3 text-bluefausti">11/12/2024</p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </article>
       </section>
 
-      <div className="w-full h-[10dvh] z-50"></div>
+      <div className="w-full h-[10dvh] z-50 bg-gray-300"></div>
 
       <section
         id="seven_section"
         className=" w-full h-screen overflow-hidden lg:flex lg:flex-row z-50"
       >
-        <div className="bg-gray-300 h-screen w-full  lg:w-1/2">
+        <div className=" h-screen w-full  lg:w-1/2">
           <div className="absolute h-full w-full z-50"></div>
 
-          <div className="w-full h-[53.5%] bg-gray-300 py-3 flex justify-center items-center gap-x-7 flex-wrap font-text2 px-1 lg:gap-x-1 xl:gap-x-3 xl:h-[40%] 2xl:h-[35%] 2xl:gap-x-10">
-            <div className="card bg-stone-600 w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50">
+          <div className="w-full h-[53.5%]  py-3 flex justify-center items-center gap-x-7 flex-wrap font-text2 px-1 lg:gap-x-1 xl:gap-x-3 xl:h-[40%] 2xl:h-[35%] 2xl:gap-x-10">
+            <div className="card bg-bluefausti w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50">
               <img className="w-[50px]" src={bullet} alt="" />
               <h6 className="text-2xl text-white">Lorem</h6>
               <p className="text-center text-base px-2 leading-4 text-gray-400">
                 Some random text lorem.
               </p>
-              <button className="text-center  py-[1.5px] px-4 mt-2 text-white text-base rounded-md bg-lightbrown">
+              <button className="text-center  py-[1.5px] px-4 mt-2 text-bluefausti text-base rounded-md bg-gray-300">
                 Button
               </button>
             </div>
-            <div className="card bg-stone-600 w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50">
+            <div className="card bg-bluefausti w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50">
               <svg
                 height="48"
                 viewBox="0 0 48 48"
@@ -153,40 +228,44 @@ const Stats = () => {
               <p className="text-center text-base px-2 leading-4 text-gray-400">
                 Some random text lorem.
               </p>
-              <button className="text-center  py-[1.5px] px-4 mt-2 text-white text-base rounded-md bg-lightbrown">
+              <button className="text-center  py-[1.5px] px-4 mt-2 text-bluefausti text-base rounded-md bg-gray-300">
                 Button
               </button>
             </div>
-            <div className="card bg-stone-600 w-[150px] min-h-[200px] flex items-center gap-2 pt-[10px] z-50 px-2">
+            <div className="card bg-bluefausti w-[150px] min-h-[200px] flex items-center gap-2 pt-[10px] z-50 px-2">
               <img className="w-[55px]" src={flash} alt="" />
               <h6 className="text-2xl text-white">Lorem</h6>
               <p className="text-center text-base px-2 leading-4 text-gray-400">
                 Some random text lorem.
               </p>
-              <button className="text-center  py-[1.5px] px-4 mt-2 text-white text-base rounded-md bg-lightbrown">
+              <button className="text-center  py-[1.5px] px-4 mt-2 text-bluefausti text-base rounded-md bg-gray-300">
                 Button
               </button>
             </div>
-            <div className="card bg-stone-600 w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50 ">
+            <div className="card bg-bluefausti w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50 ">
               <img className="w-[46px]" src={classicalchess} alt="" />
               <h6 className="mt-[4px] text-2xl text-white">Lorem</h6>
               <p className="text-center text-base px-2 leading-4 text-gray-400">
                 Some random text lorem.
               </p>
-              <button className="text-center  py-[1.5px] px-4 mt-2 text-white text-base rounded-md bg-lightbrown">
+              <button className="text-center  py-[1.5px] px-4 mt-2 text-bluefausti text-base rounded-md bg-gray-300">
                 Button
               </button>
             </div>
           </div>
           <div
             id="stats-container"
-            className="relative w-full h-[46.5%] bg-zinc-900 xl:h-[60%] xl:pl-[7%] 2xl:h-[65%] overflow-y-scroll pt-[4%] lg:overflow-y-hidden lg:pt-[3%] z-50 lg:z-10"
+            /*   style={{
+              backgroundImage:
+                "linear-gradient(to left bottom, #EAEAEA, #DBDBDB, #F2F2F2, #3f4864)",
+            }}  */
+            className="relative w-full h-[46.5%] bg-gray-300 xl:h-[60%] xl:pl-[7%] 2xl:h-[65%] overflow-y-scroll pt-[4%] lg:overflow-y-hidden lg:pt-[3%] z-50 lg:z-10"
           ></div>
         </div>
 
         <div className="hidden bg-zinc-900 lg:flex lg:flex-col lg:w-1/2 lg:h-screen relative  xl:z-20">
-          <div className="w-full bg-zinc-900 lg:h-[40%] 2xl:h-[35%] z-[150] xl:z-20"></div>
-          <div className="w-full bg-gray-300 lg:h-[60%] 2xl:h-[65%] flex flex-col items-center justify-center gap-6 2xl:gap-8">
+          <div className="w-full bg-gray-300 lg:h-[40%] 2xl:h-[35%] z-[150] xl:z-20"></div>
+          <div className="w-full  lg:h-[60%] 2xl:h-[65%] flex flex-col items-center justify-center gap-6 2xl:gap-8">
             <p className="text-2xl 2xl:text-4xl font-title text-white  font-bold w-[80%]">
               EL AJEDREZ ES ALGO MÁS QUE UN JUEGO. ES UNA DIVERSIÓN INTELECTUAL
               QUE TIENE ALGO DE ARTE Y MUCHO DE CIENCIA.

@@ -122,7 +122,7 @@ const About = () => {
         <>
           <h3
             id="about-text2"
-            className="text-white w-[90%] font-medium   text-[1.65rem] leading-[1.9rem] xl:w-[95%] xl:text-4xl  2xl:pr-2  2xl:text-4xl  opacity-0 relative  "
+            className="text-white w-[90%] font-medium   text-[1.65rem] leading-[1.9rem] xl:w-[95%] xl:text-4xl  2xl:pr-2  2xl:text-4xl 2xl:mt-2   opacity-0 relative  "
           >
             {"Soy Faustino Oro. Nací en Buenos Aires, Argentina, el 14 de octubre de 2013".toUpperCase()}
           </h3>
@@ -132,7 +132,7 @@ const About = () => {
           ></div>
           <p
             id="p-about"
-            className="relative w-[86%] mt-[85px] opacity-0 text-base  font-text2 xl:text-lg xl:w-[90%] 2xl:mt-[80px] 2xl:text-[1.3rem]  text-stone-900 lg:text-stone-500"
+            className="relative w-[86%] mt-[85px] opacity-0 text-base  font-text2 xl:text-lg xl:w-[90%] 2xl:mt-[90px] 2xl:text-[1.3rem]  text-stone-900 lg:text-stone-500"
           >
             En plena pandemia, el 30 de mayo de 2020 aprendí a mover las piezas
             y, desde entonces, el ajedrez ha sido mucho más que un simple juego
@@ -146,14 +146,14 @@ const About = () => {
           >
             <button
               onClick={() => handleSectionChange("Historia")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-3 hover:border-stone-400 duration-500 min-w-[170px] xl:gap-3 "
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-3 hover:border-bluefausti duration-500 min-w-[170px] xl:gap-3 "
             >
               HISTORIA
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
             </button>
             <button
               onClick={() => handleSectionChange("Logros")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-3 hover:border-stone-400 duration-500 min-w-[170px] xl:gap-3 "
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-3 hover:border-bluefausti duration-500 min-w-[170px] xl:gap-3 "
             >
               LOGROS
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
@@ -201,14 +201,14 @@ const About = () => {
           >
             <button
               onClick={() => handleSectionChange("sobreMi2")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:border-stone-400 duration-500 min-w-[170px] xl:gap-3"
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:border-bluefausti duration-500 min-w-[170px] xl:gap-3"
             >
               SOBRE MI
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
             </button>
             <button
               onClick={() => handleSectionChange("Logros")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:border-stone-400 duration-500 min-w-[170px] xl:gap-3 "
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:border-bluefausti duration-500 min-w-[170px] xl:gap-3 "
             >
               LOGROS
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
@@ -237,14 +237,14 @@ const About = () => {
           >
             <button
               onClick={() => handleSectionChange("Historia")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:border-stone-400 duration-500 min-w-[170px] xl:gap-3 "
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:border-bluefausti duration-500 min-w-[170px] xl:gap-3 "
             >
               HISTORIA
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
             </button>
             <button
               onClick={() => handleSectionChange("sobreMi2")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:border-stone-500 duration-500 min-w-[170px] xl:gap-3 "
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:border-bluefausti duration-500 min-w-[170px] xl:gap-3 "
             >
               SOBRE MI
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
@@ -257,7 +257,7 @@ const About = () => {
         <>
           <h3
             id="sobreMi2-title"
-            className="text-white w-full font-medium   text-[1.65rem] leading-[1.9rem] xl:w-[95%] xl:text-4xl  2xl:pr-2  2xl:text-4xl  relative 2xl:mt-2  "
+            className="text-white w-full font-medium    text-[1.65rem] leading-[1.9rem] xl:w-[95%] xl:text-4xl  2xl:pr-2  2xl:text-4xl  relative 2xl:mt-2  "
           >
             {"Soy Faustino Oro. Nací en Buenos Aires, Argentina, el 14 de octubre de 2013".toUpperCase()}
           </h3>
@@ -277,18 +277,18 @@ const About = () => {
           </p>
           <div
             id="btn-about_box2"
-            className="flex -inset-1 mt-[30px]   items-center gap-6 font-title2 text-lg font-semibold text-stone-500 xl:text-base xl:gap-8 2xl:gap-12 2xl:text-xl  "
+            className="flex -inset-1 mt-[30px]   items-center gap-6 font-title2 text-lg font-semibold text-stone-500 xl:text-base xl:gap-8 2xl:gap-12 2xl:text-xl 2xl:mt-[40px]  "
           >
             <button
               onClick={() => handleSectionChange("Historia")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-3 hover:border-stone-400 duration-500 min-w-[170px] xl:gap-3 "
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-3 hover:border-bluefausti duration-500 min-w-[170px] xl:gap-3 "
             >
               HISTORIA
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
             </button>
             <button
               onClick={() => handleSectionChange("Logros")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-3 hover:border-stone-400 duration-500 min-w-[170px] xl:gap-3 "
+              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-3 hover:border-bluefausti duration-500 min-w-[170px] xl:gap-3 "
             >
               LOGROS
               <i class="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
@@ -402,109 +402,3 @@ const About = () => {
 
 export default About;
 
-/* 
-  const [activeSection, setActiveSection] = useState("sobreMi"); 
-  
-
-  const handleSectionChange = (section) => {
-    // Animación para ocultar el contenido actual
-    gsap.to("#content-section", {
-      opacity: 0,
-      y: 50,
-      duration: 0.5,
-      onComplete: () => {
-        setActiveSection(section); // Cambia el contenido después de la animación de salida
-        // Animación para mostrar el nuevo contenido
-        gsap.to("#content-section", { opacity: 1, y: 0, duration: 0.5 });
-      },
-    });
-  };
-
-  // Aquí defines el contenido dinámico basado en el estado
-  const renderContent = () => {
-    if (activeSection === "sobreMi") {
-      return (
-        <>
-          <h3 className="text-white font-medium text-2xl xl:text-3xl 2xl:pr-2 2xl:text-4xl">
-            {"Soy Faustino Oro. Nací en Buenos Aires, Argentina, el 14 de octubre de 2013".toUpperCase()}
-          </h3>
-          <p className="relative w-[90%] mt-[60px] text-base font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.3rem] text-stone-900 lg:text-stone-500">
-            En plena pandemia, el 30 de mayo de 2020 aprendí a mover las piezas y, desde entonces, el ajedrez ha sido mucho más que un simple juego para mí...
-          </p>
-        </>
-      );
-    } else if (activeSection === "Historia") {
-      return (
-        <>
-          <h3 className="text-white font-medium text-2xl xl:text-3xl 2xl:pr-2 2xl:text-4xl">
-            HISTORIA DE FAUSTINO ORO
-          </h3>
-          <p className="relative w-[90%] mt-[60px] text-base font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.3rem] text-stone-900 lg:text-stone-500">
-            Faustino comenzó a jugar ajedrez durante la pandemia y rápidamente se convirtió en un prodigio del deporte...
-          </p>
-        </>
-      );
-    } else if (activeSection === "Logros") {
-      return (
-        <>
-          <h3 className="text-white font-medium text-2xl xl:text-3xl 2xl:pr-2 2xl:text-4xl">
-            LOGROS DE FAUSTINO
-          </h3>
-          <p className="relative w-[90%] mt-[60px] text-base font-text2 xl:mt-[70px] 2xl:mt-[80px] 2xl:text-[1.3rem] text-stone-900 lg:text-stone-500">
-            Faustino ha obtenido numerosos títulos en competiciones nacionales e internacionales, destacándose por su talento único...
-          </p>
-        </>
-      );
-    }
-  };
-
-  return (
-    <>
-      <section
-        id="second_section"
-        style={{
-          backgroundImage:
-            "linear-gradient(to left top, #EAEAEA, #DBDBDB, #F2F2F2, #3f4864)",
-        }}
-        className="w-full h-screen bg-gray-300 flex lg:justify-end font-title overflow-hidden relative"
-      >
-        <article className="relative pt-24 lg:pt-0 px-3 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[4%] xl:mt-[7%] 2xl:mr-[12%] 2xl:max-w-[650px] text-balance">
-          <h5
-            id="about-text"
-            className="text-xl font-title4 text-stone-600 2xl:text-3xl font-medium opacity-0"
-          >
-            Sobre Mi
-          </h5>
-
-          // Sección dinámica 
-          <div id="content-section">
-            {renderContent()}
-          </div>
-
-          <div
-            id="btn-about_box"
-            className="flex -mt-[30px] ml-[60px] items-center gap-6 font-title2 text-lg font-semibold text-stone-500 xl:text-base xl:gap-8 2xl:gap-12 2xl:text-xl opacity-0"
-          >
-            <button
-              onClick={() => handleSectionChange("Historia")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[130px] xl:gap-3"
-            >
-              HISTORIA
-              <i className="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
-            </button>
-            <button
-              onClick={() => handleSectionChange("Logros")}
-              className="btn-about border-[2px] rounded-3xl border-white px-4 py-[2.5px] 2xl:py-[2.5px] 2xl:px-7 flex justify-center items-center gap-2 hover:scale-110 duration-500 min-w-[130px] xl:gap-3"
-            >
-              LOGROS
-              <i className="bx bx-arrow-back text-stone-400 w-8 h-8 flex justify-center items-center rotate-[145deg] text-2xl rounded-full bg-white 2xl:text-3xl"></i>
-            </button>
-          </div>
-        </article>
-      </section>
-    </>
-  );
-};
-
-export default About;
- */
