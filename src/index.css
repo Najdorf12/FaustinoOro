@@ -199,6 +199,17 @@
   background-color: #3f4864;
   border-radius: 6px;
 }
+#tournaments::-webkit-scrollbar {
+  width: 10px;
+}
+#tournaments::-webkit-scrollbar-track {
+  /* background: rgb(39, 39, 42); */
+  
+}
+#tournaments::-webkit-scrollbar-thumb {
+  background-color: #3f4864;
+  border-radius: 6px;
+}
 /* CONTACTFORM */
 .form-container {
   border: 1px solid #947153;

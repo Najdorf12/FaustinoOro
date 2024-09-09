@@ -73,6 +73,16 @@ const Stats = () => {
           end: "60% 20%",
           scrub: true,
         },
+      })
+      .to("#line-tournament", {
+        width: screenStats > 700 ? "40%" : "90%",
+        duration: 2,
+        scrollTrigger: {
+          trigger: "#six_section",
+          start: screenStats > 700 ? "50% bottom" : "30% bottom",
+          end: "top top",
+          scrub: true,
+        },
       });
   }, []);
   return (
@@ -112,19 +122,25 @@ const Stats = () => {
 
       <section
         id="six_section"
-        className="overflow-hidden relative bg-gray-300 w-fulL h-screen z-5 pt-10 px-3 2xl:pt-16"
+        className="overflow-hidden relative bg-gray-300 w-fulL h-screen z-5 pt-10 pl-2 pr-1 2xl:pt-16"
       >
-        <article className="flex flex-col gap-6 ">
+        <article className="flex flex-col gap-6">
           <h6 className="text-6xl font-title font-semibold text-bluefausti lg:text-7xl xl:pl-6 2xl:pl-8 2xl:text-8xl ">
             TORNEOS
           </h6>
-          <div className="h-[2px] w-[90%] md:w-[70%] lg:w-[40%] bg-white"></div>
-          <ul className=" flex flex-col gap-6 z-50 mt-6  max-h-[100%] overflow-y-scroll lg:flex-row lg:justify-between lg:px-[5%] lg:mt-12 2xl:px-[6%]">
-            <div className="flex flex-col gap-3 lg:gap-5 2xl:gap-7">
+          <div id="line-tournament" className="h-[2px] w-[0%]  bg-white"></div>
+          <ul
+            id="tournaments"
+            className="h-[500px]  rounded-lg pr-2 py-2 C flex flex-col gap-6 z-50 mt-6  lg:flex-row lg:justify-between  lg:px-[5%] lg:mt-12 2xl:px-[6%]"
+          >
+            <div className="flex flex-col gap-6 lg:gap-5 2xl:gap-7">
               <li
                 id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-md border border-white"
+                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white"
               >
+                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3">
+                  01
+                </div>
                 <picture className="w-[30%]  max-w-[200px]">
                   <img
                     className="rounded-xl w-full h-full object-cover"
@@ -144,8 +160,11 @@ const Stats = () => {
               </li>
               <li
                 id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-md border border-white"
+                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white"
               >
+                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3">
+                  02
+                </div>
                 <picture className="w-[30%]  max-w-[200px]">
                   <img
                     className="rounded-xl w-full h-full object-cover"
@@ -165,8 +184,9 @@ const Stats = () => {
               </li>
               <li
                 id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-md border border-white"
+                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white"
               >
+                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3">03</div>
                 <picture className="w-[30%]  max-w-[200px]">
                   <img
                     className="rounded-xl w-full h-full object-cover"
@@ -186,11 +206,12 @@ const Stats = () => {
               </li>
             </div>
 
-            <div className=" flex flex-col gap-3 lg:gap-5 2xl:gap-7">
-              <li
+            <div className=" flex flex-col gap-6 lg:gap-5 2xl:gap-7 ">
+            <li
                 id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-md border border-white"
+                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white"
               >
+                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3">04</div>
                 <picture className="w-[30%]  max-w-[200px]">
                   <img
                     className="rounded-xl w-full h-full object-cover"
@@ -210,8 +231,9 @@ const Stats = () => {
               </li>
               <li
                 id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-md border border-white"
+                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white"
               >
+                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3">05</div>
                 <picture className="w-[30%]  max-w-[200px]">
                   <img
                     className="rounded-xl w-full h-full object-cover"
@@ -231,8 +253,9 @@ const Stats = () => {
               </li>
               <li
                 id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-md border border-white"
+                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white"
               >
+                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3">06</div>
                 <picture className="w-[30%]  max-w-[200px]">
                   <img
                     className="rounded-xl w-full h-full object-cover"
