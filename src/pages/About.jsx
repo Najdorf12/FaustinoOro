@@ -313,7 +313,7 @@ const About = () => {
         <article className="relative  pt-24 lg:pt-0 px-3 pl-[4%] sm:pl-[6%] lg:pl-0 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[6%]   2xl:mr-[12%]   2xl:max-w-[650px] text-balance ">
           <h5
             id="about-text"
-            className="text-xl font-title4 text-stone-600 2xl:text-3xl font-medium opacity-0 "
+            className="text-xl font-title4 text-stone-600 2xl:text-3xl font-medium opacity-0 lg:text-stone-500"
           >
             Sobre Mi
           </h5>
