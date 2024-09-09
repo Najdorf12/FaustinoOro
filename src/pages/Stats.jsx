@@ -131,7 +131,7 @@ const Stats = () => {
           <div id="line-tournament" className="h-[2px] w-[0%]  bg-white"></div>
           <ul
             id="tournaments"
-            className="h-[500px]  rounded-lg pr-2 py-2 C flex flex-col gap-6 z-50 mt-6  lg:flex-row lg:justify-between  lg:px-[5%] lg:mt-12 2xl:px-[6%]"
+            className="h-[600px]  rounded-lg pr-3 pt-2 pb-6 overflow-y-scroll flex flex-col gap-6 z-50 mt-7  lg:flex-row lg:justify-between  lg:px-[5%] lg:mt-12 2xl:px-[6%]"
           >
             <div className="flex flex-col gap-6 lg:gap-5 2xl:gap-7">
               <li

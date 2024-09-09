@@ -200,7 +200,7 @@
   border-radius: 6px;
 }
 #tournaments::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 #tournaments::-webkit-scrollbar-track {
   /* background: rgb(39, 39, 42); */
