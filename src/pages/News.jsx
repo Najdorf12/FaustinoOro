@@ -12,15 +12,15 @@ const News = () => {
           Volver
         </button>
       </Link>
-      <h3 className="w-[100%]  max-w-[] flex justify-center items-center bg-white  font-title text-5xl text-lightbrown font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-lightbrown lg:justify-start z-50">
+      <h3 className="w-[75%] md:w-[50%] xl:w-[35%] self-start rounded-r-2xl  max-w-[] flex justify-center items-center bg-white  font-title text-5xl text-lightbrown font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-lightbrown lg:justify-start z-50">
         NOTICIAS
       </h3>
 
-      <section className="w-full flex flex-col items-center lg:flex-row lg:justify-between lg:px-[5%] mt-2 xl:mt-6 2xl:mt-12">
-        <section className="flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] xl:max-w-[600px] 2xl:max-w-[700px] ">
+      <section className="w-full flex flex-col items-center lg:flex-row lg:justify-center lg:gap-[6%] 2xl:gap-[10%] 2xl:justify-center  mt-2 xl:mt-6 2xl:mt-12">
+        <section className="mt-3 flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] xl:max-w-[600px] 2xl:max-w-[700px]">
           <article
             id="box-news"
-            className="relative flex flex-col items-center rounded-2xl  rounded-br-none border border-stone-500 h-[300px] lg:h-[350px] text-balance px-3"
+            className="relative flex flex-col items-center rounded-2xl   border border-lightbrown h-[300px] lg:h-[350px] text-balance px-3"
           >
             <p className=" w-full  font-semibold font-text2 text-white text-center pt-3  text-3xl xl:text-5xl max-w-[400px] xl:pt-6  ">
               LOREM IMSUM DOLOR SIT AMET
@@ -99,7 +99,25 @@ const News = () => {
           </div>
         </section>
       </section>
-   
+      <article className="w-full">
+        {" "}
+        <h5 className="mt-16 w-full self-center  py-3 flex justify-center items-center bg-zinc-800  font-title text-5xl text-lightbrown font-semibold  lg:text-6xl lg:mt-24  2xl:text-7xl px-12 xl:px-14 2xl:px-16  z-50">
+          LOREM
+        </h5>
+        <div className="mt-10 xl:mt-12 flex flex-col items-center  px-3 xl:pl-[5%]">
+          <h6 className="text-2xl font-text2 text-white text-center text-balance max-w-[370px] xl:max-w-[500px] xl:text-5xl  xl:self-start xl:text-start">
+            Lorem impsum dolor sit amet consectetur
+          </h6>
+          <p className="font-text2 text-center text-balance mt-3 text-stone-400  max-w-[350px] xl:max-w-[500px] xl:mt-6 xl:text-lg xl:self-start xl:text-start">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            numquam non, soluta quibusdam magni facilis officia culpa nemo
+            molestias veritatis ut porro quos aperiam ipsum eos eum accusamus
+            sed placeat? Corporis, rerum commodi tempora iste, eligendi
+            doloremque provident debitis nam praesentium reprehenderit vero
+            voluptatem! Ipsam eius amet non corrupti.
+          </p>
+        </div>
+      </article>
     </main>
   );
 };
