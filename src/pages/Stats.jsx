@@ -136,9 +136,9 @@ const Stats = () => {
             <div className="flex flex-col gap-6 lg:gap-5 2xl:gap-7">
               <li
                 id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white"
+                className="flex rounded-xl  pr-2 max-w-[470px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white 2xl:max-h-[150px] 2xl:max-w-[550px]"
               >
-                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3">
+                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3 2xl:text-5xl">
                   01
                 </div>
                 <picture className="w-[30%]  max-w-[200px]">
@@ -149,20 +149,20 @@ const Stats = () => {
                   />
                 </picture>
                 <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
-                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%]">
+                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
                     LOREM IMPSUM DOLOR SIT AMET
                   </h6>
-                  <p className="text-lg font-medium text-stone-500">
-                    BARCELONA
+                  <p className="text-lg font-medium text-stone-500 2xl:text-xl 2xl:mt-2">
+                    BARCELONA 
                   </p>
-                  <p className="font-title3  text-bluefausti">11/12/2024</p>
+                  <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
                 </div>
               </li>
               <li
                 id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white"
+                className="flex rounded-xl  pr-2 max-w-[470px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white 2xl:max-h-[150px] 2xl:max-w-[550px]"
               >
-                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3">
+                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3 2xl:text-5xl">
                   02
                 </div>
                 <picture className="w-[30%]  max-w-[200px]">
@@ -173,20 +173,22 @@ const Stats = () => {
                   />
                 </picture>
                 <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
-                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%]">
+                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
                     LOREM IMPSUM DOLOR SIT AMET
                   </h6>
-                  <p className="text-lg font-medium text-stone-500">
-                    BARCELONA
+                  <p className="text-lg font-medium text-stone-500 2xl:text-xl 2xl:mt-2">
+                    BARCELONA 
                   </p>
-                  <p className="font-title3  text-bluefausti">11/12/2024</p>
+                  <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
                 </div>
               </li>
               <li
                 id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white"
+                className="flex rounded-xl  pr-2 max-w-[470px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white 2xl:max-h-[150px] 2xl:max-w-[550px]"
               >
-                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3">03</div>
+                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3 2xl:text-5xl">
+                  03
+                </div>
                 <picture className="w-[30%]  max-w-[200px]">
                   <img
                     className="rounded-xl w-full h-full object-cover"
@@ -195,13 +197,13 @@ const Stats = () => {
                   />
                 </picture>
                 <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
-                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%]">
+                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
                     LOREM IMPSUM DOLOR SIT AMET
                   </h6>
-                  <p className="text-lg font-medium text-stone-500">
-                    BARCELONA
+                  <p className="text-lg font-medium text-stone-500 2xl:text-xl 2xl:mt-2">
+                    BARCELONA 
                   </p>
-                  <p className="font-title3  text-bluefausti">11/12/2024</p>
+                  <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
                 </div>
               </li>
             </div>
@@ -209,9 +211,11 @@ const Stats = () => {
             <div className=" flex flex-col gap-6 lg:gap-5 2xl:gap-7 ">
             <li
                 id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white"
+                className="flex rounded-xl  pr-2 max-w-[470px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white 2xl:max-h-[150px] 2xl:max-w-[550px]"
               >
-                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3">04</div>
+                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3 2xl:text-5xl">
+                  04
+                </div>
                 <picture className="w-[30%]  max-w-[200px]">
                   <img
                     className="rounded-xl w-full h-full object-cover"
@@ -220,20 +224,22 @@ const Stats = () => {
                   />
                 </picture>
                 <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
-                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%]">
+                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
                     LOREM IMPSUM DOLOR SIT AMET
                   </h6>
-                  <p className="text-lg font-medium text-stone-500">
-                    BARCELONA
+                  <p className="text-lg font-medium text-stone-500 2xl:text-xl 2xl:mt-2">
+                    BARCELONA 
                   </p>
-                  <p className="font-title3  text-bluefausti">11/12/2024</p>
+                  <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
                 </div>
               </li>
               <li
                 id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white"
+                className="flex rounded-xl  pr-2 max-w-[470px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white 2xl:max-h-[150px] 2xl:max-w-[550px]"
               >
-                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3">05</div>
+                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3 2xl:text-5xl">
+                  05
+                </div>
                 <picture className="w-[30%]  max-w-[200px]">
                   <img
                     className="rounded-xl w-full h-full object-cover"
@@ -242,20 +248,22 @@ const Stats = () => {
                   />
                 </picture>
                 <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
-                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%]">
+                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
                     LOREM IMPSUM DOLOR SIT AMET
                   </h6>
-                  <p className="text-lg font-medium text-stone-500">
-                    BARCELONA
+                  <p className="text-lg font-medium text-stone-500 2xl:text-xl 2xl:mt-2">
+                    BARCELONA 
                   </p>
-                  <p className="font-title3  text-bluefausti">11/12/2024</p>
+                  <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
                 </div>
               </li>
               <li
                 id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white"
+                className="flex rounded-xl  pr-2 max-w-[470px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white 2xl:max-h-[150px] 2xl:max-w-[550px]"
               >
-                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3">06</div>
+                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3 2xl:text-5xl">
+                  06
+                </div>
                 <picture className="w-[30%]  max-w-[200px]">
                   <img
                     className="rounded-xl w-full h-full object-cover"
@@ -264,13 +272,13 @@ const Stats = () => {
                   />
                 </picture>
                 <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
-                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%]">
+                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
                     LOREM IMPSUM DOLOR SIT AMET
                   </h6>
-                  <p className="text-lg font-medium text-stone-500">
-                    BARCELONA
+                  <p className="text-lg font-medium text-stone-500 2xl:text-xl 2xl:mt-2">
+                    BARCELONA 
                   </p>
-                  <p className="font-title3  text-bluefausti">11/12/2024</p>
+                  <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
                 </div>
               </li>
             </div>
@@ -278,7 +286,7 @@ const Stats = () => {
         </article>
       </section>
 
-      <div className="w-full h-[10dvh] z-50 bg-gray-300"></div>
+      <div className="w-full h-[10dvh] z-50 bg-zinc-900"></div>
 
       <section
         id="seven_section"

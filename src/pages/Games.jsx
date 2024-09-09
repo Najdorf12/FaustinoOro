@@ -164,7 +164,7 @@ const Games = () => {
           <ul  className="z-50 text-lg font-title text-stone-500 font-normal flex flex-col gap-1 2xl:text-[1.3rem] 2xl:gap-6 ">
             <li className="text-white relative flex items-center justify-center">
               {" "}
-              <i class="bx bx-right-arrow-alt absolute -left-8 text-lightbrown text-3xl 2xl:text-5xl 2xl:-left-14"></i>{" "}
+              <i class="bx bx-arrow-back rotate-[145deg] absolute -left-8 text-lightbrown text-3xl 2xl:text-5xl xl:-left-10 2xl:-left-14"></i>{" "}
               Faustino Oro vs Hikaru Nakamura
             </li>
             <li>Faustino Oro vs Lorem Impsum</li>
