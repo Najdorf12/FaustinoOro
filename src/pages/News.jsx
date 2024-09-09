@@ -23,25 +23,20 @@ const News = () => {
         <section className="flex flex-col justify-center gap-2  pt-8 px-2 max-w-[500px] xl:max-w-[600px] ">
           <article
             id="box-news"
-            className=" relative flex flex-col justify-center items-center "
+            className="relative flex flex-col items-center rounded-2xl  rounded-br-none border border-stone-500 h-[300px] lg:h-[350px] text-balance"
           >
-            <div
-              className="text-xl font-bold font-title text-white box-new  absolute left-0 top-0
-          mt-3 ml-2
-          "
-            >
-              LOREM IMPSUM
-            </div>
-            <picture className="w-full">
-              <img
-                className="w-full object-cover h-[300px] rounded-2xl rounded-br-none border border-stone-500 lg:h-[350px]"
-               /*  src={imgNews3} */
-                alt=""
-              />
-            </picture>
+            <p className=" w-full   font-semibold font-text2 text-white text-center pt-3  text-xl xl:text-4xl max-w-[400px] ">
+              LOREM IMSUM DOLOR SIT AMET
+            </p>
+            <p className=" mt-3 max-w-[400px] text-center text-stone-400 xl:mt-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sequi,
+              ipsa numquam veritatis ipsam aperiam, nesciunt optio voluptates
+              est mollitia temporibus rem minima incidunt omnis commodi sed
+              fugiat accusamus quod!
+            </p>
           </article>
           <div className="flex justify-center items-center gap-2 w-full font-text2">
-            <div className="text-stone-400 relative w-1/2 text-base  sm:text-lg h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 ">
+            <div className="text-stone-400 bg-zinc-800 relative w-1/2 text-base  sm:text-lg h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 ">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
               maxime!
               <span className=" rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-stone-600">
@@ -74,13 +69,13 @@ const News = () => {
               />
               <div
                 className="text-xl font-bold font-title text-stone-500 box-new  absolute top-0 left-0
-          mt-3 ml-2
+          mt-3 ml-2 xl:text-2xl
           "
               >
                 LOREM <br /> IMPSUM <br /> DOLOR <br /> SIT <br /> AMET
               </div>
             </picture>
-            <div className="text-lightbrown text-balance relative w-[40%] text-2xl font-semibold font-title  rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 ">
+            <div className="text-lightbrown text-balance relative w-[40%] text-2xl font-semibold font-title  rounded-2xl rounded-tl-none rounded-br-3xl border bg-zinc-800 border-lightbrown p-2 ">
               LOREM IMSUM DOLOR SIT AMET CONSECT ADIPSICING ELIT
               {/* <span className=" rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-stone-600">
                 <i class="bx bx-arrow-back rotate-[145deg]  text-lightbrown  text-3xl"></i>
