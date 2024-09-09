@@ -12,9 +12,9 @@ const News = () => {
           Volver
         </button>
       </Link>
-      <h6 className="text-start flex flex-col gap-5 pl-[4%]  text-5xl font-title font-semibold 2xl:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-stone-300 to-stone-600">
+      <h6 className="text-start flex flex-col gap-5 pl-[4%]  text-5xl font-title font-semibold xl:text-7xl 2xl:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-stone-300 to-stone-600 ">
         NOTICIAS
-        <span className="text-xl font-text font-medium text-stone-300 text-balance w-[95%] max-w-[400px] border-t border-white pt-6">
+        <span className="text-xl font-text font-medium text-stone-300 text-balance w-[95%]  max-w-[400px] border-t border-white pt-6 xl:pt-8 xl:text-2xl xl:max-w-[550px]">
           Aquí podras encontrar las ultimas novedades y noticias de Faustino Oro
         </span>
       </h6>
@@ -35,7 +35,7 @@ const News = () => {
             <picture className="w-full">
               <img
                 className="w-full object-cover h-[300px] rounded-2xl rounded-br-none border border-stone-500 lg:h-[350px]"
-                src={imgNews3}
+               /*  src={imgNews3} */
                 alt=""
               />
             </picture>
