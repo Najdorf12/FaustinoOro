@@ -105,10 +105,10 @@ const News = () => {
           LOREM
         </h5>
         <div className="mt-10 xl:mt-12 flex flex-col items-center  px-3 xl:pl-[5%]">
-          <h6 className="text-2xl font-text2 text-white text-center text-balance max-w-[370px] xl:max-w-[500px] xl:text-5xl  xl:self-start xl:text-start">
+          <h6 className="text-2xl font-text2 text-white text-center text-balance max-w-[370px] xl:max-w-[500px] xl:text-5xl  xl:self-start xl:text-start 2xl:text-6xl 2xl:max-w-[600px]">
             Lorem impsum dolor sit amet consectetur
           </h6>
-          <p className="font-text2 text-center text-balance mt-3 text-stone-400  max-w-[350px] xl:max-w-[500px] xl:mt-6 xl:text-lg xl:self-start xl:text-start">
+          <p className="font-text2 text-center text-balance mt-3 text-stone-400  max-w-[350px] xl:max-w-[500px] xl:mt-6 xl:text-lg xl:self-start xl:text-start 2xl:text-xl 2xl:max-w-[600px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
             numquam non, soluta quibusdam magni facilis officia culpa nemo
             molestias veritatis ut porro quos aperiam ipsum eos eum accusamus
