@@ -9,7 +9,7 @@ const Courses = () => {
           <p className="">NO HAY CURSOS DISPONIBLES EN ESTE MOMENTO</p>
         </div>
         <Link to={"/"}>
-          <button className="px-4 py-1 mt-12 rounded-3xl border border-white flex justify-center items-center text-white font-text2 text-lg xl:text-xl 2xl:text-2xl 2xl:mt-24 ">
+          <button className="px-4 py-1 mt-12 rounded-3xl border border-lightbrown flex justify-center items-center text-stone-700 bg-stone-500 font-text2 text-lg xl:px-6a xl:text-xl 2xl:text-2xl 2xl:mt-24 hover:scale-105 hover:text-white hover:bg-stone-500 duration-500">
             Volver al Inicio
           </button>
         </Link>
