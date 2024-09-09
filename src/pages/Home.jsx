@@ -64,7 +64,7 @@ const Home = () => {
                       Noticias
                     </li>
                   </Link>
-                  <Link /* to="/games" */>
+                  <Link to={"/courses"} >
                     <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[2.5px] flex items-center justify-center">
                       Cursos
                     </li>
@@ -89,9 +89,12 @@ const Home = () => {
                     Noticias
                   </li>
                 </Link>
-                <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[1px] 2xl:py-[2.7px] 2xl:px-6 flex justify-center items-center hover:scale-110 hover:border-red-600 duration-500">
-                  Cursos
-                </li>
+
+                <Link to={"/courses"} >
+                  <li className="bordesr-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[1px] 2xl:py-[2.7px] 2xl:px-6 flex justify-center items-center hover:scale-110 hover:border-red-600 duration-500">
+                    Cursos
+                  </li>
+                </Link>
 
                 <li className="border-l-[2px] border-r-[2px] rounded-lg border-gray-400 px-6 py-[2px] 2xl:py-[2.7px] 2xl:px-6 flex justify-center items-center hover:scale-110 hover:border-red-600 duration-500">
                   Contacto
