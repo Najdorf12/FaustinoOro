@@ -104,91 +104,153 @@ const Stats = () => {
           id="line-stats"
           className="w-[0%] absolute h-[1px] bg-gray-300 top-0 left-0 mb-[5%]"
         ></div>
-        <div
+        {/*   <div
           id="line-stats2"
           className="w-[0%] absolute z-0 h-[1px] bg-lightbrown bottom-0 right-0 mb-[5%]"
-        ></div>
+        ></div> */}
       </section>
 
       <section
         id="six_section"
-        className="overflow-hidden relative bg-gray-300 w-fulL h-screen z-5 pt-10 px-3"
+        className="overflow-hidden relative bg-gray-300 w-fulL h-screen z-5 pt-10 px-3 2xl:pt-16"
       >
-        <article className="flex flex-col gap-12 ">
-          <h6 className="text-5xl font-title font-semibold text-bluefausti">
+        <article className="flex flex-col gap-6 ">
+          <h6 className="text-6xl font-title font-semibold text-bluefausti lg:text-7xl xl:pl-6 2xl:pl-8 2xl:text-8xl ">
             TORNEOS
           </h6>
-          <ul className=" flex flex-col gap-5 z-50">
-            <li id="tournament" className="flex rounded-xl pr-2 max-w-[450px] min-h-[90px] max-h-[95px]">
-              <picture className="w-[30%]  max-w-[200px]">
-                <img className="rounded-xl w-full h-full object-cover" src={imgTorneo} alt="" />
-              </picture>
-              <div className="pt-1 pb-1 pl-3 font-text2 flex flex-col justify-between">
-                <h6 className="text-xl text-white leading-5">
-                  LOREM IMPSUM DOLOR SIT AMET
-                </h6>
-                <div className="flex justify-between place-items-center pr-3">
-                  <p className="text-xl font-medium text-stone-600">MADRID</p>
-                  <p className="font-title3 text-bluefausti">11/12/2024</p>
+          <div className="h-[2px] w-[90%] md:w-[70%] lg:w-[40%] bg-white"></div>
+          <ul className=" flex flex-col gap-6 z-50 mt-6  max-h-[100%] overflow-y-scroll lg:flex-row lg:justify-between lg:px-[5%] lg:mt-12 2xl:px-[6%]">
+            <div className="flex flex-col gap-3 lg:gap-5 2xl:gap-7">
+              <li
+                id="tournament"
+                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-md border border-white"
+              >
+                <picture className="w-[30%]  max-w-[200px]">
+                  <img
+                    className="rounded-xl w-full h-full object-cover"
+                    src={imgTorneo}
+                    alt=""
+                  />
+                </picture>
+                <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
+                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%]">
+                    LOREM IMPSUM DOLOR SIT AMET
+                  </h6>
+                  <p className="text-lg font-medium text-stone-500">
+                    BARCELONA
+                  </p>
+                  <p className="font-title3  text-bluefausti">11/12/2024</p>
                 </div>
-              </div>
-            </li>
-            <li id="tournament" className="flex rounded-xl pr-2 max-w-[450px] min-h-[90px] max-h-[95px]">
-              <picture className="w-[30%]  max-w-[200px]">
-                <img className="rounded-xl w-full h-full object-cover" src={imgTorneo} alt="" />
-              </picture>
-              <div className="pt-1 pb-1 pl-3 font-text2 flex flex-col justify-between">
-                <h6 className="text-xl text-white leading-5">
-                  LOREM IMPSUM DOLOR SIT AMET
-                </h6>
-                <div className="flex justify-between place-items-center pr-3">
-                  <p className="text-xl font-medium text-stone-600">MADRID</p>
-                  <p className="font-title3 text-bluefausti">11/12/2024</p>
+              </li>
+              <li
+                id="tournament"
+                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-md border border-white"
+              >
+                <picture className="w-[30%]  max-w-[200px]">
+                  <img
+                    className="rounded-xl w-full h-full object-cover"
+                    src={imgTorneo}
+                    alt=""
+                  />
+                </picture>
+                <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
+                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%]">
+                    LOREM IMPSUM DOLOR SIT AMET
+                  </h6>
+                  <p className="text-lg font-medium text-stone-500">
+                    BARCELONA
+                  </p>
+                  <p className="font-title3  text-bluefausti">11/12/2024</p>
                 </div>
-              </div>
-            </li>
-            <li id="tournament" className="flex rounded-xl pr-2 max-w-[450px] min-h-[90px] max-h-[95px]">
-              <picture className="w-[30%]  max-w-[200px]">
-                <img className="rounded-xl w-full h-full object-cover" src={imgTorneo} alt="" />
-              </picture>
-              <div className="pt-1 pb-1 pl-3 font-text2 flex flex-col justify-between">
-                <h6 className="text-xl text-white leading-5">
-                  LOREM IMPSUM DOLOR SIT AMET
-                </h6>
-                <div className="flex justify-between place-items-center pr-3">
-                  <p className="text-xl font-medium text-stone-600">MADRID</p>
-                  <p className="font-title3 text-bluefausti">11/12/2024</p>
+              </li>
+              <li
+                id="tournament"
+                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-md border border-white"
+              >
+                <picture className="w-[30%]  max-w-[200px]">
+                  <img
+                    className="rounded-xl w-full h-full object-cover"
+                    src={imgTorneo}
+                    alt=""
+                  />
+                </picture>
+                <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
+                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%]">
+                    LOREM IMPSUM DOLOR SIT AMET
+                  </h6>
+                  <p className="text-lg font-medium text-stone-500">
+                    BARCELONA
+                  </p>
+                  <p className="font-title3  text-bluefausti">11/12/2024</p>
                 </div>
-              </div>
-            </li>
-            <li id="tournament" className="flex rounded-xl pr-2 max-w-[450px] min-h-[90px] max-h-[95px]">
-              <picture className="w-[30%]  max-w-[200px]">
-                <img className="rounded-xl w-full h-full object-cover" src={imgTorneo} alt="" />
-              </picture>
-              <div className="pt-1 pb-1 pl-3 font-text2 flex flex-col justify-between">
-                <h6 className="text-xl text-white leading-5">
-                  LOREM IMPSUM DOLOR SIT AMET
-                </h6>
-                <div className="flex justify-between place-items-center pr-3">
-                  <p className="text-xl font-medium text-stone-600">MADRID</p>
-                  <p className="font-title3 text-bluefausti">11/12/2024</p>
+              </li>
+            </div>
+
+            <div className=" flex flex-col gap-3 lg:gap-5 2xl:gap-7">
+              <li
+                id="tournament"
+                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-md border border-white"
+              >
+                <picture className="w-[30%]  max-w-[200px]">
+                  <img
+                    className="rounded-xl w-full h-full object-cover"
+                    src={imgTorneo}
+                    alt=""
+                  />
+                </picture>
+                <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
+                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%]">
+                    LOREM IMPSUM DOLOR SIT AMET
+                  </h6>
+                  <p className="text-lg font-medium text-stone-500">
+                    BARCELONA
+                  </p>
+                  <p className="font-title3  text-bluefausti">11/12/2024</p>
                 </div>
-              </div>
-            </li>
-            <li id="tournament" className="flex rounded-xl pr-2 max-w-[450px] min-h-[90px] max-h-[95px]">
-              <picture className="w-[30%]  max-w-[200px]">
-                <img className="rounded-xl w-full h-full object-cover" src={imgTorneo} alt="" />
-              </picture>
-              <div className="pt-1 pb-1 pl-3 font-text2 flex flex-col justify-between">
-                <h6 className="text-xl text-white leading-5">
-                  LOREM IMPSUM DOLOR SIT AMET
-                </h6>
-                <div className="flex justify-between place-items-center pr-3">
-                  <p className="text-xl font-medium text-stone-600">MADRID</p>
-                  <p className="font-title3 text-bluefausti">11/12/2024</p>
+              </li>
+              <li
+                id="tournament"
+                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-md border border-white"
+              >
+                <picture className="w-[30%]  max-w-[200px]">
+                  <img
+                    className="rounded-xl w-full h-full object-cover"
+                    src={imgTorneo}
+                    alt=""
+                  />
+                </picture>
+                <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
+                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%]">
+                    LOREM IMPSUM DOLOR SIT AMET
+                  </h6>
+                  <p className="text-lg font-medium text-stone-500">
+                    BARCELONA
+                  </p>
+                  <p className="font-title3  text-bluefausti">11/12/2024</p>
                 </div>
-              </div>
-            </li>
+              </li>
+              <li
+                id="tournament"
+                className="flex rounded-xl  pr-2 max-w-[450px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-md border border-white"
+              >
+                <picture className="w-[30%]  max-w-[200px]">
+                  <img
+                    className="rounded-xl w-full h-full object-cover"
+                    src={imgTorneo}
+                    alt=""
+                  />
+                </picture>
+                <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
+                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%]">
+                    LOREM IMPSUM DOLOR SIT AMET
+                  </h6>
+                  <p className="text-lg font-medium text-stone-500">
+                    BARCELONA
+                  </p>
+                  <p className="font-title3  text-bluefausti">11/12/2024</p>
+                </div>
+              </li>
+            </div>
           </ul>
         </article>
       </section>
