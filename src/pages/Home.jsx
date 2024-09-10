@@ -21,10 +21,15 @@ const Home = () => {
         >
           <article className="w-[95%] flex justify-center items-end pb-[20%] xl:justify-center xl:pb-[5%] xl:">
             <h1
+          /*   style={
+              { WebkitTextStroke: "0.5px"}
+            } */
               id="title-name"
               className="font-text2 tracking-wider text-center  text-[4rem] leading-[5rem] font-bold text-gray-200 z-50 flex flex-col  justify-center items-center md:items-center gap-3 px-3 py-3  bg-clip-text text-transparent bg-gradient-to-br from-stone-600  via-stone-600 to-stone-400 lg:flex-row  md:text-[4.5rem] xl:min-h-[200px] xl:gap-8 2xl:gap-12 xl:text-[6rem] 2xl:text-[7.5rem]"
             >
-              <span className="flex justify-center items-center text-[3.9rem] h-[75px] px-2 bg-[#7c2c2c] text-white font-title2 font-semibold rounded-lg tracking-wide md:text-[4.5rem] xl:text-[8rem] xl:px-2  xl:h-[120px] xl:-mt-3 2xl:text-[9rem] 2xl:h-[150px]">
+              <span /* style={
+              { WebkitTextStroke: "0px"}
+            } */ className="flex justify-center items-center text-[3.9rem] h-[75px] px-2 bg-[#7c2c2c] text-white font-title2 font-semibold rounded-lg tracking-wide md:text-[4.5rem] xl:text-[8rem] xl:px-2  xl:h-[120px] xl:-mt-3 2xl:text-[9rem] 2xl:h-[150px]">
                 IM
               </span>{" "}
               FAUSTINO ORO

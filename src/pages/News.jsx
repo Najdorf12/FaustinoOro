@@ -103,9 +103,9 @@ const News = () => {
 
       <article className="w-full flex flex-col justify-center items-center">
         {" "}
-        <h5 className=" shadow-xl shadow-zinc-900 mt-20 w-[90%] max-w-[500px] text-lightbrown bg- border border-lightbrown rounded-2xl self-center  py-3 flex justify-center items-center bg-from-stone-500   font-title text-5xl text-ligthbrown text-center  font-semibold  lg:text-6xl lg:mt-24 xl:mt-32 2xl:mt-40  2xl:text-7xl px-12 xl:px-14 2xl:px-16  z-50">
+        {/* <h5 className=" shadow-xl shadow-zinc-900 mt-20 w-[90%] max-w-[500px] text-lightbrown bg- border border-lightbrown rounded-2xl self-center  py-3 flex justify-center items-center bg-from-stone-500   font-title text-5xl text-ligthbrown text-center  font-semibold  lg:text-6xl lg:mt-24 xl:mt-32 2xl:mt-40  2xl:text-7xl px-12 xl:px-14 2xl:px-16  z-50">
           LOREMIM
-        </h5>
+        </h5> */}
         <div
           id="news-box"
           className="  py-6 2xl:py-12 w-[90%] max-w-[900px] rounded-r-2xl mt-10 xl:mt-12 flex flex-col items-start  px-3 self-start lg:pl-[5%]"
