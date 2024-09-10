@@ -1,11 +1,11 @@
 import imgFausti from "../assets/img6.jpg";
 const CardNotice = () => {
   return (
-    <div className="w-full max-w-[300px] border border-lightbrown rounded-2xl">
+    <div className="w-full max-w-[280px] border border-lightbrown rounded-2xl">
       <picture className="w-full">
         <img className="w-full rounded-t-2xl" src={imgFausti} alt="" />
       </picture>
-      <article className="bg-stone-700 pt-3  text-balance rounded-b-2xl flex flex-col">
+      <article id="news-box" className=" pt-3  text-balance rounded-b-2xl flex flex-col">
         <h6 className="text-white font-title text-center font-medium text-xl  leading-6 ">
           FAUSTINO CONSIGUE OTRO HITO HISTORICO
         </h6>
@@ -13,7 +13,7 @@ const CardNotice = () => {
         <p className="mt-3 text-lightbrown font-title font-normal text-lg px-3 leading-5 ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
-        <p className="mt-3 text-stone-400 font-title font-normal text-sm px-3 leading-5 ">
+        <p className="mt-3 text-stone-500 font-title font-normal text-sm px-3 leading-5 ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste
           reprehenderit commodi a nihil. 
         </p>

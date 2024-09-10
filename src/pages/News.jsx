@@ -13,7 +13,7 @@ const News = () => {
           Volver
         </button>
       </Link>
-      <h3 className="shadow-xl shadow-zinc-900 w-[75%] md:w-[50%] xl:w-[35%] self-start rounded-r-2xl  max-w-[] flex justify-center items-center bg-white  font-title text-5xl text-lightbrown font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-lightbrown lg:justify-start z-50">
+      <h3 id="news-box" className="w-[75%] md:w-[50%] xl:w-[35%] self-start rounded-r-2xl  max-w-[] flex justify-center items-center  font-title text-5xl text-white font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-lightbrown lg:justify-start z-50">
         NOTICIAS
       </h3>
 
@@ -126,8 +126,8 @@ const News = () => {
 
       <section className="w-full flex flex-col justify-start pt-12 pb-20 items-center px-3 mt-20 bg-zinc-900 min-h-screen xl:items-start 2xl:mt-28 xl:pt-20">
         <div className="w-full text-center text-balance flex flex-col gap-3">
-          <h3 className="text-3xl font-text2 text-stone-600 lg:text-5xl">LOREM IMPSUM</h3>
-          <p className="text-lightbrown text-lg  max-w-[400px] self-center lg:text-xl">
+          <h3 className="text-3xl font-text2 text-white lg:text-6xl 2xl:text-7xl">LOREM IMPSUM</h3>
+          <p className="text-stone-500 text-lg  max-w-[400px] self-center lg:text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
             eligendi molestias.
           </p>
