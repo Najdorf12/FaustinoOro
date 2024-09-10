@@ -12,7 +12,7 @@ const News = () => {
           Volver
         </button>
       </Link>
-      <h3 className=" shadow-2xl shadow-black w-[75%] md:w-[50%] xl:w-[35%] self-start rounded-r-2xl  max-w-[] flex justify-center items-center bg-white  font-title text-5xl text-lightbrown font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-lightbrown lg:justify-start z-50">
+      <h3 className=" shadow-2xl shadow-zinc-900 w-[75%] md:w-[50%] xl:w-[35%] self-start rounded-r-2xl  max-w-[] flex justify-center items-center bg-white  font-title text-5xl text-lightbrown font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-lightbrown lg:justify-start z-50">
         NOTICIAS
       </h3>
 
@@ -36,7 +36,7 @@ const News = () => {
             <div className="text-stone-400 bg-zinc-800 relative w-1/2 text-base  sm:text-lg h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 ">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
               maxime!
-              <span className=" rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-stone-600">
+              <span className="rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-stone-600">
                 <i class="bx bx-arrow-back rotate-[145deg]  text-lightbrown  text-3xl"></i>
               </span>
             </div>
@@ -102,15 +102,15 @@ const News = () => {
      
      <article className="w-full flex flex-col justify-center items-center">
         {" "}
-        <h5 className="mt-20 w-[90%] max-w-[500px] rounded-2xl self-center  py-3 flex justify-center items-center bg-white shadow-2xl shadow-black  font-title text-5xl text-lightbrown font-semibold  lg:text-6xl lg:mt-24 xl:mt-32 2xl:mt-40  2xl:text-7xl px-12 xl:px-14 2xl:px-16  z-50">
+        <h5  className="shadow-xl shadow-zinc-900 mt-20 w-[90%] max-w-[500px] text-lightbrown bg-stone-700 rounded-2xl self-center  py-3 flex justify-center items-center bg-from-stone-500   font-title text-5xl text-ligthbrown text-center  font-semibold  lg:text-6xl lg:mt-24 xl:mt-32 2xl:mt-40  2xl:text-7xl px-12 xl:px-14 2xl:px-16  z-50">
           LOREM
         </h5>
        
-        <div className=" w-[90%] max-w-[700px] rounded-r-2xl mt-10 xl:mt-12 flex flex-col items-center  px-3 self-start lg:pl-[5%]">
-          <h6 className="text-3xl font-text2 text-white text-balance max-w-[370px] lg:max-w-[500px] lg:text-5xl  lg:self-start text-start 2xl:text-6xl 2xl:max-w-[600px]">
+        <div id="news-box" className="shadow-xl  py-6 2xl:py-12 w-[90%] max-w-[900px] rounded-r-2xl mt-10 xl:mt-12 flex flex-col items-start  px-3 self-start lg:pl-[5%]">
+          <h6 className="text-3xl font-text2 text-white text-balance max-w-[370px] lg:max-w-[500px] lg:text-5xl  text-start 2xl:text-6xl 2xl:max-w-[600px]">
             Lorem impsum dolor sit amet consectetur
           </h6>
-          <p className="font-text2 text-balance mt-3 text-stone-400  max-w-[350px] lg:max-w-[500px] xl:mt-6 xl:text-lg lg:self-start text-start 2xl:text-xl 2xl:max-w-[600px]">
+          <p className="font-text2 text-balance mt-3 text-stone-400  max-w-[350px] lg:max-w-[500px] xl:mt-6 xl:text-lg text-start 2xl:text-xl 2xl:max-w-[600px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
             numquam non, soluta quibusdam magni facilis officia culpa nemo
             molestias veritatis ut porro quos aperiam ipsum eos eum accusamus
