@@ -6,21 +6,21 @@ import { Link } from "react-router-dom";
 
 const News = () => {
   return (
-    <main className="pattern w-full min-h-screen pb-24 pt-14 relative flex flex-col items-center xl:pt-20">
+    <main className="pattern w-full min-h-screen pb-24 pt-20 relative flex flex-col items-center xl:pt-20 overflow-hidden">
       <Link to={"/"}>
-        <button className="absolute top-0 right-0 mt-2 mr-3 px-6 py-[2px] rounded-3xl border border-lightbrown  flex justify-center items-center text-white  font-text2 text-lg xl:px-8 xl:mt-3 xl:mr-6 xl:text-xl 2xl:text-2xl  hover:scale-105 hover:text-stone-500 hover:bg-white duration-500">
+        <button className="absolute top-0 right-0 mt-2 mr-2 px-6 py-[2px] rounded-3xl border border-lightbrown  flex justify-center items-center text-white bg-stone-500 font-text2 text-lg xl:px-8 xl:mt-3 xl:mr-6 xl:text-xl 2xl:text-2xl  hover:scale-105 hover:text-stone-500 hover:bg-white duration-500">
           Volver
         </button>
       </Link>
-      <h3 className="w-[75%] md:w-[50%] xl:w-[35%] self-start rounded-r-2xl  max-w-[] flex justify-center items-center bg-white  font-title text-5xl text-lightbrown font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-lightbrown lg:justify-start z-50">
+      <h3 className=" shadow-2xl shadow-black w-[75%] md:w-[50%] xl:w-[35%] self-start rounded-r-2xl  max-w-[] flex justify-center items-center bg-white  font-title text-5xl text-lightbrown font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-lightbrown lg:justify-start z-50">
         NOTICIAS
       </h3>
 
-      <section className="w-full flex flex-col items-center lg:flex-row lg:justify-center lg:gap-[6%] 2xl:gap-[10%] 2xl:justify-center  mt-2 xl:mt-6 2xl:mt-12">
+      <section className="w-full flex flex-col items-center lg:flex-row lg:justify-center lg:gap-[6%] 2xl:gap-[10%] 2xl:justify-center  mt-4 xl:mt-6 2xl:mt-12">
         <section className="mt-3 flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] xl:max-w-[600px] 2xl:max-w-[700px]">
           <article
             id="box-news"
-            className="relative flex flex-col items-center rounded-2xl   border border-lightbrown h-[300px] lg:h-[350px] text-balance px-3"
+            className="relative flex flex-col items-center rounded-2xl  border border-lightbrown h-[300px] lg:h-[350px] text-balance px-3 bg-stone-600"
           >
             <p className=" w-full  font-semibold font-text2 text-white text-center pt-3  text-3xl xl:text-5xl max-w-[400px] xl:pt-6  ">
               LOREM IMSUM DOLOR SIT AMET
@@ -99,16 +99,18 @@ const News = () => {
           </div>
         </section>
       </section>
-      <article className="w-full">
+     
+     <article className="w-full flex flex-col justify-center items-center">
         {" "}
-        <h5 className="mt-16 w-full self-center  py-3 flex justify-center items-center bg-zinc-800  font-title text-5xl text-lightbrown font-semibold  lg:text-6xl lg:mt-24  2xl:text-7xl px-12 xl:px-14 2xl:px-16  z-50">
+        <h5 className="mt-20 w-[90%] max-w-[500px] rounded-2xl self-center  py-3 flex justify-center items-center bg-white shadow-2xl shadow-black  font-title text-5xl text-lightbrown font-semibold  lg:text-6xl lg:mt-24 xl:mt-32 2xl:mt-40  2xl:text-7xl px-12 xl:px-14 2xl:px-16  z-50">
           LOREM
         </h5>
-        <div className="mt-10 xl:mt-12 flex flex-col items-center  px-3 xl:pl-[5%]">
-          <h6 className="text-2xl font-text2 text-white text-center text-balance max-w-[370px] xl:max-w-[500px] xl:text-5xl  xl:self-start xl:text-start 2xl:text-6xl 2xl:max-w-[600px]">
+       
+        <div className=" w-[90%] max-w-[700px] rounded-r-2xl mt-10 xl:mt-12 flex flex-col items-center  px-3 self-start lg:pl-[5%]">
+          <h6 className="text-3xl font-text2 text-white text-balance max-w-[370px] lg:max-w-[500px] lg:text-5xl  lg:self-start text-start 2xl:text-6xl 2xl:max-w-[600px]">
             Lorem impsum dolor sit amet consectetur
           </h6>
-          <p className="font-text2 text-center text-balance mt-3 text-stone-400  max-w-[350px] xl:max-w-[500px] xl:mt-6 xl:text-lg xl:self-start xl:text-start 2xl:text-xl 2xl:max-w-[600px]">
+          <p className="font-text2 text-balance mt-3 text-stone-400  max-w-[350px] lg:max-w-[500px] xl:mt-6 xl:text-lg lg:self-start text-start 2xl:text-xl 2xl:max-w-[600px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
             numquam non, soluta quibusdam magni facilis officia culpa nemo
             molestias veritatis ut porro quos aperiam ipsum eos eum accusamus
