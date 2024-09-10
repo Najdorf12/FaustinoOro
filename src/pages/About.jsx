@@ -304,10 +304,10 @@ const About = () => {
       <section
         id="second_section"
         /*  style={{backgroundImage: "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)" }}  */
-        style={{
+        /* style={{
           backgroundImage:
             "linear-gradient(to left top, #EAEAEA, #DBDBDB, #F2F2F2, #3f4864)",
-        }}
+        }} */
         className="w-full h-screen bg-gray-300 flex lg:justify-end font-title overflow-hidden relative"
       >
         <article className="relative  pt-24 lg:pt-0 px-3 pl-[4%] sm:pl-[6%] lg:pl-0 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[6%]   2xl:mr-[12%]   2xl:max-w-[650px] text-balance ">

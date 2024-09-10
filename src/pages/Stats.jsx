@@ -125,10 +125,10 @@ const Stats = () => {
         className="overflow-hidden relative bg-gray-300 w-fulL h-screen z-5 pt-10 pl-2 pr-1 2xl:pt-16"
       >
         <article className="flex flex-col gap-6">
-          <h6 className="text-6xl font-title font-semibold text-bluefausti lg:text-7xl xl:pl-6 2xl:pl-8 2xl:text-8xl ">
+          <h6 className="text-6xl font-title font-semibold text-bluefausti lg:text-7xl xl:pl-6 2xl:pl-8 2xl:text-8xl z-50">
             TORNEOS
           </h6>
-          <div id="line-tournament" className="h-[2px] w-[0%]  bg-white"></div>
+          <div id="line-tournament" className="h-[2px] w-[0%]  bg-white z-50"></div>
           <ul
             id="tournaments"
             className="h-[600px]  rounded-lg pr-3 pt-2 pb-6 overflow-y-scroll flex flex-col gap-6 z-50 mt-7  lg:flex-row lg:justify-between  lg:px-[5%] lg:mt-12 2xl:px-[6%]"

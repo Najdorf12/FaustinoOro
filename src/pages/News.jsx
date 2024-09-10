@@ -7,13 +7,13 @@ import CardNotice from "../components/CardNotice";
 
 const News = () => {
   return (
-    <main className="pattern w-full min-h-screen pb-24 pt-20 relative flex flex-col items-center xl:pt-20 overflow-hidden">
+    <main className="pattern w-full min-h-screen pt-20 relative flex flex-col items-center xl:pt-20 overflow-hidden">
       <Link to={"/"}>
         <button className="shadow-lg shadow-zinc-900 absolute top-0 right-0 mt-2 mr-2 px-6 py-[2px] rounded-3xl border border-lightbrown  flex justify-center items-center text-white bg-stone-500 font-text2 text-lg xl:px-8 xl:mt-3 xl:mr-6 xl:text-xl 2xl:text-2xl  hover:scale-105 hover:text-stone-500 hover:bg-white duration-500">
           Volver
         </button>
       </Link>
-      <h3 className=" shadow-xl shadow-zinc-900 w-[75%] md:w-[50%] xl:w-[35%] self-start rounded-r-2xl  max-w-[] flex justify-center items-center bg-white  font-title text-5xl text-lightbrown font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-lightbrown lg:justify-start z-50">
+      <h3 className="shadow-xl shadow-zinc-900 w-[75%] md:w-[50%] xl:w-[35%] self-start rounded-r-2xl  max-w-[] flex justify-center items-center bg-white  font-title text-5xl text-lightbrown font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-lightbrown lg:justify-start z-50">
         NOTICIAS
       </h3>
 
@@ -33,8 +33,8 @@ const News = () => {
               fugiat accusamus quod!
             </p>
           </article>
-          <div className="flex justify-center items-center gap-2 w-full font-text2 xl:gap-3">
-            <div className="text-stone-400 bg-zinc-800 relative w-1/2 text-base  sm:text-lg h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 ">
+          <div className=" flex justify-center items-center gap-2 w-full font-text2 xl:gap-3">
+            <div className=" text-stone-400 bg-zinc-800 relative w-1/2 text-base  sm:text-lg h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 ">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
               maxime!
               <span className="rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-stone-600">
@@ -103,12 +103,12 @@ const News = () => {
 
       <article className="w-full flex flex-col justify-center items-center">
         {" "}
-        <h5 className="shadow-xl shadow-zinc-900 mt-20 w-[90%] max-w-[500px] text-lightbrown bg-stone-700 rounded-2xl self-center  py-3 flex justify-center items-center bg-from-stone-500   font-title text-5xl text-ligthbrown text-center  font-semibold  lg:text-6xl lg:mt-24 xl:mt-32 2xl:mt-40  2xl:text-7xl px-12 xl:px-14 2xl:px-16  z-50">
+        <h5 className=" shadow-xl shadow-zinc-900 mt-20 w-[90%] max-w-[500px] text-lightbrown bg-white border border-lightbrown rounded-2xl self-center  py-3 flex justify-center items-center bg-from-stone-500   font-title text-5xl text-ligthbrown text-center  font-semibold  lg:text-6xl lg:mt-24 xl:mt-32 2xl:mt-40  2xl:text-7xl px-12 xl:px-14 2xl:px-16  z-50">
           LOREMIM
         </h5>
         <div
           id="news-box"
-          className="shadow-xl  py-6 2xl:py-12 w-[90%] max-w-[900px] rounded-r-2xl mt-10 xl:mt-12 flex flex-col items-start  px-3 self-start lg:pl-[5%]"
+          className="  py-6 2xl:py-12 w-[90%] max-w-[900px] rounded-r-2xl mt-10 xl:mt-12 flex flex-col items-start  px-3 self-start lg:pl-[5%]"
         >
           <h6 className="text-3xl font-text2 text-white text-balance max-w-[370px] lg:max-w-[500px] lg:text-5xl  text-start 2xl:text-6xl 2xl:max-w-[600px]">
             Lorem impsum dolor sit amet consectetur
@@ -124,7 +124,7 @@ const News = () => {
         </div>
       </article>
 
-      <section className="w-full flex flex-wrap justify-center items-center px-3 mt-12">
+      <section className="w-full flex flex-wrap justify-center items-center px-3 mt-12 bg-zinc-900 min-h-screen xl:items-start2xl:mt-28 xl:items-start xl:pt-20">
         <CardNotice />
       </section>
     </main>
