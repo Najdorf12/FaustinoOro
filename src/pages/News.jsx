@@ -124,8 +124,20 @@ const News = () => {
         </div>
       </article>
 
-      <section className="w-full flex flex-wrap justify-center items-center px-3 mt-12 bg-zinc-900 min-h-screen xl:items-start2xl:mt-28 xl:items-start xl:pt-20">
-        <CardNotice />
+      <section className="w-full flex flex-col justify-start pt-12 pb-20 items-center px-3 mt-20 bg-zinc-900 min-h-screen xl:items-start 2xl:mt-28 xl:pt-20">
+        <div className="w-full text-center text-balance flex flex-col gap-3">
+          <h3 className="text-3xl font-text2 text-stone-600 lg:text-5xl">LOREM IMPSUM</h3>
+          <p className="text-lightbrown text-lg  max-w-[400px] self-center lg:text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+            eligendi molestias.
+          </p>
+        </div>
+        <div className="mt-12 flex flex-wrap gap-4 justify-center items-center w-full xl:mt-20 xl:gap-6 2xl:gap-8 ">
+          <CardNotice />
+          <CardNotice />
+          <CardNotice />
+          <CardNotice />
+        </div>
       </section>
     </main>
   );
