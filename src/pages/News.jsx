@@ -9,7 +9,7 @@ const News = () => {
   return (
     <main className="pattern w-full min-h-screen pt-20 relative flex flex-col items-center xl:pt-20 overflow-hidden">
       <Link to={"/"}>
-        <button className="shadow-lg shadow-zinc-900 absolute top-0 right-0 mt-2 mr-2 px-6 py-[2px] rounded-3xl border border-lightbrown  flex justify-center items-center text-white bg-stone-500 font-text2 text-lg xl:px-8 xl:mt-3 xl:mr-6 xl:text-xl 2xl:text-2xl  hover:scale-105 hover:text-stone-500 hover:bg-white duration-500">
+        <button className="shadow-lg shadow-zinc-900 absolute top-0 right-0 mt-2 mr-2 px-6 py-[2px] rounded-3xl border border-lightbrown  flex justify-center items-center text-white bg-stone-600 font-text2 text-lg xl:px-12 xl:mt-4 xl:mr-8 xl:text-xl 2xl:text-2xl  hover:scale-105 hover:text-stone-500 hover:bg-white duration-500">
           Volver
         </button>
       </Link>
