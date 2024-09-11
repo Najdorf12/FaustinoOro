@@ -31,7 +31,7 @@ const News = () => {
         <section className="mt-3 flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] xl:max-w-[600px] xl:gap-4 2xl:max-w-[700px]">
           <article
             id="box-news"
-            className="relative flex flex-col items-center rounded-2xl  border border-lightbrown h-[300px] lg:h-[350px] text-balance px-3 bg-stone-600"
+            className="relative flex flex-col items-center rounded-2xl  border border-lightbrown h-[300px] lg:h-[350px] text-balance px-3 bg-stone-600 hover:scale-105 duration-500"
           >
             <p className=" w-full  font-semibold font-text2 text-white text-center pt-3  text-3xl xl:text-5xl max-w-[400px] xl:pt-6  ">
               LOREM IMSUM DOLOR SIT AMET
@@ -44,14 +44,14 @@ const News = () => {
             </p>
           </article>
           <div className=" flex justify-center items-center gap-2 w-full font-text2 xl:gap-3">
-            <div className=" text-stone-400 bg-zinc-800 relative w-1/2 text-base  sm:text-lg h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 ">
+            <div className=" text-stone-400 bg-zinc-800 relative w-1/2 text-base  sm:text-lg h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 hover:scale-105 duration-500">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
               maxime!
               <span className="rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-stone-600">
                 <i class="bx bx-arrow-back rotate-[145deg]  text-lightbrown  text-3xl"></i>
               </span>
             </div>
-            <div className="w-1/2  h-[150px] rounded-2xl border border-white">
+            <div className="w-1/2  h-[150px] rounded-2xl border border-white ">
               <picture className="w-full">
                 <img
                   className="w-full h-full object-cover rounded-2xl"
@@ -68,8 +68,8 @@ const News = () => {
         </h5> */}
 
         <section className="mt-3 flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] xl:max-w-[600px] 2xl:max-w-[700px] xl:gap-4">
-          <article id="box-news" className="flex justify-center gap-2 xl:gap-3">
-            <picture className="relative w-[60%]">
+          <article id="box-news" className="flex justify-center gap-2 xl:gap-3 ">
+            <picture className="relative w-[60%] ">
               <img
                 className="w-full object-cover h-[300px] rounded-2xl rounded-br-none border border-stone-500 lg:h-[350px]"
                 src={imgNews}
@@ -83,7 +83,7 @@ const News = () => {
                 LOREM <br /> IMPSUM <br /> DOLOR <br /> SIT <br /> AMET
               </div>
             </picture>
-            <div className="text-lightbrown text-balance relative w-[40%] text-2xl font-semibold font-title  rounded-2xl rounded-tl-none rounded-br-3xl border bg-zinc-800 border-lightbrown p-2 xl:text-3xl 2xl:text-4xl">
+            <div className="text-lightbrown text-balance relative w-[40%] text-2xl font-semibold font-title  rounded-2xl rounded-tl-none rounded-br-3xl border bg-zinc-800 border-lightbrown p-2 xl:text-3xl 2xl:text-4xl hover:scale-105 duration-500">
               LOREM IMSUM DOLOR SIT AMET CONSECT ADIPSICING ELIT
               {/* <span className=" rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-stone-600">
                 <i class="bx bx-arrow-back rotate-[145deg]  text-lightbrown  text-3xl"></i>
@@ -100,7 +100,7 @@ const News = () => {
                 />
               </picture>
             </div>
-            <div className="text-stone-400 relative w-1/2  h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 text-base  sm:text-lg ">
+            <div className="text-stone-400 relative w-1/2  h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 text-base  sm:text-lg hover:scale-105 duration-500">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
               maxime!
               <span className=" rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-stone-600">
