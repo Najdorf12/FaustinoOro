@@ -4,9 +4,12 @@ import imgFausti from "../assets/fausti3.jpg";
 const NewsDetail = () => {
   return (
     <>
-      <section className="relative w-full min-h-screen bg-stone-500 pb-20 flex flex-col xl:flex-row-reverse xl:justify-center xl:items-center xl:gap-[3%]">
+      <section className="relative w-full min-h-screen bg-gray-300 pb-20 flex flex-col xl:flex-row-reverse xl:justify-center xl:items-center xl:gap-[3%] overflow-hidden">
+      <div style={{
+        clipPath: "polygon(50% 0%, 100% 0, 20% 18%, 0 100%, 0 0)"
+      }} className="absolute bg-bluefausti inset-0" ></div>
         <nav className="w-full absolute top-0 right-0  flex justify-end pr-4 pt-2  xl:pr-12 xl:pt-6">
-          <ul className="flex items-center gap-4 text-stone-300 xl:gap-6">
+          <ul className="flex items-center gap-4 text-white xl:text-stone-500 xl:gap-6">
             <Link to={"/"}>
               <li className="rounded-full border border-stone-400 px-7 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-white duration-500">
                 Inicio
@@ -20,33 +23,32 @@ const NewsDetail = () => {
           </ul>
         </nav> 
 
-        <div className="w-full xl:w-auto mt-20    rounded-3xl shadow-xl shadow-zinc-800">
-          <picture className="max-w-[350px] ">
+        <div className="w-full  self-center  xl:w-auto mt-20  z-20 rounded-3xl px-3">
+          <picture className="max-w-[350px]">
             <img
               src={imgFausti}
-              className="rounded-2xl  w-full max-w-[700px] 2xl:max-w-[800px]"
+              className="rounded-2xl shadow-xl shadow-zinc-800 w-full max-w-[700px] 2xl:max-w-[800px]"
               alt="imgFausti"
             />
           </picture>
         </div>
 
         <section
-          id="contact_section"
-          className="text-balance w-full font-text2 relative mt-6  flex flex-col justify-center items-center gap-3 px-3 overflow-y-visible max-w-[650px] md:mt-12"
+        id=""
+          className="text-balance w-full font-text2 relative mt-8 self-end  flex flex-col justify-center items-center gap-3 px-3 overflow-y-visible max-w-[650px] md:mt-12 text-end  xl:self-center xl:text-start 2xl:max-w-[750px]"
         >
-          <h6 className="text-white relative font-title font-semibold z-50 text-3xl xl:text-4xl 2xl:text-5xl">
+          <h6 className="text-white  relative font-title font-semibold z-50 text-3xl xl:text-5xl 2xl:text-6xl">
             FAUSTINO CONSIGUE OTRO HITO HISTORICO
             <div
-              id="line-contact"
-              className="w-[90%] h-[1.5px] absolute -bottom-3 bg-white z-50 xl:-bottom-4"
+              className="w-[90%] h-[1.5px] max-w-[600px] absolute right-0 -bottom-3 bg-white z-50 xl:-bottom-4 xl:left-0 xl:w-[100%] xl:max-w-[750px]"
             ></div>
           </h6>
-          <p className="text-lg  text-start mt-3 text-stone-700 xl:text-xl xl:mt-5 2xl:text-xl 2xl:mt-5">
+          <p className="text-lg pl-3  leading-5  mt-4 text-stone-500 xl:text-xl xl:mt-5 2xl:text-xl 2xl:mt-5">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et,
             consequatur nobis fuga aut reprehenderit ratione.
           </p>
 
-          <p className="  mt-3   lg:pr-0 text-sm  md:text-base text-stone-300 font-title xl:mt- 2xl:mt-3 z-50 ">
+          <p className="  mt-2 pl-4  lg:pr-0 text-sm  md:text-base text-stone-400 font-title xl:mt- 2xl:mt-3 z-50 ">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
             asperiores ut magni, porro possimus temporibus debitis tempore ex
             expedita provident corrupti rerum minus minima quaerat ducimus. Eos

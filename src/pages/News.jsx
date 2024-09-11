@@ -8,6 +8,7 @@ import CardNotice from "../components/CardNotice";
 const News = () => {
   return (
     <main className="pattern w-full min-h-screen pt-20 relative flex flex-col items-center xl:pt-20 overflow-hidden">
+      
        <nav className="w-full absolute top-0 right-0  flex justify-end pr-4 pt-2  xl:pr-12 xl:pt-6">
           <ul className="flex items-center gap-4 text-white xl:gap-6">
             <Link to={"/"}>
