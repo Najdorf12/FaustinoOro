@@ -25,7 +25,7 @@ const Home = () => {
               { WebkitTextStroke: "0.5px"}
             } */
               id="title-name"
-              className="font-text2 tracking-wider text-center  text-[4rem] leading-[5rem] font-bold text-gray-200 z-50 flex flex-col  justify-center items-center md:items-center gap-3 px-3 py-3  bg-clip-text text-transparent bg-gradient-to-br from-stone-400  via-stone-300 to-stone-300 lg:flex-row  md:text-[4.5rem] xl:min-h-[200px] xl:gap-8 2xl:gap-12 xl:text-[6rem] 2xl:text-[7.5rem]"
+              className="font-text2 tracking-wider text-center  text-[4rem] leading-[5rem] font-bold text-gray-200 z-50 flex flex-col  justify-center items-center md:items-center gap-3 px-3 py-3  bg-clip-text text-transparent bg-gradient-to-br from-stone-500  via-stone-400 to-stone-700 lg:flex-row  md:text-[4.5rem] xl:min-h-[200px] xl:gap-8 2xl:gap-12 xl:text-[6rem] 2xl:text-[7.5rem]"
             >
               <span /* style={
               { WebkitTextStroke: "0px"}
@@ -80,28 +80,28 @@ const Home = () => {
                 </ul>
               </section>
             ) : (
-              <ul className="flex  gap-3 sm:gap-14 xl:gap-9 text-lg 2xl:text-2xl 2xl:gap-10 text-lightbrown">
-                <li className="rounded-full border border-lightbrown px-5 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 cursor-pointer flex justify-center items-center hover:scale-110 hover:border-lightbrown duration-500">
+              <ul className="flex  gap-3 sm:gap-14 xl:gap-9 text-lg 2xl:text-xl 2xl:gap-10 text-stone-400">
+                <li className="rounded-full border border-stone-500 px-5 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 cursor-pointer flex justify-center items-center hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500">
                   Torneos
                 </li>
                 <Link /* to="/games" */>
-                  <li className="rounded-full border border-lightbrown px-6 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-lightbrown duration-500">
+                  <li className="rounded-full border border-stone-500 px-6 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500">
                     Partidas
                   </li>
                 </Link>
                 <Link to={"/news"}>
-                  <li className="rounded-full border border-lightbrown px-6 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-lightbrown duration-500">
+                  <li className="rounded-full border border-stone-500 px-6 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500">
                     Noticias
                   </li>
                 </Link>
 
                 <Link to={"/courses"} >
-                <li className="rounded-full border border-lightbrown px-6 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-lightbrown duration-500">
+                <li className="rounded-full border border-stone-500 px-6 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500">
                   Cursos
                 </li>
                 </Link>
 
-                <li className="rounded-full border border-lightbrown px-6 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-lightbrown duration-500">
+                <li className="rounded-full border border-stone-500 px-6 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500">
                   Contacto
                 </li>
               </ul>
