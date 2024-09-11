@@ -17,7 +17,7 @@ const News = () => {
       <nav className="w-full absolute top-0 right-0 z-50 flex justify-end pr-4 pt-2  xl:pr-12 xl:pt-6">
         <ul className="flex items-center gap-4 text-stone-500 xl:gap-6">
           <Link to={"/"}>
-            <li className="rounded-full border border-stone-400 bg-stone-300 px-7 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-12 flex justify-center items-center hover:scale-110 hover:border-lightbrown duration-500 text-base 2xl:text-xl">
+            <li className="rounded-full border border-stone-400 bg-stone-300 px-7 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-12 flex justify-center items-center hover:scale-110 hover:text-white duration-500 text-base 2xl:text-xl">
               Inicio
             </li>
           </Link>

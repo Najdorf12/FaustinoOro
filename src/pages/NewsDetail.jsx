@@ -9,14 +9,14 @@ const NewsDetail = () => {
         clipPath: "polygon(50% 0%, 100% 0, 20% 18%, 0 100%, 0 0)"
       }} className="absolute bg-bluefausti inset-0" ></div>
         <nav className="w-full absolute top-0 right-0  flex justify-end pr-4 pt-2  xl:pr-12 xl:pt-6">
-          <ul className="flex items-center gap-4 text-white xl:text-stone-500 xl:gap-6">
+          <ul className="flex items-center gap-4  text-white xl:text-stone-500 xl:gap-6">
             <Link to={"/"}>
-              <li className="rounded-full border border-stone-400 px-7 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-white duration-500">
+              <li className="rounded-full border  border-stone-400 bg-stone-300 px-7 py-[1px] xl:px-10 2xl:py-[2.5px] 2xl:px-12 flex justify-center items-center hover:scale-110 hover:text-white duration-500 ">
                 Inicio
               </li>
             </Link>
             <Link to={"/news"}>
-              <li className="rounded-full border border-stone-400 px-6 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-white duration-500">
+              <li className="rounded-full border  border-stone-400 bg-stone-300 px-7 py-[1px] xl:px-10 2xl:py-[2.5px] 2xl:px-12 flex justify-center items-center hover:scale-110 hover:text-white duration-500 ">
                 Noticias
               </li>
             </Link>
