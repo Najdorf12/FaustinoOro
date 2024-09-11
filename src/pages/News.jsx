@@ -139,6 +139,9 @@ const News = () => {
           <CardNotice />
         </div>
       </section>
+      {/* <section className="w-full h-[50vh] flex justify-center ">
+          <Slider />
+      </section> */}
     </main>
   );
 };
