@@ -122,10 +122,10 @@ const Stats = () => {
 
       <section
         id="six_section"
-        className="overflow-hidden relative bg-gray-300 w-fulL h-screen z-5 pt-10 pl-2 pr-1 2xl:pt-16"
+        className="overflow-hidden relative bg-bluefausti w-fulL h-screen z-5 pt-10 pl-2 pr-1 2xl:pt-16"
       >
         <article className="flex flex-col gap-6">
-          <h6 className="text-6xl font-title font-semibold text-bluefausti lg:text-7xl xl:pl-6 2xl:pl-8 2xl:text-8xl z-50">
+          <h6 className="text-6xl font-title font-semibold text-white lg:text-7xl xl:pl-6 2xl:pl-8 2xl:text-8xl z-50">
             TORNEOS
           </h6>
           <div id="line-tournament" className="h-[2px] w-[0%]  bg-white z-50"></div>
@@ -152,7 +152,7 @@ const Stats = () => {
                   <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
                     LOREM IMPSUM DOLOR SIT AMET
                   </h6>
-                  <p className="text-lg font-medium text-stone-500 2xl:text-xl 2xl:mt-2">
+                  <p className="text-lg font-medium text-stone-300 2xl:text-xl 2xl:mt-2">
                     BARCELONA 
                   </p>
                   <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
@@ -176,7 +176,7 @@ const Stats = () => {
                   <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
                     LOREM IMPSUM DOLOR SIT AMET
                   </h6>
-                  <p className="text-lg font-medium text-stone-500 2xl:text-xl 2xl:mt-2">
+                  <p className="text-lg font-medium text-stone-300 2xl:text-xl 2xl:mt-2">
                     BARCELONA 
                   </p>
                   <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
@@ -200,7 +200,7 @@ const Stats = () => {
                   <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
                     LOREM IMPSUM DOLOR SIT AMET
                   </h6>
-                  <p className="text-lg font-medium text-stone-500 2xl:text-xl 2xl:mt-2">
+                  <p className="text-lg font-medium text-stone-300 2xl:text-xl 2xl:mt-2">
                     BARCELONA 
                   </p>
                   <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
@@ -227,7 +227,7 @@ const Stats = () => {
                   <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
                     LOREM IMPSUM DOLOR SIT AMET
                   </h6>
-                  <p className="text-lg font-medium text-stone-500 2xl:text-xl 2xl:mt-2">
+                  <p className="text-lg font-medium text-stone-300 2xl:text-xl 2xl:mt-2">
                     BARCELONA 
                   </p>
                   <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
@@ -251,7 +251,7 @@ const Stats = () => {
                   <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
                     LOREM IMPSUM DOLOR SIT AMET
                   </h6>
-                  <p className="text-lg font-medium text-stone-500 2xl:text-xl 2xl:mt-2">
+                  <p className="text-lg font-medium text-stone-300 2xl:text-xl 2xl:mt-2">
                     BARCELONA 
                   </p>
                   <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
@@ -275,7 +275,7 @@ const Stats = () => {
                   <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
                     LOREM IMPSUM DOLOR SIT AMET
                   </h6>
-                  <p className="text-lg font-medium text-stone-500 2xl:text-xl 2xl:mt-2">
+                  <p className="text-lg font-medium text-stone-300 2xl:text-xl 2xl:mt-2">
                     BARCELONA 
                   </p>
                   <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
