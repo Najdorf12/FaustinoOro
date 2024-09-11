@@ -4,7 +4,7 @@ import imgFausti from "../assets/fausti3.jpg";
 const NewsDetail = () => {
   return (
     <>
-      <section className="relative w-full min-h-screen bg-stone-500 pb-20 flex flex-col xl:flex-row xl:justify-center xl:items-center xl:gap-[5%]">
+      <section className="relative w-full min-h-screen bg-stone-500 pb-20 flex flex-col xl:flex-row-reverse xl:justify-center xl:items-center xl:gap-[3%]">
         <nav className="w-full absolute top-0 right-0  flex justify-end pr-4 pt-2 xl:pt-4">
           <ul className="flex items-center gap-4 text-stone-300">
             <Link to={"/"}>
@@ -20,7 +20,7 @@ const NewsDetail = () => {
           </ul>
         </nav> 
 
-        <div className="w-full xl:w-auto mt-20 p-3 bg-stone-700  rounded-3xl shadow-xl shadow-zinc-800">
+        <div className="w-full xl:w-auto mt-20    rounded-3xl shadow-xl shadow-zinc-800">
           <picture className="max-w-[350px] ">
             <img
               src={imgFausti}
