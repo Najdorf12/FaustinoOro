@@ -8,11 +8,21 @@ import CardNotice from "../components/CardNotice";
 const News = () => {
   return (
     <main className="pattern w-full min-h-screen pt-20 relative flex flex-col items-center xl:pt-20 overflow-hidden">
-      <Link to={"/"}>
-        <button className="shadow-lg shadow-zinc-900 absolute top-0 right-0 mt-2 mr-2 px-6 py-[2px] rounded-3xl border border-lightbrown  flex justify-center items-center text-white bg-stone-600 font-text2 text-lg xl:px-12 xl:mt-4 xl:mr-8 xl:text-xl 2xl:text-2xl  hover:scale-105 hover:text-stone-500 hover:bg-white duration-500">
-          Volver
-        </button>
-      </Link>
+       <nav className="w-full absolute top-0 right-0  flex justify-end pr-4 pt-2  xl:pr-12 xl:pt-6">
+          <ul className="flex items-center gap-4 text-white xl:gap-6">
+            <Link to={"/"}>
+              <li className="rounded-full border border-stone-400 bg-stone-400 px-7 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-lightbrown duration-500 text-base 2xl:text-xl">
+                Inicio
+              </li>
+            </Link>
+            {/* <Link to={"/news"}>
+              <li className="rounded-full border border-stone-400 px-6 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-stone-800 duration-500">
+                Noticias
+              </li>
+            </Link> */}
+          </ul>
+        </nav> 
+
       <h3 id="news-box" className="w-[75%] md:w-[50%] xl:w-[35%] self-start rounded-r-2xl  max-w-[] flex justify-center items-center  font-title text-5xl text-white font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-lightbrown lg:justify-start z-50">
         NOTICIAS
       </h3>

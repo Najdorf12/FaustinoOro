@@ -8,12 +8,12 @@ const NewsDetail = () => {
         <nav className="w-full absolute top-0 right-0  flex justify-end pr-4 pt-2  xl:pr-12 xl:pt-6">
           <ul className="flex items-center gap-4 text-stone-300 xl:gap-6">
             <Link to={"/"}>
-              <li className="rounded-full border border-stone-400 px-7 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-stone-800 duration-500">
+              <li className="rounded-full border border-stone-400 px-7 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-white duration-500">
                 Inicio
               </li>
             </Link>
             <Link to={"/news"}>
-              <li className="rounded-full border border-stone-400 px-6 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-stone-800 duration-500">
+              <li className="rounded-full border border-stone-400 px-6 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-white duration-500">
                 Noticias
               </li>
             </Link>
@@ -38,15 +38,15 @@ const NewsDetail = () => {
             FAUSTINO CONSIGUE OTRO HITO HISTORICO
             <div
               id="line-contact"
-              className="w-[90%] h-[1.5px] absolute -bottom-3 bg-white z-50"
+              className="w-[90%] h-[1.5px] absolute -bottom-3 bg-white z-50 xl:-bottom-4"
             ></div>
           </h6>
-          <p className="text-lg  text-start mt-3 text-stone-700 xl:text-xl 2xl:text-xl">
+          <p className="text-lg  text-start mt-3 text-stone-700 xl:text-xl xl:mt-5 2xl:text-xl 2xl:mt-5">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et,
             consequatur nobis fuga aut reprehenderit ratione.
           </p>
 
-          <p className="  mt-3   lg:pr-0 text-sm  md:text-base text-stone-300 font-title xl:mt- 2xl:mt-2 z-50 ">
+          <p className="  mt-3   lg:pr-0 text-sm  md:text-base text-stone-300 font-title xl:mt- 2xl:mt-3 z-50 ">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
             asperiores ut magni, porro possimus temporibus debitis tempore ex
             expedita provident corrupti rerum minus minima quaerat ducimus. Eos
