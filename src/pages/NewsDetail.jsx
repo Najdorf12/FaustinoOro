@@ -5,8 +5,8 @@ const NewsDetail = () => {
   return (
     <>
       <section className="relative w-full min-h-screen bg-stone-500 pb-20 flex flex-col xl:flex-row-reverse xl:justify-center xl:items-center xl:gap-[3%]">
-        <nav className="w-full absolute top-0 right-0  flex justify-end pr-4 pt-2 xl:pt-4">
-          <ul className="flex items-center gap-4 text-stone-300">
+        <nav className="w-full absolute top-0 right-0  flex justify-end pr-4 pt-2  xl:pr-12 xl:pt-6">
+          <ul className="flex items-center gap-4 text-stone-300 xl:gap-6">
             <Link to={"/"}>
               <li className="rounded-full border border-stone-400 px-7 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-stone-800 duration-500">
                 Inicio
