@@ -7,32 +7,40 @@ import CardNotice from "../components/CardNotice";
 
 const News = () => {
   return (
-    <main className="pattern w-full min-h-screen pt-20 relative flex flex-col items-center xl:pt-20 overflow-hidden">
-      
-       <nav className="w-full absolute top-0 right-0  flex justify-end pr-4 pt-2  xl:pr-12 xl:pt-6">
-          <ul className="flex items-center gap-4 text-white xl:gap-6">
-            <Link to={"/"}>
-              <li className="rounded-full border border-stone-400 bg-stone-400 px-7 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-lightbrown duration-500 text-base 2xl:text-xl">
-                Inicio
-              </li>
-            </Link>
-            {/* <Link to={"/news"}>
+    <main className="bg-gray-300 w-full min-h-screen pt-20 relative flex flex-col items-center xl:pt-20 overflow-hidden">
+      <div
+        style={{
+          clipPath: "polygon(50% 0%, 100% 0, 20% 18%, 0 100%, 0 0)",
+        }}
+        className="absolute bg-bluefausti inset-0 z-20"
+      ></div>
+      <nav className="w-full absolute top-0 right-0 z-50 flex justify-end pr-4 pt-2  xl:pr-12 xl:pt-6">
+        <ul className="flex items-center gap-4 text-stone-500 xl:gap-6">
+          <Link to={"/"}>
+            <li className="rounded-full border border-stone-400 bg-stone-300 px-7 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-12 flex justify-center items-center hover:scale-110 hover:border-lightbrown duration-500 text-base 2xl:text-xl">
+              Inicio
+            </li>
+          </Link>
+          {/* <Link to={"/news"}>
               <li className="rounded-full border border-stone-400 px-6 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-stone-800 duration-500">
                 Noticias
               </li>
             </Link> */}
-          </ul>
-        </nav> 
+        </ul>
+      </nav>
 
-      <h3 id="news-box" className="w-[75%] md:w-[50%] xl:w-[35%] self-start rounded-r-2xl  max-w-[] flex justify-center items-center  font-title text-5xl text-white font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-lightbrown lg:justify-start z-50">
+      <h3
+        id="news-box"
+        className="w-[75%] md:w-[50%] xl:w-[35%] self-start rounded-r-2xl  max-w-[] flex justify-center items-center  font-title text-5xl text-white font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-lightbrown lg:justify-start z-50"
+      >
         NOTICIAS
       </h3>
 
-      <section className="w-full flex flex-col items-center lg:flex-row lg:justify-center lg:gap-[6%] 2xl:gap-[10%] 2xl:justify-center  mt-4 xl:mt-6 2xl:mt-12">
-        <section className="mt-3 flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] xl:max-w-[600px] xl:gap-4 2xl:max-w-[700px]">
+      <section className="relative w-full flex flex-col items-center lg:flex-row lg:justify-center lg:gap-[6%] 2xl:gap-[10%] 2xl:justify-center  mt-4 xl:mt-6 2xl:mt-12 z-50">
+        <section className="mt-3 flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] xl:max-w-[600px] xl:gap-4 2xl:max-w-[700px] ">
           <article
             id="box-news"
-            className="relative flex flex-col items-center rounded-2xl  border border-lightbrown h-[300px] lg:h-[350px] text-balance px-3 bg-stone-600 hover:scale-105 duration-500"
+            className="pattern relative flex flex-col items-center rounded-2xl  border border-lightbrown h-[300px] lg:h-[350px] text-balance px-3 hover:scale-105 duration-500"
           >
             <p className=" w-full  font-semibold font-text2 text-white text-center pt-3  text-3xl xl:text-5xl max-w-[400px] xl:pt-6  ">
               LOREM IMSUM DOLOR SIT AMET
@@ -45,7 +53,7 @@ const News = () => {
             </p>
           </article>
           <div className=" flex justify-center items-center gap-2 w-full font-text2 xl:gap-3">
-            <div className=" text-stone-400 bg-zinc-800 relative w-1/2 text-base  sm:text-lg h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 hover:scale-105 duration-500">
+            <div className="pattern text-stone-400 bg-zinc-800 relative w-1/2 text-base  sm:text-lg h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 hover:scale-105 duration-500">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
               maxime!
               <span className="rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-stone-600">
@@ -69,7 +77,10 @@ const News = () => {
         </h5> */}
 
         <section className="mt-3 flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] xl:max-w-[600px] 2xl:max-w-[700px] xl:gap-4">
-          <article id="box-news" className="flex justify-center gap-2 xl:gap-3 ">
+          <article
+            id="box-news"
+            className="flex justify-center gap-2 xl:gap-3 "
+          >
             <picture className="relative w-[60%] ">
               <img
                 className="w-full object-cover h-[300px] rounded-2xl rounded-br-none border border-stone-500 lg:h-[350px]"
@@ -77,14 +88,14 @@ const News = () => {
                 alt=""
               />
               <div
-                className="text-xl font-bold font-title text-stone-500 box-new  absolute top-0 left-0
+                className="text-xl font-bold font-title text-bluefausti box-new absolute top-0 left-0
           mt-3 ml-2 xl:text-3xl xl:ml-4 
           "
               >
                 LOREM <br /> IMPSUM <br /> DOLOR <br /> SIT <br /> AMET
               </div>
             </picture>
-            <div className="text-lightbrown text-balance relative w-[40%] text-2xl font-semibold font-title  rounded-2xl rounded-tl-none rounded-br-3xl border bg-zinc-800 border-lightbrown p-2 xl:text-3xl 2xl:text-4xl hover:scale-105 duration-500">
+            <div className="text-lightbrown text-balance relative w-[40%] text-2xl font-semibold font-title  rounded-2xl rounded-tl-none rounded-br-3xl border bg-zinc-800 border-lightbrown p-2 xl:text-3xl 2xl:text-4xl hover:scale-105 duration-500 ">
               LOREM IMSUM DOLOR SIT AMET CONSECT ADIPSICING ELIT
               {/* <span className=" rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-stone-600">
                 <i class="bx bx-arrow-back rotate-[145deg]  text-lightbrown  text-3xl"></i>
@@ -92,7 +103,7 @@ const News = () => {
             </div>
           </article>
           <div className="flex justify-center items-center gap-2 w-full font-text2 xl:gap-3">
-            <div className="w-1/2  h-[150px] rounded-2xl border border-white">
+            <div className="w-1/2  h-[150px] rounded-2xl border border-white ">
               <picture className="w-full">
                 <img
                   className="w-full h-full object-cover rounded-2xl"
@@ -101,7 +112,7 @@ const News = () => {
                 />
               </picture>
             </div>
-            <div className="text-stone-400 relative w-1/2  h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 text-base  sm:text-lg hover:scale-105 duration-500">
+            <div className="text-stone-500 relative w-1/2  h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 text-base  sm:text-lg hover:scale-105 duration-500">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
               maxime!
               <span className=" rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-stone-600">
@@ -112,7 +123,7 @@ const News = () => {
         </section>
       </section>
 
-      <article className="w-full flex flex-col justify-center items-center">
+      <article className="w-full flex flex-col justify-center items-center z-50">
         {" "}
         {/* <h5 className=" shadow-xl shadow-zinc-900 mt-20 w-[90%] max-w-[500px] text-lightbrown bg- border border-lightbrown rounded-2xl self-center  py-3 flex justify-center items-center bg-from-stone-500   font-title text-5xl text-ligthbrown text-center  font-semibold  lg:text-6xl lg:mt-24 xl:mt-32 2xl:mt-40  2xl:text-7xl px-12 xl:px-14 2xl:px-16  z-50">
           LOREMIM
@@ -135,9 +146,11 @@ const News = () => {
         </div>
       </article>
 
-      <section className="w-full flex flex-col justify-start pt-12 pb-20 items-center px-3 mt-20 bg-zinc-900 min-h-screen xl:items-start 2xl:mt-28 xl:pt-20">
+      <section className="z-50 w-full flex flex-col justify-start pt-12 pb-20 items-center px-3 mt-20 bg-zinc-900 min-h-screen xl:items-start 2xl:mt-28 xl:pt-20">
         <div className="w-full text-center text-balance flex flex-col gap-3 xl:gap-6">
-          <h3 className="text-4xl font-text2 text-white lg:text-6xl 2xl:text-7xl">LOREM IMPSUM</h3>
+          <h3 className="text-4xl font-text2 text-white lg:text-6xl 2xl:text-7xl">
+            LOREM IMPSUM
+          </h3>
           <p className="text-stone-500 text-lg w-[320px] md:w-auto md:max-w-[450px] self-center lg:text-xl 2xl:text-2xl 2xl:mt-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
             eligendi molestias.
