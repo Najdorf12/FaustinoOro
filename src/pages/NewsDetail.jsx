@@ -5,7 +5,7 @@ const NewsDetail = () => {
   
   return (
     <>
-      <section className="relative w-full min-h-screen bg-gray-300 pb-20 flex flex-col xl:flex-row-reverse xl:justify-center xl:items-center xl:gap-[3%] overflow-hidden">
+      <section className="relative w-full min-h-screen bg-zinc-800 pb-20 flex flex-col xl:flex-row-reverse xl:justify-center xl:items-center xl:gap-[3%] overflow-hidden">
       <div style={{
         clipPath: "polygon(50% 0%, 100% 0, 20% 18%, 0 100%, 0 0)"
       }} className="absolute bg-bluefausti inset-0 " ></div>

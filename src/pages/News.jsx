@@ -6,15 +6,12 @@ import { Link } from "react-router-dom";
 import CardNotice from "../components/CardNotice";
 
 const News = () => {
-  const windWidth = window.innerWidth
+  const windWidth = window.innerWidth;
   return (
     <main className="bg-gray-300 w-full min-h-screen pt-20 relative flex flex-col items-center xl:pt-20 overflow-hidden">
       <div
         style={{
-          clipPath: windWidth > 700 ? 
-          "polygon(0 0, 100% 0, 16% 16%, 0 69%)"
-          :
-           "polygon(0 0, 100% 0, 44% 7%, 0 33%)"
+          clipPath: "polygon(0 0, 100% 0, 16% 16%, 0 69%)",
         }}
         className="absolute bg-zinc-800 inset-0 z-20"
       ></div>
