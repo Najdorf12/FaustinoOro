@@ -39,17 +39,17 @@ const NewsDetail = () => {
           className="text-balance w-full font-text2 relative mt-8 self-end  flex flex-col justify-center items-center gap-3 px-3 overflow-y-visible max-w-[650px] md:mt-12 text-end  xl:self-center xl:text-start 2xl:max-w-[750px]"
         >
           <h6 className="text-white  relative font-title font-semibold z-50 text-3xl xl:text-5xl 2xl:text-6xl">
-            FAUSTINO CONSIGUE OTRO HITO HISTORICO
+            Faustino consigue otro hito histórico
             <div
-              className="w-[90%] h-[1.5px] max-w-[600px] absolute right-0 -bottom-3 bg-white z-50 xl:-bottom-4 xl:left-0 xl:w-[100%] xl:max-w-[750px]"
+              className="w-[90%] h-[1.5px] max-w-[600px] absolute right-0 -bottom-3 bg-white z-50 xl:-bottom-6  xl:left-0 xl:w-[100%] xl:max-w-[750px]"
             ></div>
           </h6>
-          <p className="text-lg pl-3  leading-5  mt-4 text-stone-300 xl:text-xl xl:mt-5 2xl:text-xl 2xl:mt-5">
+          <p className="text-lg pl-3  leading-5  mt-4 text-stone-300 xl:text-xl xl:mt-6 xl:pl-0 2xl:text-xl 2xl:mt-5">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et,
             consequatur nobis fuga aut reprehenderit ratione.
           </p>
 
-          <p className="  mt-2 pl-4  lg:pr-0 text-sm  md:text-base text-stone-400 font-title xl:mt- 2xl:mt-3 z-50 ">
+          <p className="  mt-2 pl-4  lg:pr-0 text-sm  md:text-base text-stone-400 font-title xl:pl-0 2xl:mt-3 z-50 ">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
             asperiores ut magni, porro possimus temporibus debitis tempore ex
             expedita provident corrupti rerum minus minima quaerat ducimus. Eos
