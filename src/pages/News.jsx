@@ -1,9 +1,9 @@
 import imgNews from "../assets/news/imgNews4.jpg";
 import imgNews4 from "../assets/news/imgNews2.jpg";
 import imgNews2 from "../assets/news/imgNews.jpg";
-import imgNews3 from "../assets/news/imgNews3.jpg";
 import { Link } from "react-router-dom";
 import CardNotice from "../components/CardNotice";
+import Footer from "../components/Footer";
 
 const News = () => {
   const windWidth = window.innerWidth;
@@ -15,7 +15,7 @@ const News = () => {
         }}
         className="absolute bg-zinc-800 inset-0 z-20"
       ></div>
-      <nav className="w-full absolute top-0 right-0 z-50 flex justify-end pr-4 pt-2  xl:pr-12 xl:pt-6">
+      <nav className="w-full absolute top-0 right-0 z-50 flex justify-end pr-4 pt-4  xl:pr-12 xl:pt-6">
         <ul className="flex items-center gap-4 text-stone-400 xl:gap-6">
           <Link to={"/"}>
             <li className="rounded-full border border-stone-400 bg-zinc-700 px-7 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-12 flex justify-center items-center hover:scale-110 hover:text-white duration-500 text-base 2xl:text-xl">
@@ -155,9 +155,7 @@ const News = () => {
           <CardNotice />
         </div>
       </section>
-      {/* <section className="w-full h-[50vh] flex justify-center ">
-          <Slider />
-      </section> */}
+    <Footer />
     </main>
   );
 };
