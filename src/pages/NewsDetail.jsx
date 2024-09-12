@@ -44,7 +44,7 @@ const NewsDetail = () => {
               className="w-[90%] h-[1.5px] max-w-[600px] absolute right-0 -bottom-3 bg-white z-50 xl:-bottom-4 xl:left-0 xl:w-[100%] xl:max-w-[750px]"
             ></div>
           </h6>
-          <p className="text-lg pl-3  leading-5  mt-4 text-stone-500 xl:text-xl xl:mt-5 2xl:text-xl 2xl:mt-5">
+          <p className="text-lg pl-3  leading-5  mt-4 text-stone-300 xl:text-xl xl:mt-5 2xl:text-xl 2xl:mt-5">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et,
             consequatur nobis fuga aut reprehenderit ratione.
           </p>
