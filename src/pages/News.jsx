@@ -6,26 +6,25 @@ import { Link } from "react-router-dom";
 import CardNotice from "../components/CardNotice";
 
 const News = () => {
+  const windWidth = window.innerWidth
   return (
     <main className="bg-gray-300 w-full min-h-screen pt-20 relative flex flex-col items-center xl:pt-20 overflow-hidden">
       <div
         style={{
-          clipPath: "polygon(50% 0%, 100% 0, 20% 18%, 0 100%, 0 0)",
+          clipPath: windWidth > 700 ? 
+          "polygon(0 0, 100% 0, 16% 16%, 0 69%)"
+          :
+           "polygon(0 0, 100% 0, 44% 7%, 0 33%)"
         }}
-        className="absolute bg-bluefausti inset-0 z-20"
+        className="absolute bg-zinc-800 inset-0 z-20"
       ></div>
       <nav className="w-full absolute top-0 right-0 z-50 flex justify-end pr-4 pt-2  xl:pr-12 xl:pt-6">
-        <ul className="flex items-center gap-4 text-stone-500 xl:gap-6">
+        <ul className="flex items-center gap-4 text-stone-400 xl:gap-6">
           <Link to={"/"}>
-            <li className="rounded-full border border-stone-400 bg-stone-300 px-7 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-12 flex justify-center items-center hover:scale-110 hover:text-white duration-500 text-base 2xl:text-xl">
+            <li className="rounded-full border border-stone-400 bg-zinc-700 px-7 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-12 flex justify-center items-center hover:scale-110 hover:text-white duration-500 text-base 2xl:text-xl">
               Inicio
             </li>
           </Link>
-          {/* <Link to={"/news"}>
-              <li className="rounded-full border border-stone-400 px-6 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-10 flex justify-center items-center hover:scale-110 hover:border-stone-800 duration-500">
-                Noticias
-              </li>
-            </Link> */}
         </ul>
       </nav>
 
@@ -124,13 +123,9 @@ const News = () => {
       </section>
 
       <article className="w-full flex flex-col justify-center items-center z-50">
-        {" "}
-        {/* <h5 className=" shadow-xl shadow-zinc-900 mt-20 w-[90%] max-w-[500px] text-lightbrown bg- border border-lightbrown rounded-2xl self-center  py-3 flex justify-center items-center bg-from-stone-500   font-title text-5xl text-ligthbrown text-center  font-semibold  lg:text-6xl lg:mt-24 xl:mt-32 2xl:mt-40  2xl:text-7xl px-12 xl:px-14 2xl:px-16  z-50">
-          LOREMIM
-        </h5> */}
         <div
-          id="news-box"
-          className="  py-6 2xl:py-12 w-[90%] max-w-[900px] rounded-r-2xl mt-10 xl:mt-12 flex flex-col items-start  px-3 self-start lg:pl-[5%]"
+          /* id={windWidth > 700 ?  "news-box" : ""} */
+          className="bg-bluefausti  py-6 2xl:py-12 w-[90%] max-w-[900px] rounded-r-2xl mt-10 xl:mt-12 flex flex-col items-start  px-3 self-start lg:pl-[9%]"
         >
           <h6 className="text-3xl font-text2 text-white text-balance max-w-[370px] lg:max-w-[500px] lg:text-5xl  text-start 2xl:text-6xl 2xl:max-w-[600px]">
             Lorem impsum dolor sit amet consectetur
@@ -146,7 +141,7 @@ const News = () => {
         </div>
       </article>
 
-      <section className="z-50 w-full flex flex-col justify-start pt-12 pb-20 items-center px-3 mt-20 bg-zinc-900 min-h-screen xl:items-start 2xl:mt-28 xl:pt-20">
+      <section className="z-50 w-full flex flex-col justify-start pt-12 pb-20 items-center px-3 mt-20 bg-zinc-800 min-h-screen xl:items-start 2xl:mt-28 xl:pt-20">
         <div className="w-full text-center text-balance flex flex-col gap-3 xl:gap-6">
           <h3 className="text-4xl font-text2 text-white lg:text-6xl 2xl:text-7xl">
             LOREM IMPSUM
