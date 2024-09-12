@@ -10,7 +10,7 @@ const NewsDetail = () => {
         clipPath: "polygon(50% 0%, 100% 0, 20% 18%, 0 100%, 0 0)"
       }} className="absolute bg-bluefausti inset-0 " ></div>
         <nav className="w-full absolute top-0 right-0  flex justify-end pr-4 pt-2  xl:pr-12 xl:pt-6">
-          <ul className="flex items-center gap-4  text-stone-500  xl:gap-6">
+          <ul className="flex items-center gap-4  text-stone-400  xl:gap-6">
             <Link to={"/"}>
               <li className="rounded-full border border-stone-400 bg-zinc-700 px-7 py-[1px] xl:px-10 2xl:py-[2.5px] 2xl:px-12 flex justify-center items-center hover:scale-110 hover:text-white duration-500 ">
                 Inicio
@@ -28,7 +28,7 @@ const NewsDetail = () => {
           <picture className="max-w-[350px]">
             <img
               src={imgFausti}
-              className="rounded-2xl shadow-xl shadow-zinc-800 w-full max-w-[700px] 2xl:max-w-[800px]"
+              className="rounded-2xl shadow-xl shadow-zinc-800 w-full max-w-[650px] 2xl:max-w-[800px]"
               alt="imgFausti"
             />
           </picture>

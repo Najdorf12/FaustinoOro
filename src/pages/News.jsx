@@ -127,7 +127,7 @@ const News = () => {
           <h6 className="text-3xl font-text2 text-white text-balance max-w-[370px] lg:max-w-[500px] lg:text-5xl  text-start 2xl:text-6xl 2xl:max-w-[600px]">
             Lorem impsum dolor sit amet consectetur
           </h6>
-          <p className="font-text2 text-balance mt-3 text-stone-400  max-w-[350px] lg:max-w-[500px] xl:mt-6 xl:text-lg text-start 2xl:text-xl 2xl:max-w-[600px]">
+          <p className="font-text2 text-balance mt-3 text-zinc-400  max-w-[350px] lg:max-w-[500px] xl:mt-6 xl:text-lg text-start 2xl:text-xl 2xl:max-w-[600px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
             numquam non, soluta quibusdam magni facilis officia culpa nemo
             molestias veritatis ut porro quos aperiam ipsum eos eum accusamus
@@ -143,7 +143,7 @@ const News = () => {
           <h3 className="text-4xl font-text2 text-white lg:text-6xl 2xl:text-7xl">
             LOREM IMPSUM
           </h3>
-          <p className="text-stone-500 text-lg w-[320px] md:w-auto md:max-w-[450px] self-center lg:text-xl 2xl:text-2xl 2xl:mt-2">
+          <p className="text-stone-500 font-text2 text-lg w-[370px] md:w-auto md:max-w-[450px] self-center lg:text-xl 2xl:text-2xl 2xl:mt-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
             eligendi molestias.
           </p>
