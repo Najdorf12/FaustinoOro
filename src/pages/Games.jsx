@@ -33,7 +33,7 @@ const Games = () => {
 
   const [allGames, setAllGames] = useState(null);
   const [selectedGame, setSelectedGame] = useState(null);
-  console.log(selectedGame)
+  console.log(selectedGame);
 
   const [game, setGame] = useState(new Chess());
   const [currentMoves, setCurrentMoves] = useState("");
@@ -91,7 +91,11 @@ const Games = () => {
             className="self-start w-[0%] h-[2px] bg-[#947153] mt-3 lg:mt-4 2xl:mt-4"
           ></div>
           <p className="text-xl font-title text-stone-400 font-base mt-10 z-50 bg-stone-600">
-            {selectedGame ? selectedGame.players : allGames[0].players}
+            {selectedGame
+              ? selectedGame.players
+              : allGames?.length > 0
+              ? allGames[0].players
+              : "No hay partidas disponibles"}
           </p>
           <section className="chessboard-wrapper  max-w-[400px] 2xl:max-w-[500px] mt-6">
             <div id="chessboard-container" className="z-50 w-full">
