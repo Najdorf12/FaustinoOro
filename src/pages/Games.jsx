@@ -187,15 +187,15 @@ const Games = () => {
                 customLightSquareStyle={{ backgroundColor: "#947153" }}
               />
               <div className=" flex items-center mt-6 gap-8 justify-evenly text-stone-600 relative">
-                <button className="text-7xl" onClick={handleMoveBack}>
-                  <i className="bx bx-chevrons-left"></i>
+                <button className="text-7xl hover:text-stone-300 " onClick={handleMoveBack}>
+                  <i className="bx bx-chevrons-left hover:scale-105 duration-500"></i>
                   <p className="text-lg font-semibold -mt-2 text-lightbrown">
                     Prev
                   </p>
                 </button>
-                <button className="text-7xl" onClick={handleMoveNext}>
-                  <i className="bx bx-chevrons-right "></i>
-                  <p className="text-lg font-semibold -mt-2 text-lightbrown">
+                <button className="text-7xl hover:text-stone-300  duration-500" onClick={handleMoveNext}>
+                  <i className="bx bx-chevrons-right hover:scale-105"></i>
+                  <p className="text-lg font-semibold -mt-2 text-lightbrown ">
                     Next
                   </p>
                 </button>
@@ -210,11 +210,11 @@ const Games = () => {
             {allGames?.map((partida, i) => {
               return (
                 <li
-                id="news-box"
+                  id="news-box"
                   key={i}
                   onClick={() => setSelectedGame(partida)}
                   className="relative w-full p-1 flex justify-start
-                 items-center text-base gap-2 rounded-2xl z-50 px-3 lg:w-[430px]"
+                 items-center text-base gap-2 rounded-2xl z-50 px-3 lg:w-[430px] cursor-pointer hover:scale-105 hover:border hover:border-stone-300 duration-500"
                 >
                   <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full bg-zinc-800 text-lightbrown h-7 w-7 text-xl "></i>
                   {partida.players}
