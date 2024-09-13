@@ -90,23 +90,23 @@ const Games = () => {
             id="line-games"
             className="self-start w-[0%] h-[2px] bg-[#947153] mt-3 lg:mt-4 2xl:mt-4"
           ></div>
-          <p className="text-xl font-title text-stone-400 font-base mt-7 z-50 bg-stone-600">
+          <p className="text-xl font-text2 text-stone-400 font-base mt-7 z-50 ">
             {selectedGame
               ? selectedGame.players
               : allGames?.length > 0
               ? allGames[0].players
               : "No hay partidas disponibles"}
           </p>
-          <section className="chessboard-wrapper relative  max-w-[400px] 2xl:max-w-[500px] mt-14 bg-red-600">
+          <section className="chessboard-wrapper relative  max-w-[400px] 2xl:max-w-[500px] mt-14  ">
             <div id="chessboard-container" className="z-50 w-full relative">
-              <div className="absolute z-50 -top-8 text-base text-white bg-teal-600">
+              <div className="font-text2 absolute z-50 -top-7 text-base text-stone-600 ">
                 {selectedGame
                   ? selectedGame.black
                   : allGames?.length > 0
                   ? allGames[0].black
                   : "No hay partidas disponibles"}
               </div>
-              <div className="absolute z-50 bottom-[5rem] right-0 text-base text-white bg-teal-600">
+              <div className="font-text2 absolute z-50 bottom-[5.5rem] right-0 text-base text-stone-600 ">
                 {selectedGame
                   ? selectedGame.white
                   : allGames?.length > 0
@@ -121,7 +121,7 @@ const Games = () => {
                 customDarkSquareStyle={{ backgroundColor: "#8e1d22" }}
                 customLightSquareStyle={{ backgroundColor: "#947153" }}
               />
-              <div className=" flex items-center mt-4 gap-8 justify-evenly text-stone-400 relative">
+              <div className=" flex items-center mt-6 gap-8 justify-evenly text-stone-400 relative">
                 <button className="text-7xl" onClick={handleMoveBack}>
                   <i className="bx bx-chevrons-left"></i>
                   <p className="text-lg font-semibold -mt-2 text-lightbrown">
