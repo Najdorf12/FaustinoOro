@@ -3,10 +3,11 @@ import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import Stats from "./pages/Stats";
 import Contact from "./pages/Contact";
-
+import { useState, useEffect } from 'react';
 import Experience from "./components/Experience";
 import { Canvas } from "@react-three/fiber";
 import { ReactLenis, useLenis } from "lenis/react";
+import { Chess } from 'chess.js';
 
 function FaustinoApp() {
   /*   const lenis = useLenis(({ scroll }) => {
