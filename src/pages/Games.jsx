@@ -205,15 +205,15 @@ const Games = () => {
           </section>
         </div>
 
-        <section className="w-full flex flex-col  mt-12 lg:w-auto  xl:mt-20 2xl:mt-24  z-50  ">
-          <ul className="w-[90%] z-50 text-lg font-title text-stone-300 font-normal  flex flex-col justify-center items-center gap-1 lg:gap-4 lg:w-auto 2xl:text-[1.3rem] 2xl:gap-6 ">
+        <section className="w-full flex flex-col items-start  mt-12 lg:w-auto  xl:mt-20 2xl:mt-24  z-50  ">
+          <ul className="w-[90%] px-3 z-50 text-lg font-title text-stone-300 font-normal  flex flex-col justify-center items-center gap-2 lg:gap-4 lg:w-auto 2xl:text-[1.3rem] 2xl:gap-6 ">
             {allGames?.map((partida, i) => {
               return (
                 <li
                 id="news-box"
                   key={i}
                   onClick={() => setSelectedGame(partida)}
-                  className="relative w-[80%] p-1 flex justify-start
+                  className="relative w-full p-1 flex justify-start
                  items-center text-base gap-2 rounded-2xl z-50 px-3 lg:w-[430px]"
                 >
                   <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full bg-zinc-800 text-lightbrown h-7 w-7 text-xl "></i>
