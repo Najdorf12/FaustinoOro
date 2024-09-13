@@ -7,21 +7,34 @@ const Games = () => {
   const allGamesData = [
     {
       players: "Faustino Oro vs Levy Rozman",
-      location: "Online",
+      location: "Madrid, España",
+      content: "Lorem Impsum",
       white: "Faustino Oro",
       black: "Levy Rozman",
       pgn: "1. Nf3 g6 2. e4 Bg7 3. d4 d6 4. a4 a5",
     },
     {
       players: "Faustino Oro vs Hikaru Nakamura",
-      location: "Lorem Imsum",
+      location: "Barcelona, España",
+      content: "Lorem Impsum",
       white: "Hikaru Nakamura",
+      black: "Faustino Oro",
+      pgn: "1.e4 e5 2.f4 exf4 3.Bc4 Qh4+ 4.Kf1 b5 5.Bxb5 Nf6 6.Nf3 Qh6 7.d3 Nh5 8.Nh4 Qg5  9.Nf5 c6 10.g4 Nf6 11.Rg1 cxb5 12.h4 Qg6 13.h5 Qg5 14.Qf3 Ng8 15.Bxf4 Qf6  16.Nc3 Bc5 17.Nd5 Qxb2 18.Bd6 Bxg1 19.e5 Qxa1+ 20.Ke2 Na6 21.Nxg7+ Kd8  22.Qf6+ Nxf6 23.Be7",
+    },
+    {
+      players: "Faustino Oro vs Lorem Impsum",
+      location: "Lorem Impsum",
+      content: "Lorem Impsum",
+      white: "Lorem Impsum",
       black: "Faustino Oro",
       pgn: "1.e4 e5 2.f4 exf4 3.Bc4 Qh4+ 4.Kf1 b5 5.Bxb5 Nf6 6.Nf3 Qh6 7.d3 Nh5 8.Nh4 Qg5  9.Nf5 c6 10.g4 Nf6 11.Rg1 cxb5 12.h4 Qg6 13.h5 Qg5 14.Qf3 Ng8 15.Bxf4 Qf6  16.Nc3 Bc5 17.Nd5 Qxb2 18.Bd6 Bxg1 19.e5 Qxa1+ 20.Ke2 Na6 21.Nxg7+ Kd8  22.Qf6+ Nxf6 23.Be7",
     },
   ];
 
   const [allGames, setAllGames] = useState(null);
+  const [selectedGame, setSelectedGame] = useState(null);
+  console.log(selectedGame)
+
   const [game, setGame] = useState(new Chess());
   const [currentMoves, setCurrentMoves] = useState("");
   const [moveIndex, setMoveIndex] = useState(0);
@@ -78,7 +91,7 @@ const Games = () => {
             className="self-start w-[0%] h-[2px] bg-[#947153] mt-3 lg:mt-4 2xl:mt-4"
           ></div>
           <p className="text-xl font-title text-stone-400 font-base mt-10 z-50 bg-stone-600">
-            Faustino Oro vs Hikaru Nakamura
+            {selectedGame ? selectedGame.players : allGames[0].players}
           </p>
           <section className="chessboard-wrapper  max-w-[400px] 2xl:max-w-[500px] mt-6">
             <div id="chessboard-container" className="z-50 w-full">
@@ -111,15 +124,16 @@ const Games = () => {
 
         <section className="w-full flex flex-col  mt-12 xl:mt-20 2xl:mt-24  z-50 bg-red-600">
           <ul className="w-[90%] z-50 text-lg font-title text-stone-500 font-normal bg-teal-600 flex flex-col justify-center items-center gap-1 2xl:text-[1.3rem] 2xl:gap-6 ">
-            {allGames?.map((partidas,i) => {
+            {allGames?.map((partida, i) => {
               return (
                 <li
                   key={i}
-                  className="w-[80%] bg-rose-700 flex justify-start
-                 items-center text-base"
+                  onClick={() => setSelectedGame(partida)}
+                  className="relative w-[80%] bg-rose-700 p-1 flex justify-start
+                 items-center text-base gap-2"
                 >
-                  <i className="bx bx-arrow-back rotate-[145deg] absolute -left-8 text-lightbrown text-3xl 2xl:text-5xl xl:-left-10 2xl:-left-14"></i>
-                  {partidas.players}
+                  <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full text-lightbrown h-7 w-7 text-xl bg-stone-600 "></i>
+                  {partida.players}
                 </li>
               );
             })}
