@@ -248,7 +248,7 @@ export const Knight = (props) => {
         z: screen > 1000 ? 23 : 14,
         ease: "power1.inOut",
         scrollTrigger: {
-          trigger: "#contact_section",
+          trigger: "#games_section",
           start: "top bottom",
           end: screen > 1000 ? "top top" : "-50% top",
           scrub: true,
@@ -260,7 +260,7 @@ export const Knight = (props) => {
         y: screen > 1000 ? -1.74 : -1,
         ease: "power1.inOut",
         scrollTrigger: {
-          trigger: "#contact_section",
+          trigger: "#games_section",
           start: "top bottom",
           end: screen > 1000 ? "top top" : "-50% top",
           scrub: true,

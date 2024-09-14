@@ -57,7 +57,7 @@ const Contact = () => {
       </div>
      
 
-      <section className="">
+      <section id="games_section" className="">
         <Games />
       </section>
 
