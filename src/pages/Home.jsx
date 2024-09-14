@@ -25,10 +25,9 @@ const Home = () => {
               { WebkitTextStroke: "0.5px"}
             } */
               id="title-name"
-              className="font-text2 tracking-wider text-center  text-[4rem] leading-[5.4rem] font-bold text-gray-200 z-50 flex flex-col  justify-center items-center md:items-center gap-3 px-3 py-3  bg-clip-text text-transparent bg-gradient-to-br from-stone-500  via-stone-400 to-stone-700 lg:flex-row-reverse  md:text-[4.5rem] xl:min-h-[200px] xl:gap-8 2xl:gap-12 xl:text-[6rem] 2xl:text-[7.5rem]"
+              className="font-text2 tracking-wider text-center  text-[4rem] leading-[5.4rem] font-bold text-gray-200 z-50 flex  justify-center items-center md:items-center gap-3 px-3 py-3  bg-clip-text text-transparent bg-gradient-to-br from-stone-300  via-stone-400 to-bluefausti md:text-[4.5rem] xl:min-h-[200px] xl:gap-8 2xl:gap-12 xl:text-[6rem] 2xl:text-[7.5rem]"
             >
               {" "}
-              FAUSTINO ORO
               <span
                 /* style={
               { WebkitTextStroke: "0px"}
@@ -36,6 +35,7 @@ const Home = () => {
               >
                 IM
               </span>
+              FAUSTINO ORO
             </h1>
           </article>
 
