@@ -281,7 +281,7 @@ const About = () => {
             Autodidacta y persistente, he crecido con cada partida y cada
             lección, con la firme convicción de llegar a lo más alto.
           </p>
-          <div className="flex -inset-1 mt-[36px]   items-center gap-6 font-title2 text-lg font-semibold text-stone-400 xl:text-base xl:gap-8 2xl:gap-14  2xl:text-xl ">
+          <div className="flex -inset-1 mt-[36px]   items-center gap-6 font-title2 text-lg font-semibold text-stone-400 xl:text-base xl:gap-8 2xl:gap-14 2xl:mt-[40px]  2xl:text-xl ">
             <button
               onClick={() => handleSectionChange("Historia")}
               className=" border-[1px] rounded-3xl bg-bluefausti border-stone-400  px-4  flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"

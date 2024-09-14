@@ -53,9 +53,9 @@ const Gallery = () => {
         className="pt-16 w-full h-[85vh] md:h-screen bg- font-title relative flex items-start overflow-hidden xl:pt-[4%]  2xl:pt-0 2xl:justify-start"
       >
         <article className="h-full relative pt-2 pl-3 sm:px-2  gap-3 z-40 sm:max-w-[600px] md:max-w-[85%] sm:pl-6  md:ml-[3%] lg:ml-[7%] xl:max-w-[60%] 2xl:pt-0 2xl:ml-[9%] 2xl:max-w-[1100px] 2xl:mt-20  text-balance">
-          <h3 className="mt-1 font-title text-balance  max-w-[380px] text-white font-bold text-[7vh] leading-[1] z-50 lg:text-[12vh] lg:max-w-[780px]  2xl:max-w-[950px]">
+          <h3 className="mt-1 font-title text-balance  max-w-[380px] text-stone-600 font-bold text-[7vh] leading-[1] z-50 lg:text-[12vh] lg:max-w-[780px]  2xl:max-w-[950px]">
             EL ÉXITO OCURRE CUANDO {/* <br className="hidden lg:flex" /> */}
-            <span className="text-darkred">
+            <span className="text-white">
               TUS SUEÑOS SON MAS GRANDES{" "}
             </span>{" "}
             QUE TUS EXCUSAS.
@@ -76,7 +76,7 @@ const Gallery = () => {
           <div className="col-span-2 row-span-3 ">
             <picture className=" ">
               <img
-                className="w-full h-full rounded-3xl  object-cover border-[2px] border-lightbrown"
+                className="w-full h-full rounded-3xl  object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg"
                 src={imgFausti3}
                 alt=""
               />
@@ -85,7 +85,7 @@ const Gallery = () => {
           <div className="col-span-2 row-span-3 col-start-3 ">
             <picture className="">
               <img
-                className="w-full h-full rounded-3xl object-cover border-[2px] border-lightbrown"
+                className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg"
                 src={imgFausti9}
                 alt=""
               />
@@ -94,7 +94,7 @@ const Gallery = () => {
           <div className="col-span-2 row-span-6 col-start-5 ">
             <picture className="">
               <img
-                className="w-full h-full rounded-3xl object-cover border-[2px] border-lightbrown "
+                className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg "
                 src={imgFausti4}
                 alt=""
               />
@@ -103,7 +103,7 @@ const Gallery = () => {
           <div className="col-span-4 row-span-3 row-start-4  ">
             <picture className="">
               <img
-                className="w-full h-full rounded-3xl object-cover border-[2px] border-lightbrown"
+                className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg"
                 src={imgFausti2}
                 alt=""
               />
@@ -112,7 +112,7 @@ const Gallery = () => {
           <div className="col-span-6 row-span-2 row-start-7">
             <picture className=" ">
               <img
-                className="w-full h-full rounded-3xl object-cover border-[2px] border-lightbrown"
+                className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg"
                 src={imgFausti6}
                 alt=""
               />

@@ -284,15 +284,12 @@
   align-items: flex-start;
   justify-content: center;
   align-self: flex-start;
-  font-weight: 600;
   width: 40%;
   border: 1px solid #947153;
   padding: 11px 14px;
-  font-size: 16px;
   gap: 8px;
   margin-top: 8px;
   cursor: pointer;
-  border-radius: 6px;
   transition: all 500ms;
 }
 

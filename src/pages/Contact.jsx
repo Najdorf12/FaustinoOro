@@ -55,28 +55,7 @@ const Contact = () => {
       <div className="w-full z-50 lg:z-20 h-[10dvh] lg:h-[20dvh] bg-gray-300 lg:bg-zinc-900  relative">
         <div className="absolute h-full w-full  z-50"></div>
       </div>
-      <section
-        id="contact_section"
-        className="w-full relative h-[70dvh] xl:h-screen bg-gray-300 pl-[5%] flex flex-col gap-16 2xl:gap-40 overflow-y-visible"
-      >
-        <div className="w-full absolute z-50 h-full"></div>
-
-        <h6 className="relative  text-[5rem] md:text-[5.5rem] text-stone-600 font-title font-semibold 2xl:text-[9rem] z-50">
-          LOREM
-          <div
-            id="line-contact"
-            className="w-[0%] h-[1.5px] absolute bottom-0 bg-white z-50"
-          ></div>
-        </h6>
-
-        <p className=" max-w-[500px]   pr-16 lg:pr-0 text-sm  md:text-base text-gray-700 2xl:text-lg font-title xl:mt-8 2xl:mt-2 z-50 ">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
-          cumque a cupiditate earum obcaecati est, eum ducimus incidunt officia
-          sequi voluptas nemo repellendus et nulla facere recusandae labore
-          ipsam repellat. Atque magnam provident sequi, ad accusamus voluptate
-          quibusdam quia, iste repellendus vel iure velit quo quisquam. .
-        </p>
-      </section>
+     
 
       <section className="">
         <Games />
@@ -124,7 +103,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section id="contact_section2" className="w-full h-auto  bg-zinc-900 flex flex-col  gap-3 pt-12 xl:pt-[6%]">
+      <section id="contact_section2" className="w-full h-auto  bg-zinc-800 flex flex-col  gap-3 pt-12 xl:pt-[6%]">
         <article className="z-50 flex flex-col items-center  xl:w-[50%]">
           <h3 className="self-center  font-title text-5xl text-lightbrown font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-lightbrown rounded-xl z-50">
             CONTACT
@@ -137,7 +116,7 @@ const Contact = () => {
         </article>
 
         <footer className="w-full mt-6 lg:mt-1 xl:w-[50%] xl:mt-5 2xl:mt-6 z-50">
-          <ul className="flex gap-8 justify-center items-center text-darkred text-4xl xl:text-5xl xl:gap-12  ">
+          <ul className="flex gap-8 justify-center items-center text-stone-400 text-4xl xl:text-5xl xl:gap-12  ">
             <li className="hover:scale-110 hover:text-amber-600 duration-500 cursor-pointer z-50">
               <i className="bx bxl-youtube"></i>
             </li>
