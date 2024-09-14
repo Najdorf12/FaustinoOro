@@ -19,7 +19,7 @@ const Home = () => {
           className="w-[100%] h-screen relative bg-center bg-fixed bg-cover bg-no-repeat z-50 flex  justify-center"
           id="home"
         >
-          <article className="w-[95%] flex justify-center items-end pb-[20%] xl:justify-center xl:pb-[5%] xl:">
+          <article className="w-[95%] flex justify-center items-end pb-[20%] xl:justify-center xl:pb-[2%] xl:">
             <h1
               /*   style={
               { WebkitTextStroke: "0.5px"}
