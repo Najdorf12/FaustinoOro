@@ -3,13 +3,71 @@ import bullet from "../assets/bullet.png";
 import flash from "../assets/flash.png";
 import imgTorneo from "../assets/img-torneo.jpg";
 import classicalchess from "../assets/classicalchess.png";
+import CardTournament from "../components/CardTournament";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useLayoutEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const Stats = () => {
   const tl = gsap.timeline();
+
+  const allTournaments = [
+    {
+      title: "Tournament test1 Lorem Impsum",
+      description: "Description test1",
+      content: "Content test1",
+      location: "Location, test1",
+      isActive: true,
+      time: "12/12/2024",
+      images: imgTorneo,
+    },
+    {
+      title: "Tournament test2",
+      description: "Description test2",
+      content: "Content test2",
+      location: "Location, test2",
+      isActive: true,
+      time: "12/12/2024",
+      images: imgTorneo,
+    },
+    {
+      title: "Tournament test3 Lorem Impsum dolor",
+      description: "Description test3",
+      content: "Content test3",
+      location: "Location, test3",
+      isActive: true,
+      time: "12/12/2024",
+      images: imgTorneo,
+    },
+    {
+      title: "Tournament test4",
+      description: "Description test4",
+      content: "Content test4",
+      location: "Location, test4",
+      isActive: true,
+      time: "12/12/2024",
+      images: imgTorneo,
+    },
+    {
+      title: "Tournament test5",
+      description: "Description test5",
+      content: "Content test5",
+      location: "Location, test5",
+      isActive: true,
+      time: "12/12/2024",
+      images: imgTorneo,
+    },
+    {
+      title: "Tournament test6",
+      description: "Description test6",
+      content: "Content test6",
+      location: "Location, test6",
+      isActive: true,
+      time: "12/12/2024",
+      images: imgTorneo,
+    },
+  ];
 
   useLayoutEffect(() => {
     const screenStats = window.screen.width;
@@ -85,6 +143,7 @@ const Stats = () => {
         },
       });
   }, []);
+
   return (
     <>
       <section
@@ -121,6 +180,10 @@ const Stats = () => {
       </section>
 
       <section
+        style={{
+          background:
+            "linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%)",
+        }}
         id="six_section"
         className="overflow-hidden relative bg-bluefausti w-fulL h-screen z-5 pt-10 pl-2 pr-1 2xl:pt-16"
       >
@@ -128,160 +191,17 @@ const Stats = () => {
           <h6 className="text-6xl font-title font-semibold text-white lg:text-7xl xl:pl-6 2xl:pl-8 2xl:text-8xl z-50">
             TORNEOS
           </h6>
-          <div id="line-tournament" className="h-[2px] w-[0%]  bg-white z-50"></div>
+          <div
+            id="line-tournament"
+            className="h-[2px] w-[0%] bg-white z-50"
+          ></div>
           <ul
             id="tournaments"
-            className="h-[600px]  rounded-lg pr-3 pt-2 pb-6 overflow-y-scroll flex flex-col gap-6 z-50 mt-7  lg:flex-row lg:justify-between  lg:px-[5%] lg:mt-12 2xl:px-[6%]"
+            className="h-[600px] rounded-lg pr-3 pt-2 pb-6 overflow-y-scroll grid grid-cols-1 gap-6 z-50 mt-4 lg:grid-cols-2   lg:mt-12  lg:w-full  place-items-center lg:mx-auto text-balance"
           >
-            <div className="flex flex-col gap-6 lg:gap-5 2xl:gap-7">
-              <li
-                id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[470px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white 2xl:max-h-[150px] 2xl:max-w-[550px]"
-              >
-                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3 2xl:text-5xl">
-                  01
-                </div>
-                <picture className="w-[30%]  max-w-[200px]">
-                  <img
-                    className="rounded-xl w-full h-full object-cover"
-                    src={imgTorneo}
-                    alt=""
-                  />
-                </picture>
-                <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
-                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
-                    LOREM IMPSUM DOLOR SIT AMET
-                  </h6>
-                  <p className="text-lg font-medium text-stone-300 2xl:text-xl 2xl:mt-2">
-                    BARCELONA 
-                  </p>
-                  <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
-                </div>
-              </li>
-              <li
-                id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[470px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white 2xl:max-h-[150px] 2xl:max-w-[550px]"
-              >
-                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3 2xl:text-5xl">
-                  02
-                </div>
-                <picture className="w-[30%]  max-w-[200px]">
-                  <img
-                    className="rounded-xl w-full h-full object-cover"
-                    src={imgTorneo}
-                    alt=""
-                  />
-                </picture>
-                <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
-                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
-                    LOREM IMPSUM DOLOR SIT AMET
-                  </h6>
-                  <p className="text-lg font-medium text-stone-300 2xl:text-xl 2xl:mt-2">
-                    BARCELONA 
-                  </p>
-                  <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
-                </div>
-              </li>
-              <li
-                id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[470px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white 2xl:max-h-[150px] 2xl:max-w-[550px]"
-              >
-                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3 2xl:text-5xl">
-                  03
-                </div>
-                <picture className="w-[30%]  max-w-[200px]">
-                  <img
-                    className="rounded-xl w-full h-full object-cover"
-                    src={imgTorneo}
-                    alt=""
-                  />
-                </picture>
-                <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
-                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
-                    LOREM IMPSUM DOLOR SIT AMET
-                  </h6>
-                  <p className="text-lg font-medium text-stone-300 2xl:text-xl 2xl:mt-2">
-                    BARCELONA 
-                  </p>
-                  <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
-                </div>
-              </li>
-            </div>
-
-            <div className=" flex flex-col gap-6 lg:gap-5 2xl:gap-7 ">
-            <li
-                id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[470px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white 2xl:max-h-[150px] 2xl:max-w-[550px]"
-              >
-                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3 2xl:text-5xl">
-                  04
-                </div>
-                <picture className="w-[30%]  max-w-[200px]">
-                  <img
-                    className="rounded-xl w-full h-full object-cover"
-                    src={imgTorneo}
-                    alt=""
-                  />
-                </picture>
-                <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
-                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
-                    LOREM IMPSUM DOLOR SIT AMET
-                  </h6>
-                  <p className="text-lg font-medium text-stone-300 2xl:text-xl 2xl:mt-2">
-                    BARCELONA 
-                  </p>
-                  <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
-                </div>
-              </li>
-              <li
-                id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[470px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white 2xl:max-h-[150px] 2xl:max-w-[550px]"
-              >
-                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3 2xl:text-5xl">
-                  05
-                </div>
-                <picture className="w-[30%]  max-w-[200px]">
-                  <img
-                    className="rounded-xl w-full h-full object-cover"
-                    src={imgTorneo}
-                    alt=""
-                  />
-                </picture>
-                <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
-                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
-                    LOREM IMPSUM DOLOR SIT AMET
-                  </h6>
-                  <p className="text-lg font-medium text-stone-300 2xl:text-xl 2xl:mt-2">
-                    BARCELONA 
-                  </p>
-                  <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
-                </div>
-              </li>
-              <li
-                id="tournament"
-                className="flex rounded-xl  pr-2 max-w-[470px] min-h-[90px] max-h-[110px] shadow-lg shadow-gray-700 lg:shadow-xl border border-white 2xl:max-h-[150px] 2xl:max-w-[550px]"
-              >
-                <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl text-white font-title3 2xl:text-5xl">
-                  06
-                </div>
-                <picture className="w-[30%]  max-w-[200px]">
-                  <img
-                    className="rounded-xl w-full h-full object-cover"
-                    src={imgTorneo}
-                    alt=""
-                  />
-                </picture>
-                <div className="pt-1  pb-1 pl-3 font-text2 flex flex-col  ">
-                  <h6 className="text-xl text-balance text-white font-medium leading-5  min-h-[40px] max-w-[80%] 2xl:text-2xl 2xl:leading-6">
-                    LOREM IMPSUM DOLOR SIT AMET
-                  </h6>
-                  <p className="text-lg font-medium text-stone-300 2xl:text-xl 2xl:mt-2">
-                    BARCELONA 
-                  </p>
-                  <p className="font-title3  text-bluefausti 2xl:text-lg 2xl:mt-2">11/12/2024</p>
-                </div>
-              </li>
-            </div>
+            {allTournaments?.map((tournament, i) => (
+              <CardTournament key={i} tournament={tournament} index={i + 1} />
+            ))}
           </ul>
         </article>
       </section>

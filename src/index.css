@@ -365,12 +365,12 @@
   backdrop-filter: blur( 2px );
   -webkit-backdrop-filter: blur( 2px ); 
 }
-#palmares, #tournament {
+#palmares  {
   background: rgba( 255, 255, 255, 0.3);
   backdrop-filter: blur( 2px );
   -webkit-backdrop-filter: blur( 2px );
 }
- #news-box {
+ #news-box, #tournament {
   background: rgba( 255, 255, 255, 0.1);
   backdrop-filter: blur( 1px );
   -webkit-backdrop-filter: blur( 1px );
