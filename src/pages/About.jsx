@@ -42,7 +42,7 @@ const About = () => {
         })
         .to("#line-about", {
           opacity: 1,
-          width: screen > 700 ? "95%" : "85%",
+          width: screen > 700 ? "85%" : "85%",
           duration: 2,
           scrollTrigger: {
             trigger: "#second_section",
@@ -132,7 +132,7 @@ const About = () => {
           ></div>
           <p
             id="p-about"
-            className="relative text-stone-400 w-[86%] mt-[85px] opacity-0 text-base  font-text2 xl:text-lg xl:w-[90%] 2xl:mt-[90px] 2xl:text-[1.4rem] 2xl:w-full   "
+            className="relative text-stone-400 w-[86%] mt-[85px] opacity-0 text-base  font-text2 xl:text-lg xl:w-[90%]  2xl:mt-[95px] 2xl:text-[1.4rem] 2xl:w-full   "
           >
             En plena pandemia, el 30 de mayo de 2020 aprendí a mover las piezas
             y, desde entonces, el ajedrez ha sido mucho más que un simple juego
@@ -142,12 +142,12 @@ const About = () => {
           </p>
           <div
             id="btn-about_box"
-            className="flex -inset-1 -mt-[20px] ml-[60px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-400 xl:text-base xl:gap-8 2xl:gap-14  2xl:text-xl opacity-0 "
+            className="flex -inset-1 -mt-[20px] ml-[60px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-400 xl:text-base xl:gap-8 2xl:gap-14 2xl:-mt-[10px]  2xl:text-xl opacity-0 "
           >
             <button
               /* id="news-box" */
               onClick={() => handleSectionChange("Historia")}
-              className=" border-[1px] rounded-3xl bg-bluefausti  lg:bg-bluefausti border-stone-400  px-4 py-[px] flex justify-between items-center  lg:hover:border-white duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
+              className=" border-[1px] rounded-3xl bg-bluefausti  lg:bg-bluefausti border-stone-400  px-4 py-[px] flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
             >
               HISTORIA
               <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
@@ -155,7 +155,7 @@ const About = () => {
             <button
               id={windWidth < 700 ? "news-box" : ""}
               onClick={() => handleSectionChange("Logros")}
-              className=" border-[1px] rounded-3xl border-stone-400  px-4 py-[px]  flex justify-between items-center  lg:hover:border-white duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
+              className=" border-[1px] rounded-3xl border-stone-400  px-4 py-[px]  flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
             >
               LOGROS
               <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
@@ -203,7 +203,7 @@ const About = () => {
           <div className="flex -inset-1 mt-[36px]   items-center gap-6 font-title2 text-lg font-semibold text-stone-400 xl:text-base xl:gap-8 2xl:gap-14  2xl:text-xl ">
             <button
               onClick={() => handleSectionChange("sobreMi2")}
-              className=" border-[1px] rounded-3xl  bg-bluefausti border-stone-400  px-4  flex justify-between items-center  lg:lg:hover:border-white duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
+              className=" border-[1px] rounded-3xl  bg-bluefausti border-stone-400  px-4  flex justify-between items-center  lg:lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
             >
               SOBRE MI
               <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
@@ -211,7 +211,7 @@ const About = () => {
             <button
               id="news-box"
               onClick={() => handleSectionChange("Logros")}
-              className=" border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center  lg:hover:border-white duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
+              className=" border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
             >
               LOGROS
               <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
@@ -242,7 +242,7 @@ const About = () => {
           <div className="flex -inset-1 mt-[36px]   items-center gap-6 font-title2 text-lg font-semibold text-stone-400 xl:text-base xl:gap-8 2xl:gap-14  2xl:text-xl ">
             <button
               onClick={() => handleSectionChange("Historia")}
-              className=" border-[1px] rounded-3xl bg-bluefausti border-stone-400  px-4  flex justify-between items-center  lg:hover:border-white duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
+              className=" border-[1px] rounded-3xl bg-bluefausti border-stone-400  px-4  flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
             >
               HISTORIA
               <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
@@ -250,7 +250,7 @@ const About = () => {
             <button
               id="news-box"
               onClick={() => handleSectionChange("sobreMi2")}
-              className=" border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center  lg:hover:border-white duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
+              className=" border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
             >
               SOBRE MI
               <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
@@ -284,7 +284,7 @@ const About = () => {
           <div className="flex -inset-1 mt-[36px]   items-center gap-6 font-title2 text-lg font-semibold text-stone-400 xl:text-base xl:gap-8 2xl:gap-14  2xl:text-xl ">
             <button
               onClick={() => handleSectionChange("Historia")}
-              className=" border-[1px] rounded-3xl bg-bluefausti border-stone-400  px-4  flex justify-between items-center  lg:hover:border-white duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
+              className=" border-[1px] rounded-3xl bg-bluefausti border-stone-400  px-4  flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
             >
               HISTORIA
               <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
@@ -292,7 +292,7 @@ const About = () => {
             <button
               id="news-box"
               onClick={() => handleSectionChange("Logros")}
-              className=" border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center  lg:hover:border-white duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
+              className=" border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
             >
               LOGROS
               <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
