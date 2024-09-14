@@ -205,8 +205,8 @@ const Games = () => {
           </section>
         </div>
 
-        <section className="w-full flex flex-col items-start  mt-12 lg:w-auto  xl:mt-20 2xl:mt-24  z-50  ">
-          <ul className="w-[90%] px-3 z-50 text-lg font-title text-stone-300 font-normal  flex flex-col justify-center items-center gap-2 lg:gap-4 lg:w-auto 2xl:text-[1.3rem] 2xl:gap-6 ">
+        <section className="w-full flex flex-col items-start  mt-12 lg:w-auto  xl:mt-20 2xl:mt-24  z-50   lg:py-4 lg:px-3">
+          <ul className="w-[90%] px-3 z-50 text-lg font-title text-stone-300 font-normal flex flex-col justify-center items-center lg:items-start gap-2 lg:gap-4  lg:w-auto 2xl:text-[1.3rem] 2xl:gap-6 ">
             {allGames?.map((partida, i) => {
               return (
                 <li

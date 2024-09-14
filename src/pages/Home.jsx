@@ -61,7 +61,7 @@ const Home = () => {
                 >
                   <li
                     id="news-box"
-                    className="border bg-zinc-800 rounded-full border-stone-600  py-[2.3px] cursor-pointer flex items-start gap-2 justify-start w-[145px]"
+                    className="border bg-zinc-800 rounded-full border-stone-600  py-[2.3px] cursor-pointer flex items-start gap-3 justify-start w-[135px]"
                   >
                     <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full bg-zinc-800 text-lightbrown h-7 w-7 text-xl "></i>
                     Torneos
@@ -69,7 +69,7 @@ const Home = () => {
                   <Link /* to="/games" */>
                     <li
                       id="news-box"
-                      className="border bg-zinc-800 rounded-full border-stone-600  py-[2.3px] cursor-pointer flex items-start gap-2 justify-start w-[145px]"
+                      className="border bg-zinc-800 rounded-full border-stone-600  py-[2.3px] cursor-pointer flex items-start gap-3 justify-start w-[135px]"
                     >
                       <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full bg-zinc-800 text-lightbrown h-7 w-7 text-xl "></i>
                       Partidas
@@ -78,7 +78,7 @@ const Home = () => {
                   <Link to={"/news"}>
                     <li
                       id="news-box"
-                      className="border bg-zinc-800 rounded-full border-stone-600  py-[2.3px] cursor-pointer flex items-start gap-2 justify-start w-[145px] "
+                      className="border bg-zinc-800 rounded-full border-stone-600  py-[2.3px] cursor-pointer flex items-start gap-3 justify-start w-[135px] "
                     >
                       <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full bg-zinc-800 text-lightbrown h-7 w-7 text-xl "></i>
                       Noticias
@@ -87,7 +87,7 @@ const Home = () => {
                   <Link to={"/courses"}>
                     <li
                       id="news-box"
-                      className="border bg-zinc-800 rounded-full border-stone-600  py-[2.3px] cursor-pointer flex items-start gap-2 justify-start w-[145px]"
+                      className="border bg-zinc-800 rounded-full border-stone-600  py-[2.3px] cursor-pointer flex items-start gap-3 justify-start w-[135px]"
                     >
                       <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full bg-zinc-800 text-lightbrown h-7 w-7 text-xl "></i>
                       Cursos
@@ -95,7 +95,7 @@ const Home = () => {
                   </Link>
                   <li
                     id="news-box"
-                    className="border bg-zinc-800 rounded-full border-stone-600  py-[2.3px] cursor-pointer flex items-start gap-2 justify-start w-[145px]"
+                    className="border bg-zinc-800 rounded-full border-stone-600  py-[2.3px] cursor-pointer flex items-start gap-3 justify-start w-[135px]"
                   >
                     <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full bg-zinc-800 text-lightbrown h-7 w-7 text-xl "></i>
                     Contacto
