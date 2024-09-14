@@ -25,7 +25,7 @@ const Home = () => {
               { WebkitTextStroke: "0.5px"}
             } */
               id="title-name"
-              className="font-text2 tracking-wider text-center  text-[4rem] leading-[5.4rem] font-bold text-gray-200 z-50 flex flex-col  justify-center items-center md:items-center gap-3 px-3 py-3  bg-clip-text text-transparent bg-gradient-to-br from-stone-500  via-stone-400 to-stone-700 lg:flex-row  md:text-[4.5rem] xl:min-h-[200px] xl:gap-8 2xl:gap-12 xl:text-[6rem] 2xl:text-[7.5rem]"
+              className="font-text2 tracking-wider text-center  text-[4rem] leading-[5.4rem] font-bold text-gray-200 z-50 flex flex-col  justify-center items-center md:items-center gap-3 px-3 py-3  bg-clip-text text-transparent bg-gradient-to-br from-stone-500  via-stone-400 to-stone-700 lg:flex-row-reverse  md:text-[4.5rem] xl:min-h-[200px] xl:gap-8 2xl:gap-12 xl:text-[6rem] 2xl:text-[7.5rem]"
             >
               {" "}
               FAUSTINO ORO
@@ -106,46 +106,46 @@ const Home = () => {
               <ul className="flex  gap-3 sm:gap-14 xl:gap-9 text-lg 2xl:text-xl 2xl:gap-10 text-stone-400">
                 <li
                   id="news-box"
-                  className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500 "
+                  className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-white duration-500 "
                 >
                   Torneos
-                  <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-stone-500  text-xl 2xl:text-2xl "></i>
+                  <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-stone-500 hover:text-lightbrown  text-xl 2xl:text-2xl   "></i>
                 </li>
                 <Link /* to="/games" */>
                   <li
                     id="news-box"
-                    className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500 "
+                    className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-white duration-500 "
                   >
                     Partidas
-                    <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-stone-500  text-xl 2xl:text-2xl "></i>
+                    <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-stone-500 hover:text-lightbrown  text-xl 2xl:text-2xl   "></i>
                   </li>
                 </Link>
                 <Link to={"/news"}>
                   <li
                     id="news-box"
-                    className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500 "
+                    className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-white duration-500 "
                   >
                     Noticias
-                    <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-stone-500  text-xl 2xl:text-2xl "></i>
+                    <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-stone-500 hover:text-lightbrown  text-xl 2xl:text-2xl   "></i>
                   </li>
                 </Link>
 
                 <Link to={"/courses"}>
                   <li
                     id="news-box"
-                    className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500 "
+                    className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-white duration-500 "
                   >
                     Cursos
-                    <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-stone-500  text-xl 2xl:text-2xl "></i>
+                    <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-stone-500 hover:text-lightbrown  text-xl 2xl:text-2xl   "></i>
                   </li>
                 </Link>
 
                 <li
                   id="news-box"
-                  className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500 "
+                  className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-white duration-500 "
                 >
                   Contacto
-                  <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-stone-500  text-xl 2xl:text-2xl "></i>
+                  <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-stone-500 hover:text-lightbrown  text-xl 2xl:text-2xl  "></i>
                 </li>
               </ul>
             )}
