@@ -196,7 +196,7 @@
   
 }
 #about-history::-webkit-scrollbar-thumb {
-  background-color: #3f4864;
+  background-color: #41444e;
   border-radius: 6px;
 }
 #tournaments::-webkit-scrollbar {
@@ -207,7 +207,7 @@
   
 }
 #tournaments::-webkit-scrollbar-thumb {
-  background-color: #3f4864;
+  background-color: #ced2df;
   border-radius: 6px;
 }
 /* CONTACTFORM */

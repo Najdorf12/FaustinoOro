@@ -197,7 +197,7 @@ const Stats = () => {
           ></div>
           <ul
             id="tournaments"
-            className="h-[600px] rounded-lg pr-3 pt-2 pb-6 overflow-y-scroll grid grid-cols-1 gap-6 z-50 mt-4 lg:grid-cols-2   lg:mt-12  lg:w-full  place-items-center lg:mx-auto text-balance"
+            className="rounded-lg pr-3 pt-2 pb-6 overflow-y-scroll grid grid-cols-1 gap-6 z-50 mt-3 lg:grid-cols-2   lg:mt-12  lg:w-full xl:gap-10  place-items-center lg:mx-auto"
           >
             {allTournaments?.map((tournament, i) => (
               <CardTournament key={i} tournament={tournament} index={i + 1} />
