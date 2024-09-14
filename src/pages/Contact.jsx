@@ -29,7 +29,7 @@ const Contact = () => {
         width: "90%",
         duration: 2,
         scrollTrigger: {
-          trigger: "#contact2_section",
+          trigger: "#games_section",
           start: "20% bottom",
           end: "top top",
           scrub: true,
