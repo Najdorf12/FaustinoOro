@@ -55,50 +55,50 @@ const Home = () => {
                   <div id="bar6" className="bars"></div>
                 </label>
                 <ul
-                  className={`flex flex-col items-end gap-12 mt-2 text-lg text-stone-400 font-text2  menu ${
+                  className={`flex flex-col items-end gap-12 mt-2 text-lg text-stone-300 font-text2  menu ${
                     isMenuOpen ? "menu-open" : ""
                   }`}
                 >
                   <li
                     id="news-box"
-                    className="border bg-zinc-800 rounded-full border-stone-600  py-[2.3px] cursor-pointer flex items-start gap-3 justify-start w-[135px]"
+                    className="border bg-zinc-800 rounded-full border-stone-400  cursor-pointer flex items-center  justify-evenly w-[135px]"
                   >
-                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full bg-zinc-800 text-lightbrown h-7 w-7 text-xl "></i>
                     Torneos
+                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-stone-400 text-xl "></i>
                   </li>
                   <Link /* to="/games" */>
                     <li
                       id="news-box"
-                      className="border bg-zinc-800 rounded-full border-stone-600  py-[2.3px] cursor-pointer flex items-start gap-3 justify-start w-[135px]"
+                      className="border bg-zinc-800 rounded-full border-stone-400  cursor-pointer flex items-center  justify-evenly w-[135px]"
                     >
-                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full bg-zinc-800 text-lightbrown h-7 w-7 text-xl "></i>
                       Partidas
+                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-stone-400 text-xl "></i>
                     </li>
                   </Link>
                   <Link to={"/news"}>
                     <li
                       id="news-box"
-                      className="border bg-zinc-800 rounded-full border-stone-600  py-[2.3px] cursor-pointer flex items-start gap-3 justify-start w-[135px] "
+                      className="border bg-zinc-800 rounded-full border-stone-400  cursor-pointer flex items-center  justify-evenly w-[135px] "
                     >
-                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full bg-zinc-800 text-lightbrown h-7 w-7 text-xl "></i>
                       Noticias
+                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-stone-400 text-xl "></i>
                     </li>
                   </Link>
                   <Link to={"/courses"}>
                     <li
                       id="news-box"
-                      className="border bg-zinc-800 rounded-full border-stone-600  py-[2.3px] cursor-pointer flex items-start gap-3 justify-start w-[135px]"
+                      className="border bg-zinc-800 rounded-full border-stone-400  cursor-pointer flex items-center  justify-evenly w-[135px]"
                     >
-                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full bg-zinc-800 text-lightbrown h-7 w-7 text-xl "></i>
                       Cursos
+                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-stone-400 text-xl "></i>
                     </li>
                   </Link>
                   <li
                     id="news-box"
-                    className="border bg-zinc-800 rounded-full border-stone-600  py-[2.3px] cursor-pointer flex items-start gap-3 justify-start w-[135px]"
+                    className="border bg-zinc-800 rounded-full border-stone-400  cursor-pointer flex items-center  justify-evenly w-[135px]"
                   >
-                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full bg-zinc-800 text-lightbrown h-7 w-7 text-xl "></i>
                     Contacto
+                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-stone-400 text-xl "></i>
                   </li>
                 </ul>
               </section>
@@ -106,46 +106,46 @@ const Home = () => {
               <ul className="flex  gap-3 sm:gap-14 xl:gap-9 text-lg 2xl:text-xl 2xl:gap-10 text-stone-400">
                 <li
                   id="news-box"
-                  className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]  cursor-pointer flex justify-start items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500 "
+                  className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500 "
                 >
-                  <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full border border-stone-500 -ml-[1px] text-lightbrown h-7 w-7 2xl:w-8 2xl:h-8 text-xl 2xl:text-2xl "></i>
                   Torneos
+                  <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-stone-500  text-xl 2xl:text-2xl "></i>
                 </li>
                 <Link /* to="/games" */>
                   <li
                     id="news-box"
-                    className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]   cursor-pointer flex justify-start items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500"
+                    className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500 "
                   >
-                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full border border-stone-500 -ml-[1px] text-lightbrown h-7 w-7 2xl:w-8 2xl:h-8 text-xl 2xl:text-2xl "></i>
                     Partidas
+                    <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-stone-500  text-xl 2xl:text-2xl "></i>
                   </li>
                 </Link>
                 <Link to={"/news"}>
                   <li
                     id="news-box"
-                    className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]   cursor-pointer flex justify-start items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500"
+                    className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500 "
                   >
-                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full border border-stone-500 -ml-[1px] text-lightbrown h-7 w-7 2xl:w-8 2xl:h-8 text-xl 2xl:text-2xl "></i>
                     Noticias
+                    <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-stone-500  text-xl 2xl:text-2xl "></i>
                   </li>
                 </Link>
 
                 <Link to={"/courses"}>
                   <li
                     id="news-box"
-                    className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]   cursor-pointer flex justify-start items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500"
+                    className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500 "
                   >
-                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full border border-stone-500 -ml-[1px] text-lightbrown h-7 w-7 2xl:w-8 2xl:h-8 text-xl 2xl:text-2xl "></i>
                     Cursos
+                    <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-stone-500  text-xl 2xl:text-2xl "></i>
                   </li>
                 </Link>
 
                 <li
                   id="news-box"
-                  className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]   cursor-pointer flex justify-start items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500"
+                  className="rounded-full border border-stone-500 w-[140px] 2xl:w-[160px] py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:border-lightbrown hover:text-lightbrown duration-500 "
                 >
-                  <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center rounded-full border border-stone-500 -ml-[1px] text-lightbrown h-7 w-7 2xl:w-8 2xl:h-8 text-xl 2xl:text-2xl "></i>
                   Contacto
+                  <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-stone-500  text-xl 2xl:text-2xl "></i>
                 </li>
               </ul>
             )}
