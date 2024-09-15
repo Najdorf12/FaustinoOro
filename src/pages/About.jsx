@@ -128,7 +128,7 @@ const About = () => {
           </h3>
           <div
             id="line-about"
-            className="w-[0%] h-[2px]  bg-gray-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"
+            className="w-[0%] h-[2px]  bg-stone-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"
           ></div>
           <p
             id="p-about"
@@ -226,7 +226,7 @@ const About = () => {
             <h3 className="text-white font-medium text-5xl 2xl:pr-2 2xl:text-6xl ">
               LOGROS
             </h3>
-            <ul className="relative w-full mt-6  flex flex-col-reverse gap-2 font-text2 xl:mt-[24px]  2xl:text-[1.3rem] text-gray-400  text-start">
+            <ul className="relative w-full mt-6  flex flex-col-reverse gap-2 font-text2 xl:mt-[24px]  2xl:text-[1.3rem] text-gray-400 text-start">
               {palmares.map((item, i) => (
                 <li
                   id="news-box"
@@ -269,7 +269,7 @@ const About = () => {
           </h3>
           <div
             id="line-about"
-            className="w-[0%] h-[2px]  bg-gray-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"
+            className="w-[0%] h-[2px]  bg-stone-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"
           ></div>
           <p
             id="sobreMi2-text"
@@ -307,21 +307,21 @@ const About = () => {
     <>
       <section
         id="second_section"
-         style={{
+          style={{
           background:
             "linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%)",
-        }} 
-        /*  style={{backgroundImage: "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)" }}  */
-        /* style={{
+        }}  
+         /*  style={{backgroundImage: "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)" }}   */
+       /*    style={{
           backgroundImage:
             "linear-gradient(to left top, #EAEAEA, #DBDBDB, #F2F2F2, #3f4864)",
-        }} */
+        }}   */
         className="w-full h-screen bg-zinc-800 flex lg:justify-end font-title overflow-hidden relative"
       >
         <article className="relative  pt-24 lg:pt-0 px-3 pl-[4%] sm:pl-[6%] lg:pl-0 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[6%] xl:max-w-[650px]  2xl:mr-[12%]   2xl:max-w-[750px] text-balance ">
           <h5
             id="about-text"
-            className="text-xl font-title4 text-gray-500 xl:text-2xl 2xl:text-3xl font-medium opacity-0 lg:text-stone-500"
+            className="text-xl font-title4 text-stone-400 xl:text-2xl 2xl:text-3xl font-medium opacity-0 lg:text-stone-500"
           >
             Sobre Mi
           </h5>

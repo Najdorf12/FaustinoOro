@@ -183,9 +183,9 @@ const Stats = () => {
         style={{
           background:
             "linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%)",
-        }}
+        }} 
         id="six_section"
-        className="overflow-hidden relative bg-bluefausti w-fulL h-screen z-5 pt-10 pl-2 pr-1 2xl:pt-16"
+        className="overflow-hidden relative bg-gray-300 w-fulL h-screen z-5 pt-10 pl-2 pr-1 2xl:pt-16"
       >
         <article className="flex flex-col gap-6">
           <h6 className="text-6xl font-title font-semibold text-white lg:text-7xl xl:pl-6 2xl:pl-8 2xl:text-8xl z-50">
@@ -206,93 +206,18 @@ const Stats = () => {
         </article>
       </section>
 
-      <div className="w-full h-[10dvh] z-50 bg-zinc-900"></div>
+       <div className="w-full h-[10dvh] z-10 bg-gray-300"></div> 
 
       <section
         id="seven_section"
-        className=" w-full h-screen overflow-hidden lg:flex lg:flex-row z-50"
+        className="relative w-full h-screen overflow-hidden bg-gray-300"
+     /*   style={{
+          background:
+            "linear-gradient(45deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%)",
+        }}  */
       >
-        <div className=" h-screen w-full  lg:w-1/2">
-          <div className="absolute h-full w-full z-50"></div>
-
-          <div className="w-full h-[53.5%]  py-3 flex justify-center items-center gap-x-7 flex-wrap font-text2 px-1 lg:gap-x-1 xl:gap-x-3 xl:h-[40%] 2xl:h-[35%] 2xl:gap-x-10">
-            <div className="card bg-bluefausti w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50">
-              <img className="w-[50px]" src={bullet} alt="" />
-              <h6 className="text-2xl text-white">Lorem</h6>
-              <p className="text-center text-base px-2 leading-4 text-gray-400">
-                Some random text lorem.
-              </p>
-              <button className="text-center  py-[1.5px] px-4 mt-2 text-bluefausti text-base rounded-md bg-gray-300">
-                Button
-              </button>
-            </div>
-            <div className="card bg-bluefausti w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50">
-              <svg
-                height="48"
-                viewBox="0 0 48 48"
-                width="48"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="white"
-              >
-                <path d="M0 0h48v48h-48z" fill="none" />
-                <path d="M30 2h-12v4h12v-4zm-8 26h4v-12h-4v12zm16.05-13.23l2.85-2.85c-.86-1.03-1.8-1.97-2.83-2.83l-2.85 2.85c-3.07-2.46-6.98-3.94-11.23-3.94-9.95 0-17.99 8.06-17.99 18s8.04 18 17.99 18 18.01-8.06 18.01-18c0-4.25-1.48-8.15-3.95-11.23zm-14.05 25.23c-7.73 0-14-6.27-14-14s6.27-14 14-14 14 6.27 14 14-6.27 14-14 14z" />
-              </svg>
-              <h6 className="text-2xl text-white">Lorem</h6>
-              <p className="text-center text-base px-2 leading-4 text-gray-400">
-                Some random text lorem.
-              </p>
-              <button className="text-center  py-[1.5px] px-4 mt-2 text-bluefausti text-base rounded-md bg-gray-300">
-                Button
-              </button>
-            </div>
-            <div className="card bg-bluefausti w-[150px] min-h-[200px] flex items-center gap-2 pt-[10px] z-50 px-2">
-              <img className="w-[55px]" src={flash} alt="" />
-              <h6 className="text-2xl text-white">Lorem</h6>
-              <p className="text-center text-base px-2 leading-4 text-gray-400">
-                Some random text lorem.
-              </p>
-              <button className="text-center  py-[1.5px] px-4 mt-2 text-bluefausti text-base rounded-md bg-gray-300">
-                Button
-              </button>
-            </div>
-            <div className="card bg-bluefausti w-[150px] min-h-[200px] flex items-center gap-2 pt-4 px-2 z-50 ">
-              <img className="w-[46px]" src={classicalchess} alt="" />
-              <h6 className="mt-[4px] text-2xl text-white">Lorem</h6>
-              <p className="text-center text-base px-2 leading-4 text-gray-400">
-                Some random text lorem.
-              </p>
-              <button className="text-center  py-[1.5px] px-4 mt-2 text-bluefausti text-base rounded-md bg-gray-300">
-                Button
-              </button>
-            </div>
-          </div>
-          <div
-            id="stats-container"
-            /*   style={{
-              backgroundImage:
-                "linear-gradient(to left bottom, #EAEAEA, #DBDBDB, #F2F2F2, #3f4864)",
-            }}  */
-            className="relative w-full h-[46.5%] bg-gray-300 xl:h-[60%] xl:pl-[7%] 2xl:h-[65%] overflow-y-scroll pt-[4%] lg:overflow-y-hidden lg:pt-[3%] z-50 lg:z-10"
-          ></div>
-        </div>
-
-        <div className="hidden bg-zinc-900 lg:flex lg:flex-col lg:w-1/2 lg:h-screen relative  xl:z-20">
-          <div className="w-full bg-gray-300 lg:h-[40%] 2xl:h-[35%] z-[150] xl:z-20"></div>
-          <div className="w-full  lg:h-[60%] 2xl:h-[65%] flex flex-col items-center justify-center gap-6 2xl:gap-8">
-            <p className="text-2xl 2xl:text-4xl font-title text-white  font-bold w-[80%]">
-              EL AJEDREZ ES ALGO MÁS QUE UN JUEGO. ES UNA DIVERSIÓN INTELECTUAL
-              QUE TIENE ALGO DE ARTE Y MUCHO DE CIENCIA.
-              <span className="text-bluefausti ml-2">
-                ES ADEMAS, UN MEDIO DE ACERCAMIENTO SOCIAL E INTELECTUAL.
-              </span>
-            </p>
-
-            <legend className="w-[80%] xl:text-xl 2xl:text-3xl font-title2 text-white0 flex flex-col items-end xl:gap-3 2xl:gap-6">
-              <div className="w-full bg-white h-[1px] "></div>
-              José Raúl Capablanca
-            </legend>
-          </div>
-        </div>
+       
+          <div  id="" className="absolute w-1/2 h-screen bg-gray-300 "></div>
       </section>
     </>
   );

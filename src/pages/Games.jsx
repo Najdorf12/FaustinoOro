@@ -162,7 +162,7 @@ const Games = () => {
           </p>
           <section className="chessboard-wrapper relative  max-w-[400px] 2xl:max-w-[500px] mt-14  ">
             <div id="chessboard-container" className="z-50 w-full relative">
-              <div className="font-text2 absolute z-50 -top-7 text-base text-stone-600 flex justify-center items-center gap-2">
+              <div className="font-text2 absolute z-50 -top-7 text-base text-stone-500 md:text-stone-600 flex justify-center items-center gap-2">
                 <span className="w-4 h-4 rounded-full border border-white"></span>
                 {selectedGame
                   ? selectedGame.black
@@ -170,7 +170,7 @@ const Games = () => {
                   ? allGames[0].black
                   : "No hay partidas disponibles"}
               </div>
-              <div className="font-text2 absolute z-50 bottom-[5.5rem] right-0 text-base text-stone-600 flex justify-center items-center gap-2 ">
+              <div className="font-text2 absolute z-50 bottom-[5.5rem] right-0 text-base text-stone-500 md:text-stone-600 flex justify-center items-center gap-2 ">
                 <span className="w-4 h-4 rounded-full bg-white"></span>
                 {selectedGame
                   ? selectedGame.white
