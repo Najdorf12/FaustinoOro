@@ -141,7 +141,31 @@ const Stats = () => {
           end: "top top",
           scrub: true,
         },
-      });
+      }).to("#box-stats", {
+        y: "-200px",
+        x:"-10px",
+        rotate: "120deg",
+        stagger: 0.06,
+        scrollTrigger: {
+          trigger: "#box-stats_wrapper",
+          start: "50% bottom",
+          end: "60% 20%",
+          scrub: true,
+          markers:true
+        },
+      }).to("#box-stats2", {
+        y: "-200px",
+        x:"30px",
+        rotate: "120deg",
+        stagger: 0.06,
+        scrollTrigger: {
+          trigger: "#box-stats_wrapper",
+          start: "50% bottom",
+          end: "60% 20%",
+          scrub: true,
+          
+        },
+      })
   }, []);
 
   return (
@@ -183,7 +207,7 @@ const Stats = () => {
         style={{
           background:
             "linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%)",
-        }} 
+        }}
         id="six_section"
         className="overflow-hidden relative bg-gray-300 w-fulL h-screen z-5 pt-10 pl-2 pr-1 2xl:pt-16"
       >
@@ -206,18 +230,71 @@ const Stats = () => {
         </article>
       </section>
 
-       <div className="w-full h-[10dvh] z-10 bg-gray-300"></div> 
+      <div className="w-full h-[10dvh] z-10 bg-gray-300"></div>
 
       <section
         id="seven_section"
-        className="relative w-full h-screen overflow-hidden bg-gray-300"
-     /*   style={{
+        className="relative w-full h-screen overflow-hidden bg-gray-300  flex  items-end"
+        /*   style={{
           background:
             "linear-gradient(45deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%)",
         }}  */
       >
-       
-          <div  id="" className="absolute w-1/2 h-screen bg-gray-300 "></div>
+        <div
+          id="box-stats_wrapper"
+          className=" w-1/2  flex justify-start items-end "
+        >
+          <section>
+            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
+            <div id="box-stats" className="w-20 h-20 bg-white"></div>
+            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
+            <div id="box-stats" className="w-20 h-20 bg-white"></div>
+            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
+            <div id="box-stats" className="w-20 h-20 bg-white"></div>
+            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
+            <div id="box-stats" className="w-20 h-20 bg-white"></div>
+            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
+          </section>
+        {/*   <section>
+            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
+            <div id="box-stats" className="w-20 h-20 bg-white"></div>
+            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
+            <div id="box-stats" className="w-20 h-20 bg-white"></div>
+            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
+            <div id="box-stats" className="w-20 h-20 bg-white"></div>
+            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
+            <div id="box-stats" className="w-20 h-20 bg-white"></div>
+          </section> */}
+        </div>
+
+        <div
+          id="box-stats_wrapper"
+          className=" w-1/2 z-50 flex justify-end items-end "
+        >
+          <section>
+            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
+            <div id="box-stats2" className="w-20 h-20 bg-zinc-800"></div>
+            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
+            <div id="box-stats2" className="w-20 h-20 bg-zinc-800"></div>
+            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
+            <div id="box-stats2" className="w-20 h-20 bg-zinc-800"></div>
+            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
+            <div id="box-stats2" className="w-20 h-20 bg-zinc-800"></div>
+          </section>
+          <section>
+            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
+            <div id="box-stats2" className="w-20 h-20 bg-zinc-800"></div>
+            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
+            <div id="box-stats2" className="w-20 h-20 bg-zinc-800"></div>
+            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
+            <div id="box-stats2" className="w-20 h-20 bg-zinc-800"></div>
+            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
+            <div id="box-stats2" className="w-20 h-20 bg-zinc-800"></div>
+            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
+          </section>
+        </div>
+
+        {/* <div  id="" className="absolute w-1/2 h-screen bg-gray-300 "></div> */}
       </section>
     </>
   );
