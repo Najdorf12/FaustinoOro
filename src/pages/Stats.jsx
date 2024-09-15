@@ -157,7 +157,7 @@ const Stats = () => {
         y: "-200px",
         x:"30px",
         rotate: "120deg",
-        stagger: 0.06,
+       /*  stagger: 0.06, */
         scrollTrigger: {
           trigger: "#box-stats_wrapper",
           start: "50% bottom",
