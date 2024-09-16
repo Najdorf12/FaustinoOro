@@ -233,9 +233,9 @@ const Stats = () => {
           className="w-full h-screen bg-zinc-300 absolute  inset-0"
         ></div>
 
-        <div className="absolute top-0 right-0  z-50 rounded-xl">
-          <h4 className="text-3xl font-text2  flex justify-center text-stone-500 mt-6">LOREM IMSUM </h4>
-        <section className="mt-12 flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] xl:max-w-[600px] 2xl:max-w-[700px] xl:gap-4">
+        <div className="absolute top-0 right-0  z-50 rounded-xl lg:left-0 md:flex md:flex-col md:justify-center md:items-center xl:items-start xl:pl-[3%]">
+          <h4 className="text-3xl font-text2  flex justify-center text-stone-500 mt-8 xl:text-4xl 2xl:text-5xl ">LOREM IMSUM </h4>
+        <section className="mt-8 flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] lg:mt-4 2xl:max-w-[700px] xl:gap-4">
           <article
             id="box-news"
             className="flex justify-center gap-2 xl:gap-3 "
@@ -255,7 +255,7 @@ const Stats = () => {
               </div>
             </picture>
             <div className="text-lightbrown text-balance relative w-[40%] text-2xl font-semibold font-title  rounded-2xl rounded-tl-none rounded-br-3xl border bg-zinc-700 border-lightbrown p-2 xl:text-3xl 2xl:text-4xl hover:scale-105 duration-500 ">
-              LOREM IMSUM DOLOR SIT AMET CONSECT ADIPSICING ELIT
+              LOREM IMSUM DOLOR SIT AMET CONSECT ADIPSIC ELIT
            
             </div>
           </article>
@@ -278,8 +278,9 @@ const Stats = () => {
             </div>
           </div>
         </section>
-        <p className="text-xl flex justify-center items-center text-balance px-3 text-center mt-16 text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis accusamus aliquam nesciunt dolores illum quos, mollitia aliquid et quasi.</p>
+        
         </div>
+        <p className="absolute bottom-12 right-0  w-[65%] text-xl flex justify-center items-center text-balance px-3 text-center  text-white md:max-w-[500px] lg:mr-[5%] 2xl:bottom-[20%] 2xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis accusamus aliquam nesciunt dolores illum quos, mollitia aliquid et quasi.</p>
       </section>
     </>
   );
