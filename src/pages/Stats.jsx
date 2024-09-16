@@ -1,8 +1,6 @@
 import SplitType from "split-type";
-import bullet from "../assets/bullet.png";
-import flash from "../assets/flash.png";
+
 import imgTorneo from "../assets/img-torneo.jpg";
-import classicalchess from "../assets/classicalchess.png";
 import CardTournament from "../components/CardTournament";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -10,6 +8,7 @@ import { useState, useEffect, useLayoutEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const Stats = () => {
+  const screenStats = window.innerWidth;
   const tl = gsap.timeline();
 
   const allTournaments = [
@@ -70,8 +69,6 @@ const Stats = () => {
   ];
 
   useLayoutEffect(() => {
-    const screenStats = window.screen.width;
-
     new ScrollTrigger({});
 
     const text = new SplitType("#split", { type: "chars" });
@@ -141,31 +138,22 @@ const Stats = () => {
           end: "top top",
           scrub: true,
         },
-      }).to("#box-stats", {
-        y: "-200px",
-        x:"-10px",
-        rotate: "120deg",
-        stagger: 0.06,
-        scrollTrigger: {
-          trigger: "#box-stats_wrapper",
-          start: "50% bottom",
-          end: "60% 20%",
-          scrub: true,
-          markers:true
-        },
-      }).to("#box-stats2", {
-        y: "-200px",
-        x:"30px",
-        rotate: "120deg",
-       /*  stagger: 0.06, */
-        scrollTrigger: {
-          trigger: "#box-stats_wrapper",
-          start: "50% bottom",
-          end: "60% 20%",
-          scrub: true,
-          
-        },
       })
+      /* .to("#box-stats", {
+        y:"100px",
+        x: "150px",
+        rotate: "180deg",
+        duration: 4,
+        stagger: 1,
+        ease: "power1",
+        scrollTrigger: {
+          trigger: "#box-stats",
+          start: screenStats > 1500 ? "300% bottom" : "150% bottom",
+          end: screenStats > 1500 ? "top 10%" : "330% top",
+          scrub: true,
+         
+        },
+      }) */
   }, []);
 
   return (
@@ -224,77 +212,74 @@ const Stats = () => {
             className="rounded-lg pr-3 pt-2 pb-6 overflow-y-scroll grid grid-cols-1 gap-6 z-50 mt-3 lg:grid-cols-2   lg:mt-12  lg:w-full xl:gap-10  place-items-center lg:mx-auto"
           >
             {allTournaments?.map((tournament, i) => (
-              <CardTournament key={i} tournament={tournament} index={i + 1} />
+              <CardTournament
+                screenStats={screenStats}
+                key={i}
+                tournament={tournament}
+                index={i + 1}
+              />
             ))}
           </ul>
         </article>
       </section>
 
-      <div className="w-full h-[10dvh] z-10 bg-gray-300"></div>
-
       <section
         id="seven_section"
-        className="relative w-full h-screen overflow-hidden bg-gray-300  flex  items-end"
-        /*   style={{
-          background:
-            "linear-gradient(45deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%)",
-        }}  */
+        className="relative w-full h-screen overflow-hidden bg-zinc-800  flex  items-end"
       >
         <div
+          style={{ clipPath: "polygon(0 0, 0% 100%, 100% 0)" }}
           id="box-stats_wrapper"
-          className=" w-1/2  flex justify-start items-end "
-        >
-          <section>
-            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
-            <div id="box-stats" className="w-20 h-20 bg-white"></div>
-            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
-            <div id="box-stats" className="w-20 h-20 bg-white"></div>
-            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
-            <div id="box-stats" className="w-20 h-20 bg-white"></div>
-            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
-            <div id="box-stats" className="w-20 h-20 bg-white"></div>
-            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
-          </section>
-        {/*   <section>
-            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
-            <div id="box-stats" className="w-20 h-20 bg-white"></div>
-            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
-            <div id="box-stats" className="w-20 h-20 bg-white"></div>
-            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
-            <div id="box-stats" className="w-20 h-20 bg-white"></div>
-            <div id="box-stats" className="w-20 h-20 bg-zinc-800"></div>
-            <div id="box-stats" className="w-20 h-20 bg-white"></div>
-          </section> */}
-        </div>
+          className="w-full h-screen bg-zinc-300 absolute  inset-0"
+        ></div>
 
-        <div
-          id="box-stats_wrapper"
-          className=" w-1/2 z-50 flex justify-end items-end "
-        >
-          <section>
-            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
-            <div id="box-stats2" className="w-20 h-20 bg-zinc-800"></div>
-            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
-            <div id="box-stats2" className="w-20 h-20 bg-zinc-800"></div>
-            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
-            <div id="box-stats2" className="w-20 h-20 bg-zinc-800"></div>
-            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
-            <div id="box-stats2" className="w-20 h-20 bg-zinc-800"></div>
-          </section>
-          <section>
-            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
-            <div id="box-stats2" className="w-20 h-20 bg-zinc-800"></div>
-            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
-            <div id="box-stats2" className="w-20 h-20 bg-zinc-800"></div>
-            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
-            <div id="box-stats2" className="w-20 h-20 bg-zinc-800"></div>
-            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
-            <div id="box-stats2" className="w-20 h-20 bg-zinc-800"></div>
-            <div id="box-stats2" className="w-20 h-20 bg-white"></div>
-          </section>
+        <div className="absolute top-0 right-0  z-50 rounded-xl">
+          <h4 className="text-3xl font-text2  flex justify-center text-stone-500 mt-6">LOREM IMSUM </h4>
+        <section className="mt-12 flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] xl:max-w-[600px] 2xl:max-w-[700px] xl:gap-4">
+          <article
+            id="box-news"
+            className="flex justify-center gap-2 xl:gap-3 "
+          >
+            <picture id="news-box"  className="relative w-[60%]  border border-stone-500 rounded-2xl">
+              {/* <img
+                className="w-full object-cover h-[300px] rounded-2xl rounded-br-none border border-stone-500 lg:h-[350px]"
+                 src={imgTorneo} 
+                alt=""
+              /> */}
+              <div
+                className="text-xl font-bold font-title text-bluefausti box-new absolute top-0 left-0
+          mt-3 ml-2 xl:text-3xl xl:ml-4 
+          "
+              >
+                LOREM <br /> IMPSUM <br /> DOLOR <br /> SIT <br /> AMET
+              </div>
+            </picture>
+            <div className="text-lightbrown text-balance relative w-[40%] text-2xl font-semibold font-title  rounded-2xl rounded-tl-none rounded-br-3xl border bg-zinc-700 border-lightbrown p-2 xl:text-3xl 2xl:text-4xl hover:scale-105 duration-500 ">
+              LOREM IMSUM DOLOR SIT AMET CONSECT ADIPSICING ELIT
+           
+            </div>
+          </article>
+          <div className="flex justify-center items-center gap-2 w-full font-text2 xl:gap-3">
+            <div className="w-1/2  h-[150px] rounded-2xl border border-white ">
+              <picture className="w-full">
+                <img
+                  className="w-full h-full object-cover rounded-2xl"
+                  src={imgTorneo}
+                  alt=""
+                />
+              </picture>
+            </div>
+            <div className="text-stone-500 relative w-1/2  h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 text-base  sm:text-lg hover:scale-105 duration-500">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              maxime!
+              <span className=" rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-stone-600">
+                <i class="bx bx-arrow-back rotate-[145deg]  text-lightbrown  text-3xl"></i>
+              </span>
+            </div>
+          </div>
+        </section>
+        <p className="text-xl flex justify-center items-center text-balance px-3 text-center mt-16 text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis accusamus aliquam nesciunt dolores illum quos, mollitia aliquid et quasi.</p>
         </div>
-
-        {/* <div  id="" className="absolute w-1/2 h-screen bg-gray-300 "></div> */}
       </section>
     </>
   );

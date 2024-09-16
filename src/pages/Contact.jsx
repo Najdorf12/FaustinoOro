@@ -52,11 +52,6 @@ const Contact = () => {
 
   return (
     <>
-      <div className="w-full z-50 lg:z-20 h-[10vh] lg:h-[20vh]  relative">
-        <div className="absolute h-full w-full  z-50"></div>
-      </div>
-     
-
       <section id="games_section" className="">
         <Games />
       </section>
