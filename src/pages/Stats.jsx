@@ -1,6 +1,7 @@
 import SplitType from "split-type";
 
 import imgTorneo from "../assets/img-torneo.jpg";
+import imgFausti from "../assets/fausti20.jpeg"
 import CardTournament from "../components/CardTournament";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -241,20 +242,20 @@ const Stats = () => {
             className="flex justify-center gap-2 xl:gap-3 "
           >
             <picture id="news-box"  className="relative w-[60%]  border border-stone-500 rounded-2xl">
-              {/* <img
+             {/*  <img
                 className="w-full object-cover h-[300px] rounded-2xl rounded-br-none border border-stone-500 lg:h-[350px]"
                  src={imgTorneo} 
                 alt=""
-              /> */}
+              />  */}
               <div
-                className="text-xl font-bold font-title text-bluefausti box-new absolute top-0 left-0
+                className="text-xl font-bold font-title text-stone-600 box-new absolute top-0 left-0
           mt-3 ml-2 xl:text-3xl xl:ml-4 
           "
               >
                 LOREM <br /> IMPSUM <br /> DOLOR <br /> SIT <br /> AMET
               </div>
             </picture>
-            <div className="text-lightbrown text-balance relative w-[40%] text-2xl font-semibold font-title  rounded-2xl rounded-tl-none rounded-br-3xl border bg-zinc-700 border-lightbrown p-2 xl:text-3xl 2xl:text-4xl hover:scale-105 duration-500 ">
+            <div className="text-white text-balance relative w-[40%] text-2xl font-semibold font-title  rounded-2xl rounded-tl-none rounded-br-3xl border bg-zinc-700 border-lightbrown p-2 xl:text-3xl 2xl:text-4xl hover:scale-105 duration-500 ">
               LOREM IMSUM DOLOR SIT AMET CONSECT ADIPSIC ELIT
            
             </div>
@@ -264,7 +265,7 @@ const Stats = () => {
               <picture className="w-full">
                 <img
                   className="w-full h-full object-cover rounded-2xl"
-                  src={imgTorneo}
+                  src={imgFausti}
                   alt=""
                 />
               </picture>

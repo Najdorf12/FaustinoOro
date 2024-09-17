@@ -178,6 +178,13 @@ const Games = () => {
               ? allGames[0].location
               : "No hay partidas disponibles"}
           </p>
+          <p className="text-base font-text2 text-stone-600 xl:text-lg">
+            {selectedGame
+              ? selectedGame.content
+              : allGames?.length > 0
+              ? allGames[0].content
+              : "No hay partidas disponibles"}
+          </p>
           <section className="chessboard-wrapper relative  max-w-[400px] 2xl:max-w-[500px] mt-14  ">
             <div id="chessboard-container" className="z-50 w-full relative">
               <div className="font-text2 absolute z-50 -top-7 text-base text-stone-500 md:text-stone-600 flex justify-center items-center gap-2">
