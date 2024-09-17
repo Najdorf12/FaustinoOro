@@ -146,8 +146,8 @@ const TournamentsForm = () => {
   };
 
   return (
-    <div className="w-screen min-h-screen  flex flex-col justify-center items-center xl:flex-row xl:justify-evenly xl:items-start">
-      <section className="mt-12 w-full px-3 sm:px-4 flex flex-col items-center  xl:w-auto">
+    <div className="w-screen min-h-screen  flex flex-col justify-center items-center xl:flex-row xl:justify-evenly xl:items-start xl:mt-10">
+      <section className="mt-12 w-full px-3 sm:px-4 flex flex-col items-center   xl:w-auto">
         <section
           style={{
             backgroundImage:

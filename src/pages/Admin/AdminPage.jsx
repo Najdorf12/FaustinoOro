@@ -6,6 +6,7 @@ import { getNews } from "../../api/handlers";
 import logo from "../../assets/logo.png";
 import CardAdminNew from "./CardAdminNew";
 import TournamentsForm from "./TournamentsForm";
+import GamesForm from "./GamesForm";
 
 const AdminPage = () => {
   const {
@@ -342,8 +343,7 @@ const AdminPage = () => {
             </div>
           </form>
         </section>
-
-        <section className="flex flex-wrap  gap-y-6 gap-x-4 my-16 justify-center items-start md:gap-y-10 xl:mt-24 xl:gap-x-10 xl:gap-y-8">
+        <section className="flex flex-wrap  gap-y-3 gap-x-4 mt-10 justify-center items-start md:gap-y-10 xl:mt-24 xl:gap-x-10 xl:gap-y-8">
           {allNotices !== null &&
             allNotices?.map((notice, index) => (
               <div key={notice?._id || index}>
@@ -355,11 +355,15 @@ const AdminPage = () => {
               </div>
             ))}
         </section>
-
+     
+        <div className="mt-12 h-[2px] w-[80%]  bg-stone-600 flex justify-center items-center xl:mt-20"></div>
         <section className="">
           <TournamentsForm />
         </section>
-        <div className="absolute bottom-2">{/*  <Footer /> */}</div>
+        <div className="mt-12 h-[2px] w-[80%]  bg-stone-600 flex justify-center items-center xl:mt-20"></div>
+        <section className="">
+          <GamesForm />
+        </section>
       </section>
     </section>
   );

@@ -15,7 +15,7 @@ const CardTournament = ({ tournament, selectTournament, deleteTournament }) => {
   return (
     <>
       (
-      <section className="relative  bg-[#212121] border border-[#92856e] w-[95%] max-w-[500px] rounded-3xl flex  hover:scale-105 duration-500">
+      <section className="relative  bg-[#212121] border border-[#92856e] w-[90%] max-w-[500px] rounded-3xl flex  hover:scale-105 duration-500">
         <article className="h-full mt-1 flex flex-col gap-1 w-full">
           <p className="text-xl  px-3 flex items-center gap-3   font-text text-center font-semibold text-white leading-5 border-b border-[#92856e] py-2">
             <picture className="w-[130px]">

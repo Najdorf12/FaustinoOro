@@ -14,8 +14,8 @@ const CardAdminNew = ({ notice, selectNotice, deleteNotice }) => {
   return (
     <>
         (
-    <section className="relative p-[6px] bg-[#212121] w-full border border-[#92856e] max-w-[320px] rounded-3xl flex flex-col justify-center items-center hover:scale-105 duration-500">
-      <picture className="w-full h-60">
+    <section className="relative p-[6px] bg-[#212121] w-full border border-[#92856e] max-w-[300px] rounded-3xl flex flex-col justify-center items-center hover:scale-105 duration-500">
+      <picture className="w-[90%] h-40">
         <Link to={`/${_id}`}>
           <img
             loading="lazy"
