@@ -127,10 +127,10 @@ const Contact = () => {
             </li>
           </ul>
         </footer>
-        <span className="flex justify-center items-center bg-lightbrown w-[50%] xl:w-[25%] place-self-center  h-[1.5px] mt-8  md:mt-12 z-50 2xl:mt-14"></span>
-        <div className="flex justify-center items-center gap-2 mb-1 font-title text-sm 2xl:text-base text-stone-500 z-50  -mt-2 xl:-mt-2">
-          <i className="bx bx-copyright text-xl"></i>
-          <span>Faustino Oro {/* official website */}</span>
+        
+        <div className="flex justify-center items-center gap-2 mb-1 font-title text-sm 2xl:text-base text-stone-500 z-50  mt-12">
+          <i className="bx bx-copyright text-lg"></i>
+          <span>Faustino Oro </span>
         </div>
       </section>
     </>
