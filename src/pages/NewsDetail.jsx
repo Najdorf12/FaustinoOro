@@ -13,18 +13,20 @@ const NewsDetail = () => {
           className="absolute bg-bluefausti inset-0 "
         ></div>
         <nav className="w-full absolute top-0 right-0  flex justify-end pr-4 pt-4  xl:pr-12 xl:pt-6">
-          <ul className="flex items-center gap-4  text-stone-400  xl:gap-6">
+          <div className="flex items-center gap-5  text-stone-400  xl:gap-6">
             <Link to={"/"}>
-              <li className="rounded-full border border-stone-400 bg-zinc-700 px-7 py-[1px] xl:px-10 2xl:py-[2.5px] 2xl:px-12 flex justify-center items-center hover:scale-110 hover:text-white duration-500 ">
-                Inicio
-              </li>
-            </Link>
-            <Link to={"/news"}>
-              <li className="rounded-full border border-stone-400 bg-zinc-700 px-7 py-[1px] xl:px-10 2xl:py-[2.5px] 2xl:px-12 flex justify-center items-center hover:scale-110 hover:text-white duration-500 ">
+              <button className="border-l-[2px] border-white text-white cursor-pointer flex items-center justify-between pl-3 w-[100px] ">
                 Noticias
-              </li>
+                <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-lightbrown text-xl "></i>
+              </button>
             </Link>
-          </ul>
+            <Link to={"/"}>
+              <button className="border-l-[2px] border-white text-white cursor-pointer flex items-center justify-between pl-3 w-[100px] ">
+                Noticias
+                <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-lightbrown text-xl "></i>
+              </button>
+            </Link>
+          </div>
         </nav>
 
         <div className="w-full  self-center  xl:w-auto mt-20  z-20 rounded-3xl px-3">

@@ -14,14 +14,13 @@ const News = () => {
         }}
         className="absolute bg-zinc-800 inset-0 z-20"
       ></div>
-      <nav className="w-full absolute top-0 right-0 z-50 flex justify-end pr-4 pt-4  xl:pr-12 xl:pt-6">
-        <ul className="flex items-center gap-4 text-stone-400 xl:gap-6">
-          <Link to={"/"}>
-            <li className="rounded-full border border-stone-400 bg-zinc-700 px-7 py-[1px] xl:px-8 2xl:py-[2.5px] 2xl:px-12 flex justify-center items-center hover:scale-110 hover:text-white duration-500 text-base 2xl:text-xl">
-              Inicio
-            </li>
-          </Link>
-        </ul>
+      <nav className="w-full absolute top-0 right-0 z-50 flex justify-end pr-3 pt-4  xl:pr-12 xl:pt-6">
+        <Link to={"/"}>
+          <button className="border-l-[2px] border-white text-white cursor-pointer flex items-center justify-between pl-3 w-[100px] ">
+            Noticias
+            <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-lightbrown text-xl "></i>
+          </button>
+        </Link>
       </nav>
 
       <h3
@@ -51,7 +50,7 @@ const News = () => {
             <div className="pattern text-stone-400 bg-zinc-800 relative w-1/2 text-base  sm:text-lg h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 hover:scale-105 duration-500">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
               maxime!
-              <span className="rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-stone-600">
+              <span className="rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-white">
                 <i class="bx bx-arrow-back rotate-[145deg]  text-lightbrown  text-3xl"></i>
               </span>
             </div>
@@ -110,7 +109,7 @@ const News = () => {
             <div className="text-stone-500 relative w-1/2  h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 text-base  sm:text-lg hover:scale-105 duration-500">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
               maxime!
-              <span className=" rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-stone-600">
+              <span className=" rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-white">
                 <i class="bx bx-arrow-back rotate-[145deg]  text-lightbrown  text-3xl"></i>
               </span>
             </div>
@@ -154,7 +153,7 @@ const News = () => {
           <CardNotice />
         </div>
       </section>
-    <Footer />
+      <Footer />
     </main>
   );
 };
