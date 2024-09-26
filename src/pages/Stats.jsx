@@ -1,7 +1,7 @@
 import SplitType from "split-type";
 
 import imgTorneo from "../assets/img-torneo.jpg";
-import imgFausti from "../assets/fausti20.jpeg"
+import imgFausti from "../assets/fausti20.jpeg";
 import CardTournament from "../components/CardTournament";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,6 +9,16 @@ import { useState, useEffect, useLayoutEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const Stats = () => {
+  const [displayedTournaments, setDisplayedTournaments] = useState(5);
+
+  useEffect(() => {
+    if (window.innerWidth >= 768) {
+      setDisplayedTournaments(6);
+    } else {
+      setDisplayedTournaments(5);
+    }
+  }, []);
+
   const screenStats = window.innerWidth;
   const tl = gsap.timeline();
 
@@ -139,8 +149,8 @@ const Stats = () => {
           end: "top top",
           scrub: true,
         },
-      })
-      /* .to("#box-stats", {
+      });
+    /* .to("#box-stats", {
         y:"100px",
         x: "150px",
         rotate: "180deg",
@@ -193,12 +203,12 @@ const Stats = () => {
       </section>
 
       <section
-        style={{
+        /* style={{
           background:
             "linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%)",
-        }}
+        }} */
         id="six_section"
-        className="overflow-hidden relative bg-gray-300 w-fulL h-screen z-5 pt-10 pl-2 pr-1 2xl:pt-16"
+        className="overflow-hidden relative bg-bluefausti w-fulL h-screen z-5 pt-10 pl-2 pr-1 2xl:pt-16"
       >
         <article className="flex flex-col gap-6">
           <h6 className="text-6xl font-title font-semibold text-white lg:text-7xl xl:pl-6 2xl:pl-8 2xl:text-8xl z-50">
@@ -212,14 +222,16 @@ const Stats = () => {
             id="tournaments"
             className="rounded-lg pr-3 pt-2 pb-6 overflow-y-scroll grid grid-cols-1 gap-6 z-50 mt-3 lg:grid-cols-2   lg:mt-12  lg:w-full xl:gap-10  place-items-center lg:mx-auto"
           >
-            {allTournaments?.map((tournament, i) => (
-              <CardTournament
-                screenStats={screenStats}
-                key={i}
-                tournament={tournament}
-                index={i + 1}
-              />
-            ))}
+            {allTournaments
+              ?.slice(0, displayedTournaments)
+              .map((tournament, i) => (
+                <CardTournament
+                  screenStats={screenStats}
+                  key={i}
+                  tournament={tournament}
+                  index={i + 1}
+                />
+              ))}
           </ul>
         </article>
       </section>
@@ -235,53 +247,60 @@ const Stats = () => {
         ></div>
 
         <div className="absolute top-0 right-0  z-50 rounded-xl lg:left-0 md:flex md:flex-col md:justify-center md:items-center xl:items-start xl:pl-[3%]">
-          <h4 className="text-3xl font-text2  flex justify-center text-stone-500 mt-8 xl:text-4xl 2xl:text-5xl ">LOREM IMSUM </h4>
-        <section className="mt-8 flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] lg:mt-4 2xl:max-w-[700px] xl:gap-4">
-          <article
-            id="box-news"
-            className="flex justify-center gap-2 xl:gap-3 "
-          >
-            <picture id="news-box"  className="relative w-[60%]  border border-stone-500 rounded-2xl">
-             {/*  <img
+          <h4 className="text-3xl font-text2  flex justify-center text-stone-500 mt-8 xl:text-4xl 2xl:text-5xl ">
+            LOREM IMSUM{" "}
+          </h4>
+          <section className="mt-8 flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] lg:mt-4 2xl:max-w-[700px] xl:gap-4">
+            <article
+              id="box-news"
+              className="flex justify-center gap-2 xl:gap-3 "
+            >
+              <picture
+                id="news-box"
+                className="relative w-[60%]  border border-stone-500 rounded-2xl"
+              >
+                {/*  <img
                 className="w-full object-cover h-[300px] rounded-2xl rounded-br-none border border-stone-500 lg:h-[350px]"
                  src={imgTorneo} 
                 alt=""
               />  */}
-              <div
-                className="text-xl font-bold font-title text-stone-600 box-new absolute top-0 left-0
+                <div
+                  className="text-xl font-bold font-title text-stone-600 box-new absolute top-0 left-0
           mt-3 ml-2 xl:text-3xl xl:ml-4 
           "
-              >
-                LOREM <br /> IMPSUM <br /> DOLOR <br /> SIT <br /> AMET
-              </div>
-            </picture>
-            <div className="text-white text-balance relative w-[40%] text-2xl font-semibold font-title  rounded-2xl rounded-tl-none rounded-br-3xl border bg-zinc-700 border-lightbrown p-2 xl:text-3xl 2xl:text-4xl hover:scale-105 duration-500 ">
-              LOREM IMSUM DOLOR SIT AMET CONSECT ADIPSIC ELIT
-           
-            </div>
-          </article>
-          <div className="flex justify-center items-center gap-2 w-full font-text2 xl:gap-3">
-            <div className="w-1/2  h-[150px] rounded-2xl border border-white ">
-              <picture className="w-full">
-                <img
-                  className="w-full h-full object-cover rounded-2xl"
-                  src={imgFausti}
-                  alt=""
-                />
+                >
+                  LOREM <br /> IMPSUM <br /> DOLOR <br /> SIT <br /> AMET
+                </div>
               </picture>
+              <div className="text-white text-balance relative w-[40%] text-2xl font-semibold font-title  rounded-2xl rounded-tl-none rounded-br-3xl border bg-zinc-700 border-lightbrown p-2 xl:text-3xl 2xl:text-4xl hover:scale-105 duration-500 ">
+                LOREM IMSUM DOLOR SIT AMET CONSECT ADIPSIC ELIT
+              </div>
+            </article>
+            <div className="flex justify-center items-center gap-2 w-full font-text2 xl:gap-3">
+              <div className="w-1/2  h-[150px] rounded-2xl border border-white ">
+                <picture className="w-full">
+                  <img
+                    className="w-full h-full object-cover rounded-2xl"
+                    src={imgFausti}
+                    alt=""
+                  />
+                </picture>
+              </div>
+              <div className="text-stone-500 relative w-1/2  h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 text-base  sm:text-lg hover:scale-105 duration-500">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                maxime!
+                <span className=" rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-stone-600">
+                  <i class="bx bx-arrow-back rotate-[145deg]  text-lightbrown  text-3xl"></i>
+                </span>
+              </div>
             </div>
-            <div className="text-stone-500 relative w-1/2  h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 text-base  sm:text-lg hover:scale-105 duration-500">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
-              maxime!
-              <span className=" rounded-full h-[40px] w-[40px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-stone-600">
-                <i class="bx bx-arrow-back rotate-[145deg]  text-lightbrown  text-3xl"></i>
-              </span>
-            </div>
-          </div>
-        </section>
-        
+          </section>
         </div>
-        <p className="absolute bottom-12 right-0  w-[65%] text-xl flex justify-center items-center text-balance px-3 text-center  text-white md:max-w-[500px] lg:mr-[5%] 2xl:bottom-[20%] 2xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis accusamus aliquam nesciunt dolores illum quos, mollitia aliquid et quasi.</p>
+        <p className="absolute bottom-12 right-0  w-[65%] text-xl flex justify-center items-center text-balance px-3 text-center  text-white md:max-w-[500px] lg:mr-[5%] 2xl:bottom-[20%] 2xl:text-2xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis
+          accusamus aliquam nesciunt dolores illum quos, mollitia aliquid et
+          quasi.
+        </p>
       </section>
     </>
   );
