@@ -226,12 +226,12 @@ const About = () => {
             <h3 className="text-bluefausti font-medium text-5xl 2xl:pr-2 2xl:text-6xl ">
               LOGROS
             </h3>
-            <ul className="relative w-full mt-6  flex flex-col-reverse gap-2 font-text2 xl:mt-[24px]  2xl:text-[1.3rem] text-gray-400 text-start">
+            <ul className="relative w-full mt-6  flex flex-col-reverse gap-2 font-text2 xl:mt-[24px]  2xl:text-[1.3rem] text-stone-700 text-start">
               {palmares.map((item, i) => (
                 <li
-                  id="news-box"
+                  id="palmares"
                   key={i}
-                  className=" flex items-center gap-2 lg:gap-3 py-1 px-[2px] sm:pr-[3px] lg:pl-2  rounded-2xl  max-w-[90%] xl:max-w-[80%]"
+                  className="border border-stone-300 flex items-center gap-2 lg:gap-3 py-1 px-[2px] sm:pr-[3px] lg:pl-2  rounded-2xl  max-w-[90%] xl:max-w-[80%]"
                 >
                   <i class="bx bx-chevron-right self-start text-xl text-white"></i>{" "}
                   {item}
@@ -269,7 +269,7 @@ const About = () => {
           </h3>
           <div
             id="line-about"
-            className="w-[0%] h-[2px]  bg-stone-400 rounded-md mt-4 xl:mt-5 2xl:mt-6"
+            className="w-[0%] h-[2px]  bg-stone-300 rounded-md mt-4 xl:mt-5 2xl:mt-6"
           ></div>
           <p
             id="sobreMi2-text"

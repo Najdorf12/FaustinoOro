@@ -58,7 +58,7 @@ const Contact = () => {
 
       <section
         id="box-container"
-        className="w-full h-auto z-50 flex pl-[120px]"
+        className="w-full h-auto z-50 flex pl-[120px] mt-6"
       >
         <div className="self-end z-50 ">
           <div
@@ -98,7 +98,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section id="contact_section2" className="w-full h-auto  bg-zinc-800 flex flex-col  gap-3 pt-12 xl:pt-[6%]">
+      <section id="contact_section2" className="w-full h-auto  bg-zinc-800 flex flex-col  gap-3 pt-16 xl:pt-[6%]">
         <article className="z-50 flex flex-col items-center  xl:w-[50%]">
           <h3 className="self-center  font-title text-5xl text-lightbrown font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-lightbrown rounded-xl z-50">
             CONTACT

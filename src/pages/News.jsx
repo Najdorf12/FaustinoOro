@@ -6,7 +6,6 @@ import CardNotice from "../components/CardNotice";
 import Footer from "../components/Footer";
 
 const News = () => {
-  const windWidth = window.innerWidth;
   return (
     <main className="bg-gray-300 w-full min-h-screen pt-20 relative flex flex-col items-center xl:pt-20 overflow-hidden">
       <div

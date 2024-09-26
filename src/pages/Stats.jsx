@@ -298,7 +298,7 @@ const Stats = () => {
             </div>
           </section>
         </div>
-        <p className="absolute bottom-24 right-0  w-[65%] text-lg flex justify-center items-center text-balance px-3 text-end  text-white md:max-w-[500px] lg:mr-[5%] 2xl:bottom-[20%] 2xl:text-2xl">
+        <p className="absolute bottom-24 right-0  w-[65%] text-lg flex justify-center items-center text-balance px-3 text-end  text-white md:max-w-[500px] lg:mr-[5%] 2xl:bottom-[20%] 2xl:text-2xl z-50">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis
           accusamus aliquam nesciunt dolores illum quos, mollitia aliquid et
           quasi.

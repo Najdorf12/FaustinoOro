@@ -61,30 +61,30 @@ const Home = () => {
                 >
                   <li
                     /* id="news-box" */
-                    className=" border-l-[2px] border-white cursor-pointer flex items-center justify-start pl-3 w-[135px]  gap-2"
+                    className=" border-l-[2px] border-white  cursor-pointer flex items-center justify-between pl-3 w-[125px]  gap-2"
                   >
                     Torneos
                     <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-lightbrown text-xl "></i>
                   </li>
                   <Link /* to="/games" */>
-                    <li className="border-l-[2px] border-white cursor-pointer flex items-center justify-start pl-3 w-[135px] rounded-r-sm gap-2">
+                    <li className="border-l-[2px] border-white  cursor-pointer flex items-center justify-between pl-3 w-[125px] rounded-r-sm gap-2">
                       Partidas
                       <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-lightbrown text-xl "></i>
                     </li>
                   </Link>
                   <Link to={"/news"}>
-                    <li className="border-l-[2px] border-white cursor-pointer flex items-center justify-start pl-3 w-[135px]  gap-2">
+                    <li className="border-l-[2px] border-white  cursor-pointer flex items-center justify-between pl-3 w-[125px]  gap-2">
                       Noticias
                       <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-lightbrown text-xl "></i>
                     </li>
                   </Link>
                   <Link to={"/courses"}>
-                    <li className="border-l-[2px] border-white cursor-pointer flex items-center justify-start pl-3 w-[135px] gap-2">
+                    <li className="border-l-[2px] border-white  cursor-pointer flex items-center justify-between pl-3 w-[125px] gap-2">
                       Cursos
                       <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-lightbrown text-xl "></i>
                     </li>
                   </Link>
-                  <li className="border-l-[2px] border-white cursor-pointer flex items-center justify-start pl-3 w-[135px] gap-2">
+                  <li className="border-l-[2px] border-white  cursor-pointer flex items-center justify-between pl-3 w-[125px] gap-2">
                     Contacto
                     <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-lightbrown text-xl "></i>
                   </li>
