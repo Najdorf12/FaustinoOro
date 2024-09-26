@@ -15,8 +15,8 @@ const NewsDetail = () => {
         <nav className="w-full absolute top-0 right-0  flex justify-end pr-4 pt-4  xl:pr-12 xl:pt-6">
           <div className="flex items-center gap-5  text-stone-400  xl:gap-6">
             <Link to={"/"}>
-              <button className="border-l-[2px] border-white text-white cursor-pointer flex items-center justify-between pl-3 w-[100px] ">
-                Noticias
+              <button className="border-l-[2px] border-white text-white cursor-pointer flex items-center justify-between pl-3 w-[90px] ">
+                Inicio
                 <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-lightbrown text-xl "></i>
               </button>
             </Link>
