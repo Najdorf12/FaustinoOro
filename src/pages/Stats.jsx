@@ -1,5 +1,5 @@
 import SplitType from "split-type";
-
+import imgNews from "../assets/imgNews.jpg";
 import imgTorneo from "../assets/img-torneo.jpg";
 import imgFausti from "../assets/fausti20.jpeg";
 import CardTournament from "../components/CardTournament";
@@ -247,44 +247,46 @@ const Stats = () => {
         ></div>
 
         <div className="absolute top-0 right-0  z-50 rounded-xl lg:left-0 md:flex md:flex-col md:justify-center md:items-center xl:items-start xl:pl-[3%]">
-          <h4 className="text-3xl font-text2  flex justify-center text-stone-500 mt-8 xl:text-4xl 2xl:text-5xl ">
-            LOREM IMSUM{" "}
-          </h4>
-          <section className="mt-8 flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] lg:mt-4 2xl:max-w-[700px] xl:gap-4">
+          <section className="mt-16 flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] lg:mt-4 2xl:max-w-[700px] xl:gap-4">
             <article
               id="box-news"
               className="flex justify-center gap-2 xl:gap-3 "
             >
-              <picture
+              <section
                 id="news-box"
                 className="relative w-[60%]  border border-stone-500 rounded-2xl"
               >
-                {/*  <img
-                className="w-full object-cover h-[300px] rounded-2xl rounded-br-none border border-stone-500 lg:h-[350px]"
-                 src={imgTorneo} 
-                alt=""
-              />  */}
                 <div
                   className="text-xl font-bold font-title text-stone-600 box-new absolute top-0 left-0
           mt-3 ml-2 xl:text-3xl xl:ml-4 
           "
                 >
-                  LOREM <br /> IMPSUM <br /> DOLOR <br /> SIT <br /> AMET
+                  LOREM IMPSUM DOLOR SIT AMET
+                  <div className="flex items-center">
+                    <div className="w-[50%] h-[2.5px] bg-white -mt-[1px]"></div>
+                    <i class="bx bx-right-arrow-alt text-3xl -ml-[8px] text-white"></i>
+                  </div>
                 </div>
-              </picture>
-              <div className="text-white text-balance relative w-[40%] text-2xl font-semibold font-title  rounded-2xl rounded-tl-none rounded-br-3xl border bg-zinc-700 border-lightbrown p-2 xl:text-3xl 2xl:text-4xl hover:scale-105 duration-500 ">
-                LOREM IMSUM DOLOR SIT AMET CONSECT ADIPSIC ELIT
+              </section>
+              <div className="text-white text-balance relative w-[40%]  text-2xl font-semibold font-title    xl:text-3xl 2xl:text-4xl hover:scale-105 duration-500 ">
+                <figure className="">
+                  <img
+                    className="w-full  object-cover rounded-2xl rounded-tl-none rounded-br-3xl border  border-lightbrown h-[180px]"
+                    src={imgNews}
+                    alt=""
+                  />
+                </figure>
               </div>
             </article>
             <div className="flex justify-center items-center gap-2 w-full font-text2 xl:gap-3">
-              <div className="w-1/2  h-[150px] rounded-2xl border border-white ">
-                <picture className="w-full">
+              <div className="w-1/2  h-[150px]  ">
+                <figure className="w-full h-full">
                   <img
-                    className="w-full h-full object-cover rounded-2xl"
+                    className="w-full h-full object-cover  rounded-tl-sm rounded-r-2xl border border-lightbrown"
                     src={imgFausti}
                     alt=""
                   />
-                </picture>
+                </figure>
               </div>
               <div className="text-stone-500 relative w-1/2  h-[150px] rounded-2xl rounded-tl-none rounded-br-3xl border border-lightbrown p-2 text-base  sm:text-lg hover:scale-105 duration-500">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
@@ -296,7 +298,7 @@ const Stats = () => {
             </div>
           </section>
         </div>
-        <p className="absolute bottom-12 right-0  w-[65%] text-xl flex justify-center items-center text-balance px-3 text-center  text-white md:max-w-[500px] lg:mr-[5%] 2xl:bottom-[20%] 2xl:text-2xl">
+        <p className="absolute bottom-20 right-0  w-[65%] text-lg flex justify-center items-center text-balance px-3 text-end  text-white md:max-w-[500px] lg:mr-[5%] 2xl:bottom-[20%] 2xl:text-2xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis
           accusamus aliquam nesciunt dolores illum quos, mollitia aliquid et
           quasi.
