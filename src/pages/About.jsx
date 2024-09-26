@@ -122,13 +122,13 @@ const About = () => {
         <>
           <h3
             id="about-text2"
-            className="text-white w-[90%] font-medium   text-[1.65rem] leading-[1.9rem] xl:w-full xl:text-4xl    2xl:text-5xl 2xl:w-full 2xl:mt-2  2xl:pr-0  opacity-0 relative  "
+            className="text-bluefausti w-[90%] font-medium   text-[1.65rem] leading-[1.9rem] xl:w-full xl:text-4xl    2xl:text-5xl 2xl:w-full 2xl:mt-2  2xl:pr-0  opacity-0 relative  "
           >
             {"Soy Faustino Oro. Nací en Buenos Aires, Argentina, el 14 de octubre de 2013".toUpperCase()}
           </h3>
           <div
             id="line-about"
-            className="w-[0%] h-[2px]  bg-stone-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"
+            className="w-[0%] h-[2px]  bg-stone-300 rounded-md mt-4 xl:mt-5 2xl:mt-6"
           ></div>
           <p
             id="p-about"
@@ -147,7 +147,7 @@ const About = () => {
             <button
               /* id="news-box" */
               onClick={() => handleSectionChange("Historia")}
-              className=" border-[1px] rounded-3xl bg-gray-600  border-stone-400  px-4 py-[px] flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
+              className=" border-[1px] rounded-3xl bg-bluefausti  border-stone-400  px-4 py-[px] flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
             >
               HISTORIA
               <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
@@ -167,7 +167,7 @@ const About = () => {
       return (
         <>
           <div className="">
-            <h3 className="text-white font-medium text-5xl  2xl:pr-2 2xl:text-6xl  ">
+            <h3 className="text-bluefausti font-medium text-5xl  2xl:pr-2 2xl:text-6xl  ">
               HISTORIA
             </h3>
 
@@ -223,7 +223,7 @@ const About = () => {
       return (
         <>
           <div className="w-full ">
-            <h3 className="text-white font-medium text-5xl 2xl:pr-2 2xl:text-6xl ">
+            <h3 className="text-bluefausti font-medium text-5xl 2xl:pr-2 2xl:text-6xl ">
               LOGROS
             </h3>
             <ul className="relative w-full mt-6  flex flex-col-reverse gap-2 font-text2 xl:mt-[24px]  2xl:text-[1.3rem] text-gray-400 text-start">
@@ -263,13 +263,13 @@ const About = () => {
         <>
           <h3
             id="sobreMi2-title"
-            className="text-white w-full font-medium mt-1  text-[1.65rem] leading-[1.9rem] xl:w-full xl:text-4xl    2xl:text-5xl 2xl:w-full 2xl:mt-2  2xl:pr-0  "
+            className="text-bluefausti w-full font-medium mt-1  text-[1.65rem] leading-[1.9rem] xl:w-full xl:text-4xl    2xl:text-5xl 2xl:w-full 2xl:mt-2  2xl:pr-0  "
           >
             {"Soy Faustino Oro. Nací en Buenos Aires, Argentina, el 14 de octubre de 2013".toUpperCase()}
           </h3>
           <div
             id="line-about"
-            className="w-[0%] h-[2px]  bg-stone-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"
+            className="w-[0%] h-[2px]  bg-stone-400 rounded-md mt-4 xl:mt-5 2xl:mt-6"
           ></div>
           <p
             id="sobreMi2-text"
@@ -307,16 +307,20 @@ const About = () => {
     <>
       <section
         id="second_section"
-          style={{
+        /* style={{
+          backgroundImage:
+            "linear-gradient(to right top, #426d89, #3f637a, #3c596b, #394f5d, #36454f, #344149, #333c43, #31383d, #31383d, #31383d, #31383d, #31383d)",
+        }} */
+         /*  style={{
           background:
             "linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%)",
-        }}  
+        }}  */ 
          /*  style={{backgroundImage: "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)" }}   */
        /*    style={{
           backgroundImage:
             "linear-gradient(to left top, #EAEAEA, #DBDBDB, #F2F2F2, #3f4864)",
         }}   */
-        className="w-full h-screen bg-zinc-800 flex lg:justify-end font-title overflow-hidden relative"
+        className="w-full h-screen bg-white flex lg:justify-end font-title overflow-hidden relative"
       >
         <article className="relative  pt-24 lg:pt-0 px-3 pl-[4%] sm:pl-[6%] lg:pl-0 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[6%] xl:max-w-[650px]  2xl:mr-[12%]   2xl:max-w-[750px] text-balance ">
           <h5
@@ -335,7 +339,7 @@ const About = () => {
           <div className="self-end z-20 ">
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-whiteCustom "
             ></div>
             <div
               id="box-about"
@@ -343,7 +347,7 @@ const About = () => {
             ></div>
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-white border-[1px]"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-whiteCustom border-[1px]"
             ></div>
             <div
               id="box-about"
@@ -351,13 +355,13 @@ const About = () => {
             ></div>
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-white border-[1px]"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-whiteCustom border-[1px]"
             ></div>
           </div>
           <div className="self-end z-50 ">
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-whiteCustom "
             ></div>
             <div
               id="box-about"
@@ -365,31 +369,7 @@ const About = () => {
             ></div>
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-white border-[1px]"
-            ></div>
-            <div
-              id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-bluefausti md:opacity-1"
-            ></div>
-          </div>
-          <div className="self-end z-50 ">
-            <div
-              id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
-            ></div>
-            <div
-              id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-bluefausti md:opacity-1"
-            ></div>
-            <div
-              id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
-            ></div>
-          </div>
-          <div className="self-end z-50 ">
-            <div
-              id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-whiteCustom border-[1px]"
             ></div>
             <div
               id="box-about"
@@ -399,7 +379,31 @@ const About = () => {
           <div className="self-end z-50 ">
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-white "
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-whiteCustom "
+            ></div>
+            <div
+              id="box-about"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-bluefausti md:opacity-1"
+            ></div>
+            <div
+              id="box-about"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-whiteCustom "
+            ></div>
+          </div>
+          <div className="self-end z-50 ">
+            <div
+              id="box-about"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-whiteCustom "
+            ></div>
+            <div
+              id="box-about"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-bluefausti md:opacity-1"
+            ></div>
+          </div>
+          <div className="self-end z-50 ">
+            <div
+              id="box-about"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-whiteCustom "
             ></div>
           </div>
         </section>

@@ -21,7 +21,8 @@ export default {
         lightbrown: "#947153",
         wheat: "#ffd19d",
         red2:"#c40817",
-        darkred: "#8e1d22"
+        darkred: "#8e1d22",
+        whiteCustom:"#F2F0E4",
       },
       fontFamily: {
         title: ["Ubuntu", "sans-serif"],
