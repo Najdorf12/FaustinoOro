@@ -247,7 +247,7 @@ const Stats = () => {
         ></div>
 
         <div className="absolute top-0 right-0  z-50 rounded-xl lg:left-0 md:flex md:flex-col md:justify-center md:items-center xl:items-start xl:pl-[3%]">
-          <section className="mt-16 flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] lg:mt-4 2xl:max-w-[700px] xl:gap-4">
+          <section className="mt-16 flex flex-col justify-center gap-2  pt-8 px-2 max-w-[600px] lg:mt-4 2xl:max-w-[700px] xl:gap-4 xl:mt-6 2xl:mt-8">
             <article
               id="box-news"
               className="flex justify-center gap-2 xl:gap-3 "
@@ -271,7 +271,7 @@ const Stats = () => {
               <div className="text-white text-balance relative w-[40%]  text-2xl font-semibold font-title    xl:text-3xl 2xl:text-4xl hover:scale-105 duration-500 ">
                 <figure className="">
                   <img
-                    className="w-full  object-cover rounded-2xl rounded-tl-none rounded-br-3xl border  border-lightbrown h-[180px]"
+                    className="w-full  object-cover rounded-2xl rounded-tl-none rounded-br-3xl border  border-lightbrown h-[180px] xl:h-[220px] 2xl:h-[240px]"
                     src={imgNews}
                     alt=""
                   />
@@ -298,7 +298,7 @@ const Stats = () => {
             </div>
           </section>
         </div>
-        <p className="absolute bottom-24 right-0  w-[65%] text-lg flex justify-center items-center text-balance px-3 text-end  text-white md:max-w-[500px] lg:mr-[5%] 2xl:bottom-[20%] 2xl:text-2xl z-50">
+        <p className="absolute bottom-24 right-0  w-[65%] text-lg flex justify-center items-center text-balance px-3 text-end  text-white md:max-w-[500px] lg:mr-[5%] 2xl:bottom-[20%] xl:text-2xl 2xl:text-3xl z-50">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis
           accusamus aliquam nesciunt dolores illum quos, mollitia aliquid et
           quasi.

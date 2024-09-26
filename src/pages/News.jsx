@@ -16,7 +16,7 @@ const News = () => {
       ></div>
       <nav className="w-full absolute top-0 right-0 z-50 flex justify-start pl-4 pt-4 xl:justify-start xl:pl-12  xl:pt-6 2xl:pl-14">
         <Link to={"/"}>
-          <button className="border-l-[2px] border-white text-white cursor-pointer flex items-center justify-between pl-3 w-[100px] xl:text-xl  2xl:text-2xl">
+          <button className="border-l-[2px] border-white text-white cursor-pointer flex items-center justify-between pl-3 w-[100px] xl:text-xl  2xl:text-2xl 2xl:w-[105px]">
             Inicio
             <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-lightbrown text-xl xl:text-2xl"></i>
           </button>

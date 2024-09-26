@@ -226,7 +226,7 @@ const About = () => {
             <h3 className="text-bluefausti font-medium text-5xl 2xl:pr-2 2xl:text-6xl ">
               LOGROS
             </h3>
-            <ul className="relative w-full mt-6  flex flex-col-reverse gap-2 font-text2 xl:mt-[24px]  2xl:text-[1.3rem] text-stone-700 text-start">
+            <ul className="relative w-full mt-6  flex flex-col-reverse gap-2 font-text2 xl:mt-[24px]  2xl:text-[1.3rem] text-stone-700 text-start lg:text-stone-600">
               {palmares.map((item, i) => (
                 <li
                   id="palmares"
