@@ -178,7 +178,7 @@ const Stats = () => {
         <article className="relative  z-[200] flex flex-col justify-center items-center gap-6 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:gap-8 2xl:gap-10">
           <h6
             id="split"
-            className="font-text2 text-6xl z-[200]  font-bold md:text-6xl lg:text-[10dvh]"
+            className="font-text2 text-6xl z-[200]  font-bold md:text-6xl lg:text-[10dvh] text-zinc-100"
           >
             NOTICIAS
           </h6>
@@ -195,7 +195,7 @@ const Stats = () => {
         </article>
         <button
           /* id="news-box" */
-          className=" border-[1px] rounded-lg border-stone-400  px-4   flex justify-center items-center text-white font-text2 font-normal  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] text-xl  mt-6 bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-800"
+          className=" border-[1px] rounded-lg border-stone-400  px-4   flex justify-center items-center text-white font-text2 font-normal  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] text-xl  mt-6 bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-800 shadow-lg shadow-zinc-900"
         >
           DESTACADAS
         </button>
@@ -205,9 +205,9 @@ const Stats = () => {
         </div>
         <div className="mt-8 flex flex-col justify-center items-center gap-2" >
           <p>Puedes encontrar mas noticias aquí</p>
-          <button className=" border-[2px] rounded-3xl border-stone-400 py-[2px]  pl-3 pr-2 text-xl  flex justify-between items-center  lg:hover:border duration-500 min-w-[170px]  2xl:w-[195px]   bg-gradient-to-tr from-zinc-600 via-bluefausti to-zinc-800">
+          <button className=" border-[2px] rounded-3xl border-stone-400 py-[2px]  pl-3 pr-2 text-xl  flex justify-between items-center font-text2  font-normal lg:hover:border duration-500 min-w-[170px]  2xl:w-[195px]   bg-gradient-to-tr from-zinc-600 via-bluefausti to-zinc-800 shadow-md shadow-zinc-900">
             NOTICIAS
-            <i class="bx bx-arrow-back text-stone-400  rotate-[145deg] text-2xl bg-zinc-600 h-7 w-7 flex items-center justify-center rounded-full  2xl:text-3xl"></i>
+            <i class="bx bx-arrow-back text-stone-400  rotate-[145deg] text-2xl  h-7 w-7 flex items-center justify-center rounded-full  2xl:text-3xl border-[2px] bg-zinc-600 border-zinc-600 "></i>
           </button>
         </div>
         <div
