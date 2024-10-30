@@ -25,7 +25,7 @@ const Home = () => {
               { WebkitTextStroke: "0.5px"}
             } */
               id="title-name"
-              className="font-text2 tracking-wider text-center  text-[4rem] leading-[5.4rem] font-bold text-gray-200 z-50 flex  justify-center items-center md:items-center gap-3 px-3 py-3  bg-clip-text text-transparent bg-gradient-to-br from-stone-300  via-stone-400 to-bluefausti md:text-[4.5rem] xl:min-h-[200px] xl:gap-8 2xl:gap-12 xl:text-[6rem] 2xl:text-[7.5rem]"
+              className="font-text2 tracking-wider text-center  text-[4rem] leading-[5.4rem] font-bold text-gray-200 z-50 flex  justify-center items-center md:items-center gap-3 px-3 py-3  bg-clip-text text-transparent bg-gradient-to-tr from-bluefausti  via-zinc-200 to-zinc-400  md:text-[4.5rem] xl:min-h-[200px] xl:gap-8 2xl:gap-12 xl:text-[6rem] 2xl:text-[7.5rem]"
             >
               {" "}
               <span
@@ -55,39 +55,39 @@ const Home = () => {
                   <div id="bar6" className="bars"></div>
                 </label>
                 <ul
-                  className={`flex flex-col items-end gap-12 mt-2 text-xl text-stone-300 font-text2  menu ${
+                  className={`flex flex-col items-end gap-10 mt-3 text-xl text-white font-text2  menu ${
                     isMenuOpen ? "menu-open" : ""
                   }`}
                 >
                   <li
                     /* id="news-box" */
-                    className=" border-l-[2px] border-white  cursor-pointer flex items-center justify-between pl-3 w-[125px]  gap-2"
+                    className=" border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]"
                   >
                     Torneos
-                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-lightbrown text-xl "></i>
+                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
                   </li>
                   <Link /* to="/games" */>
-                    <li className="border-l-[2px] border-white  cursor-pointer flex items-center justify-between pl-3 w-[125px] rounded-r-sm gap-2">
+                    <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px] gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
                       Partidas
-                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-lightbrown text-xl "></i>
+                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
                     </li>
                   </Link>
                   <Link to={"/news"}>
-                    <li className="border-l-[2px] border-white  cursor-pointer flex items-center justify-between pl-3 w-[125px]  gap-2">
+                    <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
                       Noticias
-                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-lightbrown text-xl "></i>
+                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
                     </li>
                   </Link>
                   <Link to={"/courses"}>
-                    <li className="border-l-[2px] border-white  cursor-pointer flex items-center justify-between pl-3 w-[125px] gap-2">
+                    <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px] gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
                       Cursos
-                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-lightbrown text-xl "></i>
+                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
                     </li>
                   </Link>
-                  <li className="border-l-[2px] border-white  cursor-pointer flex items-center justify-between pl-3 w-[125px] gap-2">
-                    Contacto
-                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-lightbrown text-xl "></i>
-                  </li>
+                  <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
+                      Contacto
+                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
+                    </li>
                 </ul>
               </section>
             ) : (
