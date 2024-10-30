@@ -172,10 +172,10 @@ const Stats = () => {
     <>
       <section
         id="five_section"
-        className="relative w-full bg-zinc-700  h-[90dvh] md:h-screen z-50 lg:z-10 flex justify-center items-start px-2 sm:px-4 text-white"
+        className="relative w-full  h-screen md:h-screen z-50 lg:z-10 flex flex-col justify-start items-center px-2 sm:px-4 text-white"
         /* style={{background: "linear-gradient(to right, #000000, #434343)" }} */
       >
-        <article className="relative mt-6 z-[200] flex flex-col justify-center items-center gap-4 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:gap-8 2xl:gap-10">
+        <article  className="relative mt-6 z-[200] flex flex-col justify-center items-center gap-4 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:gap-8 2xl:gap-10">
           <h6
             id="split"
             className="font-text2 text-5xl z-[200]  font-bold md:text-6xl lg:text-[10dvh]"
@@ -184,19 +184,36 @@ const Stats = () => {
           </h6>
           <p
             id="text-reveal2"
-            className="font-text2 px-3 z-50 text-stone-600 text-balance text-sm md:text-lg xl:px-8 opacity-0  "
+            className="font-text2 px-3 z-50 text-white text-balance text-sm md:text-lg xl:px-8 opacity-0  "
           >
-            Descubre las últimas noticias sobre la carrera y los logros de Faustino Oro. Mantente informado sobre sus próximas competencias, análisis de partidas y eventos destacados en el mundo del ajedrez. Aquí encontrarás actualizaciones en tiempo real y la cobertura de los momentos más importantes de su trayectoria profesional.
+            Descubre las últimas noticias sobre la carrera y los logros de
+            Faustino Oro. Mantente informado sobre sus próximas competencias,
+            análisis de partidas y eventos destacados en el mundo del ajedrez.
+            Aquí encontrarás actualizaciones en tiempo real y la cobertura de
+            los momentos más importantes de su trayectoria profesional.
           </p>
         </article>
+        <button
+          /* id="news-box" */
+          className=" border-[1px] rounded-3xl border-stone-400  px-4   flex justify-center items-center text-stone-400 font-title font-semibold  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px]  mt-6 bg-gradient-to-tr from-zinc-600 via-bluefausti to-zinc-800"
+        >
+          DESTACADAS
+        </button>
+        <div className="flex flex-wrap  gap-2 overflow-hidden mt-6">
+          <CardNoticeHome />
+          <CardNoticeHome />
+        </div>
+        <button
+          
+          className=" border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px]  mt-6 bg-gradient-to-tr from-zinc-600 via-bluefausti to-zinc-800"
+        >
+          Mas Noticias
+          <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
+        </button>
         <div
           id="line-stats"
           className="w-[0%] absolute h-[1px] bg-gray-300 top-0 left-0 mb-[5%]"
         ></div>
-        {/*   <div
-          id="line-stats2"
-          className="w-[0%] absolute z-0 h-[1px] bg-lightbrown bottom-0 right-0 mb-[5%]"
-        ></div> */}
       </section>
 
       <section
