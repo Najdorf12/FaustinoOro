@@ -5,7 +5,10 @@ const CardNoticeHome = () => {
   return (
     <Link to={"/news/id"}>
       <div className="w-[180px] border-[2px] border-white hover:scale-105 duration-500 z-50 bg-gradient-to-tr rounded-2xl ">
-        <article className="pt-3 text-balance rounded-2xl flex flex-col bg-gradient-to-tr from-zinc-600 via-bluefausti to-zinc-800 ">
+        <figure>
+          <img className="w-full rounded-t-2xl object-cover" src={imgFausti} alt="" />
+        </figure>
+        <article className="pt-3 text-balance rounded-b-2xl flex flex-col bg-gradient-to-tr from-zinc-600 via-bluefausti to-zinc-800 ">
           <h6 className="text-stone-100 font-text2 text-center text-base leading-5 ">
             FAUSTINO CONSIGUE OTRO HITO HISTORICO
           </h6>
@@ -13,11 +16,6 @@ const CardNoticeHome = () => {
           <p className="mt-2 text-stone-400 font-title font-normal text-sm px-3 leading-5 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
-          <p className="mt-2 text-stone-500 font-title font-normal text-sm px-3 leading-5 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste
-            reprehenderit commodi a nihil.
-          </p>
-
           <button className="self-end rounded-full h-[35px] w-[35px] mt-1 flex justify-center items-center border-[2px] border-zinc-600 bg-zinc-100">
             <i class="bx bx-arrow-back rotate-[145deg]  text-bluefausti  text-2xl"></i>
           </button>
