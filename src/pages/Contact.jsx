@@ -2,6 +2,7 @@ import icon from "../assets/icons/icon1.png";
 import icon2 from "../assets/icons/icon2.png";
 import ContactForm from "../components/ContactForm";
 import Games from "./Games";
+import Ritmos from "./Ritmos";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -15,17 +16,7 @@ const Contact = () => {
     const screen = window.screen.width;
 
     new ScrollTrigger({});
-    tl.to("#line-contact", {
-      width: screen > 1200 ? "60%" : "90%",
-      duration: 2,
-      scrollTrigger: {
-        trigger: "#contact_section",
-        start: "20% bottom",
-        end: "top top",
-        scrub: true,
-      },
-    })
-      .to("#line-games", {
+    tl.to("#line-games", {
         width: "90%",
         duration: 2,
         scrollTrigger: {
@@ -55,7 +46,7 @@ const Contact = () => {
       <section id="games_section" className="">
         <Games />
       </section>
-
+      <Ritmos />
       <section
         id="box-container"
         className="w-full h-auto z-50 flex pl-[120px] mt-6"
@@ -98,7 +89,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section id="contact_section2" className="w-full h-auto  bg-zinc-800 flex flex-col  gap-3 pt-16 xl:pt-[6%]">
+      <section id="contact_section" className="w-full h-auto  bg-zinc-800 flex flex-col  gap-3 pt-16 xl:pt-[6%]">
         <article className="z-50 flex flex-col items-center  xl:w-[50%]">
           <h3 className="self-center  font-title text-5xl text-lightbrown font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-lightbrown rounded-xl z-50">
             CONTACT

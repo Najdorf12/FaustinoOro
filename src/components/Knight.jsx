@@ -219,25 +219,25 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.position, {
-        x: 1.565,
-        y: -1.4,
-        z: -2.5,
+        x: 3.565,
+        y: -6,
+        z: 1.5,
         ease: "power1.inOut",
         scrollTrigger: {
-          trigger: "#seven_section",
+          trigger: "#games_section",
           start: "top bottom",
-          end: "top top",
+          end: screen > 1000 ? "top top" : "-50% top",
           scrub: true,
           immediateRender: false,
         },
       })
       .to(knight.current?.rotation, {
-        y: -0.005,
+        y: -0.1,
         ease: "power1.inOut",
         scrollTrigger: {
-          trigger: "#seven_section",
+          trigger: "#games_section",
           start: "top bottom",
-          end: "top top",
+          end: screen > 1000 ? "top top" : "-50% top",
           scrub: true,
           immediateRender: false,
         },
@@ -248,73 +248,24 @@ export const Knight = (props) => {
         z: screen > 1000 ? 23 : 14,
         ease: "power1.inOut",
         scrollTrigger: {
-          trigger: "#games_section",
+          trigger: "#ritmos_section",
           start: "top bottom",
-          end: screen > 1000 ? "top top" : "-50% top",
+          end: "top top",
           scrub: true,
           immediateRender: false,
         },
       })
-
       .to(knight.current?.rotation, {
         y: screen > 1000 ? -1.74 : -1,
         ease: "power1.inOut",
         scrollTrigger: {
-          trigger: "#games_section",
-          start: "top bottom",
-          end: screen > 1000 ? "top top" : "-50% top",
-          scrub: true,
-          immediateRender: false,
-        },
-      })
-     /* .to(knight.current?.position, {
-        x: -1.5,
-        y: -0.7,
-        z: 23,
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: "#games",
+          trigger: "#ritmos_section",
           start: "top bottom",
           end: "top top",
           scrub: true,
           immediateRender: false,
         },
-      })
-       .to(knight.current?.rotation, {
-        y: -1.74,
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: "#games",
-          start: "top bottom",
-          end: "top top",
-          scrub: true,
-          immediateRender: false,
-        },
-      })
-      .to(knight.current?.position, {
-        x: -1.5,
-        y: -0.7,
-        z: 23,
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: "#contact2_section",
-          start: "top bottom",
-          end: "top top",
-          scrub: true,
-          immediateRender: false,
-        },
-      })
-      .to(knight.current?.rotation, {
-        y: -1.74,
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: "#contact2_section",
-          start: "top bottom",
-          end: "top top",
-          scrub: true,
-          immediateRender: false,
-        },
-      }) */;
+      });
   }, []);
 
   return (

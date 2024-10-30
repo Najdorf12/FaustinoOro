@@ -4,46 +4,8 @@ import imgFausti4 from "../assets/fausti4.jpg";
 import imgFausti6 from "../assets/img6.jpg";
 import imgFausti9 from "../assets/img17.jpg";
 
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useLayoutEffect } from "react";
-gsap.registerPlugin(ScrollTrigger);
-
 const Gallery = () => {
-  /*  const tl = gsap.timeline();
-
-  useLayoutEffect(() => {
-    new ScrollTrigger({});
-
-    tl.to("#img-fausti", {
-      y: "-100px",
-      stagger: 0.6,
-      duration: 2,
-      opacity: 0.9,
-      rotateZ: -10,
-      rotateY: 2,
-      scrollTrigger: {
-        trigger: "#four_section",
-        start: "30% bottom",
-        end: "50% 60%",
-        scrub: 1,
-      },
-    }).to("#img-fausti2", {
-      y: "-100px",
-      stagger: 0.6,
-      duration: 2,
-      opacity: 0.9,
-      rotateZ: -10,
-      rotateY: 2,
-      scrollTrigger: {
-        trigger: "#second_gallery",
-        start: "30% bottom",
-        end: "50% 60%",
-        scrub: 1,
-      },
-    });
-  }, []); */
-
+  
   return (
     <>
       <section
