@@ -1,7 +1,7 @@
 import imgFausti from "../assets/img6.jpg";
 import { Link } from "react-router-dom";
 
-const CardNotice = () => {
+const CardNoticeHome = () => {
   return (
     <Link to={"/news/id"}>
       <div className="w-full max-w-[280px] border border-bluefausti rounded-2xl rounded-br-[21px] hover:scale-105 duration-500">
@@ -32,4 +32,4 @@ const CardNotice = () => {
     </Link>
   );
 };
-export default CardNotice;
+export default CardNoticeHome;

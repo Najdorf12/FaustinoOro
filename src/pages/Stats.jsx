@@ -4,6 +4,7 @@ import imgTorneo from "../assets/img-torneo.jpg";
 import imgFausti from "../assets/fausti20.jpeg";
 import CardTournament from "../components/CardTournament";
 import gsap from "gsap";
+import CardNoticeHome from "../components/CardNoticeHome";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useState, useEffect, useLayoutEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
@@ -171,25 +172,21 @@ const Stats = () => {
     <>
       <section
         id="five_section"
-        className="relative w-full  h-[90dvh] md:h-screen z-50 lg:z-10 flex justify-center items-center px-2 sm:px-4 text-white"
+        className="relative w-full bg-zinc-700  h-[90dvh] md:h-screen z-50 lg:z-10 flex justify-center items-start px-2 sm:px-4 text-white"
         /* style={{background: "linear-gradient(to right, #000000, #434343)" }} */
       >
-        <article className="relative z-[200] flex flex-col justify-center items-center gap-8 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:-mt-[10%] xl:gap-8 2xl:gap-10">
+        <article className="relative mt-6 z-[200] flex flex-col justify-center items-center gap-4 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:gap-8 2xl:gap-10">
           <h6
             id="split"
             className="font-text2 text-5xl z-[200]  font-bold md:text-6xl lg:text-[10dvh]"
           >
-            EL PIBE DE ORO
+            NOTICIAS
           </h6>
           <p
             id="text-reveal2"
-            className="font-text2 px-3 z-50 text-stone-600 text-base md:text-lg xl:px-8 opacity-0  "
+            className="font-text2 px-3 z-50 text-stone-600 text-balance text-sm md:text-lg xl:px-8 opacity-0  "
           >
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo
-            impedit sit aliquam laborum incidunt consectetur dicta temporibus
-            libero, illum provident nobis, veniam sed! Voluptatem nulla rerum
-            earum dolores alias quibusdam. Voluptatem nulla rerum earum dolores
-            alias quibusdam.
+            Descubre las últimas noticias sobre la carrera y los logros de Faustino Oro. Mantente informado sobre sus próximas competencias, análisis de partidas y eventos destacados en el mundo del ajedrez. Aquí encontrarás actualizaciones en tiempo real y la cobertura de los momentos más importantes de su trayectoria profesional.
           </p>
         </article>
         <div
