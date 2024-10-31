@@ -244,7 +244,7 @@ export const Knight = (props) => {
       })
       .to(knight.current?.position, {
         x: screen > 1000 ? -1.3 : 6,
-        y: screen > 1000 ? -0.7 : -4,
+        y: screen > 1000 ? -0.7 : -3,
         z: screen > 1000 ? 23 : 18,
         ease: "power1.inOut",
         scrollTrigger: {
