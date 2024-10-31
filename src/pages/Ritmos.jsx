@@ -2,9 +2,9 @@ import imgNews from "../assets/imgNews.jpg";
 import imgFausti from "../assets/fausti20.jpeg";
 
 const Ritmos = () => {
-    return(
-        <>
-        <section
+  return (
+    <>
+      <section
         id="ritmos_section"
         className="relative w-full h-screen overflow-hidden bg-zinc-800  flex  items-end"
       >
@@ -66,14 +66,14 @@ const Ritmos = () => {
             </div>
           </section>
         </div>
-        <p className="absolute bottom-24 right-0  w-[65%] text-lg flex justify-center items-center text-balance px-3 text-end  text-white md:max-w-[500px] lg:mr-[5%] 2xl:bottom-[20%] xl:text-2xl 2xl:text-3xl z-50">
+       {/*  <p className="absolute bottom-24 right-0  w-[65%] text-lg flex justify-center items-center text-balance px-3 text-end  text-white md:max-w-[500px] lg:mr-[5%] 2xl:bottom-[20%] xl:text-2xl 2xl:text-3xl z-50">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis
           accusamus aliquam nesciunt dolores illum quos, mollitia aliquid et
           quasi.
-        </p>
+        </p> */}
       </section>
-        </>
-    )
+    </>
+  );
 };
 
 export default Ritmos;
