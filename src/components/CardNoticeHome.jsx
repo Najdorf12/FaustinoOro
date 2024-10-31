@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 const CardNoticeHome = () => {
   return (
     <Link to={"/news/id"}>
-      <div className="w-[180px] border-[2px] border-zinc-500 hover:scale-105 duration-500 z-50 bg-gradient-to-tr rounded-2xl ">
+      <div className="w-[180px] border-[2px] border-zinc-500 hover:scale-105 duration-500 z-50  rounded-2xl ">
         <figure>
           <img className="w-full rounded-t-2xl object-cover" src={imgFausti} alt="" />
         </figure>
-        <article className="pt-3 text-balance rounded-b-2xl flex flex-col bg-gradient-to-tr from-zinc-600 via-bluefausti to-zinc-800 ">
+        <article className="pt-3 text-balance rounded-b-2xl flex flex-col bg-gradient-to-tl from-bluefausti via-zinc-800 to-zinc-800 ">
           <h6 className="text-white font-text2 text-center text-base leading-5 ">
             FAUSTINO CONSIGUE OTRO HITO HISTORICO
           </h6>

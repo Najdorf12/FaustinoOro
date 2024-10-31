@@ -5,6 +5,8 @@ const Home = () => {
   const [windowWidth, setwindowWidth] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const btnsNav = ["Torneos", "Partidas", "Noticias", "Cursos", "Contacto"];
+
   const handleCheckboxChange = (e) => {
     setIsMenuOpen(e.target.checked);
   };
@@ -85,41 +87,45 @@ const Home = () => {
                     </li>
                   </Link>
                   <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
-                      Contacto
-                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
-                    </li>
+                    Contacto
+                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
+                  </li>
                 </ul>
               </section>
             ) : (
               <ul className="flex  gap-3 sm:gap-14 xl:gap-10 text-lg 2xl:text-xl 2xl:gap-12 text-white">
-                <li className="border-l-[2px] border-white pl-3 py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:text-white duration-500 ">
-                  Torneos
-                  <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-lightbrown text-xl 2xl:text-2xl "></i>
-                </li>
+                <a href="six_section">
+                  <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
+                    Torneos
+                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
+                  </li>
+                </a>
                 <Link /* to="/games" */>
-                  <li className="border-l-[2px] border-white pl-3 py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:text-white duration-500 ">
+                  <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
                     Partidas
-                    <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-lightbrown text-xl 2xl:text-2xl   "></i>
+                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
                   </li>
                 </Link>
                 <Link to={"/news"}>
-                  <li className="border-l-[2px] border-white pl-3 py-[1px]  cursor-pointer flex  justify-evenly items-center gap-3 hover:scale-110 hover:text-white duration-500 ">
+                  <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
                     Noticias
-                    <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-lightbrown text-xl 2xl:text-2xl   "></i>
+                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
                   </li>
                 </Link>
 
                 <Link to={"/courses"}>
-                  <li className="border-l-[2px] border-white pl-3 py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:text-white duration-500 ">
+                  <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
                     Cursos
-                    <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-lightbrown text-xl 2xl:text-2xl   "></i>
+                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
                   </li>
                 </Link>
 
-                <li className="border-l-[2px] border-white pl-3 py-[1px]  cursor-pointer flex justify-evenly items-center gap-3 hover:scale-110 hover:text-white duration-500 ">
-                  Contacto
-                  <i className="bx bx-arrow-back rotate-[145deg] rounded-full -ml-[1px] text-lightbrown text-xl 2xl:text-2xl  "></i>
-                </li>
+                <a href="contact_section">
+                  <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
+                    Contacto
+                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
+                  </li>
+                </a>
               </ul>
             )}
           </span>

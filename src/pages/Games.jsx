@@ -124,7 +124,7 @@ const Games = () => {
                 position={game.fen()}
                 arePiecesDraggable={false}
                 animationDuration={150}
-                customDarkSquareStyle={{ backgroundColor: "#8e1d22" }}
+                customDarkSquareStyle={{ backgroundColor: "#8e1d22 /* #8e1d22 */" }}
                 customLightSquareStyle={{ backgroundColor: "#947153" }}
               />
               <div className=" flex items-center mt-6 gap-8 justify-evenly text-stone-600 relative">

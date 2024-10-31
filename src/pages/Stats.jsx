@@ -118,7 +118,7 @@ const Stats = () => {
           scrub: true,
         },
       })
-      
+
       .to("#line-tournament", {
         width: screenStats > 700 ? "40%" : "90%",
         duration: 2,
@@ -129,7 +129,6 @@ const Stats = () => {
           scrub: true,
         },
       });
-    
   }, []);
 
   return (
@@ -168,9 +167,9 @@ const Stats = () => {
         </div>
         <div className="mt-8 flex flex-col justify-center items-center gap-2">
           <p>Puedes encontrar mas noticias aquí</p>
-          <button className=" border-[2px] rounded-3xl border-stone-400 py-[2px]  pl-3 pr-2 text-xl  flex justify-between items-center font-text2  font-normal lg:hover:border duration-500 min-w-[170px]  2xl:w-[195px]   bg-gradient-to-tr from-zinc-600 via-bluefausti to-zinc-800 shadow-md shadow-zinc-900">
+          <button className=" border-[2px] rounded-3xl border-stone-400 py-[2px]  pl-3 pr-2 text-xl  flex justify-between items-center font-text2  font-normal lg:hover:border duration-500 min-w-[170px]  2xl:w-[195px]   bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900">
             NOTICIAS
-            <i class="bx bx-arrow-back text-stone-400  rotate-[145deg] text-2xl  h-7 w-7 flex items-center justify-center rounded-full  2xl:text-3xl border-[2px] bg-zinc-600 border-zinc-600 "></i>
+            <i class="bx bx-arrow-back text-white  rotate-[145deg] text-2xl  h-7 w-7 flex items-center justify-center rounded-full  2xl:text-3xl border-[2px] bg-zinc-700 border-zinc-800 "></i>
           </button>
         </div>
         <div
@@ -213,8 +212,6 @@ const Stats = () => {
           </ul>
         </article>
       </section>
-
-     
     </>
   );
 };
