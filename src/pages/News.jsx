@@ -1,6 +1,4 @@
-import imgNews from "../assets/news/imgNews4.jpg";
-import imgNews4 from "../assets/news/imgNews2.jpg";
-import imgNews2 from "../assets/news/imgNews.jpg";
+
 import { Link } from "react-router-dom";
 import CardNotice from "../components/CardNotice";
 import Footer from "../components/Footer";

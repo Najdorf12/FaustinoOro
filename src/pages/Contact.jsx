@@ -1,5 +1,5 @@
-import icon from "../assets/icons/icon1.png";
-import icon2 from "../assets/icons/icon2.png";
+/* import icon from "../assets/icons/icon1.png";
+import icon2 from "../assets/icons/icon2.png"; */
 import ContactForm from "../components/ContactForm";
 import Games from "./Games";
 import Ritmos from "./Ritmos";
