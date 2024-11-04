@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const CardNoticeHome = () => {
   return (
     <Link to={"/news/id"}>
-      <div className="w-[180px] border-[2px] border-zinc-500 hover:scale-105 duration-500 z-50  rounded-2xl xl:w-[240px]">
+      <div className="w-[180px] border-[2px] border-zinc-500 hover:scale-105 duration-500 z-50  rounded-2xl xl:w-[240px] shadow-sm shadow-zinc-900">
         <figure>
           <img className="w-full rounded-t-2xl object-cover" src={imgFausti} alt="" />
         </figure>

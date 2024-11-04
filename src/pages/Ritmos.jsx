@@ -78,7 +78,7 @@ const Ritmos = () => {
               <div
                 key={i}
                 onClick={() => playAnimation(icon)}
-                className={`cursor-pointer relative w-full flex items-center justify-start gap-4 pl-2 h-[50px] hover:scale-105 duration-500 rounded-2xl rounded-tl-none rounded-tr-sm rounded-br-3xl border-[2px] border-zinc-500 bg-gradient-to-br from-bluefausti via-zinc-800 to-transparent xl:h-[65px] shadow-sm shadow-zinc-900 ${selectedIcon?.id === icon?.id ? "border-zinc-200" : ""}`}
+                className={`cursor-pointer relative w-full flex items-center justify-start gap-4 pl-2 h-[50px] hover:scale-105 duration-500 rounded-2xl rounded-tl-none rounded-tr-sm rounded-br-3xl border-[2px] border-zinc-500 bg-gradient-to-br from-bluefausti via-zinc-800 to-transparent xl:h-[65px] shadow-sm shadow-zinc-900 ${selectedIcon?.id === icon?.id ? "border-zinc-200 scale-105" : ""}`}
               >
                 <figure className="w-[45px] flex justify-center items-center xl:w-[50px]">
                   <img
