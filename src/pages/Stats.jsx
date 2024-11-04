@@ -137,16 +137,16 @@ const Stats = () => {
         id="five_section"
         className="relative w-full  h-screen md:h-screen z-50 lg:z-10 flex flex-col justify-center items-center px-2 sm:px-4 text-white xl:flex-row xl:justify-evenly"
       >
-        <article className="relative -mt-4  z-[200] flex flex-col justify-center items-center gap-6 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[700px]  xl:-mt-[20%]  xl:gap-8 2xl:gap-10">
+        <article className="relative -mt-4  z-[200] flex flex-col justify-center items-center gap-6 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] 2xl:max-w-[900px]  xl:-mt-[20%]  xl:gap-8 2xl:gap-10">
           <h6
             id="split"
-            className="font-text2 text-6xl z-[200]  font-bold md:text-6xl lg:text-[10dvh] text-zinc-100"
+            className="font-text2 text-6xl z-[200]  font-bold md:text-6xl lg:text-[20dvh] text-zinc-100 lg:self-start lg:ml-[5%]"
           >
             NOTICIAS
           </h6>
           <p
             id="text-reveal2"
-            className="font-text2 px-3 z-50 text-white text-balance text-sm md:text-lg xl:px-8 opacity-0  "
+            className="font-text2 px-3 z-50 text-white text-balance text-sm md:text-lg lg:text-start xl:px-8 opacity-0 lg:ml-[2%] "
           >
             Descubre las últimas noticias sobre la carrera y los logros de
             Faustino Oro. Mantente informado sobre sus próximas competencias,
@@ -154,6 +154,12 @@ const Stats = () => {
             Aquí encontrarás actualizaciones en tiempo real y la cobertura de
             los momentos más importantes de su trayectoria profesional.
           </p>
+          <div className="mt-2 flex justify-center items-center gap-2 lg:justify-start  w-full lg:ml-[10%]">
+            <button className=" border-[2px] rounded-3xl border-stone-400 py-[2px]  pl-3 pr-2 text-xl  flex justify-between items-center font-text2  font-normal lg:hover:border duration-500 min-w-[170px]  xl:w-[200px] xl:py-[4px] xl:text-xl   bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900">
+              Ver más
+              <i class="bx bx-arrow-back text-white  rotate-[145deg] text-2xl  h-7 w-7 flex items-center justify-center rounded-full  2xl:text-3xl border-[2px] bg-zinc-700 border-zinc-800 "></i>
+            </button>
+          </div>
         </article>
 
         <div className="flex flex-col items-center justify-center xl:mt-">
@@ -163,20 +169,13 @@ const Stats = () => {
           >
             DESTACADAS
           </button>
+
           <div className="flex flex-wrap  gap-2 overflow-hidden mt-6 xl:gap-4">
             <CardNoticeHome />
             <CardNoticeHome />
             <div className="hidden xl:flex">
-
-            <CardNoticeHome />
+              <CardNoticeHome />
             </div>
-          </div>
-          <div className="mt-8 flex flex-col justify-center items-center gap-2">
-            <p>Puedes encontrar mas noticias aquí</p>
-            <button className=" border-[2px] rounded-3xl border-stone-400 py-[2px]  pl-3 pr-2 text-xl  flex justify-between items-center font-text2  font-normal lg:hover:border duration-500 min-w-[170px]  2xl:w-[195px]   bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900">
-              NOTICIAS
-              <i class="bx bx-arrow-back text-white  rotate-[145deg] text-2xl  h-7 w-7 flex items-center justify-center rounded-full  2xl:text-3xl border-[2px] bg-zinc-700 border-zinc-800 "></i>
-            </button>
           </div>
         </div>
 
