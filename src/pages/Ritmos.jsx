@@ -54,18 +54,18 @@ const Ritmos = () => {
   return (
     <section
       id="ritmos_section"
-      className="relative w-full h-screen overflow-hidden bg-zinc-800 px-3 flex flex-col items-center justify-start pt-[10%] lg:flex-row lg:items-start lg:justify-center lg:pt-[7%] lg:gap-4 xl:gap-12"
+      className="relative w-full h-screen overflow-visible bg-zinc-800 px-3 flex flex-col items-center justify-start pt-[15%] lg:flex-row lg:items-start lg:justify-center lg:pt-[7%] lg:gap-4 xl:gap-12"
     >
-      <section className="z-50 mt-3 w-full flex flex-col gap-3 items-center justify-center lg:mt-0 lg:w-1/2 lg:items-end ">
+      <section className="z-50 w-full flex flex-col gap-4 items-center justify-center lg:mt-0 lg:w-1/2 lg:items-end xl:gap-5">
         <figure
           id="box-glass"
-          className="z-50 relative w-full min-h-[150px] border-[2px] border-zinc-500 rounded-xl max-w-[450px] xl:max-w-[580px] xl:min-h-[200px]"
+          className="z-50 relative w-full min-h-[150px] border-[2px] border-r-0 border-zinc-500  rounded-2xl rounded-tl-none rounded-tr-lg rounded-br-3xl max-w-[450px] xl:max-w-[580px] xl:min-h-[200px]"
         >
           <p className="text-4xl font-bold font-title text-white absolute top-0 left-0 mt-3 ml-2 xl:text-5xl xl:ml-4 sm:px-3 text-balance">
             ¿QUÉ PIENSO DE CADA RITMO?
             <div className="flex items-center mt-3 xl:mt-5">
-              <span className="w-[80%] h-[2.5px] bg-zinc-500 -mt-[1px] "></span>
-              <i className="bx bx-right-arrow-alt text-3xl -ml-[8px] text-zinc-500 xl:mt-0"></i>
+              <span className="w-[80%] h-[2.5px] bg-zinc-500  "></span>
+              <i className="bx bx-right-arrow-alt text-3xl -ml-[8px] -mt-[1px] text-zinc-500 xl:mt-0"></i>
             </div>
           </p>
         </figure>
@@ -73,12 +73,12 @@ const Ritmos = () => {
           id="box-news"
           className="flex justify-center gap-2 xl:gap-3 w-full max-w-[450px] xl:max-w-[580px]"
         >
-          <section className="w-full flex flex-col justify-center items-center gap-2 z-50">
+          <section className="w-full flex flex-col justify-center items-center gap-3 z-50 xl:gap-3">
             {icons?.map((icon, i) => (
               <div
                 key={i}
                 onClick={() => playAnimation(icon)}
-                className={`cursor-pointer relative w-full flex items-center justify-start gap-4 pl-2 h-[50px] hover:scale-105 duration-500 rounded-2xl rounded-tl-none rounded-br-3xl border-[2px] border-zinc-500 bg-gradient-to-br from-bluefausti via-zinc-800 to-transparent xl:h-[65px] ${selectedIcon?.id === icon?.id ? "border-zinc-200" : ""}`}
+                className={`cursor-pointer relative w-full flex items-center justify-start gap-4 pl-2 h-[50px] hover:scale-105 duration-500 rounded-2xl rounded-tl-none rounded-tr-sm rounded-br-3xl border-[2px] border-zinc-500 bg-gradient-to-br from-bluefausti via-zinc-800 to-transparent xl:h-[65px] shadow-sm shadow-zinc-900 ${selectedIcon?.id === icon?.id ? "border-zinc-200" : ""}`}
               >
                 <figure className="w-[45px] flex justify-center items-center xl:w-[50px]">
                   <img
@@ -90,7 +90,7 @@ const Ritmos = () => {
                 <p className="font-title text-white font-medium text-xl xl:text-2xl ">
                   {icon.id}
                 </p>
-                <span className="rounded-full h-[35px] w-[35px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-bluefausti">
+                <span className="rounded-full h-[35px] w-[35px] absolute bottom-1 right-2 flex justify-center items-center border border-white bg-bluefausti">
                   <i className="bx bx-arrow-back rotate-[145deg] text-white text-3xl"></i>
                 </span>
               </div>
@@ -101,12 +101,12 @@ const Ritmos = () => {
       <div className="flex justify-center items-center gap-2 w-full font-text2 xl:gap-3 lg:w-1/2 lg:justify-start lg:mt-6 z-50">
         <article
           id="content-box"
-          className="w-full py-3 px-3 mt-3 rounded-2xl rounded-tl-none rounded-br-3xl border-[2px] border-stone-400 text-balance hover:scale-105 duration-500 bg-gradient-to-br from-bluefausti via-zinc-800 to-transparent max-w-[450px] z-50 lg:mt-0 lg:h-full xl:max-w-[500px] xl:py-12 xl:px-6"
+          className="w-full py-3 px-3 mt-3 rounded-2xl rounded-tl-none rounded-br-3xl border-[2px] border-r-0 border-stone-500 text-balance hover:scale-105 duration-500 bg-gradient-to-br from-bluefausti via-zinc-800 to-transparent max-w-[450px] z-50 lg:mt-0 lg:h-full xl:max-w-[500px] xl:py-8 xl:px-6 shadow-sm shadow-zinc-900"
         >
           <h6 className="text-zinc-100 font-title text-3xl font-semibold xl:text-4xl">
             {selectedIcon.id}
           </h6>
-          <p className="text-stone-400 relative w-full text-base mt-2 xl:text-lg xl:mt-3">
+          <p className="text-stone-400 relative w-full text-balance text-base mt-4 xl:text-xl xl:mt-3">
             {selectedIcon.content}
           </p>
         </article>
