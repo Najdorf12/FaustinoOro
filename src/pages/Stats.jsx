@@ -163,7 +163,7 @@ const Stats = () => {
           </Link>
         </article>
 
-        <div className="flex flex-col-reverse items-center justify-center mt-4 xl:mt-">
+        <div className="flex flex-col-reverse items-center justify-center mt-4 lg:flex-col  xl:mt-">
           <button
             id="box-glass"
             className=" border-[1px] rounded-lg border-stone-400  px-4   flex justify-center items-center text-white font-text2 font-normal  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] text-xl  mt-6 xl:mt-0 xl:text-2xl xl:bg-gradient-to-br from-zinc-700 via-zinc-600 to-zinc-300"
