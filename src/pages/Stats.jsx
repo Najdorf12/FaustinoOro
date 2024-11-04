@@ -135,9 +135,9 @@ const Stats = () => {
     <>
       <section
         id="five_section"
-        className="relative w-full  h-screen md:h-screen z-50 lg:z-10 flex flex-col justify-center items-center px-2 sm:px-4 text-white"
+        className="relative w-full  h-screen md:h-screen z-50 lg:z-10 flex flex-col justify-center items-center px-2 sm:px-4 text-white xl:flex-row xl:justify-evenly"
       >
-        <article className="relative -mt-4  z-[200] flex flex-col justify-center items-center gap-6 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] xl:gap-8 2xl:gap-10">
+        <article className="relative -mt-4  z-[200] flex flex-col justify-center items-center gap-6 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[700px]  xl:-mt-[20%]  xl:gap-8 2xl:gap-10">
           <h6
             id="split"
             className="font-text2 text-6xl z-[200]  font-bold md:text-6xl lg:text-[10dvh] text-zinc-100"
@@ -155,23 +155,31 @@ const Stats = () => {
             los momentos más importantes de su trayectoria profesional.
           </p>
         </article>
-        <button
-          id="news-box"
-          className=" border-[1px] rounded-lg border-stone-400  px-4   flex justify-center items-center text-white font-text2 font-normal  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] text-xl  mt-6 "
-        >
-          DESTACADAS
-        </button>
-        <div className="flex flex-wrap  gap-2 overflow-hidden mt-6">
-          <CardNoticeHome />
-          <CardNoticeHome />
-        </div>
-        <div className="mt-8 flex flex-col justify-center items-center gap-2">
-          <p>Puedes encontrar mas noticias aquí</p>
-          <button className=" border-[2px] rounded-3xl border-stone-400 py-[2px]  pl-3 pr-2 text-xl  flex justify-between items-center font-text2  font-normal lg:hover:border duration-500 min-w-[170px]  2xl:w-[195px]   bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900">
-            NOTICIAS
-            <i class="bx bx-arrow-back text-white  rotate-[145deg] text-2xl  h-7 w-7 flex items-center justify-center rounded-full  2xl:text-3xl border-[2px] bg-zinc-700 border-zinc-800 "></i>
+
+        <div className="flex flex-col items-center justify-center xl:mt-">
+          <button
+            id="news-box"
+            className=" border-[1px] rounded-lg border-stone-400  px-4   flex justify-center items-center text-white font-text2 font-normal  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] text-xl  mt-6 xl:mt-0"
+          >
+            DESTACADAS
           </button>
+          <div className="flex flex-wrap  gap-2 overflow-hidden mt-6 xl:gap-4">
+            <CardNoticeHome />
+            <CardNoticeHome />
+            <div className="hidden xl:flex">
+
+            <CardNoticeHome />
+            </div>
+          </div>
+          <div className="mt-8 flex flex-col justify-center items-center gap-2">
+            <p>Puedes encontrar mas noticias aquí</p>
+            <button className=" border-[2px] rounded-3xl border-stone-400 py-[2px]  pl-3 pr-2 text-xl  flex justify-between items-center font-text2  font-normal lg:hover:border duration-500 min-w-[170px]  2xl:w-[195px]   bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900">
+              NOTICIAS
+              <i class="bx bx-arrow-back text-white  rotate-[145deg] text-2xl  h-7 w-7 flex items-center justify-center rounded-full  2xl:text-3xl border-[2px] bg-zinc-700 border-zinc-800 "></i>
+            </button>
+          </div>
         </div>
+
         <div
           id="line-stats"
           className="w-[0%] absolute h-[1px] bg-gray-300 top-0 left-0 mb-[5%]"

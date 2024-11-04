@@ -108,7 +108,7 @@ Si son on-line, también me divierte mucho como en los torneos bullet, stremear 
         <div
           style={{ clipPath: "polygon(0 0, 0% 100%, 100% 0)" }}
           id="box-stats_wrapper"
-          className="w-full h-screen bg-zinc-300 absolute z-10  inset-0"
+          className="w-full h-screen bg-zinc-00 absolute z-10  inset-0"
         ></div>
       </section>
     </>
