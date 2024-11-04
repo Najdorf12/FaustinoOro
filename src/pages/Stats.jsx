@@ -4,6 +4,7 @@ import CardTournament from "../components/CardTournament";
 import gsap from "gsap";
 import CardNoticeHome from "../components/CardNoticeHome";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 import { useState, useEffect, useLayoutEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -137,10 +138,10 @@ const Stats = () => {
         id="five_section"
         className="relative w-full  h-screen md:h-screen z-50 lg:z-10 flex flex-col justify-center items-center px-2 sm:px-4 text-white xl:flex-row xl:justify-evenly"
       >
-        <article className="relative -mt-4  z-[200] flex flex-col justify-center items-center gap-6 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[800px] 2xl:max-w-[900px]  xl:-mt-[20%]  xl:gap-8 2xl:gap-10">
+        <article className="relative -mt-4  z-[200]  flex flex-col justify-center items-center gap-6 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[750px] 2xl:max-w-[900px]  xl:self-start xl:mt-[3%]  xl:gap-8 2xl:gap-10">
           <h6
             id="split"
-            className="font-text2 text-6xl z-[200]  font-bold md:text-6xl lg:text-[20dvh] text-zinc-100 lg:self-start lg:ml-[5%]"
+            className="font-text2 text-6xl z-[200]  font-bold md:text-6xl lg:text-[20dvh] text-zinc-100 lg:self-start lg:ml-[5%] lg:-z-20"
           >
             NOTICIAS
           </h6>
@@ -154,28 +155,25 @@ const Stats = () => {
             Aquí encontrarás actualizaciones en tiempo real y la cobertura de
             los momentos más importantes de su trayectoria profesional.
           </p>
-          <div className="mt-2 flex justify-center items-center gap-2 lg:justify-start  w-full lg:ml-[10%]">
-            <button className=" border-[2px] rounded-3xl border-stone-400 py-[2px]  pl-3 pr-2 text-xl  flex justify-between items-center font-text2  font-normal lg:hover:border duration-500 min-w-[170px]  xl:w-[200px] xl:py-[4px] xl:text-xl   bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900">
+          <Link className="mt-2 flex justify-center items-center gap-2 lg:justify-start  w-full lg:ml-[10%] z-[200]">
+            <button className=" border-[2px] rounded-3xl border-stone-400 py-[2px]  pl-3 pr-2 text-xl  flex justify-between items-center font-text2  font-normal lg:hover:border duration-500 min-w-[170px]  xl:w-[200px] xl:py-[4px] xl:text-xl   bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 z-[200] cursor-pointer hover:scale-105 hover:from-zinc-100 hover:text-bluefausti">
               Ver más
-              <i class="bx bx-arrow-back text-white  rotate-[145deg] text-2xl  h-7 w-7 flex items-center justify-center rounded-full  2xl:text-3xl border-[2px] bg-zinc-700 border-zinc-800 "></i>
+              <i class="bx bx-arrow-back text-white  rotate-[145deg] text-2xl  h-7 w-7 flex items-center justify-center rounded-full xl:w-8 xl:h-8 xl:text-3xl border-[2px] bg-slate-600 border-zinc-800 z-[200]"></i>
             </button>
-          </div>
+          </Link>
         </article>
 
         <div className="flex flex-col items-center justify-center xl:mt-">
           <button
-            id="news-box"
-            className=" border-[1px] rounded-lg border-stone-400  px-4   flex justify-center items-center text-white font-text2 font-normal  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] text-xl  mt-6 xl:mt-0"
-          >
+            id="box-glass"
+            className=" border-[1px] rounded-lg border-stone-400  px-4   flex justify-center items-center text-white font-text2 font-normal  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] text-xl  mt-6 xl:mt-0 xl:text-2xl xl:bg-gradient-to-br from-zinc-700 via-zinc-600 to-zinc-300"
+          > 
             DESTACADAS
           </button>
 
-          <div className="flex flex-wrap  gap-2 overflow-hidden mt-6 xl:gap-4">
+          <div className="flex flex-wrap  gap-2 overflow-hidden mt-6 xl:gap-4 ">
             <CardNoticeHome />
             <CardNoticeHome />
-            <div className="hidden xl:flex">
-              <CardNoticeHome />
-            </div>
           </div>
         </div>
 
