@@ -95,33 +95,33 @@ const Home = () => {
             ) : (
               <ul className="flex  gap-3 sm:gap-14 xl:gap-10 text-lg 2xl:text-xl 2xl:gap-12 text-white">
                 <a href="six_section">
-                  <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
+                  <li className="border-[2px] border-zinc-500 rounded-3xl  cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px] xl:w-[160px]">
                     Torneos
                     <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
                   </li>
                 </a>
                 <Link /* to="/games" */>
-                  <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
+                  <li className="border-[2px] border-zinc-500 rounded-3xl  cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px] xl:w-[160px]">
                     Partidas
                     <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
                   </li>
                 </Link>
                 <Link to={"/news"}>
-                  <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
+                  <li className="border-[2px] border-zinc-500 rounded-3xl  cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px] xl:w-[160px]">
                     Noticias
                     <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
                   </li>
                 </Link>
 
                 <Link to={"/courses"}>
-                  <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
+                  <li className="border-[2px] border-zinc-500 rounded-3xl  cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px] xl:w-[160px]">
                     Cursos
                     <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
                   </li>
                 </Link>
 
                 <a href="contact_section">
-                  <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
+                  <li className="border-[2px] border-zinc-500 rounded-3xl  cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px] xl:w-[160px]">
                     Contacto
                     <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
                   </li>

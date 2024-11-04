@@ -13,7 +13,7 @@ export const Knight = (props) => {
   const tl = gsap.timeline();
 
   /* DEBUG MODEL3D */
-  /*   useLayoutEffect(() => {
+ /*    useLayoutEffect(() => {
     const gui = new GUI({ width: 400 });
 
     const debugRotation = {
@@ -92,7 +92,7 @@ export const Knight = (props) => {
       gui.destroy();
     };
   }, []);  
-
+ */
   /* ANIMATIONS */
   useLayoutEffect(() => {
     const screen = window.screen.width;
@@ -219,9 +219,9 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.position, {
-        x: screen > 1000 ? -3 : 3.565,
-        y: screen > 1000 ? -0.6 : -6,
-        z: screen > 1000 ? 13 : 1.5,
+        x: screen > 1000 ? 4.955 : 3.565,
+        y: screen > 1000 ? 1 : -6,
+        z: screen > 1000 ? 12 : 1.5,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#games_section",
@@ -232,7 +232,7 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.rotation, {
-        y: screen > 1000 ? -0.6 : -0.1,
+        y: screen > 1000 ? -1.03: -0.1,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#games_section",
