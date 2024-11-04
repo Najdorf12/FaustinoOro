@@ -54,9 +54,9 @@ const Ritmos = () => {
   return (
     <section
       id="ritmos_section"
-      className="relative w-full h-screen overflow-hidden bg-zinc-800 px-3 flex flex-col items-center justify-center lg:flex-row lg:items-start lg:pt-[7%] lg:gap-4 xl:gap-12"
+      className="relative w-full h-screen overflow-hidden bg-zinc-800 px-3 flex flex-col items-center justify-start pt-[10%] lg:flex-row lg:items-start lg:justify-center lg:pt-[7%] lg:gap-4 xl:gap-12"
     >
-      <section className="z-50 mt-3 w-full flex flex-col gap-3 items-center justify-center lg:mt-0 lg:w-1/2 lg:items-end">
+      <section className="z-50 mt-3 w-full flex flex-col gap-3 items-center justify-center lg:mt-0 lg:w-1/2 lg:items-end ">
         <figure
           id="box-glass"
           className="z-50 relative w-full min-h-[150px] border-[2px] border-zinc-500 rounded-xl max-w-[450px] xl:max-w-[580px] xl:min-h-[200px]"
@@ -78,7 +78,7 @@ const Ritmos = () => {
               <div
                 key={i}
                 onClick={() => playAnimation(icon)}
-                className="cursor-pointer relative w-full flex items-center justify-start gap-4 pl-2 h-[50px] hover:scale-105 duration-500 rounded-2xl rounded-tl-none rounded-br-3xl border-[2px] border-zinc-500 bg-gradient-to-br from-bluefausti via-zinc-800 to-transparent xl:h-[65px]"
+                className={`cursor-pointer relative w-full flex items-center justify-start gap-4 pl-2 h-[50px] hover:scale-105 duration-500 rounded-2xl rounded-tl-none rounded-br-3xl border-[2px] border-zinc-500 bg-gradient-to-br from-bluefausti via-zinc-800 to-transparent xl:h-[65px] ${selectedIcon?.id === icon?.id ? "border-zinc-200" : ""}`}
               >
                 <figure className="w-[45px] flex justify-center items-center xl:w-[50px]">
                   <img
@@ -87,7 +87,7 @@ const Ritmos = () => {
                     className="object-cover w-full"
                   />
                 </figure>
-                <p className="font-title text-white font-medium text-xl xl:text-2xl">
+                <p className="font-title text-white font-medium text-xl xl:text-2xl ">
                   {icon.id}
                 </p>
                 <span className="rounded-full h-[35px] w-[35px] absolute bottom-0 right-0 flex justify-center items-center border border-white bg-bluefausti">
