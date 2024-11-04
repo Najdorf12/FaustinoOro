@@ -138,7 +138,7 @@ const Stats = () => {
         id="five_section"
         className="relative w-full  h-screen md:h-screen z-50 lg:z-10 flex flex-col justify-center items-center px-2 sm:px-4 text-white xl:flex-row xl:justify-evenly"
       >
-        <article className="relative -mt-6  z-[200]  flex flex-col justify-center items-center gap-6 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[750px] 2xl:max-w-[900px]  xl:self-start xl:mt-[3%]  xl:gap-8 2xl:gap-10">
+        <article className="relative -mt-6  z-[200]  flex flex-col justify-center items-center gap-6 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:mt-[3%]  xl:gap-8 2xl:gap-10">
           <h6
             id="split"
             className="font-text2 text-6xl z-[200]  font-bold md:text-6xl lg:text-[20dvh] text-zinc-100 lg:self-start lg:ml-[5%] lg:-z-20"
