@@ -141,13 +141,13 @@ const Stats = () => {
         <article className="relative -mt-6  z-[200]  flex flex-col justify-center items-center gap-6 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:mt-[3%]  xl:gap-8 2xl:gap-10">
           <h6
             id="split"
-            className="font-text2 text-6xl z-[200]  font-bold md:text-6xl lg:text-[20dvh] text-zinc-100 lg:self-start lg:ml-[5%] lg:-z-20"
+            className="font-text2 text-6xl z-[200]  font-bold md:text-6xl lg:text-[20dvh] text-white lg:self-start lg:ml-[5%] lg:-z-20 "
           >
             NOTICIAS
           </h6>
           <p
             id="text-reveal2"
-            className="font-text2 px-3 z-50 text-white text-balance   text-sm md:text-lg lg:text-start xl:px-8 opacity-0 lg:ml-[2%] "
+            className="font-text2 px-3 z-50 text-stone-300 text-balance   text-sm md:text-lg lg:text-start xl:px-8 opacity-0 lg:ml-[2%] xl:text-xl 2xl:text-2xl"
           >
             Descubre las últimas noticias sobre la carrera y los logros de
             Faustino Oro. Mantente informado sobre sus próximas competencias,
@@ -156,22 +156,22 @@ const Stats = () => {
             los momentos más importantes de su trayectoria profesional.
           </p>
           <Link to={"/news"} className="flex justify-center items-center gap-2 lg:justify-start  w-full lg:ml-[10%] z-[200]">
-            <button className=" border-[2px] rounded-3xl border-stone-400 py-[2px]  pl-3 pr-2 text-xl  flex justify-between items-center font-text2  font-normal lg:hover:border duration-500 min-w-[170px]  xl:w-[200px] xl:py-[4px] xl:text-xl   bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 z-[200] cursor-pointer hover:scale-105 hover:from-zinc-100 hover:text-bluefausti">
+            <button className=" border-[2px] rounded-3xl border-stone-400 py-[2px]  pl-3 pr-2 text-xl  flex justify-between items-center font-text2  font-normal lg:hover:border duration-500 min-w-[170px] xl:mt-3 xl:w-[200px] xl:py-[4px] xl:text-xl   bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 z-[200] cursor-pointer hover:scale-105 hover:from-zinc-100 hover:text-bluefausti">
               Ver más
               <i class="bx bx-arrow-back text-white  rotate-[145deg] text-2xl  h-7 w-7 flex items-center justify-center rounded-full xl:w-8 xl:h-8 xl:text-3xl border-[2px] bg-slate-600 border-zinc-800 z-[200]"></i>
             </button>
           </Link>
         </article>
 
-        <div className="flex flex-col-reverse items-center justify-center mt-4 lg:flex-col  xl:mt-">
+        <div className="flex flex-col-reverse items-center justify-center mt-4 lg:flex-col  xl:gap-3">
           <button
             id="box-glass"
-            className=" border-[1px] rounded-lg border-stone-400  px-4   flex justify-center items-center text-white font-text2 font-normal  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] text-xl  mt-6 xl:mt-0 xl:text-2xl xl:bg-gradient-to-br from-zinc-700 via-zinc-600 to-zinc-300"
+            className=" border-[1px] rounded-lg border-stone-400 text-xl  mt-6  px-4   flex justify-center items-center text-white font-text2 font-normal  lg:hover:border duration-500 min-w-[170px] xl:mt-0 xl:text-2xl xl:px-8 xl:py-[2px] 2xl:px-5  2xl:w-[195px]  "
           > 
             DESTACADAS
           </button>
 
-          <div className="flex flex-wrap  gap-2 overflow-hidden mt-6 xl:gap-4 ">
+          <div className="flex flex-wrap  gap-2  mt-6 xl:gap-6  ">
             <CardNoticeHome />
             <CardNoticeHome />
           </div>
