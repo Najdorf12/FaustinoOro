@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const CardNotice = () => {
   return (
     <Link to={"/news/id"}>
-      <div className="w-full max-w-[280px] border border-bluefausti rounded-2xl rounded-br-[21px] hover:scale-105 duration-500">
+      <div className="w-full max-w-[280px] border border-lightbrown rounded-2xl rounded-br-[21px] hover:scale-105 duration-500">
         <picture className="w-full">
           <img className="w-full rounded-t-2xl" src={imgFausti} alt="" />
         </picture>
@@ -15,7 +15,7 @@ const CardNotice = () => {
           <h6 className="text-white font-text2 text-center text-lg  leading-6 ">
             FAUSTINO CONSIGUE OTRO HITO HISTORICO
           </h6>
-          <div className="w-[95%] h-[1px] self-center bg-bluefausti mt-2"></div>
+          <div className="w-[95%] h-[1px] self-center bg-lightbrown mt-2"></div>
           <p className="mt-2 text-stone-400 font-title font-normal text-base px-3 leading-5 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
@@ -25,7 +25,7 @@ const CardNotice = () => {
           </p>
 
           <button className="self-end rounded-full h-[40px] w-[40px] mt-2 flex justify-center items-center border border-white bg-white">
-            <i class="bx bx-arrow-back rotate-[145deg]  text-bluefausti  text-3xl"></i>
+            <i class="bx bx-arrow-back rotate-[145deg]  text-lightbrown  text-3xl"></i>
           </button>
         </article>
       </div>

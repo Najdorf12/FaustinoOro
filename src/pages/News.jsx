@@ -1,44 +1,44 @@
-
 import { Link } from "react-router-dom";
 import CardNotice from "../components/CardNotice";
 import Footer from "../components/Footer";
+import bgNews from "/bg/bg3.jpg";
 
 const News = () => {
   return (
-    <main className="bg-bluefausti w-full min-h-screen pt-20 relative flex flex-col items-center xl:pt-20 overflow-hidden">
-      {/*  <div
-        style={{
-          clipPath: "polygon(100% 0, 0% 100%, 100% 100%)",
-        }}
-        className="absolute bg-zinc-100 inset-0 z-20"
-      ></div> */}
-      <nav className="w-full absolute top-0 right-0 z-50 flex justify-start pl-4 pt-4 xl:justify-start xl:pl-12  xl:pt-6 2xl:pl-14">
+    <main className="bg-zinc-800 w-full  relative flex flex-col items-center  overflow-hidden">
+      <nav className="w-full absolute top-0 z-50 flex justify-end items-center px-3 mt-1">
         <Link to={"/"}>
-          <button className="border-l-[2px] border-white text-white cursor-pointer flex items-center justify-between pl-3 w-[100px] xl:text-xl  2xl:text-2xl 2xl:w-[105px]">
-            Inicio
-            <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-lightbrown text-xl xl:text-2xl"></i>
-          </button>
+          <button className="px-6 bg-zinc-900 text-white">Ir al Inicio</button>
         </Link>
       </nav>
-
-      <article className="w-full flex flex-col justify-center items-center z-50 text-center text-balance">
-        <h3
-          className="w-[75%] md:w-[50%] xl:w-[35%] self-center rounded-2xl  max-w-[] flex justify-center items-center  font-title text-5xl text-white font-semibold  lg:text-6xl  2xl:text-7xl px-12 xl:px-14 2xl:px-16 py-3 border-[1px]  border-white shadow-lg shadow-zinc-800  z-50  bg-gradient-to-tr from-zinc-600 via-bluefausti to-zinc-800"
+      <section className="h-[60vh] w-full flex justify-center items-start relative  lg:justify-start lg:items-start lg:h-[100vh]">
+        <article
+          /* id="box-glass2" */
+          className="w-[95%] mt-12 flex flex-col justify-center items-center z-50 text-center lg:w-[auto] lg:mt-[2%] lg:items-start lg:ml-[3%] "
         >
-          NOTICIAS
-        </h3>
+          <h3 className="bg-gradient-to-b from-white via-white to-stone-400 bg-clip-text text-transparent   font-title text-6xl font-semibold z-50 lg:text-[7rem] lg:font-medium lg:w-full lg:text-start lg:from-stone-300 lg:via-stone-600 lg:to-stone-800 xl:text-[10rem] 2xl:text-[13rem]">
+            NOTICIAS
+          </h3>
+          <p className="font-text2 w-full text-balance text-white lg:text-2xl lg:max-w-[780px] text-center mt-3 lg:mt-4 lg:ml-3 lg:text-start  2xl: 2xl:text-3xl 2xl:max-w-[950px]">
+            Bienvenidos a la sección de noticias de Faustino Oro, donde
+            compartimos sus logros, próximas competencias y momentos clave en su
+            carrera de ajedrez. Explora actualizaciones sobre sus avances y
+            eventos especiales.
+          </p>
+        </article>
+        <figure className="absolute inset-0 w-full h-full flex justify-center items-center ">
+          <img
+            src={bgNews}
+            alt="bg-news"
+            className=" w-full h-full object-cover object-center lg:object-[center_-10px] z-40 "
+          />
+        </figure>
+      </section>
 
-        <p className="font-text2 w-full  mt-6 text-zinc-300 px-4  xl:mt-6 xl:text-lg  2xl:text-xl 2xl:max-w-[600px] bg-gradient-to-tr from-zinc-600 via-bluefausti to-zinc-800 py-3 rounded-2xl">
-          Bienvenidos a la sección de noticias de Faustino Oro, donde
-          compartimos sus logros, próximas competencias y momentos clave en su
-          carrera de ajedrez. Explora actualizaciones sobre sus avances, eventos
-          especiales y el detrás de escena de su entrenamiento para convertirse
-          en uno de los grandes del tablero.
+      <section className="z-50 w-full flex flex-col justify-start  pb-20 items-center px-3 bg-zinc-800 min-h-screen xl:items-center ">
+        <p className="font-text2 w-full  text-stone-100 lg:text-2xl lg:max-w-[750px] text-center mt-3 lg:mt-4 lg:ml-3  2xl: 2xl:text-3xl ">
+          Explora actualizaciones sobre sus avances y eventos especiales.
         </p>
-      </article>
-
-      <section className="z-50 w-full flex flex-col justify-start pt-12 pb-20 items-center px-3 bg-zinc-800 min-h-screen xl:items-start 2xl:mt-28 xl:pt-20">
-       
         <div className="mt-3 flex flex-wrap gap-4 justify-center items-center w-full xl:mt-8 xl:gap-6 2xl:gap-8 ">
           <CardNotice />
           <CardNotice />
