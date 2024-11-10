@@ -8,8 +8,31 @@ import "../components/Buttons/primaryBtn.css";
 import PrimaryBtn from "../components/Buttons/PrimaryBtn";
 
 const News = () => {
+  const news = [
+    {
+      title: "FAUSTINO CONSIGUE OTRO HITO HISTORICO",
+      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste reprehenderit commodi a nihil.",
+      date: "1",
+    },
+    {
+      title: "FAUSTINO LOREM IMPSUM DOLOR SIT",
+      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste reprehenderit commodi a nihil.",
+      date: "2",
+    },
+    {
+      title: "FAUSTINO LOREM IMPSUM DOLOR SIT",
+      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste reprehenderit commodi a nihil.",
+      date: "3",
+    },
+  ];
   return (
-    <main className="bg-zinc-800 w-full  relative flex flex-col items-center  overflow-hidden">
+    <main className="bg-zinc-800 w-full relative flex flex-col items-center  overflow-hidden">
       <nav className="w-full absolute top-0 z-[100] flex justify-start items-center  ">
         <Link to={"/"} className="font-title ">
           <button className="text-white bg-zinc-800 lg:text-zinc-800 lg:bg-white rounded-br-xl px-10 py-2 z-50 xl:text-xl xl:px-12 2xl:px-16 2xl:text-2xl">
@@ -17,6 +40,7 @@ const News = () => {
           </button>
         </Link>
       </nav>
+
       <section className="h-[70vh] w-full flex justify-center items-start pt-[] relative  lg:justify-start lg:items-start lg:h-[100vh]">
         <article
           id="box-glass2"
@@ -50,34 +74,33 @@ const News = () => {
         </figure>
       </section>
 
-      <section className="relative z-50 w-full flex flex-col justify-start  pb-20 items-center px-3 bg-zinc-800 min-h-screen xl:items-center ">
-        <figure className="absolute inset-0 w-full h-[60vh] flex justify-center items-center lg:h-[100vh] lg:self-start lg:right-0 lg:justify-end ">
+      <section className="relative z-50 w-full h-[60vh]  lg:h-screen">
+        <figure className="absolute inset-0 w-full h-[60vh] flex justify-center items-center lg:h-screen lg:self-start">
           <img
             src={bgNews2}
             alt="bg-news"
             className="w-full h-full object-cover object-center lg:w-[100%] lg:rounded-t-3xl  z-40 "
           />
         </figure>
-        <article className="flex flex-col items-center justify-center text-balance  lg:self-center">
-          <p className="z-50 font-text2 w-full text-xl text-stone-100 lg:text-2xl lg:max-w-[750px] text-center mt-6 lg:mt-4 lg:ml-3  2xl: 2xl:text-3xl ">
+        <article className="flex flex-col px-3 items-center justify-center text-balance  lg:self-center">
+          <p className="z-50 font-text2 w-full text-xl text-stone-100  text-center mt-8 lg:text-2xl lg:max-w-[750px] lg:mt-4 lg:ml-3  2xl: 2xl:text-3xl ">
             Explora actualizaciones sobre sus avances y eventos especiales.
           </p>
         </article>
       </section>
 
-      <section className="relative w-full h-[60vh]">
-        <figure className="absolute inset-0 w-full h-[60vh] flex justify-center items-center lg:self-start lg:right-0 lg:justify-end ">
-          {/* <img
-            src={bgNews3}
-            alt="bg-news"
-            className="w-full h-full object-cover object-center lg:w-[50%]  z-40 "
-          />*/}
-        </figure>
-        <div className="z-50 mt-12 flex flex-wrap gap-4 justify-center items-center w-full   lg:sef-start xl:mt-8 xl:gap-6 2xl:gap-8 ">
-          <CardNotice />
-          <CardNotice />
-          <CardNotice />
-          <CardNotice />
+      <section className="relative w-full min-h-screen">
+        <article className="mt-6 flex justify-start pl-3 items-center">
+          <h6 className="text-7xl text-zinc-700 font-medium font-title4">
+            SOME
+          </h6>
+        </article>
+        <div className="flex flex-wrap gap-y-4 gap-x-2 justify-start pl-4 mt-9">
+          {news?.map((news, i) => (
+            <div key={i} className="slide">
+              <CardNotice news={news} />
+            </div>
+          ))}
         </div>
       </section>
 
