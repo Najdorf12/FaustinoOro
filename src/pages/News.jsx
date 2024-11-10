@@ -35,7 +35,7 @@ const News = () => {
     <main className="bg-zinc-800 w-full relative flex flex-col items-center  overflow-hidden">
       <nav className="w-full absolute top-0 z-[100] flex justify-start items-center  ">
         <Link to={"/"} className="font-title ">
-          <button className="text-white bg-zinc-800 lg:text-zinc-800 lg:bg-white rounded-br-xl px-10 py-2 z-50 xl:text-xl xl:px-12 2xl:px-16 2xl:text-2xl">
+          <button className="text-white bg-zinc-800 lg:text-zinc-800 lg:bg-white rounded-br-xl px-12 py-2 z-50 xl:text-xl xl:px-14 2xl:px-16 2xl:text-2xl">
             Ir al Inicio
           </button>
         </Link>
@@ -44,16 +44,15 @@ const News = () => {
       <section className="h-[70vh] w-full flex justify-center items-start pt-[] relative  lg:justify-start lg:items-start lg:h-[100vh]">
         <article
           id="box-glass2"
-          className="w-full pt-12 pb-4 border-b border-stone-600 rounded-xl flex flex-col justify-center items-center gap-2 z-50 text-center lg:mt-0 lg:w-[50%] xl:w-[40%] lg:items-start  lg:justify-center lg:gap-5 lg:rounded-r-3xl lg:h-full lg:pl-6 xl:pl-6 2xl:pl-9 2xl:gap-6 lg:z-50 lg:border-r "
+          className="w-full pt-14 pb-4 border-b border-stone-600 rounded-xl flex flex-col justify-center items-center gap-2 z-50 text-center lg:mt-0 lg:w-[50%] xl:w-[40%] lg:items-start  lg:justify-center lg:gap-5 lg:rounded-r-3xl lg:h-full lg:pl-6 xl:pl-6 2xl:pl-9 2xl:gap-6 lg:z-50 lg:border-r "
         >
           <h3 className="font-title text-white text-6xl font-semibold z-50 lg:text-[6rem] lg:w-full lg:-mt-[5rem] lg:text-start  xl:-mt-[9rem] xl:text-[6.2rem]        2xl:text-[8rem] ">
             NOTICIAS
           </h3>
-          <p className="font-text2 w-full px-1 text-base text-balance text-stone-100 lg:text-lg xl:text-xl lg:pr-3  lg:px-0 lg:self-start lg:text-start  2xl: 2xl:text-2xl">
-            Bienvenidos a la sección de noticias de Faustino Oro, donde
-            compartimos sus logros, próximas competencias y momentos clave en su
-            carrera de ajedrez. Explora actualizaciones sobre sus avances y
-            eventos especiales.
+          <p className="font-text2 w-full sm:px-2 mt-2  text-sm text-center text-pretty text-zinc-300 lg:text-lg xl:text-xl lg:pr-3  lg:px-0 lg:self-start lg:text-start  2xl: 2xl:text-2xl">
+            Bienvenidos a la sección de noticias de Faustino Oro, <br />
+            donde compartimos sus logros, próximas competencias <br />y momentos
+            clave en su carrera de ajedrez.
           </p>
           <div className="flex justify-center w-full items-center font-title mt-3 gap-4 lg:justify-start lg:gap-6  xl:mt-6 xl:gap-12  ">
             <Link to={"/"} className="bg-white rounded-3xl text-zinc-700">
@@ -64,7 +63,6 @@ const News = () => {
             </Link>
           </div>
         </article>
-
         <figure className="absolute inset-0 w-full h-full flex justify-center items-center lg:self-end lg:right-0 lg:justify-end ">
           <img
             src={bgNews}
@@ -74,7 +72,7 @@ const News = () => {
         </figure>
       </section>
 
-      <section className="relative z-50 w-full h-[60vh]  lg:h-screen">
+      <section className="relative z-50 w-full h-[60vh] lg:h-screen">
         <figure className="absolute inset-0 w-full h-[60vh] flex justify-center items-center lg:h-screen lg:self-start">
           <img
             src={bgNews2}
@@ -82,19 +80,44 @@ const News = () => {
             className="w-full h-full object-cover object-center lg:w-[100%] lg:rounded-t-3xl  z-40 "
           />
         </figure>
-        <article className="flex flex-col px-3 items-center justify-center text-balance  lg:self-center">
-          <p className="z-50 font-text2 w-full text-xl text-stone-100  text-center mt-8 lg:text-2xl lg:max-w-[750px] lg:mt-4 lg:ml-3  2xl: 2xl:text-3xl ">
+        <article className="flex flex-col h-full px-3 items-center justify-start gap-3 mt-8  text-balance  lg:self-center">
+          <p className="z-50 font-text2 w-full text-xl text-white text-center  lg:text-2xl lg:max-w-[750px] lg:mt-4 lg:ml-3  2xl: 2xl:text-3xl ">
             Explora actualizaciones sobre sus avances y eventos especiales.
           </p>
+
+          <article
+            id="box-glass2"
+            className="rounded-2xl border border-stone-400 z-50  relative  pt-2 pl-4  flex flex-col w-[350px] h-[170px]  px-3 md:text-5xl lg:pt-4 lg:pl-6 "
+          >
+            <p className="text-sm text-zinc-200 font-text2 text-balance font-normal mt-1   md:text-base xl:mt-3 xl:text-lg ">
+              <span className="text-rose-300">
+                {" "}
+                Con dedicación, esfuerzo y disciplina
+              </span>
+              , Faustino sigue conquistando nuevos desafíos en cada partida.
+              Aquí podrás conocer no solo sus logros más recientes, sino también
+              el arduo camino de entrenamiento y preparación que los hace
+              posibles.
+            </p>
+            <figure className="z-50 bg-red-500 mt-2 mr-6 flex justify-end items-center">
+              <i className="bx bxs-doughnut-chart text-6xl z-50 text-white"></i>
+            </figure>
+          </article>
         </article>
       </section>
 
-      <section className="relative w-full min-h-screen">
-        <article className="mt-6 flex justify-start pl-3 items-center">
+      <section className="relative w-full min-h-screen pb-20">
+        <article className="mt-6 flex flex-col justify-start pl-3 items-start text-balance">
           <h6 className="text-7xl text-zinc-700 font-medium font-title4">
             SOME
           </h6>
+          <p className="font-text2 text-stone-100  mt-5 lg:text-lg xl:text-xl ">
+            ¡No te pierdas sus próximos torneos y logros! Síguenos para estar al
+            tanto de las últimas noticias sobre Faustino y su camino en el
+            ajedrez.
+          </p>
         </article>
+
         <div className="flex flex-wrap gap-y-4 gap-x-2 justify-start pl-4 mt-9">
           {news?.map((news, i) => (
             <div key={i} className="slide">
@@ -103,8 +126,6 @@ const News = () => {
           ))}
         </div>
       </section>
-
-      <Footer />
     </main>
   );
 };
