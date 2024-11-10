@@ -20,22 +20,22 @@ const News = () => {
       <section className="h-[70vh] w-full flex justify-center items-start pt-[] relative  lg:justify-start lg:items-start lg:h-[100vh]">
         <article
           id="box-glass2"
-          className="w-full border-b-[2px] border-stone-200 pt-12 pb-4 rounded-xl flex flex-col justify-center items-center gap-2 z-50 text-center lg:mt-0 lg:border-transparent lg:w-[50%] lg:items-center lg:border-y-transparent  lg:border-r-[2px] lg:border-white lg:justify-center lg:gap-5 lg:rounded-r-3xl lg:pl-[2%] lg:h-full 2xl:gap-6 lg:z-50"
+          className="w-full pt-12 pb-4 border-b border-stone-600 rounded-xl flex flex-col justify-center items-center gap-2 z-50 text-center lg:mt-0 lg:w-[50%] xl:w-[40%] lg:items-start  lg:justify-center lg:gap-5 lg:rounded-r-3xl lg:h-full lg:pl-6 xl:pl-6 2xl:pl-9 2xl:gap-6 lg:z-50 lg:border-r "
         >
-          <h3 className="bg-gradient-to-b from-white via-stone-200 to-stone-500 bg-clip-text text-transparent  font-title text-6xl font-semibold z-50 lg:text-[6rem] lg:font-medium lg:w-full lg:text-start  xl:text-[8rem] 2xl:text-[10rem]">
+          <h3 className="font-title text-white text-6xl font-semibold z-50 lg:text-[6rem] lg:w-full lg:-mt-[5rem] lg:text-start  xl:-mt-[9rem] xl:text-[6.2rem]        2xl:text-[8rem] ">
             NOTICIAS
           </h3>
-          <p className="font-text2 w-full px-1 text-base text-balance text-stone-200 lg:text-xl  lg:text-start lg:px-0 xl:pr-3  2xl: 2xl:text-3xl">
+          <p className="font-text2 w-full px-1 text-base text-balance text-stone-100 lg:text-lg xl:text-xl lg:pr-3  lg:px-0 lg:self-start lg:text-start  2xl: 2xl:text-2xl">
             Bienvenidos a la sección de noticias de Faustino Oro, donde
             compartimos sus logros, próximas competencias y momentos clave en su
             carrera de ajedrez. Explora actualizaciones sobre sus avances y
             eventos especiales.
           </p>
-          <div className="flex justify-evenly w-full items-center font-title mt-3 lg:justify-start lg:gap-12 lg:mt-3 2xl:mt-6">
-            <Link to={"/"}>
-              <PrimaryBtn btnname={"Ver Mas"} />
+          <div className="flex justify-center w-full items-center font-title mt-3 gap-4 lg:justify-start lg:gap-6  xl:mt-6 xl:gap-12  ">
+            <Link to={"/"} className="bg-white rounded-3xl text-zinc-700">
+              <PrimaryBtn btnname={"Ver más"} />
             </Link>
-            <Link to={"/"}>
+            <Link to={"/"} className="bg-zinc-800 rounded-3xl text-white">
               <PrimaryBtn btnname={"Torneos"} />
             </Link>
           </div>

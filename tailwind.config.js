@@ -9,7 +9,7 @@ export default {
 
       lg: "1000px",
 
-      xl: "1200px",
+      xl: "1300px",
 
       "2xl": "1636px",
     },

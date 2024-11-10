@@ -3,9 +3,9 @@ import "./primaryBtn.css";
 const PrimaryBtn = ({btnname}) => {
   return (
     <>
-      <button className="animated-button text-white bg-zinc-800 rounded-3xl px-10 py-1 lg:px-14 2xl:py-[6px] 2xl:px-16">
+      <button className="animated-button rounded-3xl px-12 py-1 lg:px-14 xl:px-16 2xl:py-[6px] 2xl:px-16 shadow-lg shadow-zinc-900 border border-stone-500">
         <i className="bx bxl-whatsapp arr-2 text-3xl  text-[#25D366]"></i>
-        <span className="text font-title font-medium text-base lg:text-lg 2xl:text-xl ">{btnname}</span>
+        <span className="text font-title font-medium text-base lg:text-lg xl:text-xl ">{btnname}</span>
         <span className="circle bg-zinc-800"></span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
