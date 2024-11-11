@@ -1,6 +1,6 @@
 import "./primaryBtn.css";
 
-const PrimaryBtn = ({btnname}) => {
+const NavBtn = ({btnname}) => {
   return (
     <>
       <button className="animated-button rounded-3xl px-12 py-1 lg:px-14 xl:px-16 2xl:py-[6px] 2xl:px-16 shadow-lg shadow-zinc-900 border border-stone-2
@@ -14,4 +14,4 @@ const PrimaryBtn = ({btnname}) => {
   );
 };
 
-export default PrimaryBtn;
+export default NavBtn;

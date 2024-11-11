@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import NavBtn from "../components/Buttons/NavBtn"
 
 const Home = () => {
   const [windowWidth, setwindowWidth] = useState(null);
@@ -44,7 +45,7 @@ const Home = () => {
           {/* BORDER BUTTONS */}
           <span className="absolute mt-2 top-0 right-0 left-0 flex justify-end mr-3 items-center gap-3 font-text2 text-black py-1 lg:mt-3 lg:justify-end lg:pr-[2%]  2xl:mt-5">
             {windowWidth < 900 ? (
-              <section className="flex flex-col items-end gap-3">
+              <section className="flex flex-col items-end gap-3 bg-teal-600 w-[60%] ">
                 <input
                   id="checkbox2"
                   type="checkbox"
@@ -57,39 +58,15 @@ const Home = () => {
                   <div id="bar6" className="bars"></div>
                 </label>
                 <ul
-                  className={`flex flex-col items-end gap-10 mt-3 text-xl text-white font-text2  menu ${
+                  className={`flex flex-col pl-3 gap-10 w-full text-xl text-white bg-red-600 h-full font-text2  menu ${
                     isMenuOpen ? "menu-open" : ""
                   }`}
                 >
-                  <li
-                    /* id="news-box" */
-                    className=" border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]"
-                  >
-                    Torneos
-                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
+                {btnsNav?.map((btn, i)=>(
+                  <li key={i}  >
+                    <NavBtn btnname={btn} />
                   </li>
-                  <Link /* to="/games" */>
-                    <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px] gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
-                      Partidas
-                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
-                    </li>
-                  </Link>
-                  <Link to={"/news"}>
-                    <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
-                      Noticias
-                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
-                    </li>
-                  </Link>
-                  <Link to={"/courses"}>
-                    <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px] gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
-                      Cursos
-                      <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
-                    </li>
-                  </Link>
-                  <li className="border-[2px] border-zinc-500 rounded-xl cursor-pointer flex items-center justify-between pl-4 pr-2 w-[145px]  gap-2  bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 py-[1px]">
-                    Contacto
-                    <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center text-zinc-400 text-2xl "></i>
-                  </li>
+                ))}
                 </ul>
               </section>
             ) : (
