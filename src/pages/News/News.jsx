@@ -99,16 +99,16 @@ const News = () => {
             className="w-full h-full object-cover object-center lg:w-[100%] lg:rounded-t-3xl  z-40 "
           />
         </figure>
-        <article className="flex flex-col h-full px-3 items-center justify-start gap-3 mt-8  text-balance  lg:self-center lg:mt-12 lg:gap-8 xl:gap-10 xl:mt-14 2xl:mt-20 2xl:gap-12">
+        <article className="flex flex-col h-full px-3 items-center justify-start gap-3 mt-8  text-balance  lg:self-center lg:mt-12 lg:gap-8 xl:gap-12 xl:mt-16 2xl:mt-24 2xl:gap-14">
           <p className="z-50 font-title4 w-full text-xl text-white text-center xl:max-w-[900px] lg:text-3xl  2xl:text-4xl 2xl:max-w-[1000px] ">
             Explora actualizaciones sobre sus avances y eventos especiales.
           </p>
 
           <article
             id="box-glass2"
-            className="rounded-2xl border border-white z-50  relative  flex flex-col justify-center items-center w-[350px] h-[195px] px-1 md:w-[400px] lg:w-[550px] lg:h-[220px] 2xl:w-[600px] 2xl:h-[270px]"
+            className="z-50 relative pt-3 pb-9 px-3  rounded-xl border border-stone-100 max-w-[500px] flex justify-center items-center xl:max-w-[600px] 2xl:max-w-[700px]"
           >
-            <p className="text-base text-white font-text2 text-balance text-center font-normal mt-1 md:text-base md:w-[90%] lg:text-xl 2xl:text-2xl">
+            <p className="text-base text-zinc-300 font-text2 text-balance text-center font-normal  md:text-base md:w-[90%] lg:text-xl 2xl:text-2xl">
             Con 
               <span className="text-rose-400">
                 {" "}
@@ -119,7 +119,7 @@ const News = () => {
               el arduo camino de entrenamiento y preparación que los hace
               posibles.
             </p>
-            <figure className="z-50 mt-3 mr-5 w-full flex justify-end items-center md:mt-2 md:mr-7 lg:mt-6 lg:mr-12 2xl:mr-16 2xl:mt-2">
+            <figure className="absolute bottom-0 right-0">
               <i className="bx bxs-doughnut-chart text-5xl z-50 text-rose-500  2xl:text-6xl"></i>
             </figure>
           </article>
