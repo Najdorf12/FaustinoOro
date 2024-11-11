@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <>
-      <section className=" w-full h-screen bg-[#e8e8e8] flex justify-center items-center z-50 ">
+      <section className="relative w-full h-screen bg-[#e8e8e8] flex justify-center items-center z-50 ">
         <div
           className="w-[100%] h-screen relative bg-center bg-fixed bg-cover bg-no-repeat z-50 flex  justify-center"
           id="home"
@@ -43,22 +43,23 @@ const Home = () => {
           </article>
 
           {/* BORDER BUTTONS */}
-          <span className="absolute mt-2 top-0 right-0 left-0 flex justify-end mr-3 items-center gap-3 font-text2 text-black py-1 lg:mt-3 lg:justify-end lg:pr-[2%]  2xl:mt-5">
+          <span className="absolute inset-0 flex justify-end pt-2">
             {windowWidth < 900 ? (
-              <section className="flex flex-col items-end gap-3 bg-teal-600 w-[60%] ">
+              <section className="relative gap-3  w-[60%] flex flex-col rounded-2xl  ">
                 <input
                   id="checkbox2"
                   type="checkbox"
                   checked={isMenuOpen}
                   onChange={handleCheckboxChange}
                 />
-                <label className="toggle toggle2" htmlFor="checkbox2">
+                <label className="toggle toggle2  absolute top-3 right-0 self-end flex justify-end items-end z-50" htmlFor="checkbox2">
                   <div id="bar4" className="bars"></div>
                   <div id="bar5" className="bars"></div>
                   <div id="bar6" className="bars"></div>
                 </label>
                 <ul
-                  className={`flex flex-col pl-3 gap-10 w-full text-xl text-white bg-red-600 h-full font-text2  menu ${
+                id="box-glass2"
+                  className={`flex flex-col items-start self-start pt-20 -mt-16 pl-4 gap-10 w-full text-xl text-white border-l rounded-l-2xl   h-full font-text2  menu ${
                     isMenuOpen ? "menu-open" : ""
                   }`}
                 >
