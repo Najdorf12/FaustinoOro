@@ -63,8 +63,11 @@ const News = () => {
       <section className="h-[70vh] w-full flex justify-center items-start pt-[] relative  lg:justify-start lg:items-start lg:h-[100vh]">
         <article
           id="box-glass2"
-          className="w-full pt-14 pb-4 border-b border-stone-600 rounded-xl flex flex-col justify-center items-center gap-2 z-50 text-center lg:mt-0 lg:w-[50%] xl:w-[40%] lg:items-start  lg:justify-center lg:gap-5 lg:rounded-r-3xl lg:h-full lg:pl-6 xl:pl-6 2xl:pl-9 2xl:gap-6 lg:z-50 lg:border-r "
+          className="w-full pt-14 pb-4 border-b border-stone-500 rounded-xl flex flex-col justify-center items-center gap-2 z-50 text-center lg:mt-0 lg:w-[50%] xl:w-[40%] lg:items-start  lg:justify-center lg:gap-5 lg:rounded-r-3xl lg:border-stone-200 lg:h-full lg:pl-6 xl:pl-6 2xl:pl-9 2xl:gap-6 lg:z-50 lg:border-r "
         >
+          <figure className="absolute top-0 right-1 lg:bottom-3 lg:right-3 lg:flex lg:items-end  ">
+            <i className="bx bxs-doughnut-chart text-4xl z-50 text-zinc-800  lg:text-6xl 2xl:text-7xl"></i>
+          </figure>
           <h3 className="font-title text-white text-6xl font-semibold z-50 lg:text-[6rem] lg:w-full lg:-mt-[5rem] lg:text-start  xl:-mt-[9rem] xl:text-[6.2rem]        2xl:text-[8rem] ">
             NOTICIAS
           </h3>
@@ -106,21 +109,21 @@ const News = () => {
 
           <article
             id="box-glass2"
-            className="z-50 relative pt-3 pb-9 px-3  rounded-xl border border-stone-100 max-w-[500px] flex justify-center items-center xl:max-w-[600px] 2xl:max-w-[700px]"
+            className="z-50 relative pt-3 pb-8 md:pb-9 px-3  rounded-xl border border-stone-200 max-w-[500px] flex justify-center items-center xl:max-w-[600px] 2xl:max-w-[700px]"
           >
             <p className="text-base text-zinc-300 font-text2 text-balance text-center font-normal  md:text-base md:w-[90%] lg:text-xl 2xl:text-2xl">
-            Con 
+              Con
               <span className="text-rose-400">
                 {" "}
-                 dedicación, esfuerzo y disciplina
+                dedicación, esfuerzo y disciplina
               </span>
               , Faustino sigue conquistando nuevos desafíos en cada partida.
               Aquí podrás conocer no solo sus logros más recientes, sino también
               el arduo camino de entrenamiento y preparación que los hace
               posibles.
             </p>
-            <figure className="absolute bottom-0 right-0">
-              <i className="bx bxs-doughnut-chart text-5xl z-50 text-rose-500  2xl:text-6xl"></i>
+            <figure className="absolute bottom-0 right-1">
+              <i className="bx bxs-doughnut-chart text-4xl md:text-5xl z-50 text-rose-500  2xl:text-6xl"></i>
             </figure>
           </article>
         </article>
