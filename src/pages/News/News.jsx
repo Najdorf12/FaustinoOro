@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
-import CardNotice from "../components/CardNotice";
-import Footer from "../components/Footer";
+import CardNotice from "./CardNotice";
 import bgNews from "/bg/bg9.jpg";
 import bgNews2 from "/bg/bg10.jpg";
-import bgNews3 from "/bg/bg1.jpg";
-import "../components/Buttons/primaryBtn.css";
-import PrimaryBtn from "../components/Buttons/PrimaryBtn";
+import "../../components/Buttons/primaryBtn.css";
+import PrimaryBtn from "../../components/Buttons/PrimaryBtn";
 
 const News = () => {
   const news = [
@@ -30,12 +28,33 @@ const News = () => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste reprehenderit commodi a nihil.",
       date: "3",
     },
+    {
+      title: "FAUSTINO LOREM IMPSUM DOLOR SIT",
+      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste reprehenderit commodi a nihil.",
+      date: "4",
+    },
+    {
+      title: "FAUSTINO LOREM IMPSUM DOLOR SIT",
+      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste reprehenderit commodi a nihil.",
+      date: "5",
+    },
+    {
+      title: "FAUSTINO LOREM IMPSUM DOLOR SIT",
+      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste reprehenderit commodi a nihil.",
+      date: "6",
+    },
   ];
   return (
     <main className="bg-zinc-800 w-full relative flex flex-col items-center  overflow-hidden">
       <nav className="w-full absolute top-0 z-[100] flex justify-start items-center  ">
         <Link to={"/"} className="font-title ">
-          <button className="text-white bg-zinc-800 lg:text-zinc-800 lg:bg-white rounded-br-xl px-12 py-2 z-50 xl:text-xl xl:px-14 2xl:px-16 2xl:text-2xl">
+          <button className="text-white border-b border-white bg-zinc-800 rounded-br-xl px-12 py-2 z-50 xl:text-xl xl:px-14 2xl:px-16 2xl:text-2xl">
             Ir al Inicio
           </button>
         </Link>
@@ -80,45 +99,46 @@ const News = () => {
             className="w-full h-full object-cover object-center lg:w-[100%] lg:rounded-t-3xl  z-40 "
           />
         </figure>
-        <article className="flex flex-col h-full px-3 items-center justify-start gap-3 mt-8  text-balance  lg:self-center">
-          <p className="z-50 font-text2 w-full text-xl text-white text-center  lg:text-2xl lg:max-w-[750px] lg:mt-4 lg:ml-3  2xl: 2xl:text-3xl ">
+        <article className="flex flex-col h-full px-3 items-center justify-start gap-3 mt-8  text-balance  lg:self-center lg:mt-12 lg:gap-8 xl:gap-10 xl:mt-14 2xl:mt-20 2xl:gap-12">
+          <p className="z-50 font-title4 w-full text-xl text-white text-center xl:max-w-[900px] lg:text-3xl  2xl:text-4xl 2xl:max-w-[1000px] ">
             Explora actualizaciones sobre sus avances y eventos especiales.
           </p>
 
           <article
             id="box-glass2"
-            className="rounded-2xl border border-stone-400 z-50  relative  pt-2 pl-4  flex flex-col w-[350px] h-[170px]  px-3 md:text-5xl lg:pt-4 lg:pl-6 "
+            className="rounded-2xl border border-white z-50  relative  flex flex-col justify-center items-center w-[350px] h-[195px] px-1 md:w-[400px] lg:w-[550px] lg:h-[220px] 2xl:w-[600px] 2xl:h-[270px]"
           >
-            <p className="text-sm text-zinc-200 font-text2 text-balance font-normal mt-1   md:text-base xl:mt-3 xl:text-lg ">
-              <span className="text-rose-300">
+            <p className="text-base text-white font-text2 text-balance text-center font-normal mt-1 md:text-base md:w-[90%] lg:text-xl 2xl:text-2xl">
+            Con 
+              <span className="text-rose-400">
                 {" "}
-                Con dedicación, esfuerzo y disciplina
+                 dedicación, esfuerzo y disciplina
               </span>
               , Faustino sigue conquistando nuevos desafíos en cada partida.
               Aquí podrás conocer no solo sus logros más recientes, sino también
               el arduo camino de entrenamiento y preparación que los hace
               posibles.
             </p>
-            <figure className="z-50 bg-red-500 mt-2 mr-6 flex justify-end items-center">
-              <i className="bx bxs-doughnut-chart text-6xl z-50 text-white"></i>
+            <figure className="z-50 mt-3 mr-5 w-full flex justify-end items-center md:mt-2 md:mr-7 lg:mt-6 lg:mr-12 2xl:mr-16 2xl:mt-2">
+              <i className="bx bxs-doughnut-chart text-5xl z-50 text-rose-500  2xl:text-6xl"></i>
             </figure>
           </article>
         </article>
       </section>
 
       <section className="relative w-full min-h-screen pb-20">
-        <article className="mt-6 flex flex-col justify-start pl-3 items-start text-balance">
-          <h6 className="text-7xl text-zinc-700 font-medium font-title4">
-            SOME
+        <article className="mt-9 flex flex-col justify-start pl-3 items-start text-balance lg:items-center lg:mt-[4%] ">
+          <h6 className="text-6xl text-zinc-700 font-medium font-title4 lg:text-center lg:text-7xl xl:text-8xl 2xl:text-9xl">
+            noticias
           </h6>
-          <p className="font-text2 text-stone-100  mt-5 lg:text-lg xl:text-xl ">
+          <p className="font-text2 text-stone-300  mt-6 lg:text-lg lg:text-center lg:max-w-[770px] xl:text-xl 2xl:text-2xl 2xl:mt-9xl ">
             ¡No te pierdas sus próximos torneos y logros! Síguenos para estar al
             tanto de las últimas noticias sobre Faustino y su camino en el
             ajedrez.
           </p>
         </article>
 
-        <div className="flex flex-wrap gap-y-4 gap-x-2 justify-start pl-4 mt-9">
+        <div className="flex flex-wrap gap-y-5 gap-x-20 justify-start pl-3 mt-10 w-full   md:justify-center lg:gap-x-24 lg:mt-16 lg:pl-0 lg:px-[5%] xl:gap-y-8 2xl:gap-x-32 ">
           {news?.map((news, i) => (
             <div key={i} className="slide">
               <CardNotice news={news} />

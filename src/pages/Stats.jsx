@@ -2,7 +2,7 @@ import SplitType from "split-type";
 import imgTorneo from "../assets/img-torneo.jpg";
 import CardTournament from "../components/CardTournament";
 import gsap from "gsap";
-import CardNoticeHome from "../components/CardNoticeHome";
+import CardNoticeHome from "./News/CardNoticeHome";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import { useState, useEffect, useLayoutEffect } from "react";

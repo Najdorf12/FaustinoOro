@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import imgFausti from "../assets/fausti3.jpg";
-import Footer from "../components/Footer";
+/* import imgFausti from "../../assets/fausti3.jpg"; */
+import Footer from "../../components/Footer";
 
 const NewsDetail = () => {
   return (
@@ -31,11 +31,11 @@ const NewsDetail = () => {
 
         <div className="w-full  self-center  xl:w-auto mt-20  z-20 rounded-3xl px-3">
           <picture className="max-w-[350px]">
-            <img
+          {/*   <img
               src={imgFausti}
               className="rounded-2xl shadow-xl shadow-zinc-900 w-full max-w-[650px] 2xl:max-w-[800px]"
               alt="imgFausti"
-            />
+            /> */}
           </picture>
         </div>
 

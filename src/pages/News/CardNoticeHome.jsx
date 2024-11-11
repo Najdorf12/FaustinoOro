@@ -1,4 +1,4 @@
-import imgFausti from "../assets/img6.jpg";
+import imgFausti from "../../assets/img6.jpg";
 import { Link } from "react-router-dom";
 
 const CardNoticeHome = () => {
