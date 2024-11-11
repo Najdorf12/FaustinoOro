@@ -11,8 +11,7 @@
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.animated-button svg,
-i {
+.animated-button svg, .bx-right-arrow-alt {
   position: absolute;
   width: 24px;
   fill: rgb(244, 63, 94);
