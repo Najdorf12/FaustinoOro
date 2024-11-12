@@ -3,9 +3,9 @@ import "./primaryBtn.css";
 const NavBtn = ({ btnname }) => {
   return (
     <>
-      <button className="animated-button rounded-3xl w-[180px] pl-12 py-1 shadow-lg shadow-zinc-900 border border-stone-200   lg:w-[200px] 2xl:pl-14 2xl:w-[220px] ">
+      <button className="animated-button rounded-3xl w-[180px] pl-12 py-1 shadow-lg shadow-zinc-900 border border-stone-200 lg:w-[200px] lg: lg:rounded- 2xl:pl-14 2xl:w-[220px] ">
         <i className="bx bx-right-arrow-alt arr-2 text-3xl  text-rose-600 2xl:text-4xl"></i>
-        <span className="text font-title2 font-medium text-base xl:text-lg 2xl:text-xl">
+        <span className="text font-title2 font-medium text-base  2xl:text-lg">
           {btnname}
         </span>
         <span className="circle bg-zinc-800"></span>
