@@ -57,9 +57,9 @@ const Home = () => {
                   <NavBtn btnname={btn?.name} />
                 </a>
               ))}
-              <figure className="absolute top-2 left-3 xl:top-1 xl:left-4">
+              <figure className="absolute top-4 left-3 xl:top-1 xl:left-4">
                 {/* <i className="bx bxs-doughnut-chart text-5xl md:text-5xl z-50 text-stone-400  2xl:text-6xl"></i> */}
-                <img className="object-cover object-center w-[4rem] lg:w-[3rem]" src={iconNav} alt="" />
+                <img className="object-cover object-center w-[3rem] " src={iconNav} alt="" />
               </figure>
             </div>
           </section>
