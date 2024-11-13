@@ -141,7 +141,7 @@ const Stats = () => {
         <article className="relative -mt-6  z-[200]  flex flex-col justify-center items-center gap-6 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:mt-[3%]  xl:gap-8 2xl:gap-10">
           <h6
             id="split"
-            className="font-text2 text-6xl z-[200]  font-bold md:text-6xl lg:text-[20dvh] text-white lg:self-start lg:ml-[5%] lg:-z-20 "
+            className="font-text2 text-6xl z-[200]  font-bold md:text-6xl lg:text-[18dvh] text-white lg:self-start lg:ml-[5%] lg:-z-20 "
           >
             NOTICIAS
           </h6>
