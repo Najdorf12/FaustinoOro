@@ -128,7 +128,7 @@ const About = () => {
           </h3>
           <div
             id="line-about"
-            className="w-[0%] h-[2px]  bg-stone-300 rounded-md mt-4 xl:mt-5 2xl:mt-6"
+            className="w-[0%] h-[2px]  bg-stone-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"
           ></div>
           <p
             id="p-about"
@@ -173,7 +173,7 @@ const About = () => {
 
             <p
               id="about-history"
-              className="relative  w-[96%] mt-6 max-h-[350px] pr-3 overflow-y-scroll text-base font-text2 2xl:mt-7 2xl:text-[1.3rem] text-stone-400 pt-1 pb-2 rounded-lg"
+              className="relative  w-[96%] mt-6 max-h-[350px] pr-3 overflow-y-scroll text-base font-text2 text-stone-400 pt-1 pb-2 rounded-lg lg:text-stone-500 2xl:mt-7 2xl:text-[1.3rem]"
             >
               Mi primer torneo de ajedrez clásico fue el "8vo IRT Alejandro
               Judewicz" en Mar del Plata, Buenos Aires, Argentina, en septiembre
@@ -203,10 +203,10 @@ const About = () => {
           <div className="flex -inset-1 mt-[36px]   items-center gap-6 font-title2 text-lg font-semibold  xl:text-base xl:gap-8 2xl:gap-14  2xl:text-xl ">
             <button
               onClick={() => handleSectionChange("sobreMi2")}
-              className=" border-[1px] rounded-3xl text-stone-200 bg-gray-600 border-stone-400  px-4  flex justify-between items-center  lg:lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
+              className=" border-[1px] rounded-3xl text-white bg-gray-600 border-stone-400  px-4  flex justify-between items-center  lg:lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
             >
               SOBRE MI
-              <i class="bx bx-arrow-back text-stone-200 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
+              <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
             </button>
             <button
               id="news-box"
@@ -268,8 +268,7 @@ const About = () => {
             {"Soy Faustino Oro. Nací en Buenos Aires, Argentina, el 14 de octubre de 2013".toUpperCase()}
           </h3>
           <div
-            id="line-about"
-            className="w-[0%] h-[2px]  bg-stone-300 rounded-md mt-4 xl:mt-5 2xl:mt-6"
+            className="w-[90%] h-[2px]  bg-stone-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"
           ></div>
           <p
             id="sobreMi2-text"
@@ -309,7 +308,7 @@ const About = () => {
         id="second_section"
         className="w-full h-screen bg-whiteCustom flex lg:justify-end  font-title overflow-hidden relative"
       >
-        <article className="relative  pt-24 lg:pt-0 px-3 pl-[4%] sm:pl-[6%] lg:pl-0 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[5%] lg:mt-[6%] xl:max-w-[650px]  2xl:mr-[12%]  2xl:max-w-[750px] text-balance ">
+        <article className="relative  pt-24 lg:pt-0 px-3 pl-[4%] sm:pl-[6%] lg:pl-0 flex flex-col gap-3 z-50 sm:max-w-[550px] lg:mr-[3%] lg:mt-[8%] xl:max-w-[650px]  2xl:mr-[6%]  2xl:max-w-[750px] text-balance ">
           <h5
             id="about-text"
             className="text-xl font-title4 text-stone-400 xl:text-2xl 2xl:text-3xl font-medium opacity-0 lg:text-stone-500"
@@ -326,7 +325,7 @@ const About = () => {
           <div className="self-end z-20 ">
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-whiteCustom "
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[2px] border-white"
             ></div>
             <div
               id="box-about"
@@ -334,7 +333,7 @@ const About = () => {
             ></div>
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-whiteCustom border-[1px]"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-white border-[2px]"
             ></div>
             <div
               id="box-about"
@@ -342,13 +341,13 @@ const About = () => {
             ></div>
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-whiteCustom border-[1px]"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-white border-[2px]"
             ></div>
           </div>
           <div className="self-end z-50 ">
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-whiteCustom "
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[2px] border-white"
             ></div>
             <div
               id="box-about"
@@ -356,31 +355,7 @@ const About = () => {
             ></div>
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-whiteCustom border-[1px]"
-            ></div>
-            <div
-              id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-bluefausti md:opacity-1"
-            ></div>
-          </div>
-          <div className="self-end z-50 ">
-            <div
-              id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-whiteCustom "
-            ></div>
-            <div
-              id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-bluefausti md:opacity-1"
-            ></div>
-            <div
-              id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-whiteCustom "
-            ></div>
-          </div>
-          <div className="self-end z-50 ">
-            <div
-              id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-whiteCustom "
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-white border-[2px]"
             ></div>
             <div
               id="box-about"
@@ -390,7 +365,31 @@ const About = () => {
           <div className="self-end z-50 ">
             <div
               id="box-about"
-              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[1px] border-whiteCustom "
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[2px] border-white"
+            ></div>
+            <div
+              id="box-about"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-bluefausti md:opacity-1"
+            ></div>
+            <div
+              id="box-about"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[2px] border-white"
+            ></div>
+          </div>
+          <div className="self-end z-50 ">
+            <div
+              id="box-about"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[2px] border-white"
+            ></div>
+            <div
+              id="box-about"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] bg-bluefausti md:opacity-1"
+            ></div>
+          </div>
+          <div className="self-end z-50 ">
+            <div
+              id="box-about"
+              className="w-[100px] h-[100px] xl:w-[120px] 2xl:w-[150px] xl:h-[120px] 2xl:h-[150px] border-[2px] border-white"
             ></div>
           </div>
         </section>
