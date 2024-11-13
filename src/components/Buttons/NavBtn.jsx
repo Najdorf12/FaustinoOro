@@ -5,7 +5,7 @@ const NavBtn = ({ btnname }) => {
     <>
       <button className="animated-button rounded-3xl w-[180px] pl-12 py-1 shadow-lg shadow-zinc-800 border border-stone-600  lg:w-[190px] lg: lg:rounded- 2xl:pl-14 2xl:w-[220px] ">
         <i className="bx bx-right-arrow-alt arr-2 text-3xl  text-rose-600 2xl:text-4xl"></i>
-        <span className="text font-title2 font-medium text-base  2xl:text-lg">
+        <span className="text font-title2 text-base  2xl:text-lg">
           {btnname}
         </span>
         <span className="circle bg-zinc-800"></span>

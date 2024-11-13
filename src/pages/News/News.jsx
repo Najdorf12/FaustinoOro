@@ -4,6 +4,7 @@ import bgNews from "/bg/bg9.jpg";
 import bgNews2 from "/bg/bg10.jpg";
 import "../../components/Buttons/primaryBtn.css";
 import PrimaryBtn from "../../components/Buttons/PrimaryBtn";
+import iconNav from "/iconNav.png";
 
 const News = () => {
   const news = [
@@ -65,9 +66,9 @@ const News = () => {
           id="box-glass2"
           className="w-full pt-14 pb-4 border-b border-stone-500 rounded-xl flex flex-col justify-center items-center gap-2 z-50 text-center lg:mt-0 lg:w-[50%] xl:w-[40%] lg:items-start  lg:justify-center lg:gap-5 lg:rounded-r-3xl lg:border-stone-200 lg:h-full lg:pl-6 xl:pl-6 2xl:pl-9 2xl:gap-6 lg:z-50 lg:border-r "
         >
-          <figure className="absolute top-0 right-1 lg:bottom-3 lg:right-3 lg:flex lg:items-end  ">
-            <i className="bx bxs-doughnut-chart text-4xl z-50 text-zinc-800  lg:text-6xl 2xl:text-7xl"></i>
-          </figure>
+          <figure className="absolute top-1 right-2 lg:right-3 flex justify-center items-center lg:bottom-3 lg:items-end">
+              <img src={iconNav} alt="iconNav" className="object-cover object-center w-[3rem] lg:w-[4rem]" />
+         </figure>
           <h3 className="font-title text-white text-6xl font-semibold z-50 lg:text-[6rem] lg:w-full lg:-mt-[5rem] lg:text-start  xl:-mt-[9rem] xl:text-[6.2rem]        2xl:text-[8rem] ">
             NOTICIAS
           </h3>
@@ -76,8 +77,8 @@ const News = () => {
             donde compartimos sus logros, próximas competencias <br />y momentos
             clave en su carrera de ajedrez.
           </p>
-          <div className="flex justify-center w-full items-center font-title mt-3 gap-4 lg:justify-start lg:gap-6  xl:mt-6 xl:gap-12  ">
-            <Link to={"/"} className="bg-white rounded-3xl text-zinc-700">
+          <div className="flex justify-center w-full items-center mt-3 gap-4 lg:justify-start lg:gap-6  xl:mt-6 xl:gap-12 ">
+            <Link to={"/"} className="bg-white rounded-3xl text-zinc-800 ">
               <PrimaryBtn btnname={"Ver más"} />
             </Link>
             <Link to={"/"} className="bg-zinc-800 rounded-3xl text-white">
