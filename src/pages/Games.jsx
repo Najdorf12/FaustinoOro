@@ -6,7 +6,6 @@ import { getGames } from "../api/handlers";
 const Games = () => {
   const [allGames, setAllGames] = useState(null);
   const [selectedGame, setSelectedGame] = useState(null);
- 
 
   const [game, setGame] = useState(new Chess());
   const [currentMoves, setCurrentMoves] = useState("");
@@ -16,7 +15,7 @@ const Games = () => {
     const fetchGames = async () => {
       try {
         const gamesData = await getGames();
-         console.log("Games Data:", gamesData);
+        console.log("Games Data:", gamesData);
         setAllGames(gamesData);
       } catch (error) {
         console.error("Failed to fetch games:", error);
@@ -124,7 +123,9 @@ const Games = () => {
                 position={game.fen()}
                 arePiecesDraggable={false}
                 animationDuration={150}
-                customDarkSquareStyle={{ backgroundColor: "#8e1d22 /* #8e1d22 */" }}
+                customDarkSquareStyle={{
+                  backgroundColor: "#8e1d22 /* #8e1d22 */",
+                }}
                 customLightSquareStyle={{ backgroundColor: "#947153" }}
               />
               <div className=" flex items-center mt-6 gap-8 justify-evenly text-stone-600 relative">

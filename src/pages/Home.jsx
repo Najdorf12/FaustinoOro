@@ -1,18 +1,16 @@
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import NavBtn from "../components/Buttons/NavBtn";
 import iconNav from "/iconNav.png";
 
+const btnsNav = [
+  { name: "Torneos", path: "/tournaments" },
+  { name: "Partidas", path: "#games" },
+  { name: "Noticias", path: "/news" },
+  { name: "Cursos", path: "/courses" },
+  { name: "Contacto", path: "#contact" },
+];
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(window.innerWidth >= 1024);
-
-  const btnsNav = [
-    { name: "Torneos", path: "/tournaments" },
-    { name: "Partidas", path: "#games" },
-    { name: "Noticias", path: "/news" },
-    { name: "Cursos", path: "/courses" },
-    { name: "Contacto", path: "#contact" },
-  ];
 
   const handleCheckboxChange = (e) => {
     setIsMenuOpen(e.target.checked);
@@ -73,9 +71,7 @@ const Home = () => {
           id="home"
         >
           <article className="w-full relative  flex justify-center items-end pb-[6vh] px-3 lg:justify-end  lg:items-end lg:pb-[5%] lg:pr-[3%]">
-            <h1
-              className="title-name text-white text-center text-6xl  z-50 leading-[5rem] py-3 rounded-xl  lg:text-8xl xl:text-[6.5rem]  2xl:text-[8rem]"
-            >
+            <h1 className="title-name text-white text-center text-6xl  z-50 leading-[5rem] py-3 rounded-xl  lg:text-8xl xl:text-[6.5rem]  2xl:text-[8rem]">
               FAUSTINO ORO
             </h1>
           </article>

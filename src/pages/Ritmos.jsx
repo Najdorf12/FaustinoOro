@@ -5,40 +5,39 @@ import blitz from "../assets/icons/blitz.png";
 import rapido from "../assets/icons/rapido.png";
 import pensado from "../assets/icons/pensado.png";
 
+const icons = [
+  {
+    id: "BULLET",
+    img: bullet,
+    content: `Es el ritmo más rápido, con partidas que duran entre 1 y 2
+    minutos por jugador. Me encanta este ritmo on-line ya que
+    tengo que jugar con una velocidad extrema, siempre al límite
+    del tiempo y me divierte. Usualmente participo de torneos
+    on-line como el "Bullet Brawl" o "Titled Arena" donde puedo
+    competir con jugadores de la Elite, y he tenido oportunidad de
+    ganarle a muchos de ellos en este ritmo como a Magnus Carlsen.
+    Me gusta mucho hacer streaming mientras juego este tipo de
+    torneos y comentar.`,
+  },
+  {
+    id: "BLITZ",
+    img: blitz,
+    content: `Este ritmo también es uno de mis favoritos, especialmente el 3 + 0 por jugador, sin incremento. Suelo participar en torneos blitz tanto presenciales como on-line. Aunque la velocidad sigue siendo crucial, hay más espacio para la táctica y la estrategia en comparación con el bullet.
+Suelo jugar on-line el "Titled Tuesday" o "Arena Kings" a este ritmo, donde también cada semana puedo jugar con ajedrecistas top y obtener muchas victorias, como con Hikaru Nakamura.
+Si son on-line, también me divierte mucho como en los torneos bullet, stremear mientras juego.`,
+  },
+  {
+    id: "RÁPIDO",
+    img: rapido,
+    content: `En este formato, los jugadores disponen de entre 7 y 15 minutos por partida. En este ritmo me siento cómodo y suelo tener muy buenos resultados. Lo juego de manera presencial. Hay suficiente tiempo para pensar y calcular variantes, lo que permite un juego más estratégico sin la misma presión del reloj que en los anteriores.`,
+  },
+  {
+    id: "PENSADO",
+    img: pensado,
+    content: `También llamado clásico, es el ritmo más lento, donde la calidad del juego es lo primordial, ya que los jugadores tienen tiempo para analizar posiciones con detalle y desarrollar planes a largo plazo. En mi caso particular, para mi lo ideal es jugar entre 80 y 100 partidas por año, ir ampliando el repertorio de aperturas y los finales; mi fuerte considero que es el medio juego (cálculo). Es el ritmo que te permite obtener las Normas y Títulos FIDE, como yo obtuve en junio 2024 el de Maestro Internacional.`,
+  },
+];
 const Ritmos = () => {
-  const icons = [
-    {
-      id: "BULLET",
-      img: bullet,
-      content: `Es el ritmo más rápido, con partidas que duran entre 1 y 2
-      minutos por jugador. Me encanta este ritmo on-line ya que
-      tengo que jugar con una velocidad extrema, siempre al límite
-      del tiempo y me divierte. Usualmente participo de torneos
-      on-line como el "Bullet Brawl" o "Titled Arena" donde puedo
-      competir con jugadores de la Elite, y he tenido oportunidad de
-      ganarle a muchos de ellos en este ritmo como a Magnus Carlsen.
-      Me gusta mucho hacer streaming mientras juego este tipo de
-      torneos y comentar.`,
-    },
-    {
-      id: "BLITZ",
-      img: blitz,
-      content: `Este ritmo también es uno de mis favoritos, especialmente el 3 + 0 por jugador, sin incremento. Suelo participar en torneos blitz tanto presenciales como on-line. Aunque la velocidad sigue siendo crucial, hay más espacio para la táctica y la estrategia en comparación con el bullet.
-  Suelo jugar on-line el "Titled Tuesday" o "Arena Kings" a este ritmo, donde también cada semana puedo jugar con ajedrecistas top y obtener muchas victorias, como con Hikaru Nakamura.
-  Si son on-line, también me divierte mucho como en los torneos bullet, stremear mientras juego.`,
-    },
-    {
-      id: "RÁPIDO",
-      img: rapido,
-      content: `En este formato, los jugadores disponen de entre 7 y 15 minutos por partida. En este ritmo me siento cómodo y suelo tener muy buenos resultados. Lo juego de manera presencial. Hay suficiente tiempo para pensar y calcular variantes, lo que permite un juego más estratégico sin la misma presión del reloj que en los anteriores.`,
-    },
-    {
-      id: "PENSADO",
-      img: pensado,
-      content: `También llamado clásico, es el ritmo más lento, donde la calidad del juego es lo primordial, ya que los jugadores tienen tiempo para analizar posiciones con detalle y desarrollar planes a largo plazo. En mi caso particular, para mi lo ideal es jugar entre 80 y 100 partidas por año, ir ampliando el repertorio de aperturas y los finales; mi fuerte considero que es el medio juego (cálculo). Es el ritmo que te permite obtener las Normas y Títulos FIDE, como yo obtuve en junio 2024 el de Maestro Internacional.`,
-    },
-  ];
-
   const [selectedIcon, setSelectedIcon] = useState(icons[0]);
 
   const playAnimation = (newIcon) => {
@@ -78,7 +77,11 @@ const Ritmos = () => {
               <div
                 key={i}
                 onClick={() => playAnimation(icon)}
-                className={`cursor-pointer relative w-full flex items-center justify-start gap-4 pl-2 h-[50px] hover:scale-105 duration-500 rounded-2xl rounded-tl-none rounded-tr-sm rounded-br-3xl border-[2px] border-zinc-500 bg-gradient-to-br from-bluefausti via-zinc-800 to-transparent xl:h-[65px] shadow-sm shadow-zinc-900 ${selectedIcon?.id === icon?.id ? "border-zinc-200 scale-105" : ""}`}
+                className={`cursor-pointer relative w-full flex items-center justify-start gap-4 pl-2 h-[50px] hover:scale-105 duration-500 rounded-2xl rounded-tl-none rounded-tr-sm rounded-br-3xl border-[2px] border-zinc-500 bg-gradient-to-br from-bluefausti via-zinc-800 to-transparent xl:h-[65px] shadow-sm shadow-zinc-900 ${
+                  selectedIcon?.id === icon?.id
+                    ? "border-zinc-200 scale-105"
+                    : ""
+                }`}
               >
                 <figure className="w-[45px] flex justify-center items-center xl:w-[50px]">
                   <img

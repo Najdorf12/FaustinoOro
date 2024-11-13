@@ -8,6 +8,62 @@ import { Link } from "react-router-dom";
 import { useState, useEffect, useLayoutEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
+const allTournaments = [
+  {
+    title: "Tournament test1 Lorem Impsum",
+    description: "Description test1",
+    content: "Content test1",
+    location: "Location, test1",
+    isActive: true,
+    time: "12/12/2024",
+    images: imgTorneo,
+  },
+  {
+    title: "Tournament test2",
+    description: "Description test2",
+    content: "Content test2",
+    location: "Location, test2",
+    isActive: true,
+    time: "12/12/2024",
+    images: imgTorneo,
+  },
+  {
+    title: "Tournament test3 Lorem Impsum dolor",
+    description: "Description test3",
+    content: "Content test3",
+    location: "Location, test3",
+    isActive: true,
+    time: "12/12/2024",
+    images: imgTorneo,
+  },
+  {
+    title: "Tournament test4",
+    description: "Description test4",
+    content: "Content test4",
+    location: "Location, test4",
+    isActive: true,
+    time: "12/12/2024",
+    images: imgTorneo,
+  },
+  {
+    title: "Tournament test5",
+    description: "Description test5",
+    content: "Content test5",
+    location: "Location, test5",
+    isActive: true,
+    time: "12/12/2024",
+    images: imgTorneo,
+  },
+  {
+    title: "Tournament test6",
+    description: "Description test6",
+    content: "Content test6",
+    location: "Location, test6",
+    isActive: true,
+    time: "12/12/2024",
+    images: imgTorneo,
+  },
+];
 const Stats = () => {
   const [displayedTournaments, setDisplayedTournaments] = useState(5);
 
@@ -22,62 +78,6 @@ const Stats = () => {
   const screenStats = window.innerWidth;
   const tl = gsap.timeline();
 
-  const allTournaments = [
-    {
-      title: "Tournament test1 Lorem Impsum",
-      description: "Description test1",
-      content: "Content test1",
-      location: "Location, test1",
-      isActive: true,
-      time: "12/12/2024",
-      images: imgTorneo,
-    },
-    {
-      title: "Tournament test2",
-      description: "Description test2",
-      content: "Content test2",
-      location: "Location, test2",
-      isActive: true,
-      time: "12/12/2024",
-      images: imgTorneo,
-    },
-    {
-      title: "Tournament test3 Lorem Impsum dolor",
-      description: "Description test3",
-      content: "Content test3",
-      location: "Location, test3",
-      isActive: true,
-      time: "12/12/2024",
-      images: imgTorneo,
-    },
-    {
-      title: "Tournament test4",
-      description: "Description test4",
-      content: "Content test4",
-      location: "Location, test4",
-      isActive: true,
-      time: "12/12/2024",
-      images: imgTorneo,
-    },
-    {
-      title: "Tournament test5",
-      description: "Description test5",
-      content: "Content test5",
-      location: "Location, test5",
-      isActive: true,
-      time: "12/12/2024",
-      images: imgTorneo,
-    },
-    {
-      title: "Tournament test6",
-      description: "Description test6",
-      content: "Content test6",
-      location: "Location, test6",
-      isActive: true,
-      time: "12/12/2024",
-      images: imgTorneo,
-    },
-  ];
 
   useLayoutEffect(() => {
     new ScrollTrigger({});

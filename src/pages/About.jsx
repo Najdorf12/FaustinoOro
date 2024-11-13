@@ -132,7 +132,7 @@ const About = () => {
           ></div>
           <p
             id="p-about"
-            className="relative text-gray-400 w-[86%] mt-[85px] opacity-0 text-base  font-text2 xl:text-lg xl:w-[90%]  2xl:mt-[95px] 2xl:text-[1.4rem] 2xl:w-full   "
+            className="relative text-stone-400 lg:text-stone-500 w-[86%] mt-[85px] opacity-0 text-base  font-text2 xl:text-lg xl:w-[90%]  2xl:mt-[95px] 2xl:text-[1.4rem] 2xl:w-full   "
           >
             En plena pandemia, el 30 de mayo de 2020 aprendí a mover las piezas
             y, desde entonces, el ajedrez ha sido mucho más que un simple juego
@@ -142,12 +142,12 @@ const About = () => {
           </p>
           <div
             id="btn-about_box"
-            className="flex -inset-1 -mt-[20px] ml-[60px]  items-center gap-6 font-title2 text-lg font-semibold text-stone-400 xl:text-base xl:gap-8 2xl:gap-14 2xl:-mt-[10px]  2xl:text-xl opacity-0 "
+            className="flex -inset-1 -mt-[20px] ml-[60px]  items-center gap-6 font-title2 text-lg font-semibold  xl:text-base xl:gap-8 2xl:gap-14 2xl:-mt-[10px]  2xl:text-xl opacity-0 "
           >
             <button
               /* id="news-box" */
               onClick={() => handleSectionChange("Historia")}
-              className=" border-[1px] rounded-3xl bg-bluefausti  border-stone-400  px-4 py-[px] flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
+              className=" border-[1px] rounded-3xl bg-bluefausti  border-stone-400  px-4 py-[px] flex justify-between text-white items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
             >
               HISTORIA
               <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
@@ -155,7 +155,7 @@ const About = () => {
             <button
               id={windWidth < 700 ? "news-box" : ""}
               onClick={() => handleSectionChange("Logros")}
-              className=" border-[1px] rounded-3xl border-stone-400  px-4 py-[px]  flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
+              className=" border-[1px] rounded-3xl text-stone-400  border-stone-400  px-4 py-[px]  flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
             >
               LOGROS
               <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
@@ -173,7 +173,7 @@ const About = () => {
 
             <p
               id="about-history"
-              className="relative  w-[96%] mt-6 max-h-[350px] pr-3 overflow-y-scroll text-base font-text2 2xl:mt-7 2xl:text-[1.3rem] text-gray-400 pt-1 pb-2 rounded-lg"
+              className="relative  w-[96%] mt-6 max-h-[350px] pr-3 overflow-y-scroll text-base font-text2 2xl:mt-7 2xl:text-[1.3rem] text-stone-400 pt-1 pb-2 rounded-lg"
             >
               Mi primer torneo de ajedrez clásico fue el "8vo IRT Alejandro
               Judewicz" en Mar del Plata, Buenos Aires, Argentina, en septiembre
@@ -200,21 +200,21 @@ const About = () => {
               a ser Campeón Mundial, formando parte de la élite del ajedrez.
             </p>
           </div>
-          <div className="flex -inset-1 mt-[36px]   items-center gap-6 font-title2 text-lg font-semibold text-stone-400 xl:text-base xl:gap-8 2xl:gap-14  2xl:text-xl ">
+          <div className="flex -inset-1 mt-[36px]   items-center gap-6 font-title2 text-lg font-semibold  xl:text-base xl:gap-8 2xl:gap-14  2xl:text-xl ">
             <button
               onClick={() => handleSectionChange("sobreMi2")}
-              className=" border-[1px] rounded-3xl  bg-gray-600 border-stone-400  px-4  flex justify-between items-center  lg:lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
+              className=" border-[1px] rounded-3xl text-stone-200 bg-gray-600 border-stone-400  px-4  flex justify-between items-center  lg:lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
             >
               SOBRE MI
-              <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
+              <i class="bx bx-arrow-back text-stone-200 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
             </button>
             <button
               id="news-box"
               onClick={() => handleSectionChange("Logros")}
-              className=" border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
+              className=" border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center text-stone-400  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
             >
               LOGROS
-              <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
+              <i class="bx bx-arrow-back  rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
             </button>
           </div>
         </>
@@ -226,23 +226,23 @@ const About = () => {
             <h3 className="text-bluefausti font-medium text-5xl 2xl:pr-2 2xl:text-6xl ">
               LOGROS
             </h3>
-            <ul className="relative w-full mt-6  flex flex-col-reverse gap-2 font-text2 xl:mt-[24px]  2xl:text-[1.3rem] text-stone-700 text-start lg:text-stone-600">
+            <ul className="relative w-full mt-6  flex flex-col-reverse gap-2 font-text2 xl:gap-4  xl:mt-[24px]  2xl:text-[1.3rem] text-stone-400 text-start   lg:text-stone-500">
               {palmares.map((item, i) => (
                 <li
-                  id="palmares"
+                  id="box-glass"
                   key={i}
-                  className="border border-stone-300 flex items-center gap-2 lg:gap-3 py-1 px-[2px] sm:pr-[3px] lg:pl-2  rounded-2xl  max-w-[90%] xl:max-w-[80%]"
+                  className="border border-stone-400   flex items-center gap-2 lg:gap-3 py-1 px-[4px] sm:pr-[3px] lg:pl-2  rounded-2xl  max-w-[95%] xl:max-w-[80%]"
                 >
-                  <i class="bx bx-chevron-right self-start text-xl text-white"></i>{" "}
+                  <i class="bx bx-chevron-right self-start text-xl text-white xl:text-2xl"></i>{" "}
                   {item}
                 </li>
               ))}
             </ul>
           </div>
-          <div className="flex -inset-1 mt-[36px]   items-center gap-6 font-title2 text-lg font-semibold text-stone-400 xl:text-base xl:gap-8 2xl:gap-14  2xl:text-xl ">
+          <div className="flex -inset-1 mt-[36px]   items-center gap-6 font-title2 text-lg font-semibold text-white xl:text-base xl:gap-8 2xl:gap-14  2xl:text-xl ">
             <button
               onClick={() => handleSectionChange("Historia")}
-              className=" border-[1px] rounded-3xl bg-gray-600 border-stone-400  px-4  flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
+              className=" border-[1px] rounded-3xl bg-gray-600 border-stone-500  px-4  flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
             >
               HISTORIA
               <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
@@ -250,10 +250,10 @@ const About = () => {
             <button
               id="news-box"
               onClick={() => handleSectionChange("sobreMi2")}
-              className=" border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
+              className=" border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center text-stone-400 lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
             >
               SOBRE MI
-              <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
+              <i class="bx bx-arrow-back  rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
             </button>
           </div>
         </>
@@ -273,7 +273,7 @@ const About = () => {
           ></div>
           <p
             id="sobreMi2-text"
-            className="relative text-gray-400 w-full  mt-[24px]  text-base  font-text2   xl:text-lg   2xl:text-[1.4rem] 2xl:w-full "
+            className="relative text-stone-400 lg:text-stone-500 w-full  mt-[24px]  text-base  font-text2   xl:text-lg   2xl:text-[1.4rem] 2xl:w-full "
           >
             En plena pandemia, el 30 de mayo de 2020 aprendí a mover las piezas
             y, desde entonces, el ajedrez ha sido mucho más que un simple juego
@@ -281,10 +281,10 @@ const About = () => {
             Autodidacta y persistente, he crecido con cada partida y cada
             lección, con la firme convicción de llegar a lo más alto.
           </p>
-          <div className="flex -inset-1 mt-[36px]   items-center gap-6 font-title2 text-lg font-semibold text-stone-400 xl:text-base xl:gap-8 2xl:gap-14 2xl:mt-[40px]  2xl:text-xl ">
+          <div className="flex -inset-1 mt-[36px]   items-center gap-6 font-title2 text-lg font-semibold xl:text-base xl:gap-8 2xl:gap-14 2xl:mt-[40px]  2xl:text-xl ">
             <button
               onClick={() => handleSectionChange("Historia")}
-              className=" border-[1px] rounded-3xl bg-gray-600 border-stone-400  px-4  flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
+              className=" border-[1px] rounded-3xl bg-gray-600 border-stone-500  px-4  flex justify-between items-center text-white lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
             >
               HISTORIA
               <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
@@ -292,10 +292,10 @@ const About = () => {
             <button
               id="news-box"
               onClick={() => handleSectionChange("Logros")}
-              className=" border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
+              className=" border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center text-stone-400 lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
             >
               LOGROS
-              <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
+              <i class="bx bx-arrow-back  rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
             </button>
           </div>
         </>
@@ -307,22 +307,9 @@ const About = () => {
     <>
       <section
         id="second_section"
-        /* style={{
-          backgroundImage:
-            "linear-gradient(to right top, #426d89, #3f637a, #3c596b, #394f5d, #36454f, #344149, #333c43, #31383d, #31383d, #31383d, #31383d, #31383d)",
-        }} */
-         /*  style={{
-          background:
-            "linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%)",
-        }}  */ 
-         /*  style={{backgroundImage: "linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)" }}   */
-       /*    style={{
-          backgroundImage:
-            "linear-gradient(to left top, #EAEAEA, #DBDBDB, #F2F2F2, #3f4864)",
-        }}   */
-        className="w-full h-screen bg-white flex lg:justify-end font-title overflow-hidden relative"
+        className="w-full h-screen bg-whiteCustom flex lg:justify-end  font-title overflow-hidden relative"
       >
-        <article className="relative  pt-24 lg:pt-0 px-3 pl-[4%] sm:pl-[6%] lg:pl-0 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[7%] lg:mt-[6%] xl:max-w-[650px]  2xl:mr-[12%]   2xl:max-w-[750px] text-balance ">
+        <article className="relative  pt-24 lg:pt-0 px-3 pl-[4%] sm:pl-[6%] lg:pl-0 flex flex-col gap-3 z-50 sm:max-w-[550px] xl:mr-[5%] lg:mt-[6%] xl:max-w-[650px]  2xl:mr-[12%]  2xl:max-w-[750px] text-balance ">
           <h5
             id="about-text"
             className="text-xl font-title4 text-stone-400 xl:text-2xl 2xl:text-3xl font-medium opacity-0 lg:text-stone-500"

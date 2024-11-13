@@ -19,7 +19,6 @@ export default {
         bluefausti:"#3f4864",
         brown: "#340307",
         lightbrown: "#947153",
-        wheat: "#ffd19d",
         red2:"#c40817",
         darkred: "#8e1d22",
         whiteCustom:"#F2F0E4",
