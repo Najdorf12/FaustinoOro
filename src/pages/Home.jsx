@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import NavBtn from "../components/Buttons/NavBtn";
-import iconNav from "/iconNav.png"
+import iconNav from "/iconNav.png";
+
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(window.innerWidth >= 1024);
 
@@ -16,11 +17,10 @@ const Home = () => {
   const handleCheckboxChange = (e) => {
     setIsMenuOpen(e.target.checked);
   };
- 
+
   return (
     <>
       <section className="relative w-full h-screen  flex justify-center items-center  z-50">
-       
         <nav className="absolute inset-0 flex justify-end pt-2 pr-2 z-[100] lg:pt-0 ">
           <section className="relative gap-3  w-[70%] flex flex-col rounded-2xl  lg:h-auto lg:w-full  lg:flex-row  ">
             <input
@@ -58,27 +58,28 @@ const Home = () => {
                 </a>
               ))}
               <figure className="absolute top-4 left-3 xl:top-1 xl:left-4">
-                {/* <i className="bx bxs-doughnut-chart text-5xl md:text-5xl z-50 text-stone-400  2xl:text-6xl"></i> */}
-                <img className="object-cover object-center w-[3rem] " src={iconNav} alt="" />
+                <img
+                  className="object-cover object-center w-[3rem] "
+                  src={iconNav}
+                  alt=""
+                />
               </figure>
             </div>
           </section>
         </nav>
-      
+
         <div
           className="w-full h-screen  relative bg-center bg-fixed bg-cover bg-no-repeat z-50 flex  justify-center"
           id="home"
         >
-          <article className="w-full  flex justify-center items-end pb-[6vh] px-3 lg:justify-end  lg:items-end lg:pb-[3%] lg:pr-[3%]">
-            <h1 id="box-glass2" className="title-name text-white text-center text-6xl  leading-[5rem] py-3 rounded-xl  lg:text-8xl   2xl:text-[8rem]">
+          <article className="w-full relative  flex justify-center items-end pb-[6vh] px-3 lg:justify-end  lg:items-end lg:pb-[5%] lg:pr-[3%]">
+            <h1
+              className="title-name text-white text-center text-6xl  z-50 leading-[5rem] py-3 rounded-xl  lg:text-8xl xl:text-[6.5rem]  2xl:text-[8rem]"
+            >
               FAUSTINO ORO
             </h1>
-           {/*  <p id="box-glass2" className="absolute left-0 top-0 w-[100%] text-balance text-center font-title4 font-medium text-white border-b border-stone-500 rounded-xl pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, sed.</p> */}
           </article>
-
-          {/* BORDER BUTTONS */}
         </div>
-     
       </section>
     </>
   );
