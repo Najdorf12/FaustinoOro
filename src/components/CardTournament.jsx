@@ -1,9 +1,8 @@
-import imgTorneo from "../assets/img-torneo.jpg";
 const CardTournament = ({ tournament, index, screenStats }) => {
   return (
     <>
       <li
-        /* id={screenStats < 1000 ? "news-box" : ""} */
+        id={screenStats < 1000 ? "news-box" : ""}
         className="relative flex rounded-xl bg-gradient-to-br from-bluefausti via-zinc-800 to-transparent  pr-2 w-full h-[90px] shadow-lg shadow-gray-600 lg:shadow-xl border border-white max-w-[450px] xl:h-[110px] xl:w-[460px] 2xl:h-[120px] 2xl:w-[530px]  "
       >
         <div className="absolute right-0 top-0 mt-2 mr-2 text-4xl z-50 text-white font-title3 2xl:text-5xl">

@@ -1,12 +1,13 @@
 import SplitType from "split-type";
-import imgTorneo from "../assets/img-torneo.jpg";
-import CardTournament from "../components/CardTournament";
 import NavBtn from "../components/Buttons/NavBtn";
-import gsap from "gsap";
+import Tournaments from "./Tournaments";
 import CardNoticeHome from "./News/CardNoticeHome";
+import imgTorneo from "../assets/img-torneo.jpg"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
-import { useState, useEffect, useLayoutEffect } from "react";
+import { useLayoutEffect, useState, useEffect } from "react";
+
+import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);
 
 const allTournaments = [
@@ -67,8 +68,11 @@ const allTournaments = [
 ];
 
 const Stats = ({ newsData }) => {
-  const [displayedTournaments, setDisplayedTournaments] = useState(5);
   const [displayedNotices, setDisplayedNotices] = useState(2);
+  const [displayedTournaments, setDisplayedTournaments] = useState(5);
+
+  const screenStats = window.innerWidth;
+  const tl = gsap.timeline();
 
   useEffect(() => {
     if (window.innerWidth >= 768) {
@@ -79,9 +83,6 @@ const Stats = ({ newsData }) => {
       setDisplayedNotices(2);
     }
   }, []);
-
-  const screenStats = window.innerWidth;
-  const tl = gsap.timeline();
 
   useLayoutEffect(() => {
     new ScrollTrigger({});
@@ -142,7 +143,7 @@ const Stats = ({ newsData }) => {
         id="five_section"
         className="relative w-full h-screen z-50 flex flex-col justify-center items-center overflow-hidden text-white  lg:justify-evenly lg:items-start"
       >
-        <article className="relative  -mt-12 pl-4 z-[200]  flex flex-col justify-center items-start gap-4 max-w-[600px] lg:gap-5 lg:mt-0 lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:gap-8 2xl:gap-10 ">
+        <article className="relative  -mt-12 pl-4 z-[200]  flex flex-col justify-center items-start gap-4 max-w-[600px] lg:gap-5 lg:mt-0 lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:gap-8 xl:pl-9 2xl:gap-10 ">
           <h6
             id="split"
             className="font-title text-6xl z-[200]  font-semibold md:text-6xl lg:text-[16vh] xl:text-[17vh] text-white  "
@@ -156,7 +157,6 @@ const Stats = ({ newsData }) => {
             Descubre las últimas noticias sobre la carrera y los logros de
             Faustino Oro. Mantente informado sobre sus próximas competencias,
             análisis de partidas y eventos destacados en el mundo del ajedrez.
-           
           </p>
           <Link
             id="box-glass"
@@ -181,40 +181,11 @@ const Stats = ({ newsData }) => {
         ></div>
       </section>
 
-      <section
-        id="six_section"
-        className="overflow-hidden relative  w-fulL h-screen z-5 pt-10 pl-2 pr-1 2xl:pt-16"
-      >
-        <div
-          style={{ clipPath: "polygon(0 0, 0% 100%, 100% 0)" }}
-          id="box-stats_wrapper"
-          className="w-full h-screen bg-zinc-300 absolute  inset-0"
-        ></div>
-        <article className="flex flex-col gap-6">
-          <h6 className="text-6xl font-title font-semibold text-white lg:text-7xl xl:pl-6 2xl:pl-8 2xl:text-8xl z-50">
-            TORNEOS
-          </h6>
-          <div
-            id="line-tournament"
-            className="h-[2px] w-[0%] bg-white z-50"
-          ></div>
-          <ul
-            id="tournaments"
-            className="rounded-lg pr-3 pt-2 pb-6 overflow-y-scroll grid grid-cols-1 gap-6 z-50 mt-3 lg:grid-cols-2   lg:mt-12  lg:w-full xl:gap-10  place-items-center lg:mx-auto"
-          >
-            {allTournaments
-              ?.slice(0, displayedTournaments)
-              .map((tournament, i) => (
-                <CardTournament
-                  screenStats={screenStats}
-                  key={i}
-                  tournament={tournament}
-                  index={i + 1}
-                />
-              ))}
-          </ul>
-        </article>
-      </section>
+      <Tournaments
+        screenStats={screenStats}
+        allTournaments={allTournaments}
+        displayedTournaments={displayedTournaments}
+      />
     </>
   );
 };
