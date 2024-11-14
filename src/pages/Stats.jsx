@@ -140,12 +140,12 @@ const Stats = ({ newsData }) => {
     <>
       <section
         id="five_section"
-        className="relative w-full  h-screen md:h-screen z-50 lg:z-10 flex flex-col justify-center items-center overflow-hidden text-white xl:flex-row xl:justify-evenly"
+        className="relative w-full h-screen z-50 flex flex-col justify-center items-center overflow-hidden text-white  lg:justify-evenly lg:items-start"
       >
-        <article className="relative -mt-6 pl-4 z-[200]  flex flex-col justify-center items-start gap-6 lg:gap-5  sm:max-w-[600px] lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:mt-[3%]  xl:gap-8 2xl:gap-10 ">
+        <article className="relative  -mt-12 pl-4 z-[200]  flex flex-col justify-center items-start gap-4 max-w-[600px] lg:gap-5 lg:mt-0 lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:gap-8 2xl:gap-10 ">
           <h6
             id="split"
-            className="font-title text-5xl z-[200]  font-semibold md:text-6xl lg:text-[16vh] xl:text-[17vh] text-white  "
+            className="font-title text-6xl z-[200]  font-semibold md:text-6xl lg:text-[16vh] xl:text-[17vh] text-white  "
           >
             NOTICIAS
           </h6>
@@ -156,20 +156,19 @@ const Stats = ({ newsData }) => {
             Descubre las últimas noticias sobre la carrera y los logros de
             Faustino Oro. Mantente informado sobre sus próximas competencias,
             análisis de partidas y eventos destacados en el mundo del ajedrez.
-            Aquí encontrarás actualizaciones en tiempo real y la cobertura de
-            los momentos más importantes de su trayectoria profesional.
+           
           </p>
           <Link
             id="box-glass"
             to={"/news"}
-            className="flex justify-center items-center gap-2 z-[200]"
+            className="flex justify-center items-center gap-2 mt-1"
           >
             <NavBtn btnname="Ir a noticias" />
           </Link>
         </article>
 
-        <div className="flex flex-col justify-start items-start">
-          <div className="flex flex-wrap pl-4 gap-x-1 gap-y-3 mt-6 xl:gap-6 z-50 lg:justify-center">
+        <div className="flex flex-col justify-start items-start mt-14 max-w-[900px] lg:mt-0 lg:self-end xl:max-w-[1000px]">
+          <div className="flex flex-wrap pl-4 gap-y-6 gap-x-12  z-50 md:justify-center xl:gap-x-14">
             {newsData?.slice(0, displayedNotices)?.map((news) => (
               <CardNoticeHome news={news} />
             ))}

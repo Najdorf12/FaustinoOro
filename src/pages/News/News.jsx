@@ -36,6 +36,7 @@ const News = ({ newsData }) => {
             Bienvenidos a la sección de noticias de Faustino Oro, <br />
             donde compartimos sus logros, próximas competencias <br />y momentos
             clave en su carrera de ajedrez.
+            {/*   */}
           </p>
           <div className="flex justify-center w-full items-center mt-3 gap-4 lg:justify-start lg:gap-6  xl:mt-6 xl:gap-12 ">
             <Link to={"/"} className="bg-white rounded-3xl text-zinc-800 ">
@@ -96,9 +97,11 @@ const News = ({ newsData }) => {
             noticias
           </h6>
           <p className="font-text2 text-stone-300  mt-6 lg:text-lg lg:text-center lg:max-w-[770px] xl:text-xl 2xl:text-2xl 2xl:mt-9xl ">
-            ¡No te pierdas sus próximos torneos y logros! Síguenos para estar al
+          Aquí encontrarás actualizaciones en tiempo real y la cobertura de
+          los momentos más importantes de su trayectoria profesional.
+           {/* ¡No te pierdas sus próximos torneos y logros! Síguenos para estar al
             tanto de las últimas noticias sobre Faustino y su camino en el
-            ajedrez.
+            ajedrez. */}
           </p>
         </article>
 
