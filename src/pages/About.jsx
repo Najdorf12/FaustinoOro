@@ -147,18 +147,18 @@ const About = () => {
             <button
               /* id="news-box" */
               onClick={() => handleSectionChange("Historia")}
-              className=" border-[1px] rounded-3xl bg-bluefausti  border-stone-400  px-4 py-[px] flex justify-between text-white items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
+              className="group border-[1px] rounded-3xl bg-bluefausti  border-stone-400  px-4 py-[px] flex justify-between text-white items-center min-w-[170px] 2xl:px-5 2xl:w-[195px]  duration-500 "
             >
               HISTORIA
-              <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
+              <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full   2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-white duration-500"></i>
             </button>
             <button
               id={windWidth < 700 ? "news-box" : ""}
               onClick={() => handleSectionChange("Logros")}
-              className=" border-[1px] rounded-3xl text-stone-400  border-stone-400  px-4 py-[px]  flex justify-between items-center  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
+              className="group border-[1px] rounded-3xl text-stone-400  border-stone-400  px-4 py-[px]  flex justify-between items-center min-w-[170px] lg:text-stone-500 2xl:px-5  2xl:w-[195px]  hover:text-bluefausti  hover:border-bluefausti duration-500 "
             >
               LOGROS
-              <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
+              <i class="bx bx-arrow-back rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-bluefausti duration-500"></i>
             </button>
           </div>
         </>
@@ -203,18 +203,18 @@ const About = () => {
           <div className="flex -inset-1 mt-[36px]   items-center gap-6 font-title2 text-lg font-semibold  xl:text-base xl:gap-8 2xl:gap-14  2xl:text-xl ">
             <button
               onClick={() => handleSectionChange("sobreMi2")}
-              className=" border-[1px] rounded-3xl text-white bg-gray-600 border-stone-400  px-4  flex justify-between items-center  lg:lg:hover:border duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px]"
+              className="group border-[1px] rounded-3xl text-white bg-gray-600 border-stone-400  px-4  flex justify-between items-center  min-w-[170px] 2xl:px-5 2xl:w-[195px] hover:scale-105 duration-500"
             >
               SOBRE MI
-              <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
+              <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:text-white group-hover:rotate-[-145deg] duration-500"></i>
             </button>
             <button
               id="news-box"
               onClick={() => handleSectionChange("Logros")}
-              className=" border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center text-stone-400  lg:hover:border duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] "
+              className="group border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center text-stone-400  min-w-[170px] 2xl:px-5  2xl:w-[195px] hover:scale-105  duration-500"
             >
               LOGROS
-              <i class="bx bx-arrow-back  rotate-[145deg] text-2xl rounded-full  2xl:text-3xl"></i>
+              <i class="bx bx-arrow-back  rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:bg-red-500 "></i>
             </button>
           </div>
         </>
