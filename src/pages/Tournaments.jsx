@@ -13,7 +13,7 @@ const Tournaments = ({ screenStats, displayedTournaments, allTournaments }) => {
           className="w-full h-screen bg-whiteCustom absolute  inset-0"
         ></div>
         <article className="flex flex-col gap-6">
-          <h6 className="text-6xl font-title font-semibold text-white lg:text-7xl xl:pl-6 2xl:pl-8 2xl:text-8xl z-50">
+          <h6 className="text-6xl font-title font-semibold text-bluefausti lg:text-7xl xl:pl-6 2xl:pl-8 2xl:text-8xl z-50">
             TORNEOS
           </h6>
           <div
