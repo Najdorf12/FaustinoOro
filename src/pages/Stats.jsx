@@ -1,6 +1,7 @@
 import SplitType from "split-type";
 import imgTorneo from "../assets/img-torneo.jpg";
 import CardTournament from "../components/CardTournament";
+import NavBtn from "../components/Buttons/NavBtn";
 import gsap from "gsap";
 import CardNoticeHome from "./News/CardNoticeHome";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -64,20 +65,23 @@ const allTournaments = [
     images: imgTorneo,
   },
 ];
-const Stats = () => {
+
+const Stats = ({ newsData }) => {
   const [displayedTournaments, setDisplayedTournaments] = useState(5);
+  const [displayedNotices, setDisplayedNotices] = useState(2);
 
   useEffect(() => {
     if (window.innerWidth >= 768) {
       setDisplayedTournaments(6);
+      setDisplayedNotices(3);
     } else {
       setDisplayedTournaments(5);
+      setDisplayedNotices(2);
     }
   }, []);
 
   const screenStats = window.innerWidth;
   const tl = gsap.timeline();
-
 
   useLayoutEffect(() => {
     new ScrollTrigger({});
@@ -136,18 +140,18 @@ const Stats = () => {
     <>
       <section
         id="five_section"
-        className="relative w-full  h-screen md:h-screen z-50 lg:z-10 flex flex-col justify-center items-center px-2 sm:px-4 text-white xl:flex-row xl:justify-evenly"
+        className="relative w-full  h-screen md:h-screen z-50 lg:z-10 flex flex-col justify-center items-center overflow-hidden text-white xl:flex-row xl:justify-evenly"
       >
-        <article className="relative -mt-6  z-[200]  flex flex-col justify-center items-center gap-6 lg:gap-5 text-center sm:max-w-[600px] lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:mt-[3%]  xl:gap-8 2xl:gap-10">
+        <article className="relative -mt-6 pl-4 z-[200]  flex flex-col justify-center items-start gap-6 lg:gap-5  sm:max-w-[600px] lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:mt-[3%]  xl:gap-8 2xl:gap-10 ">
           <h6
             id="split"
-            className="font-text2 text-6xl z-[200]  font-bold md:text-6xl lg:text-[18dvh] text-white lg:self-start lg:ml-[5%] lg:-z-20 "
+            className="font-title text-5xl z-[200]  font-semibold md:text-6xl lg:text-[16vh] xl:text-[17vh] text-white  "
           >
             NOTICIAS
           </h6>
           <p
             id="text-reveal2"
-            className="font-text2 px-3 z-50 text-stone-300 text-balance   text-sm md:text-lg lg:text-start xl:px-8 opacity-0 lg:ml-[2%] xl:text-xl 2xl:text-2xl"
+            className="font-text2  z-50 text-stone-300 text-balance  text-sm md:text-lg opacity-0  xl:text-xl 2xl:text-2xl"
           >
             Descubre las últimas noticias sobre la carrera y los logros de
             Faustino Oro. Mantente informado sobre sus próximas competencias,
@@ -155,25 +159,20 @@ const Stats = () => {
             Aquí encontrarás actualizaciones en tiempo real y la cobertura de
             los momentos más importantes de su trayectoria profesional.
           </p>
-          <Link to={"/news"} className="flex justify-center items-center gap-2 lg:justify-start  w-full lg:ml-[10%] z-[200]">
-            <button className=" border-[2px] rounded-3xl border-stone-400 py-[2px]  pl-3 pr-2 text-xl  flex justify-between items-center font-text2  font-normal lg:hover:border duration-500 min-w-[170px] xl:mt-3 xl:w-[200px] xl:py-[4px] xl:text-xl   bg-gradient-to-tr from-bluefausti via-zinc-800 to-zinc-900 shadow-md shadow-zinc-900 z-[200] cursor-pointer hover:scale-105 hover:from-zinc-100 hover:text-bluefausti">
-              Ver más
-              <i class="bx bx-arrow-back text-white  rotate-[145deg] text-2xl  h-7 w-7 flex items-center justify-center rounded-full xl:w-8 xl:h-8 xl:text-3xl border-[2px] bg-slate-600 border-zinc-800 z-[200]"></i>
-            </button>
+          <Link
+            id="box-glass"
+            to={"/news"}
+            className="flex justify-center items-center gap-2 z-[200]"
+          >
+            <NavBtn btnname="Ir a noticias" />
           </Link>
         </article>
 
-        <div className="flex flex-col-reverse items-center justify-center mt-4 lg:flex-col  xl:gap-3">
-          <button
-            id="box-glass"
-            className=" border-[1px] rounded-lg border-stone-400 text-xl  mt-6  px-4   flex justify-center items-center text-white font-text2 font-normal  lg:hover:border duration-500 min-w-[170px] xl:mt-0 xl:text-2xl xl:px-8 xl:py-[2px] 2xl:px-5  2xl:w-[195px]  "
-          > 
-            DESTACADAS
-          </button>
-
-          <div className="flex flex-wrap  gap-2  mt-6 xl:gap-6  ">
-            <CardNoticeHome />
-            <CardNoticeHome />
+        <div className="flex flex-col justify-start items-start">
+          <div className="flex flex-wrap pl-4 gap-x-1 gap-y-3 mt-6 xl:gap-6 z-50 lg:justify-center">
+            {newsData?.slice(0, displayedNotices)?.map((news) => (
+              <CardNoticeHome news={news} />
+            ))}
           </div>
         </div>
 

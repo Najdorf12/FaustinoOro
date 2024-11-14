@@ -6,51 +6,7 @@ import "../../components/Buttons/primaryBtn.css";
 import PrimaryBtn from "../../components/Buttons/PrimaryBtn";
 import iconNav from "/iconNav.png";
 
-const News = () => {
-  const news = [
-    {
-      title: "FAUSTINO CONSIGUE OTRO HITO HISTORICO",
-      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste reprehenderit commodi a nihil.",
-      date: "1",
-    },
-    {
-      title: "FAUSTINO LOREM IMPSUM DOLOR SIT",
-      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste reprehenderit commodi a nihil.",
-      date: "2",
-    },
-    {
-      title: "FAUSTINO LOREM IMPSUM DOLOR SIT",
-      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste reprehenderit commodi a nihil.",
-      date: "3",
-    },
-    {
-      title: "FAUSTINO LOREM IMPSUM DOLOR SIT",
-      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste reprehenderit commodi a nihil.",
-      date: "4",
-    },
-    {
-      title: "FAUSTINO LOREM IMPSUM DOLOR SIT",
-      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste reprehenderit commodi a nihil.",
-      date: "5",
-    },
-    {
-      title: "FAUSTINO LOREM IMPSUM DOLOR SIT",
-      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste reprehenderit commodi a nihil.",
-      date: "6",
-    },
-  ];
+const News = ({ newsData }) => {
   return (
     <main className="bg-zinc-800 w-full relative flex flex-col items-center  overflow-hidden">
       <nav className="w-full absolute top-0 z-[100] flex justify-start items-center  ">
@@ -67,8 +23,12 @@ const News = () => {
           className="w-full pt-14 pb-4 border-b border-stone-500 rounded-xl flex flex-col justify-center items-center gap-2 z-50 text-center lg:mt-0 lg:w-[50%] xl:w-[40%] lg:items-start  lg:justify-center lg:gap-5 lg:rounded-r-3xl lg:border-stone-200 lg:h-full lg:pl-6 xl:pl-6 2xl:pl-9 2xl:gap-6 lg:z-50 lg:border-r "
         >
           <figure className="absolute top-1 right-2 lg:right-3 flex justify-center items-center lg:bottom-3 lg:items-end">
-              <img src={iconNav} alt="iconNav" className="object-cover object-center w-[3rem] lg:w-[4rem]" />
-         </figure>
+            <img
+              src={iconNav}
+              alt="iconNav"
+              className="object-cover object-center w-[3rem] lg:w-[4rem]"
+            />
+          </figure>
           <h3 className="font-title text-white text-6xl font-semibold z-50 lg:text-[6rem] lg:w-full lg:-mt-[5rem] lg:text-start  xl:-mt-[9rem] xl:text-[6.2rem]        2xl:text-[8rem] ">
             NOTICIAS
           </h3>
@@ -143,7 +103,7 @@ const News = () => {
         </article>
 
         <div className="flex flex-wrap gap-y-5 gap-x-20 justify-start pl-3 mt-10 w-full   md:justify-center lg:gap-x-24 lg:mt-16 lg:pl-0 lg:px-[5%] xl:gap-y-8 2xl:gap-x-32 ">
-          {news?.map((news, i) => (
+          {newsData?.map((news, i) => (
             <div key={i} className="slide">
               <CardNotice news={news} />
             </div>

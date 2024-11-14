@@ -128,7 +128,7 @@ const About = () => {
           </h3>
           <div
             id="line-about"
-            className="w-[0%] h-[2px]  bg-stone-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"
+            className="w-[0%] h-[2px]  bg-stone-400 lg:bg-stone-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"
           ></div>
           <p
             id="p-about"
@@ -268,7 +268,7 @@ const About = () => {
             {"Soy Faustino Oro. Nací en Buenos Aires, Argentina, el 14 de octubre de 2013".toUpperCase()}
           </h3>
           <div
-            className="w-[90%] h-[2px]  bg-stone-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"
+            className="w-[90%] h-[2px] bg-stone-400 lg:bg-stone-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"
           ></div>
           <p
             id="sobreMi2-text"

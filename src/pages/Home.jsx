@@ -49,7 +49,7 @@ const Home = () => {
                   className={`rounded-3xl  ${
                     btn.name === "Contacto"
                       ? "bg-white text-zinc-800"
-                      : "bg-zinc-800 text-stone-300 lg:bg- "
+                      : "bg-transparent text-stone-300 lg:bg- "
                   }`}
                 >
                   <NavBtn btnname={btn?.name} />

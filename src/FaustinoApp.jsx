@@ -9,7 +9,9 @@ import { Canvas } from "@react-three/fiber";
 import { ReactLenis, useLenis } from "lenis/react";
 import { Chess } from 'chess.js';
 
-function FaustinoApp() {
+
+
+function FaustinoApp({newsData}) {
   /*   const lenis = useLenis(({ scroll }) => {
     // called every scroll
   }); */
@@ -26,7 +28,7 @@ function FaustinoApp() {
         <Home />
         <About />
         <Gallery />
-        <Stats />
+        <Stats newsData={newsData} />
         <Contact />
       </main>
     </ReactLenis>
