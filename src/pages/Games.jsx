@@ -69,7 +69,7 @@ const Games = () => {
       {" "}
       <main
         id="games"
-        className="relative overflow-hidden z-50 w-full pb-10 min-h-screen pt-10 flex flex-col items-center lg:flex-row lg:gap-8 "
+        className="relative overflow-hidden z-50 w-full pb-10 min-h-screen pt-10 flex flex-col items-center lg:flex-row lg:gap-8"
       >
         <div className="w-full lg:w-[50%] flex flex-col items-center">
           <h6 className="self-start  font-title ml-4 text-6xl md:text-7xl text-white  font-semibold  lg:ml-6 2xl:ml-[5%] 2xl:text-8xl">

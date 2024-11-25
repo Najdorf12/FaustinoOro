@@ -2,7 +2,7 @@ import SplitType from "split-type";
 import NavBtn from "../components/Buttons/NavBtn";
 import Tournaments from "./Tournaments";
 import CardNoticeHome from "./News/CardNoticeHome";
-import imgTorneo from "../assets/img-torneo.jpg"
+import imgTorneo from "../assets/img-torneo.jpg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import { useLayoutEffect, useState, useEffect } from "react";
@@ -141,44 +141,53 @@ const Stats = ({ newsData }) => {
     <>
       <section
         id="five_section"
-        className="relative w-full h-screen z-50 flex flex-col justify-center items-center overflow-hidden text-white  lg:justify-evenly lg:items-start"
+        className="relative w-full h-screen overflow-hidden bg-whiteCustom  "
       >
-        <article className="relative  -mt-12 pl-4 z-[200]  flex flex-col justify-center items-start gap-4 max-w-[600px] lg:gap-5 lg:mt-0 lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:gap-8 xl:pl-9 2xl:gap-10 ">
-          <h6
-            id="split"
-            className="font-title text-6xl z-[200]  font-semibold md:text-6xl lg:text-[16vh] xl:text-[17vh] text-white  "
-          >
-            NOTICIAS
-          </h6>
-          <p
-            id="text-reveal2"
-            className="font-text2  z-50 text-stone-300 text-balance  text-sm md:text-lg opacity-0  xl:text-xl 2xl:text-2xl"
-          >
-            Descubre las últimas noticias sobre la carrera y los logros de
-            Faustino Oro. Mantente informado sobre sus próximas competencias,
-            análisis de partidas y eventos destacados en el mundo del ajedrez.
-          </p>
-          <Link
-            id="box-glass"
-            to={"/news"}
-            className="flex justify-center items-center gap-2 mt-1"
-          >
-            <NavBtn btnname="Ir a noticias" />
-          </Link>
-        </article>
+        <div className="w-full h-full absolute inset-0 z-50   flex flex-col justify-center items-center  text-white lg:justify-evenly lg:items-start">
+          <article className="relative   -mt-12 pl-4 z-[200]  flex flex-col justify-center items-start gap-4 max-w-[600px] lg:gap-5 lg:mt-0 lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:gap-8 xl:pl-9 2xl:gap-10 ">
+            <h6
+              id="split"
+              className="font-title text-6xl z-[200]  font-semibold md:text-6xl lg:text-[16vh] xl:text-[17vh] text-bluefausti "
+            >
+              NOTICIAS
+            </h6>
+            <p
+              id="text-reveal2"
+              className="font-text2  z-50 text-stone-400 text-balance  text-sm md:text-lg opacity-0  xl:text-xl 2xl:text-2xl"
+            >
+              Descubre las últimas noticias sobre la carrera y los logros de
+              Faustino Oro. Mantente informado sobre sus próximas competencias,
+              análisis de partidas y eventos destacados en el mundo del ajedrez.
+            </p>
+            <Link
+              id="box-glass"
+              to={"/news"}
+              className="flex justify-center items-center gap-2 mt-1"
+            >
+              <button className="animated-button rounded-3xl w-[180px] pl-12 py-1 shadow-lg shadow-zinc-900 border border-stone-500  bg-zinc-700 lg:w-[190px] lg: lg:rounded- 2xl:pl-14 2xl:w-[220px] ">
+                <i className="bx bx-right-arrow-alt arr-2 text-3xl  text-sky-700 2xl:text-4xl"></i>
+                <span className="text font-title2 text-white text-base 2xl:text-lg">
+                  Ir a noticias
+                </span>
+                <span className="circle bg-zinc-800"></span>
+                <i className="bx bx-right-arrow-alt arr-1 text-3xl  text-sky-700 2xl:text-4xl"></i>
+              </button>
+            </Link>
+          </article>
 
-        <div className="flex flex-col justify-start items-start mt-14 max-w-[900px] lg:mt-0 lg:self-end xl:max-w-[1000px]">
-          <div className="flex flex-wrap pl-4 gap-y-6 gap-x-12  z-50 md:justify-center xl:gap-x-14">
-            {newsData?.slice(0, displayedNotices)?.map((news) => (
-              <CardNoticeHome news={news} />
-            ))}
+          <div className="flex flex-col justify-start items-start mt-14 max-w-[900px] lg:mt-0 lg:self-end xl:max-w-[1000px]">
+            <div className="flex flex-wrap pl-4 gap-y-6 gap-x-12  z-50 md:justify-center xl:gap-x-16 2xl:gap-x-20">
+              {newsData?.slice(0, displayedNotices)?.map((news) => (
+                <CardNoticeHome news={news} />
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div
-          id="line-stats"
-          className="w-[0%] absolute h-[1px] bg-gray-300 top-0 left-0 mb-[5%]"
-        ></div>
+          <div
+            id="line-stats"
+            className="w-[0%] absolute h-[1px] bg-gray-300 top-0 left-0 mb-[5%]"
+          ></div>
+        </div>
       </section>
 
       <Tournaments
