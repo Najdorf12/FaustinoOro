@@ -8,7 +8,7 @@ const NavBtn = ({ btnname }) => {
         <span className="text font-title2 text-base  2xl:text-lg">
           {btnname}
         </span>
-        <span className="circle bg-zinc-800"></span>
+        <span className="circle bg-zinc-700"></span>
         <i className="bx bx-right-arrow-alt arr-1 text-3xl  text-sky-700 2xl:text-4xl"></i>
       </button>
     </>

@@ -30,7 +30,6 @@ export default {
         title4: ["Syncopate", "sans-serif"],
         text: ["Oxygen", "sans-serif"],
         text2: ["Kanit", "sans-serif"],
-        cursive: ["Great Vibes", "sans-serif"],
       },
     },
   },
