@@ -2,7 +2,7 @@
 import icon2 from "../assets/icons/icon2.png"; */
 import ContactForm from "../components/ContactForm";
 import Games from "./Games";
-import Ritmos from "./Ritmos";
+/* import Ritmos from "./Ritmos"; */
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -46,7 +46,7 @@ const Contact = () => {
       <section id="games_section" className="">
         <Games />
       </section>
-      <Ritmos />
+      {/* <Ritmos /> */}
       <section
         id="box-container"
         className="w-full h-auto z-50 flex pl-[120px] mt-6"
