@@ -183,10 +183,7 @@
 #about-history::-webkit-scrollbar {
   width: 10px;
 }
-#about-history::-webkit-scrollbar-track {
-  /* background: rgb(39, 39, 42); */
-  
-}
+
 #about-history::-webkit-scrollbar-thumb {
   background-color: #909195;
   border-radius: 6px;
@@ -194,17 +191,14 @@
 #tournaments::-webkit-scrollbar {
   width: 6px;
 }
-#tournaments::-webkit-scrollbar-track {
-  /* background: rgb(39, 39, 42); */
-  
-}
+
 #tournaments::-webkit-scrollbar-thumb {
   background-color: #ced2df;
   border-radius: 6px;
 }
 /* CONTACTFORM */
 .form-container {
-  border: 1px solid #947153;
+  
   padding: 32px 24px;
   font-size: 14px;
   color: white;
@@ -245,7 +239,7 @@
   border-radius: 8px;
   color: #fff;
   background-color: transparent;
-  border: 1px solid #947153;
+  border: 1px solid rgb(82 82 91);
 }
 
 .form-container .form-group textarea {
@@ -255,8 +249,8 @@
   resize: none;
   color: #fff;
   height: 96px;
-  border: 1px solid #947153;
   background-color: transparent;
+  border: 1px solid rgb(82 82 91);
 }
 
 .form-container .form-group input::placeholder {
@@ -277,7 +271,6 @@
   justify-content: center;
   align-self: flex-start;
   width: 40%;
-  border: 1px solid #947153;
   padding: 11px 14px;
   gap: 8px;
   margin-top: 8px;
