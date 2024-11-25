@@ -77,7 +77,7 @@ const Games = () => {
           </h6>
           <div
             id="line-games"
-            className="self-start w-[0%] h-[2px] bg-[#947153] mt-3 lg:mt-4 2xl:mt-4"
+            className="self-start w-[0%] h-[2px] bg-lightbrown mt-3 lg:mt-4 2xl:mt-4"
           ></div>
           <p className="text-2xl font-text2 text-stone-400 font-base mt-7 z-50 xl:text-2xl ">
             {selectedGame
@@ -124,9 +124,9 @@ const Games = () => {
                 arePiecesDraggable={false}
                 animationDuration={150}
                 customDarkSquareStyle={{
-                  backgroundColor: "#8e1d22 /* #8e1d22 */",
+                  backgroundColor: "",
                 }}
-                customLightSquareStyle={{ backgroundColor: "#947153" }}
+                customLightSquareStyle={{ backgroundColor: "#3C5B6F" }}
               />
               <div className=" flex items-center mt-6 gap-8 justify-evenly text-stone-600 relative">
                 <button
