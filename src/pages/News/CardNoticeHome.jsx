@@ -7,7 +7,7 @@ const CardNoticeHome = ({ news }) => {
         id="box-glass"
         className="card2 z-50 group w-[330px] pb-1 pr-1 border border-sky-700 border-r-transparent rounded-2xl rounded-br-[21px] hover:scale-105 duration-500 xl:w-[380px] xl:pl-1"
       >
-        <div className="font-title3 absolute top-0 -right-9 text-zinc-600 text-6xl  group-hover:text-white duration-500 xl:top-1">
+        <div className="font-title3 absolute top-0 -right-9 text-zinc-600 text-6xl  group-hover:text-white duration-400 xl:top-1">
           0{news?.date}
         </div>
         <article className="pt-3 text-balance rounded-b-2xl flex flex-col ">
@@ -20,7 +20,7 @@ const CardNoticeHome = ({ news }) => {
           </p>
 
           <button className="self-end rounded-full h-[37px] w-[37px] mt-1 flex justify-center items-center border border-white bg-sky-700 group-hover:bg-white ">
-            <i class="bx bx-arrow-back rotate-[145deg]  text-white  text-2xl group-hover:text-sky-600"></i>
+            <i class="bx bx-arrow-back rotate-[145deg]  text-white  text-2xl group-hover:text-sky-600 duration-400"></i>
           </button>
         </article>
       </div>

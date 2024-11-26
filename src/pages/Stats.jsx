@@ -144,7 +144,7 @@ const Stats = ({ newsData }) => {
         className="relative w-full h-screen overflow-hidden bg-whiteCustom  "
       >
         <div className="w-full h-full absolute inset-0 z-50   flex flex-col justify-center items-center  text-white lg:justify-evenly lg:items-start">
-          <article className="relative   -mt-12 pl-4 z-[200]  flex flex-col justify-center items-start gap-4 max-w-[600px] lg:gap-5 lg:mt-0 lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:gap-8 xl:pl-9 2xl:gap-10 ">
+          <article className="relative   -mt-12 pl-4 z-[200]  flex flex-col justify-center items-start gap-4 max-w-[600px] lg:gap-5 lg:mt-0 lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:gap-8 xl:pl-10 2xl:gap-10 2xl:pl-14">
             <h6
               id="split"
               className="font-title text-6xl z-[200]  font-semibold md:text-6xl lg:text-[16vh] xl:text-[17vh] text-bluefausti "
@@ -164,13 +164,13 @@ const Stats = ({ newsData }) => {
               to={"/news"}
               className="flex justify-center items-center gap-2 mt-1"
             >
-              <button className="animated-button rounded-3xl w-[180px] pl-12 py-1 shadow-lg shadow-zinc-900 border border-stone-500  bg-zinc-700 lg:w-[210px] lg: lg:rounded- 2xl:pl-14 2xl:w-[230px] group">
+              <button className="animated-button rounded-3xl w-[180px] pl-12 py-1 shadow-lg shadow-zinc-900 border border-stone-500  bg-bluefausti lg:w-[210px] lg: lg:rounded- 2xl:pl-14 2xl:w-[230px] group">
                 <i className="bx bx-right-arrow-alt arr-2 text-3xl  text-sky-700 2xl:text-4xl"></i>
-                <span className="text font-title2 text-white text-base 2xl:text-lg group-hover:text-zinc-600">
+                <span className="text font-title2 text-whiteCustom text-base 2xl:text-lg group-hover:text-zinc-600">
                   Ir a noticias
                 </span>
                 <span className="circle bg-white"></span>
-                <i className="bx bx-right-arrow-alt arr-1 text-3xl  text-sky-700 2xl:text-4xl"></i>
+                <i className="bx bx-right-arrow-alt arr-1 text-3xl text-whiteCustom  group-hover:text-sky-700 2xl:text-4xl"></i>
               </button>
             </Link>
           </article>
