@@ -1,8 +1,7 @@
-/* import icon from "../assets/icons/icon1.png";
-import icon2 from "../assets/icons/icon2.png"; */
+import axios from "../api/axios";
+import { useForm } from "react-hook-form";
 import ContactForm from "../components/ContactForm";
 import Games from "./Games";
-/* import Ritmos from "./Ritmos"; */
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -10,6 +9,7 @@ import { useEffect, useLayoutEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
+
   const tl = gsap.timeline();
 
   useLayoutEffect(() => {
@@ -110,7 +110,7 @@ const Contact = () => {
               <i className="bx bxl-youtube"></i>
             </li>
             <li className="hover:scale-110 hover:text-whiteCustom duration-500 cursor-pointer z-50">
-              <i className="bx bxl-facebook-circle"></i>
+              <i class='bx bxl-twitch'></i>
             </li>
             <li className="hover:scale-110 hover:text-whiteCustom duration-500 cursor-pointer z-50">
               <i className="bx bxl-instagram-alt"></i>

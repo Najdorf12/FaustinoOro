@@ -93,9 +93,9 @@ const News = ({ newsData }) => {
 
       <section className="relative w-full min-h-screen pb-20">
         <article className="mt-9 flex flex-col justify-start pl-3 items-start text-balance lg:items-center lg:mt-[4%] ">
-          <h6 className="text-6xl text-zinc-700 font-medium font-title4 lg:text-center lg:text-7xl xl:text-8xl 2xl:text-9xl">
+          <p className="text-6xl text-zinc-700 font-medium font-title4 lg:text-center lg:text-7xl xl:text-8xl 2xl:text-9xl">
             noticias
-          </h6>
+          </p>
           <p className="font-text2 text-stone-300  mt-6 lg:text-lg lg:text-center lg:max-w-[770px] xl:text-xl 2xl:text-2xl 2xl:mt-9xl ">
           Aquí encontrarás actualizaciones en tiempo real y la cobertura de
           los momentos más importantes de su trayectoria profesional.
