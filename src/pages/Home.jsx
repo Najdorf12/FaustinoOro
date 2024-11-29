@@ -7,7 +7,7 @@ const btnsNav = [
   { name: "Partidas", path: "#games" },
   { name: "Noticias", path: "/news" },
   { name: "Cursos", path: "/courses" },
-  { name: "Contacto", path: "#contact" },
+  { name: "Contacto", path: "#contact_section" },
 ];
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(window.innerWidth >= 1024);
