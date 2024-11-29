@@ -38,13 +38,27 @@ const News = ({ newsData }) => {
             clave en su carrera de ajedrez.
             {/*   */}
           </p>
-          <div className="flex justify-center w-full items-center mt-3 gap-4 lg:justify-start lg:gap-6  xl:mt-6 xl:gap-12 ">
-            <Link to={"/"} className="bg-white rounded-3xl text-zinc-800 ">
-              <PrimaryBtn btnname={"Ver más"} />
-            </Link>
-            <Link to={"/"} className="bg-zinc-800 rounded-3xl text-white">
-              <PrimaryBtn btnname={"Torneos"} />
-            </Link>
+          <div className="flex justify-center w-full items-center mt-3 gap-4 lg:justify-start lg:gap-6  xl:mt-6 xl:gap-7 ">
+          <a href={"#notices_section"}>
+          <button className="animated-button bg-zinc-800 rounded-3xl w-[190px] pl-9 shadow-lg shadow-zinc-900 border border-zinc-600 lg:w-[200px] py-1 2xl:w-[230px] group">
+            <i className="bx bx-right-arrow-alt arr-2 text-3xl  text-sky-600 2xl:text-4xl"></i>
+            <span className="text font-title2  text-base 2xl:text-lg text-zinc-500 group-hover:text-whiteCustom">
+              Ver más
+            </span>
+            <span className="circle bg-zinc-700"></span>
+            <i className="bx bx-right-arrow-alt arr-1 text-3xl  text-sky-600 2xl:text-4xl"></i>
+          </button>
+        </a>
+        <Link to={"/"}>
+          <button className="animated-button bg-whiteCustom rounded-3xl w-[190px] pl-9 shadow-lg shadow-zinc-900 border border-zinc-600 lg:w-[200px] py-1 2xl:w-[230px] group">
+            <i className="bx bx-right-arrow-alt arr-2 text-3xl  text-sky-600 2xl:text-4xl"></i>
+            <span className="text font-title2  text-base 2xl:text-lg text-zinc-700 group-hover:text-whiteCustom">
+              Torneos
+            </span>
+            <span className="circle bg-zinc-700"></span>
+            <i className="bx bx-right-arrow-alt arr-1 text-3xl  text-sky-600 2xl:text-4xl"></i>
+          </button>
+        </Link>
           </div>
         </article>
         <figure className="absolute inset-0 w-full h-full flex justify-center items-center lg:self-end lg:right-0 lg:justify-end ">
@@ -75,7 +89,7 @@ const News = ({ newsData }) => {
           >
             <p className="text-base text-zinc-300 font-text2 text-balance text-center font-normal  md:text-base md:w-[90%] lg:text-xl 2xl:text-2xl">
               Con
-              <span className="text-rose-400">
+              <span className="text-sky-400">
                 {" "}
                 dedicación, esfuerzo y disciplina
               </span>
@@ -85,13 +99,13 @@ const News = ({ newsData }) => {
               posibles.
             </p>
             <figure className="absolute bottom-0 right-1">
-              <i className="bx bxs-doughnut-chart text-4xl md:text-5xl z-50 text-rose-500  2xl:text-6xl"></i>
+              <i className="bx bxs-doughnut-chart text-4xl md:text-5xl z-50 text-sky-500  2xl:text-6xl"></i>
             </figure>
           </article>
         </article>
       </section>
 
-      <section className="relative w-full min-h-screen pb-20">
+      <section id="notices_section" className="relative w-full min-h-screen pb-20">
         <article className="mt-9 flex flex-col justify-start pl-3 items-start text-balance lg:items-center lg:mt-[4%] ">
           <p className="text-6xl text-zinc-700 font-medium font-title4 lg:text-center lg:text-7xl xl:text-8xl 2xl:text-9xl">
             noticias
@@ -105,7 +119,7 @@ const News = ({ newsData }) => {
           </p>
         </article>
 
-        <div className="flex flex-wrap gap-y-5 gap-x-20 justify-start pl-3 mt-10 w-full   md:justify-center lg:gap-x-24 lg:mt-16 lg:pl-0 lg:px-[5%] xl:gap-y-8 2xl:gap-x-32 ">
+        <div  className="flex flex-wrap gap-y-5 gap-x-20 justify-start pl-3 mt-10 w-full   md:justify-center lg:gap-x-24 lg:mt-16 lg:pl-0 lg:px-[5%] xl:gap-y-8 2xl:gap-x-32 ">
           {newsData?.map((news, i) => (
             <div key={i} className="slide">
               <CardNotice news={news} />
