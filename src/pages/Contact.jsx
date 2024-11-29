@@ -106,22 +106,22 @@ const Contact = () => {
         <footer className="w-full mt-6 lg:mt-1 lg:w-[50%] xl:mt-5 2xl:mt-6 z-50">
           <ul className="flex gap-8 justify-center items-center text-whiteCustom text-4xl xl:text-5xl xl:gap-12  ">
             <Link to="https://www.youtube.com/@faustichess" target="_blank" >
-              <li className="hover:scale-110  duration-500 cursor-pointer z-50 hover:text-sky-600">
+              <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-sky-600">
                 <i className="bx bxl-youtube"></i>
               </li>
             </Link>
             <Link to="https://www.twitch.tv/faustichess" target="_blank" >
-              <li className="hover:scale-110  duration-500 cursor-pointer z-50 hover:text-sky-600">
+              <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-sky-600">
                 <i class="bx bxl-twitch"></i>
               </li>
             </Link>
             <Link to="https://www.instagram.com/faustioro/" target="_blank" >
-              <li className="hover:scale-110  duration-500 cursor-pointer z-50 hover:text-sky-600">
+              <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-sky-600">
                 <i className="bx bxl-instagram-alt"></i>
               </li>
             </Link>
             <Link to="https://www.facebook.com/profile.php?id=100089778504647" target="_blank">
-              <li className="hover:scale-110  duration-500 cursor-pointer z-50 hover:text-sky-600">
+              <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-sky-600">
               <i class='bx bxl-facebook-circle'></i>
               </li>
             </Link>{" "}

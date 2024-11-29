@@ -259,10 +259,12 @@
 
 .form-container .form-group input:focus {
   outline: none;
+  border-color: rgb(2 132 199);
 }
 
 .form-container .form-group textarea:focus {
   outline: none;
+  border-color: rgb(2 132 199);
 }
 
 .form-container .form-submit-btn {
@@ -270,18 +272,14 @@
   align-items: flex-start;
   justify-content: center;
   align-self: flex-start;
-  width: 40%;
-  padding: 11px 14px;
+  width: 45%;
+  padding: 9px 14px;
   gap: 8px;
   margin-top: 8px;
   cursor: pointer;
   transition: all 500ms;
 }
 
-.form-container .form-submit-btn:hover {
-  background-color: #fff;
-  border-color: #fff;
-}
 @media (min-width: 1300px) {
   .form-container .form-group label {
     font-size: 12px;

@@ -37,13 +37,13 @@ const ContactForm = () => {
           </div>
           <div className="form-group">
             <label for="textarea">Mensaje</label>
-            <textarea className="2xl:h-[300px] placeholder-white" placeholder="Deja tu mensaje"  id="textarea" name="textarea" {...register("message")}>
+            <textarea  id="textarea" name="textarea" {...register("message")}>
               {" "}
             </textarea>
           </div>
           <button
             type="submit"
-            className="form-submit-btn font-text2 text-base border border-sky-400 bg-sky-700  text-whiteCustom rounded-lg duration-400"
+            className="form-submit-btn font-text2 text-base border border-sky-400 bg-sky-700  text-whiteCustom rounded-lg duration-400 hover:scale-105"
           >
             Enviar
           </button>
