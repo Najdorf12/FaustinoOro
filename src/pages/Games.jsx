@@ -162,9 +162,9 @@ const Games = () => {
                   key={i}
                   onClick={() => handleSelectGame(partida)}
                   className="relative w-full p-1 flex justify-start
-                 items-center text-base gap-2 rounded-2xl z-50 px-3 lg:w-[430px] cursor-pointer hover:scale-105 border border-stone-700 duration-500"
+                 items-center text-base gap-2 rounded-2xl z-50 px-3 lg:w-[430px] cursor-pointer hover:scale-105 border border-stone-700 duration-500 group"
                 >
-                  <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center  bg-zinc-800 text-[#4b718a] text-xl xl:text-2xl"></i>
+                  <i className="bx bx-arrow-back rotate-[145deg] flex justify-center items-center  bg-zinc-800 text-[#4b718a] text-xl xl:text-2xl group-hover:text-whiteCustom"></i>
                   {partida.players}
                 </li>
               );

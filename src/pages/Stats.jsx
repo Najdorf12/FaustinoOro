@@ -114,17 +114,6 @@ const Stats = ({ newsData }) => {
           scrub: 1,
         },
       })
-      .to("#line-stats", {
-        width: "50%",
-        duration: 2,
-        scrollTrigger: {
-          trigger: "#five_section",
-          start: screenStats > 700 ? "50% bottom" : "30% bottom",
-          end: "top top",
-          scrub: true,
-        },
-      })
-
       .to("#line-tournament", {
         width: screenStats > 700 ? "40%" : "90%",
         duration: 2,
@@ -135,6 +124,17 @@ const Stats = ({ newsData }) => {
           scrub: true,
         },
       });
+    /*  .to("#line-stats", {
+        width: "50%",
+        duration: 2,
+        scrollTrigger: {
+          trigger: "#five_section",
+          start: screenStats > 700 ? "50% bottom" : "30% bottom",
+          end: "top top",
+          scrub: true,
+        },
+      })
+ */
   }, []);
 
   return (
@@ -183,10 +183,10 @@ const Stats = ({ newsData }) => {
             </div>
           </div>
 
-          <div
+          {/*  <div
             id="line-stats"
-            className="w-[0%] absolute h-[1px] bg-gray-300 top-0 left-0 mb-[5%]"
-          ></div>
+            className="w-[0%] absolute h-[2px] bg-sky-600 top-1 left-0 mb-[5%]"
+          ></div> */}
         </div>
       </section>
 

@@ -43,7 +43,7 @@ const ContactForm = () => {
           </div>
           <button
             type="submit"
-            className="form-submit-btn font-text2 text-base border border-sky-400 bg-sky-700  text-whiteCustom rounded-lg duration-400 hover:scale-105"
+            className="form-submit-btn font-text2 text-base border border-sky-400 bg-sky-700  text-whiteCustom rounded-lg duration-400 hover:scale-105 hover:border-sky-100"
           >
             Enviar
           </button>
