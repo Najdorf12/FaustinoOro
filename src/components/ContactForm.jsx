@@ -28,16 +28,16 @@ const ContactForm = () => {
           className="form text-whiteCustom z-50 "
         >
           <div className="form-group">
-            <label for="Nombre">Nombre</label>
-            <input required="" name="Nombre" id="Nombre" type="text" />
-          </div>
-          <div className="form-group">
             <label for="email">Email</label>
-            <input required="" name="email" id="email" type="text" />
+            <input required="" name="email" id="email" type="text" {...register("email")} />
           </div>
           <div className="form-group">
-            <label for="textarea">Lorem impsum </label>
-            <textarea id="textarea" name="textarea">
+            <label for="wttp">Whatsapp</label>
+            <input required="" name="wttp" id="wttp" type="text" {...register("wttp")} />
+          </div>
+          <div className="form-group">
+            <label for="textarea">Mensaje</label>
+            <textarea className="2xl:h-[300px] placeholder-white" placeholder="Deja tu mensaje"  id="textarea" name="textarea" {...register("message")}>
               {" "}
             </textarea>
           </div>
