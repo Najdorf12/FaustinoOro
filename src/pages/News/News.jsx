@@ -17,7 +17,7 @@ const News = ({ newsData }) => {
         </Link>
       </nav>
 
-      <section className="h-[70vh] w-full flex justify-center items-start pt-[] relative  lg:justify-start lg:items-start lg:h-[100vh]">
+      <section className="h-[85vh] w-full flex justify-center items-start pt-[] relative  lg:justify-start lg:items-start lg:h-[100vh]">
         <article
           id="box-glass2"
           className="w-full pt-14 pb-4 border-b border-stone-500 rounded-xl flex flex-col justify-center items-center gap-2 z-50 text-center lg:mt-0 lg:w-[50%] xl:w-[40%] lg:items-start  lg:justify-center lg:gap-5 lg:rounded-r-3xl lg:border-stone-200 lg:h-full lg:pl-6 xl:pl-6 2xl:pl-9 2xl:gap-6 lg:z-50 lg:border-r "
@@ -32,33 +32,33 @@ const News = ({ newsData }) => {
           <h3 className="font-title text-white text-6xl font-semibold z-50 lg:text-[6rem] lg:w-full lg:-mt-[5rem] lg:text-start  xl:-mt-[9rem] xl:text-[6.2rem]        2xl:text-[8rem] ">
             NOTICIAS
           </h3>
-          <p className="font-text2 w-full sm:px-2 mt-2  text-sm text-center text-pretty text-zinc-300 lg:text-lg xl:text-xl lg:pr-3  lg:px-0 lg:self-start lg:text-start  2xl: 2xl:text-2xl">
+          <p className="font-text2 w-full sm:px-2 mt-2  text-sm text-center text-pretty text-zinc-200 lg:text-lg xl:text-xl lg:pr-3  lg:px-0 lg:self-start lg:text-start  2xl: 2xl:text-2xl">
             Bienvenidos a la sección de noticias de Faustino Oro, <br />
             donde compartimos sus logros, próximas competencias <br />y momentos
             clave en su carrera de ajedrez.
             {/*   */}
           </p>
           <div className="flex justify-center w-full items-center mt-3 gap-4 lg:justify-start lg:gap-6  xl:mt-6 xl:gap-7 ">
-          <a href={"#notices_section"}>
-          <button className="animated-button bg-zinc-800 rounded-3xl w-[190px] pl-9 shadow-lg shadow-zinc-900 border border-zinc-600 lg:w-[200px] py-1 2xl:w-[230px] group">
-            <i className="bx bx-right-arrow-alt arr-2 text-3xl  text-sky-600 2xl:text-4xl"></i>
-            <span className="text font-title2  text-base 2xl:text-lg text-zinc-500 group-hover:text-whiteCustom">
-              Ver más
-            </span>
-            <span className="circle bg-zinc-700"></span>
-            <i className="bx bx-right-arrow-alt arr-1 text-3xl  text-sky-600 2xl:text-4xl"></i>
-          </button>
-        </a>
-        <Link to={"/"}>
-          <button className="animated-button bg-whiteCustom rounded-3xl w-[190px] pl-9 shadow-lg shadow-zinc-900 border border-zinc-600 lg:w-[200px] py-1 2xl:w-[230px] group">
-            <i className="bx bx-right-arrow-alt arr-2 text-3xl  text-sky-600 2xl:text-4xl"></i>
-            <span className="text font-title2  text-base 2xl:text-lg text-zinc-700 group-hover:text-whiteCustom">
-              Torneos
-            </span>
-            <span className="circle bg-zinc-700"></span>
-            <i className="bx bx-right-arrow-alt arr-1 text-3xl  text-sky-600 2xl:text-4xl"></i>
-          </button>
-        </Link>
+            <Link to={"/"}>
+              <button className="animated-button bg-whiteCustom rounded-3xl w-[190px] pl-9 shadow-lg shadow-zinc-900 border border-zinc-500 lg:w-[200px] py-1 2xl:w-[230px] group">
+                <i className="bx bx-right-arrow-alt arr-2 text-3xl  text-sky-600 2xl:text-4xl"></i>
+                <span className="text font-title2  text-base 2xl:text-lg text-zinc-800 group-hover:text-whiteCustom">
+                  Ver más
+                </span>
+                <span className="circle bg-zinc-700"></span>
+                <i className="bx bx-right-arrow-alt arr-1 text-3xl  text-sky-600 2xl:text-4xl"></i>
+              </button>
+            </Link>
+            <Link to={"#notices_section"}>
+              <button className="animated-button bg-zinc-800 rounded-3xl w-[190px] pl-9 shadow-lg shadow-zinc-900 border border-zinc-600 lg:w-[200px] py-1 2xl:w-[230px] group">
+                <i className="bx bx-right-arrow-alt arr-2 text-3xl  text-sky-600 2xl:text-4xl"></i>
+                <span className="text font-title2  text-base 2xl:text-lg text-zinc-400 group-hover:text-whiteCustom">
+                  Torneos
+                </span>
+                <span className="circle bg-zinc-700"></span>
+                <i className="bx bx-right-arrow-alt arr-1 text-3xl  text-sky-600 2xl:text-4xl"></i>
+              </button>
+            </Link>
           </div>
         </article>
         <figure className="absolute inset-0 w-full h-full flex justify-center items-center lg:self-end lg:right-0 lg:justify-end ">
@@ -70,24 +70,17 @@ const News = ({ newsData }) => {
         </figure>
       </section>
 
-      <section className="relative z-50 w-full h-[60vh] lg:h-screen">
-        {/* <figure className="absolute inset-0 w-full h-[60vh] flex justify-center items-center lg:h-screen lg:self-start">
-          <img
-            src={bgNews2}
-            alt="bg-news"
-            className="w-full h-full object-cover object-center lg:w-[100%] lg:rounded-t-3xl  z-40 "
-          />
-        </figure> */}
+      <section className="relative z-50 w-full py-12 xl:pt-14 xl:pb-20">
         <article className="flex flex-col h-full px-3 items-center justify-start gap-3 mt-8  text-balance  lg:self-center lg:mt-12 lg:gap-8 xl:gap-12 xl:mt-16 2xl:mt-24 2xl:gap-14">
-          <p className="z-50 font-title4 w-full text-xl text-white text-center xl:max-w-[900px] lg:text-3xl  2xl:text-4xl 2xl:max-w-[1000px] ">
+          <p className="z-50 font-title4 w-full text-xl text-white text-center xl:max-w-[1000px] lg:text-3xl xl:text-4xl  2xl:text-5xl 2xl:max-w-[1200px] ">
             Explora actualizaciones sobre sus avances y eventos especiales.
           </p>
 
           <article
             id="box-glass2"
-            className="z-50 relative pt-3 pb-8 md:pb-9 px-3  rounded-xl border border-stone-200 max-w-[500px] flex justify-center items-center xl:max-w-[600px] 2xl:max-w-[700px]"
+            className="z-50 relative pt-3 pb-8 md:pb-9 px-3  rounded-xl border border-stone-200 max-w-[500px] flex justify-center items-center xl:max-w-[750px] xl:pt-4 xl:pb-9 xl:mt-1 2xl:max-w-[800px]"
           >
-            <p className="text-base text-zinc-300 font-text2 text-balance text-center font-normal  md:text-base md:w-[90%] lg:text-xl 2xl:text-2xl">
+            <p className="text-base text-zinc-300 font-text2 text-balance text-center font-normal  md:text-base md:px-6 lg:text-xl xl:text-2xl 2xl:text-3xl">
               Con
               <span className="text-sky-400">
                 {" "}
@@ -105,21 +98,24 @@ const News = ({ newsData }) => {
         </article>
       </section>
 
-      <section id="notices_section" className="relative w-full min-h-screen pb-20">
-        <article className="mt-9 flex flex-col justify-start pl-3 items-start text-balance lg:items-center lg:mt-[4%] ">
+      <section
+        id="notices_section"
+        className="relative w-full min-h-screen pb-20"
+      >
+        <article className="mt-9 flex flex-col justify-start pl-3 items-start text-balance lg:items-center text-center  lg:mt-[4%] ">
           <p className="text-6xl text-zinc-700 font-medium font-title4 lg:text-center lg:text-7xl xl:text-8xl 2xl:text-9xl">
             noticias
           </p>
-          <p className="font-text2 text-stone-300  mt-6 lg:text-lg lg:text-center lg:max-w-[770px] xl:text-xl 2xl:text-2xl 2xl:mt-9xl ">
-          Aquí encontrarás actualizaciones en tiempo real y la cobertura de
-          los momentos más importantes de su trayectoria profesional.
-           {/* ¡No te pierdas sus próximos torneos y logros! Síguenos para estar al
+          <p className="font-text2 text-zinc-300  mt-6 lg:text-lg lg:text-cemter lg:max-w-[770px] xl:text-xl 2xl:text-2xl 2xl:mt-9xl ">
+            Aquí encontrarás actualizaciones en tiempo real y la cobertura de
+            los momentos más importantes de su trayectoria profesional.
+            {/* ¡No te pierdas sus próximos torneos y logros! Síguenos para estar al
             tanto de las últimas noticias sobre Faustino y su camino en el
             ajedrez. */}
           </p>
         </article>
 
-        <div  className="flex flex-wrap gap-y-5 gap-x-20 justify-start pl-3 mt-10 w-full   md:justify-center lg:gap-x-24 lg:mt-16 lg:pl-0 lg:px-[5%] xl:gap-y-8 2xl:gap-x-32 ">
+        <div className="flex flex-wrap gap-y-5 gap-x-20 justify-start pl-3 mt-10 w-full   md:justify-center lg:gap-x-24 lg:mt-16 lg:pl-0 lg:px-[5%] xl:mt-20 xl:gap-y-10 2xl:gap-x-32 ">
           {newsData?.map((news, i) => (
             <div key={i} className="slide">
               <CardNotice news={news} />
