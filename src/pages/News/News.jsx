@@ -72,13 +72,13 @@ const News = ({ newsData }) => {
 
       <section className="relative z-50 w-full py-12 xl:pt-14 xl:pb-20">
         <article className="flex flex-col h-full px-3 items-center justify-start gap-3 mt-8  text-balance  lg:self-center lg:mt-12 lg:gap-8 xl:gap-12 xl:mt-16 2xl:mt-24 2xl:gap-14">
-          <p className="z-50 font-title4 w-full text-xl text-white text-center xl:max-w-[1000px] lg:text-3xl xl:text-4xl  2xl:text-5xl 2xl:max-w-[1200px] ">
+          <p className="z-50 font-title4 w-full text-xl text-white text-center xl:max-w-[1000px] lg:text-3xl xl:text-4xl  2xl:text-5xl 2xl:max-w-[1400px] ">
             Explora actualizaciones sobre sus avances y eventos especiales.
           </p>
 
           <article
             id="box-glass2"
-            className="z-50 relative pt-3 pb-8 md:pb-9 px-3  rounded-xl border border-stone-200 max-w-[500px] flex justify-center items-center xl:max-w-[750px] xl:pt-4 xl:pb-9 xl:mt-1 2xl:max-w-[800px]"
+            className="z-50 relative pt-3 pb-8 md:pb-9 px-3  rounded-xl border border-stone-200 max-w-[500px] flex justify-center items-center xl:max-w-[750px] xl:pt-4 xl:pb-9 xl:mt-1 2xl:max-w-[800px]  2xl:pb-16 2xl:pt-6"
           >
             <p className="text-base text-zinc-300 font-text2 text-balance text-center font-normal  md:text-base md:px-6 lg:text-xl xl:text-2xl 2xl:text-3xl">
               Con
