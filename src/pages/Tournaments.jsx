@@ -5,7 +5,7 @@ const Tournaments = ({ screenStats, displayedTournaments, allTournaments }) => {
     <>
       <section
         id="six_section"
-        className="overflow-hidden relative  w-fulL h-screen z-5 pt-10 pl-2 pr-1 2xl:pt-16"
+        className="overflow-hidden relative bg-whiteCustom  w-fulL h-screen z-5 pt-10 pl-2 pr-1 2xl:pt-16"
       >
         <div
           style={{ clipPath: "polygon(0 0, 0% 100%, 100% 0)" }}
