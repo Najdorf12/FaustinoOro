@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+#3f4864 blue 
+#80101A red
+*/
+@layer base {
+  @font-face {
+    font-family: "Super Larky";
+    font-style: normal;
+    font-display: swap;
+    src: url(/font/SuperLarky.ttf) format("woff2");
+  }
+}
+
+.title-name {
+  font-family: "Super Larky";
+}
+.menu {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Aplicar la animación de entrada cuando se muestre el menú */
+.menu-open {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* From Uiverse.io by adamgiebl */
+#checkbox2 {
+  display: none;
+}
+
+.toggle2 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition-duration: 0.5s;
+}
+
+.bars {
+  width: 100%;
+  height: 6px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  /* border: 1px solid rgb(92, 84, 84); */
+}
+
+#bar5 {
+  transition-duration: 0.8s;
+}
+
+#bar4,
+#bar6 {
+  width: 80%;
+}
+
+#checkbox2:checked + .toggle2 .bars {
+  position: absolute;
+  transition-duration: 0.5s;
+}
+
+#checkbox2:checked + .toggle2 #bar5 {
+  transform: scaleX(0);
+  transition-duration: 0.5s;
+}
+
+#checkbox2:checked + .toggle2 #bar4 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox2:checked + .toggle2 #bar6 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox2:checked + .toggle2 {
+  transition-duration: 0.5s;
+  transform: rotate(180deg);
+}
+#home {
+  z-index: 50;
+  background: linear-gradient(
+      330deg,
+      rgb(5, 7, 11, 0.95) 33%,
+      rgba(5, 7, 12, 0.4) 100%
+    ),
+    url("./assets/fausti5.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #1b1827;
+}
+
+#contact {
+  background: #d6d9d7;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid #d6d9d7;
+}
+.scene {
+  width: 10em;
+  justify-content: center;
+  align-items: center;
+}
+
+.cube {
+  cursor: pointer;
+  transition: all 0.85s cubic-bezier(0.17, 0.67, 0.14, 0.93);
+  transform-style: preserve-3d;
+  transform-origin: 100% 50%;
+  width: 10em;
+  height: 3.6em;
+}
+
+.cube:hover {
+  transform: rotateX(-90deg);
+}
+
+.side {
+  box-sizing: border-box;
+  position: absolute;
+  display: inline-block;
+  height: 4em;
+  width: 10em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 1.3em;
+}
+
+.top {
+  transform: rotateX(90deg) translate3d(0, 0, 2em);
+  box-shadow: inset 0 0 0 3px #8a8282;
+}
+
+.front {
+  box-shadow: inset 0 0 0 3px #ebe8e8;
+  transform: translate3d(0, 0, 2em);
+}
+/* CHESSBOARD */
+.chessboard-wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CARD */
+.card {
+  height: 40%;
+  clip-path: polygon(
+    30px 0%,
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%,
+    0% 30px
+  );
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CUSTOM SCROLLBAR */
+#about-history::-webkit-scrollbar {
+  width: 10px;
+}
+
+#about-history::-webkit-scrollbar-thumb {
+  background-color: #909195;
+  border-radius: 6px;
+}
+#tournaments::-webkit-scrollbar {
+  width: 6px;
+}
+
+#tournaments::-webkit-scrollbar-thumb {
+  background-color: #ced2df;
+  border-radius: 6px;
+}
+/* CONTACTFORM */
+.form-container {
+  
+  padding: 32px 24px;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-size: 200% 100%;
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid rgb(82 82 91);
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  background-color: transparent;
+  border: 1px solid rgb(82 82 91);
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: rgb(2 132 199);
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: rgb(2 132 199);
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  width: 45%;
+  padding: 9px 14px;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+@media (min-width: 1300px) {
+  .form-container .form-group label {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1500px) {
+  .form-container .form-group label {
+    font-size: 14px;
+  }
+}
+
+/* checkbox */
+.container-checkbox {
+  cursor: pointer;
+}
+
+.container-checkbox input {
+  display: none;
+}
+
+.container-checkbox svg {
+  overflow: visible;
+}
+
+.path {
+  fill: none;
+  stroke: white;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+  stroke-dasharray: 241 9999999;
+  stroke-dashoffset: 0;
+}
+
+.container-checkbox input:checked ~ svg .path {
+  stroke-dasharray: 70.5096664428711 9999999;
+  stroke-dashoffset: -262.2723388671875;
+}
+
+.btn-about {
+  background: rgba( 255, 255, 255, 0.4 );
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px ); 
+}
+#palmares  {
+  background: rgba( 255, 255, 255, 0.4 );
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
+  
+}
+ #news-box, #tournament {
+  background: rgba( 255, 255, 255, 0.4 );
+  backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 1px );
+} 
+#box-glass {
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
+}
+#box-glass2 {
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 2px );
+}
+
