@@ -102,7 +102,7 @@ const News = ({ newsData }) => {
         id="notices_section"
         className="relative w-full min-h-screen pb-20"
       >
-        <article className="mt-9 flex flex-col justify-start pl-3 items-start text-balance lg:items-center text-center  lg:mt-[4%] ">
+        <article className="mt-9 flex flex-col justify-start pl-3 items-start text-balance lg:items-center text-center  lg:mt-[3%] ">
           <p className="text-6xl text-zinc-700 font-medium font-title4 lg:text-center lg:text-7xl xl:text-8xl 2xl:text-9xl">
             noticias
           </p>
