@@ -22,7 +22,7 @@ const Tournaments = ({ screenStats, displayedTournaments, allTournaments }) => {
           ></div>
           <ul
             id="tournaments"
-            className="rounded-lg pr-3 pt-2 pb-6 overflow-y-scroll grid grid-cols-1 gap-6 z-50 mt-3 lg:grid-cols-2   lg:mt-12  lg:w-full xl:gap-10  place-items-center lg:mx-auto"
+            className="rounded-lg pr-3 pt-2 pb-6 overflow-y-scroll grid grid-cols-1 gap-6 z-50 mt-3 lg:grid-cols-2   lg:mt-8  lg:w-full xl:gap-10  place-items-center lg:mx-auto"
           >
             {allTournaments
               ?.slice(0, displayedTournaments)
