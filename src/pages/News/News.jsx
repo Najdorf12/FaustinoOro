@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import CardNotice from "./CardNotice";
-import bgNews from "/bg/bg9.jpg";
-import bgNews2 from "/bg/bg10.jpg";
+import bgNews from "/bg/bg3.jpg";
+import bgNews2 from "/bg/bg2.jpg";
 import "../../components/Buttons/primaryBtn.css";
 import PrimaryBtn from "../../components/Buttons/PrimaryBtn";
 import iconNav from "/iconNav.png";
@@ -71,13 +71,13 @@ const News = ({ newsData }) => {
       </section>
 
       <section className="relative z-50 w-full h-[60vh] lg:h-screen">
-        <figure className="absolute inset-0 w-full h-[60vh] flex justify-center items-center lg:h-screen lg:self-start">
+        {/* <figure className="absolute inset-0 w-full h-[60vh] flex justify-center items-center lg:h-screen lg:self-start">
           <img
             src={bgNews2}
             alt="bg-news"
             className="w-full h-full object-cover object-center lg:w-[100%] lg:rounded-t-3xl  z-40 "
           />
-        </figure>
+        </figure> */}
         <article className="flex flex-col h-full px-3 items-center justify-start gap-3 mt-8  text-balance  lg:self-center lg:mt-12 lg:gap-8 xl:gap-12 xl:mt-16 2xl:mt-24 2xl:gap-14">
           <p className="z-50 font-title4 w-full text-xl text-white text-center xl:max-w-[900px] lg:text-3xl  2xl:text-4xl 2xl:max-w-[1000px] ">
             Explora actualizaciones sobre sus avances y eventos especiales.
