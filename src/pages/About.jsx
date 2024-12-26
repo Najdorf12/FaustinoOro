@@ -306,7 +306,7 @@ const About = () => {
         id="second_section"
         className="w-full h-screen bg-whiteCustom flex lg:justify-end  font-title overflow-hidden relative"
       >
-        <article className="relative  pt-24 lg:pt-0 px-3 pl-[4%] sm:pl-[6%] lg:pl-0 flex flex-col gap-3 z-50 sm:max-w-[550px] lg:mr-[2%] lg:mt-12 xl:max-w-[650px] xl:mt-14  2xl:mr-[6%]  2xl:max-w-[750px] text-balance ">
+        <article className="relative  pt-24 lg:pt-0 px-3 pl-[4%] sm:pl-[6%] lg:pl-0 flex flex-col gap-3 z-50 sm:max-w-[550px] lg:mr-[2%] lg:mt-12 xl:max-w-[650px] xl:mt-16  2xl:mr-[6%]  2xl:max-w-[750px] text-balance ">
           <h5
             id="about-text"
             className="text-xl font-title4 text-stone-400 xl:text-2xl 2xl:text-3xl font-medium opacity-0 lg:text-stone-500"

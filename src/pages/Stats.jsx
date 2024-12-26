@@ -153,7 +153,7 @@ const Stats = ({ newsData }) => {
             </h6>
             <p
               id="text-reveal2"
-              className="font-text2  z-50 text-stone-400 text-balance  text-sm md:text-lg opacity-0  xl:text-xl 2xl:text-2xl"
+              className="font-text2  z-50 text-zinc-500 text-balance  text-sm md:text-lg opacity-0  xl:text-xl 2xl:text-2xl"
             >
               Descubre las últimas noticias sobre la carrera y los logros de
               Faustino Oro. Mantente informado sobre sus próximas competencias,
