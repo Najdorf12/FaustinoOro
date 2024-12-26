@@ -23,12 +23,11 @@ const NewsDetail = () => {
               className="w-full h-full object-cover object-center rounded-xl border border-stone-500"
             />
           </figure>
-          {/* <div className="pattern2"></div> */}
         </div>
 
         <article
           id=""
-          className="text-balance  font-normal self-center relative flex flex-col justify-center items-center gap-3 w-[90%]  max-w-[650px] mt-6 text-start md:self-start md:gap-5 md:pl-[5%] xl:max-w-[750px] xl:mt-9 2xl:mt-16 2xl:max-w-[900px]"
+          className="text-balance  font-normal self-center relative flex flex-col justify-center items-center gap-3 w-[90%]  max-w-[650px] mt-6 text-start md:self-start md:gap-5 md:pl-[5%] xl:max-w-[750px] xl:mt-12 2xl:mt-16 2xl:max-w-[900px]"
         >
           <h6 className="text-white  relative font-title4 font-medium z-50 text-2xl md:text-4xl xl:text-5xl 2xl:text-6xl self-start">
             Faustino consigue otro hito histórico
@@ -53,7 +52,7 @@ const NewsDetail = () => {
             fugiat error laudantium natus!
           </p>
         </article>
-        <div className="w-full h-[20vh] mt-14 md:h-[50vh] xl:mt-16">
+        <div className="w-full h-[30vh] mt-14 md:h-[60vh] xl:mt-16">
           <figure className="w-full h-full">
             <img
               src={imgBg}
