@@ -78,7 +78,7 @@ const News = ({ newsData }) => {
 
           <article
             id="box-glass2"
-            className="z-50 relative pt-3 pb-8 md:pb-9 px-3  rounded-xl border border-zinc-700 max-w-[500px] flex justify-center items-center xl:max-w-[780px] xl:pt-4 xl:pb-12 xl:mt-1 2xl:max-w-[930px]  2xl:pb-16 2xl:pt-6"
+            className="z-50 relative pt-3 pb-8 md:pb-9 px-3  rounded-xl border border-zinc-700 max-w-[500px] flex justify-center items-center xl:max-w-[780px] xl:pt-4 xl:pb-12 xl:mt-1 2xl:max-w-[970px]  2xl:pb-14 2xl:pt-6"
           >
             <p className="text-base text-zinc-500 font-text2 text-balance text-center font-normal  md:text-base md:px-2 lg:text-xl xl:text-2xl 2xl:text-3xl">
               Con
