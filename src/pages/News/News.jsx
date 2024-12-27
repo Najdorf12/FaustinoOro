@@ -104,9 +104,9 @@ const News = ({ newsData }) => {
       >
         <article className="mt-9 flex flex-col justify-start pl-3 items-start text-balance lg:items-center text-center lg:pl-0 lg:mt-[3%] ">
           <p className="text-6xl flex items-center gap-3 xl:gap-12  text-zinc-100 font-medium font-title4 lg:text-center lg:text-7xl xl:text-8xl 2xl:text-9xl">
-            <div className="hidden lg:flex w-[400px] h-[1px] bg-zinc-700"></div>
+            <div className="hidden lg:flex w-[400px] h-[1px] bg-sky-800"></div>
             noticias
-            <div className="hidden lg:flex w-[400px] h-[1px] bg-zinc-700"></div>
+            <div className="hidden lg:flex w-[400px] h-[1px] bg-sky-800"></div>
           </p>
           <p className="font-text2 text-zinc-500 text-start  mt-6 lg:text-lg lg:text-center lg:max-w-[770px] xl:text-xl 2xl:text-2xl 2xl:mt-9xl ">
             Aquí encontrarás actualizaciones en tiempo real y la cobertura de
