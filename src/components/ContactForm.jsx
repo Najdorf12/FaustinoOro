@@ -9,7 +9,6 @@ const ContactForm = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    console.log(data);
     try {
       const response = await axios.post("/send-email", data);
       console.log("Correo enviado:", response.data);
@@ -20,6 +19,7 @@ const ContactForm = () => {
       );
     }
   };
+  
   return (
     <>
       <div className="form-container border border-zinc-600 w-[95%] max-w-[400px] mt-8 2xl:max-w-[450px] 2xl:mt-12  z-50">
