@@ -13,7 +13,7 @@ export const Knight = (props) => {
   const tl = gsap.timeline();
 
   /* DEBUG MODEL3D */
- /*    useLayoutEffect(() => {
+  /*    useLayoutEffect(() => {
     const gui = new GUI({ width: 400 });
 
     const debugRotation = {
@@ -94,14 +94,15 @@ export const Knight = (props) => {
   }, []);  
  */
   /* ANIMATIONS */
+
   useLayoutEffect(() => {
     const screen = window.screen.width;
     new ScrollTrigger({});
     tl.to(knight.current?.position, {
-      x: screen > 1000 ? 4.5 : -27,
+      x: screen > 1000 ? 5 : -27,
       y: screen > 1000 ? 1.6 : -7,
       z: screen > 1000 ? -2.7 : 18.9,
-      ease: "power1.out",
+      ease: "power1.inOut",
       scrollTrigger: {
         trigger: "#second_section",
         start: "top bottom",
@@ -111,8 +112,8 @@ export const Knight = (props) => {
       },
     })
       .to(knight.current?.rotation, {
-        y: screen > 1000 ? 0.21 : -1.46,
-        ease: "power1.out",
+        y: screen > 1000 ? 0.24 : -1.46,
+        ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#second_section",
           start: "top bottom",
@@ -122,9 +123,9 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.position, {
-        x: screen > 1000 ? -5.155 : -7,
+        x: screen > 1000 ? -2 : -7,
         y: screen > 1000 ? 2 : -0.6,
-        z: screen > 1000 ? 10.2 : 13,
+        z: screen > 1000 ? 10.6 : 13,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#third_section",
@@ -150,7 +151,7 @@ export const Knight = (props) => {
         x: -11.155,
         y: 0.3,
         z: 16.2,
-        ease: "back.out",
+        ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#four_section",
           start: "top bottom",
@@ -161,7 +162,7 @@ export const Knight = (props) => {
       })
       .to(knight.current?.rotation, {
         y: -1.665,
-        ease: "back.out",
+        ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#four_section",
           start: "top bottom",
@@ -232,7 +233,7 @@ export const Knight = (props) => {
         },
       })
       .to(knight.current?.rotation, {
-        y: screen > 1000 ? -1.03: -0.1,
+        y: screen > 1000 ? -1.03 : -0.1,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#games_section",
@@ -241,7 +242,8 @@ export const Knight = (props) => {
           scrub: true,
           immediateRender: false,
         },
-      }).to(knight.current?.position, {
+      })
+      .to(knight.current?.position, {
         x: screen > 1000 ? -1.3 : -5,
         y: screen > 1000 ? -0.7 : -4,
         z: screen > 1000 ? 23 : 14,

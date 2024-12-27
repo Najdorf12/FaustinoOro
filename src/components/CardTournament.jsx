@@ -9,7 +9,7 @@ const CardTournament = ({ tournament, index, screenStats }) => {
           0{index.toString()}
         </div>
         <article className="pt-1  pb-1 pl-3 font-text2 flex flex-col justify-between  w-[85%]">
-          <h6 className="text-base text-bluefausti font-medium  max-w-[80%] xl:text-xl  ">
+          <h6 className="text-base text-bluefausti font-medium leading-4  max-w-[80%] xl:text-xl xl:leading-5 ">
             {tournament.title.toUpperCase()}
           </h6>
           <div className="flex flex-col text-zinc-500 font-text2 text-base xl:text-lg">
