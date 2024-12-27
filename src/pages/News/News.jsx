@@ -70,17 +70,17 @@ const News = ({ newsData }) => {
         </figure>
       </section>
 
-      <section className="relative z-50 w-full py-12 xl:pt-14 xl:pb-20">
+      <section className="relative z-50 w-full py-12 xl:pt-12 xl:pb-20">
         <article className="flex flex-col h-full px-3 items-center justify-start gap-3 mt-8  text-balance  lg:self-center lg:mt-12 lg:gap-8 xl:gap-12 xl:mt-16 2xl:mt-24 2xl:gap-14">
-          <p className="z-50 font-title4 w-full text-xl text-white text-center xl:max-w-[1000px] lg:text-3xl xl:text-4xl  2xl:text-5xl 2xl:max-w-[1400px] ">
+          <p className="z-50 font-title4 w-full text-xl text-zinc-100 text-center xl:max-w-[1000px] lg:text-3xl xl:text-4xl  2xl:text-5xl 2xl:max-w-[1400px] ">
             Explora actualizaciones sobre sus avances y eventos especiales.
           </p>
 
           <article
             id="box-glass2"
-            className="z-50 relative pt-3 pb-8 md:pb-9 px-3  rounded-xl border border-stone-200 max-w-[500px] flex justify-center items-center xl:max-w-[750px] xl:pt-4 xl:pb-9 xl:mt-1 2xl:max-w-[800px]  2xl:pb-16 2xl:pt-6"
+            className="z-50 relative pt-3 pb-8 md:pb-9 px-3  rounded-xl border border-zinc-700 max-w-[500px] flex justify-center items-center xl:max-w-[780px] xl:pt-4 xl:pb-12 xl:mt-1 2xl:max-w-[930px]  2xl:pb-16 2xl:pt-6"
           >
-            <p className="text-base text-zinc-300 font-text2 text-balance text-center font-normal  md:text-base md:px-6 lg:text-xl xl:text-2xl 2xl:text-3xl">
+            <p className="text-base text-zinc-500 font-text2 text-balance text-center font-normal  md:text-base md:px-2 lg:text-xl xl:text-2xl 2xl:text-3xl">
               Con
               <span className="text-sky-400">
                 {" "}
@@ -102,11 +102,13 @@ const News = ({ newsData }) => {
         id="notices_section"
         className="relative w-full min-h-screen pb-20"
       >
-        <article className="mt-9 flex flex-col justify-start pl-3 items-start text-balance lg:items-center text-center  lg:mt-[3%] ">
-          <p className="text-6xl text-zinc-700 font-medium font-title4 lg:text-center lg:text-7xl xl:text-8xl 2xl:text-9xl">
+        <article className="mt-9 flex flex-col justify-start pl-3 items-start text-balance lg:items-center text-center lg:pl-0 lg:mt-[3%] ">
+          <p className="text-6xl flex items-center gap-3 xl:gap-12  text-zinc-100 font-medium font-title4 lg:text-center lg:text-7xl xl:text-8xl 2xl:text-9xl">
+            <div className="hidden lg:flex w-[400px] h-[1px] bg-zinc-700"></div>
             noticias
+            <div className="hidden lg:flex w-[400px] h-[1px] bg-zinc-700"></div>
           </p>
-          <p className="font-text2 text-zinc-300  mt-6 lg:text-lg lg:text-cemter lg:max-w-[770px] xl:text-xl 2xl:text-2xl 2xl:mt-9xl ">
+          <p className="font-text2 text-zinc-500 text-start  mt-6 lg:text-lg lg:text-center lg:max-w-[770px] xl:text-xl 2xl:text-2xl 2xl:mt-9xl ">
             Aquí encontrarás actualizaciones en tiempo real y la cobertura de
             los momentos más importantes de su trayectoria profesional.
             {/* ¡No te pierdas sus próximos torneos y logros! Síguenos para estar al
@@ -115,7 +117,7 @@ const News = ({ newsData }) => {
           </p>
         </article>
 
-        <div className="flex flex-wrap gap-y-5 gap-x-20 justify-start pl-3 mt-10 w-full   md:justify-center lg:gap-x-24 lg:mt-16 lg:pl-0 lg:px-[5%] xl:mt-20 xl:gap-y-10 2xl:gap-x-32 ">
+        <div className="flex flex-wrap gap-y-6 gap-x-20 justify-start pl-3 mt-10 w-full   md:justify-center lg:gap-x-24 lg:mt-16 lg:pl-0 lg:px-[5%] xl:mt-20 xl:gap-y-10 2xl:gap-x-32 ">
           {newsData?.map((news, i) => (
             <div key={i} className="slide">
               <CardNotice news={news} />
