@@ -221,8 +221,8 @@ export const Knight = (props) => {
       })
       .to(knight.current?.position, {
         x: screen > 1000 ? 4.955 : 3.565,
-        y: screen > 1000 ? 1 : -6,
-        z: screen > 1000 ? 12 : 1.5,
+        y: screen > 1000 ? 1 : -1,
+        z: screen > 1000 ? 12 : 1.3,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#games_section",
@@ -245,12 +245,12 @@ export const Knight = (props) => {
       })
       .to(knight.current?.position, {
         x: screen > 1000 ? -1.3 : -5,
-        y: screen > 1000 ? -0.7 : -4,
+        y: screen > 1000 ? -0.7 : -2,
         z: screen > 1000 ? 23 : 14,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#contact_section",
-          start: "top bottom",
+          start: "-200px bottom",
           end: "top top",
           scrub: true,
           immediateRender: false,
@@ -261,7 +261,7 @@ export const Knight = (props) => {
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#contact_section",
-          start: "top bottom",
+          start: "-200px bottom",
           end: "top top",
           scrub: true,
           immediateRender: false,
