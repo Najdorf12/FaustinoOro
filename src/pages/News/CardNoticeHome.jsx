@@ -11,7 +11,7 @@ const CardNoticeHome = ({ news }) => {
           0{news?.date}
         </div>
         <article className="pt-3 text-balance rounded-b-2xl flex flex-col ">
-          <h6 className="text-zinc-600 font-text2 text-start px-3 text-base  leading-[1rem] py-[3px]  xl:text-lg xl:leading-[1.5rem] max-w-[250px] ">
+          <h6 className="text-zinc-600 font-text2 text-start px-3 text-base  leading-[1rem] py-[3px]  xl:text-lg xl:leading-[1.3rem] max-w-[250px] ">
             {news?.title}
           </h6>
           <div className="w-[95%] h-[1px] self-center bg-sky-700 mt-2"></div>
