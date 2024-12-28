@@ -36,7 +36,7 @@ const CardTournament = ({ tournament, selectTournament, deleteTournament }) => {
             <span className=" px-2  rounded-lg flex justify-start items-center">
               {location.toUpperCase()}
             </span>
-            <p classsName="">{time}</p>
+            <p className="">{time}</p>
           </div>
 
           <p className="pl-2 font-semibold text-base text-white">

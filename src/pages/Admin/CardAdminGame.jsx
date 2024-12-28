@@ -27,9 +27,9 @@ const CardAdminGame = ({ game, selectGame, deleteGame }) => {
           </p> 
           <div className="font-text font-semibold text-base text-[#af2b48] tracking-wide flex justify-evenly items-center mt-2 pr-3">
             <span className="flex items-center gap-1">
-              <i class="bx bxs-polygon text-white"></i> {white}
+              <i className="bx bxs-polygon text-white"></i> {white}
             </span>
-            <span classsName="flex items-center gap-1">
+            <span className="flex items-center gap-1">
               <i className="bx bxs-polygon text-black"></i> {black}
             </span>
           </div>      

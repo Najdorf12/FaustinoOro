@@ -2,7 +2,7 @@ import axios from "../../api/axios";
 import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
 import { getGames } from "../../api/handlers";
-import CardAdminGame from "./login/CardAdminGame";
+import CardAdminGame from "./CardAdminGame";
 
 const GamesForm = () => {
   const {
@@ -19,7 +19,6 @@ const GamesForm = () => {
     const fetchGames = async () => {
       try {
         const gamesData = await getGames();
-        console.log("Tournaments Data:", gamesData);
         setAllGames(gamesData);
       } catch (error) {
         console.error("Failed to fetch games:", error);
@@ -95,9 +94,8 @@ const GamesForm = () => {
       axios
         .post("/games", newGame)
         .then((res) => {
-          // Utiliza la respuesta del backend para obtener la nueva EVA con el _id asignado
           const createdGame = res.data;
-          setAllGames([...allGames, createdGame]); // Agrega la EVA con su _id al estado
+          setAllGames([...allGames, createdGame]); 
         })
         .catch((error) => console.error(error));
     }
