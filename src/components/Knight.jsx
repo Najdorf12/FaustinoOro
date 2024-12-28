@@ -148,9 +148,9 @@ export const Knight = (props) => {
       })
 
       .to(knight.current?.position, {
-        x: -11.155,
+        x: -10.155,
         y: 0.3,
-        z: 16.2,
+        z: 17.2,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: "#four_section",
