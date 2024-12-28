@@ -42,32 +42,31 @@ const Login = () => {
   return (
     <>
       <section
-        style={{
+        /* style={{
           backgroundImage:
             "linear-gradient(to right top, #242427, #2b2a30, #33303a, #3c3542, #463b4b, #554255, #65495e, #765066, #905a6f, #aa6575, #c37278, #da8078)",
-        }}
-        className=" h-screen w-full flex flex-col px-4 gap-14 items-center xl:px-10 2xl:gap-24 2xl:px-12"
+        }} */
+        className="bg-whiteCustom h-screen w-full flex flex-col px-4 gap-14 items-center xl:px-10 2xl:gap-24 2xl:px-12"
       >
-       <nav className="font-text2 text-xl  relative flex justify-between items-center w-full  mt-2 px-5 xl:mt-3 xl:px-16 xl:text-2xl  2xl:px-20 ">
-        <picture className="w-16 h-16 flex items-center justify-center rounded-full  2xl:w-20 2xl:h-20 ">
-          <img className="rounded-full" src={logo} alt="logo" />
-        </picture>
-        <ul className="flex gap-6 xl:gap-10 2xl:gap-12">
-          <li className="text-gray-50 border-l-2 pl-2 xl:pl-3 py-1 hover:scale-105 hover:text-white duration-500 ">
-            <Link to={"/"}>Home </Link>
-          </li>
-         
-        </ul>
-      </nav>
-       
+        <nav className="font-text2 text-xl  relative flex justify-between items-center w-full  mt-2 px-5 xl:mt-3 xl:px-16 xl:text-2xl  2xl:px-20 ">
+          <picture className="w-16 h-16 flex items-center justify-center rounded-full  2xl:w-20 2xl:h-20 ">
+            <img className="rounded-full" src={logo} alt="logo" />
+          </picture>
+          <ul className="flex gap-6 xl:gap-10 2xl:gap-12">
+            <li className="text-sky-700 border-l-2 border-zinc-400 pl-2 xl:pl-3 py-1 hover:scale-105 hover:text-sky-600 duration-500 ">
+              <Link to={"/"}>Home </Link>
+            </li>
+          </ul>
+        </nav>
+
         <div
-          style={{
+          /*  style={{
             backgroundImage:
               "linear-gradient(to right top, #242427, #2b2a30, #33303a, #3c3542, #463b4b, #554255, #65495e, #765066, #905a6f, #aa6575, #c37278, #da8078)",
-          }}
-          className="max-w-md w-full  rounded-xl shadow-2xl shadow-gray-900 overflow-hidden py-8 px-4 space-y-8"
+          }} */
+          className="max-w-md w-full  rounded-xl shadow-2xl shadow-gray-900 overflow-hidden py-8 px-4 space-y-8 "
         >
-          <h2 className="text-center font-title text-6xl font-extrabold text-white">
+          <h2 className="text-center font-title text-6xl font-extrabold text-sky-600">
             Welcome
           </h2>
           {loginError?.map((error, i) => (
@@ -78,7 +77,7 @@ const Login = () => {
               <p> {error} </p>
             </div>
           ))}
-          <p className="font-text text-center text-gray-200">
+          <p className="font-text text-center text-zinc-400">
             Sign in to your account
           </p>
           <form onSubmit={handleSubmit(submit)} className="space-y-6">
@@ -86,7 +85,7 @@ const Login = () => {
               <input
                 autoComplete="off"
                 placeholder="john@example.com"
-                className="peer h-10 w-full border-b-2 border-gray-300 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-white"
+                className="peer h-10 w-full border-b-2 border-white text-zinc-500 bg-transparent placeholder-transparent focus:outline-none focus:border-white"
                 required=""
                 name="email"
                 type="email"
@@ -98,7 +97,7 @@ const Login = () => {
                 })}
               />
               <label
-                className="absolute left-0 -top-3.5 text-gray-100 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-white peer-focus:text-sm"
+                className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-sky-600 peer-focus:text-sm"
                 htmlFor="email"
               >
                 Email
@@ -111,7 +110,7 @@ const Login = () => {
               <input
                 autoComplete="off"
                 placeholder="Password"
-                className="peer h-10 w-full border-b-2 border-gray-300 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-white"
+                className="peer h-10 w-full border-b-2 border-white text-zinc-500 bg-transparent placeholder-transparent focus:outline-none focus:border-white"
                 required=""
                 id="password"
                 name="password"
@@ -124,7 +123,7 @@ const Login = () => {
                 })}
               />
               <label
-                className="absolute left-0 -top-3.5 text-gray-100 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-white peer-focus:text-sm"
+                className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-sky-600 peer-focus:text-sm"
                 htmlFor="password"
               >
                 Password
@@ -135,20 +134,16 @@ const Login = () => {
             </div>
 
             <button
-              className="w-full font-text  py-2 px-4 border-[1px] border-slate-300 hover:bg-zinc-600 rounded-md shadow-lg text-white font-semibold transition duration-200"
+              className="w-full font-text  py-2 px-4 border-[1px] border-slate-300 bg-sky-600 rounded-md shadow-lg text-white font-semibold hover:bg-zinc-600 transition duration-500"
               type="submit"
             >
               Sign In
             </button>
           </form>
-          <div className="text-center text-gray-300 font-text">
+          <div className="text-center text-zinc-400 font-text">
             Don't have an account?
-            <Link
-              className="text-[#da8e88] ml-2 hover:underline"
-              to="/register"
-            >
-              {" "}
-              Register
+            <Link className="text-sky-600 ml-2 hover:underline" to="/register">
+              <strong>Register</strong>{" "}
             </Link>
           </div>
         </div>
@@ -159,78 +154,3 @@ const Login = () => {
 };
 
 export default Login;
-
-{
-  /*
-   <main className="bg-gray-300  h-screen w-full flex justify-center  relative px-5 sm:px-6 pt-[20%] lg:pt-[5%] 2xl:pt-[8%]">
-<Link to={"/"}>
-  <button className="btn-home2 absolute top-6 right-6  text-gray-500 text-base font-normal border-[2px] rounded-[1rem] px-5 py-1 border-white  xl:px-8 2xl:text-lg 2xl:px-8  xl:font-semibold xl:top-8 xl:right-12">
-    <span>Home</span>
-  </button>
-</Link>
-<form
-  onSubmit={handleSubmit(submit)}
-  className="form  lg:w-[400px] 2xl:w-[550px] lg:gap-7 lg:px-8"
->
-  {loginError?.map((error, i) => (
-    <div
-      key={i}
-      className="absolute bg-red-600 text-white text-base p-2 top-0 right-0 mr-1 rounded-md mt-12 lg:text-lg lg:-right-80"
-    >
-      <p> {error} </p>
-    </div>
-  ))}
-
-  <p className="title">Iniciar Sesión </p>
-  <p className="message text-gray-600">
-    Signup now and get full access to our app.{" "}
-  </p>
-  <label className="relative">
-    <input
-      required=""
-      placeholder=""
-      type="email"
-      className="input"
-      {...register("email", {
-        required: {
-          value: true,
-          message: "Email is required",
-        },
-      })}
-    />
-    <span>Email</span>
-    <p className="error absolute right-0 top-0 m-2 text-base font-semibold text-red-700 ">
-      {" "}
-      {errors.email?.message}{" "}
-    </p>
-  </label>
-
-  <label className="relative">
-    <input
-      required=""
-      placeholder=""
-      type="password"
-      className="input"
-      {...register("password", {
-        required: {
-          value: true,
-          message: "Password is required",
-        },
-      })}
-    />
-    <span>Password</span>
-    <p className="error absolute right-0 top-0 m-2 text-base font-semibold text-red-700 ">
-      {" "}
-      {errors.password?.message}{" "}
-    </p>
-  </label>
-  <button type="submit" className="submit">
-    Enviar
-  </button>
-  <p className="signin text-gray-600 font-semibold">
-    Todavía no tienes una cuenta ?
-    <Link to="/register"> Regístrate</Link>
-  </p>
-</form>
-</main> */
-}
