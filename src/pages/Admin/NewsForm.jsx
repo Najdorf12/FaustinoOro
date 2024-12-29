@@ -141,12 +141,12 @@ const NewsForm = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center">
       <section
-        className="w-full rounded-xl border-zinc-700 border overflow-hidden py-8 px-4 space-y-8 md:w-[550px] xl:w-[700px]"
+        className="w-full rounded-xl border-zinc-700 border overflow-hidden py-8 px-4 space-y-6 md:space-y-7 md:w-[550px] xl:w-[700px]"
       >
         <h2 className="text-center font-title text-5xl font-extrabold text-whiteCustom md:text-6xl xl:text-7xl 2xl:text-8xl">
           NEWS FORM
         </h2>
-        <p className="text-center text-zinc-500 font-text text-base xl:text-xl 2xl:text-xl">
+        <p className="text-center text-zinc-500  font-text text-base xl:text-xl 2xl:text-xl">
           Create your notice
         </p>
         <form onSubmit={handleSubmit(submit)} className="space-y-6">
