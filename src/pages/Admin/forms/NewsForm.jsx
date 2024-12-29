@@ -127,10 +127,10 @@ const NewsForm = () => {
     <div className="w-full flex flex-col items-center justify-center">
       <section className="w-full rounded-xl border-zinc-700 border overflow-hidden py-6 px-4 space-y-6 md:space-y-7 md:w-[550px] xl:w-[700px]">
         <h2 className="text-center font-title text-5xl font-extrabold text-whiteCustom md:text-6xl xl:text-7xl 2xl:text-8xl">
-          NEWS FORM
+          NOTICIAS
         </h2>
         <p className="text-center text-zinc-500  font-text text-base xl:text-xl 2xl:text-xl">
-          Create your notice
+          Crea una nueva noticia
         </p>
         <form onSubmit={handleSubmit(submit)} className="space-y-6">
           <div className="flex flex-col gap-8 xl:flex xl:flex-row ">
@@ -138,7 +138,7 @@ const NewsForm = () => {
               <input
                 autoComplete="off"
                 placeholder="Joe Doe"
-                className="peer h-10 w-full border-b-2 border-zinc-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-white"
+                className="peer h-10 w-full border-b-2 border-zinc-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-sky-600"
                 name="title"
                 {...register("title", {
                   required: {
@@ -147,7 +147,7 @@ const NewsForm = () => {
                   },
                 })}
               />
-              <label className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-white peer-focus:text-sm">
+              <label className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-500 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-white peer-focus:text-sm">
                 Title
               </label>
             </div>
@@ -155,7 +155,7 @@ const NewsForm = () => {
               <input
                 autoComplete="off"
                 placeholder="category"
-                className="peer h-10 w-full border-b-2 border-zinc-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-white"
+                className="peer h-10 w-full border-b-2 border-zinc-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-sky-600"
                 name="category"
                 {...register("category", {
                   required: {
@@ -163,7 +163,7 @@ const NewsForm = () => {
                   },
                 })}
               />
-              <label className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-white peer-focus:text-sm">
+              <label className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-500 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-white peer-focus:text-sm">
                 Category
               </label>
             </div>
@@ -174,7 +174,7 @@ const NewsForm = () => {
               <input
                 autoComplete="off"
                 placeholder="john@example.com"
-                className="peer h-10 w-full border-b-2 border-zinc-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-white "
+                className="peer h-10 w-full border-b-2 border-zinc-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-sky-600 "
                 name="description"
                 {...register("description", {
                   required: {
@@ -183,12 +183,12 @@ const NewsForm = () => {
                   },
                 })}
               />
-              <label className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-white peer-focus:text-sm">
+              <label className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-500 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-white peer-focus:text-sm">
                 Description
               </label>
             </div>
             <div className="relative font-text flex gap-6 items-center">
-              <p className="text-gray-400">Is Active?</p>
+              <p className="text-zinc-500">Is Active?</p>
               <label className="container-checkbox">
                 <input
                   autoComplete="off"
@@ -206,11 +206,11 @@ const NewsForm = () => {
             </div>
           </div>
 
-          <div className="relative font-text text-gray-400  flex gap-2 flex-col justify-center items-center">
+          <div className="relative font-text text-zinc-500  flex gap-2 flex-col justify-center items-center">
             <p className="self-start text-base">Content</p>{" "}
             <textarea
               placeholder=""
-              className=" text-white bg-transparent border-[2px]  w-full xl:text-base rounded-lg p-2 border-zinc-600"
+              className=" text-white bg-transparent border-[2px]  w-full xl:text-base rounded-lg p-2 border-zinc-600  focus:outline-none  focus:border-sky-600"
               name="content"
               id="content"
               {...register("content")}
@@ -220,7 +220,7 @@ const NewsForm = () => {
           </div>
 
           <div className="flex flex-col items-center gap-5 ">
-            <label className="font-light text-gray-400 text-xl font-text">
+            <label className="font-light text-zinc-500 text-xl font-text">
               Imágenes
             </label>
             <input
@@ -238,7 +238,7 @@ const NewsForm = () => {
                   <div key={img?.public_id} className="relative">
                     <button
                       type="button"
-                      onClick={() => handleDelete(img)}
+                      onClick={() => handleDeleteImage(img)}
                       className="absolute right-0 px-2 border-2 border-zinc-600  flex items-center rounded-sm font-bold text-white bg-red-700"
                     >
                       X
@@ -264,7 +264,7 @@ const NewsForm = () => {
           </div>
         </form>
       </section>
-      <section className="flex flex-wrap  gap-y-3 gap-x-4 mt-10 justify-center items-start md:gap-y-10 lg:px-6  xl:mt-24 xl:gap-x-10 xl:gap-y-8">
+      <section className="flex flex-wrap  gap-y-3 gap-x-4 mt-10 justify-center items-start md:gap-y-10 lg:px-6  xl:mt-24 xl:gap-x-9 xl:gap-y-9">
       {news?.map((item) => (
             <CardAdminNew
               key={item._id}

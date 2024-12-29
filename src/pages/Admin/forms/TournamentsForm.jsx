@@ -125,20 +125,14 @@ const TournamentsForm = () => {
   };
 
   return (
-    <div className="w-screen min-h-screen  flex flex-col justify-center items-center xl:flex-row xl:justify-evenly xl:items-start xl:mt-10">
-      <section className="mt-12 w-full px-3 sm:px-4 flex flex-col items-center   xl:w-auto">
-        <section
-          style={{
-            backgroundImage:
-              "linear-gradient(to right top, #242427, #2b2a30, #33303a, #3c3542, #463b4b, #554255, #65495e, #765066, #905a6f, #aa6575, #c37278, #da8078)",
-          }}
-          className="w-full rounded-xl shadow-2xl shadow-black overflow-hidden py-8 px-4 space-y-8 md:w-[550px] xl:w-[600px]"
-        >
-          <h2 className="text-center font-title text-6xl font-extrabold text-white  xl:text-7xl 2xl:text-8xl">
+    <>
+      <div className="w-full flex flex-col items-center justify-center">
+        <section className="w-full rounded-xl border-zinc-700 border overflow-hidden py-6 px-4 space-y-6 md:space-y-7 md:w-[550px] xl:w-[700px]">
+          <h2 className="text-center font-title text-5xl font-extrabold text-whiteCustom md:text-6xl xl:text-7xl 2xl:text-8xl">
             TORNEOS
           </h2>
-          <p className="text-center text-gray-200 font-text text-base xl:text-lg 2xl:text-xl">
-            Create your tournament
+          <p className="text-center text-zinc-500  font-text text-base xl:text-xl 2xl:text-xl">
+            Crea un nuevo torneo
           </p>
           <form onSubmit={handleSubmit(submit)} className="space-y-6">
             <div className="flex flex-col gap-8 xl:flex xl:flex-row ">
@@ -146,7 +140,7 @@ const TournamentsForm = () => {
                 <input
                   autoComplete="off"
                   placeholder="Joe Doe"
-                  className="peer h-10 w-full border-b-2 border-gray-300 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-white"
+                  className="peer h-10 w-full border-b-2 border-zinc-600 text-whiteCustom bg-transparent placeholder-transparent focus:outline-none focus:border-sky-600"
                   name="title"
                   {...register("title", {
                     required: {
@@ -155,7 +149,7 @@ const TournamentsForm = () => {
                     },
                   })}
                 />
-                <label className="absolute left-0 -top-3.5 text-gray-100 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-white peer-focus:text-sm">
+                <label className="absolute left-0 -top-3.5 text-whiteCustom text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-500 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-whiteCustom peer-focus:text-sm">
                   Title
                 </label>
               </div>
@@ -163,7 +157,7 @@ const TournamentsForm = () => {
                 <input
                   autoComplete="off"
                   placeholder="description"
-                  className="peer h-10 w-full border-b-2 border-gray-300 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-white"
+                  className="peer h-10 w-full border-b-2 border-zinc-600 text-whiteCustom bg-transparent placeholder-transparent focus:outline-none focus:border-sky-600"
                   name="description"
                   {...register("description", {
                     required: {
@@ -171,7 +165,7 @@ const TournamentsForm = () => {
                     },
                   })}
                 />
-                <label className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-white peer-focus:text-sm">
+                <label className="absolute left-0 -top-3.5 text-whiteCustom text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-500 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-whiteCustom peer-focus:text-sm">
                   Description
                 </label>
               </div>
@@ -182,7 +176,7 @@ const TournamentsForm = () => {
                 <input
                   autoComplete="off"
                   placeholder="john@example.com"
-                  className="peer h-10 w-full border-b-2 border-gray-300 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-white "
+                  className="peer h-10 w-full border-b-2 border-zinc-600 text-whiteCustom bg-transparent placeholder-transparent focus:outline-none focus:border-sky-600 "
                   name="location"
                   {...register("location", {
                     required: {
@@ -191,7 +185,7 @@ const TournamentsForm = () => {
                     },
                   })}
                 />
-                <label className="absolute left-0 -top-3.5 text-gray-100 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-white peer-focus:text-sm">
+                <label className="absolute left-0 -top-3.5 text-whiteCustom text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-500 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-whiteCustom peer-focus:text-sm">
                   Location
                 </label>
               </div>
@@ -199,7 +193,7 @@ const TournamentsForm = () => {
                 <input
                   autoComplete="off"
                   placeholder="date"
-                  className="peer h-10 w-full border-b-2 border-gray-300 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-white"
+                  className="peer h-10 w-full border-b-2 border-zinc-600 text-whiteCustom bg-transparent placeholder-transparent focus:outline-none focus:border-sky-600"
                   name="date"
                   {...register("time", {
                     required: {
@@ -207,13 +201,13 @@ const TournamentsForm = () => {
                     },
                   })}
                 />
-                <label className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-white peer-focus:text-sm">
+                <label className="absolute left-0 -top-3.5 text-whiteCustom text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-500 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-whiteCustom peer-focus:text-sm">
                   Date
                 </label>
               </div>
             </div>
             <div className="relative font-text flex gap-6 items-center">
-              <p className="text-gray-400">Is Active?</p>
+              <p className="text-zinc-400">Is Active?</p>
               <label className="container-checkbox">
                 <input
                   autoComplete="off"
@@ -229,11 +223,11 @@ const TournamentsForm = () => {
                 </svg>
               </label>
             </div>
-            <div className="relative font-text text-gray-400  flex gap-2 flex-col justify-center items-center">
+            <div className="relative font-text text-zinc-400  flex gap-2 flex-col justify-center items-center">
               <p className="self-start text-base">Content</p>{" "}
               <textarea
                 placeholder=""
-                className=" text-white bg-transparent border-[2px]  w-full xl:text-base rounded-lg p-2"
+                className=" text-whiteCustom bg-transparent border-[2px]  w-full xl:text-base rounded-lg p-2  focus:outline-none  focus:border-sky-600 border-zinc-500"
                 name="content"
                 id="content"
                 {...register("content")}
@@ -243,7 +237,7 @@ const TournamentsForm = () => {
             </div>
 
             <div className="flex flex-col items-center gap-5 ">
-              <label className="font-light text-gray-400 text-xl">
+              <label className="font-light text-zinc-400 text-xl">
                 Imágenes
               </label>
               <input
@@ -251,7 +245,7 @@ const TournamentsForm = () => {
                 name="image"
                 accept=".jpg, .png, .jpeg"
                 onChange={(e) => handleImage(e)}
-                className=" rounded-lg flex-1  appearance-none w-[90%] max-w-[400px] py-2 px-4 border border-gray-400 text-white placeholder-white text-sm focus:outline-none focus:border-transparent"
+                className=" rounded-lg flex-1  appearance-none w-[90%] max-w-[400px] py-2 px-4 border border-zinc-400 text-whiteCustom placeholder-white text-sm focus:outline-none focus:border-transparent"
               />
               {loadingImage ? (
                 <h3>Cargando imagen...</h3>
@@ -261,8 +255,8 @@ const TournamentsForm = () => {
                     <div key={img?.public_id} className="relative">
                       <button
                         type="button"
-                        onClick={() => handleDelete(img)}
-                        className="absolute right-0 px-2 border-2 border-gray-400  flex items-center rounded-sm font-bold text-white bg-red-700"
+                        onClick={() => handleDeleteImage(img)}
+                        className="absolute right-0 px-2 border-2 border-zinc-400  flex items-center rounded-sm font-bold text-whiteCustom bg-red-700"
                       >
                         X
                       </button>
@@ -279,7 +273,7 @@ const TournamentsForm = () => {
             </div>
             <div className="flex items-center justify-center ">
               <button
-                className="w-full font-text  py-2 px-2 border-[1px] border-slate-100 hover:bg-gray-300 rounded-md shadow-lg text-white font-semibold transition duration-200 hover:text-gray-500 xl:w-[85%] xl:self-center "
+                className="w-full font-text  py-2 px-4 border-[1px] border-zinc-600 bg-sky-600 hover:bg-whiteCustom rounded-md shadow-lg text-whiteCustom font-semibold transition duration-500 hover:text-gray-500 xl:w-[80%] xl:self-center"
                 type="submit"
               >
                 Submit
@@ -287,18 +281,18 @@ const TournamentsForm = () => {
             </div>
           </form>
         </section>
-      </section>
-      <section className=" mt-8 flex flex-col justify-center items-center">
-        {tournaments?.map((tournament) => (
-          <CardTournament
-            key={tournament._id}
-            tournament={tournament}
-            onEdit={() => setTournamentSelected(tournament)}
-            onDelete={() => deleteTournament(tournament._id)}
-          />
-        ))}
-      </section>
-    </div>
+        <section className="flex flex-wrap  gap-y-3 gap-x-4 mt-10 justify-center items-start md:gap-y-10 lg:px-6  xl:mt-24 xl:gap-x-9 xl:gap-y-9">
+          {tournaments?.map((tournament) => (
+            <CardTournament
+              key={tournament._id}
+              tournament={tournament}
+              onEdit={() => setTournamentSelected(tournament)}
+              onDelete={() => deleteTournament(tournament._id)}
+            />
+          ))}
+        </section>
+      </div>
+    </>
   );
 };
 
