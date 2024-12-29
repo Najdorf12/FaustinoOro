@@ -6,6 +6,8 @@ import AdminPage from "./pages/Admin/AdminPage";
 import News from "./pages/News/News";
 import NewsDetail from "./pages/News/NewsDetail";
 import Courses from "./pages/Courses";
+import {AdminDataProvider} from "./pages/Admin/AdminDataContext"
+
 const newsData = [
   {
     title: "FAUSTINO CONSIGUE OTRO HITO HISTORICO",
@@ -51,20 +53,21 @@ const newsData = [
   },
 ];
 function App() {
-
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<FaustinoApp newsData={newsData} />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/news" element={<News newsData={newsData} />} />
-          <Route path="/news/:id" element={<NewsDetail />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/admin" element={<AdminPage />} />
-        </Routes>
-      </BrowserRouter>
+      <AdminDataProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<FaustinoApp newsData={newsData} />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/news" element={<News newsData={newsData} />} />
+            <Route path="/news/:id" element={<NewsDetail />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/admin" element={<AdminPage />} />
+          </Routes>
+        </BrowserRouter>
+      </AdminDataProvider>
     </>
   );
 }

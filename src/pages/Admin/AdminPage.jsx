@@ -1,12 +1,15 @@
 import axios from "../../api/axios";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import TournamentsForm from "./TournamentsForm";
-import GamesForm from "./GamesForm";
-import NewsForm from "./NewsForm";
+import TournamentsForm from "./forms/TournamentsForm";
+import GamesForm from "./forms/GamesForm";
+import NewsForm from "./forms/NewsForm";
+import { useRef, useState, useEffect } from "react";
 
 const AdminPage = () => {
   const navigate = useNavigate();
+  const [selectedFormSection, setSelectedFormSection] = useState("news_form");
+  const formContainerRef = useRef(null);
 
   const logout = () => {
     axios
@@ -36,13 +39,27 @@ const AdminPage = () => {
         </ul>
       </nav>
 
-      <div className="mt-12 w-full flex flex-col items-center px-4  ">
-        <NewsForm />
-       {/*  <TournamentsForm />
-        <GamesForm /> */}
+      <div className="w-full flex justify-center items-center gap-6 text-lg font-title4 text-whiteCustom mt-6">
+        <button onClick={() => setSelectedFormSection("news_form")}>
+          Noticias
+        </button>
+        <button onClick={() => setSelectedFormSection("tournaments_form")}>
+          Torneos
+        </button>
+        <button onClick={() => setSelectedFormSection("games_form")}>
+          Partidas
+        </button>
+      </div>
+
+      <div
+        ref={formContainerRef}
+        className="mt-9 w-full flex flex-col items-center px-4  "
+      >
+        {selectedFormSection === "news_form" && <NewsForm />}
+        {selectedFormSection === "tournaments_form" && <TournamentsForm />}
+        {selectedFormSection === "games_form" && <GamesForm />}
       </div>
     </section>
   );
 };
 export default AdminPage;
-

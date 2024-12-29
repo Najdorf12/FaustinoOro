@@ -1,7 +1,7 @@
-import axios from "../../api/axios";
+/* import axios from "../../../api/axios";
 import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
-import { getGames } from "../../api/handlers";
+import { getGames } from "../../../api/handlers";
 import CardAdminGame from "./CardAdminGame";
 
 const GamesForm = () => {
@@ -19,6 +19,7 @@ const GamesForm = () => {
     const fetchGames = async () => {
       try {
         const gamesData = await getGames();
+        console.log(gamesData);
         setAllGames(gamesData);
       } catch (error) {
         console.error("Failed to fetch games:", error);
@@ -95,7 +96,7 @@ const GamesForm = () => {
         .post("/games", newGame)
         .then((res) => {
           const createdGame = res.data;
-          setAllGames([...allGames, createdGame]); 
+          setAllGames([...allGames, createdGame]);
         })
         .catch((error) => console.error(error));
     }
@@ -104,7 +105,7 @@ const GamesForm = () => {
 
   return (
     <div className="w-screen min-h-screen  flex flex-col justify-center items-center xl:flex-row xl:justify-evenly xl:items-start xl:mt-14">
-      <section className="mt-12 w-full px-3 sm:px-4 flex flex-col items-center   xl:w-auto">
+      <section className="w-full px-3 sm:px-4 flex flex-col items-center   xl:w-auto">
         <section
           style={{
             backgroundImage:
@@ -246,3 +247,19 @@ const GamesForm = () => {
 };
 
 export default GamesForm;
+ */
+
+
+import { useAdminData } from "../AdminDataContext"
+import { useEffect, useState } from "react"
+
+const TournamentsForm = () => {
+const { games, setGames} = useAdminData();
+
+  console.log("from gamesFORM,", games, setGames)
+  return (
+    <div>Games Form</div>
+  )
+}
+
+export default TournamentsForm

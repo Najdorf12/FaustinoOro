@@ -1,10 +1,11 @@
-import axios from "../../api/axios";
+import axios from "../../../api/axios";
 import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
-import { getTournaments } from "../../api/handlers";
 import CardTournament from "./CardTournament";
+import { useAdminData } from "../AdminDataContext";
 
 const TournamentsForm = () => {
+  const { tournaments, setTournaments } = useAdminData(); // Acceso al contexto
   const {
     handleSubmit,
     register,
@@ -12,79 +13,32 @@ const TournamentsForm = () => {
     formState: { errors },
   } = useForm();
 
-  const [allTournaments, setAllTournaments] = useState([]);
-  const [tournamentSelected, setTournamentSelected] = useState(null);
-
   const [images, setImages] = useState([]);
   const [loadingImage, setLoadingImage] = useState(false);
+  const [tournamentSelected, setTournamentSelected] = useState(null);
 
   useEffect(() => {
-    const fetchTournaments = async () => {
-      try {
-        const tournamentsData = await getTournaments();
-        console.log("Tournaments Data:", tournamentsData);
-        setAllTournaments(tournamentsData);
-      } catch (error) {
-        console.error("Failed to fetch tournaments:", error);
-      }
-    };
-
-    fetchTournaments();
-  }, []);
-
-  useEffect(() => {
-    if (tournamentSelected !== null) {
+    if (tournamentSelected) {
       reset({
         _id: tournamentSelected._id,
-        description: tournamentSelected.description,
         title: tournamentSelected.title,
+        description: tournamentSelected.description,
         content: tournamentSelected.content,
         location: tournamentSelected.location,
         time: tournamentSelected.time,
-        isActive: false,
+        images,
       });
     } else {
       reset({
         _id: "",
-        description: "",
         title: "",
+        description: "",
         content: "",
         location: "",
         time: "",
-        isActive: false,
       });
     }
   }, [tournamentSelected]);
-
-  const selectTournament = (tournament, _id) => {
-    setTournamentSelected(tournament);
-  };
-
-  const deleteTournament = (id) => {
-    axios
-      .delete(`/tournaments/${id}`)
-      .then(() => {
-        // Filtrar la EVA eliminada del estado actual
-        setAllTournaments((prevTour) =>
-          prevTour.filter((tour) => tour._id !== id)
-        );
-      })
-      .catch((error) => console.error(error));
-  };
-
-  const editTournament = (tournament, id) => {
-    axios
-      .put(`/tournaments/${tournament._id}`, tournament)
-      .then((res) => {
-        const updatedTournament = res.data;
-        const updatedTournaments = allTournaments.map((item) =>
-          item._id === updatedTournament._id ? updatedTournament : item
-        );
-        setAllTournaments(updatedTournaments);
-        setTournamentSelected(null);
-      })
-      .catch((error) => console.error(error));
-  };
 
   async function handleImage(e) {
     const files = e.target.files;
@@ -111,17 +65,18 @@ const TournamentsForm = () => {
         },
       ]);
     } catch (error) {
-      console.log(error);
+      console.error(error);
     } finally {
       setLoadingImage(false);
     }
   }
-  function handleDelete(event) {
+
+  const handleDeleteImage = (event) => {
     setImages(images.filter((e) => e !== event));
-  }
+  };
 
   const submit = (data) => {
-    if (tournamentSelected !== null) {
+    if (tournamentSelected) {
       editTournament(data);
     } else {
       const newTournament = {
@@ -130,19 +85,43 @@ const TournamentsForm = () => {
         content: data.content,
         location: data.location,
         time: data.time,
-        isActive: data.isActive,
-        images: images,
+        images,
       };
       axios
         .post("/tournaments", newTournament)
         .then((res) => {
-          // Utiliza la respuesta del backend para obtener la nueva EVA con el _id asignado
-          const createdTournament = res.data;
-          setAllTournaments([...allTournaments, createdTournament]); // Agrega la EVA con su _id al estado
+          setTournaments((prevTournaments) => [...prevTournaments, res.data]); // Actualiza el contexto
         })
         .catch((error) => console.error(error));
     }
+    setTournamentSelected(null);
+    reset();
     alert("TORNEO CREADO EXITOSAMENTE");
+  };
+
+  const editTournament = (tournament) => {
+    axios
+      .put(`/tournaments/${tournament._id}`, tournament)
+      .then((res) => {
+        setTournaments((prevTournaments) =>
+          prevTournaments.map((item) =>
+            item._id === res.data._id ? res.data : item
+          )
+        );
+        setTournamentSelected(null);
+      })
+      .catch((error) => console.error(error));
+  };
+
+  const deleteTournament = (id) => {
+    axios
+      .delete(`/tournaments/${id}`)
+      .then(() => {
+        setTournaments((prevTournaments) =>
+          prevTournaments.filter((item) => item._id !== id)
+        );
+      })
+      .catch((error) => console.error(error));
   };
 
   return (
@@ -310,12 +289,12 @@ const TournamentsForm = () => {
         </section>
       </section>
       <section className=" mt-8 flex flex-col justify-center items-center">
-        {allTournaments?.map((tournament) => (
+        {tournaments?.map((tournament) => (
           <CardTournament
             key={tournament._id}
             tournament={tournament}
-            selectTournament={selectTournament}
-            deleteTournament={deleteTournament}
+            onEdit={() => setTournamentSelected(tournament)}
+            onDelete={() => deleteTournament(tournament._id)}
           />
         ))}
       </section>

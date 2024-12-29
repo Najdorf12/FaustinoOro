@@ -1,10 +1,12 @@
-import axios from "../../api/axios";
+import axios from "../../../api/axios";
 import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
-import { getNews } from "../../api/handlers";
+import { getNews } from "../../../api/handlers";
 import CardAdminNew from "./CardAdminNew";
+import { useAdminData } from "../AdminDataContext";
 
 const NewsForm = () => {
+  const { news, setNews } = useAdminData(); // Acceso al contexto
   const {
     handleSubmit,
     register,
@@ -12,34 +14,19 @@ const NewsForm = () => {
     formState: { errors },
   } = useForm();
 
-  const [allNotices, setAllNotices] = useState([]);
   const [images, setImages] = useState([]);
   const [loadingImage, setLoadingImage] = useState(false);
   const [noticeSelected, setNoticeSelected] = useState(null);
 
   useEffect(() => {
-    const fetchNews = async () => {
-      try {
-        const newsData = await getNews();
-        console.log(newsData);
-        setAllNotices(newsData);
-      } catch (error) {
-        console.error("Failed to fetch news:", error);
-      }
-    };
-
-    fetchNews();
-  }, []);
-
-  useEffect(() => {
-    if (noticeSelected !== null) {
+    if (noticeSelected) {
       reset({
         _id: noticeSelected._id,
         description: noticeSelected.description,
         title: noticeSelected.title,
         content: noticeSelected.content,
         category: noticeSelected.category,
-        isActive: false,
+        isActive: noticeSelected.isActive,
       });
     } else {
       reset({
@@ -78,17 +65,18 @@ const NewsForm = () => {
         },
       ]);
     } catch (error) {
-      console.log(error);
+      console.error(error);
     } finally {
       setLoadingImage(false);
     }
   }
-  function handleDelete(event) {
+
+  const handleDeleteImage = (event) => {
     setImages(images.filter((e) => e !== event));
-  }
+  };
 
   const submit = (data) => {
-    if (noticeSelected !== null) {
+    if (noticeSelected) {
       editNotice(data);
     } else {
       const newNotice = {
@@ -97,52 +85,47 @@ const NewsForm = () => {
         content: data.content,
         category: data.category,
         isActive: data.isActive,
-        images: images,
+        images,
       };
       axios
         .post("/news", newNotice)
         .then((res) => {
-          const createdNotice = res.data;
-          setAllNotices([...allNotices, createdNotice]);
+          setNews((prevNews) => [...prevNews, res.data]); // Actualiza el contexto
         })
         .catch((error) => console.error(error));
     }
+    setNoticeSelected(null);
+    reset();
     alert("NOTICIA CREADA EXITOSAMENTE");
-  };
-
-  const selectNotice = (notice) => {
-    setNoticeSelected(notice);
-  };
-
-  const deleteNotice = (id) => {
-    axios
-      .delete(`/news/${id}`)
-      .then(() => {
-        // Filtrar la EVA eliminada del estado actual
-        setAllNotices((prevEvas) => prevEvas.filter((eva) => eva._id !== id));
-      })
-      .catch((error) => console.error(error));
   };
 
   const editNotice = (notice) => {
     axios
       .put(`/news/${notice._id}`, notice)
       .then((res) => {
-        const updatedNotice = res.data;
-        const updatedNotices = allNotices.map((item) =>
-          item._id === updatedNotice._id ? updatedNotice : item
+        setNews((prevNews) =>
+          prevNews.map((item) =>
+            item._id === res.data._id ? res.data : item
+          )
         );
-        setAllNotices(updatedNotices);
         setNoticeSelected(null);
       })
       .catch((error) => console.error(error));
   };
 
+  const deleteNotice = (id) => {
+    axios
+      .delete(`/news/${id}`)
+      .then(() => {
+        setNews((prevNews) => prevNews.filter((item) => item._id !== id));
+      })
+      .catch((error) => console.error(error));
+  };
+
+
   return (
     <div className="w-full flex flex-col items-center justify-center">
-      <section
-        className="w-full rounded-xl border-zinc-700 border overflow-hidden py-8 px-4 space-y-6 md:space-y-7 md:w-[550px] xl:w-[700px]"
-      >
+      <section className="w-full rounded-xl border-zinc-700 border overflow-hidden py-6 px-4 space-y-6 md:space-y-7 md:w-[550px] xl:w-[700px]">
         <h2 className="text-center font-title text-5xl font-extrabold text-whiteCustom md:text-6xl xl:text-7xl 2xl:text-8xl">
           NEWS FORM
         </h2>
@@ -237,7 +220,9 @@ const NewsForm = () => {
           </div>
 
           <div className="flex flex-col items-center gap-5 ">
-            <label className="font-light text-gray-400 text-xl font-text">Imágenes</label>
+            <label className="font-light text-gray-400 text-xl font-text">
+              Imágenes
+            </label>
             <input
               type="file"
               name="image"
@@ -279,16 +264,14 @@ const NewsForm = () => {
           </div>
         </form>
       </section>
-      <section className="flex flex-wrap  gap-y-3 gap-x-4 mt-10 justify-center items-start md:gap-y-10 xl:mt-24 xl:gap-x-10 xl:gap-y-8">
-        {allNotices !== null &&
-          allNotices?.map((notice, index) => (
-            <div key={notice?._id || index}>
-              <CardAdminNew
-                notice={notice}
-                selectNotice={selectNotice}
-                deleteNotice={deleteNotice}
-              />
-            </div>
+      <section className="flex flex-wrap  gap-y-3 gap-x-4 mt-10 justify-center items-start md:gap-y-10 lg:px-6  xl:mt-24 xl:gap-x-10 xl:gap-y-8">
+      {news?.map((item) => (
+            <CardAdminNew
+              key={item._id}
+              notice={item}
+              onEdit={() => setNoticeSelected(item)}
+              onDelete={() => deleteNotice(item._id)}
+            />
           ))}
       </section>
     </div>

@@ -1,10 +1,11 @@
-import imgFausti from "../../assets/fausti2.jpg";
+import imgFausti from "../../../assets/fausti2.jpg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const CardTournament = ({ tournament, selectTournament, deleteTournament }) => {
+const CardTournament = ({ tournament, onEdit, onDelete }) => {
   const { _id, title, description, content, location, time, images } =
     tournament;
+
   const [isExpanded, setIsExpanded] = useState(false);
   const toggleExpand = () => setIsExpanded(!isExpanded);
 
@@ -57,18 +58,18 @@ const CardTournament = ({ tournament, selectTournament, deleteTournament }) => {
 
           <div className="w-full mt-4 mb-1">
             <section className="flex justify-evenly items-center text-[#af2b48] mr-2">
-              <div className="flex items-center gap-2 text-[1rem]">
-                <i
-                  onClick={() => selectTournament(tournament, _id)}
-                  className="bx bxs-edit-alt cursor-pointer hover:scale-110 hover:text-gray-100 duration-300 text-3xl"
-                ></i>
+              <div
+                onClick={onEdit}
+                className="flex items-center gap-2 text-[1rem]"
+              >
+                <i className="bx bxs-edit-alt cursor-pointer hover:scale-110 hover:text-gray-100 duration-300 text-3xl"></i>
                 Editar
               </div>
-              <div className="flex items-center gap-2 text-[1rem]">
-                <i
-                  onClick={() => deleteTournament(_id)}
-                  className="bx bxs-trash-alt cursor-pointer hover:scale-110 hover:text-gray-100 duration-300 text-3xl"
-                ></i>
+              <div
+                onClick={onDelete}
+                className="flex items-center gap-2 text-[1rem]"
+              >
+                <i className="bx bxs-trash-alt cursor-pointer hover:scale-110 hover:text-gray-100 duration-300 text-3xl"></i>
                 Eliminar
               </div>
             </section>
