@@ -165,7 +165,7 @@ const NoticesAndTournaments = () => {
               to={"/news"}
               className="flex justify-center items-center gap-2 mt-1"
             >
-              <button className="animated-button rounded-3xl w-[180px] pl-12 py-1 shadow-lg shadow-zinc-900 border border-stone-500  bg-bluefausti lg:w-[210px] lg: lg:rounded- 2xl:pl-14 2xl:w-[230px] group">
+              <button className="animated-button rounded-3xl w-[180px] pl-12 py-1 shadow-lg shadow-zinc-900 border border-stone-500  bg-[#4b718a] lg:w-[210px] lg: lg:rounded- 2xl:pl-14 2xl:w-[230px] group">
                 <i className="bx bx-right-arrow-alt arr-2 text-3xl  text-sky-700 2xl:text-4xl"></i>
                 <span className="text font-title2 text-whiteCustom text-base 2xl:text-lg group-hover:text-zinc-600">
                   Ir a noticias

@@ -87,13 +87,13 @@ const Contact = () => {
 
       <section
         id="contact_section"
-        className="w-full h-auto  bg-zinc-800 flex flex-col  gap-3 pt-16 xl:pt-[6%]"
+        className="w-full h-auto  bg-zinc-800 flex flex-col  gap-3 pt-16 2xl:pt-20"
       >
         <article className="z-50 flex flex-col items-center  lg:w-[50%]">
           <h3 className="self-center  font-title text-5xl text-whiteCustom font-semibold  lg:text-6xl xl:text-7xl 2xl:text-8xl px-12 xl:px-14 py-3 border-[1px]  border-zinc-500 rounded-xl z-50">
             CONTACTO
           </h3>
-          <p className="text-sky-600 text-center text-balance  max-w-[410px] font-text2 text-xl leading-5 mt-6  2xl:mt-7 xl:text-xl xl:max-w-[500px] 2xl:max-w-[550px] 2xl:text-2xl z-50">
+          <p className="text-[#4b718a] text-center text-balance  max-w-[410px] font-text2 text-xl leading-5 mt-5  2xl:mt-6 xl:text-xl xl:max-w-[500px] 2xl:max-w-[550px] 2xl:text-2xl z-50">
           Faustino Oro quiere escucharte.
             <span className="text-zinc-600 mx-1">
             Ponte en contacto para invitarlo a eventos, colaboraciones o simplemente para alentarlo en su carrera.
@@ -107,22 +107,22 @@ const Contact = () => {
         <footer className="w-full mt-6 lg:mt-1 lg:w-[50%] xl:mt-5 2xl:mt-6 z-50">
           <ul className="flex gap-8 justify-center items-center text-whiteCustom text-4xl xl:text-5xl xl:gap-12  ">
             <Link to="https://www.youtube.com/@faustichess" target="_blank" >
-              <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-sky-600">
+              <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-[#4b718a]">
                 <i className="bx bxl-youtube"></i>
               </li>
             </Link>
             <Link to="https://www.twitch.tv/faustichess" target="_blank" >
-              <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-sky-600">
+              <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-[#4b718a]">
                 <i className="bx bxl-twitch"></i>
               </li>
             </Link>
             <Link to="https://www.instagram.com/faustioro/" target="_blank" >
-              <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-sky-600">
+              <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-[#4b718a]">
                 <i className="bx bxl-instagram-alt"></i>
               </li>
             </Link>
             <Link to="https://www.facebook.com/profile.php?id=100089778504647" target="_blank">
-              <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-sky-600">
+              <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-[#4b718a]">
               <i className='bx bxl-facebook-circle'></i>
               </li>
             </Link>{" "}
