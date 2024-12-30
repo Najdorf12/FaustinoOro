@@ -149,7 +149,7 @@ const About = () => {
               className="group border-[1px] rounded-3xl bg-bluefausti  border-stone-400  px-4 py-[px] flex justify-between text-white items-center min-w-[170px] 2xl:px-5 2xl:w-[195px]  duration-500 "
             >
               HISTORIA
-              <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full   2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-white duration-500"></i>
+              <i className="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full   2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-white duration-500"></i>
             </button>
             <button
             id="box-glass2"
@@ -158,7 +158,7 @@ const About = () => {
                hover:text-bluefausti  hover:border-bluefausti duration-500 "
             >
               LOGROS
-              <i class="bx bx-arrow-back rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-bluefausti duration-500"></i>
+              <i className="bx bx-arrow-back rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-bluefausti duration-500"></i>
             </button>
           </div>
         </>
@@ -206,7 +206,7 @@ const About = () => {
               className="group border-[1px] rounded-3xl text-white bg-gray-600 border-stone-400  px-4  flex justify-between items-center  min-w-[170px] 2xl:px-5 2xl:w-[195px] duration-500"
             >
               SOBRE MI
-              <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:text-white group-hover:rotate-[-145deg] duration-500"></i>
+              <i className="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:text-white group-hover:rotate-[-145deg] duration-500"></i>
             </button>
             <button
               id="news-box"
@@ -214,7 +214,7 @@ const About = () => {
               className="group border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center text-stone-400  min-w-[170px] 2xl:px-5 lg:text-stone-500 2xl:w-[195px]   duration-500 hover:text-bluefausti hover:border-bluefausti"
             >
               LOGROS
-              <i class="bx bx-arrow-back  rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-bluefausti duration-500 "></i>
+              <i className="bx bx-arrow-back  rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-bluefausti duration-500 "></i>
             </button>
           </div>
         </>
@@ -233,7 +233,7 @@ const About = () => {
                   key={i}
                   className="border border-stone-400   flex items-center gap-2 lg:gap-3 py-1 px-[4px] sm:pr-[3px] lg:pl-2  rounded-2xl  max-w-[95%] xl:max-w-[80%]"
                 >
-                  <i class="bx bx-chevron-right self-start text-xl text-white xl:text-2xl"></i>{" "}
+                  <i className="bx bx-chevron-right self-start text-xl text-white xl:text-2xl"></i>{" "}
                   {item}
                 </li>
               ))}
@@ -245,7 +245,7 @@ const About = () => {
               className="group border-[1px] rounded-3xl bg-gray-600 border-stone-500  px-4  flex justify-between items-center  min-w-[170px] 2xl:px-5 2xl:w-[195px] duration-500"
             >
               HISTORIA
-              <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:text-white group-hover:rotate-[-145deg] duration-500"></i>
+              <i className="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:text-white group-hover:rotate-[-145deg] duration-500"></i>
             </button>
             <button
               id="news-box"
@@ -253,7 +253,7 @@ const About = () => {
               className="group border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center text-stone-400 lg:text-stone-500 duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] hover:text-bluefausti hover:border-bluefausti "
             >
               SOBRE MI
-              <i class="bx bx-arrow-back  rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-bluefausti duration-500 "></i>
+              <i className="bx bx-arrow-back  rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-bluefausti duration-500 "></i>
             </button>
           </div>
         </>
@@ -284,7 +284,7 @@ const About = () => {
               className="group border-[1px] rounded-3xl bg-gray-600 border-stone-500  px-4  flex justify-between items-center text-white  min-w-[170px] 2xl:px-5 2xl:w-[195px] "
             >
               HISTORIA
-              <i class="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:text-white group-hover:rotate-[-145deg] duration-500"></i>
+              <i className="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:text-white group-hover:rotate-[-145deg] duration-500"></i>
             </button>
             <button
               id="news-box"
@@ -292,7 +292,7 @@ const About = () => {
               className="group border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center text-stone-400 min-w-[170px]  hover:text-bluefausti hover:border-bluefausti lg:text-stone-500 2xl:px-5  2xl:w-[195px]"
             >
               LOGROS
-              <i class="bx bx-arrow-back  rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-bluefausti duration-500 "></i>
+              <i className="bx bx-arrow-back  rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-bluefausti duration-500 "></i>
             </button>
           </div>
         </>

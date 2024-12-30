@@ -1,12 +1,11 @@
 import SplitType from "split-type";
-import NavBtn from "../components/Buttons/NavBtn";
 import Tournaments from "./Tournaments";
 import CardNoticeHome from "./News/CardNoticeHome";
 import imgTorneo from "../assets/img-torneo.jpg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import { useLayoutEffect, useState, useEffect } from "react";
-
+import { useAdminData } from "./Admin/AdminDataContext";
 import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -67,7 +66,8 @@ const allTournaments = [
   },
 ];
 
-const Stats = ({ newsData }) => {
+const NoticesAndTournaments = () => {
+  const { news, tournaments } = useAdminData();
   const [displayedNotices, setDisplayedNotices] = useState(2);
   const [displayedTournaments, setDisplayedTournaments] = useState(5);
 
@@ -75,6 +75,7 @@ const Stats = ({ newsData }) => {
   const tl = gsap.timeline();
 
   useEffect(() => {
+    console.log(news);
     if (window.innerWidth >= 768) {
       setDisplayedTournaments(6);
       setDisplayedNotices(3);
@@ -176,9 +177,9 @@ const Stats = ({ newsData }) => {
           </article>
 
           <div className="flex flex-col justify-start items-start mt-14 max-w-[900px] lg:mt-0 lg:self-end xl:max-w-[1000px]">
-            <div className="flex flex-wrap pl-4 gap-y-6 gap-x-12  z-50 md:justify-center xl:gap-x-16 2xl:gap-x-20">
-              {newsData?.slice(0, displayedNotices)?.map((news) => (
-                <CardNoticeHome news={news} />
+            <div className="flex flex-wrap pl-4 gap-y-6 gap-x-12 z-50 md:justify-center xl:gap-x-16 2xl:gap-x-20">
+              {news?.slice(0, displayedNotices)?.map((newsItem, i) => (
+                <CardNoticeHome key={i} news={newsItem} index={i} />
               ))}
             </div>
           </div>
@@ -187,10 +188,10 @@ const Stats = ({ newsData }) => {
 
       <Tournaments
         screenStats={screenStats}
-        allTournaments={allTournaments}
+        tournaments={tournaments}
         displayedTournaments={displayedTournaments}
       />
     </>
   );
 };
-export default Stats;
+export default NoticesAndTournaments;

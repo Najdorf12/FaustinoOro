@@ -113,7 +113,7 @@ const Contact = () => {
             </Link>
             <Link to="https://www.twitch.tv/faustichess" target="_blank" >
               <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-sky-600">
-                <i class="bx bxl-twitch"></i>
+                <i className="bx bxl-twitch"></i>
               </li>
             </Link>
             <Link to="https://www.instagram.com/faustioro/" target="_blank" >
@@ -123,7 +123,7 @@ const Contact = () => {
             </Link>
             <Link to="https://www.facebook.com/profile.php?id=100089778504647" target="_blank">
               <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-sky-600">
-              <i class='bx bxl-facebook-circle'></i>
+              <i className='bx bxl-facebook-circle'></i>
               </li>
             </Link>{" "}
           </ul>

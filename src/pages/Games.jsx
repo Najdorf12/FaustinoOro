@@ -1,29 +1,16 @@
 import { Chessboard } from "react-chessboard";
 import { Chess } from "chess.js";
 import { useState, useEffect } from "react";
-import { getGames } from "../api/handlers";
+import { useAdminData } from "./Admin/AdminDataContext";
 
 const Games = () => {
-  const [allGames, setAllGames] = useState(null);
-  const [selectedGame, setSelectedGame] = useState(null);
+  const { games, setGames } = useAdminData();
 
+  const [selectedGame, setSelectedGame] = useState(null);
   const [game, setGame] = useState(new Chess());
   const [currentMoves, setCurrentMoves] = useState("");
   const [moveIndex, setMoveIndex] = useState(0);
 
-  useEffect(() => {
-    const fetchGames = async () => {
-      try {
-        const gamesData = await getGames();
-        console.log("Games Data:", gamesData);
-        setAllGames(gamesData);
-      } catch (error) {
-        console.error("Failed to fetch games:", error);
-      }
-    };
-
-    fetchGames();
-  }, []);
 
   function obtenerJugadas(pgn) {
     const limpio = pgn.replace(/\n/g, " ");
@@ -82,22 +69,22 @@ const Games = () => {
           <p className="text-2xl font-text2 text-stone-400 font-base mt-7 z-50 xl:text-2xl ">
             {selectedGame
               ? selectedGame.players
-              : allGames?.length > 0
-              ? allGames[0].players
+              : games?.length > 0
+              ? games[0].players
               : "No hay partidas disponibles"}
           </p>
           <p className="text-base font-text2 text-stone-600 xl:text-lg">
             {selectedGame
               ? selectedGame.content
-              : allGames?.length > 0
-              ? allGames[0].content
+              : games?.length > 0
+              ? games[0].content
               : "No hay partidas disponibles"}
           </p>
           <p className="text-base font-text2 text-stone-600 xl:text-lg">
             {selectedGame
               ? selectedGame.location
-              : allGames?.length > 0
-              ? allGames[0].location
+              : games?.length > 0
+              ? games[0].location
               : "No hay partidas disponibles"}
           </p>
           <section className="chessboard-wrapper relative  max-w-[400px] 2xl:max-w-[500px] mt-14  ">
@@ -106,16 +93,16 @@ const Games = () => {
                 <span className="w-4 h-4 rounded-full border border-white"></span>
                 {selectedGame
                   ? selectedGame.black
-                  : allGames?.length > 0
-                  ? allGames[0].black
+                  : games?.length > 0
+                  ? games[0].black
                   : "No hay partidas disponibles"}
               </div>
               <div className="font-text2 absolute z-50 bottom-[5.7rem] right-0 text-base text-stone-500 md:text-stone-600 flex justify-center items-center gap-2 ">
                 <span className="w-4 h-4 rounded-full bg-white"></span>
                 {selectedGame
                   ? selectedGame.white
-                  : allGames?.length > 0
-                  ? allGames[0].white
+                  : games?.length > 0
+                  ? games[0].white
                   : "No hay partidas disponibles"}
               </div>
               <Chessboard
@@ -155,7 +142,7 @@ const Games = () => {
 
         <section className="w-full flex flex-col items-start  mt-12 lg:w-auto  xl:mt-20 2xl:mt-24  z-50   lg:py-4 lg:px-3">
           <ul className="w-[90%] px-3 z-50 text-lg font-title text-stone-300 font-normal flex flex-col justify-center items-center lg:items-start gap-2 lg:gap-4  lg:w-auto 2xl:text-[1.3rem] 2xl:gap-6 ">
-            {allGames?.map((partida, i) => {
+            {games?.map((partida, i) => {
               return (
                 <li
                   id="box-glass"

@@ -1,17 +1,15 @@
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
-import Stats from "./pages/Stats";
+import NoticesAndTournaments from "./pages/NoticesAndTournaments";
 import Contact from "./pages/Contact";
-import { useState, useEffect } from 'react';
 import Experience from "./components/Experience";
 import { Canvas } from "@react-three/fiber";
-import { ReactLenis, useLenis } from "lenis/react";
-import { Chess } from 'chess.js';
+import { ReactLenis } from "lenis/react";
 
 
 
-function FaustinoApp({newsData}) {
+function FaustinoApp() {
   /*   const lenis = useLenis(({ scroll }) => {
     // called every scroll
   }); */
@@ -28,7 +26,7 @@ function FaustinoApp({newsData}) {
         <Home />
         <About />
         <Gallery />
-        <Stats newsData={newsData} />
+        <NoticesAndTournaments />
         <Contact />
       </main>
     </ReactLenis>

@@ -1,6 +1,7 @@
 import CardTournament from "../components/CardTournament";
+import { useAdminData } from "./Admin/AdminDataContext";
 
-const Tournaments = ({ screenStats, displayedTournaments, allTournaments }) => {
+const Tournaments = ({ screenStats, displayedTournaments, tournaments }) => {
   return (
     <>
       <section
@@ -24,7 +25,7 @@ const Tournaments = ({ screenStats, displayedTournaments, allTournaments }) => {
             id="tournaments"
             className="rounded-lg pr-3 pt-2 pb-6 overflow-y-scroll grid grid-cols-1 gap-6 z-50 mt-3 lg:grid-cols-2   lg:mt-8  lg:w-full xl:gap-10  place-items-center lg:mx-auto"
           >
-            {allTournaments
+            {tournaments
               ?.slice(0, displayedTournaments)
               .map((tournament, i) => (
                 <CardTournament

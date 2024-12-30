@@ -19,7 +19,7 @@ const ContactForm = () => {
       );
     }
   };
-  
+
   return (
     <>
       <div className="form-container border border-zinc-600 w-[95%] max-w-[400px] mt-8 2xl:max-w-[460px]  z-50">
@@ -28,18 +28,33 @@ const ContactForm = () => {
           className="form text-whiteCustom z-50 "
         >
           <div className="form-group">
-            <label for="email">Email</label>
-            <input required="" name="email" id="email" type="text" {...register("email")} />
+            <label htmlFor="email">Email</label>
+            <input
+              required=""
+              name="email"
+              id="email"
+              type="text"
+              {...register("email")}
+            />
           </div>
           <div className="form-group">
-            <label for="wttp">Whatsapp</label>
-            <input required="" name="wttp" id="wttp" type="text" {...register("wttp")} />
+            <label htmlFor="wttp">Whatsapp</label>
+            <input
+              required=""
+              name="wttp"
+              id="wttp"
+              type="text"
+              {...register("wttp")}
+            />
           </div>
           <div className="form-group">
-            <label for="textarea">Mensaje</label>
-            <textarea  id="textarea" name="textarea" {...register("message")}>
-              {" "}
-            </textarea>
+            <label htmlFor="textarea">Mensaje</label>
+            <textarea
+              id="textarea"
+              name="textarea"
+              {...register("message")}
+              defaultValue=""
+            />
           </div>
           <button
             type="submit"
