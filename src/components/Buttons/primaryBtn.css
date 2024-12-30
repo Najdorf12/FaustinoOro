@@ -46,7 +46,7 @@
 }
 
 .animated-button:hover {
-  box-shadow: 0 0 0 12px transparent;
+  box-shadow: 0 10px 15px -3px rgb(82 82 91), 0 4px 6px -4px rgb(82 82 91);
   color: rgb(255, 255, 255);
   background-color: #3f4864;
 }

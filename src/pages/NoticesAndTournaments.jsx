@@ -1,7 +1,6 @@
 import SplitType from "split-type";
 import Tournaments from "./Tournaments";
 import CardNoticeHome from "./News/CardNoticeHome";
-import imgTorneo from "../assets/img-torneo.jpg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import { useLayoutEffect, useState, useEffect } from "react";
@@ -9,62 +8,7 @@ import { useAdminData } from "./Admin/AdminDataContext";
 import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);
 
-const allTournaments = [
-  {
-    title: "Tournament test1 Lorem Impsum",
-    description: "Description test1",
-    content: "Content test1",
-    location: "Location, test1",
-    isActive: true,
-    time: "12/12/2024",
-    images: imgTorneo,
-  },
-  {
-    title: "Tournament test2",
-    description: "Description test2",
-    content: "Content test2",
-    location: "Location, test2",
-    isActive: true,
-    time: "12/12/2024",
-    images: imgTorneo,
-  },
-  {
-    title: "Tournament test3 Lorem Impsum dolor",
-    description: "Description test3",
-    content: "Content test3",
-    location: "Location, test3",
-    isActive: true,
-    time: "12/12/2024",
-    images: imgTorneo,
-  },
-  {
-    title: "Tournament test4",
-    description: "Description test4",
-    content: "Content test4",
-    location: "Location, test4",
-    isActive: true,
-    time: "12/12/2024",
-    images: imgTorneo,
-  },
-  {
-    title: "Tournament test5",
-    description: "Description test5",
-    content: "Content test5",
-    location: "Location, test5",
-    isActive: true,
-    time: "12/12/2024",
-    images: imgTorneo,
-  },
-  {
-    title: "Tournament test6",
-    description: "Description test6",
-    content: "Content test6",
-    location: "Location, test6",
-    isActive: true,
-    time: "12/12/2024",
-    images: imgTorneo,
-  },
-];
+
 
 const NoticesAndTournaments = () => {
   const { news, tournaments } = useAdminData();
@@ -165,7 +109,7 @@ const NoticesAndTournaments = () => {
               to={"/news"}
               className="flex justify-center items-center gap-2 mt-1"
             >
-              <button className="animated-button rounded-3xl w-[180px] pl-12 py-1 shadow-lg shadow-zinc-900 border border-stone-500  bg-[#4b718a] lg:w-[210px] lg: lg:rounded- 2xl:pl-14 2xl:w-[230px] group">
+              <button className="animated-button rounded-3xl w-[180px] pl-10 py-1 shadow-lg shadow-zinc-600 border border-stone-500  bg-zinc-700 lg:w-[210px] lg: lg:rounded- 2xl:pl-14 2xl:w-[230px] group">
                 <i className="bx bx-right-arrow-alt arr-2 text-3xl  text-sky-700 2xl:text-4xl"></i>
                 <span className="text font-title2 text-whiteCustom text-base 2xl:text-lg group-hover:text-zinc-600">
                   Ir a noticias
