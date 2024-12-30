@@ -118,7 +118,7 @@ const News = () => {
           </p>
         </article>
 
-        <div className="flex flex-wrap gap-y-6 gap-x-20 justify-start pl-2 mt-10 w-full   md:justify-center lg:gap-x-20 lg:mt-16 lg:pl-0 lg:px-[5%] xl:mt-20 xl:gap-y-9 2xl:gap-x-32 ">
+        <div className="flex flex-wrap gap-y-6 gap-x-20 justify-start pl-2 mt-10 w-full   md:justify-center lg:gap-x-20 lg:mt-16   lg:px-40 xl:mt-20 xl:gap-y-9 2xl:gap-x-32 ">
           {news?.map((news, i) => (
             <div key={i} className="slide">
               <CardNotice news={news} index={i} />
