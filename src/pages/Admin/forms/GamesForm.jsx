@@ -1,10 +1,11 @@
-/* import axios from "../../../api/axios";
+import axios from "../../../api/axios";
 import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
-import { getGames } from "../../../api/handlers";
 import CardAdminGame from "./CardAdminGame";
+import { useAdminData } from "../AdminDataContext";
 
 const GamesForm = () => {
+  const { games, setGames } = useAdminData(); // Acceso al contexto
   const {
     handleSubmit,
     register,
@@ -12,25 +13,10 @@ const GamesForm = () => {
     formState: { errors },
   } = useForm();
 
-  const [allGames, setAllGames] = useState([]);
   const [gameSelected, setGameSelected] = useState(null);
 
   useEffect(() => {
-    const fetchGames = async () => {
-      try {
-        const gamesData = await getGames();
-        console.log(gamesData);
-        setAllGames(gamesData);
-      } catch (error) {
-        console.error("Failed to fetch games:", error);
-      }
-    };
-
-    fetchGames();
-  }, []);
-
-  useEffect(() => {
-    if (gameSelected !== null) {
+    if (gameSelected) {
       reset({
         _id: gameSelected._id,
         players: gameSelected.players,
@@ -48,40 +34,14 @@ const GamesForm = () => {
         black: "",
         location: "",
         content: "",
-        pgn: "",
+        pgn: ""
       });
     }
   }, [gameSelected]);
 
-  const selectGame = (game, _id) => {
-    setGameSelected(game);
-  };
-
-  const deleteGame = (id) => {
-    axios
-      .delete(`/games/${id}`)
-      .then(() => {
-        setAllGames((prevGame) => prevGame.filter((game) => game._id !== id));
-      })
-      .catch((error) => console.error(error));
-  };
-
-  const editGame = (game, id) => {
-    axios
-      .put(`/games/${game._id}`, game)
-      .then((res) => {
-        const updatedGame = res.data;
-        const updatedGames = allGames.map((item) =>
-          item._id === updatedGame._id ? updatedGame : item
-        );
-        setAllGames(updatedGames);
-        setGameSelected(null);
-      })
-      .catch((error) => console.error(error));
-  };
 
   const submit = (data) => {
-    if (gameSelected !== null) {
+    if (gameSelected) {
       editGame(data);
     } else {
       const newGame = {
@@ -95,12 +55,38 @@ const GamesForm = () => {
       axios
         .post("/games", newGame)
         .then((res) => {
-          const createdGame = res.data;
-          setAllGames([...allGames, createdGame]);
+          setGames((prevGame) => [...prevGame, res.data]); // Actualiza el contexto
         })
         .catch((error) => console.error(error));
     }
-    alert("PARTIDA CREADA EXITOSAMENTE");
+    setGameSelected(null);
+    reset();
+    alert("TORNEO CREADO EXITOSAMENTE");
+  };
+
+  const editGame = (game) => {
+    axios
+      .put(`/games/${tournament._id}`, tournament)
+      .then((res) => {
+        setGames((prevGames) =>
+          prevGames.map((item) =>
+            item._id === res.data._id ? res.data : item
+          )
+        );
+        setGameSelected(null);
+      })
+      .catch((error) => console.error(error));
+  };
+
+  const deleteGame = (id) => {
+    axios
+      .delete(`/games/${id}`)
+      .then(() => {
+        setGames((prevGames) =>
+          prevGames.filter((item) => item._id !== id)
+        );
+      })
+      .catch((error) => console.error(error));
   };
 
   return (
@@ -232,34 +218,23 @@ const GamesForm = () => {
         </section>
       </section>
 
-      <section className=" mt-8 flex flex-col justify-center items-center">
-        {allGames?.map((game) => (
-          <CardAdminGame
-            key={game._id}
-            game={game}
-            selectGame={selectGame}
-            deleteGame={deleteGame}
-          />
-        ))}
-      </section>
+      <section className="flex flex-wrap  gap-y-3 gap-x-4 mt-10 justify-center items-start md:gap-y-10 lg:px-6  xl:mt-24 xl:gap-x-9 xl:gap-y-9">
+          {games?.map((game) => (
+            <CardAdminGame
+              key={game._id}
+              game={game}
+              onEdit={() => setGameSelected(game)}
+              onDelete={() => deleteGame(game._id)}
+            />
+          ))}
+        </section>
     </div>
   );
 };
 
 export default GamesForm;
- */
+ 
 
 
-import { useAdminData } from "../AdminDataContext"
-import { useEffect, useState } from "react"
 
-const TournamentsForm = () => {
-const { games, setGames} = useAdminData();
 
-  console.log("from gamesFORM,", games, setGames)
-  return (
-    <div>Games Form</div>
-  )
-}
-
-export default TournamentsForm
