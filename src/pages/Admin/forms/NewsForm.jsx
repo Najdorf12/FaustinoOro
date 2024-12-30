@@ -7,6 +7,7 @@ import { useAdminData } from "../AdminDataContext";
 
 const NewsForm = () => {
   const { news, setNews } = useAdminData(); // Acceso al contexto
+  console.log(news)
   const {
     handleSubmit,
     register,
@@ -27,6 +28,7 @@ const NewsForm = () => {
         content: noticeSelected.content,
         category: noticeSelected.category,
         isActive: noticeSelected.isActive,
+        images: noticeSelected.images
       });
     } else {
       reset({
@@ -36,6 +38,7 @@ const NewsForm = () => {
         content: "",
         isActive: false,
         category: "",
+        images:""
       });
     }
   }, [noticeSelected]);

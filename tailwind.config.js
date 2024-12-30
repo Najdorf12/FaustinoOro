@@ -11,7 +11,7 @@ export default {
 
       xl: "1300px",
 
-      "2xl": "1636px",
+      "2xl": "1650px",
     },
     extend: {
       colors:{

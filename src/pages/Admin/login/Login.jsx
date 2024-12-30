@@ -43,7 +43,7 @@ const Login = () => {
     <>
       <section className="bg-whiteCustom h-screen w-full flex flex-col px-4 gap-14 items-center xl:px-10 2xl:gap-24 2xl:px-12">
         <nav className="font-text2 text-xl  relative flex justify-between items-center w-full  mt-2 px-5 xl:mt-3 xl:px-16 xl:text-2xl  2xl:px-20 ">
-          <picture className="w-16 h-16 flex items-center justify-center rounded-full  2xl:w-20 2xl:h-20 ">
+          <picture className="w-12 h-12 flex items-center justify-center rounded-full xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 ">
             <img className="rounded-full" src={logo} alt="logo" />
           </picture>
           <ul className="flex gap-6 xl:gap-10 2xl:gap-12">
