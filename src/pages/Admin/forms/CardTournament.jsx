@@ -27,7 +27,7 @@ const CardTournament = ({ tournament, onEdit, onDelete }) => {
           </Link>
         </figure>
 
-        <article className="h-full flex flex-col items-start justify-center gap-1 w-full pb-1">
+        <article className="h-full flex flex-col items-start justify-center gap-1 w-full pb-1 text-balance">
           <p className="text-lg px-2 py-2  min-h-14 font-title  font-semibold text-whiteCustom leading-5 bg-sky-800 w-full">
             {title.toUpperCase()}
           </p>
