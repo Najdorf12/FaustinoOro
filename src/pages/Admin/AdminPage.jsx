@@ -39,21 +39,42 @@ const AdminPage = () => {
         </ul>
       </nav>
 
-      <div className="w-full flex justify-center items-center gap-6 text-lg font-title4 text-whiteCustom mt-6">
-        <button onClick={() => setSelectedFormSection("news_form")}>
+      <div className="w-full flex justify-center items-center gap-6 text-lg font-title4 text-zinc-500 mt-6 xl:mt-8 xl:text-xl xl:gap-12 2xl:text-2xl ">
+        <button
+          onClick={() => setSelectedFormSection("news_form")}
+          className={`${
+            selectedFormSection === "news_form"
+              ? "text-whiteCustom border-b border-sky-600 pb-[2px]"
+              : ""
+          }`}
+        >
           Noticias
         </button>
-        <button onClick={() => setSelectedFormSection("tournaments_form")}>
+        <button
+          onClick={() => setSelectedFormSection("tournaments_form")}
+          className={`${
+            selectedFormSection === "tournaments_form"
+              ? "text-whiteCustom border-b border-sky-600 pb-[2px]"
+              : ""
+          }`}
+        >
           Torneos
         </button>
-        <button onClick={() => setSelectedFormSection("games_form")}>
+        <button
+          onClick={() => setSelectedFormSection("games_form")}
+          className={`${
+            selectedFormSection === "games_form"
+              ? "text-whiteCustom border-b border-sky-600 pb-[2px] "
+              : ""
+          }`}
+        >
           Partidas
         </button>
       </div>
 
       <div
         ref={formContainerRef}
-        className="mt-9 w-full flex flex-col items-center px-4  "
+        className="mt-9 w-full flex flex-col items-center px-4 xl:mt-14 "
       >
         {selectedFormSection === "news_form" && <NewsForm />}
         {selectedFormSection === "tournaments_form" && <TournamentsForm />}
