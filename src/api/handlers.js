@@ -29,3 +29,4 @@ export const getGames = async () => {
     throw error;
   }
 };
+

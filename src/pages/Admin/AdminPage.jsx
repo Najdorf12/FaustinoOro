@@ -1,6 +1,6 @@
 import axios from "../../api/axios";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "/iconNav.png";
 import TournamentsForm from "./forms/TournamentsForm";
 import GamesForm from "./forms/GamesForm";
 import NewsForm from "./forms/NewsForm";
@@ -11,6 +11,21 @@ const AdminPage = () => {
   const [selectedFormSection, setSelectedFormSection] = useState("news_form");
   const formContainerRef = useRef(null);
 
+  useEffect(() => {
+   verifyAuth();
+  }, []);
+
+  const verifyAuth = async () => {
+    try {
+      const res = await axios.get("/auth/verify").catch((error) => {
+        if (error) {
+          navigate("/login");
+        }
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  };
   const logout = () => {
     axios
       .post("/auth/logout")

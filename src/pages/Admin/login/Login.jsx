@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
 import axios from "../../../api/axios";
-import logo from "../../../assets/logo.png";
+import logo from "/iconNav.png";
 
 const Login = () => {
   const [loginError, setLoginError] = useState([]);
@@ -41,13 +41,7 @@ const Login = () => {
 
   return (
     <>
-      <section
-        /* style={{
-          backgroundImage:
-            "linear-gradient(to right top, #242427, #2b2a30, #33303a, #3c3542, #463b4b, #554255, #65495e, #765066, #905a6f, #aa6575, #c37278, #da8078)",
-        }} */
-        className="bg-whiteCustom h-screen w-full flex flex-col px-4 gap-14 items-center xl:px-10 2xl:gap-24 2xl:px-12"
-      >
+      <section className="bg-whiteCustom h-screen w-full flex flex-col px-4 gap-14 items-center xl:px-10 2xl:gap-24 2xl:px-12">
         <nav className="font-text2 text-xl  relative flex justify-between items-center w-full  mt-2 px-5 xl:mt-3 xl:px-16 xl:text-2xl  2xl:px-20 ">
           <picture className="w-16 h-16 flex items-center justify-center rounded-full  2xl:w-20 2xl:h-20 ">
             <img className="rounded-full" src={logo} alt="logo" />

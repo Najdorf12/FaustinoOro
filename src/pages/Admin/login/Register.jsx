@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
 import axios from "../../../api/axios";
-import logo from "../../../assets/logo.png";
+import logo from "/iconNav.png";
 
 const Register = () => {
   const {
