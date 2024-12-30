@@ -264,7 +264,7 @@ const NewsForm = () => {
           </div>
         </form>
       </section>
-      <section className="flex flex-wrap  gap-y-3 gap-x-4 mt-10 justify-center items-start md:gap-y-10 lg:px-6  xl:mt-24 xl:gap-x-9 xl:gap-y-9">
+      <section className="flex flex-wrap  gap-y-6 gap-x-4 mt-10 justify-center items-start md:gap-y-10 lg:px-6  xl:mt-24 xl:gap-x-9 xl:gap-y-9">
       {news?.map((item) => (
             <CardAdminNew
               key={item._id}

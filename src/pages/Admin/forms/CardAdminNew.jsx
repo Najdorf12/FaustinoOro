@@ -13,7 +13,7 @@ const CardAdminNew = ({ notice, onEdit, onDelete }) => {
   };
 
   return (
-    <section className="relative w-full border border-zinc-600 max-w-[300px] rounded-xl flex flex-col justify-center items-center hover:scale-105 duration-500">
+    <section className="relative w-full border border-zinc-600 max-w-[370px] rounded-xl flex flex-col justify-center items-center hover:scale-105 duration-500">
       <figure className="w-full h-40">
         <Link to={`/news/${_id}`}>
           <img
@@ -24,20 +24,20 @@ const CardAdminNew = ({ notice, onEdit, onDelete }) => {
         </Link>
       </figure>
 
-      <article className="h-full flex flex-col items-start justify-center gap-1 w-full pb-1 text-balance">
-        <p className="text-lg px-2 py-2  min-h-14 font-title  font-semibold text-whiteCustom leading-5 bg-sky-800 w-full">
+      <article className="h-full flex flex-col items-start justify-center gap-1 w-full pb-1 text-balance ">
+        <p className="text-lg px-2 py-2  min-h-14 font-title  font-medium text-whiteCustom leading-5 bg-sky-800 w-full">
           {title.toUpperCase()}
         </p>
 
-        <span className="px-2 font-text font-semibold text-base text-zinc-600 tracking-wide rounded-lg flex justify-start items-center">
+        <span className="px-2 font-text font-medium text-base text-zinc-500 tracking-wide rounded-lg flex justify-start items-center">
           {category.toUpperCase()}
         </span>
 
-        <p className="pl-2 font-semibold text-base text-whiteCustom">
+        <p className="px-2 xl:px-3 font-medium text-base text-zinc-300">
           {isExpanded ? description : truncateText(description, 150)}
         </p>
 
-        <p className="pl-2 font-semibold text-sm text-zinc-500">
+        <p className="px-2 xl:px-3 font-medium text-sm text-zinc-500">
           {isExpanded ? content : truncateText(content, 100)}
           {content.length > 100 && (
             <span

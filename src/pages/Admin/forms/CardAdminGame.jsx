@@ -14,30 +14,22 @@ const CardAdminGame = ({ game, onEdit, onDelete }) => {
   return (
     <>
       (
-      <section className="relative  border border-zinc-700 w-[95%] max-w-[450px] rounded-3xl flex  hover:scale-105 duration-500 pb-1">
+      <section className="relative  border-b border-zinc-700 w-[95%] max-w-[450px] rounded-lg flex  hover:scale-105 duration-500 pb-1">
         <article className="h-full  flex flex-col gap-1 w-full text-balance">
-          <p className="text-xl  px-3 flex items-center justify-center gap-3 font-text text-center font-semibold text-whiteCustom leading-5 border-b border-zinc-700 py-2 bg-sky-800 rounded-t-lg">
+          <p className="text-xl font-medium  px-3 flex items-center justify-center gap-3 font-text text-center  text-whiteCustom leading-5 border-b border-zinc-700 py-2 bg-sky-800 rounded-t-lg ">
             {players}
           </p>
-          <p className="px-2 xl:px-3 mt-1 font-semibold text-base text-zinc-400">
+          <p className="px-2 xl:px-3 mt-1 font-medium  text-base text-zinc-400 xl:mt-2 xl:text-lg">
             {isExpanded ? content : truncateText(content, 150)}
           </p>
-          <p className="px-2 xl:px-3 mt-1 font-semibold text-base text-zinc-500">
+          <p className="px-2 xl:px-3 font-medium  text-base text-zinc-400 xl:text-lg">
             {location}
           </p>
 
-          <p className="px-2 xl:px-3 font-semibold text-sm text-zinc-500">
-            {isExpanded ? pgn : truncateText(pgn, 100)}
-            {pgn.length > 100 && (
-              <span
-                onClick={toggleExpand}
-                className="cursor-pointer text-sky-600 ml-1 hover:underline"
-              >
-                {isExpanded ? "Ver menos" : "Ver más"}
-              </span>
-            )}
+          <p className="px-2 xl:px-3  text-sm text-zinc-500 xl:text-base xl:mt-1">
+            {pgn}
           </p>
-          <div className="font-text font-semibold text-base text-zinc-500 tracking-wide flex justify-start px-2 xl:px-3 gap-3 items-center mt-2 pr-3">
+          <div className="font-text2  text-base text-zinc-500 tracking-wide flex justify-start px-2 xl:px-3 gap-3 items-center mt-2 pr-3 xl:mt-3">
             <span className="flex items-center gap-1">
               <i className="bx bxs-polygon text-white"></i> {white}
             </span>

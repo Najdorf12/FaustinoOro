@@ -16,7 +16,7 @@ const CardTournament = ({ tournament, onEdit, onDelete }) => {
   return (
     <>
       (
-      <section className="relative w-full border border-zinc-600 max-w-[300px] rounded-xl flex flex-col justify-center items-center hover:scale-105 duration-500">
+      <section className="relative w-full  border-b border-zinc-600 max-w-[370px] rounded-xl flex flex-col justify-center items-center hover:scale-105 duration-500">
         <figure className="w-full h-40">
           <Link /* to={`/tournaments/${_id}`} */>
             <img
@@ -28,20 +28,20 @@ const CardTournament = ({ tournament, onEdit, onDelete }) => {
         </figure>
 
         <article className="h-full flex flex-col items-start justify-center gap-1 w-full pb-1 text-balance">
-          <p className="text-lg px-2 py-2  min-h-14 font-title  font-semibold text-whiteCustom leading-5 bg-sky-800 w-full">
+          <p className="text-lg px-2 py-2  min-h-14 font-title  font-medium text-whiteCustom leading-5 bg-sky-800 w-full">
             {title.toUpperCase()}
           </p>
 
-          <div className="px-2 font-text font-semibold text-base text-zinc-600 tracking-wide rounded-lg flex justify-between w-full items-center">
+          <div className="px-2 font-text font-medium text-base pt-1 text-zinc-400 tracking-wide rounded-lg flex justify-between w-full items-center">
             {location.toUpperCase()}
             <div>{time}</div>
           </div>
 
-          <p className="pl-2 font-semibold text-base text-whiteCustom">
+          <p className="pl-2 font-medium text-base text-zinc-400">
             {isExpanded ? description : truncateText(description, 150)}
           </p>
 
-          <p className="pl-2 font-semibold text-sm text-zinc-500">
+          <p className="pl-2 font-medium text-sm text-zinc-600">
             {isExpanded ? content : truncateText(content, 100)}
             {content.length > 100 && (
               <span

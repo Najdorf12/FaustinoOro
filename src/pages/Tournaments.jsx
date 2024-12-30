@@ -5,14 +5,14 @@ const Tournaments = ({ screenStats, displayedTournaments, allTournaments }) => {
     <>
       <section
         id="six_section"
-        className="overflow-hidden relative bg-whiteCustom  w-fulL h-screen z-5 pt-10 pl-2 pr-1 2xl:pt-16"
+        className="overflow-hidden relative bg-whiteCustom  w-full h-screen z-5 pt-10 pl-2 pr-1 2xl:pt-16"
       >
         <div
           style={{ clipPath: "polygon(0 0, 0% 100%, 100% 0)" }}
           id="box-stats_wrapper"
           className="w-full h-screen bg-whiteCustom absolute  inset-0"
         ></div>
-        <article className="flex flex-col gap-6">
+        <article className="flex flex-col gap-6 -mt-6">
           <h6 className="text-6xl font-title font-semibold text-bluefausti lg:text-7xl xl:pl-6 2xl:pl-8 2xl:text-8xl z-50">
             TORNEOS
           </h6>
