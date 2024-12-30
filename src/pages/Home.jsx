@@ -38,7 +38,7 @@ const Home = () => {
             </label>
             <div
               id="box-glass2"
-              className={`relative flex flex-col items-center self-start pt-28 pb-16 -mt-16  gap-10 w-full text-xl text-white border-l-[2px] border-stone-500 rounded-l-2xl    font-text2  menu lg:items-center lg:justify-end lg:pr-6  lg:mt-0 lg:flex-row lg:border-b-[2px] lg:py-3 z-50 lg:gap-6 lg:border-l-transparent lg:rounded-b-3xl 2xl:gap-8 ${
+              className={`relative flex flex-col items-center self-start pt-28 pb-16 -mt-16  gap-10 w-full text-xl text-whiteCustom border-l-[2px] border-zinc-700 rounded-l-2xl    font-text2  menu lg:items-center lg:justify-end lg:pr-6  lg:mt-0 lg:flex-row lg:border-b-[2px] lg:py-3 z-50 lg:gap-6 lg:border-l-transparent lg:rounded-b-3xl 2xl:gap-8 ${
                 isMenuOpen ? "menu-open " : ""
               }`}
             >
@@ -48,8 +48,8 @@ const Home = () => {
                   href={btn?.path} // Enlace hacia la sección con el ID correspondiente
                   className={`rounded-3xl  ${
                     btn.name === "Contacto"
-                      ? "bg-white text-zinc-800"
-                      : "bg-transparent text-stone-300 lg:bg- "
+                      ? "bg-whiteCustom text-zinc-800"
+                      : "bg-transparent text-zinc-300 lg:bg- "
                   }`}
                 >
                   <NavBtn btnname={btn?.name} />
@@ -71,7 +71,7 @@ const Home = () => {
           id="home"
         >
           <article className="w-full relative  flex justify-center items-end pb-[6vh] px-3 lg:justify-end  lg:items-end lg:pb-[5%] lg:pr-[3%]">
-            <h1 className="title-name text-white text-center text-6xl  z-50 leading-[5rem] py-3 rounded-xl  lg:text-8xl xl:text-[6.5rem]  2xl:text-[8rem]">
+            <h1 className="title-name text-whiteCustom text-center text-6xl  z-50 leading-[5rem] py-3 rounded-xl  lg:text-8xl xl:text-[6.5rem]  2xl:text-[8rem]">
               FAUSTINO ORO
             </h1>
           </article>
