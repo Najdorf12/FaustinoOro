@@ -93,7 +93,7 @@ const Contact = () => {
           <h3 className="self-center  font-title text-5xl text-whiteCustom font-semibold  lg:text-6xl xl:text-7xl 2xl:text-8xl px-12 xl:px-14 py-3 border-[1px]  border-zinc-500 rounded-xl z-50">
             CONTACTO
           </h3>
-          <p className="text-[#4b718a] text-center text-balance  max-w-[410px] font-text2 text-xl leading-5 mt-5  2xl:mt-6 xl:text-xl xl:max-w-[500px] 2xl:max-w-[550px] 2xl:text-2xl z-50">
+          <p className="text-[#4b718a] text-center text-pretty px-2  max-w-[410px] font-text2 text-xl leading-5 mt-5  2xl:mt-6 xl:text-xl xl:max-w-[500px] 2xl:max-w-[550px] 2xl:text-2xl z-50">
           Faustino Oro quiere escucharte.
             <span className="text-zinc-600 mx-1">
             Ponte en contacto para invitarlo a eventos, colaboraciones o simplemente para alentarlo en su carrera.
