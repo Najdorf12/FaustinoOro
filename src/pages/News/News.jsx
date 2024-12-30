@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import CardNotice from "./CardNotice";
 import bgNews from "/bg/bg3.jpg";
-import bgNews2 from "/bg/bg2.jpg";
 import "../../components/Buttons/primaryBtn.css";
-import PrimaryBtn from "../../components/Buttons/PrimaryBtn";
 import iconNav from "/iconNav.png";
+import { useAdminData } from "../Admin/AdminDataContext";
 
-const News = ({ newsData }) => {
+const News = () => {
+  const { news } = useAdminData();
+
   return (
     <main className="bg-zinc-800 w-full relative flex flex-col items-center  overflow-hidden">
       <nav className="w-full absolute top-0 z-[100] flex justify-start items-center  ">
@@ -104,9 +105,9 @@ const News = ({ newsData }) => {
       >
         <article className="mt-9 flex flex-col justify-start pl-3 items-start text-balance lg:items-center text-center lg:pl-0 lg:mt-[3%] ">
           <p className="text-6xl flex items-center gap-3 xl:gap-12  text-zinc-100 font-medium font-title4 lg:text-center lg:text-7xl xl:text-8xl 2xl:text-9xl">
-            <div className="hidden lg:flex w-[400px] h-[1px] bg-sky-800"></div>
+            <span className="hidden lg:flex w-[400px] h-[1px] bg-[#4b718a]"></span>
             noticias
-            <div className="hidden lg:flex w-[400px] h-[1px] bg-sky-800"></div>
+            <span className="hidden lg:flex w-[400px] h-[1px] bg-[#4b718a]"></span>
           </p>
           <p className="font-text2 text-zinc-500 text-start  mt-6 lg:text-lg lg:text-center lg:max-w-[770px] xl:text-xl 2xl:text-2xl 2xl:mt-9xl ">
             Aquí encontrarás actualizaciones en tiempo real y la cobertura de
@@ -117,10 +118,10 @@ const News = ({ newsData }) => {
           </p>
         </article>
 
-        <div className="flex flex-wrap gap-y-6 gap-x-20 justify-start pl-3 mt-10 w-full   md:justify-center lg:gap-x-24 lg:mt-16 lg:pl-0 lg:px-[5%] xl:mt-20 xl:gap-y-10 2xl:gap-x-32 ">
-          {newsData?.map((news, i) => (
+        <div className="flex flex-wrap gap-y-6 gap-x-20 justify-start pl-2 mt-10 w-full   md:justify-center lg:gap-x-20 lg:mt-16 lg:pl-0 lg:px-[5%] xl:mt-20 xl:gap-y-9 2xl:gap-x-32 ">
+          {news?.map((news, i) => (
             <div key={i} className="slide">
-              <CardNotice news={news} />
+              <CardNotice news={news} index={i} />
             </div>
           ))}
         </div>
