@@ -41,7 +41,7 @@ const AdminPage = () => {
         <picture className="w-12 h-12 flex items-center justify-center rounded-full xl:h-16 xl:w-16 2xl:w-20 2xl:h-20 ">
           <img className="rounded-full w-full" src={logo} alt="logo" />
         </picture>
-        <ul className="flex gap-6 xl:gap-10 2xl:gap-12">
+        <ul className="flex gap-6  xl:gap-10 2xl:gap-12">
           <li className="text-whiteCustom border-l-2 border-zinc-600 pl-2 xl:pl-3 py-1 hover:scale-105 hover:text-white duration-500 ">
             <Link to={"/"}>Home </Link>
           </li>
@@ -54,7 +54,7 @@ const AdminPage = () => {
         </ul>
       </nav>
 
-      <div className="w-full flex justify-center items-center gap-6 text-lg font-title4 text-zinc-500 mt-6 xl:mt-8 xl:text-xl xl:gap-12 2xl:text-2xl ">
+      <div className="w-full flex justify-center items-center gap-6 text-lg font-medium font-title4 text-zinc-500 mt-6 xl:mt-8 xl:text-xl xl:gap-12 2xl:text-2xl ">
         <button
           onClick={() => setSelectedFormSection("news_form")}
           className={`${

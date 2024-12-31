@@ -13,12 +13,12 @@ const CardAdminNew = ({ notice, onEdit, onDelete }) => {
   };
 
   return (
-    <section className="relative w-full border border-zinc-600 max-w-[370px] rounded-xl flex flex-col justify-center items-center hover:scale-105 duration-500">
-      <figure className="w-full h-40">
+    <section className="relative w-full border border-zinc-600 max-w-[370px] rounded-xl flex flex-col justify-center items-center hover:scale-105 duration-500 ">
+      <figure className="w-full h-44 xl:h-52">
         <Link to={`/news/${_id}`}>
           <img
             loading="lazy"
-            className="w-full h-full rounded-xl object-cover"
+            className="w-full h-full rounded-t-xl object-cover"
             src={!images[0]?.secure_url ? imgFausti : images[0]?.secure_url}
           />
         </Link>
@@ -26,7 +26,7 @@ const CardAdminNew = ({ notice, onEdit, onDelete }) => {
 
       <article className="h-full flex flex-col items-start justify-center gap-1 w-full pb-1 text-balance ">
         <p className="text-lg px-2 py-2  min-h-14 font-title  font-medium text-whiteCustom leading-5 bg-sky-800 w-full">
-          {title.toUpperCase()}
+          {title.toUpperCase() }
         </p>
 
         <span className="px-2 font-text font-medium text-base text-zinc-500 tracking-wide rounded-lg flex justify-start items-center">
