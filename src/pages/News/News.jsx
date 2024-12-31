@@ -18,7 +18,7 @@ const News = () => {
         </Link>
       </nav>
 
-      <section className="h-[75vh] w-full flex justify-center items-start pt-[] relative  lg:justify-start lg:items-start lg:h-[100vh]">
+      <section className="h-[75vh] w-full flex justify-center items-start pt-[] relative  lg:justify-start lg:items-start lg:h-screen">
         <article
           id="box-glass2"
           className="w-full pt-14 pb-4 border-b border-stone-500 rounded-xl flex flex-col justify-center items-center gap-2 z-50 text-center lg:mt-0 lg:w-[50%] xl:w-[40%] lg:items-start  lg:justify-center lg:gap-5 lg:rounded-r-3xl lg:border-stone-200 lg:h-full lg:pl-6 xl:pl-6 2xl:pl-9 2xl:gap-6 lg:z-50 lg:border-r "
@@ -30,7 +30,7 @@ const News = () => {
               className="object-cover object-center w-[3rem] lg:w-[4rem]"
             />
           </figure>
-          <h3 className="font-title text-white text-6xl font-semibold z-50 lg:text-[6rem] lg:w-full lg:-mt-[5rem] lg:text-start  xl:-mt-[9rem] xl:text-[6.2rem]        2xl:text-[8rem] ">
+          <h3 className="font-title text-white text-6xl font-semibold z-50 lg:text-[6rem] lg:w-full lg:-mt-[5rem] lg:text-start  xl:-mt-[9rem] xl:text-[6.2rem]  2xl:text-[8rem] ">
             NOTICIAS
           </h3>
           <p className="font-text2 w-full sm:px-2 mt-2  text-sm text-center text-pretty text-zinc-200 lg:text-lg xl:text-xl lg:pr-3  lg:px-0 lg:self-start lg:text-start  2xl: 2xl:text-2xl">
@@ -103,7 +103,7 @@ const News = () => {
         id="notices_section"
         className="relative w-full min-h-screen pb-20"
       >
-        <article className="mt-9 flex flex-col justify-start pl-3 items-start text-balance lg:items-center text-center lg:pl-0 lg:mt-[3%] ">
+        <article className="mt-9 flex flex-col justify-start pl-3 items-start text-balance lg:items-center text-center lg:pl-0 lg:mt-[4%] ">
           <p className="text-6xl flex items-center gap-3 xl:gap-12  text-zinc-100 font-medium font-title4 lg:text-center lg:text-7xl xl:text-8xl 2xl:text-9xl">
             <span className="hidden lg:flex w-[400px] h-[1px] bg-[#4b718a]"></span>
             noticias
@@ -118,7 +118,7 @@ const News = () => {
           </p>
         </article>
 
-        <div className="flex flex-wrap gap-y-6 gap-x-20 justify-start pl-2 mt-10 w-full   md:justify-center lg:gap-x-24 lg:mt-16 lg:px-40 xl:mt-20 xl:gap-y-9  ">
+        <div className="flex flex-wrap gap-y-6 gap-x-20 justify-start pl-2 mt-10 w-full   md:justify-center lg:gap-x-24 lg:mt-16 lg:px-40 xl:mt-20 xl:gap-y-9 2xl:gap-x-28 2xl:gap-y-10  ">
           {news?.map((news, i) => (
             <div key={i} className="slide">
               <CardNotice news={news} index={i} />
