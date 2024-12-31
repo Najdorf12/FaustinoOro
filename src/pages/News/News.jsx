@@ -12,7 +12,7 @@ const News = () => {
     <main className="bg-zinc-800 w-full relative flex flex-col items-center  overflow-hidden">
       <nav className="w-full absolute top-0 z-[100] flex justify-start items-center  ">
         <Link to={"/"} className="font-title ">
-          <button className="text-white border-b border-white bg-zinc-800 rounded-br-xl px-12 py-2 z-50 xl:text-xl xl:px-14 2xl:px-16 2xl:text-2xl">
+          <button className="text-white  bg-zinc-800 rounded-br-xl px-12 py-2 z-50 xl:text-xl xl:px-14 2xl:px-16 2xl:text-2xl">
             Ir al Inicio
           </button>
         </Link>
