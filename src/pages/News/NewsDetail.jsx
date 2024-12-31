@@ -16,7 +16,7 @@ const NewsDetail = () => {
       setNotice(foundNotice || null); 
     }
   }, [news, id]);
-
+console.log(notice)
   return (
     <>
       <section className="relative w-full min-h-screen bg-zinc-800 flex flex-col overflow-hidden">
@@ -31,7 +31,7 @@ const NewsDetail = () => {
         <div className="w-[95%] h-[30vh] mt-20 self-center md:h-[450px] md:max-w-[900px] md:self-end md:mr-[3%] 2xl:max-w-[1100px] 2xl:h-[530px]">
           <figure className="w-full h-full">
             <img
-              src={imgFausti}
+              src={notice?.images[0].secure_url}
               alt="img-new_fausti"
               className="w-full h-full object-cover object-center rounded-xl border border-zinc-600"
             />
