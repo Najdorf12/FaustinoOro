@@ -4,9 +4,13 @@ import bgNews from "/bg/bg3.jpg";
 import "../../components/Buttons/primaryBtn.css";
 import iconNav from "/iconNav.png";
 import { useAdminData } from "../Admin/AdminDataContext";
+import { useEffect } from "react";
 
 const News = () => {
   const { news } = useAdminData();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <main className="bg-zinc-800 w-full relative flex flex-col items-center  overflow-hidden">
