@@ -5,30 +5,41 @@ import { useAdminData } from "./Admin/AdminDataContext";
 
 const Games = () => {
   const { games, setGames } = useAdminData();
-
+  
   const [selectedGame, setSelectedGame] = useState(null);
   const [game, setGame] = useState(new Chess());
   const [currentMoves, setCurrentMoves] = useState("");
   const [moveIndex, setMoveIndex] = useState(0);
+  
+  useEffect(() => {
+    if (games && games.length > 0) {
+      setSelectedGame(games[0]);
+    }
+  }, [games]);
+  
 
   function obtenerJugadas(pgn) {
-    const limpio = pgn.replace(/\n/g, " ");
-    const jugadas = limpio.replace(/\d+\./g, "").trim().split(/\s+/);
+    const limpio = pgn?.replace(/\n/g, " ");
+    const jugadas = limpio?.replace(/\d+\./g, "").trim().split(/\s+/);
     return jugadas;
   }
 
   // Función que avanza a la siguiente jugada
   const handleMoveNext = () => {
-    const movesArray = obtenerJugadas(selectedGame.pgn); // Obtén el array de jugadas
-    if (moveIndex < movesArray.length) {
-      const newMoves = movesArray.slice(0, moveIndex + 1).join(" "); // Actualiza el string de jugadas
+    if (!selectedGame) {
+      console.error("No hay un juego seleccionado.");
+      return;
+    }
+    const movesArray = obtenerJugadas(selectedGame?.pgn); // Obtén el array de jugadas
+    if (moveIndex < movesArray?.length) {
+      const newMoves = movesArray?.slice(0, moveIndex + 1).join(" "); // Actualiza el string de jugadas
       setCurrentMoves(newMoves); // Actualiza las jugadas actuales
       setMoveIndex(moveIndex + 1); // Aumenta el índice de la jugada
       game.move(movesArray[moveIndex]); // Aplica la jugada en la lógica del ajedrez
     }
   };
   const handleMoveBack = () => {
-    const movesArray = obtenerJugadas(selectedGame.pgn); // Obtén el array de jugadas
+    const movesArray = obtenerJugadas(selectedGame?.pgn); // Obtén el array de jugadas
     if (moveIndex > 0) {
       // Evitar retroceder más allá de la primera jugada
       const newMoves = movesArray.slice(0, moveIndex - 1).join(" "); // Actualiza el string de jugadas
@@ -44,7 +55,8 @@ const Games = () => {
   };
   const handleSelectGame = (partida) => {
     setSelectedGame(partida);
-    const newGame = new Chess(); // Reinicia el estado del juego
+    const newGame = new Chess();
+    console.log(partida) // Reinicia el estado del juego
     setGame(newGame);
     setMoveIndex(0);
     setCurrentMoves(""); // Reinicia las jugadas actuales
