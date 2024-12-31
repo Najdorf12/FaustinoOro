@@ -15,7 +15,7 @@ const CardNotice = ({ news, index }) => {
           {`0${index + 1}`}
         </div>
         <article className="pt-3 text-balance  rounded-b-2xl flex flex-col">
-          <h6 className="text-whiteCustom font-title w-full text-start px-3 text-lg min-h-14   leading-5 py-[3px] lg:min-h-20 lg:pr-9  lg:text-xl xl:max-w-[300px] xl:leading-6  ">
+          <h6 className="text-whiteCustom font-title w-full text-start px-3 max-w-[80%] text-lg min-h-14   leading-5 py-[3px] lg:min-h-20 lg:pr-9  lg:text-xl xl:max-w-[300px] xl:leading-6  ">
          { truncateText(news?.title, 7).toUpperCase()}
           </h6>
           <span className="w-[95%] h-[1px] self-center bg-zinc-700 mt-2 "></span>
