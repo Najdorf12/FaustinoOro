@@ -71,7 +71,7 @@ const Home = () => {
           id="home"
         >
           <article className="w-full relative  flex justify-center items-end pb-[6vh] px-3 lg:justify-end  lg:items-end lg:pb-[5%] lg:pr-[3%]">
-            <h1 className="title-name text-whiteCustom text-center text-6xl  z-50 leading-[5rem] py-3 rounded-xl  lg:text-8xl xl:text-[6.5rem]  2xl:text-[8rem]">
+            <h1 className="title-name text-whiteCustom text-center text-[4rem] z-50 leading-[5.3rem] py-3 rounded-xl  md:text-[5.5rem] xl:text-[6.5rem]  2xl:text-[8rem]">
               FAUSTINO ORO
             </h1>
           </article>
