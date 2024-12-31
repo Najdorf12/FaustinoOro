@@ -88,7 +88,7 @@ const NoticesAndTournaments = () => {
         id="five_section"
         className="relative w-full h-screen overflow-hidden   bg-whiteCustom"
       >
-        <div className="w-full h-full absolute inset-0 z-50   flex flex-col justify-center items-center  text-white lg:justify-evenly lg:items-start">
+        <div className="w-full h-full absolute inset-0 z-50   flex flex-col justify-center items-center  text-white lg:justify-evenly gap-4 md:gap-0 lg:items-start">
           <article className="relative   -mt-14 pl-4 z-[200]  flex flex-col justify-center items-start gap-4 max-w-[600px] lg:gap-5 lg:mt-0 lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:gap-8 xl:pl-10 2xl:gap-10 2xl:pl-14">
             <h6
               id="split"
