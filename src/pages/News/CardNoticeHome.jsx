@@ -1,16 +1,9 @@
 import { Link } from "react-router-dom";
 
 const CardNoticeHome = ({ news, index }) => {
- /*  const truncateText = (text, wordLimit) => {
-    if (!text) return "";
-    const words = text.split(" ");
-    return words.length > wordLimit
-      ? words.slice(0, wordLimit).join(" ") + "..."
-      : text;
-  }; */
 
   return (
-    <Link to={"/news/id"}>
+    <Link to={`/news/${news?._id}`}>
       <div
         id="box-glass"
         className="card2 z-50 group w-[330px] pb-1 pr-1 border border-[#4b718a] border-r-transparent rounded-2xl rounded-br-[21px] hover:scale-105 duration-500 lg:w-[380px] xl:pl-1"
