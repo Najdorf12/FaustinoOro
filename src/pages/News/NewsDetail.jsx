@@ -6,17 +6,18 @@ import imgBg from "/bg/bg3.jpg";
 import { useAdminData } from "../Admin/AdminDataContext";
 
 const NewsDetail = () => {
-  const [notice, setNotice] = useState(null); 
+  const [notice, setNotice] = useState(null);
   const { id } = useParams();
   const { news } = useAdminData();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     if (news && id) {
       const foundNotice = news.find((n) => n._id === id);
-      setNotice(foundNotice || null); 
+      setNotice(foundNotice || null);
     }
   }, [news, id]);
-console.log(notice)
+  
   return (
     <>
       <section className="relative w-full min-h-screen bg-zinc-800 flex flex-col overflow-hidden">
