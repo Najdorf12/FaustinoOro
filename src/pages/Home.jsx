@@ -38,7 +38,7 @@ const Home = () => {
             </label>
             <div
               id="box-glass2"
-              className={`relative flex flex-col items-center self-start pt-28 pb-16 -mt-16  gap-10 w-full text-xl text-whiteCustom border-l-[2px] border-zinc-700 rounded-l-2xl    font-text2  menu lg:items-center lg:justify-end lg:pr-6  lg:mt-0 lg:flex-row lg:border-b-[2px] lg:py-3 z-50 lg:gap-6 lg:border-l-transparent lg:rounded-b-3xl 2xl:gap-8 ${
+              className={`relative flex flex-col items-center self-start pt-28 pb-12 -mt-16  gap-10 w-full text-xl text-whiteCustom border-l-[2px] border-zinc-700 rounded-l-2xl    font-text2  menu lg:items-center lg:justify-end lg:pr-6  lg:mt-0 lg:flex-row lg:border-b-[2px] lg:py-3 z-50 lg:gap-6 lg:border-l-transparent lg:rounded-b-3xl 2xl:gap-8 ${
                 isMenuOpen ? "menu-open " : ""
               }`}
             >

@@ -9,7 +9,7 @@ const CardNotice = ({ news, index }) => {
     <Link to={`/news/${news?._id}`}>
       <div
         id="box-glass"
-        className="card2 group w-[350px] pb-1 pr-1 border border-[#4b718a] border-r-transparent rounded-2xl rounded-br-[21px] hover:scale-105 duration-500 lg:min-h-[275px] lg:w-[430px] xl:w-[470px]  2xl:min-h-[290px] xl:pl-1 2xl:w-[560px]"
+        className="card2 group w-[350px] pb-1 pr-1 border border-[#4b718a] border-r-transparent rounded-2xl rounded-br-[21px] min-h-[260px] hover:scale-105 duration-500 lg:min-h-[275px] lg:w-[430px] xl:w-[470px]  2xl:min-h-[290px] xl:pl-1 2xl:w-[560px]"
       >
         <div className="font-title3 absolute top-[6px] -right-12 text-zinc-700 text-7xl  group-hover:text-white duration-500 2xl:text-[5rem]">
           {`0${index + 1}`}
@@ -23,7 +23,7 @@ const CardNotice = ({ news, index }) => {
           {truncateText(news?.description, 24)}
           </p>
           <p className="mt-1 text-zinc-500 text-balance  font-text2 font-normal text-sm px-3 leading-5 lg:mt-2 2xl:text-base  ">
-            {truncateText(news?.content, 24) + " ..."}
+            {truncateText(news?.content, 20) + " ..."}
           </p>
           <button className="self-end absolute bottom-1 rounded-full h-[37px] w-[37px]  flex justify-center items-center border border-white bg-white group-hover:bg-sky-700  ">
             <i className="bx bx-arrow-back rotate-[145deg]  text-sky-700  text-2xl group-hover:text-white"></i>
