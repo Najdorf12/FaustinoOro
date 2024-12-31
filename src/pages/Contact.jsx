@@ -30,8 +30,8 @@ const Contact = () => {
       ease: "power1",
       scrollTrigger: {
         trigger: "#box-black",
-        start: screen > 1500 ? "100% bottom" : "330% bottom",
-        end: screen > 1500 ? "top 10%" : "330% top",
+        start: screen > 1000 ? "240px bottom" : "450px bottom",
+        end: screen > 1000 ? "240px -100px" : "450px -200px",
         scrub: true,
       },
     });

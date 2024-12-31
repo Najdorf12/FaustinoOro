@@ -124,7 +124,7 @@ export const Knight = (props) => {
       })
       .to(knight.current?.position, {
         x: screen > 1000 ? -1 : -7,
-        y: screen > 1000 ? .3 : -0.6,
+        y: screen > 1000 ? .2 : -0.6,
         z: screen > 1000 ? 12 : 13,
         ease: "power1.inOut",
         scrollTrigger: {
@@ -290,7 +290,3 @@ export const Knight = (props) => {
 };
 
 useGLTF.preload("/scene.gltf");
-/*contact_SECTION  
-   x: screen > 1000 ? -1.3 : -13,
-        y: screen > 1000 ? -0.7 : -4,
-        z: screen > 1000 ? 23 : 14,*/
