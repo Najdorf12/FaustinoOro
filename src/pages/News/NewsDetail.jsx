@@ -42,7 +42,7 @@ const NewsDetail = () => {
           id=""
           className="text-balance    font-normal self-center relative flex flex-col justify-center items-start gap-3 w-[90%]  max-w-[650px] mt-6 text-start md:self-start md:gap-5 md:pl-[5%] lg:max-w-[1000px] lg:mt-16 2xl:mt-16 2xl:max-w-[1200px]"
         >
-          <h6 className="text-whiteCustom  relative font-text2 font-normal z-50 text-2xl md:text-4xl lg:text-6xl 2xl:text-6xl self-start">
+          <h6 className="text-whiteCustom  relative font-text2 font-normal z-50 text-2xl md:text-4xl lg:text-6xl 2xl:text-7xl self-start">
             {notice?.title}
             <div className="w-[90%] h-[1.5px] absolute left-0 -bottom-3 bg-[#4b718a] z-50 lg:-bottom-6"></div>
           </h6>
@@ -50,7 +50,7 @@ const NewsDetail = () => {
             {notice?.description}
           </p>
 
-          <p className="font-title mt-2 text-sm md:text-base text-zinc-500 z-50 lg:w-[80%] lg:text-lg ">
+          <p className="font-title mt-2 text-sm md:text-base text-zinc-500 z-50 lg:w-[80%] lg:text-lg 2xl:text-xl">
             {notice?.content}
           </p>
         </article>
