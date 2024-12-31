@@ -23,15 +23,15 @@ const Contact = () => {
         scrub: true,
       },
     }).to("#box-black", {
-      x: "-120px",
+      x: screen > 1000 ? "-130px" : "-120px",
       rotate: "180deg",
       duration: 4,
       stagger: 1,
       ease: "power1",
       scrollTrigger: {
         trigger: "#box-black",
-        start: screen > 1000 ? "240px bottom" : "450px bottom",
-        end: screen > 1000 ? "240px -100px" : "450px -200px",
+        start: screen > 1000 ? "200px bottom" : "430px bottom",
+        end: screen > 1000 ? "200px -100px" : "430px -200px",
         scrub: true,
       },
     });
@@ -42,7 +42,6 @@ const Contact = () => {
       <section id="games_section" className="">
         <Games />
       </section>
-      {/* <Ritmos /> */}
       <section
         id="box-container"
         className="w-full h-auto z-50 flex pl-[120px] mt-6"
@@ -50,37 +49,37 @@ const Contact = () => {
         <div className="self-end z-50 ">
           <div
             id="box-black"
-            className="w-[120px] h-[120px] border-[1px] border-white "
+            className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] border-[1px] border-white "
           ></div>
-          <div id="box-black" className="w-[120px] h-[120px] bg-white"></div>
+          <div id="box-black" className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] bg-white"></div>
           <div
             id="box-black"
-            className="w-[120px] h-[120px] border-white border-[1px]"
+            className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] border-white border-[1px]"
           ></div>
-          <div id="box-black" className="w-[120px] h-[120px] bg-white"></div>
+          <div id="box-black" className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] bg-white"></div>
         </div>
         <div className="self-end z-50 ">
           <div
             id="box-black"
-            className="w-[120px] h-[120px] border-[1px] border-white "
+            className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] border-[1px] border-white "
           ></div>
-          <div id="box-black" className="w-[120px] h-[120px] bg-white"></div>
+          <div id="box-black" className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] bg-white"></div>
           <div
             id="box-black"
-            className="w-[120px] h-[120px] border-white border-[1px]"
+            className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] border-white border-[1px]"
           ></div>
         </div>
         <div className="self-end z-50 ">
           <div
             id="box-black"
-            className="w-[120px] h-[120px] border-[1px] border-white "
+            className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] border-[1px] border-white "
           ></div>
-          <div id="box-black" className="w-[120px] h-[120px] bg-white"></div>
+          <div id="box-black" className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] bg-white"></div>
         </div>
         <div className="self-end z-50 ">
           <div
             id="box-black"
-            className="w-[120px] h-[120px] border-[1px] border-white "
+            className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] border-[1px] border-white "
           ></div>
         </div>
       </section>
