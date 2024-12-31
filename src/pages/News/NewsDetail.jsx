@@ -1,9 +1,22 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Footer from "../../components/Footer";
+import { useEffect, useState } from "react";
 import imgFausti from "../../assets/img12.jpg";
 import imgBg from "/bg/bg3.jpg";
+import { useAdminData } from "../Admin/AdminDataContext";
 
 const NewsDetail = () => {
+  const [notice, setNotice] = useState(null); 
+  const { id } = useParams();
+  const { news } = useAdminData();
+
+  useEffect(() => {
+    if (news && id) {
+      const foundNotice = news.find((n) => n._id === id);
+      setNotice(foundNotice || null); 
+    }
+  }, [news, id]);
+
   return (
     <>
       <section className="relative w-full min-h-screen bg-zinc-800 flex flex-col overflow-hidden">
@@ -27,29 +40,18 @@ const NewsDetail = () => {
 
         <article
           id=""
-          className="text-balance  font-normal self-center relative flex flex-col justify-center items-center gap-3 w-[90%]  max-w-[650px] mt-6 text-start md:self-start md:gap-5 md:pl-[5%] xl:max-w-[750px] xl:mt-12 2xl:mt-16 2xl:max-w-[900px]"
+          className="text-balance  font-normal self-center relative flex flex-col justify-center items-center gap-3 w-[90%]  max-w-[650px] mt-6 text-start md:self-start md:gap-5 md:pl-[5%] xl:max-w-[1000px] xl:mt-12 2xl:mt-16 2xl:max-w-[900px]"
         >
           <h6 className="text-white  relative font-title4 font-medium z-50 text-2xl md:text-4xl xl:text-5xl 2xl:text-6xl self-start">
-            Faustino consigue otro hito histórico
+            {notice?.title}
             <div className="w-[90%] h-[1.5px] absolute left-0 -bottom-3 bg-white z-50 xl:-bottom-6"></div>
           </h6>
           <p className="font-text2 text-lg  leading-5 mt-4 text-stone-300 md:text-xl xl:text-2xl 2xl:text-3xl 2xl:mt-6">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et,
-            consequatur nobis fuga aut reprehenderit ratione.
+            {notice?.description}
           </p>
 
           <p className="font-title mt-2 text-sm md:text-base text-stone-400  z-50 2xl:text-lg ">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
-            asperiores ut magni, porro possimus temporibus debitis tempore ex
-            expedita provident corrupti rerum minus minima quaerat ducimus. Eos
-            itaque exercitationem dolorum. Soluta voluptas alias eos vel, et
-            sapiente beatae quidem, perspiciatis porro, quam id sequi. Illum
-            corrupti omnis tempore quas repellat corporis, inventore magni ipsam
-            deserunt eligendi aperiam numquam neque temporibus! Officiis atque
-            quo reprehenderit enim doloribus. Fuga amet incidunt blanditiis
-            cupiditate, possimus minima optio molestias at maxime error
-            doloremque officia ipsa obcaecati expedita perferendis tempore. Esse
-            fugiat error laudantium natus!
+            {notice?.content}
           </p>
         </article>
         <div className="w-full h-[30vh] mt-14 md:h-[60vh] xl:mt-16">
