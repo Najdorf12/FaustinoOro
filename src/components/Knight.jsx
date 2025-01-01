@@ -254,7 +254,6 @@ export const Knight = (props) => {
           end: screen > 1000 ? "top top" : "400px top",
           scrub: true,
           immediateRender: false,
-          markers: true,
         },
       })
       .to(knight.current?.rotation, {
