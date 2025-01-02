@@ -1,7 +1,7 @@
-import CardTournament from "../components/CardTournament";
-import { useAdminData } from "./Admin/AdminDataContext";
+import CardTournament from "../../components/CardTournament";
+import { useAdminData } from "../Admin/AdminDataContext";
 
-const Tournaments = ({ screenStats, displayedTournaments, tournaments }) => {
+const TournamentsSection = ({ screenStats, displayedTournaments, tournaments }) => {
   return (
     <>
       <section
@@ -41,4 +41,4 @@ const Tournaments = ({ screenStats, displayedTournaments, tournaments }) => {
     </>
   );
 };
-export default Tournaments;
+export default TournamentsSection;

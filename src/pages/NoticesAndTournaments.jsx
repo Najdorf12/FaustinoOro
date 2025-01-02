@@ -1,5 +1,5 @@
 import SplitType from "split-type";
-import Tournaments from "./Tournaments";
+import TournamentsSection from "./Tournaments/TournamentsSection";
 import CardNoticeHome from "./News/CardNoticeHome";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
@@ -69,17 +69,6 @@ const NoticesAndTournaments = () => {
           scrub: true,
         },
       });
-    /*  .to("#line-stats", {
-        width: "50%",
-        duration: 2,
-        scrollTrigger: {
-          trigger: "#five_section",
-          start: screenStats > 700 ? "50% bottom" : "30% bottom",
-          end: "top top",
-          scrub: true,
-        },
-      })
- */
   }, []);
 
   return (
@@ -130,7 +119,7 @@ const NoticesAndTournaments = () => {
         </div>
       </section>
 
-      <Tournaments
+      <TournamentsSection
         screenStats={screenStats}
         tournaments={tournaments}
         displayedTournaments={displayedTournaments}
