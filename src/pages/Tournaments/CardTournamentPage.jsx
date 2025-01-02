@@ -1,7 +1,7 @@
 const CardTournamentPage = ({ tournament }) => {
   const { title, description, content, location, time, images } = tournament;
   return (
-    <li className="px-3">
+    <li className="px-3 flex flex-col lg:flex-row lg:justify-center lg:items-center lg:gap-3 xl:gap-6">
       <figure className="w-full">
         <img
           className="w-[300px] object-cover object-center"
@@ -9,7 +9,7 @@ const CardTournamentPage = ({ tournament }) => {
           alt="img-tournament"
         />
       </figure>
-      <article className="text-balance font-text2 text-zinc-500 flex flex-col items-start  mt-4 text-xl ">
+      <article className="text-balance font-text2 text-zinc-500 flex flex-col items-start  mt-4 text-xl  lg:max-w-[700px] xl:max-w-[900px]">
         <div className="text-2xl text-whiteCustom bg-sky-800 py-2 pl-3 w-[80%]">
           {title}
         </div>
