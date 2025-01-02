@@ -1,11 +1,12 @@
 import { useAdminData } from "../Admin/AdminDataContext";
+import CardTournamentPage from "./CardTournamentPage";
 import iconNav from "/iconNav.png";
 
 const Tournaments = () => {
   const { tournaments } = useAdminData();
 
   return (
-    <section className="w-full min-h-screen bg-zinc-800">
+    <section className="w-full min-h-screen bg-zinc-800 font-text2">
       <nav className="w-full flex justify-between items-center pt-1  px-4">
         <figure className="w-10 ">
           <img src={iconNav} alt="icon-nav" className="w-full object-center" />
@@ -24,8 +25,10 @@ const Tournaments = () => {
           repudiandae voluptatibus?
         </p>
       </article>
-      <ul>
-        <li className=""></li>
+      <ul className="mt-12 px-3 ">
+        {tournaments?.map((tournament)=>(
+          <CardTournamentPage  tournament={tournament}/>
+        ))}
       </ul>
     </section>
   );
