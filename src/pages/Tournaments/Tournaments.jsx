@@ -25,7 +25,7 @@ const Tournaments = () => {
           repudiandae voluptatibus?
         </p>
       </article>
-      <ul className="mt-12 px-3 ">
+      <ul className="mt-12 flex flex-col items-center gap-y-9 ">
         {tournaments?.map((tournament)=>(
           <CardTournamentPage  tournament={tournament}/>
         ))}
