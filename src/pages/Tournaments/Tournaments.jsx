@@ -1,4 +1,8 @@
+import { useAdminData } from "../Admin/AdminDataContext";
+
 const Tournaments = () => {
+  const { tournaments } = useAdminData();
+
   return (
     <section className="w-full min-h-screen bg-zinc-800">
       <nav>
@@ -17,9 +21,7 @@ const Tournaments = () => {
         </p>
       </article>
       <ul>
-        <li className="">
-
-        </li>
+        <li className=""></li>
       </ul>
     </section>
   );

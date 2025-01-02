@@ -1,4 +1,4 @@
-import CardTournament from "../../components/CardTournament";
+import CardTournamentHome from "./CardTournamentHome";
 import { useAdminData } from "../Admin/AdminDataContext";
 
 const TournamentsSection = ({ screenStats, displayedTournaments, tournaments }) => {
@@ -28,7 +28,7 @@ const TournamentsSection = ({ screenStats, displayedTournaments, tournaments }) 
             {tournaments
               ?.slice(0, displayedTournaments)
               .map((tournament, i) => (
-                <CardTournament
+                <CardTournamentHome
                   screenStats={screenStats}
                   key={i}
                   tournament={tournament}
