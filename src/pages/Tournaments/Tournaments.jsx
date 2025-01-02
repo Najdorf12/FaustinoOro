@@ -1,19 +1,23 @@
 import { useAdminData } from "../Admin/AdminDataContext";
+import iconNav from "/iconNav.png";
 
 const Tournaments = () => {
   const { tournaments } = useAdminData();
 
   return (
     <section className="w-full min-h-screen bg-zinc-800">
-      <nav>
-        <ul>
-          <li>Inicio</li>
-          <li>Noticias</li>
+      <nav className="w-full flex justify-between items-center pt-1  px-4">
+        <figure className="w-10 ">
+          <img src={iconNav} alt="icon-nav" className="w-full object-center" />
+        </figure>
+        <ul className="flex items-center gap-6 text-whiteCustom">
+          <li className="border-l border-zinc-600 pl-2 lg:pl-3">Inicio</li>
+          <li className="border-l border-zinc-600 pl-2 lg:pl-3">Noticias</li>
         </ul>
       </nav>
-      <article>
-        <h6>TORNEOS</h6>
-        <p>
+      <article className="mt-7 flex flex-col px-3 text-balance">
+        <h6 className="text-5xl font-title4 font-medium text-whiteCustom">TORNEOS</h6>
+        <p className="mt-3 text-zinc-500">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
           quae, quibusdam labore itaque magnam totam iure minima harum repellat
           dolore. Officia tempore vero vitae distinctio labore excepturi culpa
