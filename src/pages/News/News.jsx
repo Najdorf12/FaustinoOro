@@ -44,7 +44,7 @@ const News = () => {
             {/*   */}
           </p>
           <div className="flex justify-center w-full items-center mt-3 gap-4 lg:justify-start lg:gap-6  xl:mt-6 xl:gap-7 ">
-            <Link to={"/"}>
+            <a href="#notices_section">
               <button className="animated-button bg-whiteCustom rounded-3xl w-[190px] pl-9 shadow-lg shadow-zinc-900 border border-zinc-500 lg:w-[200px] py-1 2xl:w-[230px] group">
                 <i className="bx bx-right-arrow-alt arr-2 text-3xl  text-sky-600 2xl:text-4xl"></i>
                 <span className="text font-title2  text-base 2xl:text-lg text-zinc-800 group-hover:text-whiteCustom">
@@ -53,8 +53,8 @@ const News = () => {
                 <span className="circle bg-zinc-700"></span>
                 <i className="bx bx-right-arrow-alt arr-1 text-3xl  text-sky-600 2xl:text-4xl"></i>
               </button>
-            </Link>
-            <Link to={"#notices_section"}>
+            </a>
+            <Link to={"/tournaments"}>
               <button className="animated-button bg-zinc-800 rounded-3xl w-[190px] pl-9 shadow-lg shadow-zinc-900 border border-zinc-600 lg:w-[200px] py-1 2xl:w-[230px] group">
                 <i className="bx bx-right-arrow-alt arr-2 text-3xl  text-sky-600 2xl:text-4xl"></i>
                 <span className="text font-title2  text-base 2xl:text-lg text-zinc-400 group-hover:text-whiteCustom">
