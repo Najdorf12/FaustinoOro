@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import CardNotice from "./CardNotice";
-import bgNews from "/bg/bg3.jpg";
+import bgNews from "/bg/bg3.webp";
 import "../../components/Buttons/primaryBtn.css";
 import iconNav from "/iconNav.png";
 import { useAdminData } from "../Admin/AdminDataContext";
@@ -37,7 +37,7 @@ const News = () => {
           <h3 className="font-title text-white text-6xl font-semibold z-50 lg:text-[6rem] lg:w-full lg:-mt-[5rem] lg:text-start  xl:-mt-[9rem] xl:text-[6.2rem]  2xl:text-[8rem] ">
             NOTICIAS
           </h3>
-          <p className="font-text2 w-full sm:px-2 mt-2  text-sm text-center text-pretty text-zinc-200 lg:text-lg xl:text-xl lg:pr-3  lg:px-0 lg:self-start lg:text-start  2xl: 2xl:text-2xl">
+          <p className="font-text2 w-full sm:px-2 mt-2  text-sm text-center text-pretty text-zinc-300 lg:text-lg xl:text-xl lg:pr-3  lg:px-0 lg:self-start lg:text-start  2xl: 2xl:text-2xl">
             Bienvenidos a la sección de noticias de Faustino Oro, <br />
             donde compartimos sus logros, próximas competencias <br />y momentos
             clave en su carrera de ajedrez.
@@ -70,22 +70,22 @@ const News = () => {
           <img
             src={bgNews}
             alt="bg-news"
-            className="w-full h-full object-cover object-center  lg:rounded-b-2xl  z-40 "
+            className="w-full h-full object-cover object-center rounded-b-2xl  z-40 "
           />
         </figure>
       </section>
 
-      <section className="relative z-50 w-full py-12 xl:pt-12 xl:pb-20">
-        <article className="flex flex-col h-full px-3 items-center justify-start gap-3 mt-8  text-balance  lg:self-center lg:mt-12 lg:gap-8 xl:gap-12 xl:mt-16 2xl:mt-24 2xl:gap-14">
+      <section className="relative z-50 w-full py-16 xl:pt-12 xl:pb-20 xl:mt-16 2xl:mt-24 2xl:pb-28">
+        <article className="flex flex-col h-full px-3 items-center justify-start gap-3  text-balance  lg:self-center lg:gap-8 xl:gap-12 2xl:gap-14">
           <p className="z-50 font-title4 w-full text-xl text-zinc-100 text-center xl:max-w-[1000px] lg:text-3xl xl:text-4xl  2xl:text-5xl 2xl:max-w-[1400px] ">
             Explora actualizaciones sobre sus avances y eventos especiales.
           </p>
 
           <article
             id="box-glass2"
-            className="z-50 relative pt-3 pb-8 md:pb-9 px-3  rounded-xl border border-zinc-700 max-w-[500px] flex justify-center items-center xl:max-w-[780px] xl:pt-4 xl:pb-12 xl:mt-1 2xl:max-w-[970px]  2xl:pb-14 2xl:pt-6"
+            className="z-50 relative pt-3 pb-8 md:pb-9 px-3  rounded-xl border border-zinc-700 max-w-[600px] flex justify-center items-center md:mt-3 xl:max-w-[700px] xl:pt-4 xl:pb-12 xl:mt-1 2xl:max-w-[870px]  2xl:pb-12 2xl:pt-6"
           >
-            <p className="text-base text-zinc-500 font-text2 text-balance text-center font-normal  md:text-base md:px-2 lg:text-xl xl:text-2xl 2xl:text-3xl">
+            <p className="text-base text-zinc-500 font-text2 text-balance text-center font-normal  md:text-lg md:px-2 lg:text-lg xl:text-xl 2xl:text-2xl">
               Con
               <span className="text-sky-400">
                 {" "}
@@ -122,7 +122,7 @@ const News = () => {
           </p>
         </article>
 
-        <div className="flex flex-wrap gap-y-6 gap-x-20 justify-start pl-2 mt-10 w-full   md:justify-center lg:gap-x-24 lg:mt-16 lg:px-40 xl:mt-20 xl:gap-y-9 2xl:gap-x-28 2xl:gap-y-10  ">
+        <div className="flex flex-wrap gap-y-6 gap-x-20 justify-start pl-2 mt-10 w-full   md:justify-center lg:gap-x-28 lg:mt-16 lg:px-40 xl:mt-20 lg:gap-y-10 2xl:gap-x-28 2xl:gap-y-14  ">
           {news?.map((news, i) => (
             <div key={i} className="slide">
               <CardNotice news={news} index={i} />
