@@ -10,10 +10,10 @@ const Gallery = () => {
     <>
       <section
         id="third_section"
-        className="pt-10 w-full h-[580px] md:h-[95vh]  font-title relative flex items-start overflow-hidden xl:pt-[4%]  2xl:pt-0 2xl:justify-start 2xl:h-[85vh]"
+        className="pt-10 w-full h-[580px] xl:h-[90vh]  font-title relative flex items-start overflow-hidden xl:pt-[4%]  2xl:pt-0 2xl:justify-start 2xl:h-[85vh]"
       >
         <article className="h-full relative pt-2 pl-3 sm:px-2  gap-3 z-40 sm:max-w-[400px] md:max-w-[70%] sm:pl-6  md:ml-[3%] lg:ml-[4%]  2xl:pt-0  2xl:mt-16  text-balance">
-          <h3 className="mt-1 font-title text-balance  max-w-[380px] text-stone-600 font-bold text-[3.7rem] leading-[1] z-50  md:max-w-[800px] md:text-[5rem] xl:text-[13.5vh] lg:max-w-[1000px]  2xl:max-w-[1200px] 2xl:text-[13vh]">
+          <h3 className="mt-1 font-title text-balance  max-w-[380px] text-stone-600 font-bold text-[3.7rem] leading-[1] z-50  md:max-w-[800px] md:text-[5rem] lg:text-[5.4rem] xl:text-[13.5vh] lg:max-w-[1100px]  2xl:max-w-[1200px] 2xl:text-[13vh]">
             EL ÉXITO OCURRE CUANDO 
             <span className="text-white">
               TUS SUEÑOS SON MAS GRANDES{" "}
