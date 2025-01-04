@@ -5,7 +5,7 @@ import CardTournament from "./CardTournament";
 import { useAdminData } from "../AdminDataContext";
 
 const TournamentsForm = () => {
-  const { tournaments, setTournaments } = useAdminData(); // Acceso al contexto
+  const { tournaments, setTournaments } = useAdminData();
   const {
     handleSubmit,
     register,
@@ -26,7 +26,7 @@ const TournamentsForm = () => {
         content: tournamentSelected.content,
         location: tournamentSelected.location,
         time: tournamentSelected.time,
-        images,
+        images: tournamentSelected.images,
       });
     } else {
       reset({
@@ -36,6 +36,7 @@ const TournamentsForm = () => {
         content: "",
         location: "",
         time: "",
+        images: "",
       });
     }
   }, [tournamentSelected]);
@@ -76,6 +77,7 @@ const TournamentsForm = () => {
   };
 
   const submit = (data) => {
+    console.log("submitdata",data)
     if (tournamentSelected) {
       editTournament(data);
     } else {
@@ -90,7 +92,7 @@ const TournamentsForm = () => {
       axios
         .post("/tournaments", newTournament)
         .then((res) => {
-          setTournaments((prevTournaments) => [...prevTournaments, res.data]); // Actualiza el contexto
+          setTournaments((prevTournaments) => [...prevTournaments, res.data]); 
         })
         .catch((error) => console.error(error));
     }
@@ -101,7 +103,7 @@ const TournamentsForm = () => {
 
   const editTournament = (tournament) => {
     axios
-      .put(`/tournaments/${tournament._id}`, tournament)
+      .put(`/tournaments/${tournament?._id}`, tournament)
       .then((res) => {
         setTournaments((prevTournaments) =>
           prevTournaments.map((item) =>
@@ -237,7 +239,7 @@ const TournamentsForm = () => {
             </div>
 
             <div className="flex flex-col items-center gap-5 ">
-              <label className="font-light text-zinc-400 text-xl">
+              <label className="font-light text-zinc-500 text-xl font-text">
                 Imágenes
               </label>
               <input
@@ -245,7 +247,7 @@ const TournamentsForm = () => {
                 name="image"
                 accept=".jpg, .png, .jpeg"
                 onChange={(e) => handleImage(e)}
-                className=" rounded-lg flex-1  appearance-none w-[90%] max-w-[400px] py-2 px-4 border border-zinc-400 text-whiteCustom placeholder-white text-sm focus:outline-none focus:border-transparent"
+                className=" rounded-lg flex-1  appearance-none w-full  max-w-[400px] py-2 px-4 border border-zinc-600 text-white placeholder-white text-sm focus:outline-none focus:border-transparent"
               />
               {loadingImage ? (
                 <h3>Cargando imagen...</h3>
@@ -256,7 +258,7 @@ const TournamentsForm = () => {
                       <button
                         type="button"
                         onClick={() => handleDeleteImage(img)}
-                        className="absolute right-0 px-2 border-2 border-zinc-400  flex items-center rounded-sm font-bold text-whiteCustom bg-red-700"
+                        className="absolute right-0 px-2 border-2 border-zinc-600  flex items-center rounded-sm font-bold text-white bg-red-700"
                       >
                         X
                       </button>
@@ -286,7 +288,10 @@ const TournamentsForm = () => {
             <CardTournament
               key={tournament._id}
               tournament={tournament}
-              onEdit={() => setTournamentSelected(tournament)}
+              onEdit={() => {
+                console.log(tournamentSelected)
+                setTournamentSelected(tournament)
+              }}
               onDelete={() => deleteTournament(tournament._id)}
             />
           ))}

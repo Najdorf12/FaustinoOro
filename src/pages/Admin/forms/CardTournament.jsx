@@ -16,13 +16,13 @@ const CardTournament = ({ tournament, onEdit, onDelete }) => {
   return (
     <>
       (
-      <section className="relative w-full  border-b border-zinc-600 max-w-[370px] rounded-xl flex flex-col justify-center items-center hover:scale-105 duration-500">
-        <figure className="w-full h-40">
-          <Link /* to={`/tournaments/${_id}`} */>
+      <section className="relative w-full  border border-zinc-600 max-w-[370px] rounded-xl flex flex-col justify-center items-center hover:scale-105 duration-500">
+        <figure className="w-full h-56 flex justify-center p-2">
+          <Link to={`/tournaments/`}>
             <img
               loading="lazy"
-              className="w-full h-full rounded-xl object-contain"
-              src={!images[0]?.secure_url ? imgFausti : images[0]?.secure_url}
+              className="w-full h-full rounded-xl object-cover max-w-[250px]"
+              src={images[0]?.secure_url ? images[0]?.secure_url : imgFausti}
             />
           </Link>
         </figure>
@@ -41,17 +41,7 @@ const CardTournament = ({ tournament, onEdit, onDelete }) => {
             {isExpanded ? description : truncateText(description, 150)}
           </p>
 
-          <p className="pl-2 font-medium text-sm text-zinc-600">
-            {isExpanded ? content : truncateText(content, 100)}
-            {content.length > 100 && (
-              <span
-                onClick={toggleExpand}
-                className="cursor-pointer text-sky-800 ml-1 hover:text-whiteCustom hover:underline"
-              >
-                {isExpanded ? "Ver menos" : "Ver más"}
-              </span>
-            )}
-          </p>
+          <p className="pl-2 font-medium text-sm text-zinc-600">{content}</p>
 
           <div className="w-full mt-4 mb-1">
             <section className="flex justify-evenly items-center text-sky-800 mr-2">

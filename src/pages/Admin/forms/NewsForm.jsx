@@ -7,7 +7,6 @@ import { useAdminData } from "../AdminDataContext";
 
 const NewsForm = () => {
   const { news, setNews } = useAdminData(); // Acceso al contexto
-  console.log(news)
   const {
     handleSubmit,
     register,
@@ -272,7 +271,10 @@ const NewsForm = () => {
             <CardAdminNew
               key={item._id}
               notice={item}
-              onEdit={() => setNoticeSelected(item)}
+              onEdit={() => {
+                setNoticeSelected(item)
+                console.log(noticeSelected)
+              }}
               onDelete={() => deleteNotice(item._id)}
             />
           ))}
