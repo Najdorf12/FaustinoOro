@@ -228,7 +228,6 @@ const About = () => {
             <ul className="relative w-full mt-6  flex flex-col-reverse gap-2 font-text2 xl:gap-4  xl:mt-[24px]  2xl:text-[1.3rem] text-zinc-500 text-start ">
               {palmares.map((item, i) => (
                 <li
-                  id="box-glass"
                   key={i}
                   className="border border-stone-400   flex items-center gap-2 lg:gap-3 py-1 px-[4px] sm:pr-[3px] lg:pl-2  rounded-2xl  max-w-[95%] xl:max-w-[80%]"
                 >
@@ -266,7 +265,7 @@ const About = () => {
           >
             {"Soy Faustino Oro. Nací en Buenos Aires, Argentina, el 14 de octubre de 2013".toUpperCase()}
           </h3>
-          <div className="w-[90%] h-[2px] bg-stone-400 lg:bg-stone-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"></div>
+          <div className="w-[98%] h-[2px] bg-stone-400 md:w-[90%] lg:bg-stone-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"></div>
           <p
             id="sobreMi2-text"
             className="relative text-zinc-500 lg:text-stone-500 w-full  mt-[24px]  text-base  font-text2   xl:text-lg   2xl:text-[1.4rem] 2xl:w-full "
