@@ -26,17 +26,17 @@ const Tournaments = () => {
         </ul>
       </nav>
       <article className="mt-10 flex flex-col px-3 text-center text-pretty lg:pl-20 lg:mt-12 lg:items-center">
-        <h6 className="text-5xl font-title4 font-medium text-whiteCustom lg:text-6xl xl:text-8xl 2xl:text-8xl">
+        <h6 className="text-5xl font-title4 font-medium text-whiteCustom lg:text-7xl xl:text-8xl 2xl:text-9xl">
           TORNEOS
         </h6>
-        <p className="mt-3 text-zinc-500 lg:mt-5 lg:text-lg lg:max-w-[700px] 2xl:text-xl">
+        <p className="mt-3 text-zinc-500 lg:mt-5 lg:text-lg max-w-[700px] 2xl:text-xl 2xl:max-w-[800px]">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
           quae, quibusdam labore itaque magnam totam iure minima harum repellat
           dolore. Officia tempore vero vitae distinctio labore excepturi culpa
           repudiandae voluptatibus?
         </p>
       </article>
-      <ul className="mt-14 flex flex-col items-center gap-y-12 lg:gap-y-16 lg:mt-24 ">
+      <ul className="mt-14 flex flex-col items-center gap-y-12 lg:gap-y-16 lg:mt-24 2xl:gap-y-20">
         {tournaments?.map((tournament) => (
           <CardTournamentPage tournament={tournament} />
         ))}
