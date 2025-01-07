@@ -29,7 +29,7 @@ const Tournaments = () => {
         <h6 className="text-5xl font-title4 font-medium text-whiteCustom lg:text-7xl xl:text-8xl 2xl:text-9xl">
           TORNEOS
         </h6>
-        <p className="mt-3 text-zinc-500 lg:mt-5 lg:text-lg max-w-[700px] 2xl:text-xl 2xl:max-w-[800px]">
+        <p className="mt-3 text-zinc-500 lg:mt-5 lg:text-lg max-w-[700px] 2xl:text-2xl 2xl:max-w-[900px]">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
           quae, quibusdam labore itaque magnam totam iure minima harum repellat
           dolore. Officia tempore vero vitae distinctio labore excepturi culpa
