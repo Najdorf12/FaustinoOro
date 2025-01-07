@@ -43,7 +43,7 @@ const News = () => {
             clave en su carrera de ajedrez.
             {/*   */}
           </p>
-          <div className="flex justify-center w-full items-center mt-3 gap-4 lg:justify-start lg:gap-6  xl:mt-6 xl:gap-7 ">
+          <div className="flex justify-center w-full items-center mt-3 gap-4 lg:justify-start lg:gap-6  xl:mt-6 xl:gap-7 2xl:gap-9 ">
             <a href="#notices_section">
               <button className="animated-button bg-whiteCustom rounded-3xl w-[190px] pl-9 shadow-lg shadow-zinc-900 border border-zinc-500 lg:w-[200px] py-1 2xl:w-[230px] group">
                 <i className="bx bx-right-arrow-alt arr-2 text-3xl  text-sky-600 2xl:text-4xl"></i>

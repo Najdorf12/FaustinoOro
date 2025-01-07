@@ -10,7 +10,7 @@ const CardTournamentPage = ({ tournament }) => {
         />
       </figure>
       <article className="text-balance font-text2 text-zinc-500 flex flex-col items-start gap-1  mt-4 text-lg lg:text-xl  lg:mt-0 lg:gap-2 lg:max-w-auto xl:w-[700px] 2xl:w-[800px] 2xl:text-2xl">
-        <div className="text-2xl lg:text-3xl  text-whiteCustom pl-3 w-full border-[2px] border-sky-700  rounded-lg py-2 ">
+        <div className="text-2xl lg:text-3xl  text-whiteCustom pl-3 w-full border-b-[2px] border-r-[2px] border-zinc-700  rounded-lg py-2 ">
           {title.toUpperCase()}
         </div>
         <div className="mt-2 flex justify-center items-center gap-2 lg:gap-3">
