@@ -105,7 +105,7 @@ const News = () => {
 
       <section
         id="notices_section"
-        className="relative w-full min-h-screen pb-20"
+        className="relative w-full min-h-screen pb-20 lg:pb-32"
       >
         <article className="mt-9 flex flex-col justify-start pl-3 items-start text-balance lg:items-center text-center lg:pl-0 lg:mt-[4%] ">
           <p className="text-6xl flex items-center gap-3 xl:gap-12  text-zinc-100 font-medium font-title4 lg:text-center lg:text-7xl xl:text-8xl 2xl:text-9xl">
@@ -130,6 +130,10 @@ const News = () => {
           ))}
         </div>
       </section>
+      <div className="absolute w-full bottom-0 flex justify-center items-center gap-2 mb-1 font-title text-sm 2xl:text-base text-zinc-600 z-50  mt-12 lg:mt-9">
+          <i className="bx bx-copyright text-lg"></i>
+          <span>Faustino Oro </span>
+        </div>
     </main>
   );
 };

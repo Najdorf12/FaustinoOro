@@ -7,7 +7,7 @@ const Tournaments = () => {
   const { tournaments } = useAdminData();
 
   return (
-    <section className="overflow-hidden w-full min-h-screen bg-zinc-800 font-text2 pb-12 lg:pb-40">
+    <section className="relative overflow-hidden w-full min-h-screen bg-zinc-800 font-text2 pb-12 lg:pb-40">
       <nav className="w-full flex justify-between items-center pt-1 px-4 lg:pt-2 lg:px-12 xl:pt-3 xl:px-16">
         <figure className="w-10 lg:w-12">
           <img src={iconNav} alt="icon-nav" className="w-full object-center" />
@@ -41,6 +41,10 @@ const Tournaments = () => {
           <CardTournamentPage tournament={tournament} />
         ))}
       </ul>
+      <div className="absolute w-full bottom-0 flex justify-center items-center gap-2 mb-1 font-title text-sm 2xl:text-base text-zinc-600 z-50  mt-12 lg:mt-9">
+          <i className="bx bx-copyright text-lg"></i>
+          <span>Faustino Oro </span>
+        </div>
     </section>
   );
 };
