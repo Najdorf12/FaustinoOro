@@ -9,7 +9,7 @@ const NewsDetail = () => {
   const [notice, setNotice] = useState(null);
   const { id } = useParams();
   const { news } = useAdminData();
-console.log(notice)
+
   useEffect(() => {
     window.scrollTo(0, 0);
     if (news && id) {
