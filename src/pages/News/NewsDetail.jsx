@@ -9,7 +9,7 @@ const NewsDetail = () => {
   const [notice, setNotice] = useState(null);
   const { id } = useParams();
   const { news } = useAdminData();
-
+console.log(notice)
   useEffect(() => {
     window.scrollTo(0, 0);
     if (news && id) {
@@ -30,9 +30,9 @@ const NewsDetail = () => {
         </nav>
 
         <div className="w-[95%] h-[30vh] mt-20 self-center md:h-[450px] md:max-w-[900px] md:self-end md:mr-[3%] lg:h-[500px] 2xl:max-w-[1100px] 2xl:h-[570px]">
-          <figure className="w-full h-full">
+          <figure className="w-full h-full"> 
             <img
-              src={notice?.images[0].secure_url}
+              src={notice?.images[0]?.secure_url ? notice?.images[0]?.secure_url : imgFausti }
               alt="img-new_fausti"
               className="w-full h-full object-cover object-center rounded-xl border border-zinc-600"
             />
