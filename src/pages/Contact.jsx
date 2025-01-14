@@ -3,6 +3,7 @@ import Games from "./Games";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import xlogo from "/xlogo.png";
 import { useLayoutEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -121,9 +122,11 @@ const Contact = () => {
                 <i className="bx bxl-youtube"></i>
               </li>
             </Link>
-            <Link to="https://www.twitch.tv/faustichess" target="_blank">
+            <Link to="https://x.com/FaustiOro" target="_blank">
               <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-[#4b718a]">
-                <i className="bx bxl-twitch"></i>
+                <img src={xlogo} alt="xlogo" 
+                className="w-[32px] h-[32px] xl:w-[40px] xl:h-[40px]"
+                />
               </li>
             </Link>
             <Link to="https://www.instagram.com/faustioro/" target="_blank">
