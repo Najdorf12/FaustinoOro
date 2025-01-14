@@ -8,21 +8,15 @@ import { Canvas } from "@react-three/fiber";
 import { ReactLenis } from "lenis/react";
 import { Suspense } from "react";
 
-
-
 function FaustinoApp() {
-  /*   const lenis = useLenis(({ scroll }) => {
-    // called every scroll
-  }); */
-
   return (
     <ReactLenis root>
       <main className="relative w-full min-h-screen overflow-hidden bg-zinc-800">
         <div className="w-full h-screen fixed z-30 overflow-hidden lg:block">
           <Canvas>
-          <Suspense fallback={null}>
-            <Experience />
-          </Suspense>
+            <Suspense fallback={null}>
+              <Experience />
+            </Suspense>
           </Canvas>
         </div>
 

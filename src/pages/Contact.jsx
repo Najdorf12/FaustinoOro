@@ -1,6 +1,6 @@
 import ContactForm from "../components/ContactForm";
 import Games from "./Games";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect } from "react";
@@ -51,19 +51,28 @@ const Contact = () => {
             id="box-black"
             className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] border-[1px] border-white "
           ></div>
-          <div id="box-black" className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] bg-white"></div>
+          <div
+            id="box-black"
+            className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] bg-white"
+          ></div>
           <div
             id="box-black"
             className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] border-white border-[1px]"
           ></div>
-          <div id="box-black" className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] bg-white"></div>
+          <div
+            id="box-black"
+            className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] bg-white"
+          ></div>
         </div>
         <div className="self-end z-50 ">
           <div
             id="box-black"
             className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] border-[1px] border-white "
           ></div>
-          <div id="box-black" className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] bg-white"></div>
+          <div
+            id="box-black"
+            className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] bg-white"
+          ></div>
           <div
             id="box-black"
             className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] border-white border-[1px]"
@@ -74,7 +83,10 @@ const Contact = () => {
             id="box-black"
             className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] border-[1px] border-white "
           ></div>
-          <div id="box-black" className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] bg-white"></div>
+          <div
+            id="box-black"
+            className="w-[120px] h-[120px] xl:w-[130px] xl:h-[130px] bg-white"
+          ></div>
         </div>
         <div className="self-end z-50 ">
           <div
@@ -93,36 +105,38 @@ const Contact = () => {
             CONTACTO
           </h3>
           <p className="text-[#4b718a] text-center text-pretty px-2  max-w-[410px] font-text2 text-xl leading-5 mt-5  2xl:mt-6 xl:text-xl xl:max-w-[500px] 2xl:max-w-[550px] 2xl:text-2xl z-50">
-          Faustino Oro quiere escucharte.
+            Faustino Oro quiere escucharte.
             <span className="text-zinc-600 mx-1">
-            Ponte en contacto para invitarlo a eventos, colaboraciones o simplemente para alentarlo en su carrera.
+              Ponte en contacto para invitarlo a eventos, colaboraciones o
+              simplemente para alentarlo en su carrera.
             </span>
-           
           </p>
-
           <ContactForm />
         </article>
 
         <footer className="w-full mt-6 lg:mt-1 lg:w-[50%] xl:mt-5 2xl:mt-6 z-50">
           <ul className="flex gap-8 justify-center items-center text-whiteCustom text-4xl xl:text-5xl xl:gap-12  ">
-            <Link to="https://www.youtube.com/@faustichess" target="_blank" >
+            <Link to="https://www.youtube.com/@faustichess" target="_blank">
               <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-[#4b718a]">
                 <i className="bx bxl-youtube"></i>
               </li>
             </Link>
-            <Link to="https://www.twitch.tv/faustichess" target="_blank" >
+            <Link to="https://www.twitch.tv/faustichess" target="_blank">
               <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-[#4b718a]">
                 <i className="bx bxl-twitch"></i>
               </li>
             </Link>
-            <Link to="https://www.instagram.com/faustioro/" target="_blank" >
+            <Link to="https://www.instagram.com/faustioro/" target="_blank">
               <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-[#4b718a]">
                 <i className="bx bxl-instagram-alt"></i>
               </li>
             </Link>
-            <Link to="https://www.facebook.com/profile.php?id=100089778504647" target="_blank">
+            <Link
+              to="https://www.facebook.com/profile.php?id=100089778504647"
+              target="_blank"
+            >
               <li className="hover:scale-110 duration-500 cursor-pointer z-50 hover:text-[#4b718a]">
-              <i className='bx bxl-facebook-circle'></i>
+                <i className="bx bxl-facebook-circle"></i>
               </li>
             </Link>{" "}
           </ul>

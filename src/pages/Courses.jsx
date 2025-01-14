@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import imgBg from "/bg/bg3.jpg";
+import Footer from "../components/Footer";
 
 const Courses = () => {
   return (
@@ -20,6 +20,7 @@ const Courses = () => {
           </button>
         </Link>
       </section>
+      <Footer />
     </>
   );
 };
