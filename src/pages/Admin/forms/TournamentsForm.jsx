@@ -74,39 +74,43 @@ const TournamentsForm = () => {
     }
   }
 
-  const handleDeleteImage = (event) => {
-    setImages(images.filter((e) => e !== event));
+  const handleDeleteImage = (img) => {
+    setImages(images.filter((image) => image.public_id !== img.public_id));
+  
+    axios.delete(`/tournaments/delete-image/${encodeURIComponent(img.public_id)}`)
+    .then(() => console.log("Imagen eliminada de Cloudinary"))
+    .catch((error) => console.error("Error al eliminar imagen de Cloudinary", error));
   };
 
   const submit = (data) => {
     const tournamentData = {
       ...data,
-      images, // Adjuntar imágenes actuales
+      images: images.length > 0 ? images : tournamentSelected?.images || [],  // Si no hay imágenes nuevas, conserva las anteriores
     };
-
+  
     if (tournamentSelected) {
+      // Solo pasa las imágenes si se han subido nuevas
       editTournament(tournamentData);
     } else {
       axios
         .post("/tournaments", tournamentData)
         .then((res) => {
-          setTournaments((prevTournaments) => [...prevTournaments, res.data]);
+          setTournaments((prevTourn) => [...prevTourn, res.data]);
         })
         .catch((error) => console.error(error));
     }
-
     setTournamentSelected(null);
     reset();
     setImages([]); // Limpiar imágenes después de enviar
     alert("TORNEO CREADO EXITOSAMENTE");
   };
-
+  
   const editTournament = (tournament) => {
     axios
-      .put(`/tournaments/${tournament?._id}`, tournament)
+      .put(`/tournaments/${tournament._id}`, tournament)
       .then((res) => {
-        setTournaments((prevTournaments) =>
-          prevTournaments.map((item) =>
+        setTournaments((prevTourn) =>
+          prevTourn.map((item) =>
             item._id === res.data._id ? res.data : item
           )
         );
@@ -114,7 +118,7 @@ const TournamentsForm = () => {
       })
       .catch((error) => console.error(error));
   };
-
+  
   const deleteTournament = (id) => {
     axios
       .delete(`/tournaments/${id}`)
