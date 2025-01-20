@@ -29,6 +29,7 @@ const NewsForm = () => {
         isActive: noticeSelected.isActive,
         images: noticeSelected.images
       });
+      setImages(noticeSelected.images || []);
     } else {
       reset({
         _id: "",
@@ -39,6 +40,7 @@ const NewsForm = () => {
         category: "",
         images:""
       });
+      setImages([]); 
     }
   }, [noticeSelected]);
 
@@ -73,34 +75,29 @@ const NewsForm = () => {
     }
   }
 
-  const handleDeleteImage = (event) => {
-    setImages(images.filter((e) => e !== event));
-  };
-
   const submit = (data) => {
+    const noticeData = {
+      ...data,
+      images: images.length > 0 ? images : noticeSelected?.images || [],  // Si no hay imágenes nuevas, conserva las anteriores
+    };
+  
     if (noticeSelected) {
-      editNotice(data);
+      // Solo pasa las imágenes si se han subido nuevas
+      editNotice(noticeData);
     } else {
-      const newNotice = {
-        title: data.title,
-        description: data.description,
-        content: data.content,
-        category: data.category,
-        isActive: data.isActive,
-        images,
-      };
       axios
-        .post("/news", newNotice)
+        .post("/news", noticeData)
         .then((res) => {
-          setNews((prevNews) => [...prevNews, res.data]); // Actualiza el contexto
+          setNews((prevNews) => [...prevNews, res.data]);
         })
         .catch((error) => console.error(error));
     }
     setNoticeSelected(null);
     reset();
+    setImages([]); // Limpiar imágenes después de enviar
     alert("NOTICIA CREADA EXITOSAMENTE");
   };
-
+  
   const editNotice = (notice) => {
     axios
       .put(`/news/${notice._id}`, notice)
@@ -113,6 +110,14 @@ const NewsForm = () => {
         setNoticeSelected(null);
       })
       .catch((error) => console.error(error));
+  };
+  
+  const handleDeleteImage = (img) => {
+    setImages(images.filter((image) => image.public_id !== img.public_id));
+  
+    axios.delete(`/news/delete-image/${encodeURIComponent(img.public_id)}`)
+    .then(() => console.log("Imagen eliminada de Cloudinary"))
+    .catch((error) => console.error("Error al eliminar imagen de Cloudinary", error));
   };
 
   const deleteNotice = (id) => {
