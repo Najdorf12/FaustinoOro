@@ -28,6 +28,7 @@ const TournamentsForm = () => {
         time: tournamentSelected.time,
         images: tournamentSelected.images,
       });
+      setImages(tournamentSelected.images || []); // Sincronizar imágenes
     } else {
       reset({
         _id: "",
@@ -38,6 +39,7 @@ const TournamentsForm = () => {
         time: "",
         images: "",
       });
+      setImages([]); // Limpiar imágenes cuando no hay torneo seleccionado
     }
   }, [tournamentSelected]);
 
@@ -77,27 +79,25 @@ const TournamentsForm = () => {
   };
 
   const submit = (data) => {
-    console.log("submitdata",data)
+    const tournamentData = {
+      ...data,
+      images, // Adjuntar imágenes actuales
+    };
+
     if (tournamentSelected) {
-      editTournament(data);
+      editTournament(tournamentData);
     } else {
-      const newTournament = {
-        title: data.title,
-        description: data.description,
-        content: data.content,
-        location: data.location,
-        time: data.time,
-        images,
-      };
       axios
-        .post("/tournaments", newTournament)
+        .post("/tournaments", tournamentData)
         .then((res) => {
-          setTournaments((prevTournaments) => [...prevTournaments, res.data]); 
+          setTournaments((prevTournaments) => [...prevTournaments, res.data]);
         })
         .catch((error) => console.error(error));
     }
+
     setTournamentSelected(null);
     reset();
+    setImages([]); // Limpiar imágenes después de enviar
     alert("TORNEO CREADO EXITOSAMENTE");
   };
 
@@ -253,21 +253,20 @@ const TournamentsForm = () => {
                 <h3>Cargando imagen...</h3>
               ) : (
                 <div className="lg:flex gap-5 xl:gap-10">
-                  {images?.map((img) => (
-                    <div key={img?.public_id} className="relative">
+                  {images?.map((img, index) => (
+                    <div key={index} className="relative">
+                      <img
+                        src={img.secure_url}
+                        alt={`Tournament image ${index + 1}`}
+                        className="w-24 h-24 object-cover rounded-lg"
+                      />
                       <button
                         type="button"
                         onClick={() => handleDeleteImage(img)}
-                        className="absolute right-0 px-2 border-2 border-zinc-600  flex items-center rounded-sm font-bold text-white bg-red-700"
+                        className="absolute top-0 right-0 bg-red-500 text-white text-sm rounded-full px-2 py-1"
                       >
                         X
                       </button>
-                      <img
-                        className="w-32 h-32 object-cover 2xl:w-36 2xl:h-36"
-                        src={img?.secure_url}
-                        alt=""
-                        width="300px"
-                      />
                     </div>
                   ))}
                 </div>
@@ -289,8 +288,8 @@ const TournamentsForm = () => {
               key={tournament._id}
               tournament={tournament}
               onEdit={() => {
-                console.log(tournamentSelected)
-                setTournamentSelected(tournament)
+                console.log(tournamentSelected);
+                setTournamentSelected(tournament);
               }}
               onDelete={() => deleteTournament(tournament._id)}
             />

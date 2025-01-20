@@ -22,7 +22,7 @@ const CardTournament = ({ tournament, onEdit, onDelete }) => {
             <img
               loading="lazy"
               className="w-full h-full rounded-xl object-cover max-w-[250px]"
-              src={images[0]?.secure_url ? images[0]?.secure_url : imgFausti}
+              src={images[0]?.secure_url ? images[0]?.secure_url : imgFausti }
             />
           </Link>
         </figure>
@@ -68,3 +68,29 @@ const CardTournament = ({ tournament, onEdit, onDelete }) => {
 };
 
 export default CardTournament;
+
+/* DJERBA CHESS FESTIVAL 2025
+
+DJERBA, TÚNEZ
+15/Feb/2025 23/Feb/2025
+Gran Festival de ajedrez organizado anualmente
+
+Jugaré en la Isla de Djerba, un torneo cerrado de Masters, de 9 rondas a ritmo clásico, sistema Suizo. https://djerbachessfestival.com/fr/data/masters-2025
+// 
+// 
+// 
+// MAGISTRAL DE AJEDREZ PUNTA DEL ESTE
+
+PUNTA DEL ESTE, URUGUAY
+14/Mar/2025 23/Mar/2025
+Primer Festival Internacional de Ajedrez en Punta del Este
+
+Torneo Round Robin a doble vuelta, en el cual se enfrentarán 6 destacados ajedrecistas, con un promedio de 2500 de ELO.
+// 
+
+RÁPIDO DE LEÓN
+
+LEÓN, ESPAÑA
+Jul 2025
+Torneo Rápido de León
+//  */

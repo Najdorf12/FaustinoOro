@@ -205,7 +205,7 @@ const GamesForm = () => {
         </form>
       </section>
 
-      <section className="flex flex-wrap  gap-y-3 gap-x-4 mt-10 justify-center items-start md:gap-y-10 lg:px-6                                                xl:mt-24 xl:gap-x-9 xl:gap-y-9">
+      <section className="flex flex-wrap  gap-y-3 gap-x-4 mt-10 justify-center items-start md:gap-y-10 lg:px-6 xl:mt-24 xl:gap-x-9 xl:gap-y-9">
         {games?.map((game) => (
           <CardAdminGame
             key={game._id}

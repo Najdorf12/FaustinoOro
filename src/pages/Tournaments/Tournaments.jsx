@@ -30,10 +30,10 @@ const Tournaments = () => {
           TORNEOS
         </h6>
         <p className="mt-3 text-zinc-500 lg:mt-5 lg:text-lg max-w-[700px] 2xl:text-2xl 2xl:max-w-[900px]">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
-          quae, quibusdam labore itaque magnam totam iure minima harum repellat
-          dolore. Officia tempore vero vitae distinctio labore excepturi culpa
-          repudiandae voluptatibus?
+          Faustino ya se prepara para los próximos desafíos en su carrera
+          ajedrecística. Consulta aquí la lista de próximos torneos en los que
+          participará. Sigue su calendario y mantente al día con su increíble
+          recorrido competitivo.
         </p>
       </article>
       <ul className="mt-14 flex flex-col items-center gap-y-12 lg:gap-y-16 lg:mt-24 2xl:gap-y-20">
@@ -42,9 +42,9 @@ const Tournaments = () => {
         ))}
       </ul>
       <div className="absolute w-full bottom-0 flex justify-center items-center gap-2 mb-1 font-title text-sm 2xl:text-base text-zinc-600 z-50  mt-12 lg:mt-9">
-          <i className="bx bx-copyright text-lg"></i>
-          <span>Faustino Oro </span>
-        </div>
+        <i className="bx bx-copyright text-lg"></i>
+        <span>Faustino Oro </span>
+      </div>
     </section>
   );
 };
