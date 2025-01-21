@@ -1,12 +1,16 @@
+import imgTournament from "/logotournament2.jpg";
 
 const CardTournamentPage = ({ tournament }) => {
   const { title, description, content, location, time, images } = tournament;
+
+  const tournamentImage = images && images.length > 0 ? images[0].secure_url : imgTournament;
+
   return (
     <li className="relative px-3 pt-1 flex flex-col  rounded-lg border-b border-zinc-700 pb-12 lg:pb-6 lg:px-5  lg:flex-row lg:justify-center lg:items-start lg:gap-12">
       <figure className="w-full flex justify-center lg:w-auto">
         <img
           className="w-[300px] object-cover object-center rounded-lg 2xl:w-[350px]"
-          src={images[0].secure_url ? images[0].secure_url : ""}
+           src={tournamentImage}
           alt="img-tournament"
         />
       </figure>
