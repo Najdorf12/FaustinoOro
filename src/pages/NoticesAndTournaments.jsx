@@ -3,7 +3,7 @@ import TournamentsSection from "./Tournaments/TournamentsSection";
 import CardNoticeHome from "./News/CardNoticeHome";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
-import { useLayoutEffect, useState, useEffect } from "react";
+import { useLayoutEffect, useState, useEffect,useRef } from "react";
 import { useAdminData } from "./Admin/AdminDataContext";
 import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);
@@ -14,13 +14,13 @@ const NoticesAndTournaments = () => {
   const { news, tournaments } = useAdminData();
   const [displayedNotices, setDisplayedNotices] = useState(2);
   const [displayedTournaments, setDisplayedTournaments] = useState(5);
+  const textRef = useRef(null);
 
   const screenStats = window.innerWidth;
   const tl = gsap.timeline();
 
   useEffect(() => {
-    console.log(news);
-    if (window.innerWidth >= 768) {
+   if (window.innerWidth >= 768) {
       setDisplayedTournaments(6);
       setDisplayedNotices(3);
     } else {
@@ -37,15 +37,15 @@ const NoticesAndTournaments = () => {
 
     tl.from(chars, {
       yPercent: 60,
-      stagger: 0.2,
-      ease: "back.out",
-      duration: 1,
-      opacity: 0,
-      scrollTrigger: {
-        trigger: "#split",
-        start: "50% 100%",
-        end: "-30% 20%",
-        scrub: 1,
+        stagger: 0.2,
+        ease: "back.out",
+        duration: 1,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: textRef.current,
+          start: "50% 100%",
+          end: "-30% 20%",
+          scrub: 1,
       },
     })
       .to("#text-reveal2", {
@@ -69,7 +69,7 @@ const NoticesAndTournaments = () => {
           scrub: true,
         },
       });
-  }, []);
+  }, [textRef]);
 
   return (
     <>
@@ -80,6 +80,7 @@ const NoticesAndTournaments = () => {
         <div className="w-full h-full absolute inset-0 z-50   flex flex-col justify-center items-center  text-white lg:justify-evenly gap-4 md:gap-0 lg:items-start">
           <article className="relative   -mt-14 pl-4 z-[200]  flex flex-col justify-center items-start gap-4 max-w-[600px] lg:gap-5 lg:mt-0 lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:gap-6 xl:pl-10 2xl:gap-8 2xl:pl-14">
             <h6
+             ref={textRef} 
               id="split"
               className="font-title text-6xl z-[200]  font-semibold md:text-6xl lg:text-[16vh] xl:text-[17vh] text-bluefausti "
             >
