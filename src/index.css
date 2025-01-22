@@ -56,7 +56,7 @@
 .bars {
   width: 100%;
   height: 6px;
-  background-color: #F2F0E4;
+  background-color: #f2f0e4;
   border-radius: 6px;
   /*  border: 1px solid rgb(102, 102, 102);  */
 }
@@ -103,7 +103,7 @@
       rgba(5, 7, 11, 0.904) 33%,
       rgba(5, 7, 12, 0.4) 100%
     ),
-    url("./assets/4.jpeg") no-repeat center center fixed;
+    url("./assets/7.jpg") no-repeat -20px center fixed;
   background-size: cover;
   color: #1b1827;
 }
@@ -198,7 +198,6 @@
 }
 /* CONTACTFORM */
 .form-container {
-  
   padding: 32px 24px;
   font-size: 14px;
   color: white;
@@ -279,11 +278,21 @@
   cursor: pointer;
   transition: all 500ms;
 }
-
+@media (min-widht: 600px) {
+  #home {
+    background: linear-gradient(
+        330deg,
+        rgba(5, 7, 11, 0.904) 33%,
+        rgba(5, 7, 12, 0.4) 100%
+      ),
+      url("./assets/7.jpg") no-repeat center center fixed;
+  }
+}
 @media (min-width: 1300px) {
   .form-container .form-group label {
     font-size: 12px;
   }
+  
 }
 @media (min-width: 1500px) {
   .form-container .form-group label {
@@ -321,27 +330,26 @@
 }
 
 .btn-about {
-  background: rgba( 255, 255, 255, 0.4 );
-  backdrop-filter: blur( 2px );
-  -webkit-backdrop-filter: blur( 2px ); 
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
-#palmares  {
-  background: rgba( 255, 255, 255, 0.4 );
-  backdrop-filter: blur( 2px );
-  -webkit-backdrop-filter: blur( 2px );
-  
+#palmares {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
- #news-box, #tournament {
-  background: rgba( 255, 255, 255, 0.4 );
-  backdrop-filter: blur( 1px );
-  -webkit-backdrop-filter: blur( 1px );
-} 
+#news-box,
+#tournament {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
 #box-glass {
-  backdrop-filter: blur( 2px );
-  -webkit-backdrop-filter: blur( 2px );
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 #box-glass2 {
-  backdrop-filter: blur( 5px );
-  -webkit-backdrop-filter: blur( 2px );
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(2px);
 }
-

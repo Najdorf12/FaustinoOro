@@ -1,11 +1,10 @@
-import imgFausti2 from "../assets/fausti2.jpg";
-import imgFausti3 from "../assets/fausti3.jpg";
-import imgFausti4 from "../assets/fausti4.jpg";
+import imgFausti2 from "../assets/9.jpeg";
+import imgFausti3 from "../assets/2.jpeg";
+import imgFausti4 from "../assets/3.jpeg";
 import imgFausti6 from "../assets/img6.jpg";
-import imgFausti9 from "../assets/img17.jpg";
+import imgFausti9 from "../assets/10.jpeg";
 
 const Gallery = () => {
-  
   return (
     <>
       <section
@@ -14,11 +13,9 @@ const Gallery = () => {
       >
         <article className="h-full relative pt-2 pl-3 sm:px-2  gap-3 z-40 sm:max-w-[400px] md:max-w-[70%] sm:pl-6  md:ml-[3%] lg:ml-[4%]  2xl:pt-0  2xl:mt-16  text-balance">
           <h3 className="mt-1 font-title text-balance  max-w-[380px] text-stone-600 font-bold text-[3.7rem] leading-[1] z-50  md:max-w-[800px] md:text-[5rem] lg:text-[5.4rem] xl:text-[13.5vh] lg:max-w-[1100px]  2xl:max-w-[1200px] 2xl:text-[13vh]">
-            EL ÉXITO OCURRE CUANDO 
-            <span className="text-white">
-              TUS SUEÑOS SON MAS GRANDES{" "}
-            </span>{" "}
-            QUE TUS EXCUSAS.
+            EL ÉXITO OCURRE CUANDO
+            <span className="text-white">TUS SUEÑOS SON MAS GRANDES </span> QUE
+            TUS EXCUSAS.
           </h3>
         </article>
       </section>
@@ -58,7 +55,7 @@ const Gallery = () => {
           <div className="col-span-4 row-span-3 row-start-4  ">
             <picture className="">
               <img
-                className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg"
+                className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg md:object-[0px,-70px]"
                 src={imgFausti2}
                 alt=""
               />
@@ -67,7 +64,7 @@ const Gallery = () => {
           <div className="col-span-6 row-span-2 row-start-7">
             <picture className=" ">
               <img
-                className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg"
+                className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700  shadow-zinc-900 shadow-lg"
                 src={imgFausti6}
                 alt=""
               />
