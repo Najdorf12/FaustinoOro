@@ -6,12 +6,14 @@ const ContactForm = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm();
 
   const onSubmit = async (data) => {
     try {
       const response = await axios.post("/send-email", data);
       console.log("Correo enviado:", response.data);
+      reset()
     } catch (err) {
       console.error(
         "Error al enviar el correo:",
