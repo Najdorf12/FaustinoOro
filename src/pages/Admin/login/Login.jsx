@@ -136,7 +136,7 @@ const Login = () => {
           </form>
           <div className="text-center text-zinc-400 font-text">
             Don't have an account?
-            <Link className="text-sky-600 ml-2 hover:underline" to="/register">
+            <Link className="text-sky-600 ml-2 hover:underline">
               <strong>Register</strong>{" "}
             </Link>
           </div>
