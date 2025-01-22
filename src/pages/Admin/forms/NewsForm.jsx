@@ -132,7 +132,7 @@ const NewsForm = () => {
 
   return (
     <div className="w-full flex flex-col items-center justify-center">
-      <section className="w-full rounded-xl border-zinc-700 border overflow-hidden py-6 px-4 space-y-6 md:space-y-7 md:w-[550px] xl:w-[700px]">
+      <section className="w-full rounded-xl border-zinc-700 border overflow-hidden py-6 px-4 space-y-6 md:space-y-7 md:w-[550px] xl:w-[800px] xl:py-8">
         <h2 className="text-center font-title text-5xl font-extrabold text-whiteCustom md:text-6xl xl:text-7xl 2xl:text-8xl">
           NOTICIAS
         </h2>
@@ -217,7 +217,7 @@ const NewsForm = () => {
             <p className="self-start text-base">Content</p>{" "}
             <textarea
               placeholder=""
-              className=" text-white bg-transparent border-[2px]  w-full xl:text-base rounded-lg p-2 border-zinc-600  focus:outline-none  focus:border-sky-600"
+              className=" text-white bg-transparent border-[2px]  w-full xl:text-base rounded-lg p-2 border-zinc-600  focus:outline-none  focus:border-sky-600 xl:h-[300px]"
               name="content"
               id="content"
               {...register("content")}

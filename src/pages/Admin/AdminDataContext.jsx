@@ -17,7 +17,7 @@ export const AdminDataProvider = ({ children }) => {
           getGames(),
         ]);
         setTournaments(tournamentsData);
-        setNews(newsData);
+        setNews(newsData.reverse());
         setGames(gamesData);
       } catch (error) {
         console.error("Error fetching data:", error);

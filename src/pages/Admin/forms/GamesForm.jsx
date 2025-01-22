@@ -86,7 +86,7 @@ const GamesForm = () => {
 
   return (
     <div className="w-full flex flex-col items-center justify-center">
-      <section className="w-full rounded-xl border-zinc-700 border overflow-hidden py-6 px-4 space-y-6 md:space-y-7 md:w-[550px] xl:w-[700px]">
+      <section className="w-full rounded-xl border-zinc-700 border overflow-hidden py-6 px-4 space-y-6 md:space-y-7 md:w-[550px] xl:w-[800px]">
         <h2 className="text-center font-title text-5xl font-extrabold text-whiteCustom md:text-6xl xl:text-7xl 2xl:text-8xl">
           PARTIDAS
         </h2>
@@ -186,7 +186,7 @@ const GamesForm = () => {
             <p className="self-start text-base">PGN</p>{" "}
             <textarea
               placeholder=""
-              className="text-whiteCustom bg-transparent border-[2px]  w-full xl:text-base rounded-lg p-2  focus:outline-none  focus:border-sky-600 border-zinc-500"
+              className="text-whiteCustom bg-transparent border-[2px]  w-full xl:text-base rounded-lg p-2  focus:outline-none  focus:border-sky-600 border-zinc-500 xl:h-[200px]"
               name="pgn"
               id="pgn"
               {...register("pgn")}
