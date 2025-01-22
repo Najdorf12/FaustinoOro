@@ -278,14 +278,17 @@
   cursor: pointer;
   transition: all 500ms;
 }
-@media (min-widht: 600px) {
+@media (min-width: 600px) {
   #home {
+    z-index: 50;
     background: linear-gradient(
         330deg,
         rgba(5, 7, 11, 0.904) 33%,
         rgba(5, 7, 12, 0.4) 100%
       ),
       url("./assets/7.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #1b1827;
   }
 }
 @media (min-width: 1300px) {
