@@ -67,7 +67,7 @@ const Home = () => {
         </nav>
 
         <div
-          className="w-full h-screen  relative bg-center bg-fixed bg-cover bg-no-repeat z-50 flex  justify-center"
+          className="w-full h-screen relative bg-center bg-fixed bg-cover bg-no-repeat z-50 flex justify-center"
           id="home"
         >
           <article className="w-full relative  flex justify-center items-end pb-[6vh] px-3 lg:justify-end  lg:items-end lg:pb-[5%] lg:pr-[3%]">
