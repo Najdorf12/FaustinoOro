@@ -87,7 +87,7 @@ const About = () => {
         });
     });
 
-    return () => ctx.revert(); 
+    return () => ctx.revert();
   }, []);
 
   const handleSectionChange = (section) => {
@@ -127,11 +127,11 @@ const About = () => {
           </h3>
           <div
             id="line-about"
-            className="w-[0%] h-[2px]  bg-stone-400 lg:bg-stone-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"
+            className="w-[0%] h-[2px] bg-stone-400 lg:bg-stone-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"
           ></div>
           <p
             id="p-about"
-            className="relative text-zinc-500  w-[86%] mt-[85px] opacity-0 text-base  font-text2 xl:text-lg xl:w-[90%]  2xl:mt-[95px] 2xl:text-[1.4rem] 2xl:w-full   "
+            className="relative text-zinc-500 w-[86%] mt-[85px] opacity-0 text-base font-text2 xl:text-lg xl:w-[90%]  2xl:mt-[95px] 2xl:text-[1.4rem] 2xl:w-full   "
           >
             En plena pandemia, el 30 de mayo de 2020 aprendí a mover las piezas
             y, desde entonces, el ajedrez ha sido mucho más que un simple juego
@@ -141,23 +141,23 @@ const About = () => {
           </p>
           <div
             id="btn-about_box"
-            className="flex -inset-1 -mt-[20px] ml-[60px]  items-center gap-6 font-title2 text-lg font-semibold  xl:text-base xl:gap-8 2xl:gap-14 2xl:-mt-[10px]  2xl:text-xl opacity-0 "
+            className="flex -inset-1 -mt-[20px] ml-[60px]  items-center gap-6 font-title2 text-lg font-semibold xl:text-base xl:gap-8 2xl:gap-14 2xl:-mt-[10px] 2xl:text-xl opacity-0 "
           >
             <button
               onClick={() => handleSectionChange("Historia")}
-              className="group border-[1px] rounded-3xl bg-bluefausti  border-stone-400  px-4 py-[px] flex justify-between text-white items-center min-w-[170px] 2xl:px-5 2xl:w-[195px]  duration-500 "
+              className="group border-[1px] rounded-3xl bg-bluefausti border-stone-400 px-4 py-[px] flex justify-between text-white items-center min-w-[170px] 2xl:px-5 2xl:w-[195px] duration-500 "
             >
               HISTORIA
-              <i className="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full   2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-white duration-500"></i>
+              <i className="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full 2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-white duration-500"></i>
             </button>
             <button
-            id="box-glass2"
+              id="box-glass2"
               onClick={() => handleSectionChange("Logros")}
-              className="group border-[1px] rounded-3xl text-zinc-400  border-stone-400  px-4 py-[px]  flex justify-between items-center min-w-[170px] lg:text-stone-500 2xl:px-5  2xl:w-[195px] 
+              className="group border-[1px] rounded-3xl text-zinc-400 border-stone-400 px-4 py-[px] flex justify-between items-center min-w-[170px] lg:text-stone-500 2xl:px-5 2xl:w-[195px] 
                hover:text-bluefausti  hover:border-bluefausti duration-500 "
             >
               LOGROS
-              <i className="bx bx-arrow-back rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-bluefausti duration-500"></i>
+              <i className="bx bx-arrow-back rotate-[145deg] text-2xl rounded-full 2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-bluefausti duration-500"></i>
             </button>
           </div>
         </>
@@ -166,13 +166,13 @@ const About = () => {
       return (
         <>
           <div className="">
-            <h3 className="text-bluefausti font-medium text-5xl  2xl:pr-2 2xl:text-6xl  ">
+            <h3 className="text-bluefausti font-medium text-5xl 2xl:pr-2 2xl:text-6xl">
               HISTORIA
             </h3>
 
             <p
               id="about-history"
-              className="relative  w-[96%] mt-6 max-h-[350px] pr-3 overflow-y-scroll text-base font-text2 text-zinc-500 pt-1 pb-2 rounded-lg  2xl:mt-7 2xl:text-[1.3rem]"
+              className="relative w-[96%] mt-6 max-h-[350px] pr-3 overflow-y-scroll text-base font-text2 text-zinc-500 pt-1 pb-2 rounded-lg 2xl:mt-7 2xl:text-[1.3rem]"
             >
               Mi primer torneo de ajedrez clásico fue el "8vo IRT Alejandro
               Judewicz" en Mar del Plata, Buenos Aires, Argentina, en septiembre
@@ -199,21 +199,21 @@ const About = () => {
               a ser Campeón Mundial, formando parte de la élite del ajedrez.
             </p>
           </div>
-          <div className="flex -inset-1 mt-[36px]   items-center gap-6 font-title2 text-lg font-semibold  xl:text-base xl:gap-8 2xl:gap-14  2xl:text-xl ">
+          <div className="flex -inset-1 mt-[36px] items-center gap-6 font-title2 text-lg font-semibold xl:text-base xl:gap-8 2xl:gap-14 2xl:text-xl ">
             <button
               onClick={() => handleSectionChange("sobreMi2")}
-              className="group border-[1px] rounded-3xl text-white bg-gray-600 border-stone-400  px-4  flex justify-between items-center  min-w-[170px] 2xl:px-5 2xl:w-[195px] duration-500"
+              className="group border-[1px] rounded-3xl text-white bg-gray-600 border-stone-400 px-4 flex justify-between items-center min-w-[170px] 2xl:px-5 2xl:w-[195px] duration-500"
             >
               SOBRE MI
-              <i className="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:text-white group-hover:rotate-[-145deg] duration-500"></i>
+              <i className="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full 2xl:text-3xl group-hover:text-white group-hover:rotate-[-145deg] duration-500"></i>
             </button>
             <button
               id="news-box"
               onClick={() => handleSectionChange("Logros")}
-              className="group border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center text-zinc-400  min-w-[170px] 2xl:px-5 lg:text-stone-500 2xl:w-[195px]   duration-500 hover:text-bluefausti hover:border-bluefausti"
+              className="group border-[1px] rounded-3xl border-stone-400 px-4 flex justify-between items-center text-zinc-400  min-w-[170px] 2xl:px-5 lg:text-stone-500 2xl:w-[195px] duration-500 hover:text-bluefausti hover:border-bluefausti"
             >
               LOGROS
-              <i className="bx bx-arrow-back  rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-bluefausti duration-500 "></i>
+              <i className="bx bx-arrow-back rotate-[145deg] text-2xl rounded-full 2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-bluefausti duration-500 "></i>
             </button>
           </div>
         </>
@@ -222,14 +222,14 @@ const About = () => {
       return (
         <>
           <div className="w-full ">
-            <h3 className="text-bluefausti font-medium text-5xl 2xl:pr-2 2xl:text-6xl ">
+            <h3 className="text-bluefausti font-medium text-5xl 2xl:pr-2 2xl:text-6xl">
               LOGROS
             </h3>
             <ul className="relative w-full mt-6  flex flex-col-reverse gap-2 font-text2 xl:gap-4  xl:mt-[24px]  2xl:text-[1.3rem] text-zinc-500 text-start ">
               {palmares.map((item, i) => (
                 <li
                   key={i}
-                  className="border border-stone-400   flex items-center gap-2 lg:gap-3 py-1 px-[4px] sm:pr-[3px] lg:pl-2  rounded-2xl  max-w-[95%] xl:max-w-[80%]"
+                  className="border border-stone-400 flex items-center gap-2 lg:gap-3 py-1 px-[4px] sm:pr-[3px] lg:pl-2  rounded-2xl max-w-[95%] xl:max-w-[80%]"
                 >
                   <i className="bx bx-chevron-right self-start text-xl text-white xl:text-2xl"></i>{" "}
                   {item}
@@ -237,18 +237,18 @@ const About = () => {
               ))}
             </ul>
           </div>
-          <div className="flex -inset-1 mt-[36px]   items-center gap-6 font-title2 text-lg font-semibold text-white xl:text-base xl:gap-8 2xl:gap-14  2xl:text-xl ">
+          <div className="flex -inset-1 mt-[36px] items-center gap-6 font-title2 text-lg font-semibold text-white xl:text-base xl:gap-8 2xl:gap-14 2xl:text-xl">
             <button
               onClick={() => handleSectionChange("Historia")}
-              className="group border-[1px] rounded-3xl bg-gray-600 border-stone-500  px-4  flex justify-between items-center  min-w-[170px] 2xl:px-5 2xl:w-[195px] duration-500"
+              className="group border-[1px] rounded-3xl bg-gray-600 border-stone-500 px-4 flex justify-between items-center  min-w-[170px] 2xl:px-5 2xl:w-[195px] duration-500"
             >
               HISTORIA
-              <i className="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:text-white group-hover:rotate-[-145deg] duration-500"></i>
+              <i className="bx bx-arrow-back text-stone-400 rotate-[145deg] text-2xl rounded-full 2xl:text-3xl group-hover:text-white group-hover:rotate-[-145deg] duration-500"></i>
             </button>
             <button
               id="news-box"
               onClick={() => handleSectionChange("sobreMi2")}
-              className="group border-[1px] rounded-3xl border-stone-400  px-4   flex justify-between items-center text-zinc-400 lg:text-stone-500 duration-500 min-w-[170px] 2xl:px-5  2xl:w-[195px] hover:text-bluefausti hover:border-bluefausti "
+              className="group border-[1px] rounded-3xl border-stone-400 px-4 flex justify-between items-center text-zinc-400 lg:text-stone-500 duration-500 min-w-[170px] 2xl:px-5 2xl:w-[195px] hover:text-bluefausti hover:border-bluefausti "
             >
               SOBRE MI
               <i className="bx bx-arrow-back  rotate-[145deg] text-2xl rounded-full  2xl:text-3xl group-hover:rotate-[-145deg] group-hover:text-bluefausti duration-500 "></i>

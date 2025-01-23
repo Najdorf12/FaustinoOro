@@ -20,7 +20,7 @@ const Home = () => {
     <>
       <section className="relative w-full h-screen  flex justify-center items-center  z-50">
         <nav className="absolute inset-0 flex justify-end pt-2 pr-2 z-[100] lg:pt-0 ">
-          <section className="relative gap-3  w-[70%] flex flex-col rounded-2xl  lg:h-auto lg:w-full  lg:flex-row  ">
+          <section className="relative gap-3 w-[70%] flex flex-col rounded-2xl lg:h-auto lg:w-full lg:flex-row  ">
             <input
               id="checkbox2"
               type="checkbox"
@@ -28,7 +28,7 @@ const Home = () => {
               onChange={handleCheckboxChange}
             />
             <label
-              className="toggle toggle2  absolute top-3 right-0 self-end flex justify-end items-end 
+              className="toggle toggle2 absolute top-3 right-0 self-end flex justify-end items-end 
               z-[150] lg:self-start lg:hidden "
               htmlFor="checkbox2"
             >
@@ -38,7 +38,7 @@ const Home = () => {
             </label>
             <div
               id="box-glass2"
-              className={`relative flex flex-col items-center self-start pt-28 pb-12 -mt-16  gap-10 w-full text-xl text-whiteCustom border-l-[2px] border-zinc-700 rounded-l-2xl    font-text2  menu lg:items-center lg:justify-end lg:pr-6  lg:mt-0 lg:flex-row lg:border-b-[2px] lg:py-3 z-50 lg:gap-6 lg:border-l-transparent lg:rounded-b-3xl 2xl:gap-8 ${
+              className={`relative flex flex-col items-center self-start pt-28 pb-12 -mt-16  gap-10 w-full text-xl text-whiteCustom border-l-[2px] border-zinc-700 rounded-l-2xl font-text2 menu lg:items-center lg:justify-end lg:pr-6 lg:mt-0 lg:flex-row lg:border-b-[2px] lg:py-3 z-50 lg:gap-6 lg:border-l-transparent lg:rounded-b-3xl 2xl:gap-8 ${
                 isMenuOpen ? "menu-open " : ""
               }`}
             >
@@ -70,8 +70,8 @@ const Home = () => {
           className="w-full h-screen relative bg-center bg-fixed bg-cover bg-no-repeat z-50 flex justify-center"
           id="home"
         >
-          <article className="w-full relative  flex justify-center items-end pb-[6vh] px-3 lg:justify-end  lg:items-end lg:pb-[5%] lg:pr-[3%]">
-            <h1 className="title-name text-whiteCustom text-center text-[4rem] z-50 leading-[5.3rem] py-3 rounded-xl  md:text-[5.5rem] xl:text-[6.5rem]  2xl:text-[8rem] ">
+          <article className="w-full relative flex justify-center items-end pb-[6vh] px-3 lg:justify-end lg:items-end lg:pb-[5%] lg:pr-[3%]">
+            <h1 className="title-name text-whiteCustom text-center text-[4rem] z-50 leading-[5.3rem] py-3 rounded-xl  md:text-[5.5rem] xl:text-[6.5rem] 2xl:text-[8rem]">
               FAUSTINO ORO
             </h1>
           </article>

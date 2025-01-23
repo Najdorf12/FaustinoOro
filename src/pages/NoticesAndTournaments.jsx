@@ -75,20 +75,20 @@ const NoticesAndTournaments = () => {
     <>
       <section
         id="five_section"
-        className="relative w-full h-screen overflow-hidden   bg-whiteCustom"
+        className="relative w-full h-screen overflow-hidden  bg-whiteCustom"
       >
-        <div className="w-full h-full absolute inset-0 z-50   flex flex-col justify-center items-center  text-white lg:justify-evenly gap-4 md:gap-0 lg:items-start">
-          <article className="relative   -mt-14 pl-4 z-[200]  flex flex-col justify-center items-start gap-4 max-w-[600px] lg:gap-5 lg:mt-0 lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:gap-6 xl:pl-10 2xl:gap-8 2xl:pl-14">
+        <div className="w-full h-full absolute inset-0 z-50 flex flex-col justify-center items-center  text-white lg:justify-evenly gap-4 md:gap-0 lg:items-start">
+          <article className="relative -mt-14 pl-4 z-[200] flex flex-col justify-center items-start gap-4 max-w-[600px] lg:gap-5 lg:mt-0 lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:gap-6 xl:pl-10 2xl:gap-8 2xl:pl-14">
             <h6
              ref={textRef} 
               id="split"
-              className="font-title text-6xl z-[200]  font-semibold md:text-6xl lg:text-[16vh] xl:text-[17vh] text-bluefausti "
+              className="font-title text-6xl z-[200] font-semibold md:text-6xl lg:text-[16vh] xl:text-[17vh] text-bluefausti "
             >
               NOTICIAS
             </h6>
             <p
               id="text-reveal2"
-              className="font-text2  z-50 text-zinc-500 text-balance  text-sm md:text-lg opacity-0  xl:text-xl 2xl:text-2xl"
+              className="font-text2 z-50 text-zinc-500 text-balance text-sm md:text-lg opacity-0 xl:text-xl 2xl:text-2xl"
             >
               Descubre las últimas noticias sobre la carrera y los logros de
               Faustino Oro. Mantente informado sobre sus próximas competencias,

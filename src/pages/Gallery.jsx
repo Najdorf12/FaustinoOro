@@ -1,7 +1,7 @@
 import imgFausti2 from "../assets/9.jpeg";
 import imgFausti3 from "../assets/2.jpeg";
 import imgFausti4 from "../assets/3.jpeg";
-import imgFausti6 from "../assets/img6.jpg";
+import imgFausti6 from "../assets/4.jpeg";
 import imgFausti9 from "../assets/10.jpeg";
 
 const Gallery = () => {
@@ -22,19 +22,19 @@ const Gallery = () => {
 
       <section
         id="four_section"
-        className="w-full flex justify-center items-start  h-[90dvh]  lg:justify-start lg:pl-[5%] lg:h-screen z-50 md:z-10 overflow-y-visible relative px-1 lg:pb-9 xl:pb-12 "
+        className="w-full flex justify-center items-start  h-[90dvh] lg:justify-start lg:pl-[5%] lg:h-screen z-50 md:z-10 overflow-y-visible relative px-1 lg:pb-9 xl:pb-9 "
       >
         <div className="grid grid-cols-6 grid-rows-8 gap-1 w-full h-[90%] lg:gap-2 lg:max-w-[60%] lg:h-full">
-          <div className="col-span-2 row-span-3 ">
+          <div className="col-span-2 row-span-3">
             <picture className=" ">
               <img
-                className="w-full h-full rounded-3xl  object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg"
+                className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg"
                 src={imgFausti3}
                 alt=""
               />
             </picture>
           </div>
-          <div className="col-span-2 row-span-3 col-start-3 ">
+          <div className="col-span-2 row-span-3 col-start-3">
             <picture className="">
               <img
                 className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg"
@@ -43,10 +43,10 @@ const Gallery = () => {
               />
             </picture>
           </div>
-          <div className="col-span-2 row-span-6 col-start-5 ">
+          <div className="col-span-2 row-span-6 col-start-5">
             <picture className="">
               <img
-                className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg "
+                className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg"
                 src={imgFausti4}
                 alt=""
               />
@@ -62,9 +62,9 @@ const Gallery = () => {
             </picture>
           </div>
           <div className="col-span-6 row-span-2 row-start-7">
-            <picture className=" ">
+            <picture className="" >
               <img
-                className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700  shadow-zinc-900 shadow-lg"
+                className="w-full h-full rounded-3xl object-cover object-center border-[2px] border-stone-700  shadow-zinc-900 shadow-lg md:object-[0px,-190px] xl:object-[0px,-250px] 2xl:object-[0px,-290px]"
                 src={imgFausti6}
                 alt=""
               />

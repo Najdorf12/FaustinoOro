@@ -17,7 +17,6 @@ const Games = () => {
     }
   }, [games]);
   
-
   function obtenerJugadas(pgn) {
     const limpio = pgn?.replace(/\n/g, " ");
     const jugadas = limpio?.replace(/\d+\./g, "").trim().split(/\s+/);
