@@ -2,9 +2,14 @@ import { useAdminData } from "../Admin/AdminDataContext";
 import CardTournamentPage from "./CardTournamentPage";
 import iconNav from "/iconNav.png";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const Tournaments = () => {
   const { tournaments } = useAdminData();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section className="relative overflow-hidden w-full min-h-screen bg-zinc-800 font-text2 pb-12 lg:pb-40">
