@@ -6,10 +6,10 @@ const CardTournamentPage = ({ tournament }) => {
   const tournamentImage = images && images.length > 0 ? images[0].secure_url : imgTournament;
 
   return (
-    <li className="relative w-[95%]  px-3 pt-1 flex flex-col max-w-[600px] lg:max-w-[1000px] rounded-lg border-b border-zinc-700 pb-12 lg:pb-6 lg:px-5  lg:flex-row lg:justify-center lg:items-start lg:gap-12 xl:max-w-[1100px] 2xl:max-w-[1250px]">
+    <li className="relative w-[95%]  px-3 pt-1 flex flex-col max-w-[600px] lg:max-w-[1000px] rounded-lg border-b border-zinc-700 pb-12 lg:pb-4 lg:px-5  lg:flex-row lg:justify-center lg:items-start lg:gap-12 xl:max-w-[1100px] 2xl:max-w-[1250px]">
       <figure className="w-full flex justify-center lg:w-auto">
         <img
-          className="w-[300px] h-[358px] object-cover object-centerrounded-lg  2xl:w-[370px] 2xl:h-[435px]"
+          className="w-[300px] h-[358px] object-contain object-center rounded-xl xl:w-[390px] xl:h-[370px] 2xl:w-[400px] 2xl:h-[400px] "
            src={tournamentImage}
           alt="img-tournament"
         />
@@ -30,7 +30,7 @@ const CardTournamentPage = ({ tournament }) => {
           <i className="bx bxs-pen text-2xl self-start text-zinc-700 lg:text-3xl 2xl:text-4xl"></i>
           {description}
         </div>
-        <div className="text-sm pl-2 md:text-base mt-2 text-zinc-600 max-w-[650px] 2xl:text-lg">{content}</div>
+        <div className="text-sm pl-2 md:text-base mt-2 text-zinc-600 max-w-[650px] xl:mt-4 2xl:text-lg">{content}</div>
       </article>
 
       <i className='bx bxs-cube absolute bottom-2 right-1 text-4xl text-sky-700 xl:text-5xl 2xl:text-6xl'></i>
