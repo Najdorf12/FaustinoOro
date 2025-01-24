@@ -27,7 +27,7 @@ const NewsForm = () => {
         content: noticeSelected.content,
         category: noticeSelected.category,
         isActive: noticeSelected.isActive,
-        images: noticeSelected.images
+        images: noticeSelected.images,
       });
       setImages(noticeSelected.images || []);
     } else {
@@ -38,9 +38,9 @@ const NewsForm = () => {
         content: "",
         isActive: false,
         category: "",
-        images:""
+        images: "",
       });
-      setImages([]); 
+      setImages([]);
     }
   }, [noticeSelected]);
 
@@ -78,9 +78,9 @@ const NewsForm = () => {
   const submit = (data) => {
     const noticeData = {
       ...data,
-      images: images.length > 0 ? images : noticeSelected?.images || [],  // Si no hay imágenes nuevas, conserva las anteriores
+      images: images.length > 0 ? images : noticeSelected?.images || [], // Si no hay imágenes nuevas, conserva las anteriores
     };
-  
+
     if (noticeSelected) {
       // Solo pasa las imágenes si se han subido nuevas
       editNotice(noticeData);
@@ -97,27 +97,28 @@ const NewsForm = () => {
     setImages([]); // Limpiar imágenes después de enviar
     alert("NOTICIA CREADA EXITOSAMENTE");
   };
-  
+
   const editNotice = (notice) => {
     axios
       .put(`/news/${notice._id}`, notice)
       .then((res) => {
         setNews((prevNews) =>
-          prevNews.map((item) =>
-            item._id === res.data._id ? res.data : item
-          )
+          prevNews.map((item) => (item._id === res.data._id ? res.data : item))
         );
         setNoticeSelected(null);
       })
       .catch((error) => console.error(error));
   };
-  
+
   const handleDeleteImage = (img) => {
     setImages(images.filter((image) => image.public_id !== img.public_id));
-  
-    axios.delete(`/news/delete-image/${encodeURIComponent(img.public_id)}`)
-    .then(() => console.log("Imagen eliminada de Cloudinary"))
-    .catch((error) => console.error("Error al eliminar imagen de Cloudinary", error));
+
+    axios
+      .delete(`/news/delete-image/${encodeURIComponent(img.public_id)}`)
+      .then(() => console.log("Imagen eliminada de Cloudinary"))
+      .catch((error) =>
+        console.error("Error al eliminar imagen de Cloudinary", error)
+      );
   };
 
   const deleteNotice = (id) => {
@@ -128,7 +129,6 @@ const NewsForm = () => {
       })
       .catch((error) => console.error(error));
   };
-
 
   return (
     <div className="w-full flex flex-col items-center justify-center">
@@ -272,17 +272,17 @@ const NewsForm = () => {
         </form>
       </section>
       <section className="flex flex-wrap  gap-y-6 gap-x-4 mt-10 justify-center items-start md:gap-y-10 lg:px-6  xl:mt-24 xl:gap-x-9 xl:gap-y-9">
-      {news?.map((item) => (
-            <CardAdminNew
-              key={item._id}
-              notice={item}
-              onEdit={() => {
-                setNoticeSelected(item)
-                console.log(noticeSelected)
-              }}
-              onDelete={() => deleteNotice(item._id)}
-            />
-          ))}
+        {[...news].reverse().map((item) => (
+          <CardAdminNew
+            key={item._id}
+            notice={item}
+            onEdit={() => {
+              setNoticeSelected(item);
+              console.log(noticeSelected);
+            }}
+            onDelete={() => deleteNotice(item._id)}
+          />
+        ))}
       </section>
     </div>
   );

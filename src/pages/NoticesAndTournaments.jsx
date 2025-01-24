@@ -112,7 +112,7 @@ const NoticesAndTournaments = () => {
 
           <div className="flex flex-col justify-start items-start mt-14 max-w-[900px] lg:mt-0 lg:self-end xl:max-w-[1000px] 2xl:mr-2">
             <div className="flex flex-wrap pl-4 gap-y-6 gap-x-12 z-50 md:justify-center xl:gap-x-16 2xl:ga">
-              {news?.slice(0, displayedNotices)?.map((newsItem, i) => (
+              {[...news]?.reverse()?.slice(0, displayedNotices)?.map((newsItem, i) => (
                 <CardNoticeHome key={i} news={newsItem} index={i} />
               ))}
             </div>
