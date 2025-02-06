@@ -35,7 +35,7 @@ const NoticesAndTournaments = () => {
     const text = new SplitType("#split", { type: "chars" });
     const chars = text?.chars;
 
-    tl.from(chars, {
+    tl./* from(chars, {
       yPercent: 60,
         stagger: 0.2,
         ease: "back.out",
@@ -48,7 +48,7 @@ const NoticesAndTournaments = () => {
           scrub: 1,
       },
     })
-      .to("#text-reveal2", {
+      . */to("#text-reveal2", {
         opacity: 1,
         duration: 2,
         delay: 2,
