@@ -17,7 +17,7 @@ const TournamentsSection = ({
           id="box-stats_wrapper"
           className="w-full h-screen bg-whiteCustom absolute  inset-0"
         ></div>
-        <article className="flex flex-col gap-4 -mt-6">
+        <article className="flex flex-col gap-4 -mt-6 ">
           <h6 className="text-6xl font-title font-semibold text-bluefausti md:text-6xl lg:text-[15vh] xl:text-[16vh] xl:pl-6 2xl:pl-8  z-50">
             TORNEOS
           </h6>

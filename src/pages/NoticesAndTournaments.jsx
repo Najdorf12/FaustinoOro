@@ -3,12 +3,10 @@ import TournamentsSection from "./Tournaments/TournamentsSection";
 import CardNoticeHome from "./News/CardNoticeHome";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
-import { useLayoutEffect, useState, useEffect,useRef } from "react";
+import { useLayoutEffect, useState, useEffect, useRef } from "react";
 import { useAdminData } from "./Admin/AdminDataContext";
 import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);
-
-
 
 const NoticesAndTournaments = () => {
   const { news, tournaments } = useAdminData();
@@ -20,7 +18,7 @@ const NoticesAndTournaments = () => {
   const tl = gsap.timeline();
 
   useEffect(() => {
-   if (window.innerWidth >= 768) {
+    if (window.innerWidth >= 768) {
       setDisplayedTournaments(6);
       setDisplayedNotices(3);
     } else {
@@ -35,7 +33,7 @@ const NoticesAndTournaments = () => {
     const text = new SplitType("#split", { type: "chars" });
     const chars = text?.chars;
 
-    tl./* from(chars, {
+    tl. /* from(chars, {
       yPercent: 60,
         stagger: 0.2,
         ease: "back.out",
@@ -48,7 +46,17 @@ const NoticesAndTournaments = () => {
           scrub: 1,
       },
     })
-      . */to("#text-reveal2", {
+      . */to("#line-notices", {
+      width: screenStats > 700 ? "90%" : "90%",
+      duration: 2,
+      scrollTrigger: {
+        trigger: "#five_section",
+        start: screenStats > 700 ? "50% bottom" : "30% bottom",
+        end: "top top",
+        scrub: true,
+      },
+    })
+      .to("#text-reveal2", {
         opacity: 1,
         duration: 2,
         delay: 2,
@@ -60,7 +68,7 @@ const NoticesAndTournaments = () => {
         },
       })
       .to("#line-tournament", {
-        width: screenStats > 700 ? "40%" : "90%",
+        width: screenStats > 700 ? "45%" : "90%",
         duration: 2,
         scrollTrigger: {
           trigger: "#six_section",
@@ -78,14 +86,18 @@ const NoticesAndTournaments = () => {
         className="relative w-full h-screen overflow-hidden  bg-whiteCustom"
       >
         <div className="w-full h-full absolute inset-0 z-50 flex flex-col justify-center items-center  text-white lg:justify-evenly gap-4 md:gap-0 lg:items-start">
-          <article className="relative -mt-14 pl-4 z-[200] flex flex-col justify-center items-start gap-4 max-w-[600px] lg:gap-5 lg:mt-0 lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:gap-6 xl:pl-10 2xl:gap-8 2xl:pl-14">
+          <article className="relative -mt-14 pl-4 z-[200] flex flex-col justify-center items-start gap-4 max-w-[600px] lg:gap-5 lg:mt-0 lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:gap-6 xl:pl-10 2xl:gap-8 2xl:pl-14 ">
             <h6
-             ref={textRef} 
+              ref={textRef}
               id="split"
               className="font-title text-6xl z-[200] font-semibold md:text-6xl lg:text-[16vh] xl:text-[17vh] text-bluefausti "
             >
               NOTICIAS
             </h6>
+            <div
+              id="line-notices"
+              className="h-[2px] w-[0%] bg-white z-50"
+            ></div>
             <p
               id="text-reveal2"
               className="font-text2 z-50 text-zinc-500 text-balance text-sm md:text-lg opacity-0 xl:text-xl 2xl:text-2xl"
@@ -112,9 +124,12 @@ const NoticesAndTournaments = () => {
 
           <div className="flex flex-col justify-start items-start mt-14 max-w-[900px] lg:mt-0 lg:self-end xl:max-w-[1000px] 2xl:mr-2">
             <div className="flex flex-wrap pl-4 gap-y-6 gap-x-12 z-50 md:justify-center xl:gap-x-16 2xl:ga">
-              {[...news]?.reverse()?.slice(0, displayedNotices)?.map((newsItem, i) => (
-                <CardNoticeHome key={i} news={newsItem} index={i} />
-              ))}
+              {[...news]
+                ?.reverse()
+                ?.slice(0, displayedNotices)
+                ?.map((newsItem, i) => (
+                  <CardNoticeHome key={i} news={newsItem} index={i} />
+                ))}
             </div>
           </div>
         </div>
