@@ -4,6 +4,7 @@ const instance = axios.create({
   baseURL: "https://fausti-backend.vercel.app/api",
   withCredentials: "true",
 });
+
 export default instance;
 
 /*  

@@ -85,12 +85,12 @@ const NoticesAndTournaments = () => {
         id="five_section"
         className="relative w-full h-screen overflow-hidden  bg-whiteCustom"
       >
-        <div className="w-full h-full absolute inset-0 z-50 flex flex-col justify-center items-center  text-white lg:justify-evenly gap-4 md:gap-0 lg:items-start">
-          <article className="relative -mt-14 pl-4 z-[200] flex flex-col justify-center items-start gap-4 max-w-[600px] lg:gap-5 lg:mt-0 lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px]  xl:self-start xl:gap-6 xl:pl-10 2xl:gap-8 2xl:pl-14 ">
+        <div className="w-full h-full absolute inset-0 z-50 flex flex-col justify-center items-center  text-white md:justify-evenly gap-4 md:gap-0 lg:items-start">
+          <article className=" relative -mt-14 z-[200] flex flex-col justify-center items-start gap-4 max-w-[600px] md:self-start lg:gap-5 lg:mt-0 lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px] xl:gap-6 2xl:gap-8">
             <h6
               ref={textRef}
               id="split"
-              className="font-title text-6xl z-[200] font-semibold md:text-6xl lg:text-[16vh] xl:text-[17vh] text-bluefausti "
+              className="font-title ml-4 text-6xl z-[200] font-semibold md:text-6xl lg:text-[16vh] lg:ml-9 xl:text-[17vh] text-bluefausti "
             >
               NOTICIAS
             </h6>
@@ -100,7 +100,7 @@ const NoticesAndTournaments = () => {
             ></div>
             <p
               id="text-reveal2"
-              className="font-text2 z-50 text-zinc-500 text-balance text-sm md:text-lg opacity-0 xl:text-xl 2xl:text-2xl"
+              className="font-text2 z-50 text-zinc-500 text-balance text-sm ml-4 md:text-lg opacity-0 lg:ml-9 xl:text-xl 2xl:text-2xl"
             >
               Descubre las últimas noticias sobre la carrera y los logros de
               Faustino Oro. Mantente informado sobre sus próximas competencias,
@@ -111,7 +111,7 @@ const NoticesAndTournaments = () => {
               to={"/news"}
               className="flex justify-center items-center gap-2 mt-1"
             >
-              <button className="animated-button rounded-3xl w-[180px] pl-10 py-1 shadow-lg shadow-zinc-600 border border-stone-500  bg-zinc-700 lg:w-[210px] lg: lg:rounded- 2xl:pl-14 2xl:w-[230px] group">
+              <button className="animated-button rounded-3xl w-[180px] ml-4 pl-10 py-1 shadow-lg shadow-zinc-600 border border-stone-500  bg-zinc-700 lg:w-[210px] lg:ml-9 2xl:pl-14 2xl:w-[230px] group">
                 <i className="bx bx-right-arrow-alt arr-2 text-3xl  text-sky-700 2xl:text-4xl"></i>
                 <span className="text font-title2 text-whiteCustom text-base 2xl:text-lg group-hover:text-zinc-600">
                   Ir a noticias
