@@ -53,13 +53,7 @@ const Login = () => {
           </ul>
         </nav>
 
-        <div
-          /*  style={{
-            backgroundImage:
-              "linear-gradient(to right top, #242427, #2b2a30, #33303a, #3c3542, #463b4b, #554255, #65495e, #765066, #905a6f, #aa6575, #c37278, #da8078)",
-          }} */
-          className="max-w-md w-full  rounded-xl shadow-2xl shadow-gray-900 overflow-hidden py-8 px-4 space-y-8 "
-        >
+        <div className="max-w-md w-full  rounded-xl shadow-2xl shadow-gray-900 overflow-hidden py-8 px-4 space-y-8 ">
           <h2 className="text-center font-title text-6xl font-extrabold text-sky-600">
             Welcome
           </h2>
@@ -136,7 +130,9 @@ const Login = () => {
           </form>
           <div className="text-center text-zinc-400 font-text">
             Don't have an account?
-            <Link to={"/register"} className="text-sky-600 ml-2 hover:underline">
+            <Link
+              /*to={"/register"}*/ className="text-sky-600 ml-2 hover:underline"
+            >
               <strong>Register</strong>{" "}
             </Link>
           </div>
