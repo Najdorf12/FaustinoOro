@@ -57,12 +57,13 @@ const NoticesAndTournaments = () => {
       },
     })
       .to("#text-reveal2", {
+        y : 0,
         opacity: 1,
         duration: 2,
         delay: 2,
         scrollTrigger: {
           trigger: "#text-reveal2",
-          start: "160% bottom",
+          start: "140% bottom",
           end: "10% 50%",
           scrub: 1,
         },
