@@ -6,7 +6,7 @@ const CardNoticeHome = ({ news, index }) => {
     <Link to={`/news/${news?._id}`}>
       <div
         id="box-glass"
-        className="card2 z-50 group w-[340px] pb-1 pr-1 border border-[#4b718a] border-r-transparent rounded-2xl rounded-br-[21px] hover:scale-105 duration-500 lg:w-[405px] xl:pl-1 2xl:w-[410px]"
+        className="card2 z-50 group w-[340px] min-h-[185px] pb-[2px] pr-1 border border-[#4b718a] border-r-transparent rounded-2xl rounded-br-[21px] hover:scale-105 duration-500 lg:w-[405px] xl:pl-1 2xl:w-[410px]"
       >
         <div className="font-title3 absolute top-[2px] -right-9 text-zinc-600 text-6xl  group-hover:text-white duration-400 lg:top-[6px]">
           {`0${index + 1}`}
@@ -23,7 +23,7 @@ const CardNoticeHome = ({ news, index }) => {
             {news?.content?.split(" ").slice(0,12).join(" ") + " ..."}
           </p>
           
-          <button className="self-end rounded-full  h-[37px] w-[37px] -mt-1 flex justify-center items-center border border-white bg-sky-700 group-hover:bg-white lg:-mt-4 ">
+          <button className="self-end rounded-full h-[37px] w-[37px] absolute bottom-1 flex justify-center items-center border border-white bg-sky-700 group-hover:bg-white">
             <i className="bx bx-arrow-back rotate-[145deg]  text-white  text-2xl group-hover:text-sky-600 duration-400"></i>
           </button>
         </article>
