@@ -30,3 +30,12 @@ export const getGames = async () => {
   }
 };
 
+export const getPalmares = async () => {
+  try {
+    const response = await axios.get("/palmares");
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching games:", error);
+    throw error;
+  }
+};

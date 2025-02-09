@@ -1,21 +1,24 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useState, useEffect, useLayoutEffect } from "react";
+import { useAdminData } from "./Admin/AdminDataContext";
+
 gsap.registerPlugin(ScrollTrigger);
 
-const palmares = [
+/* const palmares = [
   "Campeón Argentino Sub-8 (Diciembre 2021)",
   "Campeón Panamericano Sub-10 (Junio 2022)",
   "Número uno del Mundo en cada una de sus categorías Sub-8, Sub-10 y actualmente Sub-12",
   "Récord del Maestro Fide más joven de la historia por superar los 2300 puntos (Abril 2023)",
   "Récord al obtener la Primera Norma de Maestro Internacional (Septiembre 2023)",
   "Récord del Maestro Internacional más joven de la historia (Junio 2024)",
-];
+]; */
 
 const About = () => {
   const [activeSection, setActiveSection] = useState("sobreMi");
   const tl = gsap.timeline();
   const screen = window.screen.width;
+  const { palmares, setPalmares } = useAdminData();
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -226,13 +229,13 @@ const About = () => {
               LOGROS
             </h3>
             <ul className="relative w-full mt-6  flex flex-col-reverse gap-2 font-text2 xl:gap-4  xl:mt-[24px]  2xl:text-[1.3rem] text-zinc-500 text-start ">
-              {palmares.map((item, i) => (
+              {palmares?.map((item, i) => (
                 <li
                   key={i}
                   className="border border-stone-400 flex items-center gap-2 lg:gap-3 py-1 px-[4px] sm:pr-[3px] lg:pl-2  rounded-2xl max-w-[95%] xl:max-w-[80%]"
                 >
                   <i className="bx bx-chevron-right self-start text-xl text-white xl:text-2xl"></i>{" "}
-                  {item}
+                  {item?.title}
                 </li>
               ))}
             </ul>
