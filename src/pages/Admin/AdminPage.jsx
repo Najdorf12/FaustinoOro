@@ -4,6 +4,7 @@ import logo from "/iconNav.png";
 import TournamentsForm from "./forms/TournamentsForm";
 import GamesForm from "./forms/GamesForm";
 import NewsForm from "./forms/NewsForm";
+import PalmaresForm from "./forms/PalmaresForm";
 import { useRef, useState, useEffect } from "react";
 
 const AdminPage = () => {
@@ -12,7 +13,7 @@ const AdminPage = () => {
   const formContainerRef = useRef(null);
 
   useEffect(() => {
-   verifyAuth();
+    verifyAuth();
   }, []);
 
   const verifyAuth = async () => {
@@ -54,7 +55,7 @@ const AdminPage = () => {
         </ul>
       </nav>
 
-      <div className="w-full flex justify-center items-center gap-6 text-lg font-medium font-title4 text-zinc-500 mt-6 xl:mt-8 xl:text-xl xl:gap-12 2xl:text-2xl ">
+      <div className="w-full flex justify-center items-center gap-3 text-base font-medium font-title4 text-zinc-500 mt-6 md:text-lg xl:mt-8 xl:text-xl xl:gap-12 2xl:text-2xl ">
         <button
           onClick={() => setSelectedFormSection("news_form")}
           className={`${
@@ -85,6 +86,16 @@ const AdminPage = () => {
         >
           Partidas
         </button>
+        <button
+          onClick={() => setSelectedFormSection("palmares_form")}
+          className={`${
+            selectedFormSection === "palmares_form"
+              ? "text-whiteCustom border-b border-sky-600 pb-[2px]"
+              : ""
+          }`}
+        >
+          Logros
+        </button>
       </div>
 
       <div
@@ -94,6 +105,7 @@ const AdminPage = () => {
         {selectedFormSection === "news_form" && <NewsForm />}
         {selectedFormSection === "tournaments_form" && <TournamentsForm />}
         {selectedFormSection === "games_form" && <GamesForm />}
+        {selectedFormSection === "palmares_form" && <PalmaresForm />}
       </div>
     </section>
   );
