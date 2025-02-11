@@ -30,7 +30,7 @@ const Gallery = () => {
               <img
                 className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg"
                 src={imgFausti3}
-                alt=""
+                alt="img-Faustino2"
               />
             </picture>
           </div>
@@ -39,7 +39,7 @@ const Gallery = () => {
               <img
                 className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg"
                 src={imgFausti9}
-                alt=""
+                alt="img-Faustino3"
               />
             </picture>
           </div>
@@ -48,7 +48,7 @@ const Gallery = () => {
               <img
                 className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg"
                 src={imgFausti4}
-                alt=""
+                alt="img-Faustino4"
               />
             </picture>
           </div>
@@ -57,7 +57,7 @@ const Gallery = () => {
               <img
                 className="w-full h-full rounded-3xl object-cover border-[2px] border-stone-700 shadow-zinc-900 shadow-lg md:object-[0px,-70px]"
                 src={imgFausti2}
-                alt=""
+                alt="img-Faustino5"
               />
             </picture>
           </div>
@@ -66,7 +66,7 @@ const Gallery = () => {
               <img
                 className="w-full h-full rounded-3xl object-cover object-center border-[2px] border-stone-700  shadow-zinc-900 shadow-lg md:object-[0px,-190px] xl:object-[0px,-250px] 2xl:object-[0px,-290px]"
                 src={imgFausti6}
-                alt=""
+                alt="img-Faustino6"
               />
             </picture>
           </div>

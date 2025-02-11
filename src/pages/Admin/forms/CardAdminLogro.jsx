@@ -2,7 +2,7 @@ const CardAdminLogro = ({logro, onEdit, onDelete }) => {
     const { title } = logro; 
   
     return (
-    <section className="relative  border border-zinc-700 w-[95%] max-w-[680px] rounded-lg flex hover:scale-105 duration-500 pb-1 lg:pb-2">
+    <section className="relative border border-zinc-700 w-[95%] max-w-[680px] rounded-lg flex hover:scale-105 duration-500 pb-1 lg:pb-2">
       <article className="h-full  flex flex-col gap-1 w-full text-balance">
         <p className="text-lg font-medium  px-3 flex items-center justify-center gap-3 font-text text-center  text-whiteCustom leading-5 border-b border-zinc-700 py-3 bg-sky-800 rounded-t-lg ">
           {title}

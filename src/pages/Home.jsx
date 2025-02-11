@@ -59,7 +59,7 @@ const Home = () => {
                 <img
                   className="object-cover object-center w-[3rem] "
                   src={iconNav}
-                  alt=""
+                  alt="icon-nav"
                 />
               </figure>
             </div>
