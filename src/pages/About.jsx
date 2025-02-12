@@ -130,7 +130,7 @@ const About = () => {
           </h3>
           <div
             id="line-about"
-            className="w-[0%] h-[2px] bg-stone-400 lg:bg-stone-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"
+            className="w-[0%] h-[2px] bg-stone-300 rounded-md mt-4 xl:mt-5 2xl:mt-6"
           ></div>
           <p
             id="p-about"
@@ -271,10 +271,10 @@ const About = () => {
           >
             {"Soy Faustino Oro. Nací en Buenos Aires, Argentina, el 14 de octubre de 2013".toUpperCase()}
           </h3>
-          <div className="w-[98%] h-[2px] bg-stone-400 md:w-[90%] lg:bg-stone-500 rounded-md mt-4 xl:mt-5 2xl:mt-6"></div>
+          <div className="w-[98%] h-[2px] bg-stone-300 md:w-[90%] rounded-md mt-4 xl:mt-5 2xl:mt-6"></div>
           <p
             id="sobreMi2-text"
-            className="relative text-zinc-500 lg:text-stone-500 w-full  mt-[24px]  text-base  font-text2   xl:text-lg   2xl:text-[1.4rem] 2xl:w-full "
+            className="relative text-zinc-500 w-full  mt-[24px]  text-base  font-text2   xl:text-lg   2xl:text-[1.4rem] 2xl:w-full "
           >
             En plena pandemia, el 30 de mayo de 2020 aprendí a mover las piezas
             y, desde entonces, el ajedrez ha sido mucho más que un simple juego
