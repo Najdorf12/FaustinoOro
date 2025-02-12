@@ -30,8 +30,8 @@ const NoticesAndTournaments = () => {
   useLayoutEffect(() => {
     new ScrollTrigger({});
 
-    const text = new SplitType("#split", { type: "chars" });
-    const chars = text?.chars;
+  /*   const text = new SplitType("#split", { type: "chars" });
+    const chars = text?.chars; */
 
     tl. /* from(chars, {
       yPercent: 60,
@@ -90,7 +90,7 @@ const NoticesAndTournaments = () => {
           <article className=" relative -mt-14 z-[200] flex flex-col justify-center items-start gap-4 max-w-[600px] md:self-start lg:gap-5 lg:mt-0 lg:max-w-[750px] xl:max-w-[800px] 2xl:max-w-[900px] xl:gap-6 2xl:gap-8">
             <h6
               ref={textRef}
-              id="split"
+              /* id="split" */
               className="font-title ml-4 text-6xl z-[200] font-semibold md:text-6xl lg:text-[16vh] lg:ml-9 xl:text-[17vh] text-bluefausti "
             >
               NOTICIAS
