@@ -175,7 +175,7 @@ const About = () => {
 
             <p
               id="about-history"
-              className="relative w-[96%] mt-6 max-h-[350px] pr-3 overflow-y-scroll text-base font-text2 text-zinc-500 pt-1 pb-2 rounded-lg 2xl:mt-7 2xl:text-[1.3rem]"
+              className="relative w-[96%] mt-6 max-h-[350px] pr-3 text-balance overflow-y-scroll text-base font-text2 text-zinc-500 pt-1 pb-2 rounded-lg xl:max-h-[360px] 2xl:max-h-[380px]  2xl:mt-7 2xl:text-[1.3rem]"
             >
               Mi primer torneo de ajedrez clásico fue el "8vo IRT Alejandro
               Judewicz" en Mar del Plata, Buenos Aires, Argentina, en septiembre
@@ -224,15 +224,18 @@ const About = () => {
     } else if (activeSection === "Logros") {
       return (
         <>
-          <div className="w-full ">
+          <div className="w-full">
             <h3 className="text-bluefausti font-medium text-5xl 2xl:pr-2 2xl:text-6xl">
               LOGROS
             </h3>
-            <ul className="relative w-full mt-6  flex flex-col-reverse gap-2 font-text2 xl:gap-4  xl:mt-[24px]  2xl:text-[1.3rem] text-zinc-500 text-start ">
+            <ul
+              id="logros"
+              className="relative w-full py-2 mt-6 flex flex-col-reverse gap-2 font-text2 xl:gap-4 xl:mt-[24px] 2xl:text-[1.3rem] text-zinc-500 text-start overflow-y-auto max-h-[350px]  xl:w-[90%] xl:max-h-[360px]  2xl:max-h-[380px]"
+            >
               {palmares?.map((item, i) => (
                 <li
                   key={i}
-                  className="border border-stone-400 flex items-center gap-2 lg:gap-3 py-1 px-[4px] sm:pr-[3px] lg:pl-2  rounded-2xl max-w-[95%] xl:max-w-[80%]"
+                  className="border border-stone-400 flex items-center gap-2 lg:gap-3 py-1 px-[4px] sm:pr-[3px] lg:pl-2 rounded-2xl max-w-[95%] xl:max-w-[80%]"
                 >
                   <i className="bx bx-chevron-right self-start text-xl text-white xl:text-2xl"></i>{" "}
                   {item?.title}
