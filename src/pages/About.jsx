@@ -322,7 +322,7 @@ const About = () => {
         </article>
         <section
           id="box-container-about"
-          className="w-full h-auto z-20 flex absolute left-0 bottom-[-240px] "
+          className="w-full h-auto z-10 flex absolute left-0 bottom-[-240px] "
         >
           <div className="self-end z-20 ">
             <div
