@@ -13,12 +13,12 @@ const TournamentsSection = ({
         className="overflow-hidden relative w-full h-screen z-5 pt-10 pl-0 pr-1 2xl:pt-16"
       >
         <div
-          style={{ clipPath: "polygon(0 0, 0% 100%, 100% 0)" }}
+          style={{ clipPath: "polygon(100% 0, 0 100%, 0 0)" }}
           id="box-stats_wrapper"
-          className="w-full h-screen bg-whiteCustom absolute inset-0"
+          className="w-full h-screen bg-whiteCustom absolute -top-[1px] left-0 z-10"
         ></div>
         <article className="flex flex-col gap-4 -mt-6">
-          <h6 className="text-6xl font-title font-semibold text-bluefausti md:text-6xl lg:text-[15vh] xl:text-[16vh] xl:pl-9 2xl:pl-8 z-50">
+          <h6 className="text-6xl pl-3 font-title font-semibold text-bluefausti md:text-6xl lg:text-[15vh] xl:text-[16vh] xl:pl-9 2xl:pl-8 z-50">
             TORNEOS
           </h6>
           <div
@@ -40,7 +40,7 @@ const TournamentsSection = ({
           </Link>
           <ul
             id="tournaments"
-            className="rounded-lg pr-3 pt-2 pb-6 overflow-y-scroll grid grid-cols-1 gap-6 z-50 lg:grid-cols-2  lg:w-full lg:pt-6 xl:gap-10  place-items-center lg:mx-auto"
+            className="rounded-lg px-2 pt-2 pb-6 overflow-y-scroll grid grid-cols-1 gap-6 z-50 lg:grid-cols-2  lg:w-full lg:pt-6 xl:gap-10  place-items-center lg:mx-auto"
           >
             {tournaments
               ?.slice(0, displayedTournaments)
@@ -52,6 +52,13 @@ const TournamentsSection = ({
                   index={i + 1}
                 />
               ))}
+              {
+                tournaments?.length < 3 && (
+                  <div className="w-full ">
+                    
+                  </div>
+                )
+              }
           </ul>
         </article>
      
