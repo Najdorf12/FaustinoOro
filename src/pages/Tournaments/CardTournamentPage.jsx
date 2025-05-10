@@ -1,9 +1,8 @@
-import imgTournament from "/logotournament2.jpg";
 
 const CardTournamentPage = ({ tournament }) => {
   const { title, description, content, location, time, images } = tournament;
 
-  const tournamentImage = images && images.length > 0 ? images[0].secure_url : imgTournament;
+  const tournamentImage = images && images.length > 0 ? images[0].secure_url : "";
 
   return (
     <li className="relative w-[95%]  px-3 pt-1 flex flex-col max-w-[600px] lg:max-w-[1000px] rounded-lg border-b border-zinc-700 pb-12 lg:pb-4 lg:px-5  lg:flex-row lg:justify-center lg:items-start lg:gap-12 xl:max-w-[1100px] 2xl:max-w-[1250px]">
