@@ -116,9 +116,6 @@ const News = () => {
           <p className="font-text2 text-zinc-500 text-start  mt-6 lg:text-lg lg:text-center lg:max-w-[770px] xl:text-xl 2xl:text-2xl 2xl:mt-9xl ">
             Aquí encontrarás actualizaciones en tiempo real y la cobertura de
             los momentos más importantes de su trayectoria profesional.
-            {/* ¡No te pierdas sus próximos torneos y logros! Síguenos para estar al
-            tanto de las últimas noticias sobre Faustino y su camino en el
-            ajedrez. */}
           </p>
         </article>
 
