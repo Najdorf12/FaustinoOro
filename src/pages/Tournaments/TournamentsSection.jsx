@@ -10,12 +10,12 @@ const TournamentsSection = ({
     <>
       <section
         id="six_section"
-        className="overflow-hidden relative bg-whiteCustom  w-full h-screen z-5 pt-10 pl-0 pr-1 2xl:pt-16"
+        className="overflow-hidden relative w-full h-screen z-5 pt-10 pl-0 pr-1 2xl:pt-16"
       >
         <div
           style={{ clipPath: "polygon(0 0, 0% 100%, 100% 0)" }}
           id="box-stats_wrapper"
-          className="w-full h-screen bg-whiteCustom absolute  inset-0"
+          className="w-full h-screen bg-whiteCustom absolute inset-0"
         ></div>
         <article className="flex flex-col gap-4 -mt-6">
           <h6 className="text-6xl font-title font-semibold text-bluefausti md:text-6xl lg:text-[15vh] xl:text-[16vh] xl:pl-9 2xl:pl-8 z-50">

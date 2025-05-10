@@ -5,15 +5,15 @@ const CardNoticeHome = ({ news, index }) => {
     <Link to={`/news/${news?._id}`}>
       <div
         id="box-glass"
-        className="card2 z-50 group w-[340px] min-h-[185px] pb-[2px] pr-1 border border-[#4b718a] border-r-transparent rounded-2xl rounded-br-[21px] hover:scale-105 duration-500 lg:w-[405px] xl:pl-1 2xl:w-[410px]"
+        className="card2 z-50 group w-[340px] min-h-[185px] pb-10 pr-1 border border-[#4b718a] border-r-transparent rounded-2xl rounded-br-[21px] hover:scale-105 duration-500 lg:w-[405px] xl:pl-1 2xl:w-[410px]"
       >
-        <div className="font-title3 absolute top-[2px] -right-9 text-zinc-600 text-6xl  group-hover:text-white duration-400 lg:top-[6px]">
+        <div className="font-title3 absolute top-[6px] -right-9 text-zinc-600 text-6xl  group-hover:text-white duration-400 lg:top-[6px]">
           {`0${index + 1}`}
         </div>
         <article className="pt-3 text-balance rounded-b-2xl flex flex-col ">
           <h6
             translate="no"
-            className="text-zinc-700 font-text2 text-start px-3 text-[1.16rem]  leading-[1.2rem] py-[3px] lg:pr-0 lg:leading-[1.3rem] max-w-[250px] 2xl:text-[1.23rem] "
+            className="text-zinc-700 font-text2 min-h-12 text-start px-3 text-[1.16rem] leading-[1.2rem] mt-1 lg:leading-[1.3rem] max-w-[250px] 2xl:text-[1.23rem] "
           >
             {news?.title?.toUpperCase().split(" ").slice(0, 7).join(" ")}
           </h6>
@@ -26,7 +26,7 @@ const CardNoticeHome = ({ news, index }) => {
           </p>
           <p
             translate="no"
-            className="mt-1 text-zinc-500 font-title font-normal  px-3 leading-5 text-base lg:pr-9 2xl:mt-2"
+            className="mt-2 text-zinc-500 font-title font-normal  px-3 leading-5 text-base lg:pr-9 2xl:mt-2"
           >
             {news?.content?.split(" ").slice(0, 12).join(" ") + " ..."}
           </p>

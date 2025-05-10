@@ -11,8 +11,8 @@ import { Suspense } from "react";
 function FaustinoApp() {
   return (
     <ReactLenis root>
-      <main className="relative w-full min-h-screen overflow-hidden bg-zinc-800">
-        <div className="w-full h-screen fixed z-30 overflow-hidden lg:block">
+      <main className="relative w-full min-h-screen z-40 overflow-hidden bg-zinc-800">
+        <div className="w-full h-screen fixed z-20 overflow-hidden lg:block">
           <Canvas>
             <Suspense fallback={null}>
               <Experience />
