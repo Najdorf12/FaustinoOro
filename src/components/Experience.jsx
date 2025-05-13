@@ -18,7 +18,7 @@ const Experience = () => {
         penumbra={1}
         intensity={6}
       />
-      <Environment background={false} preset={"warehouse"} />
+      <Environment background={false} preset="city" /> 
       <PerspectiveCamera makeDefault position={[21, 3, 2]} />
       <OrbitControls enableZoom={false} enabled={false} />
       <group position={[16, -3, 2]} castShadow={true}>

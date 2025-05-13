@@ -100,14 +100,12 @@ const About = () => {
       duration: 0.7,
       onComplete: () => {
         setActiveSection(section);
-        // Animación para mostrar el nuevo contenido
         gsap.to("#content-section", {
           opacity: 1,
           y: 0,
           duration: 0.7,
         });
 
-        // Si volvemos a "sobreMi", asegurar que la opacidad sea 1
         if (section === "sobreMi") {
           gsap.to("#about-text2, #line-about, #p-about, #btn-about_box", {
             opacity: 1,
