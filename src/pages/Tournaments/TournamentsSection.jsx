@@ -8,7 +8,6 @@ const TournamentsSection = ({
 }) => {
   const hasEmptySpace = tournaments?.length < displayedTournaments;
   const emptyItemsCount = displayedTournaments - (tournaments?.length || 0);
-  console.log(emptyItemsCount);
 
   return (
     <>
